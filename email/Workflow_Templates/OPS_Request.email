@@ -1,0 +1,8 @@
+Hello,
+
+Please note that Dr. {!Offsite_Phlebotomy_Service__c.Requesting_MD__c} has requested an offsite phlebotomy service for one of their patients.
+
+Click here for more info: https://guardanthealth.my.salesforce.com/{!Offsite_Phlebotomy_Service__c.Id}
+
+Thank you, 
+Client Services

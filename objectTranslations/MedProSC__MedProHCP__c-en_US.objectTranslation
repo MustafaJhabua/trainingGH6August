@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Address Line 1 --></label>
+        <name>MedProSC__AddressLine1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Line2 --></label>
+        <name>MedProSC__AddressLine2__c</name>
+    </fields>
+    <fields>
+        <label><!-- CDS Number --></label>
+        <name>MedProSC__CDS_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>MedProSC__City__c</name>
+    </fields>
+    <fields>
+        <label><!-- ClientID --></label>
+        <name>MedProSC__ClientID__c</name>
+    </fields>
+    <fields>
+        <label><!-- DEA Number --></label>
+        <name>MedProSC__DEA_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Designation --></label>
+        <name>MedProSC__Designation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do Not Allow Service Update --></label>
+        <name>MedProSC__Do_Not_Allow_Service_Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Name --></label>
+        <name>MedProSC__FirstName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Name --></label>
+        <name>MedProSC__LastName__c</name>
+    </fields>
+    <fields>
+        <label><!-- MedPro ID --></label>
+        <name>MedProSC__MedProID__c</name>
+    </fields>
+    <fields>
+        <label><!-- MedPro Last Updated TS --></label>
+        <name>MedProSC__MedPro_LastUpdatedTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Middle Name --></label>
+        <name>MedProSC__MiddleName__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPI Number --></label>
+        <name>MedProSC__NPINumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- State License Number --></label>
+        <name>MedProSC__StateLicenseNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- State Of License --></label>
+        <name>MedProSC__StateOfLicense__c</name>
+    </fields>
+    <fields>
+        <label><!-- State Specific ID --></label>
+        <name>MedProSC__StateSpecificID__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>MedProSC__State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Suffix --></label>
+        <name>MedProSC__Suffix__c</name>
+    </fields>
+    <fields>
+        <label><!-- Taxonomy Description --></label>
+        <name>MedProSC__TaxonomyDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Taxonomy Code --></label>
+        <name>MedProSC__Taxonomy_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Title --></label>
+        <name>MedProSC__Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction ID --></label>
+        <name>MedProSC__Transaction_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zip Code --></label>
+        <name>MedProSC__ZipCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adjusted State License Expiration Date --></label>
+        <name>MedProSC__adj_state_lic_exp_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer State Grace Period --></label>
+        <name>MedProSC__customer_state_grace_period__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sampleability Desig. Status --></label>
+        <name>MedProSC__samp_desig_status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sampleability Fed. Sanctions --></label>
+        <name>MedProSC__samp_fed_sanctions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sampleability Last Received --></label>
+        <name>MedProSC__samp_last_received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sampleability License Status --></label>
+        <name>MedProSC__samp_license_status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sampleability Overall --></label>
+        <name>MedProSC__samp_overall__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sampleability Exp. Overall --></label>
+        <name>MedProSC__sampleability_exp_overall__c</name>
+    </fields>
+    <fields>
+        <label><!-- State Grace Period --></label>
+        <name>MedProSC__state_grace_period__c</name>
+    </fields>
+    <webLinks>
+        <label><!-- MedPro_UpdateSelectedHCPs_Button --></label>
+        <name>MedProSC__MedPro_UpdateSelectedHCPs_Button</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Submit_DRP --></label>
+        <name>MedProSC__Submit_DRP</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Update_All_Local_HCPs --></label>
+        <name>MedProSC__Update_All_Local_HCPs</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Update_Local_HCP --></label>
+        <name>MedProSC__Update_Local_HCP</name>
+    </webLinks>
+</CustomObjectTranslation>

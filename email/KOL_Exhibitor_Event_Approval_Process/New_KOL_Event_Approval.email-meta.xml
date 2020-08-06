@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>GH_Logo_Small</letterhead>
+    <name>New KOL Event Approval</name>
+    <style>freeForm</style>
+    <subject>KOL Speaker Event || Approved</subject>
+    <textOnly>Hello,
+This message is to inform you that the event below has been approved and is ready for processing.
+
+Form Name:  {!Form__c.Name} {!Form__c.Link}
+
+
+Below are the details of the event:
+
+Requestor: {!Form__c.Account_Executive__c}
+Sales Manager: {!Form__c.Sales_Manager__c}
+
+Speaker: {!Form__c.Speaker__c}
+Speaker Contact Details: {!Form__c.Speaker_Contact_Info__c}
+Speaker DOB: {!Form__c.Speaker_DOB__c}
+Travel/Arrangements Required: {!Form__c.Travel_Arrangements_Needed__c}
+Flight Arrival: {!Form__c.Flight_Arrival__c}
+Flight Departure: {!Form__c.Flight_Departure__c}
+Hotel Nights: {!Form__c.Hotel_of_Nights__c}
+Hotel Arrival: {!Form__c.Hotel_Arrival__c}
+Hotel Departure: {!Form__c.Hotel_Check_Out__c}
+
+Scope: {!Form__c.Scope_of_Event__c}
+Event Type: {!Form__c.Type_of_Event__c}
+Event Date: {!Form__c.Event_Date__c}
+Event Time: {!Form__c.Event_Time__c}
+Event Location: {!Form__c.Event_Location__c}
+Preferred Venues: {!Form__c.Preferred_Venues__c}
+
+Number of Attendees: {!Form__c.Number_of_Attendees__c}
+Budget: {!Form__c.Budget__c}
+A/V Requirements: {!Form__c.Audio_Visual_Requirements__c}
+PDF Invites Needed: {!Form__c.PDF_Invite_Needed__c}
+Signage Needed: {!Form__c.Signage_Needed__c}
+Collateral to be Sent: {!Form__c.Collateral_to_be_Sent__c}
+Additional Comments: {!Form__c.Additional_Comments__c}
+
+
+Please refer back to the event form {!Form__c.Link} in salesforce to review further.
+
+
+Thank you,
+
+{!Form__c.OwnerFullName}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

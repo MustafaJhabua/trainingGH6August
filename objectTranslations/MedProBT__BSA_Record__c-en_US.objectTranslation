@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Batch Sync Audit --></label>
+        <name>MedProBT__Batch_Sync_Audit__c</name>
+        <relationshipLabel><!-- MedPro BSA Records --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Existing Value --></label>
+        <name>MedProBT__Existing_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID Updated --></label>
+        <name>MedProBT__External_ID_Updated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Input Column Name --></label>
+        <name>MedProBT__Input_Column_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Value --></label>
+        <name>MedProBT__New_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- SFDC Field Name --></label>
+        <name>MedProBT__SFDC_Field_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary Match Updated --></label>
+        <name>MedProBT__Secondary_Match_Updated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Update Results --></label>
+        <name>MedProBT__Update_Results__c</name>
+    </fields>
+</CustomObjectTranslation>

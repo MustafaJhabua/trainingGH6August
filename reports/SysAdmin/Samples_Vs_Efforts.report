@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <acrossGroupingContext>Guardant_360_Sample__c$Date_Received__c</acrossGroupingContext>
+        <calculatedFormula>Contact.Number_of_Samples__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <downGroupingContext>Guardant_360_Sample__c$Sample_Owner__c</downGroupingContext>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel># of Samples</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_68235772</developerName>
+        <masterLabel>Month Sample Rec&apos;d</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Guardant_360_Sample__c$Month_Date_Recd__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>APR</sourceValue>
+            </sourceValues>
+            <value>April 2018</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>AUG</sourceValue>
+            </sourceValues>
+            <value>August 2018</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>FEB</sourceValue>
+            </sourceValues>
+            <value>Feb 2018</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>JAN</sourceValue>
+            </sourceValues>
+            <value>Jan 2018</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>JUL</sourceValue>
+            </sourceValues>
+            <value>July 2018</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>JUN</sourceValue>
+            </sourceValues>
+            <value>June 2018</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>MAR</sourceValue>
+            </sourceValues>
+            <value>Mar 2018</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>MAY</sourceValue>
+            </sourceValues>
+            <value>May 2018</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>OCT</sourceValue>
+            </sourceValues>
+            <value>Oct 2018</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>SEP</sourceValue>
+            </sourceValues>
+            <value>Sept 2018</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Guardant_360_Sample__c$Name</field>
+    </columns>
+    <columns>
+        <field>Guardant_360_Sample__c.Contacts__r.ActivityRelations$What</field>
+    </columns>
+    <columns>
+        <field>Guardant_360_Sample__c.Contacts__r.ActivityRelations*Activity$Primary_Messaging__c</field>
+    </columns>
+    <columns>
+        <field>Guardant_360_Sample__c.Contacts__r.ActivityRelations*Activity$Secondary_Messaging__c</field>
+    </columns>
+    <crossFilters>
+        <operation>with</operation>
+        <primaryTableColumn>Guardant_360_Sample__c.Contacts__r$Id</primaryTableColumn>
+        <relatedTable>ActivityRelation-Activity</relatedTable>
+        <relatedTableJoinColumn>Relation</relatedTableJoinColumn>
+    </crossFilters>
+    <filter>
+        <criteriaItems>
+            <column>Guardant_360_Sample__c.Contacts__r.ActivityRelations$RecordType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Task.Call_Reporting</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Guardant_360_Sample__c.Contacts__r.ActivityRelations$Subject</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Physician 1:1,Staff 1:1,GroupInservice,Lab1:1,Literature Drop</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Month</dateGranularity>
+        <field>Guardant_360_Sample__c$Date_Received__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsAcross>
+        <dateGranularity>Month</dateGranularity>
+        <field>Guardant_360_Sample__c$CreatedDate</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Guardant_360_Sample__c$Sample_Owner__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Guardant_360_Sample__c.Contacts__r.ActivityRelations$Owner</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Samples Vs Efforts</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Samples_with_Contact_and_activites__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Guardant_360_Sample__c$Date_Received__c</dateColumn>
+        <interval>INTERVAL_LASTTHISMONTH</interval>
+    </timeFrameFilter>
+</Report>

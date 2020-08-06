@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>021419 Nora reviewed and activated. 01/29/19 Maxim created document.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>BAY101_Response_TrialInformation_003</name>
+    <style>none</style>
+    <subject>Re:</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

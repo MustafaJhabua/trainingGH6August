@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Client Service Agent</fullName>
+        <default>false</default>
+        <label>Client Service Agent</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Account Executive</fullName>
+        <default>false</default>
+        <label>Account Executive</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Regional Sales Director</fullName>
+        <default>false</default>
+        <label>Regional Sales Director</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Strategic Account Manager</fullName>
+        <default>false</default>
+        <label>Strategic Account Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>National Partnership Director</fullName>
+        <default>false</default>
+        <label>National Partnership Director</label>
+    </standardValue>
+    <standardValue>
+        <fullName>National Sales Director</fullName>
+        <default>false</default>
+        <label>National Sales Director</label>
+    </standardValue>
+    <standardValue>
+        <fullName>VP, Sales</fullName>
+        <default>false</default>
+        <label>VP, Sales</label>
+    </standardValue>
+</StandardValueSet>

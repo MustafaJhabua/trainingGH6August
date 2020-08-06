@@ -1,0 +1,306 @@
+<apex:page standardController="MedProSC__MedProSOMapping__c" showHeader="true" sidebar="true" extensions="MedProSC.MedProEditMedProSOMapping_Ctrl">
+
+<html>
+
+    <head>
+
+        <script type="text/javascript">
+
+            $(document).ready(function() {
+
+                // add click events so if links clicked it hides/shows its text field 
+                $('[id$=mappingSource]').each(function(index) { 
+                    $(this).change(function(event) { 
+                        showRelevantFields();
+                    }); 
+                });
+
+                // add click events so if links clicked it hides/shows its text field 
+                $('[id$=parentMedProDataMapping]').each(function(index) { 
+                    $(this).change(function(event) {
+                        if ($(this).val().length == 0)
+                        {
+                            $('[id$=syncOnlyFieldsSection1]').show();
+                            $('[id$=syncOnlyFieldsSection2]').show();
+                            $('[id$=syncOnlyFieldsSection3]').show();
+                        }
+                        else
+                        {
+                            $('[id$=syncOnlyFieldsSection1]').hide();
+                            $('[id$=syncOnlyFieldsSection2]').hide();
+                            $('[id$=syncOnlyFieldsSection3]').hide();
+                        }
+
+                        $('[id$=parentLinkingFieldName]').val('N/A');
+                        $('[id$=purgeDependentData]').prop('checked', false);
+                        $('[id$=actionLabel]').val('N/A');
+                        $('[id$=externalIDFieldAPIName]').val('N/A');
+                        $('[id$=sfFieldForInUniverse]').val('N/A');
+                        $('[id$=syncUpdatesInUniverse]').prop('checked', false);
+                        $('[id$=clientIDFieldAPIName]').val('N/A');
+                        $('[id$=doNotAllowInserts]').prop('checked', false);
+                        $('[id$=syncOptionNumber]').val('1');
+                        $('[id$=isComplexMapping]').prop('checked', false);
+                    }); 
+                });
+
+                $('[id$=syncUpdatesInUniverse]').each(function(index) { 
+                    $(this).change(function(event) { 
+                        setSyncUpdatesShow();
+                    }); 
+                });
+
+                if ($('[id$=mappingSource]').val() == 'Search')
+                {
+                    $('[id$=syncOnlyFieldsSection1]').hide();
+                    $('[id$=syncOnlyFieldsSection2]').hide();
+                    $('[id$=syncOnlyFieldsSection3]').hide();
+                    $('[id$=syncOnlyFieldsSection3a]').hide();
+                }
+                else
+                {
+                    $('[id$=syncOnlyFieldsSection1]').show();
+                    $('[id$=syncOnlyFieldsSection2]').show();
+                    $('[id$=syncOnlyFieldsSection3]').show();
+                    $('[id$=syncOnlyFieldsSection3a]').show();
+                }
+
+                if ($('[id$=syncUpdatesInUniverse]').prop('checked') == true)
+                {
+                    $('[id$=syncOnlyFieldsSection2]').show();
+                }
+                else
+                {
+                    $('[id$=syncOnlyFieldsSection2]').hide();
+                }
+
+                if ($('[id$=parentMedProDataMapping]').val().length == 0)
+                {
+                    $('[id$=syncOnlyFieldsSection1]').show();
+                    $('[id$=syncOnlyFieldsSection2]').show();
+                    $('[id$=syncOnlyFieldsSection3]').show();
+                }
+                else
+                {   //GM Temporarily showing External ID Field for Child Mappings
+                    //$('[id$=syncOnlyFieldsSection1]').hide();
+                    $('[id$=syncOnlyFieldsSection2]').hide();
+                    $('[id$=syncOnlyFieldsSection3]').hide();
+                }
+
+                var oldValue = $('[id$=soAPIName]').val();
+                if (oldValue != null)
+                {
+                    $('[id$=soAPIName]').val('1234');
+                    $('[id$=soAPIName]').val(oldValue).change();
+                }
+
+                hideShowFields();
+                setSyncUpdatesShow();
+            });
+
+            function setSyncUpdatesShow()
+            {
+                if ($('[id$=syncUpdatesInUniverse]').prop('checked') == true)
+                    $('[id$=syncOnlyFieldsSection2]').show();
+                else
+                {
+                    $('[id$=syncOnlyFieldsSection2]').hide();
+                    $('[id$=clientIDFieldAPIName]').val('N/A');
+                }
+            }
+            
+            function Callmefunc(id)
+            {
+                var type = document.getElementById(id).value;
+                if ((type != null) && (type != 'N/A'))
+                {
+                    check(type);
+                }
+            }
+
+            function clearFields()
+            {
+                if (($('[id$=mappingSource]').val() == 'Search') || ($('[id$=mappingSource]').val() == 'DRP'))
+                {
+                    $('[id$=actionLabel]').val('N/A');
+                    $('[id$=externalIDFieldAPIName]').val('N/A');
+                    $('[id=$sfFieldForInUniverse]').val('N/A');
+                    $('[id$=syncUpdatesInUniverse]').prop('checked', false);
+                    $('[id$=clientIDFieldAPIName]').val('N/A');
+                    $('[id$=doNotAllowInserts]').prop('checked', false);
+                    $('[id$=syncOptionNumber]').val('1');
+                    $('[id$=isComplexMapping]').prop('checked', false);
+                    $('[id$=parentLinkingFieldName]').val('N/A');
+                    $('[id$=purgeDependentData]').prop('checked', false);
+                    $('[id$=isActive]').prop('checked', true);
+                }
+                else
+                {
+                    $('[id$=actionLabel]').val('');
+                    $('[id$=externalIDFieldAPIName]').val('N/A');
+                    $('[id=$sfFieldForInUniverse]').val('N/A');
+                    $('[id$=syncUpdatesInUniverse]').prop('checked', false);
+                    $('[id$=clientIDFieldAPIName]').val('N/A');
+                    $('[id$=doNotAllowInserts]').prop('checked', false);
+                    $('[id$=syncOptionNumber]').val('1');
+                    $('[id$=isComplexMapping]').prop('checked', false);
+                    $('[id$=parentLinkingFieldName]').val('N/A');
+                    $('[id$=purgeDependentData]').prop('checked', false);
+                    $('[id$=isActive]').prop('checked', true);
+                }
+            }
+
+            function hideShowFields()
+            {
+                if (($('[id$=mappingSource]').val() == 'Search') || ($('[id$=mappingSource]').val() == 'DRP'))
+                {
+                    $('[id$=syncOnlyFieldsSection1]').hide();
+                    $('[id$=syncOnlyFieldsSection2]').hide();
+                    $('[id$=syncOnlyFieldsSection3]').hide();
+                    $('[id$=syncOnlyFieldsSection3a]').hide();
+                }
+                else
+                {
+                    $('[id$=syncOnlyFieldsSection1]').show();
+                    $('[id$=syncOnlyFieldsSection2]').show();
+                    $('[id$=syncOnlyFieldsSection3]').show();
+                    $('[id$=syncOnlyFieldsSection3a]').show();
+                }
+            }
+
+            function showRelevantFields()
+            {
+                hideShowFields();
+                clearFields();
+            }
+
+        </script>
+    </head>
+    <apex:stylesheet value="{!$Resource.MedProSC__MedProTwoPassDisplayDetail_resources}" />
+    <apex:includeScript value="{!URLFOR($Resource.MedProSC__jQuery_ui_1_10_4, '/jquery-ui-1.10.4.custom/js/jquery-1.10.2.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.MedProSC__jQuery_ui_1_10_4, '/jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.MedProSC__jQuery_ui_1_10_4, '/jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.min.js')}" />
+
+    <apex:form >
+        <apex:pageBlock title="MedPro Data Mapping Edit" id="pagination">
+            <apex:pageMessages />
+
+            <apex:actionFunction name="check" action="{!refreshFieldsForLists}" reRender="externalIDFieldAPIName,clientIDFieldAPIName,parentLinkingFieldName,sfFieldForInUniverse">
+                <apex:param name="someArbitraryName" value="" assignTo="{!targetObjectName}" />
+            </apex:actionFunction>
+
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton value="Save" action="{!save}"/>
+                <apex:commandButton value="Cancel" action="{!cancel}"/>
+            </apex:pageBlockButtons>
+
+            <apex:pageBlockSection title="Information" collapsible="False" columns="1">
+
+                <apex:inputField id="medProSOMappingName" label="Data Mapping Name" value="{!MedProSC__MedProSOMapping__c.Name}"/>
+
+                <apex:inputField id="mappingSource" label="Mapping Source" value="{!MedProSC__MedProSOMapping__c.MedProSC__MappingSource__c}" />
+
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Target API Name" for="soAPIName"/>
+                    <apex:actionRegion >
+                    <apex:selectList id="soAPIName" multiselect="false" size="1" value="{!MedProSC__MedProSOMapping__c.MedProSC__SO_API_Name__c}"
+                               required="true" onchange="Callmefunc('{!$Component.soAPIName}');">
+                        
+                        <apex:selectOptions value="{!soAPINameOptions}" />
+                        
+                    </apex:selectList>
+                    </apex:actionRegion>
+                </apex:pageBlockSectionItem>
+
+            </apex:pageBlockSection>
+
+            <apex:pageBlockSection id="syncOnlyFieldsSection1" collapsible="False" columns="1">
+
+                <apex:inputField id="actionLabel" label="Action Label" value="{!MedProSC__MedProSOMapping__c.MedProSC__ActionLabel__c}" required="false"/>            
+
+                <apex:selectList id="externalIDFieldAPIName" multiselect="false" size="1" label="External ID Field API Name"
+                             value="{!MedProSC__MedProSOMapping__c.MedProSC__External_ID_Field_API_Name__c}" required="true">
+
+                    <apex:selectOptions value="{!externalIDFieldAPINameOptions}" />
+                </apex:selectList>
+
+                <apex:inputField value="{!MedProSC__MedProSOMapping__c.MedProSC__Customer_Parent_API_Link__c}" />
+
+                <apex:inputField id="syncUpdatesInUniverse" label="Sync Updates In-Universe" value="{!MedProSC__MedProSOMapping__c.MedProSC__SyncUpdatesInUniverse__c}" />
+                
+                <apex:selectList id="sfFieldForInUniverse" multiselect="false" size="1" required="true" label=" SF field for In Universe Update" value="{!MedProSC__MedProSOMapping__c.MedProSC__SF_field_for_In_Universe_Update__c}">
+                    <apex:selectOptions value="{!sfFieldForInUniverse}" />
+                </apex:selectList>
+
+
+            </apex:pageBlockSection>
+
+            <apex:pageBlockSection id="syncOnlyFieldsSection2" collapsible="False" columns="1">
+                <apex:selectList id="clientIDFieldAPIName" multiselect="false" size="1" label="ClientID Field API Name"
+                             value="{!MedProSC__MedProSOMapping__c.MedProSC__ClientID_Field_API_Name__c}" required="true">
+
+                    <apex:selectOptions value="{!clientIDFieldAPINameOptions}" />
+                </apex:selectList>
+            </apex:pageBlockSection>
+
+            <apex:pageBlockSection id="syncOnlyFieldsSection3" collapsible="False" columns="1">
+
+                <apex:inputField id="syncOptionNumber" label="Sync Option Number" value="{!MedProSC__MedProSOMapping__c.MedProSC__Sync_Option_Number__c}" required="False"/>
+
+                <apex:inputField id="doNotAllowInserts" label="Do Not Allow Inserts" value="{!MedProSC__MedProSOMapping__c.MedProSC__DoNotAllowInserts__c}" />
+
+                <apex:inputField id="isComplexMapping" label="Is Complex Mapping" value="{!MedProSC__MedProSOMapping__c.MedProSC__IsComplexMapping__c}" />
+
+            </apex:pageBlockSection>
+
+            <apex:pageBlockSection id="syncOnlyFieldsSection3a" collapsible="False" columns="1">
+                <apex:inputField id="parentMedProDataMapping" label="Parent Data Mapping" value="{!MedProSC__MedProSOMapping__c.MedProSC__ParentDataMapping__c}"/>
+
+                <apex:selectList id="parentLinkingFieldName" multiselect="false" size="1" label="Parent Linking Field API Name"
+                             value="{!MedProSC__MedProSOMapping__c.MedProSC__ParentLinkingField_API_Name__c}" required="false">
+
+                    <apex:selectOptions value="{!parentLinkFieldAPINameOptions}" />
+
+                </apex:selectList>
+
+                <apex:inputField id="purgeDependentData" label="Purge Dependent Data" value="{!MedProSC__MedProSOMapping__c.MedProSC__Purge_Dependent_Data__c}"/>
+
+            </apex:pageBlockSection>
+
+            <apex:pageBlockSection collapsible="False" columns="1">
+                <apex:inputField id="medProCustomer" label="MedPro Customer" value="{!MedProSC__MedProSOMapping__c.MedProSC__MedPro_Customer__c}"/>     
+                <apex:inputField id="updateRecordLabel" label="Update Record Label" value="{!MedProSC__MedProSOMapping__c.MedProSC__Update_Record_Label__c}" />                           
+                <apex:inputField id="viewlabel" label="View Label on Display Results Page" value="{!MedProSC__MedProSOMapping__c.MedProSC__View_Label_on_Display_Results_Page__c}" />                           
+                <apex:inputField id="mappingKey" label="Mapping Key" value="{!MedProSC__MedProSOMapping__c.MedProSC__Mapping_Key__c}" />                           
+
+                    <apex:selectList id="sourceExternalIDField" multiselect="false" size="1" label="Source External ID Field" value="{!MedProSC__MedProSOMapping__c.MedProSC__Source_External_ID_Field__c}" 
+                                        >
+                        <apex:selectOptions value="{!sourceFieldNameOptions}" />
+                    </apex:selectList>
+
+                <apex:inputField id="vfRedirect" label="VF Redirect after adding an HCP" value="{!MedProSC__MedProSOMapping__c.MedProSC__VF_Redirect_after_adding_an_HCP__c}"  />
+                
+                <apex:inputField id="isActive" label="Is Active" value="{!MedProSC__MedProSOMapping__c.MedProSC__Is_Active__c}" />
+                <apex:inputField id="ContextuallyEnableMappingBtn" value="{!MedProSC__MedProSOMapping__c.MedProSC__Contextually_Enable_Mapping_Btn__c}" />
+            </apex:pageBlockSection>
+            <apex:outputPanel > 
+                <div class="pbHeader">
+                    <table class="medproTable" >
+                       <tbody>
+                          <tr>
+                             <td class="pbTitle"><apex:include pageName="MedProSC__MedProStandardCopyrightFooter"/> </td>                     
+                             <td class="pbButton">
+                                <apex:commandButton value="Save" action="{!save}"/>
+                                <apex:commandButton value="Cancel" action="{!cancel}"/>
+                             </td>
+                          </tr>
+                       </tbody>
+                    </table>
+                </div>
+            </apex:outputPanel>
+
+        </apex:pageBlock>
+    </apex:form>
+</html>
+
+</apex:page>

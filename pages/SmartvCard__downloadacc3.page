@@ -1,0 +1,19 @@
+<apex:page cache="true" contentType="text/x-vcard#{!account.Name}.vcf" standardcontroller="account" extensions="SmartvCard.NotesAccount">BEGIN:VCARD
+VERSION:3.0
+N:;
+<c:vcard Value="{!account.name}"/>
+FN:<c:vcard Value="{!account.name}"/>  
+ORG:<c:vcard Value="{!Account.Name}"/>
+TITLE:
+TEL;TYPE=WORK;VOICE:<c:vcard Value="{!account.Phone}"/>
+TEL;TYPE=WORK;FAX:<c:vcard Value="{!account.fax}"/>
+ADR;TYPE=WORK:;;<c:vcard Value="{!account.billingStreet}"/>;<c:vcard Value="{!account.billingCity}"/>;<c:vcard Value="{!account.billingState}"/>;<c:vcard Value="{!account.billingPostalCode}"/>;<c:vcard Value="{!account.billingCountry}"/>
+LABEL;TYPE=WORK:<c:vcard Value="{!account.billingStreet}"/><c:vcard Value="{!account.billingCity}"/><c:vcard Value="{!account.billingState}"/><c:vcard Value="{!account.billingPostalCode}"/><c:vcard Value="{!account.billingCountry}"/>
+ADR;TYPE=HOME:;;
+LABEL;TYPE=HOME:
+EMAIL;PREF;INTERNET:
+URL;WORK:<c:vcard Value="{!account.website}"/>
+NOTE: 
+<c:vcard Value="{!note}"/>
+END:VCARD
+</apex:page>

@@ -1,0 +1,8 @@
+The following customer has reached the 70% threshold of spending allowed under the Stark Law:
+
+{!Contact.Name}
+{!Account.Name}
+{!Contact.MailingAddress}
+
+Amount Spent: {!Contact.Cumulative_Expenses__c}
+Percentage of Allowed Amount: {!Contact.Stark_Expense_Percentage__c}

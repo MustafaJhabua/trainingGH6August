@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Deployment Package --></label>
+        <name>lightsideapps__Deployment_Package__c</name>
+        <relationshipLabel><!-- Deployment Package Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Display Metadata Type --></label>
+        <name>lightsideapps__Display_Metadata_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item Name --></label>
+        <name>lightsideapps__Item_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meta Data --></label>
+        <name>lightsideapps__Meta_Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- Metadata Type --></label>
+        <name>lightsideapps__Metadata_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object Id --></label>
+        <name>lightsideapps__Object_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Object --></label>
+        <name>lightsideapps__Parent_Object__c</name>
+    </fields>
+</CustomObjectTranslation>

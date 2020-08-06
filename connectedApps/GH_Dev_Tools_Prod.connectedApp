@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>warren@guardanthealth.com</contactEmail>
+    <contactPhone>5104099105</contactPhone>
+    <description>OAuth dedicated to Warren &amp; Kali</description>
+    <iconUrl>https://login.salesforce.com/logos/Custom/Flux_Primary/icon.svg</iconUrl>
+    <label>GH Dev Tools Prod</label>
+    <logoUrl>https://login.salesforce.com/logos/Custom/Flux_Primary/logo.png</logoUrl>
+    <oauthConfig>
+        <callbackUrl>https://guardanthealth.com</callbackUrl>
+        <consumerKey>3MVG9lJB4lV8F4SjfGf0sZm0U_LVSxJHPwfEPNfUjADuOpHfTEFFqLyOYjkCYNmlM6LhNrN8rTkmRVrdo2ciO</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <scopes>Api</scopes>
+    </oauthConfig>
+</ConnectedApp>

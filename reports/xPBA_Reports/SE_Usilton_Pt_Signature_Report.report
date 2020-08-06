@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Guardant_360_Sample__c.TRF_Signed__c:SUM/Guardant_360_Sample__c.Sample_Count__c:SUM</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% TRFs with Pt Signed</masterLabel>
+        <scale>1</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_20597026</developerName>
+        <masterLabel>PBA Status</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Guardant_360_Sample__c$Pt_Benefits_Authorization__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Signed</sourceValue>
+            </sourceValues>
+            <value>Signed</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Old TRF</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Missing TRF</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Unsigned</sourceValue>
+            </sourceValues>
+            <value>Unsigned</value>
+        </values>
+    </buckets>
+    <colorRanges>
+        <columnName>FORMULA1</columnName>
+        <highBreakpoint>100.0</highBreakpoint>
+        <highColor>#54C254</highColor>
+        <lowBreakpoint>50.0</lowBreakpoint>
+        <lowColor>#C25454</lowColor>
+        <midColor>#C2C254</midColor>
+    </colorRanges>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Guardant_360_Sample__c$Sample_Count__c</field>
+    </columns>
+    <columns>
+        <field>Guardant_360_Sample__c$Name</field>
+    </columns>
+    <columns>
+        <field>Guardant_360_Sample__c.Patients__r$Name</field>
+    </columns>
+    <description>TRFs since 12/1/17 with signed PBA, by AE</description>
+    <filter>
+        <criteriaItems>
+            <column>Guardant_360_Sample__c$Account_AE__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Danielle Usilton</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Month</dateGranularity>
+        <field>Guardant_360_Sample__c$Date_Received__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Guardant_360_Sample__c$TRF_Signed__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Guardant_360_Sample__c$Account__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Guardant_360_Sample__c$Contact__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>SE-Usilton Pt Signature Report</name>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>G360_Samples_with_Patients__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Guardant_360_Sample__c$Date_Received__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2017-12-01</startDate>
+    </timeFrameFilter>
+</Report>

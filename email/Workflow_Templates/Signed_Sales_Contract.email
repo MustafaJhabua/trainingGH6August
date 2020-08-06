@@ -1,0 +1,8 @@
+Hello, 
+
+Please note that a Sales Enterprise Contact is now active for {!Sales_Contract__c.SEC_Account__c}.
+
+Click here for more info: https://na29.salesforce.com/{!Sales_Contract__c.Id}
+
+Thank you, 
+Sales Operations

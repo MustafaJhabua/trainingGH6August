@@ -1,0 +1,94 @@
+<apex:page standardcontroller="lightsideapps__User_Management_Record__c" extensions="lightsideapps.UserManagementExtension" tabstyle="lightsideapps__User_Management_Record__c" >
+    
+    <style>
+        input:disabled { background: #dddddd; }
+    </style>
+
+    <apex:sectionHeader Title="User Management Record" Subtitle="{!if(lightsideapps__User_Management_Record__c.id==null,'New User Management Record',lightsideapps__User_Management_Record__c.Name)}"/>
+    <apex:pageMessages id="pageMessages" />
+    
+    <apex:variable value="{!lightsideapps__User_Management_Record__c}" var="UM" />
+
+    <apex:form >
+
+        <apex:pageblock Title="User Management Record Edit" mode="edit" >
+          
+            <apex:pageblockButtons > 
+                <apex:commandbutton action="{!SaveAction}" value="Save" />
+                <apex:commandbutton action="{!QuickSaveAction}" value="Quick Save" />
+                <apex:commandbutton action="{!Cancel}" value="Cancel" />
+            </apex:pageblockButtons>
+        
+            <apex:pageblockSection title="User Management Record Information" columns="2">
+                <apex:inputField value="{!UM.lightsideapps__User__c}" required="true" />
+                <apex:inputField value="{!UM.lightsideapps__Active__c}" />
+                <apex:inputField value="{!UM.lightsideapps__User_Deactivation_DateTime__c}" required="true" />
+            </apex:pageblockSection>
+            
+            <div style="margin-top:20px;" > </div>
+            <apex:pageblockSection title="User Data Management Selections" columns="1" id="UDMSTsection" >
+                <apex:commandButton value="Add User Management Selection" action="{!AddRow}" immediate="true" rendered="{!UDMSelectionTemplates.Size==0}" reRender="UDMSTsection,pageMessages" />
+                <apex:variable var="rowNum" value="{!1}" id="rowNum"/>
+                
+                <apex:pageblockTable value="{!UDMSelectionTemplates}" var="UDMST" id="UDMSTtable" rendered="{!UDMSelectionTemplates.size>=1}" >
+                    <apex:column headervalue="Change to User" >
+                        <apex:outputPanel >
+                            <apex:inputField value="{!UDMST.UDMS.lightsideapps__Change_to_User__c}" required="true" style="width:150px;" />
+                        </apex:outputPanel>
+                    </apex:column>
+                    <apex:column headervalue="UDM Template" >
+                    <apex:actionRegion >    
+                        <apex:inputField value="{!UDMST.UDMS.lightsideapps__User_Data_Management_Template__c}" >
+                            <apex:actionSupport event="onchange" action="{!UDMTemplateSelected}" rerender="ObjectPanel,UpdateFieldPanel,CriteriaPanel,DescriptionPanel" > 
+                                <apex:param name="rowNumber" value="{!rowNum-1}" assignTo="{!RowNumber}" />
+                            </apex:actionSupport>
+                        </apex:inputField>
+                    </apex:actionRegion>
+                    </apex:column>
+                    <apex:column headervalue="Object" >
+                    <apex:outputPanel id="ObjectPanel">
+                        <apex:outputField value="{!UDMST.UDMT.lightsideapps__Object__c}" />
+                    </apex:outputPanel>
+                    </apex:column>
+                    <apex:column headervalue="Field to Update" >
+                    <apex:outputPanel id="UpdateFieldPanel">
+                        <apex:outputField value="{!UDMST.UDMT.lightsideapps__User_Field_To_Update__c}" />
+                    </apex:outputPanel>
+                    </apex:column>
+                    <apex:column headervalue="Criteria" >
+                    <apex:outputPanel id="CriteriaPanel">   
+                        <apex:outputField value="{!UDMST.UDMT.lightsideapps__QueryString__c}" />
+                    </apex:outputPanel>
+                    </apex:column>
+                    <apex:column headervalue="Description" >
+                    <apex:outputPanel id="DescriptionPanel">
+                        <apex:outputField value="{!UDMST.UDMT.lightsideapps__Description__c}" />
+                    </apex:outputPanel>
+                    </apex:column>
+
+                    <apex:column style="width:45px;">
+                            <apex:commandLink immediate="true" title="remove" value="  remove"  action="{!RemoveRow}" rerender="UDMSTsection,pageMessages" > 
+                                <apex:param name="rowNumber"  value="{!rowNum}" assignTo="{!RowNumber}"/>
+                            </apex:commandLink>
+                        
+                    </apex:column>
+                    <apex:column style="width:25px;" >
+                        <apex:commandButton action="{!AddRow}" immediate="true" rendered="{!UDMSelectionTemplates.Size==rowNum}" reRender="UDMSTsection,pageMessages" image="{!URLFOR($Resource.lightsideapps__LightsideAppsResources,'images/plus_icon.png')}" style="border:none;background:none;padding:0px;vertical-align:middle;"/>
+                        <apex:variable var="rowNum" value="{!rowNum + 1}"/>
+                    </apex:column>
+                        
+
+                </apex:pageblockTable>
+                <apex:outputLink value="{!URLFOR($Action.lightsideapps__User_Data_Management_Template__c.New)}" Target="_blank" >
+                    Create New User Data Management Template
+                </apex:outputLink>
+                
+            </apex:pageblockSection>
+
+
+        </apex:pageblock>
+            
+    </apex:form>
+    
+    
+</apex:page>

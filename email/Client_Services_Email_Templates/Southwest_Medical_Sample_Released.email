@@ -1,0 +1,10 @@
+Hello
+Dr. {!Guardant_360_Sample__c.Contact__c}'s sample ({!Guardant_360_Sample__c.Name}) has been reported. 
+
+Account Name: {!Guardant_360_Sample__c.Account__c}
+Date Received: {!Guardant_360_Sample__c.Date_Received__c}
+Final Report Date: {!Guardant_360_Sample__c.Final_Report_Date__c}
+Alteration Detected: {!Guardant_360_Sample__c.Alteration__c}
+
+Regards, 
+Andrew

@@ -1,0 +1,25 @@
+Dear Dr. {!Match_Record__c.Ordering_Physician_Name__c},
+
+It was great speaking with you regarding your patient {!Match_Record__c.Patient_Initials__c} ({!Match_Record__c.Patient_Age__c} yo {!Match_Record__c.Patient_Gender__c} with {!Match_Record__c.Cancer_Type_Lower_Case__c}) who was found to have a BRCA1 alteration. To view your patient's report, click here: {!Match_Record__c.Portal_Link_For_MD_text__c}.
+
+Further to our discussion about your patient’s Guardant360 report, you expressed interest in exploring treatment with rucaparib in Clovis Oncology’s TRITON2 or TRITON3 trial based on the BRCA1 alteration detected. 
+
+The closest TRITON2 and TRITON3 site is at {!Match_Record__c.Closest_Trial_Site__c} in {!Match_Record__c.Closest_Trial_Site_City__c}, {!Match_Record__c.Closest_Trial_Site_State__c} with Dr. {PI Full Name}. More details about TRITON2 and TRITON3, can be found <a href="https://studypages.com/guardant/trials/{!Match_Record__c.Match_Key__c}">here.</a>
+
+The closest TRITON2 site is at {!Match_Record__c.Closest_Trial_Site__c} in {!Match_Record__c.Closest_Trial_Site_City__c}, {!Match_Record__c.Closest_Trial_Site_State__c} with Dr. {PI Full Name}. More details about TRITON2, can be found <a href="https://studypages.com/guardant/trials/{!Match_Record__c.Match_Key__c}/2">here.</a>
+
+The closest TRITON3 site is at {!Match_Record__c.Closest_Trial_Site__c} in, {!Match_Record__c.Closest_Trial_Site_City__c}, {!Match_Record__c.Closest_Trial_Site_State__c}with Dr. {PI Full Name}. More details about TRITON3, can be found <a href="https://studypages.com/guardant/trials/{!Match_Record__c.Match_Key__c}/1">here.</a>
+
+Please let us know if we can be helpful in any way or if you would like us to directly connect you with Dr. {PI Full Name} so they may answer additional questions regarding eligibility, inclusion/criteria, etc., otherwise we’ll plan to follow-up in a few weeks.
+
+Kind Regards,
+{!User.Name}, {!User.Degree__c} 
+{!User.Title}
+Guardant Health, Inc.
+On behalf of the Clinical Trial Advisors program
+
+Guardant Health Match Key:{!Match_Record__c.Match_Key__c}
+
+Guardant Health partners with the clinical trial sponsor to conduct patient referral activities.
+
+This message is intended solely for the designated recipient(s). It may contain confidential or proprietary information and may be subject to attorney-client privilege or other confidentiality protections. If you are not a designated recipient you may not review, copy or distribute this message. If you have received this in error, please notify the sender by replying to this email and delete this message. Thank you. Ref: {!Match_Record__c.Id}

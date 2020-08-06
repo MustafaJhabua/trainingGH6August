@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>021519 updated and added yuzu links 02/12/19 Maxim updated document. 01/29/19 Maxim created document.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>2A13B_InformationalEmail_CLO338_V1_021519</name>
+    <style>none</style>
+    <subject>Re: Follow-up regarding your patient {!Match_Record__c.Patient_Initials__c}’s Guardant360 results</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

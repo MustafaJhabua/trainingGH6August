@@ -1,0 +1,15 @@
+Dear Dr. {!Contact.LastName},
+
+This email provides additional information in regard to a targetable genomic alteration found in your recently reported lung cancer case, {!Guardant_360_Sample__c.Name}. An ALK resistance mutation was identified in this sample, (LEAVE BLANK OR ENTER MANUALLY). Progression on an ALK inhibitor may require a change in choice of inhibitor. Guideline-recommended agents at progression include alectinib, ceritinib and brigatinib.
+
+Click to view your report in our secure online portal: {!Guardant_360_Sample__c.Portal_Link_for_MD__c}.
+
+The landscape of ALK resistance mutation sensitivities continues to evolve. Please be in touch should you be interested in additional references and resources to support your preauthorization request for targeted drug therapy approval. You may reach medical affairs by replying to this email or calling 1-855-698-8887.
+
+Sincerely,
+The Medical Affairs Team
+Guardant Health, Inc.
+ 
+This email is intended for informational purposes only and does not constitute an official report of test results. Please see the Guardant360 report of record for actual analytical results.
+
+To opt out of future emails, please reply to this email with “opt out” in the subject line.

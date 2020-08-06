@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Alerts Pharma BD team that a new sample has been received.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Pharma Sample Received</name>
+    <style>none</style>
+    <subject>{!Guardant_360_Sample__c.LIMS_Project_ID__c}: Sample {!Guardant_360_Sample__c.Name} received from {!Guardant_360_Sample__c.Account__c}</subject>
+    <textOnly>Pharma Sample Received
+
+Hello! We received sample {!Guardant_360_Sample__c.Name} from {!Guardant_360_Sample__c.Account__c} today.
+
+https://na66.salesforce.com/{!Guardant_360_Sample__c.Id}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

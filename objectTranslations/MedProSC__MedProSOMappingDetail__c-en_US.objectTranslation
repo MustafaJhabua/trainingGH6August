@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Specifies that this MedPro ID data represents a date [MM/DD/YYYY] format which should be store into a SF date-typed field --></help>
+        <label><!-- Convert Data to Date --></label>
+        <name>MedProSC__ConvertDataToDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Wether or not this field mapping results in a string conversion which converts a field which is all Caps to a Title Capitalization scheme. --></help>
+        <label><!-- Convert To Mixed Case --></label>
+        <name>MedProSC__Convert_To_Mixed_Case__c</name>
+    </fields>
+    <fields>
+        <help><!-- The default value to use for this data mapping&apos;s field value --></help>
+        <label><!-- Default Value --></label>
+        <name>MedProSC__DefaultValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dynamic Field Mapping --></label>
+        <name>MedProSC__Dynamic_Field_Mapping__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies if this data mapping element&apos;s field value is populated with a SF Timestamp value --></help>
+        <label><!-- Auto TimeStamp Field --></label>
+        <name>MedProSC__IsTimeStampField__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies if this data mapping element is active/inactive --></help>
+        <label><!-- Is Active --></label>
+        <name>MedProSC__Is_Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies if this data mapping element&apos;s field value is populated with a SF checkbox value --></help>
+        <label><!-- Is Checkbox Field --></label>
+        <name>MedProSC__Is_Checkbox_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies if this data mapping element&apos;s field value is populated with a SF Date value --></help>
+        <label><!-- Auto Date Field --></label>
+        <name>MedProSC__Is_Date_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies that this data mapping element&apos;s field value represents the business-unique value for the associated record --></help>
+        <label><!-- Is External ID Field --></label>
+        <name>MedProSC__Is_ExternalIDField__c</name>
+    </fields>
+    <fields>
+        <help><!-- Will insert this field upon record creation --></help>
+        <label><!-- Is Insert --></label>
+        <name>MedProSC__Is_Insert__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Mapping Key --></label>
+        <name>MedProSC__Is_Mapping_Key__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies that this data mapping element will convert a string value to a numeric value --></help>
+        <label><!-- Is Numeric Data Field --></label>
+        <name>MedProSC__Is_Numeric_Data_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Passthrough Data --></label>
+        <name>MedProSC__Is_Passthrough_Data__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies that this data mapping element uses a SF RecordType value to populate its field value --></help>
+        <label><!-- Is RecordType Field --></label>
+        <name>MedProSC__Is_RecordTypeField__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies that this data mapping element&apos;s field value is considered a required field --></help>
+        <label><!-- Is Required --></label>
+        <name>MedProSC__Is_Required__c</name>
+    </fields>
+    <fields>
+        <help><!-- Determines if this field will be updated as a part of the mass update feature --></help>
+        <label><!-- Is Update --></label>
+        <name>MedProSC__Is_Update__c</name>
+    </fields>
+    <fields>
+        <help><!-- The associated MedPro Data Mapping for this data mapping detail --></help>
+        <label><!-- Data Mapping Name --></label>
+        <name>MedProSC__MedProSOMapping__c</name>
+        <relationshipLabel><!-- MedPro Data Mapping Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The name of the field from MedPro which will populate this data mapping element&apos;s field value --></help>
+        <label><!-- Source Field Name --></label>
+        <name>MedProSC__SourceFieldName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies that this data mapping element uses a default value to populate its field value --></help>
+        <label><!-- Uses Default Value --></label>
+        <name>MedProSC__UsesDefaultValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value Mapping Enabled --></label>
+        <name>MedProSC__Value_Mapping_Enabled__c</name>
+    </fields>
+</CustomObjectTranslation>

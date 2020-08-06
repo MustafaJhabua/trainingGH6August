@@ -1,0 +1,42 @@
+<template>    
+    <div>
+        <template if:true={logTaskShow}>
+            <c-log-task who-id={recordId} contact-type={sectionTitle} ontaskaddedsuccessfully={hideLogTaskWindow} oncancelclick={hideLogTaskWindow}></c-log-task>
+        </template>
+
+        <template if:false={logTaskShow}>
+            <div class="slds-section slds-is-open">
+                <h3 class="slds-section__title slds-theme_shade">
+                    <span class="slds-truncate slds-p-horizontal_small" title="Section Title">{sectionTitle}</span>
+                </h3>
+                <lightning-button variant="brand" label="Log Task" title="Log Task" onclick={openLogTaskWindow} class="slds-m-left_x-small slds-float_right"></lightning-button>
+                <div>
+                    <pre>
+                        {currentPageReference}
+                    </pre>
+                </div>
+                <div aria-hidden="false" class="slds-section__content">
+                        <div class="slds-form-element slds-form-element_readonly">
+                            <span class="slds-form-element__label">Account Name</span>
+                            <div class="slds-form-element__control">
+                                <div class="slds-form-element__static">{updatedAccountName}</div>
+                                <!-- <div class="slds-form-element__static">Test Account Name</div> -->
+                            </div>
+                        </div>
+                    <lightning-record-form
+                        record-id={recordId}
+                        fields={fields}
+                        object-api-name="Contact"
+                        onsuccess={handleSuccess}
+                        onerror={handleError}
+                    >
+                    </lightning-record-form>
+                </div>
+            </div>
+    
+            <template if:true={isPhysician}>
+                <c-detail-page-section record-id={recordId} onselected={selectedCareTeamMember} onsave={modalSaved}></c-detail-page-section>
+            </template>
+        </template>
+    </div>
+</template>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Guardant_360_Sample__c.Contact__c.Contact_Counter__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel># of New Oncologists</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_55923750</developerName>
+        <masterLabel>Acct Class</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Guardant_360_Sample__c$Account__c.Industry</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <value>Academic</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Clinical Trial</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Drug Developer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Group Purchasing Organization</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>International Oncologist</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Master Account</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pharmaceutical Research</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Insurance</sourceValue>
+            </sourceValues>
+            <value>Other</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Guardant_360_Sample__c$Contact__c.Name</field>
+    </columns>
+    <description>Marketing</description>
+    <filter>
+        <criteriaItems>
+            <column>Guardant_360_Sample__c$Account__c.Account_Type__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Clinical Account US</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Quarter</dateGranularity>
+        <field>Guardant_360_Sample__c$Date_Received__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_55923750</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Guardant_360_Sample__c$Account__c.Owner</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Samples by AE by Class by QTR</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Guardant_360_Samples_w_related_Accounts_Contacts__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Guardant_360_Sample__c$Date_Received__c</dateColumn>
+        <interval>INTERVAL_CURY</interval>
+    </timeFrameFilter>
+</Report>

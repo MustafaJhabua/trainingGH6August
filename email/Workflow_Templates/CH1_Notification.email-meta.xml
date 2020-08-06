@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Used to notify Sales, Marketing, MA of &quot;CH1&quot; Samples</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>GH_Logo_Small</letterhead>
+    <name>CH1 Notification</name>
+    <style>freeForm</style>
+    <subject>Guardant360 Challenge Sample Received Received || {!Guardant_360_Sample__c.Name}</subject>
+    <textOnly>Hello
+This is to inform you that {!Guardant_360_Sample__c.Name} has been submitted by Dr. {!Guardant_360_Sample__c.Contact__c} from {!Guardant_360_Sample__c.Account__c}. This sample is part of the Guardant Challenge Program. More details below:
+
+Account: {!Guardant_360_Sample__c.Account__c}
+Physician: {!Guardant_360_Sample__c.Contact__c}
+Date Received: {!Guardant_360_Sample__c.Date_Received__c}
+Total Guardant Challenge Samples submitted by Physician: {!Contact.Total_Promo_Code__c}
+
+Thanks
+Ruben Smith</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

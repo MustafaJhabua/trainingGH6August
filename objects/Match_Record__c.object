@@ -1,0 +1,3852 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Match_Record_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>AE_Owner__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>AE Owner</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Match_Records</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Account_Classification__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Ordering_Practice_Name__r.Industry)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Ordering Practice Account Classification</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Do_Not_Send_IOE__c</fullName>
+        <externalId>false</externalId>
+        <formula>Ordering_Practice_Name__r.Do_not_send_IOE__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Inherited from Account&apos;s &apos;Do Not Send IOE&apos; field.</inlineHelpText>
+        <label>Account Do Not Send IOE</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Alteration_Map__c</fullName>
+        <description>Hidden field for Webmerge Mappings</description>
+        <externalId>false</externalId>
+        <formula>IF(CONTAINS(Qualifying_Target_Gene__c, &apos;MET&apos;), &quot;a MET&quot;,
+ IF(CONTAINS(Qualifying_Target_Gene__c, &apos;RET&apos;), &quot;a RET&quot;,
+  IF(CONTAINS(Qualifying_Target_Gene__c, &apos;NTRK1&apos;), &quot;an NTRK1&quot;,
+   IF(CONTAINS(Qualifying_Target_Gene__c, &apos;PDGFRA&apos;), &quot;a PDGFRA&quot;,
+    IF(CONTAINS(Qualifying_Target_Gene__c, &apos;KIT&apos;), &quot;a KIT&quot;, 
+     IF(CONTAINS(Qualifying_Target_Gene__c, &apos;ALK&apos;), &quot;an ALK&quot;,
+      IF(CONTAINS(Qualifying_Target_Gene__c, &apos;ROS&apos;), &quot;a ROS1&quot;,&quot;a qualifying alteration&quot;
+      )
+     )
+    )
+   )
+  )
+ )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Alteration Map</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Assignee__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Assignee</label>
+        <lookupFilter>
+            <active>false</active>
+            <errorMessage>Must be Force-Biopharma CTA or Force-Biopharma.</errorMessage>
+            <filterItems>
+                <field>User.Profile.Name</field>
+                <operation>startsWith</operation>
+                <value>Force-Biopharma</value>
+            </filterItems>
+            <infoMessage>Must be Force-Biopharma CTA or Force-Biopharma.</infoMessage>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Match_Records1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Batch_Check__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Internal Only</inlineHelpText>
+        <label>Batch Check</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Batch_Push__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Batch Push</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CTA_Contact_Owner__c</fullName>
+        <externalId>false</externalId>
+        <formula>Ordering_Physician_Name__r.CTA_Contact_Name__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>CTA Contact Owner</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CTA_Owner__c</fullName>
+        <externalId>false</externalId>
+        <formula>Owner:User.Username</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>CTA Owner</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cancer_Class__c</fullName>
+        <externalId>false</externalId>
+        <formula>Sample_ID__r.Cancer_Class__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Cancer Class</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cancer_Stage__c</fullName>
+        <externalId>false</externalId>
+        <formula>Sample_ID__r.Cancer_Stage__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Cancer Stage</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cancer_Type_Lower_Case__c</fullName>
+        <externalId>false</externalId>
+        <formula>LOWER(Sample_ID__r.Cancer_Type__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Hidden field used for email template</inlineHelpText>
+        <label>Cancer Type Lower Case</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cancer_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>Sample_ID__r.Cancer_Type__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Cancer Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Client_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Client Notes</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Closed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Closed?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Closest_Trial_Site2__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Closest Trial Site</label>
+        <referenceTo>Study_Site__c</referenceTo>
+        <relationshipLabel>Match Records (Closest Trial Site)</relationshipLabel>
+        <relationshipName>Match_Records2</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Closest_Trial_Site_City__c</fullName>
+        <externalId>false</externalId>
+        <label>Closest Trial Site City</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Closest_Trial_Site_State__c</fullName>
+        <externalId>false</externalId>
+        <label>Closest Trial Site State</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Closest_Trial_Site_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Closest_Trial_Site2__r.Trial_Site_Type__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Derived from Trial Site Type field of Closest Trial Site</inlineHelpText>
+        <label>Closest Trial Site Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Closest_Trial_Site__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Closest Trial Site (Account)</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Match Records (Closest Trial Site)</relationshipLabel>
+        <relationshipName>Match_Records2</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Closest_Trial_Sites_List__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;https://portal.guardanthealth.com/closest_sites/&quot;  &amp;  Match_ID__c ,&quot;https://portal.guardanthealth.com/closest_sites/&quot; &amp;  Match_ID__c  )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Closest Trial Sites List</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Competing_Trials__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Internal Only</inlineHelpText>
+        <label>Competing Trials?</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Connected_Trial_Site_Address__c</fullName>
+        <description>Getting the data from Trial site object on to the Match Record object.</description>
+        <externalId>false</externalId>
+        <formula>Connected_Trial_Site__r.Address__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Connected Trial Site Address</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Connected_Trial_Site_City__c</fullName>
+        <description>Getting the data from Trial site object to the Match Record object.</description>
+        <externalId>false</externalId>
+        <formula>Connected_Trial_Site__r.City__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Connected Trial Site City</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Connected_Trial_Site_Country__c</fullName>
+        <externalId>false</externalId>
+        <formula>Connected_Trial_Site__r.Country__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Connected Trial Site Country</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Connected_Trial_Site_Name__c</fullName>
+        <description>Getting the data from Trial site object on to the Match Record object.</description>
+        <externalId>false</externalId>
+        <formula>Connected_Trial_Site__r.Trial_Site_Name__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Connected Trial Site Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Connected_Trial_Site_State__c</fullName>
+        <externalId>false</externalId>
+        <formula>Connected_Trial_Site__r.State__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Connected Trial Site State</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Connected_Trial_Site_Zip_Code__c</fullName>
+        <description>Getting data from Trial Site object on to the Match record object.</description>
+        <externalId>false</externalId>
+        <formula>Connected_Trial_Site__r.Zip_Code__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Connected Trial Site Zip Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Connected_Trial_Site__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Lookup to trial sites from the same trial.</inlineHelpText>
+        <label>Connected Trial Site</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Please select a trial site for this trial.</errorMessage>
+            <filterItems>
+                <field>$Source.Trial_Name__c</field>
+                <operation>equals</operation>
+                <valueField>Study_Site__c.Study__r.Id</valueField>
+            </filterItems>
+            <infoMessage>Use the Search String &apos;*TS-*&apos; to show all trial sites for this match&apos;s trial</infoMessage>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Study_Site__c</referenceTo>
+        <relationshipLabel>Match Records Connected to this Trial Site</relationshipLabel>
+        <relationshipName>Match_Records1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Connected_Trial_Site_account__c</fullName>
+        <externalId>false</externalId>
+        <formula>Connected_Trial_Site__r.Site__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Connected Trial Site (Account)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Achieved__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Reached Provider?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Contact_Attempted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>CTA Contact Attempted?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Contact_Do_Not_Send_IOe__c</fullName>
+        <externalId>false</externalId>
+        <formula>Ordering_Physician_Name__r.Do_not_send_IOE__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Inherited from Ordering MD&apos;s &apos;Do Not Send IOE&apos; email</inlineHelpText>
+        <label>Contact Do Not Send IOE</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Contact_Update_Timer__c</fullName>
+        <externalId>false</externalId>
+        <label>Contact Update Timer</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Current_Month__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(MONTH(TODAY()),
+1,&apos;January&apos;,
+2,&apos;February&apos;,
+3,&apos;March&apos;,
+4,&apos;April&apos;,
+5,&apos;May&apos;,
+6,&apos;June&apos;,
+7,&apos;July&apos;,
+8,&apos;August&apos;,
+9,&apos;September&apos;,
+10,&apos;October&apos;,
+11,&apos;November&apos;,
+12,&apos;December&apos;,
+&apos;???&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Current Month</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Custom_Signature__c</fullName>
+        <externalId>false</externalId>
+        <label>Custom Signature</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Generic Signature</fullName>
+                    <default>true</default>
+                    <label>Generic Signature</label>
+                </value>
+                <value>
+                    <fullName>Tim Schmidt, MD, PhD</fullName>
+                    <default>false</default>
+                    <label>Tim Schmidt, MD, PhD</label>
+                </value>
+                <value>
+                    <fullName>Jason Zhu, MD</fullName>
+                    <default>false</default>
+                    <label>Jason Zhu, MD</label>
+                </value>
+                <value>
+                    <fullName>Maya Kotas, MD, PhD</fullName>
+                    <default>false</default>
+                    <label>Maya Kotas, MD, PhD</label>
+                </value>
+                <value>
+                    <fullName>Shawn Becker, MD</fullName>
+                    <default>false</default>
+                    <label>Shawn Becker, MD</label>
+                </value>
+                <value>
+                    <fullName>Rick Lanman, MD</fullName>
+                    <default>false</default>
+                    <label>Rick Lanman, MD</label>
+                </value>
+                <value>
+                    <fullName>Sam Sun, MD</fullName>
+                    <default>false</default>
+                    <label>Sam Sun, MD</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>DO_NOT_CONTACT__c</fullName>
+        <externalId>false</externalId>
+        <formula>Sample_ID__r.Do_not_contact__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Internal Only</inlineHelpText>
+        <label>DO NOT CONTACT</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Date_Closed__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Closed</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Date_Contact_Achieved__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Reached Provider</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Contact_Attempted__c</fullName>
+        <externalId>false</externalId>
+        <label>Date CTA Contact Attempted</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Enrolled__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Enrolled/Prescribed</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Date_Identified__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Identified</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Date_Ineligible__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Ineligible</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Date_Last_Ditch_Email_Sent__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Last Ditch Email Sent</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Outreach_Email_Read__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Outreach Email Read</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Outreach_Email_Sent__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Outreach Email Sent</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_PTC_Alert_Sent__c</fullName>
+        <externalId>false</externalId>
+        <label>Date PTC Alert Sent</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Pharma_Permission_to_Connect__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Pharma Permission to Connect</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Referral_Letter_Sent__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Informational Letter Sent</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Referred__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Informed</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Date_Replied_to_Last_Ditch_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Replied to Last Ditch Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Replied_to_Outreach_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Replied to Outreach Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Screened__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Screened</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Show_to_Pharma__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Show to Customer</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_of_1st_Contact__c</fullName>
+        <externalId>false</externalId>
+        <label>Date of 1st Contact</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Date_of_Failed_Screening__c</fullName>
+        <externalId>false</externalId>
+        <label>Date of Failed Screening</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Date_of_Last_Contact__c</fullName>
+        <externalId>false</externalId>
+        <label>Date of Last Contact</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Days_to_Send_Outreach_Email__c</fullName>
+        <externalId>false</externalId>
+        <formula>Date_Outreach_Email_Sent__c  - Final_Report_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days to Send Outreach Email</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Do_Not_Contact_Override__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked, this overrides &apos;Do Not Contact&apos; = YES setting on the Ordering MD</inlineHelpText>
+        <label>Do Not Contact Override</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Do_not_send_IOE__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This bypasses the Initial Outreach Processes, &apos;Match: Outreach Email&apos; and &apos;Outreach Email Auto Send&apos;.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Checked means Do Not Send Initial Outreach Email.</inlineHelpText>
+        <label>Do not send IOE</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Documents__c</fullName>
+        <externalId>false</externalId>
+        <label>Documents</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Enrolled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Enrolled/Prescribed?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Enrollment_Status_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Enrollment Status Notes</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Enrollment_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Referral Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>false</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>Guardant Outreach</fullName>
+                    <default>false</default>
+                    <label>Guardant Outreach</label>
+                </value>
+                <value>
+                    <fullName>Pharma Outreach</fullName>
+                    <default>false</default>
+                    <label>Pharma/Site Outreach</label>
+                </value>
+                <value>
+                    <fullName>Enrolled</fullName>
+                    <default>false</default>
+                    <label>Enrolled/Prescribed</label>
+                </value>
+                <value>
+                    <fullName>Closed</fullName>
+                    <default>false</default>
+                    <label>Closed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Enrollment_Sub_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Referral Sub-Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Enrollment_Status__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pending Pharma</fullName>
+                    <default>false</default>
+                    <label>Pending Pharma</label>
+                </value>
+                <value>
+                    <fullName>Accepted by Pharma</fullName>
+                    <default>false</default>
+                    <label>Accepted by Pharma</label>
+                </value>
+                <value>
+                    <fullName>Emailed</fullName>
+                    <default>false</default>
+                    <label>Emailed</label>
+                </value>
+                <value>
+                    <fullName>Ready For Outreach</fullName>
+                    <default>false</default>
+                    <label>Ready For Outreach</label>
+                </value>
+                <value>
+                    <fullName>No Answer</fullName>
+                    <default>false</default>
+                    <label>No Answer</label>
+                </value>
+                <value>
+                    <fullName>Left Message</fullName>
+                    <default>false</default>
+                    <label>Left Message</label>
+                </value>
+                <value>
+                    <fullName>Future Consideration</fullName>
+                    <default>false</default>
+                    <label>Future Consideration</label>
+                </value>
+                <value>
+                    <fullName>Ineligible</fullName>
+                    <default>false</default>
+                    <label>Ineligible</label>
+                </value>
+                <value>
+                    <fullName>Via Match Program</fullName>
+                    <default>false</default>
+                    <label>Via Match Program</label>
+                </value>
+                <value>
+                    <fullName>Patient Lost to Follow Up</fullName>
+                    <default>false</default>
+                    <label>Patient Lost to Follow Up</label>
+                </value>
+                <value>
+                    <fullName>Provider Refusal</fullName>
+                    <default>false</default>
+                    <label>Provider Refusal</label>
+                </value>
+                <value>
+                    <fullName>Patient Refusal</fullName>
+                    <default>false</default>
+                    <label>Patient Refusal</label>
+                </value>
+                <value>
+                    <fullName>No Response</fullName>
+                    <default>false</default>
+                    <label>No Response</label>
+                </value>
+                <value>
+                    <fullName>Trial Change</fullName>
+                    <default>false</default>
+                    <label>Trial Change</label>
+                </value>
+                <value>
+                    <fullName>Rejected by Pharma</fullName>
+                    <default>false</default>
+                    <label>Rejected by Pharma</label>
+                </value>
+                <value>
+                    <fullName>Newer Test Results Available</fullName>
+                    <default>false</default>
+                    <label>Newer Test Results Available</label>
+                </value>
+                <value>
+                    <fullName>Exhausted Follow-Up</fullName>
+                    <default>false</default>
+                    <label>Exhausted Follow-Up</label>
+                </value>
+                <value>
+                    <fullName>New</fullName>
+                    <default>false</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Pending GH Review</fullName>
+                    <default>false</default>
+                    <label>Pending GH Review</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Guardant Outreach</controllingFieldValue>
+                <valueName>No Answer</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Guardant Outreach</controllingFieldValue>
+                <valueName>Left Message</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Guardant Outreach</controllingFieldValue>
+                <valueName>Future Consideration</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pharma Outreach</controllingFieldValue>
+                <valueName>New</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pharma Outreach</controllingFieldValue>
+                <valueName>In Progress</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Closed</controllingFieldValue>
+                <valueName>Ineligible</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Closed</controllingFieldValue>
+                <valueName>Patient Lost to Follow Up</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Closed</controllingFieldValue>
+                <valueName>Provider Refusal</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Closed</controllingFieldValue>
+                <valueName>Patient Refusal</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Closed</controllingFieldValue>
+                <valueName>No Response</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Closed</controllingFieldValue>
+                <valueName>Trial Change</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Closed</controllingFieldValue>
+                <valueName>Rejected by Pharma</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Closed</controllingFieldValue>
+                <valueName>Newer Test Results Available</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Closed</controllingFieldValue>
+                <valueName>Exhausted Follow-Up</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Closed</controllingFieldValue>
+                <controllingFieldValue>Enrolled</controllingFieldValue>
+                <valueName>Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Enrolled</controllingFieldValue>
+                <valueName>Via Match Program</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>New</controllingFieldValue>
+                <valueName>Pending Pharma</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>New</controllingFieldValue>
+                <valueName>Accepted by Pharma</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>New</controllingFieldValue>
+                <valueName>Emailed</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>New</controllingFieldValue>
+                <valueName>Ready For Outreach</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>New</controllingFieldValue>
+                <valueName>Pending GH Review</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ExtNote2__c</fullName>
+        <description>Hidden field to record previous values of External Notes</description>
+        <externalId>false</externalId>
+        <label>ExtNote2</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>External_Alert_Email_1__c</fullName>
+        <description>ENT-3521</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Email Address derived from the Trial</inlineHelpText>
+        <label>External Alert Email 1</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>External_Alert_Email_2__c</fullName>
+        <externalId>false</externalId>
+        <label>External Alert Email 2</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>External_Alert_Email_3__c</fullName>
+        <externalId>false</externalId>
+        <label>External Alert Email 3</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>External_Alert_Email_4__c</fullName>
+        <externalId>false</externalId>
+        <label>External Alert Email 4</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Final_Report_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>Sample_ID__r.Final_Report_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Internal Only</inlineHelpText>
+        <label>Final Report Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Follow_Up_Reminder__c</fullName>
+        <externalId>false</externalId>
+        <label>Follow-Up Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Guardant_Notes_1__c</fullName>
+        <description>Used to record changes to field Guardant Notes and resolve discrepancies when that field is overwritten by Portal DB</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field records previous versions of field Guardant Notes to resolve discrepancies when that field is overwritten by Portal DB</inlineHelpText>
+        <label>Guardant Notes 1</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>9</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Guardant_Notes_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Guardant Notes 2</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Guardant_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>External Guardant Notes</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Ineligible__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Ineligible?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IntNote2__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Hidden field to record previous values of Internal Notes</inlineHelpText>
+        <label>IntNote2</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>International_Sample__c</fullName>
+        <externalId>false</externalId>
+        <formula>AND(
+Ordering_Practice_Name__r.BillingCountry&lt;&gt;&quot;US&quot;,
+Ordering_Practice_Name__r.BillingCountry&lt;&gt;&quot;United States&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>International Sample</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LIMS_Patient_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Patient_ID__r.LIMS_Patient_Record_ID__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>LIMS Patient ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LIMS_Project_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Sample_ID__r.LIMS_Project_ID__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>LIMS Project ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Contact_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Contact Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Outbound Call</fullName>
+                    <default>false</default>
+                    <label>Outbound Call</label>
+                </value>
+                <value>
+                    <fullName>Inbound Call</fullName>
+                    <default>false</default>
+                    <label>Inbound Call</label>
+                </value>
+                <value>
+                    <fullName>Email</fullName>
+                    <default>false</default>
+                    <label>Email</label>
+                </value>
+                <value>
+                    <fullName>Fax</fullName>
+                    <default>false</default>
+                    <label>Fax</label>
+                </value>
+                <value>
+                    <fullName>Call</fullName>
+                    <default>false</default>
+                    <label>Call</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Last_Ditch_Email_Sent__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Last Ditch Email Sent?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Last_Match_API_Update__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Match API Update</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Last_Modified_by_BioPharma__c</fullName>
+        <description>Checks if last modified user was Biopharma or UE profiles. Workaround to get process to work.</description>
+        <externalId>false</externalId>
+        <formula>CASE(LastModifiedBy.ProfileId, &apos;00e34000001CPzp&apos;, 1, &apos;00e340000015RVt&apos;, 1, &apos;00e340000011vJr&apos;, 1,0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Last Modified by BioPharma</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MD_Email__c</fullName>
+        <description>Hidden field to pass through to Outreach Activity</description>
+        <externalId>false</externalId>
+        <formula>Ordering_Physician_Name__r.Email</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>MD Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MD_First_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Ordering_Physician_Name__r.FirstName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>MD First Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MD_Last_Contacted_by__c</fullName>
+        <externalId>false</externalId>
+        <formula>Ordering_Physician_Name__r.Last_Contacted_by__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Who last contacted the MD regarding any match, not necessarily this one.</inlineHelpText>
+        <label>MD Last Contacted by</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MD_Last_Name__c</fullName>
+        <description>Hidden field to allow non-lookup actions</description>
+        <externalId>false</externalId>
+        <formula>Ordering_Physician_Name__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>MD Last Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MD_Name__c</fullName>
+        <description>Hidden field to allow non-lookup actions</description>
+        <externalId>false</externalId>
+        <formula>Ordering_Physician_Name__r.Full_Name__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>MD Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MD_Next_Follow_Up__c</fullName>
+        <externalId>false</externalId>
+        <formula>Ordering_Physician_Name__r.Next_Follow_up_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This is the date we are next scheduled to follow up with this MD</inlineHelpText>
+        <label>MD Next Follow-Up</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>MD_last_contacted_on__c</fullName>
+        <externalId>false</externalId>
+        <formula>Ordering_Physician_Name__r.Date_Last_Contacted__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Date the MD was contacted regarding any match, not just this one.</inlineHelpText>
+        <label>MD Last Contacted on</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Match_API_Error__c</fullName>
+        <externalId>false</externalId>
+        <label>Match API Error</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Match_Algorithm_Version_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Match Algorithm Version Number</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Match_ID__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <externalId>false</externalId>
+        <inlineHelpText>Internal Only</inlineHelpText>
+        <label>Match ID</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Match_Key__c</fullName>
+        <externalId>false</externalId>
+        <label>Match Key</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Match_Priority__c</fullName>
+        <externalId>false</externalId>
+        <label>Match Priority</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>None</fullName>
+                    <default>false</default>
+                    <label>None</label>
+                </value>
+                <value>
+                    <fullName>Low</fullName>
+                    <default>false</default>
+                    <label>Low</label>
+                </value>
+                <value>
+                    <fullName>Medium</fullName>
+                    <default>false</default>
+                    <label>Medium</label>
+                </value>
+                <value>
+                    <fullName>High</fullName>
+                    <default>false</default>
+                    <label>High</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>N/A</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Match_Record_Notes__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Internal Only</inlineHelpText>
+        <label>Internal Notes (GH Use Only)</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Match_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Match Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>true</default>
+                    <label>Pending</label>
+                </value>
+                <value>
+                    <fullName>Accepted</fullName>
+                    <default>false</default>
+                    <label>Accepted</label>
+                </value>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                    <label>Rejected</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>NCCN_NCI__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF (  Ordering_Physician_Name__r.Account.NCCN__c  = TRUE, &quot;NCI&quot;,
+ IF (  Ordering_Physician_Name__r.Account.NCI_Satellite__c  = TRUE, &quot;NCCN&quot;,
+  IF ( AND (Ordering_Physician_Name__r.Account.NCI_Satellite__c = TRUE, Ordering_Physician_Name__r.Account.NCCN__c = TRUE), &quot;NCI and NCCN&quot;, NULL )))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Internal Only</inlineHelpText>
+        <label>NCCN/NCI</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Notes_About_MD_2__c</fullName>
+        <description>Hidden field to allow updating from Outreach Activity</description>
+        <externalId>false</externalId>
+        <label>Notes About MD 2</label>
+        <length>300</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Notes_About_MD__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Internal Only. Update this field on the &apos;Ordering Physician&apos; record.</inlineHelpText>
+        <label>Notes About MD (GH Use Only)</label>
+        <length>4096</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Ordering_MD_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Ordering_Physician_Name__r.Case_Safe_Contact_ID__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Ordering MD ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ordering_Physician_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Looks up to Contact</inlineHelpText>
+        <label>Ordering Physician Name</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Match Records (Ordering Physician Name)</relationshipLabel>
+        <relationshipName>Match_Records</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Ordering_Practice_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Internal Only</inlineHelpText>
+        <label>Ordering Practice Name</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Match Records for this Practice</relationshipLabel>
+        <relationshipName>Match_Records1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Ordering_Practice_Referrals_POC__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Internal Only</inlineHelpText>
+        <label>Ordering Practice Referrals POC</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Match Records (Ordering Practice Referrals POC)</relationshipLabel>
+        <relationshipName>Match_Records1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Ordering_Practice_Site_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Ordering Practice Site Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Trial Site</fullName>
+                    <default>false</default>
+                    <label>Trial Site</label>
+                </value>
+                <value>
+                    <fullName>CRO</fullName>
+                    <default>false</default>
+                    <label>CRO</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Ordering_Practice_State__c</fullName>
+        <externalId>false</externalId>
+        <formula>Sample_ID__r.Contact__r.Account.BillingState</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Ordering Practice State</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Outreach_Count__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of Outreach Activities where Contact Type is not null</inlineHelpText>
+        <label>Outreach Count</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Outreach_Email_Read__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Outreach Email Read?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Outreach_Email_Sent__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Outreach Email Sent?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PI__c</fullName>
+        <externalId>false</externalId>
+        <formula>Ordering_Physician_Name__r.PI__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Internal Only</inlineHelpText>
+        <label>PI?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PODs__c</fullName>
+        <externalId>false</externalId>
+        <label>PODs</label>
+        <summaryForeignKey>POD__c.Match_Record__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>PTC_Connection_Preference__c</fullName>
+        <description>Mirrors same field in Connected Trial Site</description>
+        <externalId>false</externalId>
+        <formula>TEXT(Connected_Trial_Site__r.PTC_Connection_Preference__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>PTC Connection Preference</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Patient_Age__c</fullName>
+        <externalId>false</externalId>
+        <formula>Patient_ID__r.Age__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Patient Age</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Patient_Gender__c</fullName>
+        <externalId>false</externalId>
+        <formula>LOWER(TEXT(Patient_ID__r.Gender__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Patient Gender</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Patient_ID__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Internal Only</inlineHelpText>
+        <label>Patient ID</label>
+        <referenceTo>Patient__c</referenceTo>
+        <relationshipLabel>Match Records</relationshipLabel>
+        <relationshipName>Match_Records</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Patient_Initials__c</fullName>
+        <externalId>false</externalId>
+        <formula>Patient_ID__r.Patient_Initials__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Patient Initials</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Patient_Last_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Patient_ID__r.Last_Name__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Patient Last Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Patient_Report__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;https://portal.guardanthealth.com/download_report/admin_download?request_id=&quot; &amp; Sample_ID__r.Name ,&quot;Download Patient Report&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Internal Only</inlineHelpText>
+        <label>Patient Report</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Permission_to_Connect_with_Pharma__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Permission to Connect with Pharma?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Pharma_Company__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Pharma Company</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Match Records</relationshipLabel>
+        <relationshipName>Match_Records</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Pharma_PTC_Alert_Sent__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Pharma PTC Alert Sent?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Physician_Email__c</fullName>
+        <externalId>false</externalId>
+        <formula>Ordering_Physician_Name__r.Email</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Physician Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Physician_phone__c</fullName>
+        <externalId>false</externalId>
+        <formula>Ordering_Physician_Name__r.Phone</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Physician phone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Portal_Link_For_MD_text__c</fullName>
+        <externalId>false</externalId>
+        <formula>&quot;https://portal.guardanthealth.com/r/&quot; &amp; Sample_ID__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Portal Link For MD text</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Portal_Link_for_MD__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;https://portal.guardanthealth.com/r/&quot; &amp; Sample_ID__r.Name,&quot;https://portal.guardanthealth.com/r/&quot; &amp; Sample_ID__r.Name)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Portal Link for MD</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Portal_Sample_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Portal Sample ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Practice_Address__c</fullName>
+        <externalId>false</externalId>
+        <formula>Ordering_Practice_Name__r.BillingStreet</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Practice Address</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Practice_City__c</fullName>
+        <externalId>false</externalId>
+        <formula>Ordering_Practice_Name__r.BillingCity</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Practice City</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Practice_State__c</fullName>
+        <externalId>false</externalId>
+        <formula>Ordering_Practice_Name__r.BillingState</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Practice State</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Practice_Zip__c</fullName>
+        <externalId>false</externalId>
+        <formula>Ordering_Practice_Name__r.BillingPostalCode</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Practice Zip</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Preferred_Contact_Method__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Ordering_Physician_Name__r.Preferred_Contact_Method__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Internal Only</inlineHelpText>
+        <label>Preferred Contact Method</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PtC_Contact_List__c</fullName>
+        <externalId>false</externalId>
+        <formula>Trial_Name__r.PtC_Contact_List__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>PtC Contact List</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Qualifying_Target_Alterations__c</fullName>
+        <externalId>false</externalId>
+        <label>Qualifying Target Alterations</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Qualifying_Target_Gene__c</fullName>
+        <externalId>false</externalId>
+        <formula>LEFT(  Qualifying_Target_Alterations__c  , FIND(&quot; &quot;, Qualifying_Target_Alterations__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Qualifying Target Gene</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Qualifying_Target_Genes__c</fullName>
+        <externalId>false</externalId>
+        <label>Qualifying Target Genes</label>
+        <length>2000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Reason_for_Match_Rejection__c</fullName>
+        <externalId>false</externalId>
+        <label>Reason for Match Rejection</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Referral_Letter_Sent__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Informational Letter Sent?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Referral_Letter_Template__c</fullName>
+        <externalId>false</externalId>
+        <label>Referral Letter Template</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Referred__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>When checked, a referral letter will be sent to MD</inlineHelpText>
+        <label>Informed?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Replied_to_Last_Ditch_Email__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>ENT-4687</description>
+        <externalId>false</externalId>
+        <label>Replied to Last Ditch Email?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Replied_to_Outreach_Email__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Replied to Outreach Email?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Report_Status__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Report Status of parent Sample</inlineHelpText>
+        <label>Report Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>FINAL</fullName>
+                    <default>false</default>
+                    <label>FINAL</label>
+                </value>
+                <value>
+                    <fullName>PROCESSED</fullName>
+                    <default>false</default>
+                    <label>PROCESSED</label>
+                </value>
+                <value>
+                    <fullName>CANCELLED</fullName>
+                    <default>false</default>
+                    <label>CANCELLED</label>
+                </value>
+                <value>
+                    <fullName>Corrected</fullName>
+                    <default>false</default>
+                    <label>Corrected</label>
+                </value>
+                <value>
+                    <fullName>Amended</fullName>
+                    <default>false</default>
+                    <label>Amended</label>
+                </value>
+                <value>
+                    <fullName>Addendum</fullName>
+                    <default>false</default>
+                    <label>Addendum</label>
+                </value>
+                <value>
+                    <fullName>Reported</fullName>
+                    <default>false</default>
+                    <label>Reported</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Run_Process__c</fullName>
+        <description>Name of the Process to be run. Updated through the scheduled record update tool.</description>
+        <externalId>false</externalId>
+        <label>Run Process</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sample_ID__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Internal Only</inlineHelpText>
+        <label>Sample ID</label>
+        <referenceTo>Guardant_360_Sample__c</referenceTo>
+        <relationshipLabel>Match Records</relationshipLabel>
+        <relationshipName>Match_Records</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Sample_Status__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Sample_ID__r.Status__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Report Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Screened__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>ENT-4688</description>
+        <externalId>false</externalId>
+        <label>Screened?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Script__c</fullName>
+        <externalId>false</externalId>
+        <label>Script</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Send_POD_No_Email__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Send POD No Email</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Send_POD__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Send POD</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Show_to_Customer__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Internal Only</inlineHelpText>
+        <label>Show to Customer?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Show_to_Pharma__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Show to Pharma?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Stage_Segment__c</fullName>
+        <externalId>false</externalId>
+        <label>Stage Segment</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Show to Customer</fullName>
+                    <default>false</default>
+                    <label>Show to Customer</label>
+                </value>
+                <value>
+                    <fullName>Contact Attempted</fullName>
+                    <default>false</default>
+                    <label>Contact Attempted</label>
+                </value>
+                <value>
+                    <fullName>Spoke to MD</fullName>
+                    <default>false</default>
+                    <label>Spoke to MD</label>
+                </value>
+                <value>
+                    <fullName>Referred</fullName>
+                    <default>false</default>
+                    <label>Referred</label>
+                </value>
+                <value>
+                    <fullName>Permission to Connect with Pharma</fullName>
+                    <default>false</default>
+                    <label>Permission to Connect with Pharma</label>
+                </value>
+                <value>
+                    <fullName>Enrolled</fullName>
+                    <default>false</default>
+                    <label>Enrolled</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Starred_Notes__c</fullName>
+        <description>ENT-8682</description>
+        <externalId>false</externalId>
+        <label>Starred Notes</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Starred__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>ENT-8682</description>
+        <externalId>false</externalId>
+        <label>Starred</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Study_Site_Match__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Study Site</label>
+        <referenceTo>Study_Site__c</referenceTo>
+        <relationshipLabel>Match Records</relationshipLabel>
+        <relationshipName>Match_Records</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Sub_Status_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Sub-Status Reason</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Enrollment_Sub_Status__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>On Treatment</fullName>
+                    <default>false</default>
+                    <label>On Treatment</label>
+                </value>
+                <value>
+                    <fullName>Trial</fullName>
+                    <default>false</default>
+                    <label>On Trial</label>
+                </value>
+                <value>
+                    <fullName>Death</fullName>
+                    <default>false</default>
+                    <label>Death</label>
+                </value>
+                <value>
+                    <fullName>Too Ill/Hospice</fullName>
+                    <default>false</default>
+                    <label>Too Ill/Hospice</label>
+                </value>
+                <value>
+                    <fullName>Prior Treatment</fullName>
+                    <default>false</default>
+                    <label>Prior Treatment</label>
+                </value>
+                <value>
+                    <fullName>Failed Pharma Screening</fullName>
+                    <default>false</default>
+                    <label>Failed Trial Screening</label>
+                </value>
+                <value>
+                    <fullName>Travel</fullName>
+                    <default>false</default>
+                    <label>Travel Limitations</label>
+                </value>
+                <value>
+                    <fullName>Research Objection</fullName>
+                    <default>false</default>
+                    <label>Research Objection</label>
+                </value>
+                <value>
+                    <fullName>No Longer Enrolling</fullName>
+                    <default>false</default>
+                    <label>No Longer Enrolling</label>
+                </value>
+                <value>
+                    <fullName>Match Criteria Changed</fullName>
+                    <default>false</default>
+                    <label>Match Criteria Changed</label>
+                </value>
+                <value>
+                    <fullName>MD Engaged</fullName>
+                    <default>false</default>
+                    <label>MD Engaged</label>
+                </value>
+                <value>
+                    <fullName>MD Non-Engaged</fullName>
+                    <default>false</default>
+                    <label>MD Non-Engaged</label>
+                </value>
+                <value>
+                    <fullName>No Answer</fullName>
+                    <default>false</default>
+                    <label>No Answer</label>
+                </value>
+                <value>
+                    <fullName>Left Message</fullName>
+                    <default>false</default>
+                    <label>Left Message</label>
+                </value>
+                <value>
+                    <fullName>Sent Email</fullName>
+                    <default>false</default>
+                    <label>Sent Email</label>
+                </value>
+                <value>
+                    <fullName>Future Consideration - On Treatment</fullName>
+                    <default>false</default>
+                    <label>Future Consideration - On Treatment</label>
+                </value>
+                <value>
+                    <fullName>Future Consideration - On Trial</fullName>
+                    <default>false</default>
+                    <label>Future Consideration - On Trial</label>
+                </value>
+                <value>
+                    <fullName>Future Consideration - Other</fullName>
+                    <default>false</default>
+                    <label>Future Consideration - Other</label>
+                </value>
+                <value>
+                    <fullName>Referred to Trial Site</fullName>
+                    <default>false</default>
+                    <label>Referred to Trial Site</label>
+                </value>
+                <value>
+                    <fullName>Pending Prescription</fullName>
+                    <default>false</default>
+                    <label>Pending Prescription</label>
+                </value>
+                <value>
+                    <fullName>Undergoing Screening</fullName>
+                    <default>false</default>
+                    <label>Undergoing Screening</label>
+                </value>
+                <value>
+                    <fullName>Aware of Trial</fullName>
+                    <default>false</default>
+                    <label>Aware</label>
+                </value>
+                <value>
+                    <fullName>Insurance Coverage</fullName>
+                    <default>false</default>
+                    <label>Insurance Coverage</label>
+                </value>
+                <value>
+                    <fullName>Do Not Contact</fullName>
+                    <default>false</default>
+                    <label>Do Not Contact</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Future Consideration</controllingFieldValue>
+                <valueName>On Treatment</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Future Consideration</controllingFieldValue>
+                <valueName>Trial</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Future Consideration</controllingFieldValue>
+                <controllingFieldValue>Ineligible</controllingFieldValue>
+                <controllingFieldValue>Provider Refusal</controllingFieldValue>
+                <controllingFieldValue>Patient Refusal</controllingFieldValue>
+                <valueName>Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Trial Change</controllingFieldValue>
+                <valueName>No Longer Enrolling</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Trial Change</controllingFieldValue>
+                <valueName>Match Criteria Changed</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>In Progress</controllingFieldValue>
+                <valueName>No Answer</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>In Progress</controllingFieldValue>
+                <valueName>Left Message</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>In Progress</controllingFieldValue>
+                <valueName>Sent Email</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>In Progress</controllingFieldValue>
+                <valueName>Future Consideration - On Treatment</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>In Progress</controllingFieldValue>
+                <valueName>Future Consideration - On Trial</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>In Progress</controllingFieldValue>
+                <valueName>Future Consideration - Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>In Progress</controllingFieldValue>
+                <valueName>Referred to Trial Site</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>In Progress</controllingFieldValue>
+                <valueName>Pending Prescription</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>In Progress</controllingFieldValue>
+                <valueName>Undergoing Screening</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ineligible</controllingFieldValue>
+                <valueName>Death</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ineligible</controllingFieldValue>
+                <valueName>Too Ill/Hospice</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ineligible</controllingFieldValue>
+                <valueName>Prior Treatment</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ineligible</controllingFieldValue>
+                <valueName>Failed Pharma Screening</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Provider Refusal</controllingFieldValue>
+                <valueName>Aware of Trial</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Provider Refusal</controllingFieldValue>
+                <valueName>Do Not Contact</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Patient Refusal</controllingFieldValue>
+                <valueName>Travel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Patient Refusal</controllingFieldValue>
+                <valueName>Research Objection</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Patient Refusal</controllingFieldValue>
+                <valueName>Insurance Coverage</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ready For Outreach</controllingFieldValue>
+                <valueName>MD Engaged</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ready For Outreach</controllingFieldValue>
+                <valueName>MD Non-Engaged</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Today__c</fullName>
+        <externalId>false</externalId>
+        <formula>Current_Month__c  &amp; &apos; &apos; &amp; TEXT (DAY(TODAY())) &amp; &apos;, &apos; &amp; TEXT (YEAR (TODAY()))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Today</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Treatment_Notes__c</fullName>
+        <externalId>false</externalId>
+        <formula>Sample_ID__r.Treatment_Notes__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Treatment Notes</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Trial_Casesafe_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Trial_Name__r.Case_Safe_Trial_ID__c</formula>
+        <inlineHelpText>Used to enable Webmerge mappings</inlineHelpText>
+        <label>Trial Casesafe ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Trial_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>Trial_Name__r.Trial_Code__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Trial Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Trial_Contact_Opt_Out__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Ordering_Physician_Name__r.Pharma_Referrals_Permission_to_Contact__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Internal Only</inlineHelpText>
+        <label>Trial Contact Opt-Out</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Trial_Do_Not_Send_IOE__c</fullName>
+        <externalId>false</externalId>
+        <formula>Trial_Name__r.Auto_IOE_Opt_Out__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Derived from field &apos;Auto-IOE Opt-Out&apos; on Trial record. If checked, matches from this trial never generate automated initial outreach emails.</inlineHelpText>
+        <label>Trial Do Not Send IOE</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Trial_Eligibility_Criteria__c</fullName>
+        <externalId>false</externalId>
+        <label>Trial Eligibility Criteria</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Trial_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Trial Name</label>
+        <referenceTo>Study__c</referenceTo>
+        <relationshipLabel>Match Records</relationshipLabel>
+        <relationshipName>Match_Records</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Trial_Sites_List__c</fullName>
+        <externalId>false</externalId>
+        <label>Trial Sites List</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Trial_label__c</fullName>
+        <externalId>false</externalId>
+        <formula>Trial_Name__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Trial label</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Update__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Hidden field used to prompt processes</description>
+        <externalId>false</externalId>
+        <label>Update</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>X1st_Paragraph__c</fullName>
+        <externalId>false</externalId>
+        <label>1st Paragraph</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>YuzuSchedulingLink__c</fullName>
+        <externalId>false</externalId>
+        <label>Yuzu Scheduling Link</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>x1st_Contact_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>1st Contact Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Outbound Call</fullName>
+                    <default>false</default>
+                    <label>Outbound Call</label>
+                </value>
+                <value>
+                    <fullName>Inbound Call</fullName>
+                    <default>false</default>
+                    <label>Inbound Call</label>
+                </value>
+                <value>
+                    <fullName>Email</fullName>
+                    <default>false</default>
+                    <label>Email</label>
+                </value>
+                <value>
+                    <fullName>Fax</fullName>
+                    <default>false</default>
+                    <label>Fax</label>
+                </value>
+                <value>
+                    <fullName>Call</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Call</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Match Record</label>
+    <listViews>
+        <fullName>AB_Closed</fullName>
+        <booleanFilter>1 OR (2 AND 3)</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Closed__c</columns>
+        <columns>Date_Closed__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>Enrollment_Status__c</columns>
+        <columns>Enrollment_Sub_Status__c</columns>
+        <columns>Sub_Status_Reason__c</columns>
+        <columns>Match_Record_Notes__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Date_Closed__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>7/25/2017 12:00 AM</value>
+        </filters>
+        <filters>
+            <field>Date_Closed__c</field>
+            <operation>equals</operation>
+            <value>7/24/2017 12:00 AM</value>
+        </filters>
+        <filters>
+            <field>UPDATEDBY_USER.ALIAS</field>
+            <operation>equals</operation>
+            <value>nora</value>
+        </filters>
+        <label>AB-Closed</label>
+    </listViews>
+    <listViews>
+        <fullName>Admin_View</fullName>
+        <columns>NAME</columns>
+        <columns>Batch_Check__c</columns>
+        <columns>Trial_Name__c</columns>
+        <columns>Patient_ID__c</columns>
+        <columns>PODs__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>Follow_Up_Reminder__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Match_Key__c</field>
+            <operation>startsWith</operation>
+            <value>SYM</value>
+        </filters>
+        <label>Admin View</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>All_Atha</fullName>
+        <booleanFilter>1 OR 2 OR 3</booleanFilter>
+        <columns>Enrollment_Status__c</columns>
+        <columns>Enrollment_Sub_Status__c</columns>
+        <columns>Sub_Status_Reason__c</columns>
+        <columns>Follow_Up_Reminder__c</columns>
+        <columns>Date_Identified__c</columns>
+        <columns>NAME</columns>
+        <columns>Final_Report_Date__c</columns>
+        <columns>Trial_Name__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Enrollment_Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Referral Letter Sent</value>
+        </filters>
+        <filters>
+            <field>Enrollment_Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Pharma in Contact</value>
+        </filters>
+        <filters>
+            <field>Enrollment_Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Pending Pharma</value>
+        </filters>
+        <label>Ref Status V3</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>All_Atha2</fullName>
+        <columns>Match_ID__c</columns>
+        <columns>Date_Identified__c</columns>
+        <columns>Date_of_1st_Contact__c</columns>
+        <columns>Date_of_Last_Contact__c</columns>
+        <columns>Ordering_Practice_Name__c</columns>
+        <columns>NAME</columns>
+        <columns>Final_Report_Date__c</columns>
+        <columns>Show_to_Customer__c</columns>
+        <columns>Batch_Check__c</columns>
+        <columns>Batch_Push__c</columns>
+        <columns>Qualifying_Target_Alterations__c</columns>
+        <columns>Qualifying_Target_Genes__c</columns>
+        <columns>Enrollment_Status__c</columns>
+        <columns>Enrollment_Sub_Status__c</columns>
+        <columns>Sub_Status_Reason__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All-Atha</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Array_Matches_Atha</fullName>
+        <columns>Trial_Name__c</columns>
+        <columns>NAME</columns>
+        <columns>Ordering_Practice_State__c</columns>
+        <columns>Closest_Trial_Site__c</columns>
+        <columns>Cancer_Type__c</columns>
+        <columns>Show_to_Customer__c</columns>
+        <columns>Match_Key__c</columns>
+        <columns>Trial_Sites_List__c</columns>
+        <columns>Trial_Eligibility_Criteria__c</columns>
+        <columns>Script__c</columns>
+        <columns>Referral_Letter_Template__c</columns>
+        <columns>Batch_Check__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Trial_Name__c</field>
+            <operation>contains</operation>
+            <value>Array</value>
+        </filters>
+        <label>Array Matches-Atha</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>BAY101_AF</fullName>
+        <columns>NAME</columns>
+        <columns>Match_ID__c</columns>
+        <columns>Final_Report_Date__c</columns>
+        <columns>Date_Identified__c</columns>
+        <columns>Match_Algorithm_Version_Number__c</columns>
+        <columns>Show_to_Customer__c</columns>
+        <columns>Enrollment_Status__c</columns>
+        <columns>Enrollment_Sub_Status__c</columns>
+        <columns>Sub_Status_Reason__c</columns>
+        <columns>Qualifying_Target_Alterations__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Trial_Code__c</field>
+            <operation>equals</operation>
+            <value>BAY101</value>
+        </filters>
+        <label>BAY101-AF</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Backfill_Enrolled</fullName>
+        <columns>NAME</columns>
+        <columns>Enrollment_Status__c</columns>
+        <columns>Enrollment_Sub_Status__c</columns>
+        <columns>Sub_Status_Reason__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Enrollment_Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Enrolled</value>
+        </filters>
+        <label>Backfill-Enrolled</label>
+    </listViews>
+    <listViews>
+        <fullName>Backfill_Future_Consideration</fullName>
+        <columns>NAME</columns>
+        <columns>Enrollment_Status__c</columns>
+        <columns>Enrollment_Sub_Status__c</columns>
+        <columns>Sub_Status_Reason__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Enrollment_Status__c</field>
+            <operation>equals</operation>
+            <value>Future Consideration</value>
+        </filters>
+        <filters>
+            <field>Enrollment_Sub_Status__c</field>
+            <operation>equals</operation>
+        </filters>
+        <label>Backfill-Future Consideration</label>
+    </listViews>
+    <listViews>
+        <fullName>Backfill_Hospice</fullName>
+        <columns>NAME</columns>
+        <columns>Enrollment_Status__c</columns>
+        <columns>Enrollment_Sub_Status__c</columns>
+        <columns>Sub_Status_Reason__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Enrollment_Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Ineligible and Reason</value>
+        </filters>
+        <label>Backfill-Ineligible</label>
+    </listViews>
+    <listViews>
+        <fullName>Backfill_PTC</fullName>
+        <columns>NAME</columns>
+        <columns>Enrollment_Status__c</columns>
+        <columns>Enrollment_Sub_Status__c</columns>
+        <columns>Sub_Status_Reason__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Enrollment_Status__c</field>
+            <operation>equals</operation>
+            <value>Pharma Permission to Connect</value>
+        </filters>
+        <label>Backfill-PTC</label>
+    </listViews>
+    <listViews>
+        <fullName>Backfill_Per_Pharma</fullName>
+        <columns>NAME</columns>
+        <columns>Enrollment_Status__c</columns>
+        <columns>Enrollment_Sub_Status__c</columns>
+        <columns>Sub_Status_Reason__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Sub_Status_Reason__c</field>
+            <operation>equals</operation>
+            <value>Per Pharma</value>
+        </filters>
+        <label>Backfill-Per Pharma</label>
+    </listViews>
+    <listViews>
+        <fullName>Backfill_Referred</fullName>
+        <columns>NAME</columns>
+        <columns>Enrollment_Status__c</columns>
+        <columns>Enrollment_Sub_Status__c</columns>
+        <columns>Sub_Status_Reason__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Enrollment_Status__c</field>
+            <operation>equals</operation>
+            <value>Referred</value>
+        </filters>
+        <filters>
+            <field>Enrollment_Sub_Status__c</field>
+            <operation>notEqual</operation>
+            <value>With Potential</value>
+        </filters>
+        <label>Backfill-Referred</label>
+    </listViews>
+    <listViews>
+        <fullName>Batch_Check</fullName>
+        <columns>Match_ID__c</columns>
+        <columns>NAME</columns>
+        <columns>Batch_Check__c</columns>
+        <columns>Date_Identified__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Batch_Check__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Batch Check</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Batch_Push</fullName>
+        <columns>NAME</columns>
+        <columns>Batch_Push__c</columns>
+        <columns>Date_Identified__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Batch_Push__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Batch Push</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Blueprint_Matches1</fullName>
+        <columns>Date_Identified__c</columns>
+        <columns>NAME</columns>
+        <columns>Match_Key__c</columns>
+        <columns>Closest_Trial_Site__c</columns>
+        <columns>Trial_Sites_List__c</columns>
+        <columns>Trial_Eligibility_Criteria__c</columns>
+        <columns>Script__c</columns>
+        <columns>Referral_Letter_Template__c</columns>
+        <columns>Pharma_Company__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Trial_Name__c</field>
+            <operation>startsWith</operation>
+            <value>BLU</value>
+        </filters>
+        <label>Blueprint Matches</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Connected_vs_Closest_Trial_Sites</fullName>
+        <columns>Date_Identified__c</columns>
+        <columns>NAME</columns>
+        <columns>International_Sample__c</columns>
+        <columns>Batch_Check__c</columns>
+        <columns>Closest_Trial_Site2__c</columns>
+        <columns>Closest_Trial_Site__c</columns>
+        <columns>Connected_Trial_Site__c</columns>
+        <columns>Connected_Trial_Site_account__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Enrollment_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Closed</value>
+        </filters>
+        <label>Connected vs Closest Trial Sites</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Contact_Attempted</fullName>
+        <columns>NAME</columns>
+        <columns>Enrollment_Status__c</columns>
+        <columns>Enrollment_Sub_Status__c</columns>
+        <columns>Guardant_Notes__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Enrollment_Status__c</field>
+            <operation>equals</operation>
+            <value>Contact Attempted</value>
+        </filters>
+        <label>Backfill-Contact Attempted</label>
+    </listViews>
+    <listViews>
+        <fullName>DO_NOT_CONTACT</fullName>
+        <columns>NAME</columns>
+        <columns>DO_NOT_CONTACT__c</columns>
+        <columns>Enrollment_Status__c</columns>
+        <columns>Enrollment_Sub_Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>DO_NOT_CONTACT__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>DO NOT CONTACT</label>
+    </listViews>
+    <listViews>
+        <fullName>Enrolled</fullName>
+        <columns>NAME</columns>
+        <columns>Enrollment_Status__c</columns>
+        <columns>Enrolled__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Enrollment_Status__c</field>
+            <operation>equals</operation>
+            <value>Enrolled</value>
+        </filters>
+        <label>Enrolled</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Failed_Eligibility_Criteria</fullName>
+        <columns>NAME</columns>
+        <columns>Enrollment_Status__c</columns>
+        <columns>Enrollment_Sub_Status__c</columns>
+        <columns>Sub_Status_Reason__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Enrollment_Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Rejected by Pharma</value>
+        </filters>
+        <label>Rejected by Pharma</label>
+    </listViews>
+    <listViews>
+        <fullName>Ignyta_101_Matches</fullName>
+        <columns>Date_Identified__c</columns>
+        <columns>NAME</columns>
+        <columns>Qualifying_Target_Alterations__c</columns>
+        <columns>Alteration_Map__c</columns>
+        <columns>Cancer_Type__c</columns>
+        <columns>Trial_Sites_List__c</columns>
+        <columns>Trial_Eligibility_Criteria__c</columns>
+        <columns>Script__c</columns>
+        <columns>Referral_Letter_Template__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Trial_Name__c</field>
+            <operation>equals</operation>
+            <value>Ignyta RXDX-101</value>
+        </filters>
+        <label>Ignyta 101 Matches</label>
+    </listViews>
+    <listViews>
+        <fullName>Ignyta_105_Matches</fullName>
+        <columns>NAME</columns>
+        <columns>Enrollment_Status__c</columns>
+        <columns>Follow_Up_Reminder__c</columns>
+        <columns>Trial_Sites_List__c</columns>
+        <columns>Trial_Eligibility_Criteria__c</columns>
+        <columns>Script__c</columns>
+        <columns>Referral_Letter_Template__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Trial_Name__c</field>
+            <operation>equals</operation>
+            <value>Ignyta RXDX-105</value>
+        </filters>
+        <label>Ignyta 105 Matches</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>International</fullName>
+        <columns>Date_Identified__c</columns>
+        <columns>Ordering_Practice_Name__c</columns>
+        <columns>Final_Report_Date__c</columns>
+        <columns>Closest_Trial_Site__c</columns>
+        <columns>Show_to_Customer__c</columns>
+        <columns>Batch_Check__c</columns>
+        <columns>Batch_Push__c</columns>
+        <columns>Match_ID__c</columns>
+        <columns>NAME</columns>
+        <columns>Qualifying_Target_Alterations__c</columns>
+        <columns>Qualifying_Target_Genes__c</columns>
+        <columns>Enrollment_Status__c</columns>
+        <columns>Enrollment_Sub_Status__c</columns>
+        <columns>Sub_Status_Reason__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>International_Sample__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>International</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Loxo_Matches1</fullName>
+        <columns>NAME</columns>
+        <columns>Qualifying_Target_Alterations__c</columns>
+        <columns>Alteration_Map__c</columns>
+        <columns>Trial_Sites_List__c</columns>
+        <columns>Trial_Eligibility_Criteria__c</columns>
+        <columns>Script__c</columns>
+        <columns>Referral_Letter_Template__c</columns>
+        <columns>Trial_Casesafe_ID__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Trial_Name__c</field>
+            <operation>contains</operation>
+            <value>Lox</value>
+        </filters>
+        <label>Loxo Matches</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>MD_Next_Follow_Up</fullName>
+        <columns>NAME</columns>
+        <columns>Ordering_Physician_Name__c</columns>
+        <columns>Follow_Up_Reminder__c</columns>
+        <columns>MD_Next_Follow_Up__c</columns>
+        <columns>Show_to_Customer__c</columns>
+        <columns>Enrollment_Status__c</columns>
+        <columns>Ordering_Practice_Name__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>MD_Next_Follow_Up__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>Follow_Up_Reminder__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>Show_to_Customer__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>MD Next Follow Up</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Match_Queue_Match_Record</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Match Queue</label>
+        <queue>Match_Queue</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Mir265_Matches</fullName>
+        <columns>Trial_Name__c</columns>
+        <columns>NAME</columns>
+        <columns>Cancer_Type__c</columns>
+        <columns>Show_to_Customer__c</columns>
+        <columns>Trial_Sites_List__c</columns>
+        <columns>Trial_Eligibility_Criteria__c</columns>
+        <columns>Script__c</columns>
+        <columns>Referral_Letter_Template__c</columns>
+        <columns>Closest_Trial_Site__c</columns>
+        <columns>Batch_Check__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Trial_Name__c</field>
+            <operation>contains</operation>
+            <value>Array</value>
+        </filters>
+        <filters>
+            <field>Enrollment_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Closed</value>
+        </filters>
+        <filters>
+            <field>Show_to_Customer__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Array Matches</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Not_Closed</fullName>
+        <columns>Date_Identified__c</columns>
+        <columns>NAME</columns>
+        <columns>Qualifying_Target_Alterations__c</columns>
+        <columns>Qualifying_Target_Genes__c</columns>
+        <columns>Sample_ID__c</columns>
+        <columns>Final_Report_Date__c</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>Enrollment_Status__c</columns>
+        <columns>Enrollment_Sub_Status__c</columns>
+        <columns>Sub_Status_Reason__c</columns>
+        <columns>Follow_Up_Reminder__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Enrollment_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Closed,Enrolled</value>
+        </filters>
+        <label>Not Closed</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Octimet_OMO</fullName>
+        <columns>NAME</columns>
+        <columns>Match_Key__c</columns>
+        <columns>Referral_Letter_Sent__c</columns>
+        <columns>Ordering_Physician_Name__c</columns>
+        <columns>Ordering_Practice_Name__c</columns>
+        <columns>Enrollment_Status__c</columns>
+        <columns>Enrollment_Sub_Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Trial_Code__c</field>
+            <operation>startsWith</operation>
+            <value>OCT1</value>
+        </filters>
+        <filters>
+            <field>Enrollment_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Closed</value>
+        </filters>
+        <label>Octimet OMO</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>Biopharma</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Puma_Matches</fullName>
+        <columns>Date_Identified__c</columns>
+        <columns>Date_of_Last_Contact__c</columns>
+        <columns>NAME</columns>
+        <columns>Qualifying_Target_Alterations__c</columns>
+        <columns>Trial_Sites_List__c</columns>
+        <columns>Trial_Eligibility_Criteria__c</columns>
+        <columns>Script__c</columns>
+        <columns>Referral_Letter_Template__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Trial_Name__c</field>
+            <operation>equals</operation>
+            <value>Puma NER-5201</value>
+        </filters>
+        <label>Puma Matches</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Show_To_Customer_No</fullName>
+        <columns>Match_ID__c</columns>
+        <columns>NAME</columns>
+        <columns>Match_Key__c</columns>
+        <columns>Batch_Check__c</columns>
+        <columns>Enrollment_Status__c</columns>
+        <columns>Enrollment_Sub_Status__c</columns>
+        <columns>Sub_Status_Reason__c</columns>
+        <columns>Show_to_Customer__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Trial_Name__c</field>
+            <operation>equals</operation>
+            <value>Mirati 516</value>
+        </filters>
+        <filters>
+            <field>Enrollment_Status__c</field>
+            <operation>equals</operation>
+            <value>Closed</value>
+        </filters>
+        <filters>
+            <field>Enrollment_Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Trial Change</value>
+        </filters>
+        <filters>
+            <field>Sub_Status_Reason__c</field>
+            <operation>equals</operation>
+            <value>Match Criteria Changed</value>
+        </filters>
+        <filters>
+            <field>Date_Identified__c</field>
+            <operation>greaterThan</operation>
+            <value>9/25/2017 12:00 AM</value>
+        </filters>
+        <label>Maxim - Mirati 516</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Symphogen_015_Matches</fullName>
+        <columns>NAME</columns>
+        <columns>MD_Name__c</columns>
+        <columns>Match_Key__c</columns>
+        <columns>Enrollment_Status__c</columns>
+        <columns>Enrollment_Sub_Status__c</columns>
+        <columns>DO_NOT_CONTACT__c</columns>
+        <columns>Do_not_send_IOE__c</columns>
+        <columns>Qualifying_Target_Alterations__c</columns>
+        <columns>Sample_ID__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Trial_Name__c</field>
+            <operation>equals</operation>
+            <value>SYM-015-01</value>
+        </filters>
+        <label>Symphogen 015 Matches</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Test_Match_Records</fullName>
+        <columns>NAME</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+            <value>TEST</value>
+        </filters>
+        <label>Test Match Records</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Trial_Change</fullName>
+        <columns>NAME</columns>
+        <columns>Enrollment_Status__c</columns>
+        <columns>Enrollment_Sub_Status__c</columns>
+        <columns>Sub_Status_Reason__c</columns>
+        <columns>Show_to_Customer__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Enrollment_Status__c</field>
+            <operation>equals</operation>
+            <value>Closed</value>
+        </filters>
+        <filters>
+            <field>Enrollment_Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>Trial Change</value>
+        </filters>
+        <label>Trial Change</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>Biopharma</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>modified_recently</fullName>
+        <columns>Sample_ID__c</columns>
+        <columns>Match_ID__c</columns>
+        <columns>NAME</columns>
+        <columns>Enrollment_Status__c</columns>
+        <columns>Enrollment_Sub_Status__c</columns>
+        <columns>Sub_Status_Reason__c</columns>
+        <columns>Final_Report_Date__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>Date_Referred__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>LAST_UPDATE</field>
+            <operation>greaterOrEqual</operation>
+            <value>11/22/2018 12:00 AM</value>
+        </filters>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>greaterOrEqual</operation>
+            <value>11/22/2018 12:00 AM</value>
+        </filters>
+        <label>modified recently</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>Match Record Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Match Records</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>AE_Owner__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Date_Referred__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Date_of_Last_Contact__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Last_Contact_Type__c</customTabListAdditionalFields>
+        <excludedStandardButtons>New</excludedStandardButtons>
+        <excludedStandardButtons>OpenListInQuip</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <listViewButtons>Match_Batch</listViewButtons>
+        <listViewButtons>Delete_All_Matches</listViewButtons>
+        <listViewButtons>Batch_Push</listViewButtons>
+        <listViewButtons>Run_Sync_Checker</listViewButtons>
+        <lookupDialogsAdditionalFields>Ordering_Practice_Name__c</lookupDialogsAdditionalFields>
+        <searchResultsAdditionalFields>Batch_Check__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Cancer_Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Date_Referred__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>BioPharma_must_select_closed_substatus</fullName>
+        <active>false</active>
+        <description>When a BioPharma SFDC user tries to change a match record&apos;s enrollment status to &apos;Closed&apos;, they must select a valid enrollment sub-status. 6/16/17-deactivated. AB</description>
+        <errorConditionFormula>AND (
+OR($User.ProfileId=&quot;00e340000015RVt&quot;,$User.ProfileId=&quot;00e34000001CPzp&quot;),
+ISPICKVAL(Enrollment_Status__c, &quot;Closed&quot;),
+NOT(OR(TEXT(Enrollment_Sub_Status__c) = &quot;Ineligible and Reason&quot;,
+TEXT(Enrollment_Sub_Status__c) = &quot;Patient Lost to Follow Up&quot;, 
+TEXT(Enrollment_Sub_Status__c) = &quot;Provider Refusal&quot;, 
+TEXT(Enrollment_Sub_Status__c) = &quot;Patient Refusal and Reasons&quot;,
+TEXT(Enrollment_Sub_Status__c) = &quot;No Response&quot;, 
+TEXT(Enrollment_Sub_Status__c) = &quot;Failed Screening&quot;, 
+TEXT(Enrollment_Sub_Status__c) = &quot;Enrolled&quot;)))</errorConditionFormula>
+        <errorDisplayField>Enrollment_Status__c</errorDisplayField>
+        <errorMessage>BioPharma users must select a valid enrollment sub-status when changing a match record&apos;s enrollment status to &apos;Closed&apos;.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Intl_Show_to_Customer_Unchecked</fullName>
+        <active>false</active>
+        <description>Show to Customer is always unchecked for International match records</description>
+        <errorConditionFormula>AND(
+Ordering_Physician_Name__r.Account.BillingCountry&lt;&gt;&quot;US&quot;,
+Show_to_Customer__c=TRUE)</errorConditionFormula>
+        <errorDisplayField>Show_to_Customer__c</errorDisplayField>
+        <errorMessage>&apos;Show to Customer&apos; must be unchecked if Ordering MD&apos;s account is not in US.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>Batch_Push</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Batch Push</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/apex.js&quot;)} 
+
+var contextUser = sforce.apex.execute(&quot;SFDCtoPortalBatch_Button&quot;, &quot;ExecuteSFDCtoPortalBatch&quot;, {}); 
+
+alert(&apos;Batch Push to Portal has been initiated for Match Records. This may take up to several minutes depending on size of batch.&apos;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Create_Referral_Letter_PDF</fullName>
+        <availability>online</availability>
+        <description>This creates a referral letter that is saved to the Match Record and the Contact.</description>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Create Referral Letter</masterLabel>
+        <openType>sidebar</openType>
+        <page>WebmergeMatchRecord</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>Delete_All_Matches</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Delete All Matches</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&apos;/soap/ajax/29.0/connection.js&apos;)}
+try
+{
+  var selectedRecords = {!GETRECORDIDS( $ObjectType.Match_Record__c )};
+  if(selectedRecords.length&lt;1)
+    alert(&apos;Please Select at Least One Row !&apos;);
+  else
+  {
+    userConsent = confirm(
+        selectedRecords.length + 
+        &apos; Record(s) will be Deleted. Continue ? &apos;
+      );
+    if(userConsent == true)
+    {
+      delResult = sforce.connection.deleteIds(selectedRecords);
+      if (delResult[0].getBoolean(&quot;success&quot;))
+      {
+        alert(&apos;The Record(s) were Deleted Successfully.&apos;); 
+        window.location.reload();
+      }
+      else
+        alert(
+          &apos;The Record(s) Could Not be Deleted. Error Message: &apos; + 
+          delResult[0].errors.message
+        );
+    }  
+  }
+}
+catch(e)
+{
+  alert(&apos;The Action Could not be Completed. Error Message: &apos; + e);
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Match_Batch</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Match Batch!</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/apex.js&quot;)}
+
+var contextUser = sforce.apex.execute(&quot;matchBatch_Button&quot;, &quot;ExecuteMatchBatch&quot;, {});
+
+alert(&apos;Batch Process has been initiated for Match Records. This may take up to several minutes depending on size of batch.&apos;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Outreach_Activity</fullName>
+        <availability>online</availability>
+        <description>Generates an Outreach Activity with some fields prepopulated</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Log Outreach Activity</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <url>/00T/e?what_id={!Match_Record__c.Id}&amp;retURL=%2F{!Match_Record__c.Id}&amp;RecordType=0123400000046jS&amp;tsk5=Outreach Activity&amp;00N34000005XGPI={!Match_Record__c.Enrollment_Status__c}&amp;00N34000005XGPJ={!Match_Record__c.Enrollment_Sub_Status__c}&amp;00N34000005XGPQ={!Match_Record__c.Sub_Status_Reason__c}&amp;00NK00000028YEI={!Match_Record__c.Physician_Email__c}&amp;00N34000005Ssbg={!Match_Record__c.Trial_Name__c}&amp;tsk2={!Match_Record__c.Ordering_Physician_Name__c}&amp;00N34000005Ssbb={!Match_Record__c.Cancer_Class__c}&amp;CF00N34000005pDzR={!Match_Record__c.Connected_Trial_Site__c}&amp;00N34000005e2aw={!Match_Record__c.Trial_Casesafe_ID__c}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Re_push_to_Portal</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Re-push to Portal</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/38.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/38.0/apex.js&quot;)} 
+
+sforce.connection.sessionId = &quot;{!$Api.Session_ID}&quot;; 
+
+sforce.apex.execute(&quot;SFDCtoPortalButton&quot;,&quot;ButtonApiCall&quot;,{&quot;matchID&quot;:&quot;{!Match_Record__c.Id}&quot;}); 
+
+
+alert(&apos;Match Record has been pushed to Portal&apos;); 
+location.reload();</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Request_Yuzu_URL</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>page</linkType>
+        <masterLabel>Request Yuzu URL</masterLabel>
+        <openType>replace</openType>
+        <page>vfGetYuzuLink</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>Resync_Record</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Resync from Portal</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/38.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/38.0/apex.js&quot;)}
+
+sforce.connection.sessionId = &quot;{!$Api.Session_ID}&quot;;
+
+sforce.apex.execute(&quot;PortalQuery_Button&quot;,&quot;portalGet&quot;,{&quot;match_id&quot;:&quot;{!Match_Record__c.Match_ID__c}&quot;});
+
+sforce.apex.execute(&quot;PortalQuery_Button&quot;,&quot;podQuery&quot;,{&quot;match_id&quot;:&quot;{!Match_Record__c.Match_ID__c}&quot;});
+
+alert(&apos;Match Record has been synced&apos;); 
+location.reload();</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Run_Sync_Checker</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Run Sync Checker</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/apex.js&quot;)}
+
+//if(&apos;{!$Profile.Name}&apos; == &apos;Force-BioPharma&apos; || &apos;{!$Profile.Name}&apos; == &apos;GHI UE User&apos; ){
+
+var contextUser = sforce.apex.execute(&quot;runSyncCheck_Button&quot;, &quot;callRunSync&quot;, {});
+
+alert(&apos;Sync checker job successfully triggered. Check #match-sync-check channel in Slack for the job log.&apos;);
+//}
+
+//else{
+
+//  alert(&apos;Sorry,You are not allowed to perform this opetration&apos;);
+//}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Send_Email_with_Attachment</fullName>
+        <availability>online</availability>
+        <description>Part of Lightside Apps Power Tools</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Send Outreach Email</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <url>/apex/lightsideapps__EmailAttachments?id={!Match_Record__c.Id}&amp;TemplateID=00X34000002ZlF0&amp;cc=trials@guardanthealth.com&amp;ShowOrgWideEmails=true</url>
+    </webLinks>
+</CustomObject>

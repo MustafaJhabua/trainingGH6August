@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Alerts AE when a sample is delayed b/c of retesting</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Case: Alert AE of Retest Delay</name>
+    <style>none</style>
+    <subject>Retest sample/second tube: {!Case.Guardant_360_Sample__c}-Dr. {!Case.Contact} at {!Case.Account}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

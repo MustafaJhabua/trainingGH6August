@@ -1,0 +1,916 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Configuration Information for customers using the MedPro Search Connector</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>MedProSC__Action_Dialog_Trigger__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Action Dialog Trigger</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Button</fullName>
+                    <default>true</default>
+                    <label>Button</label>
+                </value>
+                <value>
+                    <fullName>Row</fullName>
+                    <default>false</default>
+                    <label>Row</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>MedProSC__Allow_Action_Buttons__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Determines if non-admin Users are allowed to save MedPro records into SF from the search pages.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Allows standard users to use sync actions buttons or dialog</inlineHelpText>
+        <label>Allow Action Buttons</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MedProSC__Allow_Action_on_DRP__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Determines if non-admin Users are allowed to save MedPro records into the DRP object from the Search pages.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Controls whether the “Save as MedPro HCP” action button appears on Search Results screen for a non-admin user.</inlineHelpText>
+        <label>Allow Save as MedPro HCP</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MedProSC__Allow_DRP_All__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Determines if non-admin Users are allowed to click the &apos;Submit DRP&apos; buttons on the search pages.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If this is checked, all users with access to the search tool will see the Submit DRP button when the Enable DRP flag is checked.  Otherwise, only the “System Administrator” profile can see this button.</inlineHelpText>
+        <label>Allow DRP All</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MedProSC__Allow_Id_Search_Passing__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>When searching MedPro from a specific SF Record, if this button is not checked then it will create a new SF record instead of assigning the MedPro record to the existing SF record.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If this is turned on, original record is overlayed.  Ex: if the HCP exists w/out a MedProID and  Search MedPro is clicked then the HCP name is used on the Search screen &amp; the original record will be overlayed with MedPro data.</inlineHelpText>
+        <label>Allow Id Search Passing</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MedProSC__Bypass_for_the_SearchMessages_Page__c</fullName>
+        <deprecated>false</deprecated>
+        <description>MED-346, If an HCP is selected from the DisplayResults page that already exists under another parentId, this is the alternate location to redirect the user. Please note that the parentId that was passed into the Display Results page is now set to the id parameter.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If an HCP is selected from the DisplayResults page that already exists under another parentId, this is the alternate location to redirect the user. Please note that the parentId that was passed into the Display Results page is now set to the id parameter.</inlineHelpText>
+        <label>Bypass for the HCP Exists Page</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProSC__ClientIDRequiredToUpdateInUniverse__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If this flag is NOT checked and there is no clientId specified, then SF will not send the in-universe update to MedPro.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates if an update to MedPro universe requires a Client ID to be passed back.  Need client ID to be passed and “Sync updated in-universe.” flag checked for this to work successfully.</inlineHelpText>
+        <label>ClientID Required to Update In-Universe</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MedProSC__ConfigStatus__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Indicates if the configuration of the customer object is active. When there is more than one configuration, only one can be active. If this is checked, any existing configurations for this customer will be de-selected.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates if the configuration of the customer object is active.  When there is more than one configuration, only one can be active.  If this is checked, any existing configurations for this customer will be de-selected.</inlineHelpText>
+        <label>ConfigStatus</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>true</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>Inactive</fullName>
+                    <default>false</default>
+                    <label>Inactive</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>MedProSC__ConfigurePassTwoResults__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If this is checked, the MedProOnePassDisplayResults.page requires Users to determine the layout in order for data to be displayed from MedPro.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Allows access to dynamically control the list fields shown to user on the detail screen of the search results screen.  If this is not checked, all available fields are displayed on the Detail page.</inlineHelpText>
+        <label>Configure Search Results Detail</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MedProSC__Detail_Link_on_the_Display_Results_Page__c</fullName>
+        <defaultValue>&quot;Detail&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Label that the Detail link shows up as on the MedProOnePassDisplayResults page.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Label that the Detail link shows up as on the MedProOnePassDisplayResults page.</inlineHelpText>
+        <label>Detail Link on the Display Results Page</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProSC__DisableNewSearches__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If this is checked, Users will see the &apos;New Search&apos; button on the various search results screens.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If this is checked, users will not see “New Search” button on the Search Results screen.  Users will only use the back button to get back to original Search.  They can always press “Clear Form” to start over.</inlineHelpText>
+        <label>Disable New Searches</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MedProSC__DisableSearchHistory__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>If this is checked, the user will not be able to see the “Search History” from the MedPro Search page.</inlineHelpText>
+        <label>Disable Search History</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MedProSC__Disable_Multiselect_on_Results_Screen__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If this is checked, then only single records can be updated/insert from MedPro at a time.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Toggles the multi-select of records on the MedProOnePassDisplayResults screen.</inlineHelpText>
+        <label>Disable Multiselect on Results Screen</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MedProSC__Display_Page_Back_Button_Label__c</fullName>
+        <deprecated>false</deprecated>
+        <description>On the MedProOnePassDisplayResults page, the button label for the &apos;back&apos; button.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>On the MedProOnePassDisplayResults page, the button label for the &apos;back&apos; button.</inlineHelpText>
+        <label>Display Page- Back Button Label</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProSC__Display_Page_Custom_Nav_Btn_Label_01__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The label for the custom button on the DisplayResults Page. The button calls a method that takes the search query the user entered and parameters in the url (SFID, parentId), and passes it to the VF page outside the package.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The label for the custom button on the DisplayResults Page. The button calls a method that takes the search query the user entered and parameters in the url (SFID, parentId), and passes it to the VF page outside the package.</inlineHelpText>
+        <label>Display Page-Custom Nav Btn 1 Label</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProSC__Display_Page_Custom_Nav_Btn_Location_01__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The location that the custom button on the DisplayResults Page navigates to. The button calls a method that takes the search query the user entered and parameters in the url (SFID, parentId), and passes it to this VF page outside the package.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The location that the custom button on the DisplayResults Page navigates to. The button calls a method that takes the search query the user entered and parameters in the url (SFID, parentId), and passes it to this VF page outside the package.</inlineHelpText>
+        <label>Display Page-Custom Nav Btn 1 Location</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProSC__Display_Page_Doesn_t_exist_popup_title__c</fullName>
+        <deprecated>false</deprecated>
+        <description>On the MedProOnePassDisplayResults page when multiselect is disabled AND the mapping for a record does NOT exist in Salesforce, then display this on the help box title row.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>On the MedProOnePassDisplayResults page when multiselect is disabled AND the mapping for a record does NOT exist in Salesforce, then display this on the help box title row.</inlineHelpText>
+        <label>Display Page-Doesn&apos;t exist popup title</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProSC__Display_Page_Exists_popup_title__c</fullName>
+        <deprecated>false</deprecated>
+        <description>On the MedProOnePassDisplayResults page when multiselect is disabled AND the mapping for a record DOES exist in Salesforce, then display this for the title of the pop up.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>On the Display Results Page, this is for the title of the pop up when the record exists</inlineHelpText>
+        <label>Display Page- Exists popup title</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProSC__Display_Page_Row_Color_For_Matches__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the color that rows are colored on the search results page when there is a match. Please enter the color in hex.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the color that rows are colored on the search results page when there is a match. Please enter the color in hex.</inlineHelpText>
+        <label>Display Page- Row Color For Matches</label>
+        <length>7</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProSC__Enable_DRP__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If this flag is checked, it shows the &apos;Submit DRP&apos; on the associated VF pages.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enable access to the MedPro Data Resolution Process (DRP) form on the MedPro Search Results List View Page, Search Results Detail Page, and MedPro HCP Detail Page.</inlineHelpText>
+        <label>Enable DRP</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MedProSC__Enable_Search_for_existing_records_in_SF__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If this flag is checked, then it will try to match records that MedPro sent via the search page to records in the SF org and then does some highlighting on these.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enables the search for existing records in SF.</inlineHelpText>
+        <label>Enable Search for existing records in SF</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MedProSC__Include_Canadian_Provinces__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If this flag is checked, the search pages will populate the state picklists also with canadian provinces.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this box if  you want to display the Canadian Provinces when the US States are listed.</inlineHelpText>
+        <label>Include Canadian Provinces</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MedProSC__MedProHCPSyncUpdatesInUniverse__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If this flag is checked, then the HCP in-universe updates are sent to MedPro.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If the MedPro HCP Sync Allowed is checked and this box  is checked, then updates will be sent to the MedPro universe from the MedPro HCP object.</inlineHelpText>
+        <label>MedPro HCP Sync Updates In-Universe</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MedProSC__MedProHCP_ClientID_Field_API_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>If MedPro HCP Sync Allowed and related Sync updates in-universe flag are both checked, this will identify the name of the field within the MedPro HCP object that will hold the Client ID value if it is required to update the universe.</inlineHelpText>
+        <label>MedPro HCP ClientID Field API Name</label>
+        <length>40</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProSC__MedProHCP_SyncAllowed__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Provides access to action buttons to sync data to the MedPro HCP custom object.</inlineHelpText>
+        <label>MedPro HCP Sync Allowed</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MedProSC__PassTwoDisplay_ReOrdering_Mode__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>–Manages ordinal position for Details
+-Straight Replace–ordinal position is not auto resorted
+-Queue based–Existing order #s are pushed down one position below updated value
+-No Restriction–Does not update other ordinal values</inlineHelpText>
+        <label>Child Node ReOrdering Mode</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Straight Replace ReOrdering</fullName>
+                    <default>false</default>
+                    <label>Straight Replace ReOrdering</label>
+                </value>
+                <value>
+                    <fullName>Queue Based ReOrdering</fullName>
+                    <default>true</default>
+                    <label>Queue Based ReOrdering</label>
+                </value>
+                <value>
+                    <fullName>No Restriction ReOrdering</fullName>
+                    <default>false</default>
+                    <label>No Restriction ReOrdering</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>MedProSC__Search_Page_Custom_Nav_Btn_1_Label__c</fullName>
+        <deprecated>false</deprecated>
+        <description>MED-384, The label for the custom button on the Search Page. The button passes all the params in the URL to this VF page outside the package.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The label for the custom button on the Search Page. The button passes all the params in the URL to this VF page outside the package.</inlineHelpText>
+        <label>Search Page-Custom Nav Btn 1 Label</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProSC__Search_Page_Custom_Nav_Btn_1_Location__c</fullName>
+        <deprecated>false</deprecated>
+        <description>MED-384, The location that the custom button on the Search Page navigates to. The button passes all the params in the URL to this VF page outside the package.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The location that the custom button on the Search Page navigates to. The button passes all the params in the URL to this VF page outside the package.</inlineHelpText>
+        <label>Search Page-Custom Nav Btn 1 Location</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProSC__Show_Install_Date__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Show Install Date</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MedProSC__TwoPassDisplayDetail_Page_Back_btn__c</fullName>
+        <defaultValue>&quot;Back&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Label for the back button on the TwoPassDisplayResults page.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the label for the back button</inlineHelpText>
+        <label>TwoPassDisplayDetail Page-Back btn</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProSC__TwoPassDisplayDetail_V2_Page_Back_btn__c</fullName>
+        <defaultValue>&quot;Back&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Label for the back button on the TwoPassDisplayResults page.Label for the back button on the TwoPassDisplayResultsv2 page.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Label for the back button on the TwoPassDisplayResults page.Label for the back button on the TwoPassDisplayResultsv2 page.</inlineHelpText>
+        <label>TwoPassDisplayDetail V2 Page-Back btn</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProSC__Use_SF_Id_As_ClientID__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If this flag is checked, send this records SF Id as the Client Id to MedPro.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If the Client ID Required to Update in-Universe is checked and this flag is checked then the Client ID will be set to the Salesforce ID within MedPro.  Any sync mapping of MedPro that does not specify a Client ID will use the Salesforce ID instead.</inlineHelpText>
+        <label>Use SF Id As ClientID</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MedProSC__WSEndPoint__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Production: https://service.medproid.com/ 
+Test:  http://servicetest.medproid.com/</inlineHelpText>
+        <label>WS EndPoint</label>
+        <length>160</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProSC__WSPassword__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The unique password provided by MedPro to connect to MedProID®</inlineHelpText>
+        <label>WS Password</label>
+        <length>128</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProSC__WSUserName__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The unique username provided by MedPro to connect to MedProID®</inlineHelpText>
+        <label>WS UserName</label>
+        <length>32</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>MedPro Customer</label>
+    <listViews>
+        <fullName>MedProSC__All</fullName>
+        <columns>NAME</columns>
+        <columns>MedProSC__WSUserName__c</columns>
+        <columns>MedProSC__WSPassword__c</columns>
+        <columns>MedProSC__WSEndPoint__c</columns>
+        <columns>MedProSC__ConfigurePassTwoResults__c</columns>
+        <columns>MedProSC__ConfigStatus__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>MedProCustomer Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>MedPro Customers</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>MedProSC__WSUserName__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>MedProSC__WSPassword__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>MedProSC__WSEndPoint__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>MedProSC__ConfigurePassTwoResults__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>MedProSC__ConfigStatus__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>MedProSC__Clear_Customer_Fields</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Clear Customer Fields</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&apos;/soap/ajax/14.0/connection.js&apos;)} 
+{!REQUIRESCRIPT(&apos;/soap/ajax/14.0/apex.js&apos;)} 
+
+if (confirm(&apos;Are you sure you want to clear all MedPro Customer Fields?&apos;))
+{
+  try
+  {
+    var nameSpaceToUse = &quot;{!$Setup.MedProSC__MedProAppSettings__c.MedProSC__Namespace_Prefix__c}&quot;;
+    var isDebugEnabled = &quot;{!$Setup.MedProSC__MedProAppSettings__c.MedProSC__Debug_Enabled__c}&quot;;
+
+    var sfId = &apos;{!MedProSC__MedProCustomer__c.Id}&apos;; 
+    var result = sforce.apex.execute((nameSpaceToUse + &apos;MedPro_SC_API&apos;), &apos;clearCustomerFields&apos;, {sfId:sfId});
+    if (result[0].returnCode == &quot;200&quot;)
+    {
+      location.reload();
+    }
+    else
+      alert(result[0].message + &apos;[&apos; + result[0].medProScExceptionCode + &apos;]&apos;);
+  } 
+  catch(err)
+  { 
+    txt = &apos;There was an unexpected error on this page.\n&apos;; 
+    txt += &apos;Error description: &apos; + err.description + &apos;\n&apos;; 
+    txt += &apos;Click OK to continue.\n\n&apos;; 
+    alert(txt); 
+  }
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>MedProSC__Clear_Pass_1_Layout_Elements</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Clear Search Result Layout Elements</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/14.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/14.0/apex.js&quot;)} 
+
+if (confirm(&apos;Are you sure you want to clear all MedPro Pass 1 Layout Elements?&apos;))
+{
+  try
+  {
+    var nameSpaceToUse = &quot;{!$Setup.MedProSC__MedProAppSettings__c.MedProSC__Namespace_Prefix__c}&quot;;
+    var isDebugEnabled = &quot;{!$Setup.MedProSC__MedProAppSettings__c.MedProSC__Debug_Enabled__c}&quot;;
+
+    var sfId = &apos;{!MedProSC__MedProCustomer__c.Id}&apos;; 
+    var result = sforce.apex.execute((nameSpaceToUse + &quot;MedPro_SC_API&quot;), &quot;clearCustomerPass1LayoutElements&quot;, {sfId:sfId});
+
+    if (result[0].returnCode == &quot;200&quot;)
+    {
+      location.reload();
+    }
+    else
+    {
+      alert(result[0].message + &apos;[&apos; + result[0].medProScExceptionCode + &apos;]&apos;);
+    }
+  } 
+  catch(err)
+  { 
+    txt = &quot;There was an unexpected error on this page.\n&quot;; 
+    txt += &quot;Error description: &quot; + err.description + &quot;\n&quot;; 
+    txt += &quot;Click OK to continue.\n\n&quot;; 
+    alert(txt); 
+  }
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>MedProSC__Clear_Search_Input_fields</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Clear Search Form Elements</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/14.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/14.0/apex.js&quot;)} 
+
+if (confirm(&apos;Are you sure you want to clear all MedPro Search Input Fields?&apos;))
+{
+  try
+  {
+    var nameSpaceToUse = &quot;{!$Setup.MedProSC__MedProAppSettings__c.MedProSC__Namespace_Prefix__c}&quot;;
+    var isDebugEnabled = &quot;{!$Setup.MedProSC__MedProAppSettings__c.MedProSC__Debug_Enabled__c}&quot;;
+
+    var sfId = &apos;{!MedProSC__MedProCustomer__c.Id}&apos;; 
+    var result = sforce.apex.execute((nameSpaceToUse + &quot;MedPro_SC_API&quot;), &quot;clearCustomerSearchInputFields&quot;, {sfId:sfId});
+    if (result[0].returnCode == &quot;200&quot;)
+    {
+      location.reload();
+    }
+    else
+      alert(result[0].message);
+  } 
+  catch(err)
+  { 
+    txt = &quot;There was an unexpected error on this page.\n&quot;; 
+    txt += &quot;Error description: &quot; + err.description + &quot;\n&quot;; 
+    txt += &quot;Click OK to continue.\n\n&quot;; 
+    alert(txt); 
+  }
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>MedProSC__Load_Customer_Fields</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Load Customer Fields</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/14.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/14.0/apex.js&quot;)} 
+
+try
+{
+    var nameSpaceToUse = &quot;{!$Setup.MedProSC__MedProAppSettings__c.MedProSC__Namespace_Prefix__c}&quot;;
+    var isDebugEnabled = &quot;{!$Setup.MedProSC__MedProAppSettings__c.MedProSC__Debug_Enabled__c}&quot;;
+
+  var sfId = &apos;{!MedProSC__MedProCustomer__c.Id}&apos;; 
+  var result1 = sforce.apex.execute((nameSpaceToUse + &quot;MedPro_SC_API&quot;), &quot;clearCustomerFields&quot;, {sfId:sfId});
+  var result2 = sforce.apex.execute((nameSpaceToUse + &quot;MedPro_SC_API&quot;), &quot;addCustomerFieldsPass2&quot;, {sfId:sfId});
+  if ((result1[0].returnCode == &quot;200&quot;) &amp;&amp; (result2[0].returnCode == &quot;200&quot;))
+  {
+    location.reload();
+  }
+  else
+  {
+    if (result1[0].returnCode == &quot;200&quot;)
+      alert(result2[0].message + &apos;[&apos; + result2[0].medProScExceptionCode + &apos;]&apos;);
+    else
+      if (result2[0].returnCode == &quot;200&quot;)
+        alert(result1[0].message + &apos;[&apos; + result1[0].medProScExceptionCode + &apos;]&apos;);
+  }
+} 
+catch(err)
+{ 
+  txt = &quot;There was an unexpected error on this page.\n&quot;; 
+  txt += &quot;Error description: &quot; + err.description + &quot;\n&quot;; 
+  txt += &quot;Click OK to continue.\n\n&quot;; 
+  alert(txt); 
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>MedProSC__Load_Default_Pass_1_Layout_Elements</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Load Default Search Result Layout Elements</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/14.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/14.0/apex.js&quot;)} 
+
+try
+{
+    var nameSpaceToUse = &quot;{!$Setup.MedProSC__MedProAppSettings__c.MedProSC__Namespace_Prefix__c}&quot;;
+    var isDebugEnabled = &quot;{!$Setup.MedProSC__MedProAppSettings__c.MedProSC__Debug_Enabled__c}&quot;;
+
+  var sfId = &apos;{!MedProSC__MedProCustomer__c.Id}&apos;; 
+  var result1 = sforce.apex.execute((nameSpaceToUse + &quot;MedPro_SC_API&quot;), &quot;clearCustomerPass1LayoutElements&quot;, {sfId:sfId});
+  var result2 = sforce.apex.execute((nameSpaceToUse + &quot;MedPro_SC_API&quot;), &quot;addDefaultCustomerPass1LayoutElements&quot;, {sfId:sfId});
+  if ((result1[0].returnCode == &quot;200&quot;) &amp;&amp; (result2[0].returnCode == &quot;200&quot;))
+  {
+    location.reload();
+  }
+  else
+  {
+    if (result1[0].returnCode == &quot;200&quot;)
+      alert(result2[0].message + &apos;[&apos; + result2[0].medProScExceptionCode + &apos;]&apos;);
+    else
+      if (result2[0].returnCode == &quot;200&quot;)
+        alert(result1[0].message + &apos;[&apos; + result1[0].medProScExceptionCode + &apos;]&apos;);
+  }
+} 
+catch(err)
+{ 
+  txt = &quot;There was an unexpected error on this page.\n&quot;; 
+  txt += &quot;Error description: &quot; + err.description + &quot;\n&quot;; 
+  txt += &quot;Click OK to continue.\n\n&quot;; 
+  alert(txt); 
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>MedProSC__Load_Default_Search_Input_Fields</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Load Default Search Form Elements</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/14.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/14.0/apex.js&quot;)} 
+
+try
+{
+    var nameSpaceToUse = &quot;{!$Setup.MedProSC__MedProAppSettings__c.MedProSC__Namespace_Prefix__c}&quot;;
+    var isDebugEnabled = &quot;{!$Setup.MedProSC__MedProAppSettings__c.MedProSC__Debug_Enabled__c}&quot;;
+
+  var sfId = &apos;{!MedProSC__MedProCustomer__c.Id}&apos;; 
+  var result1 = sforce.apex.execute((nameSpaceToUse + &quot;MedPro_SC_API&quot;), &quot;clearCustomerSearchInputFields&quot;, {sfId:sfId});
+  var result2 = sforce.apex.execute((nameSpaceToUse + &quot;MedPro_SC_API&quot;), &quot;addDefaultCustomerSearchInputFields&quot;, {sfId:sfId});
+  if ((result1[0].returnCode == &quot;200&quot;) &amp;&amp; (result2[0].returnCode == &quot;200&quot;))
+  {
+    location.reload();
+  }
+  else
+  {
+    if (result1[0].returnCode == &quot;200&quot;)
+      alert(result2[0].message + &apos;[&apos; + result2[0].medProScExceptionCode + &apos;]&apos;);
+    else
+      if (result2[0].returnCode == &quot;200&quot;)
+        alert(result1[0].message + &apos;[&apos; + result1[0].medProScExceptionCode + &apos;]&apos;);
+  }
+} 
+catch(err)
+{ 
+  txt = &quot;There was an unexpected error on this page.\n&quot;; 
+  txt += &quot;Error description: &quot; + err.description + &quot;\n&quot;; 
+  txt += &quot;Click OK to continue.\n\n&quot;; 
+  alert(txt); 
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>MedProSC__Update_All_MedProID_Stamped_Records</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Update All MedProID Stamped Records</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&apos;/soap/ajax/14.0/connection.js&apos;)} 
+{!REQUIRESCRIPT(&apos;/soap/ajax/14.0/apex.js&apos;)} 
+
+if (confirm(&apos;Are you sure you want to update all MedProID stamped records?&apos;)) 
+{ 
+  try 
+  { 
+    var nameSpaceToUse = &quot;{!$Setup.MedProSC__MedProAppSettings__c.MedProSC__Namespace_Prefix__c}&quot;; 
+    var isDebugEnabled = &quot;{!$Setup.MedProSC__MedProAppSettings__c.MedProSC__Debug_Enabled__c}&quot;; 
+
+    var result = sforce.apex.execute((nameSpaceToUse + &apos;MedPro_SC_API&apos;), &apos;updateAllMedProIdStampedRecords&apos;, {}); 
+
+    if (result[0].returnCode == &quot;200&quot;) 
+    { 
+      alert(&apos;An E-Mail will be sent to the system administrator upon completion of the mass update of all MedProID stamped records&apos;);
+    } 
+    else
+    {
+      alert(result[0].message + &apos;[&apos; + result[0].medProScExceptionCode + &apos;]&apos;);
+    }
+  } 
+  catch(err) 
+  { 
+    txt = &apos;There was an unexpected error on this page.\n&apos;; 
+    txt += &apos;Error description: &apos; + err.description + &apos;\n&apos;; 
+    txt += &apos;Click OK to continue.\n\n&apos;; 
+    alert(txt); 
+  } 
+}</url>
+    </webLinks>
+</CustomObject>

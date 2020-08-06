@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Territory2Rule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <booleanFilter>1 AND 5 AND 6 and (2 OR 3 OR 4)</booleanFilter>
+    <name>Atlanta S</name>
+    <objectType>Account</objectType>
+    <ruleItems>
+        <field>Account.Account_Type__c</field>
+        <operation>equals</operation>
+        <value>Clinical Account US</value>
+    </ruleItems>
+    <ruleItems>
+        <field>Account.BillingPostalCode</field>
+        <operation>startsWith</operation>
+        <value>302,304,305,306,308,309,310,312,313,314,315,316,317,318,319,398</value>
+    </ruleItems>
+    <ruleItems>
+        <field>Account.BillingPostalCode</field>
+        <operation>equals</operation>
+        <value>30304,30320,30321,30348,30354,30368,30380,30385,30388,30394,30396,30398</value>
+    </ruleItems>
+    <ruleItems>
+        <field>Account.BillingPostalCode</field>
+        <operation>equals</operation>
+        <value>30012,30013,30014,30015,30016,30018,30025,30034,30036,30037,30038,30052,30054,30055,30056,30058,30070,30074,30094,31136,31169,31192,31193</value>
+    </ruleItems>
+    <ruleItems>
+        <field>Account.BillingPostalCode</field>
+        <operation>notEqual</operation>
+        <value>30213,30217,30220,30230,30251,30259,30268,30272,30275,30291,30620,30666,30680,31833</value>
+    </ruleItems>
+    <ruleItems>
+        <field>Account.BillingPostalCode</field>
+        <operation>notEqual</operation>
+        <value>30501,30502,30503,30504,30506,30507,30512,30513,30514,30515,30518,30519,30522,30527,30528,30533,30534,30536,30539,30540,30541,30542,30543,30545,30546,30554,30555,30559,30560,30564,30566,30571,30572,30582,30597</value>
+    </ruleItems>
+</Territory2Rule>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- MedPro Column Name --></label>
+        <name>MedProBT__MedPro_Column_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- MedPro Value --></label>
+        <name>MedProBT__MedPro_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Values --></label>
+        <name>MedProBT__Other_Values__c</name>
+    </fields>
+    <fields>
+        <label><!-- SFDC Value --></label>
+        <name>MedProBT__SFDC_Value__c</name>
+    </fields>
+</CustomObjectTranslation>

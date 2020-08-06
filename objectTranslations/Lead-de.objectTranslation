@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- CRMC Action Grid Defaults --></label>
+        <name>CRMC_PP__CRMC_Action_Grid_Defaults</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Account Lead Source --></label>
+        <name>Account_Lead_Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancel Workflow --></label>
+        <name>Cancel_Workflow__c</name>
+    </fields>
+    <fields>
+        <label><!-- Clinic Name --></label>
+        <name>Clinic_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country of Residence --></label>
+        <name>Country_of_Residence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Covid-19 Candidate --></label>
+        <name>Covid_19_Candidate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Has this contact been emailed a consent form via Docusign for the Covid-19 validation study? --></help>
+        <label><!-- Covid-19 Consent Form Sent? --></label>
+        <name>Covid_19_Consent_Form_Sent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box when we&apos;ve received the consent form back from the patient and have updated the Google Doc that Clinical uses to send out kits. --></help>
+        <label><!-- Covid-19 Google Doc Updated? --></label>
+        <name>Covid_19_Google_Doc_Updated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Covid-19 Consent Form Sent --></label>
+        <name>Date_Covid_19_Consent_Form_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- GRECO-B Candidate --></label>
+        <name>GRECO_B_Candidate__c</name>
+    </fields>
+    <fields>
+        <label><!-- GRECO-B Consent Approved --></label>
+        <name>GRECO_B_Consent_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inquiry Type --></label>
+        <name>Inquiry_Type__c</name>
+        <picklistValues>
+            <masterLabel>Current Guardant Health Client</masterLabel>
+            <translation><!-- Current Guardant Health Client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family Member or Friend</masterLabel>
+            <translation><!-- Family Member or Friend --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media/Public Relations</masterLabel>
+            <translation><!-- Media/Public Relations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Professional</masterLabel>
+            <translation><!-- Medical Professional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Medical Professional</masterLabel>
+            <translation><!-- New Medical Professional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient</masterLabel>
+            <translation><!-- Patient --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Lead URL --></label>
+        <name>Lead_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPI Not Matched --></label>
+        <name>NPI_Not_Matched__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPI Number --></label>
+        <name>NPI_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- No Of Kits --></label>
+        <name>No_Of_Kits__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pardot Lead Reassign --></label>
+        <name>Pardot_Lead_Reassign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Physician First Name --></label>
+        <name>Physician_First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Physician Last Name --></label>
+        <name>Physician_Last_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is from the Pardot Request Guardant 360 Kit. --></help>
+        <label><!-- Practice Contact First Name --></label>
+        <name>Practice_Contact_First_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is from the Pardot Request Guardant 360 Kit. --></help>
+        <label><!-- Practice Contact Last Name --></label>
+        <name>Practice_Contact_Last_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is from the Pardot Request Guardant 360 Kit. --></help>
+        <label><!-- Practice Office Contact Email --></label>
+        <name>Practice_Office_Contact_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Cancer Type --></label>
+        <name>Primary_Cancer_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request a Kit Details --></label>
+        <name>Request_a_Kit_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requestakit --></label>
+        <name>Requestakit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Override DupeCatcher --></label>
+        <name>SFSSDupeCatcher__Override_DupeCatcher__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subscribe --></label>
+        <name>Subscribe__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trade Show --></label>
+        <name>Trade_Show__c</name>
+        <picklistValues>
+            <masterLabel>AACR</masterLabel>
+            <translation><!-- AACR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASCO</masterLabel>
+            <translation><!-- ASCO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASCO 2016</masterLabel>
+            <translation><!-- ASCO 2016 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASCO 2017</masterLabel>
+            <translation><!-- ASCO 2017 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Needs Score Synced --></label>
+        <name>pi__Needs_Score_Synced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Last Scored At --></label>
+        <name>pi__Pardot_Last_Scored_At__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Campaign --></label>
+        <name>pi__campaign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Comments --></label>
+        <name>pi__comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Conversion Date --></label>
+        <name>pi__conversion_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Conversion Object Name --></label>
+        <name>pi__conversion_object_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Conversion Object Type --></label>
+        <name>pi__conversion_object_type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Created Date --></label>
+        <name>pi__created_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot First Activity --></label>
+        <name>pi__first_activity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot First Referrer Query --></label>
+        <name>pi__first_search_term__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot First Referrer Type --></label>
+        <name>pi__first_search_type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot First Referrer --></label>
+        <name>pi__first_touch_url__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Grade --></label>
+        <name>pi__grade__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Last Activity --></label>
+        <name>pi__last_activity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Notes --></label>
+        <name>pi__notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Hard Bounced --></label>
+        <name>pi__pardot_hard_bounced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Score --></label>
+        <name>pi__score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot URL --></label>
+        <name>pi__url__c</name>
+    </fields>
+    <fields>
+        <label><!-- Google Analytics Campaign --></label>
+        <name>pi__utm_campaign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Google Analytics Content --></label>
+        <name>pi__utm_content__c</name>
+    </fields>
+    <fields>
+        <label><!-- Google Analytics Medium --></label>
+        <name>pi__utm_medium__c</name>
+    </fields>
+    <fields>
+        <label><!-- Google Analytics Source --></label>
+        <name>pi__utm_source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Google Analytics Term --></label>
+        <name>pi__utm_term__c</name>
+    </fields>
+    <fields>
+        <label><!-- Count --></label>
+        <name>talkdesk__Count__c</name>
+    </fields>
+    <recordTypes>
+        <description><!-- Used for Participants in April 2020 COVID-19 Validation Study --></description>
+        <label><!-- COVID-19 Lead --></label>
+        <name>COVID_19_Lead</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used for May 2020 GRECO Study. Contains PHI. --></description>
+        <label><!-- GRECO Lead --></label>
+        <name>GRECO_Lead</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Standard Lead --></label>
+        <name>Standard_Lead</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- AltavistaNews --></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Delete --></label>
+        <name>Mass_Delete</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendGmail --></label>
+        <name>SendGmail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Export_vCards_in_PDF --></label>
+        <name>SmartvCard__Export_vCards_in_PDF</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_vCard --></label>
+        <name>SmartvCard__Generate_vCard</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_vCard_3_0 --></label>
+        <name>SmartvCard__Generate_vCard_3_0</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_with_DocuSign --></label>
+        <name>dsfs__Send_with_DocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Pardot_Email --></label>
+        <name>pi__Send_Pardot_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Pardot_Emails --></label>
+        <name>pi__Send_Pardot_Emails</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Single_Pardot_Email --></label>
+        <name>pi__Send_Single_Pardot_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_to_Prospect_Insight --></label>
+        <name>pi__Send_to_Prospect_Insight</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Smart_Dialer --></label>
+        <name>talkdesk__Smart_Dialer</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Smart_SMS --></label>
+        <name>talkdesk__Smart_SMS</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Webmerge --></label>
+        <name>webm__Webmerge</name>
+    </webLinks>
+</CustomObjectTranslation>

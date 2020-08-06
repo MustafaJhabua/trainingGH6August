@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>CTA is unable to reach the physician after multiple attempts. 7/30/18 Converted Portal URL to merge field. -AF</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>General_Outreach _LastDitch_029</name>
+    <style>none</style>
+    <subject>Follow-up regarding your patient {!Match_Record__c.Patient_Initials__c}’s Guardant360 results</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

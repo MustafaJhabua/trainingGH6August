@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sales can send this to customers about the great science Guardant Health presented and contributed to at ASCO 2016</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>GH_Logo_Small</letterhead>
+    <name>GHI at ASCO 2016</name>
+    <style>freeForm</style>
+    <subject>Guardant Health at ASCO 2016</subject>
+    <textOnly>Dr. {!Contact.LastName},
+
+We’re excited to let you know that last week ASCO held a press conference highlighting the results from our podium presentation where we presented data from more than 15,000 Guardant360 patients. It was the largest ever comprehensive liquid biopsy study, and it demonstrated high rates of similarity between the somatic genomic landscape seen in circulating tumor DNA, and that seen in population-scale cancer genomics studies based on tissue samples. ASCO also issued a press release (found here), which resulted in heavy international coverage about liquid biopsies.
+
+The data also showed Guardant360 had very high positive predictive value for driver alterations when compared with matched tissue samples, which helped drive attention and awareness about the value of liquid biopsies as a clinical tool. In case you missed it, here are a few highlights, and I have summarized some of the other coverage for you below:
+
+
+The New York Times
+‘Liquid’ Cancer Test Offers Hope for Alternative to Painful Biopsies
+By Andrew Pollack, June 4, 2016
+
+http://www.nytimes.com/2016/06/05/health/liquid-cancer-test-offers-hope-for-alternative-to-painful-biopsies.html
+
+Key quote:  “I think this study really demonstrates the veracity of the liquid biopsy approach,” said Philip C. Mack, director of molecular pharmacology at the University of California Davis Comprehensive Cancer Center, who is presenting the results here this weekend to the annual meeting of the American Society of Clinical Oncology.
+
+Fortune
+The Cancer Biopsy of the Future Could Be a Simple Blood Test
+June 5, 2016
+http://fortune.com/2016/06/05/asco-guardant-liquid-biopsy/
+
+Key quote: &quot;And the new study results were striking: Common disease-driving mutated genes detected by Guardant360 in breast, lung, colorectal, and other cancers were also present in 94-100% of the solid tissues extracted from trial participants.&quot;
+
+Guardant Health also presented data from the first prospective clinical trial evaluating the use of a comprehensive liquid biopsy to guide therapy selection for patients with metastatic cancer. In the words of primary investigator Dr. Jeeyun Lee of the Samsung Medical Center, “the genomic landscape of variants we found with Guardant360 were comparable to what we saw in NEXT-1, a tissue-based prospective clinical utility study. When these patients are then guided to matched therapy based on ctDNA profiling, the response rate was again comparable to what we see when selection is based on tumor specimens.&quot; Read the press release here.
+
+In addition, Guardant Health was featured in 13 other poster presentations. Most of them, along with the slides from our 15,000 patient study, are collected here.
+
+I hope you find these helpful. Please contact me at your convenience to discuss how Guardant360 can help your practice.
+
+{!Contact.OwnerFullName}
+
+Washington Post
+‘Liquid biopsy’ study offers hope for a blood test to find cancer
+By Laurie McGinley, June 4, 2016
+
+https://www.washingtonpost.com/news/to-your-health/wp/2016/06/04/liquid-biopsy-study-offers-hope-for-blood-test-for-finding-cancer/
+
+Key quote: The results were welcomed by David Nanus, chief of hematology and medical oncology at Weill Cornell Medicine and New York-Presbyterian Hospital. &quot;To be able to draw that information from a blood test is a huge step forward,&quot; said Nanus, who wasn&apos;t involved with the study.
+
+TIME
+A Blood Test for Cancer Gets Closer
+By Alice Park, June 4, 2016
+http://time.com/4357037/blood-test-cancer/
+
+Key quote: Says Dr. Julie Vose, professor of internal medicine at the Nebraska Medical Center University Hospital and president of ASCO, “We could imagine this type of assay could be used in the future to surveil patients and change their treatments when new mutations are found, without having to biopsy the original tumor, and in cases of metastatic disease where it may be more costly and dangerous to do that.”
+
+HealthDay
+Liquid Biopsy May Help Doctors Track Changes in Tumors
+Large study found it predicted when cancer DNA was mutating, could help tailor treatments to avoid drug resistance
+By Dennis Thompson, June 4, 2016
+https://consumer.healthday.com/cancer-information-5/mis-cancer-news-102/liquid-biopsy-may-help-doctors-track-changes-in-tumors-711659.html
+
+Key quote: Dr. Joshua Brody, director of the Lymphoma Immunotherapy Program at Mount Sinai&apos;s Tisch Cancer Institute in New York City, called the research &quot;a big deal. This will be practice-changing.&quot;
+
+The Economist
+The personalisation of cancer treatments is leading to better outcomes for patients
+June 4, 2016
+http://www.economist.com/news/science-and-technology/21700125-it-will-also-pave-way-cures-personalisation-cancer-treatments
+
+Key quote: &quot;If liquid biopsy can be made routine, the clinical consequences will be vast.&quot;
+
+This e-mail, including any attachments may contain material protected and governed by the Health Insurance and Portability and Accountability Act (HIPAA). This e-mail and any files transmitted with it are confidential and are intended solely for the use of the individual or entity to which they are addressed. The authorized recipient of this information is prohibited from disclosing this information to any other party unless authorized. If you are not the intended recipient of this e-mail please note that you have received this e-mail in error and any use, dissemination, forwarding, printing or copying of this e-mail is strictly prohibited. If you have received this e-mail in error, please immediately contact the sender of this message.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

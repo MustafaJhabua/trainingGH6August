@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_68111791</developerName>
+        <masterLabel>All Time Tests</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>Contact.Total_of_Samples__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>1</to>
+            </sourceValues>
+            <value>1 test</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>1</from>
+                <to>5</to>
+            </sourceValues>
+            <value>1-5 tests</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>5</from>
+                <to>10</to>
+            </sourceValues>
+            <value>6-10 tests</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>10</from>
+                <to>20</to>
+            </sourceValues>
+            <value>11-20 tests</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>20</from>
+                <to>50</to>
+            </sourceValues>
+            <value>21-50 tests</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>50</from>
+                <to>150</to>
+            </sourceValues>
+            <value>51-150 tests</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>150</from>
+            </sourceValues>
+            <value>&gt; 150 tests</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_36376651</developerName>
+        <masterLabel>Days since test</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>Contact.Days_Since_Last_Sample__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>29</to>
+            </sourceValues>
+            <value>Less than 30</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>29</from>
+                <to>45</to>
+            </sourceValues>
+            <value>30 to 45 days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>45</from>
+                <to>60</to>
+            </sourceValues>
+            <value>46 to 60 days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>60</from>
+                <to>75</to>
+            </sourceValues>
+            <value>61 to 75 days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>75</from>
+            </sourceValues>
+            <value>76 to 90 days</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Contact.Full_Name__c</field>
+    </columns>
+    <columns>
+        <field>EMAIL</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>PARENT.NAME</field>
+    </columns>
+    <columns>
+        <field>Contact.Total_of_Samples__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Days_Since_Last_Sample__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact.Days_Since_Last_Sample__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>30</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Days_Since_Last_Sample__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>lessThan</operator>
+            <value>90</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Account_Type__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Clinical Account US</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>EMAIL</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>@</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_36376651</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_68111791</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Inactive Customers for Digital - WIP</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactList@Contact.Last_Sample__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>LAST_ACTIVITY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

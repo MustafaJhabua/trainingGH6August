@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notify sales that OPS request has been received by CS.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>OPS Request</name>
+    <style>none</style>
+    <subject>ATTN: An OPS request was made from {!Offsite_Phlebotomy_Service__c.Account_Name__c}.</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

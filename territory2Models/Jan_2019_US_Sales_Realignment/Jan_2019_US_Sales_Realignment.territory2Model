@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Territory2Model xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This territory model has 55 territories (56 including Puerto Rico) in 6 regions.</description>
+    <name>Jan 2019 US Sales Realignment</name>
+</Territory2Model>

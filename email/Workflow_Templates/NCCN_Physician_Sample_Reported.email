@@ -1,0 +1,10 @@
+Hello
+
+This message is to inform you that a sample from Dr. {!Guardant_360_Sample__c.Contact__c}, at {!Guardant_360_Sample__c.Account__c} has been reported. 
+
+Accession #:  {!Guardant_360_Sample__c.Name}
+Date Received: {!Guardant_360_Sample__c.Date_Received__c}
+Date Reported: {!Guardant_360_Sample__c.Final_Report_Date__c}
+
+Best, 
+Ruben Smith

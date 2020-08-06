@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Stark Law Notification for Medicare Sample over 90%</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Stark Law Medicare Sample</name>
+    <style>none</style>
+    <subject>Stark Law Notification || Medicare Sample Received</subject>
+    <textOnly>Stark Law Medicare Sample
+
+Dear Finance and Billing Teams,
+
+This message is to inform you that the physician identified below has exceeded 90% of the Stark Law limit of $398 per year and has submitted a Medicare Sample.
+
+
+Sample Accession # {!Guardant_360_Sample__c.Name}
+Physician&apos;s name: {!Guardant_360_Sample__c.Contact__c}
+Account name: {!Guardant_360_Sample__c.Account__c}
+Percentage at time sample was received: {!Guardant_360_Sample__c.Physician_SL_Percent__c}
+Billing Type: {!Guardant_360_Sample__c.Billing_Type__c}
+
+Sincerely,
+The Sales Operations Team
+Guardant Health, Inc.
+
+Stark Law Medicare Sample</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

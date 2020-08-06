@@ -1,0 +1,6 @@
+Hello,
+
+Please note that Dr. {!Case.Physician__c}'s patient, {!Case.Accession_No__c}, from {!Case.Account_Name__c}, has been contacted by a Reimbursement Patient Access team member.
+
+Thank you, 
+Client Services

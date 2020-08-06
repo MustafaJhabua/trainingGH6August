@@ -1,0 +1,14 @@
+Please note that the following Sales Contract has a new ASP value: 
+
+Name: {!Sales_Contract__c.Name} 
+
+New ASP: {!Sales_Contract__c.ASP__c} 
+
+Old ASP: {!Sales_Contract__c.Previous_ASP__c} 
+
+
+To view the contract within Salesforce, please click on this link: 
+{!Sales_Contract__c.Link} 
+
+Thank you, 
+Sales Operations

@@ -1,0 +1,18 @@
+Dear Dr. {!Match_Record__c.MD_Last_Name__c},
+
+I wanted to follow-up on my email to see if you had any issues providing your availability for scheduling a call with Dr. {PI last name} who is awaiting your response to schedule a brief call regarding your patient {!Match_Record__c.Patient_Initials__c} with {!Match_Record__c.Qualifying_Target_Gene__c} alteration.
+
+To provide your availability for a phone call with Dr. {PI last name}, click the following link: {!Match_Record__c.YuzuSchedulingLink__c}.
+
+Please let us know if there is anything we can do to help facilitate this referral.
+
+Sincerely, 
+{!User.Name}, {!User.Degree__c} 
+{!User.Title} 
+Guardant Health 
+
+Guardant Health Match Key: {!Match_Record__c.Match_Key__c} 
+
+Guardant Health partners with the clinical trial sponsor to conduct patient referral activities. 
+
+This message is intended solely for the designated recipient(s). It may contain confidential or proprietary information and may be subject to attorney-client privilege or other confidentiality protections. If you are not a designated recipient you may not review, copy or distribute this message. If you have received this in error, please notify the sender by replying to this e-mail and deleting this message. Thank you. Ref: {!Match_Record__c.Id}

@@ -1,0 +1,14 @@
+Hello 
+This message is to inform that 30 days have passed since this physician has submitted a sample.
+*
+
+Physician: {!Contact.Full_Name__c}
+Last Sample Date: {!Contact.Last_Sample_Date__c}
+Number of Samples: {!Contact.Number_of_Samples__c}
+Last Sample Accession #: {!Contact.Last_Sample__c}
+
+*
+To view this and other churned physician records, click here: https://na29.salesforce.com/00O340000060KOj
+
+Thanks,
+Ruben Smith

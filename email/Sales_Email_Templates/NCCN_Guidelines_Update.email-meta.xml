@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>NCCN guidelines now include liquid biopsy</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>NCCN Guidelines Update</name>
+    <style>none</style>
+    <subject>NCCN Update: NSCLC guidelines now include plasma for molecular testing</subject>
+    <textOnly>Dear Dr. {!Contact.LastName},
+
+The NCCN just updated its non-small cell lung cancer guidelines to include plasma-based molecular testing for the first time. [1]
+
+We are glad to see the guidelines recognize the value of plasma-based genotyping. As oncologists like you already know, comprehensive liquid biopsy with Guardant360 provides a non-invasive method for determining your patients’ eligibility for targeted therapies. This is particularly relevant when tissue is unavailable for testing, or at progression to avoid the risks and complications of a repeat biopsy.
+
+This is a great step forward for the clinical use of liquid biopsy, a technology Guardant Health pioneered in 2014.
+
+Given these new guidelines, do you or a colleague have some time this week to discuss which of your advanced cancer patients might be right for testing with Guardant360? Please feel free to contact me any time.
+
+Sincerely,
+{!User.FirstName} {!User.LastName}
+{!User.Title}
+GUARDANTHEALTH
+
+[1] NCCN NSCLC Guidelines, Version 3.2017</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

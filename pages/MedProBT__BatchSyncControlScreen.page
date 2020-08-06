@@ -1,0 +1,170 @@
+<apex:page controller="MedProBT.MED_BatchSyncControlScreenController">
+<style type="text/css">
+    .col1 {width:25%;}
+    .col2 {width:12.5%;}   
+</style>
+
+<apex:form id="form">
+	<apex:pageBlock title="Target Objects">
+		<pageBlockButtons>
+			<apex:commandButton action="{!save}" value="Save All"/>
+		</pageBlockButtons>
+		<apex:repeat value="{!TargetObjects}" var="to">
+			<apex:panelGrid columns="4" columnClasses="col1" width="100%">
+				<apex:outputText >
+					Object Name:<br/><apex:inputField value="{!to.Name}"/>
+				</apex:outputText>
+				<apex:outputText >
+					Primary:<br/><apex:inputField value="{!to.MedProBT__Primary__c}"/>
+				</apex:outputText>
+				<apex:commandLink action="{!deleteTargetObject}" value="Delete">
+						<apex:param Name="Delete TO" value="{!to.Name}" assignTo="{!deleteTOName}"/>
+				</apex:commandLink>
+			</apex:panelGrid>
+		</apex:repeat>
+		<apex:panelGrid columns="4" columnClasses="col1" width="100%">
+			<apex:outputText >
+				Object Name:<br/><apex:inputText value="{!objectName}"/>
+			</apex:outputText>
+			<apex:outputText >
+				Primary:<br/><apex:inputCheckbox value="{!primary}"/>
+			</apex:outputText>
+			<apex:outputText />
+		</apex:panelGrid>
+		<apex:commandButton value="Insert Target Object" action="{!addNewTO}"/>
+	</apex:pageBlock>	
+	
+	<apex:pageBlock title="Desired Fields" id="dfTable">
+		<pageBlockButtons>
+			<apex:commandButton action="{!save}" value="Save All"/>
+		</pageBlockButtons>
+		<apex:repeat value="{!DesiredFields}" var="df">
+			<apex:panelGrid columns="8" columnClasses="col2" width="100%">
+				<apex:outputText >
+					Column Name:<br/><apex:inputField value="{!df.Name}"/>
+				</apex:outputText>
+				<apex:outputText id="mapField">
+					Mapping Field:<br/><apex:selectList value="{!df.MedProBT__MappingField__c}" multiselect="false" size="1" rendered="{!df.MedProBT__ExternalID__c == false && df.MedProBT__SecondaryMatch__c = false && df.MedProBT__UMR_Passthrough__c == false && df.MedProBT__Parent_Field__c == false}">
+						<apex:selectOptions value="{!targetObjectFields}"/>
+					</apex:selectList>
+					<apex:inputField value="{!df.MedProBT__MappingField__c}" rendered="{!df.MedProBT__ExternalID__c == true || df.MedProBT__UMR_Passthrough__c == true || df.MedProBT__Parent_Field__c == true || df.MedProBT__SecondaryMatch__c == true}"/>
+				</apex:outputText>
+				<apex:outputText >
+					External ID:<br/><apex:inputField value="{!df.MedProBT__ExternalID__c}" OnChange="refreshJS();"/>
+				</apex:outputText>
+				<apex:outputText >
+					Secondary Match:<br/><apex:inputField value="{!df.MedProBT__SecondaryMatch__c}" OnChange="refreshJS();"/>
+				</apex:outputText>
+				<apex:outputText >
+				    Parent Field:<br/><apex:inputField value="{!df.MedProBT__Parent_Field__c}" OnChange="refreshJS();"/>
+				</apex:outputText>
+				<apex:outputText >
+					Unmatched Record Only:<br/><apex:inputField value="{!df.MedProBT__UMR_Passthrough__c}" OnChange="refreshJS();"/>
+				</apex:outputText>
+				<apex:outputText >
+				    Update SFDC with NULL Values:<br/><apex:inputField value="{!df.MedProBT__Update_SFDC_with_NULL_Values__c}"/>
+				</apex:outputText>
+				<apex:outputText >
+    				<center><apex:commandLink action="{!deleteDesiredfield}" value="Delete">
+    					<apex:param Name="Delete DF" value="{!df.Name}" assignTo="{!deleteDFName}"/>
+    				</apex:commandLink></center>
+				</apex:outputText>
+			</apex:panelGrid>
+		</apex:repeat>
+		<apex:panelGrid columns="8" columnClasses="col2" width="100%">
+			<apex:outputText >
+				Column Name:<br/><apex:inputText value="{!columnName}"/>
+			</apex:outputText>
+			<apex:outputText >
+				Mapping Field:<br/><apex:selectList value="{!mappingField}" multiselect="false" size="1">
+						<apex:selectOptions value="{!targetObjectFields}"/>
+					</apex:selectList>
+			</apex:outputText>
+			<apex:outputText >
+				External ID:<br/><apex:inputCheckbox value="{!externalID}"/>
+			</apex:outputText>
+			<apex:outputText >
+				Secondary Match:<br/><apex:inputCheckbox value="{!secondaryMatch}"/>
+			</apex:outputText>
+			<apex:outputText >
+			    Parent Field:<br/><apex:inputCheckBox value="{!parentField}"/>
+			</apex:outputText>
+			<apex:outputText >
+				Unmatched Record Only:<br/><apex:inputCheckbox value="{!umrOnly}"/>
+			</apex:outputText>
+			<apeX:outputText >
+			    Update SFDC with NULL Values: <br/><apex:inputCheckbox value="{!nullValues}"/>
+			</apex:outputText>
+			<apex:outputText />
+		</apex:panelGrid>
+		<apex:commandButton value="Insert Desired Field" action="{!addNewDF}"/>
+	</apex:pageBlock>
+	
+	<apex:pageBlock title="Current Fields">
+		<apex:pageMessages />
+		<apex:actionPoller action="{!checkStatus}" interval="5" rerender="form" rendered="{!NOT(ISNULL(Result))}"/>
+		<apex:pageBlockTable value="{!NewDFs}" var="df">
+			<apex:column value="{!df.Name} => {!df.mappingField}"/>
+			<apex:column >
+				<apex:facet name="header">Create UMR Field</apex:facet>
+				
+				<apex:commandLink action="{!createField}" value="Create Unmatched Record Field" rendered="{!df.umrNotContains}">
+					<apex:param name="New Field" value="{!df.mappingField}" assignTo="{!newFieldName}"/ >
+				</apex:commandLink>
+				<apex:outputText value="Unmatched Record Field Created" rendered="{!df.umrContains}" />
+			</apex:column>
+
+		</apex:pageBlockTable>
+	</apex:pageBlock>
+	<apex:pageBlock title="Sync Settings">
+		<pageBlockButtons>
+			<apex:commandButton action="{!save}" value="Save All"/>
+		</pageBlockButtons>
+		<apex:PanelGrid columns="4" width="100%">
+			<apex:outputText >
+				Allowed MedPro Record Types: <br/><apex:inputField value="{!SyncSettings.MedProBT__AllowedRecordTypes__c}"/>
+			</apex:outputText>
+			<apex:outputText >
+				Allowed MedPro Match Types: <br/><apex:inputField value="{!SyncSettings.MedProBT__Allowed_MedPro_Match_types__c}"/>
+			</apex:outputText>
+			<apex:outputText >
+				Keep Blank Audit Records:<br/><apex:inputField value="{!SyncSettings.MedProBT__KeepBlankAuditRecords__c}"/>
+			</apex:outputText>
+			<apex:outputText >
+				Keep Unchanged Audit Records:<br/><apex:inputField value="{!SyncSettings.MedProBT__KeepUnchangedAuditRecords__c}"/>
+			</apex:outputText>
+			<apex:outputText >
+				Months to Store Unmatched Records:<br/><apex:inputField value="{!SyncSettings.MedProBT__MonthsToKeepUMR__c}"/>
+			</apex:outputText>
+			<apex:outputText >
+			    Months to Store Audit Records: <br/><apex:inputField value="{!SyncSettings.MedProBT__MonthsToKeepAudits__c}"/>
+			</apex:outputText>
+			<apex:outputText >
+				Email to Receive Incomplete Batch Report:<br/><apex:inputField value="{!SyncSettings.MedProBT__IncompleteBatchEmail__c}"/>
+			</apex:outputText>
+			<apex:outputText >
+			    Interval For Scheduling Clean Up Job: <br/><apex:inputField value="{!SyncSettings.MedProBT__Number_of_Minutes_Before_Follow_Up_Call__c}"/>
+			</apex:outputText>
+			<apex:outputText >
+			    Username: <br/><apex:inputField value="{!creds.MedProBT__Username__c}"/>
+			</apex:outputText>
+			<apex:outputText >
+			    Password: <br/><apex:inputField value="{!creds.MedProBT__Password__c}"/>
+			</apex:outputText>
+		</apex:PanelGrid>
+	</apex:pageBlock>	
+	
+	<apex:pageBlock title="Unmatched Record Fields" id="umrFields">
+		<apex:pageBlockButtons >
+			<apex:outputlink value="/{!unmatchedRecordID}" styleClass="btn" style="text-decoration:none;padding:4px;" target="_blank">Go to Setup</apex:outputlink>
+		</apex:pageBlockButtons>
+		<apex:pageBlockTable value="{!umrFields}" var="field">
+			<apex:column value="{!field}"/>
+		</apex:pageBlockTable>
+	</apex:pageBlock>
+<apex:actionFunction name="refreshJS" action="{!refresh}" rerender="mapField"/>
+	</apex:form>
+	<apex:panelGrid id="none">
+	</apex:panelGrid>
+
+</apex:page>

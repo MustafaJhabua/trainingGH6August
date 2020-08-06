@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email sent to MSL when NCCN sample is reported</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>NCCN Physician Sample Reported</name>
+    <style>none</style>
+    <subject>A sample from an NCCN site has been reported -  {!Guardant_360_Sample__c.Name}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

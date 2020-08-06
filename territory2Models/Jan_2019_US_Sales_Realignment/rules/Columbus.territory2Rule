@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Territory2Rule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <booleanFilter>1 AND 6 and (2 OR 3 OR 4 OR 5 )</booleanFilter>
+    <name>Columbus</name>
+    <objectType>Account</objectType>
+    <ruleItems>
+        <field>Account.Account_Type__c</field>
+        <operation>equals</operation>
+        <value>Clinical Account US</value>
+    </ruleItems>
+    <ruleItems>
+        <field>Account.BillingPostalCode</field>
+        <operation>startsWith</operation>
+        <value>430,431,432,433,437,450,451,452,453,454,455,456,457</value>
+    </ruleItems>
+    <ruleItems>
+        <field>Account.BillingPostalCode</field>
+        <operation>equals</operation>
+        <value>45433,45435,45003,45070</value>
+    </ruleItems>
+    <ruleItems>
+        <field>Account.BillingPostalCode</field>
+        <operation>equals</operation>
+        <value>43802,43811,43821,43822,43830,43842,43843,44813,44822,44904,45812,45845,45846,45859,45860,45865,45870,45883,45896,45999</value>
+    </ruleItems>
+    <ruleItems>
+        <field>Account.BillingPostalCode</field>
+        <operation>equals</operation>
+        <value>43902,43906,43914,43915,43927,43928,43931,43933,43940,43942,43946,43947,43950,43951,43967,43972,43977,43983,43985</value>
+    </ruleItems>
+    <ruleItems>
+        <field>Account.BillingPostalCode</field>
+        <operation>notEqual</operation>
+        <value>43316,43325,43330,43351,43359,43749,45336</value>
+    </ruleItems>
+</Territory2Rule>

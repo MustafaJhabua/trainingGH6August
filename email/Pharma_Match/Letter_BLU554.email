@@ -1,0 +1,23 @@
+Dear Dr. {!Contact.LastName},
+
+Further to our discussion about your patient’s Guardant360 report, you expressed interest in exploring patient enrollment into Blueprint Medicines’ clinical trial (NCT02508467) based on the CCND1 amplification we detected.
+
+This molecular alteration is seen in hepatocellular carcinoma and many other cancers.  Blueprint Medicine’s drug, BLU-554, may be effective for patients whose tumors harbor this alteration. Blueprint is conducting a phase 1 clinical trial study of BLU-554 in patients with hepatocellular carcinoma with aberrant overexpression of FGF19 in tumor tissue. Blueprint expects CCND1 amplification detected in circulating tumor DNA may track well with FGF19 overexpression in hepatocellular carcinoma making your patient eligible for their trial.
+
+More information on the clinical trial (NCT02508467) can be found here:
+https://clinicaltrials.gov/show/NCT02508467. 
+
+Blueprint Medicines has a number of trial sites across the country.
+
+If this trial would be of relevance for your patient, we would encourage you to contact Blueprint Medicines directly at: 617-714-6709 or studydirector@blueprintmedicines.com.
+
+Sincerely,
+{!User.Name}, {!User.Degree__c} 
+Clinical Trial Advisor
+Guardant Health
+
+Guardant Health Match Key: {!Match_Record__c.Match_Key__c} 
+
+Guardant Health partners with the clinical trial sponsor to conduct patient referral activities.
+
+This message is intended solely for the designated recipient(s). It may contain confidential or proprietary information and may be subject to attorney-client privilege or other confidentiality protections. If you are not a designated recipient you may not review, copy or distribute this message. If you have received this in error, please notify the sender by replying to this e-mail and deleting this message. Thank you. Ref: {!Match_Record__c.Id}

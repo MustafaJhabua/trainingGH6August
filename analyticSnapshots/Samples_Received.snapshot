@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AnalyticSnapshot xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Used for Kits vs Samples report/dashboard</description>
+    <mappings>
+        <sourceField>Guardant_360_Sample__c$Account__c</sourceField>
+        <sourceType>tabular</sourceType>
+        <targetField>Date__c.Account__c</targetField>
+    </mappings>
+    <mappings>
+        <sourceField>Guardant_360_Sample__c$Date_Received__c</sourceField>
+        <sourceType>tabular</sourceType>
+        <targetField>Date__c.Date__c</targetField>
+    </mappings>
+    <mappings>
+        <sourceField>Guardant_360_Sample__c$Id</sourceField>
+        <sourceType>tabular</sourceType>
+        <targetField>Date__c.Record_ID__c</targetField>
+    </mappings>
+    <mappings>
+        <sourceField>Guardant_360_Sample__c$Name</sourceField>
+        <sourceType>tabular</sourceType>
+        <targetField>Date__c.Accession__c</targetField>
+    </mappings>
+    <mappings>
+        <sourceField>Guardant_360_Sample__c$Sample_Count__c</sourceField>
+        <sourceType>tabular</sourceType>
+        <targetField>Date__c.Sample_Count__c</targetField>
+    </mappings>
+    <name>Samples Received</name>
+    <runningUser>ablair@guardanthealth.com</runningUser>
+    <sourceReport>GHI_CS_Manager_Reports/Samples_received</sourceReport>
+    <targetObject>Date__c</targetObject>
+</AnalyticSnapshot>

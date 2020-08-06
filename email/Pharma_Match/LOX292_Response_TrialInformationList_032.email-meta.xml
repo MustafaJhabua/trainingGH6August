@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>oxo292 Ordering MD provides affirmative response to phone call, initial outreach or last ditch email</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>LOX292_Response_TrialInformationList_032</name>
+    <style>none</style>
+    <subject>Re:</subject>
+    <textOnly>Thank you, Dr. {!Match_Record__c.MD_Last_Name__c},
+
+[Option 1: Response to IOE] Per your request, I have included information about the LOXO-292 clinical study below as well as assigned one of our Clinical Trial Advisor physicians to contact you via phone this week to further discuss the clinical trial options for your patient who had a RET fusion. [Option 1]
+
+[Option 2: Follow-up after phone conversation] It was great speaking with you regarding your patient {!Match_Record__c.Patient_Initials__c} ({!Match_Record__c.Patient_Age__c} yo {!Match_Record__c.Patient_Gender__c} with {!Match_Record__c.Cancer_Type_Lower_Case__c}) who was found to have a RET alteration. To view your patient&apos;s Guardant360 report, click here: {!Match_Record__c.Portal_Link_For_MD_text__c}. Further to our discussion about your patient’s Guardant360 report, you expressed an interest in exploring treatment options based on the RET alteration detected. [Option 2]
+
+Since RET alterations are uncommon, we have partnered with Loxo Oncology and formed a business and financial relationship to help identify patients for the LOXO-292 (LIBRETTO-001) study and to alert treating physicians about their treatment and trial options for patients like {!Match_Record__c.Patient_Initials__c}. Your patient may be eligible for [X NUMBER] of clinical trials as indicated on the Guardant360 report, including [BULLETED MENTION OF ADDITIONAL TRIALS]. 
+
+LOXO-292: Loxo Oncology
+LOXO-292 may inhibit RET signaling (including mutations and rearrangements/fusions) and is open to patients with non-small cell lung cancer, medullary thyroid cancer, colon cancer, and other RET-altered advanced solid tumors. More information on the LOXO-292 trial including clinical data from ASCO 2018 can be found in the attached PDF and at https://ClinicalTrials.gov/show/NCT03157128.
+ 
+The closest LOXO-292 study site is {!Match_Record__c.Closest_Trial_Site__c} in {!Match_Record__c.Closest_Trial_Site_City__c}, {!Match_Record__c.Closest_Trial_Site_State__c} with Dr. {PI Name}; additional study sites and financial support for patient travel and accommodations is available. 
+
+Would you like me to connect you with the clinical study team at Loxo Oncology via email so they may answer additional questions regarding eligibility, inclusion/criteria, etc. for the LIBRETTO-001 study?
+
+Kind Regards,
+{!User.Name}, {!User.Degree__c} 
+{!User.Title} 
+Guardant Health 
+Guardant Health Match Key: {!Match_Record__c.Match_Key__c} 
+Guardant Health partners with the clinical trial sponsor to conduct patient referral activities.
+This message is intended solely for the designated recipient(s). It may contain confidential or proprietary information and may be subject to attorney-client privilege or other confidentiality protections. If you are not a designated recipient you may not review, copy or distribute this message. If you have received this in error, please reply to this email and delete this message. Thank you. Ref: {!Match_Record__c.Id}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,33 @@
+Thank you, Dr. {!Contact.LastName}.
+
+Per your request, I have included a list of relevant trials below as well as assigned one of our Clinical Trial Advisor physicians to contact you via phone this week to further discuss the clinical trial options for your patient who had a BRAF V600E alteration. 
+
+There are several relevant trials underway: 
+- NCT02928224: Phase 3; BEACON Trial of V600E-mutant CRC; Array Biopharma
+- NCT02465060: Phase 2; NCI-Match; National Cancer Institute
+- NCT02693535: Phase 2; TAPUR trial (group 9 or 13); ASCO
+- NCT02546531: Phase 1; Defactinib with pembrolizumab and gemcitabine in advanced cancer; Washington University in St. Louis
+
+In addition, we have a financial and business relationship with Array Biopharma who is conducting BEACON CRC, a Phase 3 clinical trial for patients with BRAF-mutant colorectal cancer, whose disease has progressed after one or two prior regimens:
+ 
+Multicenter, Randomized, Open-label, 3-Arm Phase 3 Study of Encorafenib + Cetuximab Plus or Minus Binimetinib vs. Irinotecan/Cetuximab or Infusional 5- Fluorouracil (5-FU)/Folinic Acid (FA) /Irinotecan (FOLFIRI)/Cetuximab With a Safety Lead-in of Encorafenib + Binimetinib + Cetuximab in Patients with BRAF V600E-mutant Metastatic Colorectal Cancer (BEACON CRC)
+https://ClinicalTrials.gov/show/NCT02928224.
+
+The BEACON CRC study is currently enrolling patients for the Phase 3 portion of the study. Patients must have BRAF V600E metastatic colorectal cancer and have progressed after 1 or 2 prior regimens in the metastatic setting. 
+
+The study contains two parts: Safety Lead-in (completed) and Phase 3. Preliminary results from the safety lead-in portion of the study were reported at the ESMO Annual Conference in 2017. A total of 30 patients were treated with the combination of binimetinib, encorafenib, and cetuximab. The observed adverse events were consistent with known BRAF, MEK, and EGFR inhibitor toxicities. The rate of severe skin toxicities was lower than what has generally been observed for cetuximab alone or in combination with standard chemotherapy for mCRC. In the 29 patients with the BRAF V600E mutated mCRC, the confirmed response rate was 41% with 1 complete response. These exceeds the standard-of-care benchmarks in this setting of previously treated BRAF V600-mutant mCRC. In addition, at the time of the data cut-off, the median time on study was 5.6 months (range 1.0-9.3 months) and 76% of the patients remained on study treatment. The safety and preliminary data from the Safety lead-in portion of the study supported the initiation of the phase 3 portion of the study. More information regarding the initial results of the Safety Lead-in portion can be found here: http://www.arraybiopharma.com/index.php/download_file/275/.
+
+Array has a number of trial sites across the country. More information on Array Biopharma’s clinical trial can be found here: https://ClinicalTrials.gov/show/NCT02928224.
+ 
+If this trial would be of relevance for your patient, we would encourage you to contact Array Biopharma directly at 303-381-6604 or clinicaltrials@arraybiopharma.com. Additionally, we can connect you directly to the PI at the nearest trial site.
+
+Kind Regards,
+{!User.Name}, {!User.Degree__c} 
+Clinical Trial Advisor
+Guardant Health, Inc.
+
+Guardant Health Match Key: {!Match_Record__c.Match_Key__c} 
+
+Guardant Health partners with the clinical trial sponsor to conduct patient referral activities. 
+
+This message is intended solely for the designated recipient(s). It may contain confidential or proprietary information and may be subject to attorney-client privilege or other confidentiality protections. If you are not a designated recipient you may not review, copy or distribute this message. If you have received this in error, please notify the sender by replying to this e-mail and deleting this message. Thank you. Ref: {!Match_Record__c.Id}

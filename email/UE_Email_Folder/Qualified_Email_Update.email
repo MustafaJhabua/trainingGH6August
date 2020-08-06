@@ -1,0 +1,12 @@
+Hello, 
+
+{!User.Name} updated {!Contact.Name}'s Email to {!Contact.Email}. 
+
+This contact has a portal account: {!Contact.Portal_User_Name__c}
+ 
+You may want to double-check this contact's portal account and see if it needs to be updated as well.
+
+https://guardanthealth.my.salesforce.com/{!Contact.Id} 
+
+Thanks, 
+User Engagement Team

@@ -1,0 +1,27 @@
+Dear Dr. {!Contact.LastName},
+
+Further to our discussion and/or email exchange about your patient’s Guardant360 report, you expressed interest in exploring patient enrollment into Tracon’s clinical trial (253PC101) based on the AR F877L alteration detected.
+
+This molecular alteration is notable because it is relatively rare. Of the trials we discussed, Tracon is evaluating the safety and efficacy of TRC253 in patients with tumors harboring the AR F877L alteration in the clinical trial:
+
+Phase 1/2A Study of TRC253, an Androgen Receptor Antagonist, in Metastatic Castration-resistant Prostate Cancer Patients: NCT02987829.
+
+Tracon’s trial (253PC101) involves a drug called TRC253 that targets wildtype and mutant forms of the AR protein and is open to patients with metastatic castration-resistant prostate cancer. 
+
+More information on Tracon’s clinical trial can be found here: https://clinicaltrials.gov/ct2/show/NCT02987829.
+
+The closest Tracon 253PC101 study site is {!Match_Record__c.Closest_Trial_Site__c} in {!Match_Record__c.Closest_Trial_Site_City__c}, {!Match_Record__c.Closest_Trial_Site_State__c}; additional study sites are also available around the US. Travel reimbursement is available for eligible patients to reduce out-of-pocket expenses. 
+
+Please contact Guardant Health by emailing trials@guardanthealth.com or calling 1-314-795-7737 to receive more information related to this study, to discuss the patient enrollment procedure, or to be connected to the Principal Investigator at the nearest trial site. Your patient may also qualify for alternative treatments or clinical trials in addition to the 253PC101 trial.
+
+If this trial would be of relevance for your patient, we would encourage you to contact Guardant Health directly by email so you can be connected with the Principal Investigator at the nearest trial site.
+
+
+Sincerely, 
+{!User.Name}, {!User.Degree__c} 
+Clinical Trial Advisor 
+Guardant Health 
+
+Guardant Health Match Key: {!Match_Record__c.Match_Key__c} 
+
+Guardant Health partners with the clinical trial sponsor to conduct patient referral activities.

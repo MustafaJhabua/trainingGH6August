@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Accessioning</name>
+    <queueMembers>
+        <users>
+            <user>cchen@guardanthealth.com</user>
+            <user>dstewart@guardanthealth.com</user>
+            <user>ddiep@guardanthealth.com</user>
+            <user>mlee@guardanthealth.com</user>
+            <user>ndo@guardanthealth.com</user>
+            <user>pau@guardanthealth.com</user>
+            <user>wwong@guardanthealth.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,9 @@
+Greetings {!Account.OwnerFullName}
+
+This message is to inform you that Dr. {!Contact.LastName} from {!Account.Name} has submitted their first sample, {!Contact.Accession__c}.
+
+Please refer to their contact page for more info: {!Contact.Link}
+
+
+Best, 
+Sales Operations

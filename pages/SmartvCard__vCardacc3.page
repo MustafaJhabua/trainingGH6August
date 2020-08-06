@@ -1,0 +1,48 @@
+<apex:page standardController="Account" extensions="SmartvCard.Buttonforaccount">
+<apex:form >
+<br>
+<apex:commandLink styleClass="btn" value="Download" action="{!DownloadVCF3}"    target="_bottom"  accesskey="r" style="text-decoration: none;" />
+<!-- <apex:commandButton action="{!DownloadVCF2}" value="Download"/> --> &nbsp;&nbsp;&nbsp;
+<apex:commandLink styleClass="btn" value="OK" action="{!redirecttoaccount}"   accesskey="r" style="text-decoration: none;" />
+<!-- <apex:commandButton action="{!Redirecttocontact}" value="OK" /> -->&nbsp;&nbsp;&nbsp;
+<apex:commandLink styleClass="btn" value="Cancel" action="{!back}"   accesskey="r" style="text-decoration: none;" />
+<!-- <apex:commandButton action="{!back}" value="Cancel"/>  -->
+<!-- <apex:commandButton action="{!DownloadVCF3}" value="Download"/>&nbsp;&nbsp;&nbsp;
+ <apex:commandButton action="{!redirecttoaccount}" value="OK" />&nbsp;&nbsp;&nbsp;
+ <apex:commandButton action="{!back}" value="Cancel"/>  -->
+ </br>
+</apex:form>
+<br/>
+BEGIN:VCARD<br/>
+VERSION:3.0<br/>
+N:;
+<c:vcard Value="{!account.name}"/><br/>
+FN:<c:vcard Value="{!account.name}"/>  <br/>
+ORG:<c:vcard Value="{!Account.Name}"/><br/>
+TITLE:<br/>
+TEL;TYPE=WORK;VOICE:<c:vcard Value="{!account.Phone}"/><br/>
+TEL;TYPE=WORK;FAX:<c:vcard Value="{!account.Fax}"/><br/>
+ADR;TYPE=WORK:;;<c:vcard Value="{!account.billingStreet}"/>;<c:vcard Value="{!account.billingCity}"/>;<c:vcard Value="{!account.billingState}"/>;<c:vcard Value="{!account.billingPostalCode}"/>;<c:vcard Value="{!account.billingCountry}"/><br/>
+LABEL;TYPE=WORK:<c:vcard Value="{!account.billingStreet} "/><c:vcard Value="{!account.billingCity} "/><c:vcard Value="{!account.billingState} "/><c:vcard Value="{!account.billingPostalCode} "/><c:vcard Value="{!account.billingCountry}"/><br/>
+ADR;TYPE=HOME:;;<br/>
+LABEL;TYPE=HOME:<br/>
+EMAIL;PREF;INTERNET:<br/>
+URL;WORK:<c:vcard Value="{!account.website}"/><br/>
+NOTE:
+<c:vcard Value="{!Note}"/><br/>
+REV:20080424T195243Z<br/>
+END:VCARD<br/>
+<apex:form >
+<br>
+<apex:commandLink styleClass="btn" value="Download" action="{!DownloadVCF3}"    target="_bottom"  accesskey="r" style="text-decoration: none;" />
+<!-- <apex:commandButton action="{!DownloadVCF2}" value="Download"/> --> &nbsp;&nbsp;&nbsp;
+<apex:commandLink styleClass="btn" value="OK" action="{!redirecttoaccount}"   accesskey="r" style="text-decoration: none;" />
+<!-- <apex:commandButton action="{!Redirecttocontact}" value="OK" /> -->&nbsp;&nbsp;&nbsp;
+<apex:commandLink styleClass="btn" value="Cancel" action="{!back}"   accesskey="r" style="text-decoration: none;" />
+<!-- <apex:commandButton action="{!back}" value="Cancel"/>  -->
+<!-- <apex:commandButton action="{!DownloadVCF3}" value="Download"/>&nbsp;&nbsp;&nbsp;
+ <apex:commandButton action="{!redirecttoaccount}" value="OK" />&nbsp;&nbsp;&nbsp;
+ <apex:commandButton action="{!back}" value="Cancel"/>  -->
+ </br>
+</apex:form>
+</apex:page>

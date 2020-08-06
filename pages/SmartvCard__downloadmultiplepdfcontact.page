@@ -1,0 +1,68 @@
+<apex:page standardController="Account"  extensions="SmartvCard.multipleaccountcontact" renderAs="pdf">
+<style>
+    html, body{font:normal 12px Trebuchet MS;}
+</style>
+<apex:pagemessages />
+<apex:variable value="{!0}" var="rowNum"/>
+    <apex:repeat value="{!conlist}" var="s">
+        <table width="350" border="0" align="center" cellpadding="0" cellspacing="0" >
+              <tr>
+                    <td>
+                    </td>
+                    <td width="400" style="background:#EEEEEE; border-top:1px solid #dde0d0;">
+                    </td>
+                    <td align="right">
+                    </td>
+              </tr>
+              <tr>
+                <td style="background:#EEEEEE; border-left:1px solid #dde0d0;">
+                </td>
+                <td style="background:#EEEEEE;">
+                    <table width="100%" border="0" align="center" cellpadding="2" cellspacing="0">
+                        <tr>
+                            <td align="center" style="height:155px;">
+                                <span style="font:bold 14px Trebuchet MS; color:#666666;">{!s.Name}</span> <br/>
+                                <span style="font:bold 12px Trebuchet MS; color:#666666;">{!s.Title}</span><br/>
+                                <span style="font:normal 12px Trebuchet MS; font-style:italic; color:#666666;">{!s.account.name}</span><br />
+                            {!s.MobilePhone}<br/>
+                            <span style="font:bold 12px Trebuchet MS; color:#666666;">{!s.Email}</span><br /> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" style="font:normal 10px Trebuchet MS; border-top:1px dotted #999999; ">
+                                <apex:outputText value="{!s.mailingStreet} "/> 
+                                <apex:outputText value="{!s.mailingcity} " />
+                                <apex:outputText value="{!s.mailingState} " />
+                                <apex:outputText value="{!s.mailingpostalcode} " />
+                                <apex:outputText value="{! s.mailingcountry}" />
+                                <br />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="background:#EEEEEE; border-right:1px solid #dde0d0;">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                </td>
+                <td style="background:#EEEEEE; border-bottom:1px solid #dde0d0;">
+                </td>
+                <td align="right">
+                </td>
+              </tr>
+        </table>
+        
+        <div >
+            <br/>
+            <br/>
+        </div>
+        <apex:variable var="rowNum" value="{!rowNum + 1}"/>
+   
+        <apex:outputtext rendered="{!IF((FLOOR(rowNum) == 4),true,false)}">      
+        <div  style="page-break-after:always;" >
+        <apex:variable var="rowNum" value="0"/>
+        </div>
+        </apex:outputtext>  
+    </apex:repeat>
+</apex:page>

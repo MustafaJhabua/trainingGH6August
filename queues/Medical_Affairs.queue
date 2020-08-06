@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Medical Affairs</name>
+    <queueMembers>
+        <roleAndSubordinates>
+            <roleAndSubordinate>Manager_Client_Services</roleAndSubordinate>
+        </roleAndSubordinates>
+        <users>
+            <user>aroberts@guardanthealth.com</user>
+            <user>awells@guardanthealth.com</user>
+            <user>ahhtalasaz@guardanthealth.com</user>
+            <user>bnagy@guardanthealth.com</user>
+            <user>cklosowski@guardanthealth.com</user>
+            <user>clee@guardanthealth.com</user>
+            <user>kfaulkner@guardanthealth.com</user>
+            <user>kjohnson@guardanthealth.com</user>
+            <user>kshipley@guardanthealth.com</user>
+            <user>mmckenna@guardanthealth.com</user>
+            <user>rlanman@guardanthealth.com</user>
+            <user>rchambers@guardanthealth.com</user>
+            <user>swienke@guardanthealth.com</user>
+            <user>scornelsen@guardanthealth.com</user>
+            <user>trich@guardanthealth.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

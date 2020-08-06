@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>MedProBT__Row_Result__c$Name</field>
+    </columns>
+    <columns>
+        <field>MedProBT__Row_Result__c$MedProBT__Batch_Result__c</field>
+    </columns>
+    <columns>
+        <field>MedProBT__Row_Result__c$MedProBT__Error_Message__c</field>
+    </columns>
+    <columns>
+        <field>MedProBT__Row_Result__c$CreatedDate</field>
+    </columns>
+    <description>Which MedPro records were not processed successfully?</description>
+    <filter>
+        <criteriaItems>
+            <column>MedProBT__Row_Result__c$MedProBT__Error_Message__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>UMR,Record Type,Duplicate</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>MedPro Row Result Error Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>MedProBT__MedPro_Row_Results__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>MedProBT__Row_Result__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_LAST30</interval>
+    </timeFrameFilter>
+</Report>

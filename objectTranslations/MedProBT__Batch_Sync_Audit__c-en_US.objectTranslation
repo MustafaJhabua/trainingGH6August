@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Date of Process --></label>
+        <name>MedProBT__Date_of_Process__c</name>
+    </fields>
+    <fields>
+        <label><!-- Process Type --></label>
+        <name>MedProBT__Process_Type__c</name>
+        <picklistValues>
+            <masterLabel>Regular Batch</masterLabel>
+            <translation><!-- Regular Batch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unmatched Record Cleanup</masterLabel>
+            <translation><!-- Unmatched Record Cleanup --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

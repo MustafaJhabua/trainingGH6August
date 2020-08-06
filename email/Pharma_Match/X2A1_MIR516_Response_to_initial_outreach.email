@@ -1,0 +1,49 @@
+Thank you, Dr. {!Contact.LastName}.
+
+Per your request, I have included a list of relevant trials below as well as assigned one of our Clinical Trial Advisor physicians to contact you via phone this week to further discuss the clinical trial options for your patient who had {!Match_Record__c.Qualifying_Target_Genes__c} gene alteration.
+
+There are several relevant trials underway: 
+
+RET (any cancer)
+- NCT02219711: MGCD516 in advanced cancer types from Mirati Therapeutics
+- NCT03037385: BLU-667 for Thyroid Cancer, Non-Small Cell Lung Cancer, and Other Advanced Solid Tumors; Blueprint Medicines 
+- NCT02272998: Ponatinib in solid tumors with FGFR1/2/3/4, RET, and KIT activating mutations from Ohio State
+- NCT02693535: TAPUR - advanced cancer basket trial (Group 13 - regorafenib) from ASCO
+- NCT01639508: Cabozantinib in NSCLC with RET fusions from Exelixis
+- NCT02795156: Afatinib/regorafenib in select tumor types based on genomic alteration from Bayer and Boehringer Ingelheim
+- NCT02299141: Nintedanib in molecularly selected advanced NSCLC from NCCN
+
+PDGFRA (NSCLC)
+- NCT02501096: Lenvatinib plus pembrolizumab in select solid tumors from Eisai
+- NCT02640508: Eribulin and Levantinib in advanced solid tumors from Eisai
+- NCT01935336: Ponatinib in lung cancer from Ariad Pharmaceuticals
+- NCT02219711: MGCD516 in advanced cancer types from Mirati Therapeutics
+- NCT02571036: DCC-2618 with advanced cancer from Deciphera
+
+KIT (NSCLC)
+- NCT02693535: TAPUR - advanced cancer basket trial (Group 12/13 - dasatinib/regorafenib) from ASCO
+- NCT02401815: PLX9486 single agent or combination with Sunitinib in advanced solid tumors from Plexxikon
+- NCT02640508: Eribulin and Levantinib in advanced solid tumors from Eisai
+- NCT02219711: MGCD516 in advanced cancer types from Mirati Therapeutics
+- NCT02571036: DCC-2618 with advanced cancer from Deciphera 
+
+In addition, we have a financial and business relationship with Mirati Therapeutics who has a spectrum-selective receptor tyrosine kinase inhibitor, called MGCD516, in clinical development to determine its efficacy for patients whose tumors harbor this particular alteration. 
+
+Patients with any solid tumor malignancy that is locally advanced, unresectable or metastatic, and with activating genetic changes of the MET, RET, NTRK1, PDGFRA or KIT genes are being considered for enrollment in Mirati’s trial. More information on the clinical trial (NCT02219711) can be found here: https://clinicaltrials.gov/ct2/show/NCT02219711. 
+
+In preclinical studies, MGCD516 has demonstrated tumor growth inhibition and anti-tumor efficacy, including frank tumor regression of tumors harboring activating alterations in the MET, RET, NTRK1, PDGFRA or KIT genes. In an ongoing Phase 1/1b study (Study 516-001), MGCD516 has shown preliminary signs of clinical activity in patients including those with clear cell mRCC and mCRPC, as well as in mNSCLC exhibiting abnormalities in the RET pathway. More specifically, in January 2017 Mirati reported that six patients with NSCLC harboring RET fusions, had been enrolled and all four evaluable patients showed tumor reductions with one confirmed and one unconfirmed response. Several patients have been on study for more than 1 year, indicating clinical benefit of treatment with MGCD516. For additional information, see the published results which can be found at ASCO 2016 Poster: http://www.mirati.com/assets/001/5060.pdf. 
+
+Clinical trial sites for the Mirati Therapeutics 516-001 clinical study are open around the United States. Through Mirati’s concierge program, travel accommodations and travel expense reimbursement may be available for your patient to travel to a trial site for assessment of eligibility to participate in the trial. Further on-trial travel-related expense reimbursement would require discussion and approval by a site and the site’s local IRB. 
+
+If we can help connect you with Mirati to discuss your patient’s eligibility for the Mirati Therapeutics 516-001 clinical study, please let us know. You can also contact Mirati Therapeutics Study Locator directly, at their Physician and Patient Clinical Trial Hotline at 1-844-707-4816. 
+
+Kind Regards,
+{!User.Name}, {!User.Degree__c} 
+Clinical Trial Advisor
+Guardant Health, Inc.
+
+Guardant Health Match Key: {!Match_Record__c.Match_Key__c} 
+
+Guardant Health partners with the clinical trial sponsor to conduct patient referral activities. 
+
+This message is intended solely for the designated recipient(s). It may contain confidential or proprietary information and may be subject to attorney-client privilege or other confidentiality protections. If you are not a designated recipient you may not review, copy or distribute this message. If you have received this in error, please notify the sender by replying to this e-mail and deleting this message. Thank you. Ref: {!Match_Record__c.Id}

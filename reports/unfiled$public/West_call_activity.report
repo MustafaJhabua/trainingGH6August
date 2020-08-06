@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>RowCount</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel># of Activities</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_14996317</developerName>
+        <masterLabel>Subject Type</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>SUBJECT</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Physician 1:1</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Staff Inservice</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Office Visit</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Office Meal</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tumor Board</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Grand Rounds</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Dinner Meeting</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Speaker Program</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Medical Affairs Presentation</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Internal Meeting</sourceValue>
+            </sourceValues>
+            <value>On-site</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>PRIORITY</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>LEAD</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>OWNER_ROLE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>Client Services</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Month</dateGranularity>
+        <field>DUE_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ACCOWNER</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CONTACT</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>West call activity</name>
+    <params>
+        <name>closed</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>type</name>
+        <value>te</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>Activity</reportType>
+    <roleHierarchyFilter>Sr_Vice_President_Sales</roleHierarchyFilter>
+    <scope>team</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <endDate>2017-08-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2017-04-01</startDate>
+    </timeFrameFilter>
+</Report>

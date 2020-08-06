@@ -1,0 +1,121 @@
+<apex:page standardcontroller="lightsideapps__Script__c" extensions="lightsideapps.ScriptEditExtension">
+    
+    <apex:includeScript value="/soap/ajax/35.0/connection.js"/>
+    <apex:includeScript value="/soap/ajax/35.0/apex.js"/>
+    
+    <style>
+        .results {width:80%; height:100px;}
+    </style>
+    
+    <apex:sectionHeader Title="Script Edit" SubTitle="{!if(lightsideapps__Script__c.id==null,'New Script',lightsideapps__Script__c.Name)}" />
+    <apex:pageMessages id="pageMessages" />
+    <apex:outputField value="{!lightsideapps__Script__c.Id}" rendered="false" />
+    <apex:form > 
+    
+        <apex:pageblock Title="Script Edit" mode="{!if($User.UIThemeDisplayed='Theme3','edit','maindetail')}" >
+        
+            <apex:pageblockButtons location="Top">
+                <apex:outputPanel id="Buttons" >
+                    <apex:commandbutton action="{!QuickSaveAction}" value="Quick Save" rerender="Buttons,pageMessages,ScheduleJobId" />
+                    <apex:commandbutton action="{!SaveReturn}" value="Save and Return" />
+                    <apex:commandbutton action="{!ScriptProcess}" value="Run Script" rendered="{!lightsideapps__Script__c.id != null}" rerender="ScriptResultStuff,pageMessages"/>
+                    <apex:commandbutton action="{!Cancel}" value="Return" />
+                </apex:outputPanel>
+            </apex:pageblockButtons> 
+             
+            <apex:pageblockSection title="Information" columns="2" collapsible="false">
+                <apex:inputField value="{!lightsideapps__Script__c.Name}" style="width:262px;" required="true" />
+                <apex:pageblockSectionItem >
+                        <apex:outputLabel value="API Version" />
+                        <apex:selectList value="{!lightsideapps__Script__c.lightsideapps__APIVersion__c}" size="1">
+                            <apex:selectOptions value="{!APIOptions}"/>
+                        </apex:selectList>
+                    </apex:pageblockSectionItem>
+                <apex:inputField value="{!lightsideapps__Script__c.lightsideapps__Description__c}" style="width:262px;" required="true" /> 
+                <apex:inputField value="{!lightsideapps__Script__c.lightsideapps__SaveDebugLogs__c}"  />
+                <apex:pageBlockSectionItem />
+                <apex:pageBlockSectionItem HelpText="{!$ObjectType.lightsideapps__Script__c.fields.lightsideapps__ScheduleScript__c.inlineHelpText}">
+                    <apex:outputLabel value="{!$ObjectType.lightsideapps__Script__c.fields.lightsideapps__ScheduleScript__c.Label}" />
+                    <apex:actionRegion >
+                        <apex:inputField value="{!lightsideapps__Script__c.lightsideapps__ScheduleScript__c}" >  <apex:actionsupport event="onchange" rerender="ScheduleSection,ScheduleCredentials" /> </apex:inputField>
+                    </apex:actionRegion>
+                </apex:pageBlockSectionItem>
+                
+            </apex:pageblockSection>
+            
+            <apex:actionRegion >
+            <apex:outputPanel id="ScheduleCredentials" layout="block" style="margin-top:15px;">
+                <apex:pageblockSection title="Schedule Credentials" columns="2" collapsible="false" rendered="{!lightsideapps__Script__c.lightsideapps__ScheduleScript__c}">
+                    <apex:inputfield value="{!lightsideapps__Script__c.lightsideapps__ScheduledUsername__c}" required="true" />
+                    <apex:inputfield value="{!lightsideapps__Script__c.lightsideapps__Password__c}" required="true" />
+                    <apex:inputfield value="{!lightsideapps__Script__c.lightsideapps__ScheduledSecurityToken__c}" required="true" />
+                    <apex:pageblockSectionitem >
+                        <apex:outputLabel value="" />
+                        <apex:commandButton value="Validate Credentials" action="{!ValidateCredentials}" rerender="pageMessages" />
+                    </apex:pageblockSectionitem>
+                </apex:pageblockSection>    
+            </apex:outputPanel>
+            </apex:actionRegion>
+                
+            <apex:outputPanel id="ScheduleSection" layout="block" style="margin-top:15px;">
+                <apex:pageblockSection title="Schedule Script" columns="2" collapsible="false" rendered="{!lightsideapps__Script__c.lightsideapps__ScheduleScript__c}">
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="{!$ObjectType.lightsideapps__Script__c.fields.lightsideapps__ScheduleFrequency__c.Label}" />
+                    <apex:actionregion >
+                        <apex:inputField value="{!lightsideapps__Script__c.lightsideapps__ScheduleFrequency__c}" required="true" > <apex:actionsupport event="onchange" action="{!ClearValues}" rerender="ScheduleSection" /> </apex:inputField>
+                    </apex:actionregion>
+                </apex:pageBlockSectionItem>
+                
+                <apex:inputField value="{!lightsideapps__Script__c.lightsideapps__ScheduledDateTime__c}" rendered="{!OR(lightsideapps__Script__c.lightsideapps__ScheduleFrequency__c=='Once',lightsideapps__Script__c.lightsideapps__ScheduleFrequency__c=='Hourly')}" required="true" />
+                <apex:inputField value="{!lightsideapps__Script__c.lightsideapps__ScheduleStartDate__c}" rendered="{!OR(lightsideapps__Script__c.lightsideapps__ScheduleFrequency__c=='Weekly',lightsideapps__Script__c.lightsideapps__ScheduleFrequency__c=='Monthly')}" required="true" />
+                <apex:pageblockSectionItem rendered="{!lightsideapps__Script__c.lightsideapps__ScheduleFrequency__c==null}" />
+                
+                <apex:outputField value="{!lightsideapps__Script__c.lightsideapps__ScheduledJobId__c}" id="ScheduleJobId"/>
+                <apex:inputField value="{!lightsideapps__Script__c.lightsideapps__ScheduleEndDate__c}" rendered="{!OR(lightsideapps__Script__c.lightsideapps__ScheduleFrequency__c=='Weekly',lightsideapps__Script__c.lightsideapps__ScheduleFrequency__c=='Monthly')}" required="true" />
+                <apex:inputField value="{!lightsideapps__Script__c.lightsideapps__EndDateTime__c}" rendered="{!lightsideapps__Script__c.lightsideapps__ScheduleFrequency__c=='Hourly'}" required="true" />
+                
+                <apex:pageblockSectionItem rendered="{!OR(lightsideapps__Script__c.lightsideapps__ScheduleFrequency__c=='Weekly',lightsideapps__Script__c.lightsideapps__ScheduleFrequency__c=='Monthly')}" />
+                <apex:pageblockSectionItem rendered="{!OR(lightsideapps__Script__c.lightsideapps__ScheduleFrequency__c=='Weekly',lightsideapps__Script__c.lightsideapps__ScheduleFrequency__c=='Monthly')}">
+                    <apex:outputLabel value="{!$ObjectType.lightsideapps__Script__c.fields.lightsideapps__PreferredStartTime__c.Label}" />
+                    <apex:outputPanel ><apex:inputField value="{!lightsideapps__Script__c.lightsideapps__PreferredStartTime__c}"  required="true"/> <font style="color:#666;">Exact start time will depend on job queue activity.</font></apex:outputPanel>
+                </apex:pageblockSectionItem>
+                
+                <apex:pageblockSectionItem rendered="{!OR(lightsideapps__Script__c.lightsideapps__ScheduleFrequency__c=='Weekly',lightsideapps__Script__c.lightsideapps__ScheduleFrequency__c=='Monthly')}" />
+                <apex:inputField value="{!lightsideapps__Script__c.lightsideapps__RecursEveryWeekOn__c}" rendered="{!lightsideapps__Script__c.lightsideapps__ScheduleFrequency__c=='Weekly'}" required="true"/>
+                <apex:inputField value="{!lightsideapps__Script__c.lightsideapps__DayofMonth__c}" rendered="{!lightsideapps__Script__c.lightsideapps__ScheduleFrequency__c=='Monthly'}" required="true"/>
+
+                </apex:pageblockSection>
+            </apex:outputPanel>
+            
+            <apex:pageblockSection title="Script Code" columns="1" collapsible="false"> 
+                <apex:inputField value="{!lightsideapps__Script__c.lightsideapps__Apex_Code__c}" style="width:90%;"/>
+            </apex:pageblockSection>
+            
+        </apex:pageblock>
+            
+        <apex:outputPanel id="ScriptResultStuff" >
+            <apex:pageblock Title="" mode="maindetail">
+            
+                <apex:pageblockSection title="Script Results" columns="1" collapsible="false" rendered="{!renderResults}" id="scriptResults">       
+                    <apex:outputText rendered="{!NOT(sResult.Compiled)}">Compile Error: {!sResult.CompileProblem} </apex:outputText>
+                    <apex:outputText rendered="{!sResult.exceptionMessage != null}"> Exception Message: {!sResult.exceptionMessage}</apex:outputText>
+                    <apex:outputText rendered="{!OR(sResult.Line != -1, sResult.Column != -1)}">Line: {!sResult.Line}, Column: {!sResult.Column}</apex:outputText>
+                    <apex:outputText rendered="{!sResult.Success}">Successfully Executed</apex:outputText>
+                </apex:pageblockSection>
+                
+                <apex:pageblockSection title="User Debug" columns="1" collapsible="false" rendered="{!renderResults}" id="userDebugSection">
+                    <apex:outputField value="{!SR.lightsideapps__UserDebug__c}" /> 
+                </apex:pageblockSection>
+                
+                <apex:pageblockSection title="Debug Log" columns="1" collapsible="false" rendered="{!renderResults}" id="DebugSection">
+                    <apex:outputField value="{!SR.lightsideapps__DebugLog__c}" />
+                </apex:pageblockSection>
+                    
+            </apex:pageblock>
+        </apex:outputPanel>
+        
+    </apex:form>
+
+ 
+</apex:page>

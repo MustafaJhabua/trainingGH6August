@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>An invitation to our ASCO 2017 reception</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>ASCO Invitation</name>
+    <style>none</style>
+    <subject>You&apos;re invited -- Guardant Health ASCO Reception</subject>
+    <textOnly>You&apos;re Invited!
+
+Join Guardant Health, the leader in comprehensive liquid biopsy, for a night of fine food, live entertainment, great Chicago views, and an inspiring discussion with Bonnie J. Addario, a lung cancer survivor and the Founder and Chair of the Bonnie J. Addario Lung Cancer Foundation, Janet Sollod, MD, a pediatrician living with metastatic breast cancer, and Pasi Jänne, MD, PhD, Director of the Lowe Center for Thoracic Oncology at the Dana-Farber Cancer Institute.
+
+Sunday, June 4
+6 p.m. - 11 p.m. Central
+
+360 Chicago Observation Deck
+John Hancock Center
+875 N Michigan Avenue
+94th Floor
+Chicago, IL 60611
+
+
+RSVP Today: https://www.cvent.com/c/express/b719f865-c9ae-4072-85c8-15b4a157de71
+
+
+No Images? Use this link: http://guardanthealth.createsend1.com/t/ViewEmail/d/1F5350DD6C01727E</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

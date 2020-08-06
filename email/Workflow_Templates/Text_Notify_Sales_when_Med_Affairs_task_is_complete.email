@@ -1,0 +1,8 @@
+{!Task.LastModifiedBy} in Med Affairs has completed a task you assigned to them regarding {!Account.Name}: 
+
+Subject: {!Task.Subject} 
+Date Completed: {!Task.LastModifiedBy} 
+Comments: {!Task.Description} 
+
+Please click on this link for further details: 
+{!Task.Link}

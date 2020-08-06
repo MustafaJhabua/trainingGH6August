@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Creates new OPS Request</description>
+    <flowDefinition>Create_New_OPS_Request</flowDefinition>
+    <label>Create New Offsite Phlebotomist Service</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Report Notification Engagement Emails - Signature The Medical Affairs Team</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>NCI_Light_Basic</name>
+    <style>none</style>
+    <subject>Guardant360 Report for Sample: {!Guardant_360_Sample__c.Name}</subject>
+    <textOnly>Dear Dr. {!Contact.Full_Name__c},
+
+The Guardant360 sample, {!Guardant_360_Sample__c.Name}, you submitted has been processed and is ready for your review. You can access the results immediately in our Provider Portal at 
+ https://portal.guardanthealth.com/r/{!Guardant_360_Sample__c.Name} or look for it on your fax machine.
+
+We have a team of genomics specialists and certified genetic counselors available for a quick case review and discussion if that would be helpful. Please feel free to email or call us should you wish to discuss the result.
+
+Sincerely,
+The Medical Affairs Team
+Guardant Health, Inc.
+Ph: 855-698-8887
+Fax: 888-974-4258
+medicalaffairs@guardanthealth.com
+
+CLIA Certified # 05D2070300 | CAP Accredited # 8765297
+
+To change your notification preferences, please login to your portal account.
+
+This message is intended solely for the designated recipient(s). It may contain confidential or proprietary information and may be subject to attorney-client privilege or other confidentiality protections. If you are not a designated recipient you may not review, copy or distribute this message. If you receive this in error, please notify the sender by replying to this e-mail and deleting this message. Thank you.
+
+-ue-</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

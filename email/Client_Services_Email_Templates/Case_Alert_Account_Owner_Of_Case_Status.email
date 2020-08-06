@@ -1,0 +1,10 @@
+Please take notice of the following:
+
+Case#: {!Case.CaseNumber}
+Account: {!Case.Account}
+Contact: {!Case.Contact}
+Case Subject: {!Case.Subject}
+Case Type: {!Case.RecordType}
+Case Status: {!Case.Status}
+Case Notes: {!Case.Description}
+Link to Case: {!Case.Link}

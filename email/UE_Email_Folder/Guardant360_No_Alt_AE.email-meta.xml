@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>New design applied</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>bcc_Guardant360_No_Alt</name>
+    <style>none</style>
+    <subject>{!Guardant_360_Sample__c.Name} report delivered to {!Contact.Name}</subject>
+    <textOnly>GH - Report Summary Final
+
+Salesforce link for GH use: {!Guardant_360_Sample__c.Name}
+
+Copy of the email sent to {!Contact.Full_Name__c} ( {!Contact.Portal_Primary__c} {!Contact.Portal_Secondary__c} {!Contact.Portal_Tertiary__c}) at {!Guardant_360_Sample__c.Account__c} shown below:
+
+Dear Dr. {!Contact.Full_Name__c},
+
+Thank you for choosing Guardant360, the gold standard in comprehensive liquid biopsy. Guardant360 covers all guideline-recommended somatic markers in solid tumors. The patient sample you submitted on {!Guardant_360_Sample__c.Date_Received__c} has been processed and is ready for your review.
+
+VIEW YOUR REPORT
+
+In &gt;20,000 clinical samples across multiple tumor types, Guardant360 has detected alterations associated with response to:
+
+– FDA-approved, on-label therapies in 14-18% of samples
+– FDA-approved, on- or off-label therapies in 46-51% of samples
+– Any therapy, including those in clinical trials, in most samples
+
+Guardant360 is a 73-gene assay that tests for all guideline-recommended somatic genomic alterations for solid tumors, including these key alterations:
+
+EGFR
+Exon 19 deletion, L858R, G719, L861 and T790M point mutations, and all other sensitizing and resistance mutations
+
+BRAF
+V600E/K alterations and other sensitizing mutations
+
+KRAS &amp; NRAS
+G12, G13 (exon 2), A59, Q61 (exon 3), K117, A146 (exon 4) and other RAS resistance mutations
+
+ERBB2 (HER2)
+Amplifications and other sensitizing and resistance mutations and insertions- deletions (indels)
+
+ALK
+EML4-ALK and other fusions and resistance mutations
+
+MET
+Amplifications, exon 14 skipping mutations, sensitizing and resistance mutations
+
+RET
+Fusions and resistance mutations
+
+ROS1
+Fusions and resistance mutations
+
+KIT
+Sensitizing mutations and resistance mutations, indels and amplifications
+
+PDGFRA
+Sensitizing mutations and resistance mutations, indels and amplifications
+
+Schedule a consultation
+
+I am a genomics specialist and certified genetic counselor. After reviewing this report, please feel free to reply to this email or call 1.855.698.8887 to schedule a consultation with me.
+
+Sincerely,
+Christine Lee, M.S., C.G.C
+Genomic Specialist, Medical Affairs
+Guardant Health, Inc.
+Ph: 855-698-8887
+Fax: 888-974-4258
+medicalaffairs@guardanthealth.com
+
+CLIA Certified # 05D2070300 | CAP Accredited # 8765297
+
+To change your notification preferences, please login to your portal account.
+
+This message is intended solely for the designated recipient(s). It may contain confidential or proprietary information and may be subject to attorney-client privilege or other confidentiality protections. If you are not a designated recipient you may not review, copy or distribute this message. If you receive this in error, please notify the sender by reply e-mail and delete this message. Thank you.
+
+TST-GDL-009 V1</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

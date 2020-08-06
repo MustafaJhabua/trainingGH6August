@@ -1,0 +1,251 @@
+<apex:page controller="lightsideapps.EmailAttachmentsController"  action="{!prepTemplate}"  >
+    <apex:sectionHeader title="{!ObjectLabel}" subtitle="Email Attachments"/>
+    <apex:includeScript value="{!$Resource.lightsideapps__jquery_1_11_3}"/>
+    
+    <style>
+        .LSALabelTD {text-align:right; color:#4a4a56; font-weight: bold; margin:10px; padding:5px; width:100px; font-size:91%; vertical-align:middle;}
+        .LSAinputTD {margin: 10px; padding: 5px; width:200px; vertical-align:middle;}
+        .LSATextinputTD {margin: 10px; padding: 5px; width:90%;}
+        .LSAbuttonTD {margin:10px; padding: 5px; vertical-align:middle;}
+        .LSAFieldInput {width:170px;}
+        .LSAButton {width:85px;text-align:center;}
+        #QuickSelectHelp {width:550px;text-align:center;background-color:#F7F6E3;padding:5px;color:#FF5F49;border: 1px solid #F2F4CB;margin-bottom:2px;}
+        .requiredLegend {display:none;}
+        #AttachmentAlert {width:99%;text-align:center;background-color:#F7F6E3;padding:5px;color:#FF5F49;border: 1px solid #F2F4CB;margin-bottom:2px;}
+        #TemplateAlert {width:90%px;text-align:center;background-color:#F7F6E3;padding:5px;color:#FF5F49;border: 1px solid #F2F4CB;margin-bottom:2px;}
+        .headerRow .headerStyle {padding: 0px 10px;}
+    </style>
+    
+    <apex:pageMessages id="pageMessages"/>
+    
+    <apex:form > 
+        
+        
+        <apex:pageblock title="" mode="{!if($User.UIThemeDisplayed='Theme3','edit','maindetail')}" >
+            
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton title="Send" value=" Send " action="{!SendAction}" reRender="pageMessages" />
+                <apex:commandButton title="Cancel" value=" Cancel " action="{!CancelAction}" />
+            </apex:pageBlockButtons>
+            
+            <apex:outputPanel rendered="{!ShowTemplateOptions == 'true'}" >
+                <apex:pageblockSection title="Select Email Template (optional)" collapsible="false" columns="1" > 
+                    <center><div id="TemplateAlert">Selecting a Template will reload the page and clear all fields other than the Email Subject and Body. Ensure you select the template first if relevant.</div></center>
+                </apex:pageblockSection>
+                <apex:pageblockSection columns="2" id="EmailDetails"> 
+                    <apex:pageblockSectionItem >
+                        <apex:outputLabel value="Email Folder" />
+                        <apex:actionRegion >
+                            <apex:selectList value="{!FolderId}" size="1" multiselect="false">
+                                <apex:selectOptions value="{!FolderOptions}" />
+                                <apex:actionSupport event="onchange" action="{!findEmailTemplates}" rerender="EmailDetails,foldername"/>
+                            </apex:selectList>
+                        </apex:actionRegion> 
+                    </apex:pageblockSectionItem>
+                    
+                    <apex:pageblockSectionItem id="EmailTemplates">
+                        <apex:outputLabel value="Email Template" />
+                        <apex:actionRegion >
+                            <apex:selectList value="{!TemplateEmail}" size="1" multiselect="false" disabled="{!TemplateEmailOptions.size<=1}" >
+                                <apex:selectOptions value="{!TemplateEmailOptions}"/>
+                                <apex:actionSupport event="onchange" rerender="TemplateButton"/>
+                            </apex:selectList>
+                        </apex:actionRegion>
+                    </apex:pageblockSectionItem>
+                    
+                    <apex:pageblockSectionItem >
+                        <apex:outputLabel value="" />
+                        <apex:commandbutton action="{!ApplyEmailTemplate}" title="Apply Template" value="Apply Template"  disabled="{!TemplateEmail=null}" id="TemplateButton"/>
+                    </apex:pageblockSectionItem>
+                </apex:pageblockSection>
+            </apex:outputPanel>
+            
+            <apex:pageblockSection title="Quick Select: {!ObjectLabel} Related Email Recipients" collapsible="false" columns="1" rendered="{!EmailList.size>0}">
+                <apex:outputPanel layout="block">
+                    <apex:pageblockTable value="{!EmailList}" var="el" rendered="{!(EmailList.size>0)}">
+                        <apex:column style="Width:30px;" headerValue="Select">
+                            <apex:facet name="header">
+                                <apex:inputCheckbox styleclass="SelectAllEmailCheckbox"/>
+                            </apex:facet>
+                            <apex:inputCheckbox value="{!el.selected}" styleclass="QuickSelectCheckbox" />
+                        </apex:column>
+                        <apex:column headerValue="Send Type" style="width:80px;">
+                            <apex:outputPanel layout="block" style="left:0px;" >
+                                <apex:selectList value="{!el.SelectedEmailOption}" multiselect="false" size="1" style="width:60px;" disabled="true" styleclass="QuickSelectType">
+                                    <apex:selectOptions value="{!el.EmailOptions}"/>
+                                </apex:selectList>
+                                <apex:outputPanel styleClass="requiredBlock" layout="block" /> 
+                            </apex:outputPanel>
+                        </apex:column>                   
+                        <apex:column headerValue="Recipient Name" value="{!el.Name}" />
+                        <apex:column headerValue="Recipient Email" value="{!el.Email}" />
+                        <apex:column headerValue="Recipient Type" value="{!el.Role}" />
+                    </apex:pageblockTable>
+                    <apex:outputText rendered="{!EmailList.size==0}" value="No default recipients to choose from the {!ObjectLabel} record." />
+                </apex:outputPanel>
+            </apex:pageblockSection>
+            
+            <apex:pageblockSection title="Add Additional Recipients" collapsible="false" columns="1" > </apex:pageblockSection>
+            
+            
+            
+            <div style="width:100%; min-height:100px;">
+                <div style="float:left; display:inline-block; width:470px; height:100px;">
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr style="text-align:left;vertical-align:middle;"> 
+                                <td class="LSALabelTD"><label class="LabelOutput">Colleague (User)&nbsp;&nbsp;</label></td>
+                                <apex:actionRegion >
+                                    <td class="LSAinputTD"><apex:inputField value="{!LSA.lightsideapps__User__c}" styleclass="LSAFieldInput SelectedUserEmail" id="SelectedUserEmail" required="false" onkeydown="if(event.keyCode==13){this.blur();PressUserSelectButton('User');}"/> </td>
+                                    <td classs="LSAbuttonTD"><apex:commandButton title="Add Colleague" value="Add Colleague" action="{!AddColleague}" id="SelectedUserButton" styleclass="LSAButton SelectedUserButton" rerender="OtherEmailListPanel,SelectedUserEmail,SelectedContactEmail,ManualEmailSelection,pageMessages,rowNum" /></td>
+                                </apex:actionRegion>
+                            </tr>
+                            <tr style="text-align:left;"> 
+                                <td class="LSALabelTD"><label class="LabelOutput">Contact&nbsp;&nbsp;</label></td>
+                                <apex:actionRegion >
+                                    <td class="LSAinputTD"><apex:inputField value="{!LSA.lightsideapps__Contact__c}" styleclass="LSAFieldInput SelectedContactEmail" id="SelectedContactEmail" required="false" onkeydown="if(event.keyCode==13){this.blur();PressUserSelectButton('Contact');}"/> </td>
+                                    <td classs="LSAbuttonTD"><apex:commandButton title="Add Contact" value="Add Contact" action="{!AddContact}" styleclass="LSAButton SelectedContactButton" rerender="OtherEmailListPanel,SelectedUserEmail,SelectedContactEmail,ManualEmailSelection,pageMessages" /></td>
+                                </apex:actionRegion>
+                            </tr>
+                            <tr style="text-align:left;"> 
+                                <td class="LSALabelTD"><label class="LabelOutput">Other Email&nbsp;&nbsp;</label></td>
+                                <apex:actionRegion >
+                                    <td class="LSAinputTD" ><apex:inputField value="{!LSA.lightsideapps__Email__c}" styleclass="LSAFieldInput ManualEmailSelection" id="ManualEmailSelection" required="false" onkeydown="if(event.keyCode==13){this.blur();PressUserSelectButton('Email');}" /> </td>
+                                    <td classs="LSAbuttonTD"><apex:commandButton title="Add Email" value="Add Email" action="{!AddEmail}" styleclass="LSAButton SelectedEmailButton" rerender="OtherEmailListPanel,SelectedUserEmail,SelectedContactEmail,ManualEmailSelection,pageMessages" /></td>
+                                </apex:actionRegion>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div style="min-height:100px;float:left; display:inline-block; margin:0px 20px;">
+                    <apex:outputPanel layout="block" id="OtherEmailListPanel"> 
+                        <apex:variable var="rowNum" value="{!0}" id="rowNum"/>
+                        <apex:pageblockTable value="{!OtherEmailList}" var="el" rendered="{!(OtherEmailList.size>0)}"  >
+                            
+                            <apex:column headerValue="Send Type" style="width:60px;">
+                                <apex:outputPanel layout="block" style="left:0px;" >
+                                    <apex:selectList value="{!el.SelectedEmailOption}" multiselect="false" size="1" style="width:50px;">
+                                        <apex:selectOptions value="{!el.EmailOptions}"/>
+                                    </apex:selectList>
+                                    <apex:outputPanel styleClass="requiredBlock" layout="block" /> 
+                                </apex:outputPanel>
+                            </apex:column>
+                            <apex:column headerValue="Recipient Name" value="{!el.Name}" style="padding: 0px 10px;" headerClass="headerStyle" />
+                            <apex:column headerValue="Recipient Email" value="{!el.Email}" style="padding: 0px 10px;" headerClass="headerStyle" />
+                            <apex:column headerValue="Recipient Type" value="{!el.Role}" style="padding: 0px 10px;" headerClass="headerStyle" />
+                            <apex:column style="width:45px;"><apex:commandLink title="remove" value="  remove"  action="{!RemoveItem}" rerender="OtherEmailListPanel,pageMessages" >
+                                <apex:param name="nickName"  value="{!rowNum}" assignTo="{!RowNumber}"/>
+                                </apex:commandLink>
+                                <apex:variable var="rowNum" value="{!rowNum + 1}"/>
+                            </apex:column>
+                        </apex:pageblockTable>
+                        
+                    </apex:outputPanel> 
+                    
+                </div>
+
+            </div>
+            <span style="margin:5px 20px;font-size:9pt;{!if(ccemails=null,'display:none;','')}">
+                <strong>The email will be Cc'd to:</strong> {!ccemails}
+            </span>
+            <br/>
+            <span style="margin:5px 20px;font-size:9pt;{!if(OR(bccemails=null,bccComplianceEnabled),'display:none;','')}">
+                <strong>The email will be Bcc'd to:</strong> {!bccemails}
+            </span>
+            
+            <div style="width:100%; display:inline-block;">
+                <apex:pageblockSection title="Email Details" collapsible="false" columns="1"  /> 
+            </div>
+            
+            <apex:outputPanel id="EmailSubjectBody" >
+                <table border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+
+                        <tr style="text-align:left;vertical-align:middle;{!if(AND(ShowOrgEmailOptions=='true',OrgWideEmailAddresses != null,OrgWideEmailAddresses.size>1),'','display:none;')}"> 
+                            <td class="LSALabelTD"><label class="LabelOutput">Email From:</label></td>
+                            <td class="LSATextinputTD">
+                                <apex:selectList value="{!OrgWideAddressId}" size="1" multiselect="false">
+									<apex:selectOptions value="{!OrgWideEmailAddresses}" />
+								</apex:selectList>
+                            </td>
+                        </tr>
+                        <tr style="text-align:left;vertical-align:middle;"> 
+                            <td class="LSALabelTD"><label class="LabelOutput">Email Subject</label></td>
+                            <td class="LSATextinputTD"><apex:inputText value="{!EmailSubject}" required="false" style="width:100%;"/> </td>
+                        </tr> 
+                        <tr style="text-align:left;vertical-align:middle;"> 
+                            <td class="LSALabelTD"><label class="LabelOutput">Email Body</label></td>
+                            <td class="LSATextinputTD"><apex:inputTextArea value="{!EmailBody}"  rows="20" richText="true" style="width:100%;white-space:pre-wrap;" required="false" id="emailbody" /></td>
+                        </tr> 
+                        <apex:outputPanel rendered="{!ShowTaskOption}">
+                            <tr style="text-align:left;vertical-align:middle;display:{!JSENCODE(TaskVisibility)};"> 
+                                <td class="LSALabelTD"><apex:inputCheckbox Value="{!CreateActivity}"/></td>
+                                <td class="LSATextinputTD"><apex:outputtext value="Create Email Activity against the {!ObjectLabel}" /></td>
+                            </tr> 
+                        </apex:outputPanel>
+                    </tbody>  
+                </table>
+            </apex:outputPanel>
+            
+            
+            
+            <apex:pageblockSection title="Select Attachments or Files from {!ObjectLabel} Record" collapsible="false" columns="1" >
+                <apex:outputPanel layout="block">
+                    <apex:pageblockTable value="{!attachments}" var="a" rendered="{!(attachments.size>0)}">
+                        <apex:column style="Width:25px;">
+                            <apex:facet name="header">
+                                <apex:inputCheckbox styleclass="SelectAllCheckbox"/>
+                            </apex:facet>
+                            <apex:inputCheckbox value="{!a.selected}" styleclass="AttachementCheckbox"/>  
+                        </apex:column>                   
+                        <apex:column value="{!a.AttName}" headervalue="Attachment Name"/>
+                        <apex:column value="{!a.AttSize}" headervalue="Attachment Size"/>
+                        <apex:column value="{!a.AttType}" headervalue="Attachment Type"/>
+                        <apex:column value="{!a.AttDescription}" headervalue="Description"/>
+                    </apex:pageblockTable>
+                    <apex:outputText rendered="{!(attachments.size=0)}" value="No Attachments or Files linked to the {!ObjectLabel} record." />
+                </apex:outputPanel>
+                
+            </apex:pageblockSection>
+            
+        </apex:pageblock>
+        
+    </apex:form> 
+    
+    <script>
+    
+    // Stop any jQuery conflicts
+    var $LSA = jQuery.noConflict();
+    
+    // ******************************
+    // Purpose:  Functions called if enter pressed while in Colleague/Contact/Email Input to click the relevant button
+    // ******************************
+    function PressUserSelectButton(Type){
+        if(Type=='User') $LSA('.SelectedUserButton').click();
+        if(Type=='Contact') $LSA('.SelectedContactButton').click();
+        if(Type=='Email') $LSA('.SelectedEmailButton').click();
+    }
+    
+    // Changes disabled prop of email type selection when selected unselected
+    $LSA(".QuickSelectCheckbox").change(function() {
+        if($LSA(this).prop('checked')){
+            $LSA(this).closest("tr").find('.QuickSelectType').prop('disabled',false);
+        }   
+        else
+            $LSA(this).closest("tr").find('.QuickSelectType').prop('disabled',true);
+    });
+    
+    // Select/Unselect All for Emails. Changes disabled prop of email type selection
+    $LSA(".SelectAllEmailCheckbox").change(function(){
+        $LSA(".QuickSelectCheckbox").prop('checked', $LSA(this).prop("checked"));
+        $LSA(".QuickSelectType").prop('disabled',!$LSA(this).prop("checked"));
+    });
+    
+    // Select/Unselect All for Attachments
+    $LSA(".SelectAllCheckbox").change(function(){
+        $LSA(".AttachementCheckbox").prop('checked', $LSA(this).prop("checked"));
+    });
+    
+    </script>
+    
+</apex:page>

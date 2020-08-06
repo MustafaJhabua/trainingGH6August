@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>New York Approved Followup 2 --Custom-Leeann</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>New York Approved Followup 2 --Custom-Leeann</name>
+    <style>none</style>
+    <subject>Re: Guardant360 is New York Approved</subject>
+    <textOnly>Hello again,
+
+I wanted to put this back on the top of your inbox. If you’re in need of a comprehensive liquid biopsy option for your patients, Guardant360 is New York DOH approved.
+
+I can drop by at your convenience if you are interested in learning more.
+
+Enjoy the Holiday,
+
+Leeann
+
+
+
+From: Leeann Barlow
+Sent: Thursday, June 22, 2017 4:42 PM
+To: {!Contact.Name}
+Subject: Guardant360 is New York Approved
+
+Hello,
+
+Did you hear? The #1 ordered comprehensive liquid biopsy is now New York State Department of Health approved! That means you can order the Guardant360 assay for your advanced cancer patients without completing a DOH waiver.
+
+Is your practice fully stocked with Guardant360 sample collection kits? I can drop by at your convenience with some fresh supplies and review our latest panel updates. When is the best day next week for a visit?
+
+Leeann Barlow
+Account Executive
+mobile: (908) 309-7945
+lbarlow@guardanthealth.com
+
+Guardant Health
+This message may contain confidential or privileged information. If you are not the intended recipient, please advise the sender immediately by reply email and delete this message and any attachments without retaining a copy. Reviewing, disclosing, distributing, or using the contents of this message is strictly prohibited if you are not the intended recipient. Guardant Health, Inc. prohibits users of our system from sending any e-mail containing anything defamatory, improper or discriminatory.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

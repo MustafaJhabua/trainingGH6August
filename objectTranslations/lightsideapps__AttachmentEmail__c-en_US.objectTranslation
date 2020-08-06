@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- The Id of the Org-Wide Email Address --></help>
+        <label><!-- Org-Wide Email Id --></label>
+        <name>lightsideapps__Org_Wide_Email_Id__c</name>
+    </fields>
+</CustomObjectTranslation>

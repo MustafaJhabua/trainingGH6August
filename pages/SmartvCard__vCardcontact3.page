@@ -1,0 +1,49 @@
+<apex:page standardController="Contact" extensions="SmartvCard.Buttonforcontact">
+<apex:form >
+<br><apex:commandLink styleClass="btn" value="Download" action="{!DownloadVCF3}"    target="_bottom"  accesskey="r" style="text-decoration: none;" />
+<!-- <apex:commandButton action="{!DownloadVCF2}" value="Download"/> --> &nbsp;&nbsp;&nbsp;
+<apex:commandLink styleClass="btn" value="OK" action="{!Redirecttocontact}"   accesskey="r" style="text-decoration: none;" />
+<!-- <apex:commandButton action="{!Redirecttocontact}" value="OK" /> -->&nbsp;&nbsp;&nbsp;
+<apex:commandLink styleClass="btn" value="Cancel" action="{!back}"   accesskey="r" style="text-decoration: none;" />
+<!-- <apex:commandButton action="{!back}" value="Cancel"/>  -->
+<!-- <apex:commandButton action="{!DownloadVCF3}" value="Download"/>&nbsp;&nbsp;&nbsp;
+ <apex:commandButton action="{!redirecttocontact}" value="OK" />&nbsp;&nbsp;&nbsp;
+ <apex:commandButton action="{!back}" value="Cancel"/></br>  -->
+ </br>
+</apex:form>
+<br/>
+BEGIN:VCARD<br/>
+VERSION:3.0<br/>
+N:<c:vcard Value="{!Contact.LastName}"/>;
+<c:vcard Value="{!Contact.FirstName}"/><br/>
+FN:<c:vcard value="{!contact.salutation} "/><c:vcard Value="{!Contact.FirstName} "/><c:vcard value="{!Contact.LastName}"/> <br/>
+ORG:<c:vcard Value="{!Contact.Account.Name}"/><br/>
+TITLE:<c:vcard Value="{!Contact.Title}"/><br/>
+TEL;TYPE=WORK;VOICE:<c:vcard Value="{!Contact.Phone}"/><br/>
+TEL;TYPE=Home;VOICE:<c:vcard Value="{!Contact.HomePhone}"/><br/>
+TEL;TYPE=CELL;VOICE:<c:vcard Value="{!Contact.mobilePhone}"/><br/>
+TEL;TYPE=WORK;FAX:<c:vcard Value="{!contact.fax}"/><br/>
+ADR;TYPE=WORK:;;<c:vcard Value="{!Contact.MailingStreet}"/>;<c:vcard Value="{!Contact.MailingCity}"/>;<c:vcard Value="{!Contact.MailingState}"/>;<c:vcard Value="{!Contact.MailingPostalCode}"/>;<c:vcard Value="{!Contact.MailingCountry}"/><br/>
+LABEL;TYPE=WORK:<c:vcard Value="{!Contact.MailingStreet} "/><c:vcard Value="{!Contact.MailingCity} "/><c:vcard Value="{!Contact.MailingState} "/><c:vcard Value="{!Contact.MailingPostalCode} "/><c:vcard Value="{!Contact.MailingCountry}"/><br/>
+ADR;TYPE=HOME:;;<c:vcard Value="{!Contact.otherStreet}"/>;<c:vcard Value="{!Contact.otherCity}"/>;<c:vcard Value="{!Contact.otherState}"/>;<c:vcard Value="{!Contact.otherPostalCode}"/>;<c:vcard Value="{!Contact.otherCountry}"/><br/>
+LABEL;TYPE=HOME:<c:vcard Value="{!Contact.otherStreet} "/><c:vcard Value="{!Contact.otherCity} "/><c:vcard Value="{!Contact.otherState} "/><c:vcard Value="{!Contact.otherPostalCode} "/><c:vcard Value="{!Contact.otherCountry}"/><br/>
+EMAIL;PREF;INTERNET:<c:vcard Value="{!Contact.Email}"/><br/>
+URL;WORK:<c:vcard Value="{!contact.account.website}"/><br/>
+NOTE: 
+<c:vcard Value="{!Note}" /><br/>
+REV:20080424T195243Z<br/>
+END:VCARD<br/>
+
+<apex:form >
+<br><apex:commandLink styleClass="btn" value="Download" action="{!DownloadVCF3}"    target="_bottom"  accesskey="r" style="text-decoration: none;" />
+<!-- <apex:commandButton action="{!DownloadVCF2}" value="Download"/> --> &nbsp;&nbsp;&nbsp;
+<apex:commandLink styleClass="btn" value="OK" action="{!Redirecttocontact}"   accesskey="r" style="text-decoration: none;" />
+<!-- <apex:commandButton action="{!Redirecttocontact}" value="OK" /> -->&nbsp;&nbsp;&nbsp;
+<apex:commandLink styleClass="btn" value="Cancel" action="{!back}"   accesskey="r" style="text-decoration: none;" />
+<!-- <apex:commandButton action="{!back}" value="Cancel"/>  -->
+<!-- <apex:commandButton action="{!DownloadVCF3}" value="Download"/>&nbsp;&nbsp;&nbsp;
+ <apex:commandButton action="{!redirecttocontact}" value="OK" />&nbsp;&nbsp;&nbsp;
+ <apex:commandButton action="{!back}" value="Cancel"/></br>  -->
+ </br>
+</apex:form>
+</apex:page>

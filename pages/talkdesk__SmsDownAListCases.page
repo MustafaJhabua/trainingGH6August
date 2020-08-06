@@ -1,0 +1,3 @@
+<apex:page id="SmsDownAListCases" standardController="Case" extensions="talkdesk.SmsDownListController" action="{! checkTalkdeskConnectivity }" recordSetVar="cases">
+    <c:SmsDownAList records="{! selected }" objType="Case" phoneField="Contact.Phone"/>
+</apex:page>

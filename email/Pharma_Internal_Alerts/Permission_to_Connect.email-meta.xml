@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>HTML-formatted. Alerts referrals team when a match&apos;s referral status changes to &quot;Pharma Permission to Connect&quot;</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Internal Pharma Permission to Connect V2</name>
+    <style>none</style>
+    <subject>Permission To Connect: {!Match_Record__c.Name}</subject>
+    <textOnly>Permission To Connect
+
+Hello,
+
+Dr. {!Match_Record__c.Ordering_Physician_Name__c} would like to connect with {!Match_Record__c.Pharma_Company__c} regarding {!Match_Record__c.Trial_Name__c}.
+
+Contact Information:
+{!Match_Record__c.Ordering_Physician_Name__c}
+{!Match_Record__c.Ordering_Practice_Name__c}
+{!Match_Record__c.Practice_Address__c}
+{!Match_Record__c.Practice_City__c}, {!Match_Record__c.Practice_State__c} {!Match_Record__c.Practice_Zip__c}
+{!Match_Record__c.Physician_phone__c}
+{!Match_Record__c.Physician_Email__c}
+
+Match Key: {!Match_Record__c.Match_Key__c}
+Cancer Type: {!Match_Record__c.Cancer_Type__c}
+Qualifying Target Alterations: {!Match_Record__c.Qualifying_Target_Alterations__c}
+Guardant Notes: {!Match_Record__c.Guardant_Notes__c}
+Closest Trial Site: {!Match_Record__c.Closest_Trial_Site__c}
+Closest Trial Site Type:  {!Match_Record__c.00N34000005oRJ0}
+
+https://na29.salesforce.com/{!Match_Record__c.Id}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

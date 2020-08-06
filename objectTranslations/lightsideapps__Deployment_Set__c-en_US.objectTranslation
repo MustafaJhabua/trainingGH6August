@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Deployment Connection --></label>
+        <name>lightsideapps__Deployment_Connection__c</name>
+        <relationshipLabel><!-- Deployment Sets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Deployment Package --></label>
+        <name>lightsideapps__Deployment_Package__c</name>
+        <relationshipLabel><!-- Deployment Sets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- External Deployment ID --></label>
+        <name>lightsideapps__External_Deployment_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Result Description --></label>
+        <name>lightsideapps__Result_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Result --></label>
+        <name>lightsideapps__Result__c</name>
+        <picklistValues>
+            <masterLabel>Canceled</masterLabel>
+            <translation><!-- Canceled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canceling</masterLabel>
+            <translation><!-- Canceling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation><!-- Draft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation><!-- Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation><!-- Failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>InProgress</masterLabel>
+            <translation><!-- InProgress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Queued</masterLabel>
+            <translation><!-- Queued --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Succeeded</masterLabel>
+            <translation><!-- Succeeded --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SucceededPartial</masterLabel>
+            <translation><!-- SucceededPartial --></translation>
+        </picklistValues>
+    </fields>
+    <webLinks>
+        <label><!-- Redeploy --></label>
+        <name>lightsideapps__Redeploy</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- RedeployFromList --></label>
+        <name>lightsideapps__RedeployFromList</name>
+    </webLinks>
+</CustomObjectTranslation>

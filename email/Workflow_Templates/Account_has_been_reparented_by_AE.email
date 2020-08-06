@@ -1,0 +1,8 @@
+This is a notification that {!Account.LastModifiedBy} has changed the parent  account for {!Account.Name} to {!Account.Parent}. You may wish to review the changes by clicking the links below.
+
+Link to child account: https://cs24.salesforce.com/{!Account.Id}
+
+Link to parent account: https://cs24.salesforce.com/{!Account.ParentId}
+
+Regards, 
+Sales Operations

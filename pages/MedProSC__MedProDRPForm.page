@@ -1,0 +1,64 @@
+<apex:page controller="MedProSC.MedProDRPForm_Controller" tabStyle="SearchMedPro__tab">
+    <apex:sectionHeader title="MedPro Search" subtitle="DRP" />
+    <apex:form id="drpForm">
+    
+        <apex:pageBlock >
+
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton value="Back" action="{!back}" immediate="true"/>
+                <apex:commandButton value="Submit DRP" action="{!submitDRP}" />
+                <apex:commandButton value="Clear Form" action="{!clearForm}" />
+            </apex:pageBlockButtons>
+
+            <apex:pageMessages />
+
+            <apex:pageBlockSection columns="1">
+
+                <apex:outputText value="Please submit as much information as possible. Your Data Resolution Process (DRP) request will be reviewed within 1-2 business days. [ An * indicates a required field for DRP submissions ]"/>
+                <br/>
+                <apex:inputText value="{!userName}" id="requesterUserIdTextInput" label="Requester User ID: *" size="60" required="true" />
+                <apex:inputText value="{!lastName}" id="requesterLastNameTextInput" label="Last Name: *" required="true" />
+                <apex:inputText value="{!firstName}" id="requesterFirstNameTextInput" label="First Name: *" required="true" />
+                <apex:inputText value="{!userTitle}" id="requesterTitleTextInput" label="Title:" size="60" />
+                <apex:inputText value="{!userEmail}" id="requesterEmailTextInput" label="E-Mail: *" size="60" required="true" />
+                <apex:inputText value="{!userPhoneNumber}" id="requesterPhoneNumberTextInput" label="Phone Number:"/>
+                <apex:inputText value="{!drpInput.medProId}" id="medProIdextInput" label="MedProID:"/>
+                <apex:inputText value="{!drpInput.clientId}" id="clientIdTextInput" label="Client ID:"/>
+                <apex:inputText value="{!drpInput.hcpLastName}" id="hcpLastNameTextInput" label="HCP Last Name: *" required="true" />
+                <apex:inputText value="{!drpInput.hcpFirstName}" id="hcpFirstNameTextInput" label="HCP First Name: *" required="true" />
+                <apex:inputText value="{!drpInput.slnStateLicenseNumber}" id="slnStateLicenseNumberTextInput" label="SLN State License Number:"/>
+
+                <apex:selectList value="{!drpInput.licenseState}" size="1" id="licenseStateTextInput" label="License State:">
+                    <apex:selectOptions value="{!stateLicenseOptions}" />       
+                </apex:selectList>
+                
+                <apex:inputText value="{!drpInput.npiNum}" id="npiNumTextInput" label="NPI Number:"/>
+                <apex:inputText value="{!drpInput.deaNum}" id="deaNumTextInput" label="DEA Number:"/>
+
+                <apex:selectList value="{!drpInput.slnProfessionalDesignation}" id="slnProfessionalDesignationTextInput" size="1" label="SLN Professional Designation:">
+                    <apex:selectOptions value="{!designationOptions}" />       
+                </apex:selectList>
+
+                <apex:inputTextarea value="{!drpInput.requestDescription}" id="requestDescriptionTextInput" label="Request Description: *" cols="80" rows="8" required="true" />
+
+            </apex:pageBlockSection>
+
+             <apex:outputPanel > 
+                <div class="pbHeader">
+                    <table class="medproTable" >
+                       <tbody>
+                          <tr>
+                             <td class="pbTitle"><apex:include pageName="MedProSC__MedProStandardCopyrightFooter"/> </td>                     
+                             <td class="pbButton">
+                                <apex:commandButton value="Submit DRP" action="{!submitDRP}" />
+                                <apex:commandButton value="Clear Form" action="{!clearForm}" />
+                             </td>
+                          </tr>
+                       </tbody>
+                    </table>
+                </div>
+            </apex:outputPanel>
+
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

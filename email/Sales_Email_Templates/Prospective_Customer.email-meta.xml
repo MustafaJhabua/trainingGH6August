@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Introductory email used by the field to gain appointments with docs.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Guardant_Health_Customer_Outbound</letterhead>
+    <name>Prospective Customer</name>
+    <style>freeForm</style>
+    <subject>See why genomic profiling is so critical for solid tumor cancers.</subject>
+    <textOnly>Dr. {!Contact.LastName},
+
+Good day…  {!Contact.OwnerFullName} here with Guardant Health.
+Realizing that you are a fan of genomic profiling for your patients, I wanted to take a minute to let you know of a technological breakthrough in the arena of cancer genomics.
+
+Guardant Health has pioneered the use of cell-free DNA in assessing a patient’s genomic status!  Our founders, Helmy Eltoukhy and AmirAli Talasaz from the Stanford Genome Technology Center and most recently of Illumina, have patented the isolation and purification of cfDNA in cancer patients.  We then apply Digital Sequencing Technology (NGS via the Illumina HiSeq 2500) to identify genomic alterations in more than 150,000 basepairs across 70 oncogenes.
+
+Guardant Health 70 Oncogene Panel
+
+You no longer have to rely on invasive biopsies, hearing from pathology that the block has been exhausted, not enough tissue, etc.  If a patient progresses or therapy needs change – you can measure a patient’s genomic status with a simple 10 mL blood draw!
+
+The assay is both qualitative and quantitative in nature.  We report the amount of cfDNA mutant allele frequency (MAF) as a percentage as it relates to the germ line…  giving you another tool to monitor the amount of mutation/alteration within that patient…  personalized and accurate medicine is here.
+
+Please let me know of a time where we can further the discussion…  Many oncologist nationwide already avail themselves of this technology and are helping patients for which a biopsy doesn’t exist, isn’t able to be obtained, in the too far distant past or the patient has progressed.
+
+Thanks for your time…  we look forward to getting together!
+
+Best,
+{!Contact.OwnerFirstName}
+
+{!Contact.OwnerFullName}
+Guardant Health, Inc.
+505 Penobscot Dr. 
+Redwood City, CA 94063 U.S.A.
+
+
+This e-mail, including any attachments may contain material protected and governed by the Health Insurance and Portability and Accountability Act (HIPAA). This e-mail and any files transmitted with it are confidential and are intended solely for the use of the individual or entity to which they are addressed. The authorized recipient of this information is prohibited from disclosing this information to any other party unless authorized. If you are not the intended recipient of this e-mail please note that you have received this e-mail in error and any use, dissemination, forwarding, printing or copying of this e-mail is strictly prohibited. If you have received this e-mail in error, please immediately contact the sender of this message.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

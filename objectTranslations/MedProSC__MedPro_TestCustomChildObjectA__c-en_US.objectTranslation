@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- AMA Designation --></label>
+        <name>MedProSC__AMA_Designation__c</name>
+    </fields>
+    <fields>
+        <label><!-- MedProID --></label>
+        <name>MedProSC__MedProID__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPI Number --></label>
+        <name>MedProSC__NPI_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- ParentRecord --></label>
+        <name>MedProSC__ParentRecord__c</name>
+        <relationshipLabel><!-- MedPro_TestCustomChildObjectA --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SLN Specialty --></label>
+        <name>MedProSC__SLN_Specialty__c</name>
+    </fields>
+    <fields>
+        <label><!-- State License Number --></label>
+        <name>MedProSC__State_License_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- fieldNameC1D1 --></label>
+        <name>MedProSC__fieldNameC1D1__c</name>
+    </fields>
+    <fields>
+        <label><!-- fieldNameC1D2 --></label>
+        <name>MedProSC__fieldNameC1D2__c</name>
+    </fields>
+    <fields>
+        <label><!-- fieldNameC1D3 --></label>
+        <name>MedProSC__fieldNameC1D3__c</name>
+    </fields>
+    <webLinks>
+        <label><!-- Test_Update_Child --></label>
+        <name>MedProSC__Test_Update_Child</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessType>Shared</accessType>
+    <name>UE Email Folder</name>
+    <publicFolderAccess>ReadWrite</publicFolderAccess>
+    <sharedTo>
+        <group>User_Engagement</group>
+        <role>Chief_Medical_Officer</role>
+        <role>Medical_Science_Liaison</role>
+    </sharedTo>
+</EmailFolder>

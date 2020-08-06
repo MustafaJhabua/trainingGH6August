@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>020419 created NF</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>General_Outreach_TrialandTherapyAlert_023</name>
+    <style>none</style>
+    <subject>Your patient {!Guardant_360_Sample__c.MR_Patient_Initials__c}&apos;s genomic alteration indicates potential eligibility for clinical trials and a recently FDA approved therapy</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

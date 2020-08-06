@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_39132246</developerName>
+        <masterLabel>Submitter Type</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>Account.Contacts$Number_of_Samples__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>4</to>
+            </sourceValues>
+            <value>Hunt</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>4</from>
+            </sourceValues>
+            <value>Farm</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_57355171</developerName>
+        <masterLabel>Team</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Account$CreatedBy.UserRole</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Account Executive, Northcentral</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Account Executive, Northeast</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Account Executive, Southwest</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Account Executive, Southeast</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Account Executive, Southcentral</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Account Executive, Northwest</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Director, Sales-Eastern Region</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>District Sales Manager, North &amp; South West</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>District Sales Manager, North Central and East</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>District Sales Manager, Southcentral</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>District Sales Manager, Southeast</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sr. Vice President, Sales</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sr. Account Executive, Southwest</sourceValue>
+            </sourceValues>
+            <value>Sales</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.ActivityRelations$Owner</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$Name</field>
+    </columns>
+    <columns>
+        <field>Account$BillingState</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$Number_of_Samples__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$Last_Sample_Date__c</field>
+    </columns>
+    <description>Non-Email Activities</description>
+    <filter>
+        <criteriaItems>
+            <column>Account$Account_Type__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Clinical Account US</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>BucketField_57355171</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Sales</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Contacts.ActivityRelations*Activity$Activity_Type__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>mail,mass</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Contacts.ActivityRelations$CreatedBy</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Ruben</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Quarter</dateGranularity>
+        <field>Account.Contacts.ActivityRelations$CreatedDate</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Contacts.ActivityRelations$CreatedBy</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Contacts.ActivityRelations*Activity$Activity_Type__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>159 Activity by Sales</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_Contacts_Activities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account.Contacts.ActivityRelations$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

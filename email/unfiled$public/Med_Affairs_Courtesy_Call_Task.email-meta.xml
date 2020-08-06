@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Used in Process &apos;Create Med Affairs Courtesy Call Task&apos;</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>GH_Logo_Small</letterhead>
+    <name>Med Affairs Courtesy Call Task</name>
+    <style>freeForm</style>
+    <subject>Med Affairs Courtesy Call</subject>
+    <textOnly>To: Med Affairs Tasks
+
+{!Guardant_360_Sample__c.LastModifiedBy} has assigned you the following new task:
+
+Subject: Med Affairs Courtesy Call
+Physician:  {!Guardant_360_Sample__c.Contact__c}
+Contact: {!Contact.Phone}, {!Contact.Email}
+Account: {!Guardant_360_Sample__c.Account__c}, {!Account.BillingCity}, {!Account.BillingState}
+{!Account.Is_NCI_Center_Yes_No__c}
+Account Owner: {!Guardant_360_Sample__c.Account_AE__c}
+Account RSD: {!Account.Regional_Sales_Director__c}
+Priority: Normal
+
+Comments:
+This sample has been flagged for a courtesy call because it is a lung cancer sample that has an associated on-label therapy. View the PDF report in the portal here:
+{!Guardant_360_Sample__c.Report_Link__c}
+
+For more details, click the following link: {!Guardant_360_Sample__c.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

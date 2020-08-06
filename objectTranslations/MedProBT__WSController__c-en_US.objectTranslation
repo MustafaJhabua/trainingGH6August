@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- BaseURL --></label>
+        <name>MedProBT__BaseURL__c</name>
+    </fields>
+    <fields>
+        <label><!-- WS1Suffix --></label>
+        <name>MedProBT__WS1Suffix__c</name>
+    </fields>
+    <fields>
+        <label><!-- WS2Suffix --></label>
+        <name>MedProBT__WS2Suffix__c</name>
+    </fields>
+    <fields>
+        <label><!-- WS3Suffix --></label>
+        <name>MedProBT__WS3Suffix__c</name>
+    </fields>
+</CustomObjectTranslation>

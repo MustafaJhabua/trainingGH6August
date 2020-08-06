@@ -1,0 +1,6 @@
+<apex:page id="vfSampleRankButtonByPhysician"
+    standardController="Contact"
+    extensions="SampleRankButtonController"
+    action="{!autoRunPhysicianRank}">
+    <apex:pageMessages />
+</apex:page>

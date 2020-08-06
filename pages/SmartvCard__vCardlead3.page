@@ -1,0 +1,49 @@
+<apex:page standardController="lead" extensions="SmartvCard.Buttonforlead">
+<apex:form >
+<br>
+<apex:commandLink styleClass="btn" value="Download" action="{!DownloadVCF3}"    target="_bottom"  accesskey="r" style="text-decoration: none;" />
+<!-- <apex:commandButton action="{!DownloadVCF2}" value="Download"/> --> &nbsp;&nbsp;&nbsp;
+<apex:commandLink styleClass="btn" value="OK" action="{!redirecttolead}"   accesskey="r" style="text-decoration: none;" />
+<!-- <apex:commandButton action="{!Redirecttocontact}" value="OK" /> -->&nbsp;&nbsp;&nbsp;
+<apex:commandLink styleClass="btn" value="Cancel" action="{!back}"   accesskey="r" style="text-decoration: none;" />
+<!-- <apex:commandButton action="{!back}" value="Cancel"/>  -->
+<!--
+<apex:commandButton action="{!DownloadVCF3}" value="Download"/>&nbsp;&nbsp;&nbsp;
+ <apex:commandButton action="{!redirecttolead}" value="OK" />&nbsp;&nbsp;&nbsp;
+ <apex:commandButton action="{!back}" value="Cancel"/> -->
+ </br>
+</apex:form>
+<br/>
+BEGIN:VCARD<br/>
+VERSION:3.0<br/>
+N:<c:vcard Value="{!lead.LastName}"/>;
+<c:vcard Value="{!lead.FirstName}"/><br/>
+FN:<c:vcard Value="{!lead.salutation} "/><c:vcard Value="{!lead.FirstName} "/><c:vcard value="{!lead.LastName}"/> <br/>
+ORG:<c:vcard Value="{!lead.company}"/><br/>
+TITLE:<c:vcard Value="{!lead.Title}"/><br/>
+TEL;TYPE=WORK;VOICE:<c:vcard Value="{!lead.Phone}"/><br/>
+TEL;TYPE=Home;VOICE:<c:vcard Value="{!lead.MobilePhone}"/><br/>
+ADR;TYPE=WORK:;;<c:vcard Value="{!lead.Street}"/>;<c:vcard Value="{!lead.City}"/>;<c:vcard Value="{!lead.State}"/>;<c:vcard Value="{!lead.PostalCode}"/>;<c:vcard Value="{!lead.Country}"/><br/>
+LABEL;TYPE=WORK:<c:vcard Value="{!lead.Street} "/><c:vcard Value="{!lead.City} "/><c:vcard Value="{!lead.State} "/><c:vcard Value="{!lead.PostalCode} "/><c:vcard Value="{!lead.Country}"/><br/>
+ADR;TYPE=HOME:;;<br/>
+LABEL;TYPE=HOME:<br/>
+EMAIL;PREF;INTERNET:<c:vcard Value="{!lead.Email}"/><br/>
+NOTE: 
+<c:vcard Value="{!Note}" /><br/>
+REV:20080424T195243Z<br/>
+END:VCARD<br/>
+<apex:form >
+<br>
+<apex:commandLink styleClass="btn" value="Download" action="{!DownloadVCF3}"    target="_bottom"  accesskey="r" style="text-decoration: none;" />
+<!-- <apex:commandButton action="{!DownloadVCF2}" value="Download"/> --> &nbsp;&nbsp;&nbsp;
+<apex:commandLink styleClass="btn" value="OK" action="{!redirecttolead}"   accesskey="r" style="text-decoration: none;" />
+<!-- <apex:commandButton action="{!Redirecttocontact}" value="OK" /> -->&nbsp;&nbsp;&nbsp;
+<apex:commandLink styleClass="btn" value="Cancel" action="{!back}"   accesskey="r" style="text-decoration: none;" />
+<!-- <apex:commandButton action="{!back}" value="Cancel"/>  -->
+<!--
+<apex:commandButton action="{!DownloadVCF3}" value="Download"/>&nbsp;&nbsp;&nbsp;
+ <apex:commandButton action="{!redirecttolead}" value="OK" />&nbsp;&nbsp;&nbsp;
+ <apex:commandButton action="{!back}" value="Cancel"/> -->
+ </br>
+</apex:form>
+</apex:page>

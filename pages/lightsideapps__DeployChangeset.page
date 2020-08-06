@@ -1,0 +1,74 @@
+<apex:page standardcontroller="lightsideapps__Deployment_Package__c" cache="false" extensions="lightsideapps.DeployChangeSetController" action="{!PopulatePage}">
+    <apex:includeScript value="{!$Resource.lightsideapps__jquery_1_11_3}"/>
+    
+    <apex:sectionHeader Title="Choose instances  where you want to deploy to" Subtitle="Deployment Connections"/>
+    <apex:pageMessages id="pageMessages"  />
+    
+    <span id="deploymessage" 
+          style="display:{!if(NOT(ISNULL(AsyncResult)),'block','none')}; color:#ffffff; background-color:#04844B; border-radius:5px; padding:10px;margin:10px 20px; font-size: 10pt; ">
+        Deploying, please wait...
+    </span>
+    <apex:form id="form">
+        
+        <apex:actionPoller action="{!checkAsyncRequest}" interval="5" rerender="form" rendered="{!NOT(ISNULL(AsyncResult))}"  />
+        <apex:actionFunction action="{!PopulatePage}" name="RefreshTable" rerender="theTable"></apex:actionFunction>
+        <apex:pageBlock title="" mode="detail" >
+            
+            <apex:pageblockButtons id="pageButtons" >  
+                <apex:commandbutton value="  New Connection  " onclick="window.open('/apex/DeploymentConnectionDetails','_Blank','width=600,height=400');" />
+                <apex:commandbutton action="{!Validate}" value=" Upload and Validate "   />
+                <apex:commandbutton action="{!Deploy}" value=" Deploy " onclick="document.getElementById('deploymessage').style.display = 'block';"   /> 
+                <apex:commandbutton action="{!Cancel}" value=" Cancel " />
+            </apex:pageblockButtons> 
+            <apex:pageblockSection title="Deployment Connections" id="tableSection" columns="1" collapsible="false" >
+                
+                <apex:pageblockTable value="{!Connections}" style="width:100%;" var="connection" id="theTable" >
+                    <apex:column style="width:20px;" > 
+                        <apex:facet name="header">
+                            <apex:inputCheckbox onclick="selectAll(this,'SelectBox')"/>
+                        </apex:facet>
+                        <apex:inputCheckbox value="{!connection.Selected}" id="SelectBox" />
+                    </apex:column> 
+                    <apex:column headerValue="Action" style="width:55px;">
+                        <a href="#" onclick="window.open('/apex/DeploymentConnectionDetails?Id={!connection.Id}','_Blank','width=600,height=400');" style="color:#015ba7;">Edit</a>
+                        <apex:outputText value=" " /><b>|</b><apex:outputText value=" " />
+                        <apex:commandLink value="Del" action="{!URLFOR($Action.lightsideapps__Deployment_Connection__c.Delete,connection.Id,[retURL="/apex/DeployChangeset?id="+Deployment_Package__c.Id])}" style="color:#015ba7;"/>
+                    </apex:column>
+                    <apex:column headerValue="Name" value="{!connection.Name}" /> 
+                    <apex:column headerValue="Environment" value="{!connection.Environment}" />
+                    <apex:column headerValue="Host" value="{!connection.HostName}" />
+                    <apex:column headerValue="Status" value="{!connection.Status}" />
+                    <apex:column headerValue="Messages" value="{!connection.Messages}" />
+                </apex:pageblockTable>
+                
+            </apex:pageblockSection>
+            
+        </apex:pageBlock>
+        <apex:actionStatus id="status">
+            <apex:facet name="start">
+                <div style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.25; z-index: 1000; background-color: black;">
+                    &nbsp;
+                </div>
+                <div style="position: fixed; left: 0; top: 0; bottom: 0; right: 0; z-index: 1001; margin: 15% 50%">
+                    <div style="display: inline-block; padding: 2px; background-color: #fff; width: 125px;">
+                        <img src="/img/loading.gif" style="float: left; margin: 8px;" />
+                        <span style="display: inline-block; padding: 10px 0px;">Please Wait...</span>
+                    </div>
+                </div>
+            </apex:facet>
+        </apex:actionStatus>
+        
+    </apex:form>
+    
+    <script type="text/javascript">
+    function selectAll(obj,receivedInputID){
+        var inputCheckBox = document.getElementsByTagName("input");                  
+        for(var i=0; i<inputCheckBox.length; i++){          
+            if(inputCheckBox[i].id.indexOf(receivedInputID)!=-1){                                     
+                inputCheckBox[i].checked = obj.checked;
+            }
+        }
+    }
+    </script>
+    
+</apex:page>

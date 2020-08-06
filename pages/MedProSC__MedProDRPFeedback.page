@@ -1,0 +1,11 @@
+<apex:page controller="MedProSC.MedProDRPFeedback_Controller" tabStyle="SearchMedPro__tab">
+	<apex:sectionHeader title="MedPro Search" subtitle="DRP" />
+	<apex:pageBlock >
+
+		<apex:pageMessages />
+
+	</apex:pageBlock>
+
+    <apex:include pageName="MedProSC__MedProStandardCopyrightFooter"/>
+
+</apex:page>

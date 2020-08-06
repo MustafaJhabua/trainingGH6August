@@ -1,0 +1,13 @@
+<h2>Permission To Connect</h2>
+<p>Hello,</p>
+<p>Dr. {!Match_Record__c.Ordering_Physician_Name__c} would like to connect with {!Match_Record__c.Pharma_Company__c} regarding&nbsp;{!Match_Record__c.Trial_Name__c}.</p>
+
+<p><strong>Contact Information:<br /></strong>
+{!Match_Record__c.Ordering_Physician_Name__c}<br />{!Match_Record__c.Ordering_Practice_Name__c}<br />
+{!Match_Record__c.Practice_Address__c}<br />
+{!Match_Record__c.Practice_City__c}, {!Match_Record__c.Practice_State__c} {!Match_Record__c.Practice_Zip__c}<br />
+{!Match_Record__c.Physician_phone__c}<br />
+{!Match_Record__c.Physician_Email__c}</p>
+<p><strong>Match Key:</strong> {!Match_Record__c.Match_Key__c}<br /><strong>Cancer Type:</strong> {!Match_Record__c.Cancer_Type__c}&nbsp;<br /><strong>Qualifying Target Alterations:</strong> {!Match_Record__c.Qualifying_Target_Alterations__c}&nbsp;<br /><strong>Guardant Notes:</strong> {!Match_Record__c.Guardant_Notes__c}&nbsp;<br /><strong>Closest Trial Site:</strong> {!Match_Record__c.Closest_Trial_Site__c}&nbsp;<br />
+<strong>Closest Trial Site Type: </strong> {!Match_Record__c.00N34000005oRJ0}</p>
+<p>https://na29.salesforce.com/{!Match_Record__c.Id}</p>

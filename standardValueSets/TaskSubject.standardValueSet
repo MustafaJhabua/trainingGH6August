@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Physician 1:1</fullName>
+        <default>false</default>
+        <label>Physician 1:1</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Patient Case Review</fullName>
+        <default>false</default>
+        <label>Patient Case Review</label>
+    </standardValue>
+    <standardValue>
+        <fullName>E-mail</fullName>
+        <default>false</default>
+        <label>E-mail</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Office Visit</fullName>
+        <default>false</default>
+        <label>Office Visit</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Staff Inservice</fullName>
+        <default>false</default>
+        <label>Staff Inservice</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Phone Call</fullName>
+        <default>false</default>
+        <label>Phone Call</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Office Meal</fullName>
+        <default>false</default>
+        <label>Office Meal</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tumor Board</fullName>
+        <default>false</default>
+        <label>Tumor Board</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Grand Rounds</fullName>
+        <default>false</default>
+        <label>Grand Rounds</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Dinner Meeting</fullName>
+        <default>false</default>
+        <label>Dinner Meeting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Speaker Program</fullName>
+        <default>false</default>
+        <label>Speaker Program</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Medical Affairs Presentation</fullName>
+        <default>false</default>
+        <label>Medical Affairs Presentation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Presentation</fullName>
+        <default>false</default>
+        <label>Presentation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Qualification/Lab-Set up</fullName>
+        <default>false</default>
+        <label>Qualification/Lab-Set up</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Follow-up visit</fullName>
+        <default>false</default>
+        <label>Follow-up visit</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Lab In-service</fullName>
+        <default>false</default>
+        <label>Lab In-service</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Problem case resolution</fullName>
+        <default>false</default>
+        <label>Problem case resolution</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Group Presentation</fullName>
+        <default>false</default>
+        <label>Group Presentation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Speaker Presentation</fullName>
+        <default>false</default>
+        <label>Speaker Presentation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Outreach Activity</fullName>
+        <default>false</default>
+        <label>Outreach Activity</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Internal Meeting</fullName>
+        <default>false</default>
+        <label>Internal Meeting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Portal Demonstration</fullName>
+        <default>false</default>
+        <label>Portal Demonstration</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Staff 1:1</fullName>
+        <default>false</default>
+        <label>Staff 1:1</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Group Inservice</fullName>
+        <default>false</default>
+        <label>Group Inservice</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email/Phone Call</fullName>
+        <default>false</default>
+        <label>Email/Phone Call</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Conference/Meeting</fullName>
+        <default>false</default>
+        <label>Conference/Meeting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Lab 1:1</fullName>
+        <default>false</default>
+        <label>Lab 1:1</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Med Affairs Courtesy Call</fullName>
+        <default>false</default>
+        <label>Med Affairs Courtesy Call</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Literature Drop</fullName>
+        <default>false</default>
+        <label>Literature Drop</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Potential Secondary Germline Finding</fullName>
+        <default>false</default>
+        <label>Potential Secondary Germline Finding</label>
+    </standardValue>
+    <standardValue>
+        <fullName>MSI-H Follow Up</fullName>
+        <default>false</default>
+        <label>MSI-H Follow Up</label>
+    </standardValue>
+    <standardValue>
+        <fullName>MA High Impact Interaction – Target</fullName>
+        <default>false</default>
+        <label>MA High Impact Interaction – Target</label>
+    </standardValue>
+    <standardValue>
+        <fullName>MA High Impact Interaction – Non-Target</fullName>
+        <default>false</default>
+        <label>MA High Impact Interaction – Non-Target</label>
+    </standardValue>
+</StandardValueSet>

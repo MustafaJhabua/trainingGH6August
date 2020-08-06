@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>GH_Logo_Small</letterhead>
+    <name>Patient Web Auto Response (LatAm)</name>
+    <style>freeForm</style>
+    <subject>Thank you for contacting Guardant Health.</subject>
+    <textOnly>Thank you for your interest in Guardant Health.
+
+Our Client Services team will be contacting you shortly to answer any questions you may have.  Until then, please have a look at the attached brochure which has useful information on our Guardant360® test.
+
+If you would like to speak with someone from our team, please call us at (855) 698-8887.
+
+Thank you, again, for your inquiry and you will be hearing from us soon.
+
+Client Services
+Guardant Health, Inc.
+505 Penobscot Dr. 
+Redwood City, CA 94063
+Ph: (855) 698-8887
+Fax: (888) 974-4258
+clientservices@guardanthealth.com
+
+This e-mail, including any attachments may contain material protected and governed by the Health Insurance and Portability and Accountability Act (HIPAA). This e-mail and any files transmitted with it are confidential and are intended solely for the use of the individual or entity to which they are addressed. The authorized recipient of this information is prohibited from disclosing this information to any other party unless authorized. If you are not the intended recipient of this e-mail please note that you have received this e-mail in error and any use, dissemination, forwarding, printing or copying of this e-mail is strictly prohibited. If you have received this e-mail in error, please immediately contact the sender of this message.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

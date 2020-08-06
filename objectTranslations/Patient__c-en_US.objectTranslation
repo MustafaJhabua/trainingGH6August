@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Patient</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Patients</value>
+    </caseValues>
+    <fields>
+        <label><!-- Accession # --></label>
+        <name>AccessionNumber__c</name>
+        <relationshipLabel><!-- Patients --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Acct AE Email --></label>
+        <name>Acct_AE_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Acct Owner Email --></label>
+        <name>Acct_Owner_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Age --></label>
+        <name>Age__c</name>
+    </fields>
+    <fields>
+        <label><!-- Avg Days Between Samples --></label>
+        <name>Avg_Days_Between_Samples__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Type --></label>
+        <name>Billing_Type__c</name>
+        <picklistValues>
+            <masterLabel>Do Not Bill - Cancelled</masterLabel>
+            <translation><!-- Do Not Bill - Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Bill - Clinical Utility</masterLabel>
+            <translation><!-- Do Not Bill - Clinical Utility --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Bill - Pharma</masterLabel>
+            <translation><!-- Do Not Bill - Pharma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Bill - Proficiency</masterLabel>
+            <translation><!-- Do Not Bill - Proficiency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Bill - Promotional	 Quality Testing</masterLabel>
+            <translation><!-- Do Not Bill - Promotional	 Quality Testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Indigent</masterLabel>
+            <translation><!-- Financial Indigent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Institutional Billing</masterLabel>
+            <translation><!-- Institutional Billing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medicaid</masterLabel>
+            <translation><!-- Medicaid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medicare</masterLabel>
+            <translation><!-- Medicare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private Insurance/Employee Health Plan</masterLabel>
+            <translation><!-- Private Insurance/Employee Health Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private Insurance/Employee Health Plan No OOP</masterLabel>
+            <translation><!-- Private Insurance/Employee Health Plan No OOP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Requesting Physician</masterLabel>
+            <translation><!-- Requesting Physician --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self-Pay Patient</masterLabel>
+            <translation><!-- Self-Pay Patient --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CASESAFEID(Id) --></label>
+        <name>CASESAFEID_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- Match records where CTA Contact Attempted is checked --></help>
+        <label><!-- CTA Contact Attempted Match Key(s) --></label>
+        <name>CTA_Contact_Attempted_Match_Key_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- CTA Contact Attempted --></label>
+        <name>CTA_Contact_Attempted__c</name>
+    </fields>
+    <fields>
+        <label><!-- CTA Contacted Attempted Date --></label>
+        <name>CTA_Contacted_Attempted_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- CXL Request --></label>
+        <name>CXL_Request__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancer Type --></label>
+        <name>Cancer_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cell Phone --></label>
+        <name>Cell_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closed Date --></label>
+        <name>Closed_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Match records where Closed is checked --></help>
+        <label><!-- Closed Match Key(s) --></label>
+        <name>Closed_Match_Key_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closed --></label>
+        <name>Closed__c</name>
+    </fields>
+    <fields>
+        <label><!-- INS Company Name --></label>
+        <name>Company_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- DOB --></label>
+        <name>DOB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Record Last Changed --></label>
+        <name>Date_Record_Last_Changed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Service --></label>
+        <name>Date_of_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days between 1st and last samples --></label>
+        <name>Days_between_1st_and_last_samples__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enrolled Date --></label>
+        <name>Enrolled_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Match records where Enrolled is checked --></help>
+        <label><!-- Enrolled Match Key(s) --></label>
+        <name>Enrolled_Match_Key_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enrolled --></label>
+        <name>Enrolled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient Expected OOP --></label>
+        <name>Expected_OOP__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Name --></label>
+        <name>First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Sample Received --></label>
+        <name>First_Sample_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Full Name --></label>
+        <name>Full_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gender --></label>
+        <name>Gender__c</name>
+        <picklistValues>
+            <masterLabel>Female</masterLabel>
+            <translation><!-- Female --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Male</masterLabel>
+            <translation><!-- Male --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Household Size --></help>
+        <label><!-- HHS --></label>
+        <name>HHS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Home Phone --></label>
+        <name>Home_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- ICD Code --></label>
+        <name>ICD_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Informed Date --></label>
+        <name>Informed_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Match records where Informed is checked --></help>
+        <label><!-- Informed Match Key(s) --></label>
+        <name>Informed_Match_Key_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- Informed --></label>
+        <name>Informed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial Contact Date --></label>
+        <name>Initial_Contact_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial Contact Notes --></label>
+        <name>Initial_Contact_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial Contact Result --></label>
+        <name>Initial_Contact_Result__c</name>
+        <picklistValues>
+            <masterLabel>Cancelation requested</masterLabel>
+            <translation><!-- Cancelation requested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Escalation requested</masterLabel>
+            <translation><!-- Escalation requested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient deceased</masterLabel>
+            <translation><!-- Patient deceased --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient was unreachable</masterLabel>
+            <translation><!-- Patient was unreachable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient will call back</masterLabel>
+            <translation><!-- Patient will call back --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient will proceed</masterLabel>
+            <translation><!-- Patient will proceed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- LIMS Accession Number --></label>
+        <name>LIMS_Accession_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- LIMS Patient Record ID --></label>
+        <name>LIMS_Patient_Record_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Ditch Email Replied Date --></label>
+        <name>Last_Ditch_Email_Replied_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Ditch Email Sent Date --></label>
+        <name>Last_Ditch_Email_Sent_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Match records where Last Ditch Email Sent is checked --></help>
+        <label><!-- Last Ditch Email Sent Match Key(s) --></label>
+        <name>Last_Ditch_Email_Sent_Match_Key_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Ditch Email Sent --></label>
+        <name>Last_Ditch_Email_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Name --></label>
+        <name>Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Sample Received --></label>
+        <name>Last_Sample_Recd__c</name>
+    </fields>
+    <fields>
+        <label><!-- MRN --></label>
+        <name>MRN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Samples --></label>
+        <name>Number_of_Samples__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outreach Email Read Date --></label>
+        <name>Outreach_Email_Read_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Match records where Outreach Email Read is checked --></help>
+        <label><!-- Outreach Email Read Match Key(s) --></label>
+        <name>Outreach_Email_Read_Match_Key_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outreach Email Read --></label>
+        <name>Outreach_Email_Read__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outreach Email Replied Date --></label>
+        <name>Outreach_Email_Replied_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outreach Email Sent Date --></label>
+        <name>Outreach_Email_Sent_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Match records where Outreach Email Sent is checked --></help>
+        <label><!-- Outreach Email Sent Match Key(s) --></label>
+        <name>Outreach_Email_Sent_Match_Key_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outreach Email Sent --></label>
+        <name>Outreach_Email_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- PFA Gross --></label>
+        <name>PFA_Gross__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient Benefits Authorization --></label>
+        <name>Patient_Benefits_Authorization__c</name>
+        <picklistValues>
+            <masterLabel>Signed</masterLabel>
+            <translation><!-- Signed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsigned</masterLabel>
+            <translation><!-- Unsigned --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Patient ID --></label>
+        <name>Patient_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient Initials --></label>
+        <name>Patient_Initials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient Opted In --></label>
+        <name>Patient_Opted_In__c</name>
+    </fields>
+    <fields>
+        <help><!-- Match records where Permission to Connect With Pharma is checked --></help>
+        <label><!-- Perm to Conn With Pharma Match Key(s) --></label>
+        <name>Perm_to_Conn_With_Pharma_Match_Key_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- Permission to Connect with Pharma Date --></label>
+        <name>Permission_to_Connect_with_Pharma_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Permission to Connect with Pharma --></label>
+        <name>Permission_to_Connect_with_Pharma__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pharma PTC Alert Date --></label>
+        <name>Pharma_PTC_Alert_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Match records where Pharma PTC Alert Sent is checked --></help>
+        <label><!-- Pharma PTC Alert Match Key(s) --></label>
+        <name>Pharma_PTC_Alert_Match_Key_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pharma PTC Alert --></label>
+        <name>Pharma_PTC_Alert__c</name>
+    </fields>
+    <fields>
+        <label><!-- Physician Account --></label>
+        <name>PhysicianAccount__c</name>
+        <relationshipLabel><!-- Patients (Physician Account) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Physician Account Name --></label>
+        <name>Physician_Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Postal Code --></label>
+        <name>Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group Plan Number --></label>
+        <name>Primary_Group_Plan_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Identification Number --></label>
+        <name>Primary_Identification_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address --></label>
+        <name>Primary_Ins_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>Primary_Ins_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Insurance Company Name Text --></label>
+        <name>Primary_Ins_Co_Name_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Insurance Company Name --></label>
+        <name>Primary_Ins_Co_Name__c</name>
+        <relationshipLabel><!-- Patient Insurance --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Member DOB --></label>
+        <name>Primary_Ins_Member_DOB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Member Name --></label>
+        <name>Primary_Ins_Member_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone Number --></label>
+        <name>Primary_Ins_Phone_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Ins Price --></label>
+        <name>Primary_Ins_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship To Patient --></label>
+        <name>Primary_Ins_Relationship_To_Patient__c</name>
+        <picklistValues>
+            <masterLabel>Child</masterLabel>
+            <translation><!-- Child --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parent</masterLabel>
+            <translation><!-- Parent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spouse</masterLabel>
+            <translation><!-- Spouse --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>Primary_Ins_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Primary_Ins_Type__c</name>
+        <picklistValues>
+            <masterLabel>EPO</masterLabel>
+            <translation><!-- EPO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HMO</masterLabel>
+            <translation><!-- HMO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medicaid</masterLabel>
+            <translation><!-- Medicaid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medicare</masterLabel>
+            <translation><!-- Medicare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medicare Advantage</masterLabel>
+            <translation><!-- Medicare Advantage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>POS</masterLabel>
+            <translation><!-- POS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PPO</masterLabel>
+            <translation><!-- PPO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>State Funded</masterLabel>
+            <translation><!-- State Funded --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Zip Code --></label>
+        <name>Primary_Ins_Zip_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Medical Group Name --></label>
+        <name>Primary_Medical_Group_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Push to ERP --></label>
+        <name>Push_to_ERP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reached Provider Date --></label>
+        <name>Reached_Provider_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Match records where Reached Provider is checked --></help>
+        <label><!-- Reached Provider Match Key(s) --></label>
+        <name>Reached_Provider_Match_Key_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reached Provider --></label>
+        <name>Reached_Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recalculate Match Admin Panel --></label>
+        <name>Recalculate_Match_Admin_Panel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Physician --></label>
+        <name>Related_Physician__c</name>
+    </fields>
+    <fields>
+        <help><!-- Match records where Replied to Last Ditch Email is checked --></help>
+        <label><!-- Replied to Last Ditch Email Match Key(s) --></label>
+        <name>Replied_to_Last_Ditch_Email_Match_Key_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- Replied to Last Ditch Email --></label>
+        <name>Replied_to_Last_Ditch_Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- Match records where Replied to Outreach Email is checked --></help>
+        <label><!-- Replied to Outreach Email Match Key(s) --></label>
+        <name>Replied_to_Outreach_Email_Match_Key_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- Replied to Outreach Email --></label>
+        <name>Replied_to_Outreach_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- SSN --></label>
+        <name>SSN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Request Type --></label>
+        <name>Sample_Request_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Screened Date --></label>
+        <name>Screened_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Match records where Screened is checked --></help>
+        <label><!-- Screened  Match Key(s) --></label>
+        <name>Screened_Match_Key_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- Screened --></label>
+        <name>Screened__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group Plan Number --></label>
+        <name>Secondary_Group_Plan_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Identification Number --></label>
+        <name>Secondary_Identification_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address --></label>
+        <name>Secondary_Ins_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>Secondary_Ins_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Member DOB --></label>
+        <name>Secondary_Ins_Member_DOB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Member Name --></label>
+        <name>Secondary_Ins_Member_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship To Patient --></label>
+        <name>Secondary_Ins_Relationship_To_Patient__c</name>
+        <picklistValues>
+            <masterLabel>Child</masterLabel>
+            <translation><!-- Child --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parent</masterLabel>
+            <translation><!-- Parent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spouse</masterLabel>
+            <translation><!-- Spouse --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>Secondary_Ins_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zip Code --></label>
+        <name>Secondary_Ins_Zip_Code_del__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary Insurance Company Name --></label>
+        <name>Secondary_Insurance_Company_Name__c</name>
+        <relationshipLabel><!-- Patients (Secondary Insurance Company Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Medical Group Name --></label>
+        <name>Secondary_Medical_Group_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone Number --></label>
+        <name>Secondary_ins_Phone_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Secondaty_Ins_Type__c</name>
+        <picklistValues>
+            <masterLabel>EPO</masterLabel>
+            <translation><!-- EPO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HMO</masterLabel>
+            <translation><!-- HMO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medicaid</masterLabel>
+            <translation><!-- Medicaid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medicare</masterLabel>
+            <translation><!-- Medicare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medicare Advantage</masterLabel>
+            <translation><!-- Medicare Advantage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>POS</masterLabel>
+            <translation><!-- POS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PPO</masterLabel>
+            <translation><!-- PPO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>State Funded</masterLabel>
+            <translation><!-- State Funded --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Earliest Show to Customer Date --></help>
+        <label><!-- Show to Customer Date --></label>
+        <name>Show_to_Customer_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Match records where show to customer is checked --></help>
+        <label><!-- Show to Customer Match Key(s) --></label>
+        <name>Show_to_Customer_Match_Key_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show to Customer --></label>
+        <name>Show_to_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Street Line 2 --></label>
+        <name>Street_Line_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street Line 1 --></label>
+        <name>Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- WF Gross --></label>
+        <name>WF_Gross__c</name>
+    </fields>
+    <fields>
+        <label><!-- Yearly Residual Income --></label>
+        <name>Yearly_Residual_Income__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Cannot change this field once the patient signs the PBA. --></errorMessage>
+        <name>Lock_PBA_If_Signed</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- WebMerge --></label>
+        <name>WebMerge</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,9 @@
+Hello,
+An expense report was approved in the amount of {!Expenses__c.Expense_Amount__c} for Dr. {!Expenses__c.Physician_Name__c} at {!Expenses__c.Institution_Name__c}.
+
+Employee: {!Expenses__c.Employee__c}
+Expense Date: {!Expenses__c.Expense_Date__c}
+Click here: {!Expenses__c.Link}
+
+Thanks
+Ruben Smith

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Batch Result --></label>
+        <name>MedProBT__Batch_Result__c</name>
+        <relationshipLabel><!-- MedPro Row Results --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Error Message --></label>
+        <name>MedProBT__Error_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Row Number --></label>
+        <name>MedProBT__Row_Number__c</name>
+    </fields>
+</CustomObjectTranslation>

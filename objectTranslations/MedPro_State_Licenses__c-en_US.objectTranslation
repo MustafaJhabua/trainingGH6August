@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>MedPro State License</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>MedPro State Licenses</value>
+    </caseValues>
+    <fields>
+        <label><!-- Expiration date --></label>
+        <name>Expiration_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Name --></label>
+        <name>First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gender --></label>
+        <name>Gender__c</name>
+    </fields>
+    <fields>
+        <label><!-- Graduation Year --></label>
+        <name>Graduation_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group Practice Name --></label>
+        <name>Group_Practice_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Name --></label>
+        <name>Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- License eligiblility --></label>
+        <name>License_eligiblility__c</name>
+    </fields>
+    <fields>
+        <label><!-- License state --></label>
+        <name>License_state__c</name>
+    </fields>
+    <fields>
+        <label><!-- License type --></label>
+        <name>License_type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Literal License Status --></label>
+        <name>Literal_License_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- MP_Accountid --></label>
+        <name>MP_Accountid__c</name>
+    </fields>
+    <fields>
+        <label><!-- MP_Contactid --></label>
+        <name>MP_Contactid__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPI Active --></label>
+        <name>MP_NPI_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPI City --></label>
+        <name>MP_NPI_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPI Number --></label>
+        <name>MP_NPI_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPI State --></label>
+        <name>MP_NPI_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- No NPI --></label>
+        <name>MP_No_NPI__c</name>
+    </fields>
+    <fields>
+        <label><!-- PECOS O&amp;R --></label>
+        <name>MP_PECOS_O_R__c</name>
+    </fields>
+    <fields>
+        <label><!-- MP_Update --></label>
+        <name>MP_Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- MedPro Last Update --></label>
+        <name>MedPro_Last_Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPI First Name --></label>
+        <name>NPI_First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPI Last Name --></label>
+        <name>NPI_Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPI Record --></label>
+        <name>NPI_Record__c</name>
+        <relationshipLabel><!-- MedPro State Licenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Overall license eligibility --></label>
+        <name>Overall_license_eligibility__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sanction 1 Affects Eligibility --></label>
+        <name>Sanction_1_Affects_Eligibility__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sanction 1 Date --></label>
+        <name>Sanction_1_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sanction 2 Affects Eligibility --></label>
+        <name>Sanction_2_Affects_Eligibility__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sanction 2 Date --></label>
+        <name>Sanction_2_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sanction 3 Affects Eligibility --></label>
+        <name>Sanction_3_Affects_Eligibility__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sanction 3 Date --></label>
+        <name>Sanction_3_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sanction 4 Affects Eligibility --></label>
+        <name>Sanction_4_Affects_Eligibility__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sanction 4 Date --></label>
+        <name>Sanction_4_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sanction Source 1 --></label>
+        <name>Sanction_Source_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sanction Source 2 --></label>
+        <name>Sanction_Source_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sanction Source 3 --></label>
+        <name>Sanction_Source_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sanction Source 4 --></label>
+        <name>Sanction_Source_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sanction Type 1 --></label>
+        <name>Sanction_Type_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sanction Type 2 --></label>
+        <name>Sanction_Type_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sanction Type 3 --></label>
+        <name>Sanction_Type_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sanction Type 4 --></label>
+        <name>Sanction_Type_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- State license number --></label>
+        <name>State_license_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- medproid --></label>
+        <name>medproid__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

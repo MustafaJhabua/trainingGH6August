@@ -1,0 +1,6 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[Dear&nbsp;{!User.FirstName}:<div><br></div><div>As the designated administrator of the MedPro Search Connector (MSC), you are receiving this email to inform you that either you or one of your users recently requested an update of all MedProID stamped records via the MSC administrative interface. &nbsp;This operational request has been completed and all of your org's records which are synced with MedPro have been updated per the tool's designated sync mappings.</div><div><br></div><div>Thank you again for being a valued MedPro customer ....</div><div><br></div><div>Regards,</div><div><br></div><div>The MedPro Team</div>]]></td>
+</tr>
+</table>

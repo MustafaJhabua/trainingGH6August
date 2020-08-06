@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Territory2Rule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <booleanFilter>1 AND 4 and (2 OR 3)</booleanFilter>
+    <name>Central PA</name>
+    <objectType>Account</objectType>
+    <ruleItems>
+        <field>Account.Account_Type__c</field>
+        <operation>equals</operation>
+        <value>Clinical Account US</value>
+    </ruleItems>
+    <ruleItems>
+        <field>Account.BillingPostalCode</field>
+        <operation>startsWith</operation>
+        <value>168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,195,196</value>
+    </ruleItems>
+    <ruleItems>
+        <field>Account.BillingPostalCode</field>
+        <operation>equals</operation>
+        <value>15536,16720,16746,21750,16611,16621,16622,16623,16634,16638,16647,16652,16654,16657,16660,16669,16685,16689,16691,19310,19316,19318,19330,19344,19346,19347,19350,19351,19352,19358,19360,19362,19363,19365,19367,19369,19371,19376,19390</value>
+    </ruleItems>
+    <ruleItems>
+        <field>Account.BillingPostalCode</field>
+        <operation>notEqual</operation>
+        <value>19503,19504,19505,19512,19518,19519,19520,19525,19545,19548,18036,18041,18054,18060,18068,18070,18073,18074,18076,18084,18092</value>
+    </ruleItems>
+</Territory2Rule>

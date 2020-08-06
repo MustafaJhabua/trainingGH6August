@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Ordering MD provides neutral response to initial outreach email</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>General_Response_No Action_026</name>
+    <style>none</style>
+    <subject>Re:</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

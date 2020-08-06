@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- CRMC Action Grid Defaults --></label>
+        <name>CRMC_PP__CRMC_Action_Grid_Defaults</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Bill Client Opp --></label>
+        <name>Bill_Client_Opp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opp Owner&apos;s Manager Email --></label>
+        <name>Opp_Owner_s_Manager_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner&apos;s Manager Email --></label>
+        <name>Owner_s_Manager_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fax --></label>
+        <name>efaxapp__Fax__c</name>
+    </fields>
+    <webLinks>
+        <label><!-- Mass_Delete --></label>
+        <name>Mass_Delete</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_with_DocuSign --></label>
+        <name>dsfs__Send_with_DocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Email_Attachments --></label>
+        <name>lightsideapps__Email_Attachments</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Pardot_Emails --></label>
+        <name>pi__Send_Pardot_Emails</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Single_Pardot_Email --></label>
+        <name>pi__Send_Single_Pardot_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Smart_Dialer --></label>
+        <name>talkdesk__Smart_Dialer</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Webmerge --></label>
+        <name>webm__Webmerge</name>
+    </webLinks>
+</CustomObjectTranslation>

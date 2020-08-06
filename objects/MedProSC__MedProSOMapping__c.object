@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>A custom object for maintaining the system wide configuration settings for how synchronization of MedPro Search Connector results are processed (at the SO/CO level)</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>MedProSC__ActionLabel__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Text added to button to display to users. For example, an action label of “Contact” would display as “Save As Contact”</inlineHelpText>
+        <label>Action Label</label>
+        <length>80</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProSC__ClientID_Field_API_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The name of the field which will source the CilentID for an in-universe update</inlineHelpText>
+        <label>ClientID Field API Name</label>
+        <length>40</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProSC__Contextually_Enable_Mapping_Btn__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>MED-370, If checked, the button for this mapping on the Results Screen is rendered when the referring page is associated with the object in the Target API Name. When unchecked, the button is rendered. Usually you will, set this as all or no active parent mappings.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked, the button for this mapping on the Results Screen is rendered when the referring page is associated with the object in the Target API Name. When unchecked, the button is rendered. Usually you will, set this as all or no active parent mappings.</inlineHelpText>
+        <label>Contextually Enable Mapping Btn</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MedProSC__Customer_Parent_API_Link__c</fullName>
+        <deprecated>false</deprecated>
+        <description>API Name of the lookup from a child record to a parent record in SF.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>API Name of the lookup from a child record to a parent record in SF.</inlineHelpText>
+        <label>Customer Parent API Link</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProSC__DoNotAllowInserts__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Prevents the addition of new records into the SF Org from MedPro via the mapping</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Prevents the addition of new records into the SF Org from MedPro via the mapping</inlineHelpText>
+        <label>Do Not Allow Inserts</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MedProSC__External_ID_Field_API_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Field name on the SalesForce object which holds the business-unique ID for the record</inlineHelpText>
+        <label>External ID Field API Name</label>
+        <length>64</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProSC__IsComplexMapping__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If this box is checked, the record mapping also has dependent children mappings associated with it.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If this box is checked, the record mapping also has dependent children mappings associated with it.</inlineHelpText>
+        <label>IsComplexMapping</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MedProSC__Is_Active__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Sets mapping to be active or inactive.  Inactive mappings get ignored during the process.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Sets mapping to be active or inactive.  Inactive mappings get ignored during the process.</inlineHelpText>
+        <label>Is Active</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MedProSC__MappingSource__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Sync – Pull data from MedPro and insert/update in SalesForce
+Search – Fields from an existing SalesForce Object to map to MedPro Search Form when performing a search from an existing SF record</inlineHelpText>
+        <label>Mapping Source</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Search</fullName>
+                    <default>false</default>
+                    <label>Search</label>
+                </value>
+                <value>
+                    <fullName>Sync</fullName>
+                    <default>true</default>
+                    <label>Sync</label>
+                </value>
+                <value>
+                    <fullName>DRP</fullName>
+                    <default>false</default>
+                    <label>DRP</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>MedProSC__Mapping_Key__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>This is the unique key that&apos;s used to identify mappings. This is primarily used to identify different mappings on the same object. For implementation purposes, this key has to be unique across all mappings.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the unique key that&apos;s used to identify mappings. This is primarily used to identify different mappings on  the same object. For implementation purposes, this key has to be unique across all mappings.</inlineHelpText>
+        <label>Mapping Key</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>MedProSC__MedPro_Customer__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The associated MedPro Customer for this data mapping</inlineHelpText>
+        <label>MedPro Customer</label>
+        <referenceTo>MedProSC__MedProCustomer__c</referenceTo>
+        <relationshipLabel>MedPro Data Mappings</relationshipLabel>
+        <relationshipName>MedPro_SO_Mappings</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>MedProSC__ParentDataMapping__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The associated parent mapping for this data mapping.  Only filled out in child mappings.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The associated parent mapping for this data mapping.  Only filled out in child mappings.</inlineHelpText>
+        <label>Parent Data Mapping</label>
+        <referenceTo>MedProSC__MedProSOMapping__c</referenceTo>
+        <relationshipLabel>MedPro Dependent Data Mappings</relationshipLabel>
+        <relationshipName>DependentDataMappings</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>MedProSC__ParentLinkingField_API_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The column on the SF Object which will link itself to its parent / associated object</inlineHelpText>
+        <label>Parent Linking Field Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProSC__Purge_Dependent_Data__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This flag will delete existing child records from mappings and prevent more from being created.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This flag will delete existing child records from mappings and prevent more from being created.</inlineHelpText>
+        <label>Purge Dependent Data</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MedProSC__SF_field_for_In_Universe_Update__c</fullName>
+        <deprecated>false</deprecated>
+        <description>MED-421</description>
+        <externalId>false</externalId>
+        <label>SF Field For In Universe Updates</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProSC__SO_API_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The object in SalesForce that MedPro data will be mapped to</inlineHelpText>
+        <label>Target API Name</label>
+        <length>64</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProSC__Source_External_ID_Field__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the MedPro source representation of the external Id field.</inlineHelpText>
+        <label>Source External ID Field</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProSC__SyncUpdatesInUniverse__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Allow updates of the MedPro in-universe with records that are synced using the search tool.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Allow updates of the MedPro in-universe with records that are synced using the search tool.</inlineHelpText>
+        <label>Sync Updates In-Universe</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MedProSC__Sync_Option_Number__c</fullName>
+        <defaultValue>1</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Controls the ordering of sync action buttons on SalesForce Pages.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Controls the ordering of sync action buttons on SalesForce Pages.</inlineHelpText>
+        <label>Sync Option Number</label>
+        <precision>1</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProSC__Update_Record_Label__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the update record label on the Display Results Page. The link on the pop up will only display if this label is defined.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the update record label on the Display Results Page. The link on the pop up will only display if this label is defined.</inlineHelpText>
+        <label>Update Record Label</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProSC__VF_Redirect_after_adding_an_HCP__c</fullName>
+        <deprecated>false</deprecated>
+        <description>MED-274, This redirect works when Enable Search for existing records in SF and Disable Multiselect on Results Screen are checked at the Customer level.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Only add the VF page (i.e. AddressDetailView), don&apos;t add slashes, namespace, etc. 
+This redirect works when Enable Search for existing records in SF and Disable Multiselect on Results Screen are checked at the Customer level.</inlineHelpText>
+        <label>VF Redirect after adding an HCP</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProSC__View_Label_on_Display_Results_Page__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the label for the View link on the Display Results Page. The link on the pop up will only display if this label is defined.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the label for the View link on the Display Results Page. The link on the pop up will only display if this label is defined.</inlineHelpText>
+        <label>View Label on Display Results Page</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>MedPro Data Mapping</label>
+    <nameField>
+        <label>Data Mapping Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>MedPro Data Mappings</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>MedProSC__SO_API_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>MedProSC__MappingSource__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>MedProSC__External_ID_Field_API_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>MedProSC__ActionLabel__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>MedProSC__DoNotAllowInserts__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>MedProSC__Sync_Option_Number__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>MedProSC__Is_Active__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

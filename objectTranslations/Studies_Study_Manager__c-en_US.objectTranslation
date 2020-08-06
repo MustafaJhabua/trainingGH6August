@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Study Manager</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Study Managers</value>
+    </caseValues>
+    <fields>
+        <label><!-- Contact Full Name --></label>
+        <name>Contact_Full_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Related Studies --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This opts the contact into receiving PTC Emails from Yuzu. --></help>
+        <label><!-- PTC Connection Opt-In --></label>
+        <name>PTC_Connection_Opt_In__c</name>
+    </fields>
+    <fields>
+        <label><!-- Study Mgr No --></label>
+        <name>Study_Mgr_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Study --></label>
+        <name>Study__c</name>
+        <relationshipLabel><!-- Study Managers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- update --></label>
+        <name>update__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- New_Study_Manager --></label>
+        <name>New_Study_Manager</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Study_Manager2 --></label>
+        <name>New_Study_Manager2</name>
+    </webLinks>
+</CustomObjectTranslation>

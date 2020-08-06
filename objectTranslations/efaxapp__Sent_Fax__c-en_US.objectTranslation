@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Guardant 360 Sample # --></label>
+        <name>Guardant_360_Sample__c</name>
+        <relationshipLabel><!-- Sent Faxes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Primary Fax Failed Notification --></label>
+        <name>Primary_Fax_Failed_Notification__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Fax Sent Notification --></label>
+        <name>Primary_Fax_Sent_Notification__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resent --></label>
+        <name>Resend__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary Fax Failed Notification --></label>
+        <name>Secondary_Fax_Failed_Notification__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary Fax Sent Notification --></label>
+        <name>Secondary_Fax_Sent_Notification__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2nd Recipient Sample # --></label>
+        <name>X2nd_Recipient_Sample__c</name>
+        <relationshipLabel><!-- Sent Faxes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>efaxapp__Account__c</name>
+        <relationshipLabel><!-- Sent Faxes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Attachment ID --></label>
+        <name>efaxapp__Attachment_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Barcode Position from Left --></label>
+        <name>efaxapp__Barcode_Position_Left__c</name>
+    </fields>
+    <fields>
+        <label><!-- Barcode Position from Top --></label>
+        <name>efaxapp__Barcode_Position_Top__c</name>
+    </fields>
+    <fields>
+        <label><!-- Barcode Size Width --></label>
+        <name>efaxapp__Barcode_Size_Width__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>efaxapp__Contact__c</name>
+        <relationshipLabel><!-- Sent Faxes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Cost Per Page --></label>
+        <name>efaxapp__Cost_Per_Page__c</name>
+    </fields>
+    <fields>
+        <label><!-- DOCID --></label>
+        <name>efaxapp__DOCID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Date --></label>
+        <name>efaxapp__Delivery_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Detailed Fax Status --></label>
+        <name>efaxapp__Detailed_Fax_Status__c</name>
+        <picklistValues>
+            <masterLabel>Busy</masterLabel>
+            <translation><!-- Busy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call placement error</masterLabel>
+            <translation><!-- Call placement error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fax transmission failed</masterLabel>
+            <translation><!-- Fax transmission failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No answer</masterLabel>
+            <translation><!-- No answer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No dial tone</masterLabel>
+            <translation><!-- No dial tone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remote hang-up</masterLabel>
+            <translation><!-- Remote hang-up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Success</masterLabel>
+            <translation><!-- Success --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>System error</masterLabel>
+            <translation><!-- System error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unspecified failure</masterLabel>
+            <translation><!-- Unspecified failure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User defined</masterLabel>
+            <translation><!-- User defined --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Fax Number --></label>
+        <name>efaxapp__Fax_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fax URL --></label>
+        <name>efaxapp__Fax_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Retries --></label>
+        <name>efaxapp__Number_of_Retries__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>efaxapp__Opportunity__c</name>
+        <relationshipLabel><!-- Sent Faxes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Organization Fax Number --></label>
+        <name>efaxapp__Org_Fax_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent ID --></label>
+        <name>efaxapp__Parent_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preview Fax --></label>
+        <name>efaxapp__Preview_Fax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preview Image URL --></label>
+        <name>efaxapp__Preview_Image_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preview Image --></label>
+        <name>efaxapp__Preview_Image__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send Date --></label>
+        <name>efaxapp__Send_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sent Date --></label>
+        <name>efaxapp__Sent_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sent With Outbound Message --></label>
+        <name>efaxapp__Sent_With_Outbound_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>efaxapp__Status__c</name>
+        <picklistValues>
+            <masterLabel>Delivered</masterLabel>
+            <translation><!-- Delivered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Delivered</masterLabel>
+            <translation><!-- Not Delivered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sending</masterLabel>
+            <translation><!-- Sending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent</masterLabel>
+            <translation><!-- Sent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Subject --></label>
+        <name>efaxapp__Subject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Cost --></label>
+        <name>efaxapp__Total_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Pages --></label>
+        <name>efaxapp__Total_Pages__c</name>
+    </fields>
+    <fields>
+        <label><!-- View Fax --></label>
+        <name>efaxapp__View_Fax__c</name>
+    </fields>
+    <webLinks>
+        <label><!-- Resend --></label>
+        <name>Resend</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ResendOnLayout --></label>
+        <name>ResendOnLayout</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Fax --></label>
+        <name>efaxapp__Send_Fax</name>
+    </webLinks>
+</CustomObjectTranslation>

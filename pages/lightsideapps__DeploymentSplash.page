@@ -1,0 +1,43 @@
+<apex:page controller="lightsideapps.splashExtention"  showHeader="false" sidebar="false">
+    
+    <style>
+        body {font: 11pt Verdana, Geneva, sans-serif;}
+        li {margin: 5px 0px;}
+        ul {padding-left: 10px; padding-right:50px;}
+    </style>
+    
+    <apex:form >
+        <!-- Define the JavaScript function sayHello-->
+        <apex:actionFunction name="sayHello" action="{!CreateRequiredSites}" rerender="out" status="myStatus"/>  
+    </apex:form>   
+             
+    <!--  The Actual Page -->
+	
+    <div style="width:100%;text-align:center; font-size:14pt; margin:10px 0px 20px 0px;display:block;">
+        <div style="float:left;width:200px;margin:0px 20px;"><apex:image url="{!URLFOR($Resource.lightsideapps__LightsideAppsResources,'images/LightsideAppsLogo2.png')}" width="200px" /> </div> 
+        <div style="position: absolute; left: 0; right: 0;margin-left:240px;margin-right:250px;"> 
+        	<h1 style="text-align:centre; color:#2A96F6; font-size:16pt;">Deployment Packages</h1>
+            <div style="margin-top:5px;font: 11pt Verdana, Geneva, sans-serif;text-align:left; clear:">
+                <span style="color:#F39646;">Lightside Deployment Packages</span> is a quicker and easier way to created change sets with the ability to deploy to multiple instances simultaineously.
+                <br /><br />
+                For the Deployment Packages to function correctly, a number of remote site settings are required. The following remote site URL's should have been created for you already but if they don't exist or have been deleted, please ensure they are made available and active.
+                <br /><br />
+                The Remote Site URL's required are:
+                <ul style="padding-left:20px;">
+                    <li> https://login.salesforce.com </li>
+                    <li> https://{Your Domain Name}.my.salesforce.com/services/Soap/m/31.0 (if using a 'My Domain') </li> 
+                    <li> https://salesforce.com/services/Soap/m/39.0 (if not using a 'My Domain') </li>
+                    <li> https://{!hostName} </li>
+                </ul>
+            </div>
+        </div>  
+        <div style="float:right;width:200px;margin:0px 20px;"><apex:image url="{!URLFOR($Resource.lightsideapps__LightsideAppsResources,'images/TitleImage.png')}" width="200px" style="margin 0px 20px;" /> </div>
+	</div>
+
+    <script>
+    	window.setTimeout(sayHello,2000)
+    </script>
+
+    <c:LSACreateRemoteSite rssName="LSAApps" rssDescription="Lightside applications MetaData API" rssHost="{!hostName}" />
+   
+</apex:page>

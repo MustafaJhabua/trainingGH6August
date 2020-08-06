@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Batch</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Batches</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Code --></label>
+        <name>Account_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Batch Name --></label>
+        <name>Batch_Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Batch # --></label>
+        <name>Batch_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Batch # text --></label>
+        <name>Batch_text__c</name>
+    </fields>
+    <fields>
+        <label><!-- E-Manifest link --></label>
+        <name>E_Manifest_link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Reporting Quarter --></label>
+        <name>Expected_Reporting_Quarter__c</name>
+        <picklistValues>
+            <masterLabel>2020Q1</masterLabel>
+            <translation><!-- 2020Q1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2020Q2</masterLabel>
+            <translation><!-- 2020Q2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2020Q3</masterLabel>
+            <translation><!-- 2020Q3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2020Q4</masterLabel>
+            <translation><!-- 2020Q4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2021Q1</masterLabel>
+            <translation><!-- 2021Q1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2021Q2</masterLabel>
+            <translation><!-- 2021Q2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2021Q3</masterLabel>
+            <translation><!-- 2021Q3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2021Q4</masterLabel>
+            <translation><!-- 2021Q4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2022Q1</masterLabel>
+            <translation><!-- 2022Q1 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Label2 --></label>
+        <name>Label2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of samples forecast for this batch --></help>
+        <label><!-- Number of Samples Expected --></label>
+        <name>Number_of_Samples_Forecast__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Name --></label>
+        <name>Product_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project ID --></label>
+        <name>Project_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sends email informing that this batch is ready for scheduling. --></help>
+        <label><!-- Ready for Scheduling? --></label>
+        <name>Ready_for_Scheduling__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client&apos;s Expected Reporting Date --></label>
+        <name>Reporting_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- SOW Name --></label>
+        <name>SOW_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- SOW # --></label>
+        <name>SOW_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the SOW that the batch belongs to --></help>
+        <label><!-- SOW --></label>
+        <name>SOW__c</name>
+        <relationshipLabel><!-- Batches --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Client&apos;s Expected Shipment Date --></label>
+        <name>Shipment_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sponsor Account --></label>
+        <name>Sponsor_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Update Batch Name --></label>
+        <name>Update_Batch_Name__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

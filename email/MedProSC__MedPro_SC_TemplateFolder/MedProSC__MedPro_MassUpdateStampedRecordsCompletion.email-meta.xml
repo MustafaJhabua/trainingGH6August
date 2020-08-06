@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>The email that gets sent out upon completion of the MassUpdate operation</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>MedProSC__MedProID</letterhead>
+    <name>MedPro_MassUpdateStampedRecordsCompletion</name>
+    <style>freeForm</style>
+    <subject>MedPro Search Connector: Mass Update Completed</subject>
+    <textOnly>Dear {!User.FirstName}:
+
+As the designated administrator of the MedPro Search Connector (MSC), you are receiving this email to inform you that either you or one of your users recently requested an update of all MedProID stamped records via the MSC administrative interface.  This operational request has been completed and all of your org&apos;s records which are synced with MedPro have been updated per the tool&apos;s designated sync mappings.
+
+Thank you again for being a valued MedPro customer ....
+
+Regards,
+
+The MedPro Team</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

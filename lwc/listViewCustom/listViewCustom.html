@@ -1,0 +1,39 @@
+<template>
+        <lightning-card
+            title="Contact"
+            icon-name="standard:contact">
+            <template if:true={recordId}>
+                <!-- <lightning-icon icon-name="action:back" style="margin-right: 2%; margin-top: -12%;" class="slds-float_right" alternative-text="Approved" onclick={openListView} ></lightning-icon> -->
+                <button class="slds-button slds-button_brand slds-float_right homeButton" 
+                        onclick={openListView}>Home</button>
+            </template>
+                <div class="slds-m-around_medium">
+                    <template if:true={recordId}>
+                        <lightning-tabset>
+                            <lightning-tab label="Details">
+                                <c-detail-page-custom record-id={recordId} fields={fields} section-title={sectionTitle} onagainselected={refreshDetailPage}></c-detail-page-custom>
+                            </lightning-tab>
+                            <lightning-tab label="Account Integration Tasks">
+                                <c-related-lists related-record-id={relatedRecordId}></c-related-lists>
+                            </lightning-tab>
+                        </lightning-tabset>
+                    </template>
+                    <template if:false={recordId}>
+                        <template for:each={records} for:item="record">
+                            <div class="slds-p-vertical_xx-small slds-border_bottom sample" key={record.Id}>
+                                <p class="slds-truncate slds-text-heading_medium" title={record.Name}></p>
+                                    <a style="cursor:pointer;" title={record.Name} data-record-id={record.Id} onclick={handleClick}>{record.Name}</a>
+                                </p>
+                                <template if:true={record.AccountName}>
+                                    <p class="slds-truncate" title={record.AccountName}>Account : {record.AccountName}</p>
+                                </template>
+                                <p class="slds-truncate" title={record.percentage}>
+                                    Integration % : {record.percentage}
+                                </p>
+                                <!-- <div class='bar' style={record.widthPercentage}></div> -->
+                            </div>
+                        </template>
+                    </template>
+                </div>
+        </lightning-card>
+</template>

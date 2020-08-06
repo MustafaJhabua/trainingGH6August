@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Approver --></label>
+        <name>lightsideapps__Approver__c</name>
+        <relationshipLabel><!-- User Delegations (Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Optional - if blank delegate is pulled from the user record. --></help>
+        <label><!-- Delegate --></label>
+        <name>lightsideapps__Delegate__c</name>
+        <relationshipLabel><!-- User Delegations (Delegate) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>lightsideapps__End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object --></label>
+        <name>lightsideapps__Object__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Sharing Reason to use. This must be setup on the Object selected. --></help>
+        <label><!-- Apex Sharing Reason --></label>
+        <name>lightsideapps__Sharing_Rule__c</name>
+    </fields>
+    <fields>
+        <label><!-- Specific Period --></label>
+        <name>lightsideapps__Specific_Period__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>lightsideapps__Start_Date__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Start Date and End Date are required if Specific period is specified. --></errorMessage>
+        <name>lightsideapps__Required_Dates</name>
+    </validationRules>
+</CustomObjectTranslation>

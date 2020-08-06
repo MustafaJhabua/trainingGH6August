@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This email is sent to ordering physicians with a matched patient who spoke with a CTA or responded to the IOE or Last Ditch email requesting additional information.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>RAD1901_Response_TrialInformation_076</name>
+    <style>none</style>
+    <subject>Re:</subject>
+    <textOnly>Thank you, Dr. {!Match_Record__c.MD_Last_Name__c},
+
+[Option 1: Response to IOE] Per your request, I have included information about the EMERALD clinical study below as well as assigned one of our Clinical Trial Advisor physicians to contact you via phone this week to further discuss the clinical trial options for your patient who had an ESR1 alteration. [Option 1]
+
+[Option 2: Follow-up after phone conversation] It was great speaking with you regarding your patient  {!Match_Record__c.Patient_Initials__c} ({!Match_Record__c.Patient_Age__c} yo {!Match_Record__c.Patient_Gender__c} with {!Match_Record__c.Cancer_Type_Lower_Case__c}) who was found to have an ESR1 alteration. To view your patient&apos;s Guardant360 report, click here: {!Match_Record__c.Portal_Link_For_MD_text__c}. Further to our discussion about your patient’s Guardant360 report, you expressed an interest in exploring treatment options based on the ESR1 alteration detected. [Option 2]
+
+Since ESR1 alterations are uncommon, we have partnered with Radius Pharmaceutical and formed a business and financial relationship to help identify patients for the EMERALD study and to alert treating physicians about their treatment and trial options for patients like  {!Match_Record__c.Patient_Initials__c}. Your patient may be eligible for [X NUMBER] of clinical trials as indicated on the Guardant360 report, including:&lt;ul&gt;
+&lt;li&gt;Phase 3 Trial of Elacestrant vs. Standard of Care for the Treatment of Patients with ER+/HER2- Advanced Breast Cancer (EMERALD), NCT03778931 &lt;/li&gt;&lt;/ul&gt;
+
+&lt;u&gt;EMERALD: Radius Health&lt;/u&gt;
+Preliminary analysis of a phase 1 trial (RAD1901-005) demonstrated anti-tumor activity of elacestrant 400 mg once daily in 40 heavily pretreated patients with ER+ /HER2- advanced/metastatic breast cancer who had received a median of three prior therapies, including prior treatment with a CDK4/6 inhibitor (n=16; 40%) and ESR1-mut detected by ctDNA (n=20; 50%). The overall response rate was 27.3% in 22 patients evaluable for response, and median PFS was 5.4 months, which compares favorably to response rates of ≤10% and median PFS durations of approximately 3 months observed with standard endocrine monotherapies in patients with previously-treated ER+/HER2- breast cancer.  Furthermore, responses or clinical benefit were observed in patients with prior CDK4/6 inhibitor therapy, and in patients with ESR1-mut tumors as well as those with no detectable mutation. Grade 1-2 nausea (43%) was the only adverse event reported in ≥ 20% patients treated with elacestrant 400 mg tablet daily. Details of this trial are in the attached PDF and can be found at https://clinicaltrials.gov/show/NCT03778931.
+ 
+The closest study site is at {!Match_Record__c.Closest_Trial_Site__c} in {!Match_Record__c.Closest_Trial_Site_City__c}, {!Match_Record__c.Closest_Trial_Site_State__c} with Dr. {PI Full Name}; additional study sites are also available around the US.
+
+&lt;strong&gt;Would you like me to connect you with {PI Full Name}, a nearby PI of the EMERALD study, via email so they may answer additional questions regarding eligibility, inclusion/criteria, etc. for the EMERALD study?&lt;/strong&gt;
+
+Sincerely, 
+{!User.Name}, {!User.Degree__c} 
+{!User.Title} 
+Guardant Health 
+
+Guardant Health Match Key: {!Match_Record__c.Match_Key__c} 
+
+
+Guardant Health partners with the clinical trial sponsor to conduct patient referral activities.
+
+This message is intended solely for the designated recipient(s). It may contain confidential or proprietary information and may be subject to attorney-client privilege or other confidentiality protections. If you are not a designated recipient you may not review, copy or distribute this message. If you have received this in error, please reply to this email and delete this message. Thank you. Ref: {!Match_Record__c.Id}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

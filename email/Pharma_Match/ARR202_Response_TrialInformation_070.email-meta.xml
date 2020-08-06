@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>This email is sent to ordering physicians with a BRAF V600 alteration patient who responded to an outreach email or phone call</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>ARR202_Response_TrialInformation_070</name>
+    <style>none</style>
+    <subject>Re:</subject>
+    <textOnly>Thank you, Dr. {!Match_Record__c.MD_Last_Name__c},
+
+[Option 1: Response to IOE] Per your request, I have included information about the 808-202 PHAROS clinical study below as well as assigned one of our Clinical Trial Advisor physicians to contact you via phone this week to further discuss the clinical trial options for your patient who had a BRAF V600 alteration. [Option 1]
+
+[Option 2: Follow-up after phone conversation] It was great speaking with you regarding your patient  {!Match_Record__c.Patient_Initials__c} ({!Match_Record__c.Patient_Age__c} yo {!Match_Record__c.Patient_Gender__c} with {!Match_Record__c.Cancer_Type_Lower_Case__c}) who was found to have a BRAF V600 alteration. To view your patient&apos;s Guardant360 report, click here: {!Match_Record__c.Portal_Link_For_MD_text__c}. Further to our discussion about your patient’s Guardant360 report, you expressed an interest in exploring treatment options based on the BRAF V600 alteration detected. [Option 2]
+
+Since BRAF V600 alterations are uncommon, we have partnered with Array Biopharma and formed a business and financial relationship to help identify patients and to alert treating physicians about their treatment and trial options for patients like  {!Match_Record__c.Patient_Initials__c}. Your patient may be eligible for [X NUMBER] of clinical trials as indicated on the Guardant360 report, including [BULLETED MENTION OF ADDITIONAL TRIALS]. 
+
+818-202 PHAROS: Array Biopharma
+This is an open-label Phase 2 trial to determine the safety, tolerability and efficacy of the investigational use of encorafenib (a potent and selective inhibitor of BRAF V600-mutant kinase) and binimetinib (a potent and selective inhibitor of MEK1/2) in patients with BRAFV600E-mutant advanced/metastatic non-small cell lung cancer.  Encorafenib/binimetinib is not approved by the FDA for the treatment of BRAF V600 mutant NSCLC.   Details of this trial are in the attached PDF and can be found at https://clinicaltrials.gov/ct2/show/NCT03915951.
+ 
+The closest study site is at {!Match_Record__c.Closest_Trial_Site__c} in {!Match_Record__c.Closest_Trial_Site_City__c}, {!Match_Record__c.Closest_Trial_Site_State__c} with Dr. {PI Full Name}; additional study sites are also available around the US.
+
+&lt;strong&gt;Would you like me to connect you with {PI Full Name}, a nearby PI of the 808-202 PHAROS study, via email so they may answer additional questions regarding eligibility, inclusion/criteria, etc. for the 808-202 PHAROS study?&lt;/strong&gt;
+
+Sincerely, 
+{!User.Name}, {!User.Degree__c} 
+{!User.Title} 
+Guardant Health 
+
+Guardant Health Match Key: {!Match_Record__c.Match_Key__c} 
+
+Guardant Health partners with the clinical trial sponsor to conduct patient referral activities.
+
+This message is intended solely for the designated recipient(s). It may contain confidential or proprietary information and may be subject to attorney-client privilege or other confidentiality protections. If you are not a designated recipient you may not review, copy or distribute this message. If you have received this in error, please reply to this email and delete this message. Thank you. Ref: {!Match_Record__c.Id}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

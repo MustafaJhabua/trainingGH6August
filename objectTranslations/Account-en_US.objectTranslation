@@ -1,0 +1,2773 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- CRMC Action Grid Defaults --></label>
+        <name>CRMC_PP__CRMC_Action_Grid_Defaults</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- LIMS Account Change Tracking --></label>
+        <name>LIMS_Account_Change_Tracking</name>
+    </fieldSets>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Reporting Address</value>
+        </caseValues>
+        <name>billing_address_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Reporting City</value>
+        </caseValues>
+        <name>billing_city_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Reporting Country</value>
+        </caseValues>
+        <name>billing_country_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Reporting Country Code</value>
+        </caseValues>
+        <name>billing_country_code_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Reporting Latitude</value>
+        </caseValues>
+        <name>billing_latitude_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Reporting Longitude</value>
+        </caseValues>
+        <name>billing_longitude_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Reporting State/Province</value>
+        </caseValues>
+        <name>billing_state_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Reporting State/Province Code</value>
+        </caseValues>
+        <name>billing_state_code_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Reporting Street</value>
+        </caseValues>
+        <name>billing_street_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Reporting Zip/Postal Code</value>
+        </caseValues>
+        <name>billing_zip_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Account Classification</value>
+        </caseValues>
+        <name>industry_account</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Account Status</value>
+        </caseValues>
+        <name>type_account</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <label><!-- AM Backup --></label>
+        <name>AM_Backup_list__c</name>
+        <picklistValues>
+            <masterLabel>Alexander Kuklin</masterLabel>
+            <translation><!-- Alexander Kuklin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ali Mukherjee</masterLabel>
+            <translation><!-- Ali Mukherjee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brenton Foretich</masterLabel>
+            <translation><!-- Brenton Foretich --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chris Dankulich</masterLabel>
+            <translation><!-- Chris Dankulich --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Daniel Simon</masterLabel>
+            <translation><!-- Daniel Simon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dhiren Belur</masterLabel>
+            <translation><!-- Dhiren Belur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jeshaune Jackson</masterLabel>
+            <translation><!-- Jeshaune Jackson --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kapil Jain</masterLabel>
+            <translation><!-- Kapil Jain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manasa Chandra</masterLabel>
+            <translation><!-- Manasa Chandra --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maxim Schillebeeckx</masterLabel>
+            <translation><!-- Maxim Schillebeeckx --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Melissa Gebhardt</masterLabel>
+            <translation><!-- Melissa Gebhardt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nnamdi Ihuegbu</masterLabel>
+            <translation><!-- Nnamdi Ihuegbu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shantanu	Mittal</masterLabel>
+            <translation><!-- Shantanu	Mittal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- AM Backup --></label>
+        <name>AM_Director__c</name>
+        <relationshipLabel><!-- Accounts (AM Backup) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- AM Owner --></label>
+        <name>AM_Owner__c</name>
+        <relationshipLabel><!-- Accounts (AM Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- DEPRECATED --></help>
+        <label><!-- AM Owner-DEPR --></label>
+        <name>AM_Owner_list__c</name>
+        <picklistValues>
+            <masterLabel>Alexander Kuklin</masterLabel>
+            <translation><!-- Alexander Kuklin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ali Mukherjee</masterLabel>
+            <translation><!-- Ali Mukherjee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JeShaune Jackson</masterLabel>
+            <translation><!-- JeShaune Jackson --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manasa Chandra</masterLabel>
+            <translation><!-- Manasa Chandra --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shantanu Mittal</masterLabel>
+            <translation><!-- Shantanu Mittal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- AM Owner&apos;s Email --></label>
+        <name>AM_Owner_s_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- AM Owners Email --></label>
+        <name>AM_Owners_Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used to define a shipping contact&apos;s attention while fulfilling auto-replenishment orders. --></help>
+        <label><!-- AR Shipping Contact --></label>
+        <name>AR_Shipping_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- ASP --></label>
+        <name>ASP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Type --></label>
+        <name>Account_Billing_Type__c</name>
+        <picklistValues>
+            <masterLabel>Clinical Trial : ROW</masterLabel>
+            <translation><!-- Clinical Trial : ROW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clinical Trial : US</masterLabel>
+            <translation><!-- Clinical Trial : US --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DirectBill : US</masterLabel>
+            <translation><!-- DirectBill : US --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distributors : ROW</masterLabel>
+            <translation><!-- Distributors : ROW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Bill - Cancelled</masterLabel>
+            <translation><!-- Do Not Bill - Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Bill - Clinical Utility</masterLabel>
+            <translation><!-- Do Not Bill - Clinical Utility --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Bill - LUNAR</masterLabel>
+            <translation><!-- Do Not Bill - LUNAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Bill - Medical Affairs</masterLabel>
+            <translation><!-- Do Not Bill - Medical Affairs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Bill - Pharma</masterLabel>
+            <translation><!-- Do Not Bill - Pharma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Bill - Proficiency</masterLabel>
+            <translation><!-- Do Not Bill - Proficiency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Bill - Promotional</masterLabel>
+            <translation><!-- Do Not Bill - Promotional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Bill - Quality Testing</masterLabel>
+            <translation><!-- Do Not Bill - Quality Testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Bill - ROW</masterLabel>
+            <translation><!-- Do Not Bill - ROW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Indigent</masterLabel>
+            <translation><!-- Financial Indigent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medicaid</masterLabel>
+            <translation><!-- Medicaid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medicare</masterLabel>
+            <translation><!-- Medicare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pharma : ROW</masterLabel>
+            <translation><!-- Pharma : ROW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pharma : US</masterLabel>
+            <translation><!-- Pharma : US --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private Insurance/Employee Health Plan</masterLabel>
+            <translation><!-- Private Insurance/Employee Health Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private Insurance/Employee Health Plan No OOP</masterLabel>
+            <translation><!-- Private Insurance/Employee Health Plan No OOP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research : ROW</masterLabel>
+            <translation><!-- Research : ROW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research : US</masterLabel>
+            <translation><!-- Research : US --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self-Pay Patient</masterLabel>
+            <translation><!-- Self-Pay Patient --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self-Pay Sponsored</masterLabel>
+            <translation><!-- Self-Pay Sponsored --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Account Code --></label>
+        <name>Account_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Counter --></label>
+        <name>Account_Counter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Executive --></label>
+        <name>Account_Executive__c</name>
+    </fields>
+    <fields>
+        <help><!-- If this is checked, this account has a contact or affiliation that is part of the Account Integration Target program --></help>
+        <label><!-- Account Integration Target --></label>
+        <name>Account_Integration_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account MSL --></label>
+        <lookupFilter>
+            <errorMessage><!-- Must have User Profile &apos;GHI Medical Affairs&apos; --></errorMessage>
+        </lookupFilter>
+        <name>Account_MSL__c</name>
+        <relationshipLabel><!-- Accounts (Account MSL) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account Next Steps --></label>
+        <name>Account_Next_Steps__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Owner ID --></label>
+        <name>Account_Owner_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Recent Progress --></label>
+        <name>Account_Recent_Progress__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of samples attributed to this account&apos;s child accounts --></help>
+        <label><!-- Account Sample Total --></label>
+        <name>Account_Sample_Total__c</name>
+    </fields>
+    <fields>
+        <help><!-- # of samples from this account&apos;s child accounts received in the last 6 months --></help>
+        <label><!-- Account Sample Totals Last 6 Mos --></label>
+        <name>Account_Sample_Totals_Last_6_Mos__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Status --></label>
+        <name>Account_Status__c</name>
+        <picklistValues>
+            <masterLabel>Contact</masterLabel>
+            <translation><!-- Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dormant</masterLabel>
+            <translation><!-- Dormant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Contact</masterLabel>
+            <translation><!-- No Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Account To Be Split --></label>
+        <name>Account_To_Be_Split__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Type --></label>
+        <name>Account_Type__c</name>
+        <picklistValues>
+            <masterLabel>2nd Recipient</masterLabel>
+            <translation><!-- 2nd Recipient --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Big Biopharma</masterLabel>
+            <translation><!-- Big Biopharma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Big Pharma Tier 3</masterLabel>
+            <translation><!-- Big Pharma Tier 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Big Pharma Top 15</masterLabel>
+            <translation><!-- Big Pharma Top 15 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Big Pharma Top 30</masterLabel>
+            <translation><!-- Big Pharma Top 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Biotech</masterLabel>
+            <translation><!-- Biotech --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CROs</masterLabel>
+            <translation><!-- CROs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clinical Account  International</masterLabel>
+            <translation><!-- Clinical Account  International --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clinical Account US</masterLabel>
+            <translation><!-- Clinical Account US --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clinical Trial Account</masterLabel>
+            <translation><!-- Clinical Trial Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clinical Trial Account International</masterLabel>
+            <translation><!-- Clinical Trial Account International --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distributor International</masterLabel>
+            <translation><!-- Distributor International --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distributor US</masterLabel>
+            <translation><!-- Distributor US --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GH Headquarters</masterLabel>
+            <translation><!-- GH Headquarters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance</masterLabel>
+            <translation><!-- Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal</masterLabel>
+            <translation><!-- Internal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investor</masterLabel>
+            <translation><!-- Investor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient Advocacy Group</masterLabel>
+            <translation><!-- Patient Advocacy Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payor</masterLabel>
+            <translation><!-- Payor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pharma Parent</masterLabel>
+            <translation><!-- Pharma Parent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pharma VIP</masterLabel>
+            <translation><!-- Pharma VIP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pharmaceutical Account International</masterLabel>
+            <translation><!-- Pharmaceutical Account International --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pharmaceutical Account US</masterLabel>
+            <translation><!-- Pharmaceutical Account US --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research Account International</masterLabel>
+            <translation><!-- Research Account International --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research Account US</masterLabel>
+            <translation><!-- Research Account US --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reseller International</masterLabel>
+            <translation><!-- Reseller International --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reseller US</masterLabel>
+            <translation><!-- Reseller US --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small Biopharma</masterLabel>
+            <translation><!-- Small Biopharma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test</masterLabel>
+            <translation><!-- Test --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Account # --></label>
+        <name>Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Acct Name and Number --></label>
+        <name>Acct_Name_and_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Kits @ Site --></label>
+        <name>Actual_Kits_Site__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional TRF Info --></label>
+        <name>Additional_TRF_Info__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreement Date --></label>
+        <name>Agreement_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreement Signed --></label>
+        <name>Agreement_Signed__c</name>
+    </fields>
+    <fields>
+        <label><!-- BD Backup --></label>
+        <name>BD_Backup_list__c</name>
+        <picklistValues>
+            <masterLabel>Brenton Foretich</masterLabel>
+            <translation><!-- Brenton Foretich --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chris Dankulich</masterLabel>
+            <translation><!-- Chris Dankulich --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Daniel Simon</masterLabel>
+            <translation><!-- Daniel Simon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dhiren Belur</masterLabel>
+            <translation><!-- Dhiren Belur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Iris Faull</masterLabel>
+            <translation><!-- Iris Faull --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jeshaune Jackson</masterLabel>
+            <translation><!-- Jeshaune Jackson --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kapil Jain</masterLabel>
+            <translation><!-- Kapil Jain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manasa Chandra</masterLabel>
+            <translation><!-- Manasa Chandra --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maxim Schillebeeckx</masterLabel>
+            <translation><!-- Maxim Schillebeeckx --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Melissa Gebhardt</masterLabel>
+            <translation><!-- Melissa Gebhardt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nnamdi Ihuegbu</masterLabel>
+            <translation><!-- Nnamdi Ihuegbu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shantanu	Mittal</masterLabel>
+            <translation><!-- Shantanu	Mittal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- BD Backup --></label>
+        <name>BD_Director__c</name>
+        <relationshipLabel><!-- Accounts (BD Backup) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- BD Owner --></label>
+        <name>BD_Owner__c</name>
+        <relationshipLabel><!-- Accounts (BD Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- BD Owner --></label>
+        <name>BD_Owner_list__c</name>
+        <picklistValues>
+            <masterLabel>Aparna Upadhyay</masterLabel>
+            <translation><!-- Aparna Upadhyay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chris Dankulich</masterLabel>
+            <translation><!-- Chris Dankulich --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Daniel Simon</masterLabel>
+            <translation><!-- Daniel Simon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dhiren Belur</masterLabel>
+            <translation><!-- Dhiren Belur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nick Sloman</masterLabel>
+            <translation><!-- Nick Sloman --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nnamdi Ihuegbu</masterLabel>
+            <translation><!-- Nnamdi Ihuegbu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nobuaki Seki</masterLabel>
+            <translation><!-- Nobuaki Seki --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Peter Collins</masterLabel>
+            <translation><!-- Peter Collins --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- BD Owners Email --></label>
+        <name>BD_Owners_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- BI Owner --></label>
+        <name>BI_Owner__c</name>
+        <picklistValues>
+            <masterLabel>Allysia Mak</masterLabel>
+            <translation><!-- Allysia Mak --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Arielle Yablonovitch</masterLabel>
+            <translation><!-- Arielle Yablonovitch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Elena Helman</masterLabel>
+            <translation><!-- Elena Helman --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jennifer Yen</masterLabel>
+            <translation><!-- Jennifer Yen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Katie Quinn</masterLabel>
+            <translation><!-- Katie Quinn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kyle Chang</masterLabel>
+            <translation><!-- Kyle Chang --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ohad Manor</masterLabel>
+            <translation><!-- Ohad Manor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pooja Sreedhar</masterLabel>
+            <translation><!-- Pooja Sreedhar --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Account StatusD --></label>
+        <name>BP_Account_Status__c</name>
+        <picklistValues>
+            <masterLabel>Contracting</masterLabel>
+            <translation><!-- Contracting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dormant</masterLabel>
+            <translation><!-- Dormant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Contact</masterLabel>
+            <translation><!-- No Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunity</masterLabel>
+            <translation><!-- Opportunity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed Partner</masterLabel>
+            <translation><!-- Signed Partner --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Director of Clinical Trial Operations uses this to track certain accounts. --></help>
+        <label><!-- B First --></label>
+        <name>B_First__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Street 1 --></label>
+        <name>Billing_Street_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Street 2 --></label>
+        <name>Billing_Street_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Suspense Flag --></label>
+        <name>Billing_Suspense_Flag__c</name>
+        <picklistValues>
+            <masterLabel>N</masterLabel>
+            <translation><!-- N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Y</masterLabel>
+            <translation><!-- Y --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Checked means samples for this account are stored and not processed immediately. When checked, delayed-report cases will not be generated for samples for this account. --></help>
+        <label><!-- Bio-Bank --></label>
+        <name>Bio_Bank__c</name>
+    </fields>
+    <fields>
+        <label><!-- Biopharma OK to Send to LIMS --></label>
+        <name>Biopharma_OK_to_Send_to_LIMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- CDA Expiration Date --></label>
+        <name>CDA_Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- CDA Name --></label>
+        <name>CDA_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- CDA Start Date --></label>
+        <name>CDA_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- CDA Status --></label>
+        <name>CDA_Status__c</name>
+        <picklistValues>
+            <masterLabel>Customer Execution</masterLabel>
+            <translation><!-- Customer Execution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Review</masterLabel>
+            <translation><!-- Customer Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Drafting</masterLabel>
+            <translation><!-- Drafting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fully Executed</masterLabel>
+            <translation><!-- Fully Executed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guardant Execution</masterLabel>
+            <translation><!-- Guardant Execution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guardant Review</masterLabel>
+            <translation><!-- Guardant Review --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Three months before the Expiration Date --></help>
+        <label><!-- CDA Three-month Expiration Date --></label>
+        <name>CDA_Three_month_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- CDA --></label>
+        <name>CDA__c</name>
+    </fields>
+    <fields>
+        <label><!-- CD Owner --></label>
+        <name>CD_Owner__c</name>
+        <picklistValues>
+            <masterLabel>Ariana Shulman</masterLabel>
+            <translation><!-- Ariana Shulman --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hannah Neville</masterLabel>
+            <translation><!-- Hannah Neville --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Madison Gay</masterLabel>
+            <translation><!-- Madison Gay --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CTCA --></label>
+        <name>CTCA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Safe Account ID --></label>
+        <name>Case_Safe_Account_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Clearinghouse ID --></label>
+        <name>Clearinghouse_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- General Practice = 1-4 locations
+Large Group Practice &gt; 5 locations --></help>
+        <label><!-- Community Type --></label>
+        <name>Community_Type__c</name>
+        <picklistValues>
+            <masterLabel>General Practice</masterLabel>
+            <translation><!-- General Practice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Large Group Practice</masterLabel>
+            <translation><!-- Large Group Practice --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Concierge --></label>
+        <name>Conceirge__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Coverage --></label>
+        <name>Contract_Coverage__c</name>
+        <picklistValues>
+            <masterLabel>All Samples</masterLabel>
+            <translation><!-- All Samples --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medicare Only</masterLabel>
+            <translation><!-- Medicare Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contract # --></label>
+        <name>Contract__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contracted Price --></label>
+        <name>Contracted_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created for Pharma Portal --></label>
+        <name>Created_for_Pharma_Portal__c</name>
+    </fields>
+    <fields>
+        <help><!-- Desired Stocking Level, expressed in number of weeks (based on average weekly usage) --></help>
+        <label><!-- DSL --></label>
+        <name>DSL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Address Last Changed --></label>
+        <name>Date_Address_Last_Changed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used to trigger changes of relevant ERP Customer data via middleware. --></help>
+        <label><!-- Date Record Last Changed --></label>
+        <name>Date_Record_Last_Changed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Service --></label>
+        <name>Date_of_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Report Type --></label>
+        <name>Delivery_Report_Type__c</name>
+        <picklistValues>
+            <masterLabel>Courier</masterLabel>
+            <translation><!-- Courier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fax</masterLabel>
+            <translation><!-- Fax --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fax &amp; Portal</masterLabel>
+            <translation><!-- Fax &amp; Portal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portal</masterLabel>
+            <translation><!-- Portal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Designated NCI Center --></label>
+        <name>Designated_NCI_Center__c</name>
+    </fields>
+    <fields>
+        <label><!-- Director --></label>
+        <name>Director__c</name>
+    </fields>
+    <fields>
+        <label><!-- District --></label>
+        <name>District__c</name>
+    </fields>
+    <fields>
+        <help><!-- Checked means Do Not Send Initial Outreach Email for all Match Records of this Account. --></help>
+        <label><!-- Do not send IOE --></label>
+        <name>Do_not_send_IOE__c</name>
+    </fields>
+    <fields>
+        <label><!-- EORI/Tax ID # --></label>
+        <name>EORI_Tax_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective Date --></label>
+        <name>Effective_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fellowship Account --></label>
+        <name>Fellowship_Account__c</name>
+    </fields>
+    <fields>
+        <help><!-- First 3 digits of Reporting Zip Code. Hidden field. Used in Territory Assignment Rules. --></help>
+        <label><!-- First3 --></label>
+        <name>First3__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Sample Date --></label>
+        <name>First_Sample_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Won Opp --></label>
+        <name>First_Won_Opp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flatiron --></label>
+        <name>Flatiron__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent is Designated NCI Center --></label>
+        <name>Formula_Field_Designated_NCI_Center__c</name>
+    </fields>
+    <fields>
+        <label><!-- NCCN Region --></label>
+        <name>Formula_Field_NCCN_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent is NCCN --></label>
+        <name>Formula_Field_NCCN__c</name>
+    </fields>
+    <fields>
+        <help><!-- NCI Region of Parent Account, if any; otherwise, this is the account&apos;s NCI region --></help>
+        <label><!-- Effective NCI Region --></label>
+        <name>Formula_Field_NCI_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Geolocation_Accuracy --></label>
+        <name>Geolocation_Accuracy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Grandparent Account --></label>
+        <name>Grandparent_Account__c</name>
+        <relationshipLabel><!-- Accounts (Grandparent Account) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Number of high-value MDs, quintiles 3-5 --></help>
+        <label><!-- High-Value MDs --></label>
+        <name>High_Value_MDs__c</name>
+    </fields>
+    <fields>
+        <label><!-- High Volume --></label>
+        <name>High_Volume__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used for CSV Export for report VIS Accounts --></help>
+        <label><!-- IRB Date --></label>
+        <name>IRB_Date_For_Report__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date that this site received IRB approval. Used for HUDSON, VISION study sites. --></help>
+        <label><!-- IRB Date --></label>
+        <name>IRB_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- IRB Month --></label>
+        <name>IRB_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- ISR Target --></label>
+        <name>ISR_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- In Network --></label>
+        <name>In_Network__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inactive Account Owner --></label>
+        <name>Inactive_Account_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Individually Tracked --></label>
+        <name>Individually_Tracked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Institutional Billing Account --></label>
+        <name>Institutional_Billing_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Introduction --></label>
+        <name>Introduction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Account --></label>
+        <name>Is_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Master --></label>
+        <name>Is_Master__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is NCI Center Yes No --></label>
+        <name>Is_NCI_Center_Yes_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lab --></label>
+        <name>Lab__c</name>
+        <picklistValues>
+            <masterLabel>RESL</masterLabel>
+            <translation><!-- RESL --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Last Sample Date --></label>
+        <name>Last_Sample_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Latitude --></label>
+        <name>Latitude__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Source --></label>
+        <name>Lead_Source__c</name>
+        <picklistValues>
+            <masterLabel>Advertisement</masterLabel>
+            <translation><!-- Advertisement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clinical Trial</masterLabel>
+            <translation><!-- Clinical Trial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee Referral</masterLabel>
+            <translation><!-- Employee Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External Referral</masterLabel>
+            <translation><!-- External Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient - Internet</masterLabel>
+            <translation><!-- Patient - Internet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Physician - Internet</masterLabel>
+            <translation><!-- Physician - Internet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Relations</masterLabel>
+            <translation><!-- Public Relations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research Account</masterLabel>
+            <translation><!-- Research Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Prospect</masterLabel>
+            <translation><!-- Sales Prospect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seminar - Internal</masterLabel>
+            <translation><!-- Seminar - Internal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trade Show</masterLabel>
+            <translation><!-- Trade Show --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Longitude --></label>
+        <name>Longitude__c</name>
+    </fields>
+    <fields>
+        <label><!-- MA Owner-DEPR --></label>
+        <name>MA_Owner__c</name>
+        <picklistValues>
+            <masterLabel>Carin Espenschied</masterLabel>
+            <translation><!-- Carin Espenschied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kimberly Banks</masterLabel>
+            <translation><!-- Kimberly Banks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lindsay Fosler</masterLabel>
+            <translation><!-- Lindsay Fosler --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scott Shell</masterLabel>
+            <translation><!-- Scott Shell --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- MA Owner --></label>
+        <name>MA_Owner_lookup__c</name>
+        <relationshipLabel><!-- Accounts (MA Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- MA Tracking --></label>
+        <name>MA_Tracking__c</name>
+    </fields>
+    <fields>
+        <help><!-- Minimum Order Quantity, expressed in number of kits --></help>
+        <label><!-- MOQ --></label>
+        <name>MOQ__c</name>
+    </fields>
+    <fields>
+        <help><!-- Documents can be uploaded via the &apos;Files&apos; Related List, below --></help>
+        <label><!-- MSA Amendment # --></label>
+        <name>MSA_Amendment_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- MSA Amendment Status --></label>
+        <name>MSA_Amendment_Status__c</name>
+        <picklistValues>
+            <masterLabel>Customer Execution</masterLabel>
+            <translation><!-- Customer Execution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Review</masterLabel>
+            <translation><!-- Customer Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Drafting</masterLabel>
+            <translation><!-- Drafting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fully Executed</masterLabel>
+            <translation><!-- Fully Executed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guardant Execution</masterLabel>
+            <translation><!-- Guardant Execution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guardant Review</masterLabel>
+            <translation><!-- Guardant Review --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Is an MSA Amendment Required? --></help>
+        <label><!-- MSA Amendment Required? --></label>
+        <name>MSA_Amendment__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- MSA Expiration Date --></label>
+        <name>MSA_Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- MSA Name --></label>
+        <name>MSA_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- MSA Start Date --></label>
+        <name>MSA_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- MSA Status --></label>
+        <name>MSA_Status__c</name>
+        <picklistValues>
+            <masterLabel>Customer Execution</masterLabel>
+            <translation><!-- Customer Execution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Review</masterLabel>
+            <translation><!-- Customer Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Drafting</masterLabel>
+            <translation><!-- Drafting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fully Executed</masterLabel>
+            <translation><!-- Fully Executed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guardant Execution</masterLabel>
+            <translation><!-- Guardant Execution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guardant Review</masterLabel>
+            <translation><!-- Guardant Review --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Three months before the MSA Expiration Date --></help>
+        <label><!-- MSA Three-month Expiration Date --></label>
+        <name>MSA_Three_month_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- MSA --></label>
+        <name>MSA__c</name>
+    </fields>
+    <fields>
+        <label><!-- MSL Cell --></label>
+        <name>MSL_Cell__c</name>
+    </fields>
+    <fields>
+        <label><!-- MSL Email --></label>
+        <name>MSL_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- MSL ID --></label>
+        <name>MSL_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- MSL Signature First Line --></label>
+        <name>MSL_Signature_First_Line__c</name>
+    </fields>
+    <fields>
+        <help><!-- Medical Science Liaison --></help>
+        <label><!-- MSL --></label>
+        <name>MSL__c</name>
+        <picklistValues>
+            <masterLabel>Amber Carter</masterLabel>
+            <translation><!-- Amber Carter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Angela Thompson</masterLabel>
+            <translation><!-- Angela Thompson --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ashley Wells</masterLabel>
+            <translation><!-- Ashley Wells --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Becky Nagy</masterLabel>
+            <translation><!-- Becky Nagy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brianna Volz</masterLabel>
+            <translation><!-- Brianna Volz --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Caroline Weipert</masterLabel>
+            <translation><!-- Caroline Weipert --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Christian Klosowski</masterLabel>
+            <translation><!-- Christian Klosowski --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Christine Lee</masterLabel>
+            <translation><!-- Christine Lee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chuck Hensel</masterLabel>
+            <translation><!-- Chuck Hensel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Erin Borchardt</masterLabel>
+            <translation><!-- Erin Borchardt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jennifer Saam</masterLabel>
+            <translation><!-- Jennifer Saam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Julia Jones</masterLabel>
+            <translation><!-- Julia Jones --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kelsey Johnson</masterLabel>
+            <translation><!-- Kelsey Johnson --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kim Hamann</masterLabel>
+            <translation><!-- Kim Hamann --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kristin Edwards</masterLabel>
+            <translation><!-- Kristin Edwards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kristin Price</masterLabel>
+            <translation><!-- Kristin Price --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Krysten Shipley</masterLabel>
+            <translation><!-- Krysten Shipley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lesli Kiedrowski</masterLabel>
+            <translation><!-- Lesli Kiedrowski --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leylah Drusbosky</masterLabel>
+            <translation><!-- Leylah Drusbosky --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MedAffairs</masterLabel>
+            <translation><!-- MedAffairs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Megan McKenna</masterLabel>
+            <translation><!-- Megan McKenna --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nassim Taherian</masterLabel>
+            <translation><!-- Nassim Taherian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pauline Fontaine</masterLabel>
+            <translation><!-- Pauline Fontaine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sara Wienke</masterLabel>
+            <translation><!-- Sara Wienke --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sheila Solomon</masterLabel>
+            <translation><!-- Sheila Solomon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thereasa Rich</masterLabel>
+            <translation><!-- Thereasa Rich --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Victoria Raymond</masterLabel>
+            <translation><!-- Victoria Raymond --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Main NCI Account --></label>
+        <name>Main_NCI_Account__c</name>
+        <relationshipLabel><!-- NCI Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Customer Priority --></label>
+        <name>MedProBT__CustomerPriority__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- MedProID --></label>
+        <name>MedProBT__External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Object --></label>
+        <name>MedProBT__Parent_Object__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SLA Expiration Date --></label>
+        <name>MedProBT__SLAExpirationDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Med Affairs Director --></label>
+        <name>Med_Affairs_Director__c</name>
+        <picklistValues>
+            <masterLabel>Becky Nagy</masterLabel>
+            <translation><!-- Becky Nagy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jennifer Saam</masterLabel>
+            <translation><!-- Jennifer Saam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Victoria Raymond</masterLabel>
+            <translation><!-- Victoria Raymond --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- NCCN Region --></label>
+        <name>NCCN_Region__c</name>
+        <picklistValues>
+            <masterLabel>East</masterLabel>
+            <translation><!-- East --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West</masterLabel>
+            <translation><!-- West --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- NCCN --></label>
+        <name>NCCN__c</name>
+    </fields>
+    <fields>
+        <help><!-- A region must be selected if &quot;Designated NCI Center&quot; is checked --></help>
+        <label><!-- NCI Region --></label>
+        <name>NCI_Region__c</name>
+        <picklistValues>
+            <masterLabel>East</masterLabel>
+            <translation><!-- East --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West</masterLabel>
+            <translation><!-- West --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- NCI Satellite --></label>
+        <name>NCI_Satellite__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name of Patient --></label>
+        <name>Name_of_Patient__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Open Prior Authorizations --></label>
+        <name>Number_of_Open_Prior_Authorizations__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of Samples received in the last 6 months --></help>
+        <label><!-- Number of Samples Last 6 mos --></label>
+        <name>Number_of_Samples_Last_6_mos__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Samples --></label>
+        <name>Number_of_Samples__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other 1 Notes --></label>
+        <name>Other_1_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other 1 --></label>
+        <name>Other_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other 2 Notes --></label>
+        <name>Other_2_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other 2 --></label>
+        <name>Other_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other 3 Notes --></label>
+        <name>Other_3_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other 3 --></label>
+        <name>Other_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot MSL --></label>
+        <name>Pardot_MSL__c</name>
+        <relationshipLabel><!-- Accounts (Pardot MSL) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Parent Account Owner --></label>
+        <name>Parent_Account_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient DOB --></label>
+        <name>Patient_DOB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient Name --></label>
+        <name>Patient_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Contact Name --></label>
+        <name>Payment_Contact_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Terms --></label>
+        <name>Payment_Terms__c</name>
+        <picklistValues>
+            <masterLabel>30EOM</masterLabel>
+            <translation><!-- 30EOM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>45EOM</masterLabel>
+            <translation><!-- 45EOM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60EOM</masterLabel>
+            <translation><!-- 60EOM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90EOM</masterLabel>
+            <translation><!-- 90EOM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N30</masterLabel>
+            <translation><!-- N30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N45</masterLabel>
+            <translation><!-- N45 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N60</masterLabel>
+            <translation><!-- N60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N90</masterLabel>
+            <translation><!-- N90 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post Insurance Collection</masterLabel>
+            <translation><!-- Post Insurance Collection --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PayorID --></label>
+        <name>PayorID_del__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payor ID --></label>
+        <name>Payor_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payor Parent --></label>
+        <name>Payor_Parent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Portal Account Type must be &apos;Site&apos;, not &apos;Company&apos; --></help>
+        <label><!-- Pharma CRO --></label>
+        <name>Pharma_CRO__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pharma Co Ref Number --></label>
+        <name>Pharma_Co_Ref_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pharma Portal Account Creation Date --></label>
+        <name>Pharma_Portal_Account_Creation_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phelb Name --></label>
+        <name>Phelb_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Portal Account Type --></label>
+        <name>Portal_Account_Type__c</name>
+        <picklistValues>
+            <masterLabel>Company</masterLabel>
+            <translation><!-- Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Site</masterLabel>
+            <translation><!-- Site --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pharma Portal Account --></label>
+        <name>Portal_Site__c</name>
+    </fields>
+    <fields>
+        <label><!-- Practice Name --></label>
+        <name>Practice_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous Territory Name --></label>
+        <name>Previous_Territory_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Price of Test --></label>
+        <name>Price_of_Test__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Name --></label>
+        <name>Project_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Protocol # --></label>
+        <name>Protocol__c</name>
+    </fields>
+    <fields>
+        <label><!-- Push To NetSuite Date --></label>
+        <name>Push_To_NetSuite_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Push To TheraPak Date --></label>
+        <name>Push_To_TheraPak_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Push To TheraPak --></label>
+        <name>Push_To_TheraPak__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use this instead of &apos;Qualified?&apos; to push updated account information to LIMS for previously-qualified (but no longer qualified) accounts. --></help>
+        <label><!-- Push to LabVantage --></label>
+        <name>Push_to_LabVantage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Push to NetSuite --></label>
+        <name>Push_to_NetSuite__c</name>
+    </fields>
+    <fields>
+        <label><!-- Qualified --></label>
+        <name>Qualified__c</name>
+    </fields>
+    <fields>
+        <help><!-- Trigger updated field. If there is one contact qualified, Account qualified --></help>
+        <label><!-- Qualified to send to LIMS --></label>
+        <name>Qualified_to_send_to_LIMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- RSD Email --></label>
+        <name>RSD_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rec Type Id --></label>
+        <name>Rec_Type_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record # --></label>
+        <name>Record__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+        <picklistValues>
+            <masterLabel>Atlantic</masterLabel>
+            <translation><!-- Atlantic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Central</masterLabel>
+            <translation><!-- Central --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Great Lakes</masterLabel>
+            <translation><!-- Great Lakes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>International</masterLabel>
+            <translation><!-- International --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>National</masterLabel>
+            <translation><!-- National --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Northeast</masterLabel>
+            <translation><!-- Northeast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Northwest</masterLabel>
+            <translation><!-- Northwest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rocky Mountain</masterLabel>
+            <translation><!-- Rocky Mountain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South</masterLabel>
+            <translation><!-- South --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Southeast</masterLabel>
+            <translation><!-- Southeast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Southwest</masterLabel>
+            <translation><!-- Southwest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Texas</masterLabel>
+            <translation><!-- Texas --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Derived from AE&apos;s manager --></help>
+        <label><!-- Regional Director --></label>
+        <name>Regional_Director__c</name>
+    </fields>
+    <fields>
+        <label><!-- Regional Sales Director --></label>
+        <name>Regional_Sales_Director__c</name>
+        <picklistValues>
+            <masterLabel>Andy Ecklund</masterLabel>
+            <translation><!-- Andy Ecklund --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dave Liebetreu</masterLabel>
+            <translation><!-- Dave Liebetreu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Elizabeth Thompson</masterLabel>
+            <translation><!-- Elizabeth Thompson --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fernando Colin</masterLabel>
+            <translation><!-- Fernando Colin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Justin Elders</masterLabel>
+            <translation><!-- Justin Elders --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Karen Kilsdonk</masterLabel>
+            <translation><!-- Karen Kilsdonk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leeann Barlow</masterLabel>
+            <translation><!-- Leeann Barlow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maria Stravato</masterLabel>
+            <translation><!-- Maria Stravato --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Matt Daniel</masterLabel>
+            <translation><!-- Matt Daniel --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Requesting MD --></label>
+        <name>Requesting_MD__c</name>
+    </fields>
+    <fields>
+        <label><!-- RoleName --></label>
+        <name>RoleName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box if this account is for the LC-SCRUM Study. --></help>
+        <label><!-- SCRUM Account --></label>
+        <name>SCRUM_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- SEC Active Notification Date --></label>
+        <name>SEC_Active_Notification_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- SEC Termination Notification Date --></label>
+        <name>SEC_Termination_Notification_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Override DupeCatcher --></label>
+        <name>SFSSDupeCatcher__Override_DupeCatcher__c</name>
+    </fields>
+    <fields>
+        <label><!-- SOW --></label>
+        <name>SOW__c</name>
+        <relationshipLabel><!-- Site Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sales Area --></label>
+        <name>Sales_Area__c</name>
+        <picklistValues>
+            <masterLabel>Carolinas</masterLabel>
+            <translation><!-- Carolinas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Desert</masterLabel>
+            <translation><!-- Desert --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Great Lakes</masterLabel>
+            <translation><!-- Great Lakes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mid Atlantic</masterLabel>
+            <translation><!-- Mid Atlantic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mountain South</masterLabel>
+            <translation><!-- Mountain South --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N. Florida</masterLabel>
+            <translation><!-- N. Florida --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nor Cal</masterLabel>
+            <translation><!-- Nor Cal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North Tex</masterLabel>
+            <translation><!-- North Tex --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Northeast</masterLabel>
+            <translation><!-- Northeast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ohio Valley</masterLabel>
+            <translation><!-- Ohio Valley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pacific Northwest</masterLabel>
+            <translation><!-- Pacific Northwest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Philly</masterLabel>
+            <translation><!-- Philly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plains</masterLabel>
+            <translation><!-- Plains --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SE Florida</masterLabel>
+            <translation><!-- SE Florida --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>So Cal</masterLabel>
+            <translation><!-- So Cal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South</masterLabel>
+            <translation><!-- South --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South Tex</masterLabel>
+            <translation><!-- South Tex --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upper West</masterLabel>
+            <translation><!-- Upper West --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West Coast</masterLabel>
+            <translation><!-- West Coast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West Lakes</masterLabel>
+            <translation><!-- West Lakes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sales Contract --></label>
+        <name>Sales_Contract__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sample Alert 21 Days --></label>
+        <name>Sample_Alert_21_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary FAX --></label>
+        <name>Secondary_FAX__c</name>
+    </fields>
+    <fields>
+        <label><!-- Seconds Since Push Request --></label>
+        <name>Seconds_Since_Push_Request__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sent to LIMS --></label>
+        <name>Sent_to_LIMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipment Frequency --></label>
+        <name>Shipment_Frequency__c</name>
+        <picklistValues>
+            <masterLabel>1 Week</masterLabel>
+            <translation><!-- 1 Week --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 Weeks</masterLabel>
+            <translation><!-- 2 Weeks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 Weeks</masterLabel>
+            <translation><!-- 3 Weeks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 Weeks</masterLabel>
+            <translation><!-- 4 Weeks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 Weeks</masterLabel>
+            <translation><!-- 5 Weeks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6 Weeks</masterLabel>
+            <translation><!-- 6 Weeks --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Shipping Country Non-US --></label>
+        <name>Shipping_Country_Non_US__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Street 1 --></label>
+        <name>Shipping_Street_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Street 2 --></label>
+        <name>Shipping_Street_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used for Therapak tracking --></help>
+        <label><!-- Site # --></label>
+        <name>Site__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Account --></label>
+        <name>Special_Account__c</name>
+        <picklistValues>
+            <masterLabel>Mirati: MGCD265-109</masterLabel>
+            <translation><!-- Mirati: MGCD265-109 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mirati: MGDC516-001</masterLabel>
+            <translation><!-- Mirati: MGDC516-001 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SWOG:1403</masterLabel>
+            <translation><!-- SWOG:1403 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Biopharma Company that is sponsoring drug study --></help>
+        <label><!-- Sponsor Account --></label>
+        <lookupFilter>
+            <errorMessage><!-- This must be a Biopharma account --></errorMessage>
+            <informationalMessage><!-- Select the sponsoring Biopharma company (must be Biopharma record type) --></informationalMessage>
+        </lookupFilter>
+        <name>Sponsor_Account__c</name>
+        <relationshipLabel><!-- Program Sites --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Total account spend for all associated contacts --></help>
+        <label><!-- Stark Account Spend --></label>
+        <name>Stark_Account_Spend__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Capabilities</masterLabel>
+            <translation><!-- Capabilities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contracting</masterLabel>
+            <translation><!-- Contracting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Negotiation</masterLabel>
+            <translation><!-- Negotiation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed</masterLabel>
+            <translation><!-- Signed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Targeting</masterLabel>
+            <translation><!-- Targeting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terminated</masterLabel>
+            <translation><!-- Terminated --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- T15 --></label>
+        <name>T15__c</name>
+    </fields>
+    <fields>
+        <help><!-- Accounts Considered for Deletion, Not 2017-159 Customer, Account is Not NCCN/NCI and Is Not a Master Account. Has Contact(s), No Contact Affiliation, No Activity History in the past 90 Days to  2 years, --></help>
+        <label><!-- TBC4DELETION --></label>
+        <name>TBC4DELETION__c</name>
+    </fields>
+    <fields>
+        <help><!-- Account Considered for Deletion: Not a 2017 159 Customer, Not a NCCN or NCI Account, Account has No Contacts (or) has Contacts, However No Activity History in over 6 months. --></help>
+        <label><!-- TBD -To Be Deleted --></label>
+        <name>TBD_To_Be_Deleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Targeted Account Priority --></label>
+        <name>Targeted_Account_Priority__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Targeted Account --></label>
+        <name>Targeted_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Targets of Interest --></label>
+        <name>Targets_of_Interest__c</name>
+    </fields>
+    <fields>
+        <help><!-- Territory name updated through custom code based on active assigned territory --></help>
+        <label><!-- Territory Name --></label>
+        <name>Territory_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Parent Territory Region updated via Apex --></help>
+        <label><!-- Territory Region --></label>
+        <name>Territory_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- TheraPak Account Name --></label>
+        <name>TheraPak_Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- TheraPak Status --></label>
+        <name>TheraPak_Status__c</name>
+        <picklistValues>
+            <masterLabel>Delivered</masterLabel>
+            <translation><!-- Delivered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Never Sent</masterLabel>
+            <translation><!-- Never Sent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total Amount Spend --></label>
+        <name>Total_Amount_Spend__c</name>
+    </fields>
+    <fields>
+        <label><!-- Track --></label>
+        <name>Track__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trial ID --></label>
+        <name>Trial_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trial Site Number --></label>
+        <name>Trial_Site_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Picklist. Use &apos;Territory Name&apos; instead --></help>
+        <label><!-- US Territory --></label>
+        <name>US_Territory__c</name>
+        <picklistValues>
+            <masterLabel>Atlanta N</masterLabel>
+            <translation><!-- Atlanta N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Baltimore</masterLabel>
+            <translation><!-- Baltimore --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Birmingham</masterLabel>
+            <translation><!-- Birmingham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Boroughs</masterLabel>
+            <translation><!-- Boroughs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Boston</masterLabel>
+            <translation><!-- Boston --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Charleston</masterLabel>
+            <translation><!-- Charleston --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Charlotte</masterLabel>
+            <translation><!-- Charlotte --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chicago N</masterLabel>
+            <translation><!-- Chicago N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chicago S</masterLabel>
+            <translation><!-- Chicago S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cleveland</masterLabel>
+            <translation><!-- Cleveland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Columbus</masterLabel>
+            <translation><!-- Columbus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dallas</masterLabel>
+            <translation><!-- Dallas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Denver</masterLabel>
+            <translation><!-- Denver --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Detroit</masterLabel>
+            <translation><!-- Detroit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fort Lauderdale</masterLabel>
+            <translation><!-- Fort Lauderdale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fresno</masterLabel>
+            <translation><!-- Fresno --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Houston</masterLabel>
+            <translation><!-- Houston --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indianapolis</masterLabel>
+            <translation><!-- Indianapolis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Las Vegas</masterLabel>
+            <translation><!-- Las Vegas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Los Angeles</masterLabel>
+            <translation><!-- Los Angeles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Louisville</masterLabel>
+            <translation><!-- Louisville --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manhattan</masterLabel>
+            <translation><!-- Manhattan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Memphis</masterLabel>
+            <translation><!-- Memphis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Miami</masterLabel>
+            <translation><!-- Miami --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minneapolis</masterLabel>
+            <translation><!-- Minneapolis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Naples</masterLabel>
+            <translation><!-- Naples --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nashville</masterLabel>
+            <translation><!-- Nashville --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>National</masterLabel>
+            <translation><!-- National --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Orleans</masterLabel>
+            <translation><!-- New Orleans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Newark</masterLabel>
+            <translation><!-- Newark --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OPEN Central</masterLabel>
+            <translation><!-- OPEN Central --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OPEN Mid-Atlantic</masterLabel>
+            <translation><!-- OPEN Mid-Atlantic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OPEN Midsouth</masterLabel>
+            <translation><!-- OPEN Midsouth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OPEN Midwest</masterLabel>
+            <translation><!-- OPEN Midwest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OPEN Northeast</masterLabel>
+            <translation><!-- OPEN Northeast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OPEN Southeast</masterLabel>
+            <translation><!-- OPEN Southeast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OPEN West</masterLabel>
+            <translation><!-- OPEN West --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Omaha</masterLabel>
+            <translation><!-- Omaha --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Orange County</masterLabel>
+            <translation><!-- Orange County --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Orlando</masterLabel>
+            <translation><!-- Orlando --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Philadelphia</masterLabel>
+            <translation><!-- Philadelphia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phoenix</masterLabel>
+            <translation><!-- Phoenix --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pittsburgh</masterLabel>
+            <translation><!-- Pittsburgh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portland</masterLabel>
+            <translation><!-- Portland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Raleigh</masterLabel>
+            <translation><!-- Raleigh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Richmond</masterLabel>
+            <translation><!-- Richmond --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sacramento</masterLabel>
+            <translation><!-- Sacramento --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>San Antonio</masterLabel>
+            <translation><!-- San Antonio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>San Diego</masterLabel>
+            <translation><!-- San Diego --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>San Francisco</masterLabel>
+            <translation><!-- San Francisco --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seattle</masterLabel>
+            <translation><!-- Seattle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>St Louis</masterLabel>
+            <translation><!-- St Louis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tampa</masterLabel>
+            <translation><!-- Tampa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trenton</masterLabel>
+            <translation><!-- Trenton --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tulsa</masterLabel>
+            <translation><!-- Tulsa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upstate NY</masterLabel>
+            <translation><!-- Upstate NY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Ultimate Parent Account --></label>
+        <name>Ultimate_Parent_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unqualified by CS --></label>
+        <name>Unqualified_by_CS__c</name>
+    </fields>
+    <fields>
+        <label><!-- VID Match Source --></label>
+        <name>VID_Match_Source__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box only if this account is in the Merck VISION Study. The account name should start with &apos;VIS#___&apos;. --></help>
+        <label><!-- VIS Account --></label>
+        <name>VIS_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vanguard --></label>
+        <name>Vanguard__c</name>
+    </fields>
+    <fields>
+        <label><!-- Veeva ID --></label>
+        <name>Veeva_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Visit Timepoints --></label>
+        <name>Visit_Timepoints__c</name>
+        <picklistValues>
+            <masterLabel>BL     5w     6m     12m     18m     2y     3y     4y     5y</masterLabel>
+            <translation><!-- BL     5w     6m     12m     18m     2y     3y     4y     5y --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Baseline  C3D1  Progression</masterLabel>
+            <translation><!-- Baseline  C3D1  Progression --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospective   Retrospective (RESL)</masterLabel>
+            <translation><!-- Prospective   Retrospective (RESL) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Screening   D42   Post-SX</masterLabel>
+            <translation><!-- Screening   D42   Post-SX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Screening  |:|  (RESL) - Cycle 3 :: Cycle 5 :: Cycle 7 :: Cycle 9 :: End of treatment :: Other</masterLabel>
+            <translation><!-- Screening  |:|  (RESL) - Cycle 3 :: Cycle 5 :: Cycle 7 :: Cycle 9 :: End of treatment :: Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Screening End of Treatment</masterLabel>
+            <translation><!-- Screening End of Treatment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Screening, C1D15, CxD1 and EOT</masterLabel>
+            <translation><!-- Screening, C1D15, CxD1 and EOT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Study ID: BLU285</masterLabel>
+            <translation><!-- Study ID: BLU285 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Treatment-naive            Previously Treated</masterLabel>
+            <translation><!-- Treatment-naive            Previously Treated --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- 2014 AACR Notes --></label>
+        <name>X2014_AACR_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2014 AACR --></label>
+        <name>X2014_AACR__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2014 ASCO Notes --></label>
+        <name>X2014_ASCO_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2014 ASCO --></label>
+        <name>X2014_ASCO__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2015 AACR Notes --></label>
+        <name>X2015_AACR_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2015 AACR --></label>
+        <name>X2015_AACR__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2015 ASCO Notes --></label>
+        <name>X2015_ASCO_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2015 ASCO --></label>
+        <name>X2015_ASCO__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2015 BIO Notes --></label>
+        <name>X2015_BIO_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2015 BIO --></label>
+        <name>X2015_BIO__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2016 AACR Notes --></label>
+        <name>X2016_AACR_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2016 AACR --></label>
+        <name>X2016_AACR__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2016 ASCO Notes --></label>
+        <name>X2016_ASCO_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2016 ASCO --></label>
+        <name>X2016_ASCO__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2016 BIO Notes --></label>
+        <name>X2016_BIO_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2016 BIO --></label>
+        <name>X2016_BIO__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2017 159 Customer --></label>
+        <name>X2017_159_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- update --></label>
+        <name>update__c</name>
+    </fields>
+    <recordTypes>
+        <description><!-- Used for Biopharma business development accounts. --></description>
+        <label><!-- Biopharma --></label>
+        <name>Biz_Dev</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Commercial Account --></label>
+        <name>Commercial_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Insurance --></label>
+        <name>Insurance</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Payor Account --></label>
+        <name>Payor_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used for Pharma Portal accounts --></description>
+        <label><!-- Pharma Company --></label>
+        <name>Pharma_Company</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used for Pharma Portal accounts --></description>
+        <label><!-- Pharma Trial Site --></label>
+        <name>Pharma_Site</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- If country is US, ZIP must be in &quot;99999&quot; or &quot;99999-9999&quot; format. --></errorMessage>
+        <name>Account_Zip_must_be_5_or_9_digits</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Reporting State must be 2 characters. --></errorMessage>
+        <name>Billing_State_Length1</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Portal Account Type must be &apos;Site&apos; before selecting Pharma CRO checkbox --></errorMessage>
+        <name>CRO_Must_Be_Pharma_Site</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This is a Master Account. Master Accounts Cannot Be Deleted. Please contact a Salesforce Administrator if you have any questions. --></errorMessage>
+        <name>Cannot_Delete_Master_Accounts</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot change owner if owner is System Administrator --></errorMessage>
+        <name>Cannot_change_owner_if_owner_is_SysAdmin</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Client Services cannot own accounts of type &apos;Clinical Account US&apos;. Please either change the account type or reassign to a sales user. --></errorMessage>
+        <name>Client_Svcs_cannot_own_Clinical_US_Accts</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Account Class = Community, Community Type is required. --></errorMessage>
+        <name>Community_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Delivery Report Type is required if account type is 2nd Recipient --></errorMessage>
+        <name>Delivery_Report_Type_req_for_2nd_Recp</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- ERROR: This Account is missing a complete Reporting Address. Please complete the Reporting Street, City, and Country (two letters) fields. --></errorMessage>
+        <name>Full_International_reporting_address</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- ERROR: This account is missing a complete Reporting Address. Please complete the Reporting Street, City, State (two letters), Country (also two letters, i.e. &apos;US&apos;) and ZIP/Postal Code. --></errorMessage>
+        <name>Full_Reporting_Address_needed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If account type = Test, it cannot be changed, unless changed by Ruben Smith. --></errorMessage>
+        <name>If_account_type_is_Test_it_cant_changed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Account Name, Phone, FAX, Secondary Fax, Reporting Address and Shipping Address may only be changed by Client Services for Qualified accounts. --></errorMessage>
+        <name>Lock_Account_Qualified_Fields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Account Name, Phone, FAX, Secondary Fax, Reporting Address and Shipping Address may only be changed by Client Services for accounts which have been Unqualified by CS. --></errorMessage>
+        <name>Lock_Account_Unqualified_By_CS_Fields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Main NCI Account is required if NCI Satellite is checked. --></errorMessage>
+        <name>Main_NCI_Acct</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Fax must be 50 characters or less. --></errorMessage>
+        <name>Max_FAX_Length</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Phone must be 50 characters or less. --></errorMessage>
+        <name>Max_Phone_Length</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- NCCN Region is required if NCCN is checked. --></errorMessage>
+        <name>NCCN_Region</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- NCCN Region must be blank if NCCN checkbox is not checked. --></errorMessage>
+        <name>NCCN_Region_must_be_blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- NCI Region is required if Designated NCI is checked. --></errorMessage>
+        <name>NCI_Center</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- NCI Region must be blank if &apos;Designated NCI Center&apos; is not checked --></errorMessage>
+        <name>NCI_Region_must_be_blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- All new accounts must have values in the &apos;Reporting Street&apos; and &apos;Reporting Country&apos; fields. --></errorMessage>
+        <name>New_Accounts_must_have_complete_addresse</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Client Services can change Qualified checkbox --></errorMessage>
+        <name>Only_CS_Can_Set_Qualified</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only qualified accounts can be pushed to TheraPak --></errorMessage>
+        <name>Only_Quantified_Accounts_Push_to_TheraPa</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only System Admin can uncheck the Qualified check box. --></errorMessage>
+        <name>Only_System_Admin_can_set_Qualified_box</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- New Pharma Sites must have Street, City, State, and Zip codes --></errorMessage>
+        <name>Pharma_Site_must_have_address</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- All Qualified Accounts must have a Country --></errorMessage>
+        <name>QualifiedMustHaveACountry</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Reporting Country must be two characters. In order to save the record the reporting country code must be capitalized.Example:US --></errorMessage>
+        <name>Reporting_Country_Length</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Contract # is populated, Effective Date &amp; End Date are required. --></errorMessage>
+        <name>SEC_Fields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Shipping City must be 100 characters or less. --></errorMessage>
+        <name>Shipping_City_Length</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Shipping Country must be 2 characters long --></errorMessage>
+        <name>Shipping_Country_Length</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Shipping Postal Code must be 50 characters or less. --></errorMessage>
+        <name>Shipping_Postal_Code_Length</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Shipping State must be 2 characters. --></errorMessage>
+        <name>Shipping_State_Length</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Shipping Street Line 1 must be 40 characters or less. --></errorMessage>
+        <name>Shipping_Street_1_Length</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Shipping Street Line 2 must be 40 characters or less. --></errorMessage>
+        <name>Shipping_Street_2_Length</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For Singapore Reporting Address, when Qualified checkbox is checked Street and Country Code cannot be blank. --></errorMessage>
+        <name>Singapore_Reporting_Address</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The &apos;Additional TRF Info&apos; field is only for Clinical Trial accounts and must be blank if account type is &apos;Clinical Account US&apos; or &apos;Clinical Account International&apos; --></errorMessage>
+        <name>TRF_field_for_Clinical_accts</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot Push to Therapak unless MOQ and DSL fields contain numerical values. --></errorMessage>
+        <name>Therapak_Push</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The &apos;Visit Timepoints&apos; field is only for Clinical Trial accounts and must be blank if account type is &apos;Clinical Account US&apos; or &apos;Clinical Account International&apos; --></errorMessage>
+        <name>Timepoints_field_for_Clinical_accts</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- AltavistaNews --></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Clone --></label>
+        <name>Clone</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Clone2 --></label>
+        <name>Clone2</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Create_New_OPS_Request --></label>
+        <name>Create_New_OPS_Request</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- DCR --></label>
+        <name>DCR</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Delete --></label>
+        <name>Mass_Delete</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Record_a_Call --></label>
+        <name>Record_a_Call</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Request_Qualification --></label>
+        <name>Request_Qualification</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Contact_PDFs --></label>
+        <name>SmartvCard__Contact_PDFs</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Contact_VCFs --></label>
+        <name>SmartvCard__Contact_VCFs</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Export_vCards_in_PDF --></label>
+        <name>SmartvCard__Export_vCards_in_PDF</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_vCard --></label>
+        <name>SmartvCard__Generate_vCard</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_vCard_3_0 --></label>
+        <name>SmartvCard__Generate_vCard_3_0</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_with_DocuSign --></label>
+        <name>dsfs__Send_with_DocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Email_Attachments --></label>
+        <name>lightsideapps__Email_Attachments</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Pardot_Emails --></label>
+        <name>pi__Send_Pardot_Emails</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Single_Pardot_Email --></label>
+        <name>pi__Send_Single_Pardot_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_To_Prospect_Insight --></label>
+        <name>pi__Send_To_Prospect_Insight</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Smart_Dialer --></label>
+        <name>talkdesk__Smart_Dialer</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Webmerge --></label>
+        <name>webm__Webmerge</name>
+    </webLinks>
+</CustomObjectTranslation>

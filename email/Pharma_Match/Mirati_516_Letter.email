@@ -1,0 +1,27 @@
+Dear Dr. {!Contact.LastName},
+
+In a recent Guardant360 sample you sent us, you will notice from the patient’s report we sent you that we detected [a MET / a RET / an NTRK1 / a PDGFRA / a KIT] alteration.
+
+This molecular alteration is notable because it is relatively rare. Of the trials we discussed, Mirati Therapeutics has a spectrum-selective receptor tyrosine kinase inhibitor, called MGCD516, in clinical development to determine its efficacy for patients whose tumors harbor this particular alteration.
+
+Patients with any solid tumor malignancy that is locally advanced, unresectable or metastatic, and with activating genetic changes of the MET, RET, NTRK1, PDGFRA or KIT genes are being considered for enrollment in Mirati’s trial. More information on the clinical trial (NCT02219711) can be found here: https://clinicaltrials.gov/ct2/show/NCT02219711.
+
+In preclinical studies, MGCD516 has demonstrated tumor growth inhibition and anti-tumor efficacy, including frank tumor regression of tumors harboring activating alterations in the MET, RET, NTRK1, PDGFRA or KIT genes. In an ongoing Phase 1/1b study (Study 516-001), MGCD516 has shown preliminary signs of clinical activity in patients including those with clear cell mRCC and mCRPC, as well as in mNSCLC exhibiting abnormalities in the RET pathway.  More specifically, in January 2017 Mirati reported that six patients with NSCLC harboring RET fusions, had been enrolled and all four evaluable patients showed tumor reductions with one confirmed and one unconfirmed response. Several patients have been on study for more than 1 year, indicating clinical benefit of treatment with MGCD516. For additional information, see the published results which can be found at ASCO 2016 Poster: http://www.mirati.com/assets/001/5060.pdf.
+
+Applicable only for KIT / KDR / PDGFRA amplification at Chromosome 4q12 locus:
+The rationale for including patients with PDGFRA/KIT/CHR4q12 amplification is based on the observation that multiple receptor tyrosine kinases are located at a common locus at chromosome 4q12 and are simultaneously up regulated and activated when this chromosomal region is amplified. In addition, CHR4q12 amplification was predictive of MGCD516 response in nonclinical studies.
+
+Clinical trial sites for the Mirati Therapeutics 516-001 clinical study are open around the United States. Through Mirati’s concierge program, travel accommodations and travel expense reimbursement may be available for your patient to travel to a trial site for assessment of eligibility to participate in the trial.  Further on-trial travel-related expense reimbursement would require discussion and approval by a site and the site’s local IRB.
+
+If we can help connect you with Mirati to discuss your patient’s eligibility for the Mirati Therapeutics 516-001 clinical study, please let us know. You can also contact Mirati Therapeutics Study Locator directly, at their Physician and Patient Clinical Trial Hotline at 1-844-707-4816.
+
+Sincerely,
+{!User.Name}, {!User.Degree__c} 
+Clinical Trial Advisor
+Guardant Health
+
+Guardant Health Match Key: {!Match_Record__c.Match_Key__c} 
+
+Guardant Health partners with the clinical trial sponsor to conduct patient referral activities.
+
+This message is intended solely for the designated recipient(s). It may contain confidential or proprietary information and may be subject to attorney-client privilege or other confidentiality protections. If you are not a designated recipient you may not review, copy or distribute this message. If you have received this in error, please notify the sender by replying to this e-mail and deleting this message. Thank you. Ref: {!Match_Record__c.Id}

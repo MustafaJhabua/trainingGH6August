@@ -1,0 +1,1165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Match Record</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Match Records</value>
+    </caseValues>
+    <fields>
+        <label><!-- AE Owner --></label>
+        <name>AE_Owner__c</name>
+        <relationshipLabel><!-- Match Records (AE Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Ordering Practice Account Classification --></label>
+        <name>Account_Classification__c</name>
+    </fields>
+    <fields>
+        <help><!-- Inherited from Account&apos;s &apos;Do Not Send IOE&apos; field. --></help>
+        <label><!-- Account Do Not Send IOE --></label>
+        <name>Account_Do_Not_Send_IOE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alteration Map --></label>
+        <name>Alteration_Map__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assignee --></label>
+        <name>Assignee__c</name>
+        <relationshipLabel><!-- Match Records (Assignee) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Internal Only --></help>
+        <label><!-- Batch Check --></label>
+        <name>Batch_Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- Batch Push --></label>
+        <name>Batch_Push__c</name>
+    </fields>
+    <fields>
+        <label><!-- CTA Contact Owner --></label>
+        <name>CTA_Contact_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- CTA Owner --></label>
+        <name>CTA_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancer Class --></label>
+        <name>Cancer_Class__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancer Stage --></label>
+        <name>Cancer_Stage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hidden field used for email template --></help>
+        <label><!-- Cancer Type Lower Case --></label>
+        <name>Cancer_Type_Lower_Case__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancer Type --></label>
+        <name>Cancer_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Notes --></label>
+        <name>Client_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closed? --></label>
+        <name>Closed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closest Trial Site --></label>
+        <name>Closest_Trial_Site2__c</name>
+        <relationshipLabel><!-- Match Records (Closest Trial Site) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Closest Trial Site City --></label>
+        <name>Closest_Trial_Site_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closest Trial Site State --></label>
+        <name>Closest_Trial_Site_State__c</name>
+    </fields>
+    <fields>
+        <help><!-- Derived from Trial Site Type field of Closest Trial Site --></help>
+        <label><!-- Closest Trial Site Type --></label>
+        <name>Closest_Trial_Site_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closest Trial Site (Account) --></label>
+        <name>Closest_Trial_Site__c</name>
+        <relationshipLabel><!-- Match Records (Closest Trial Site) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Closest Trial Sites List --></label>
+        <name>Closest_Trial_Sites_List__c</name>
+    </fields>
+    <fields>
+        <help><!-- Internal Only --></help>
+        <label><!-- Competing Trials? --></label>
+        <name>Competing_Trials__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Connected Trial Site Address --></label>
+        <name>Connected_Trial_Site_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Connected Trial Site City --></label>
+        <name>Connected_Trial_Site_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Connected Trial Site Country --></label>
+        <name>Connected_Trial_Site_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Connected Trial Site Name --></label>
+        <name>Connected_Trial_Site_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Connected Trial Site State --></label>
+        <name>Connected_Trial_Site_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Connected Trial Site Zip Code --></label>
+        <name>Connected_Trial_Site_Zip_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lookup to trial sites from the same trial. --></help>
+        <label><!-- Connected Trial Site --></label>
+        <lookupFilter>
+            <errorMessage><!-- Please select a trial site for this trial. --></errorMessage>
+            <informationalMessage><!-- Use the Search String &apos;*TS-*&apos; to show all trial sites for this match&apos;s trial --></informationalMessage>
+        </lookupFilter>
+        <name>Connected_Trial_Site__c</name>
+        <relationshipLabel><!-- Match Records Connected to this Trial Site --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Connected Trial Site (Account) --></label>
+        <name>Connected_Trial_Site_account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reached Provider? --></label>
+        <name>Contact_Achieved__c</name>
+    </fields>
+    <fields>
+        <label><!-- CTA Contact Attempted? --></label>
+        <name>Contact_Attempted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Inherited from Ordering MD&apos;s &apos;Do Not Send IOE&apos; email --></help>
+        <label><!-- Contact Do Not Send IOE --></label>
+        <name>Contact_Do_Not_Send_IOe__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Update Timer --></label>
+        <name>Contact_Update_Timer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Month --></label>
+        <name>Current_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Signature --></label>
+        <name>Custom_Signature__c</name>
+        <picklistValues>
+            <masterLabel>Generic Signature</masterLabel>
+            <translation><!-- Generic Signature --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jason Zhu, MD</masterLabel>
+            <translation><!-- Jason Zhu, MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maya Kotas, MD, PhD</masterLabel>
+            <translation><!-- Maya Kotas, MD, PhD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rick Lanman, MD</masterLabel>
+            <translation><!-- Rick Lanman, MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sam Sun, MD</masterLabel>
+            <translation><!-- Sam Sun, MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shawn Becker, MD</masterLabel>
+            <translation><!-- Shawn Becker, MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tim Schmidt, MD, PhD</masterLabel>
+            <translation><!-- Tim Schmidt, MD, PhD --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Internal Only --></help>
+        <label><!-- DO NOT CONTACT --></label>
+        <name>DO_NOT_CONTACT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Closed --></label>
+        <name>Date_Closed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Reached Provider --></label>
+        <name>Date_Contact_Achieved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date CTA Contact Attempted --></label>
+        <name>Date_Contact_Attempted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Enrolled/Prescribed --></label>
+        <name>Date_Enrolled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Identified --></label>
+        <name>Date_Identified__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Ineligible --></label>
+        <name>Date_Ineligible__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Last Ditch Email Sent --></label>
+        <name>Date_Last_Ditch_Email_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Outreach Email Read --></label>
+        <name>Date_Outreach_Email_Read__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Outreach Email Sent --></label>
+        <name>Date_Outreach_Email_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date PTC Alert Sent --></label>
+        <name>Date_PTC_Alert_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Pharma Permission to Connect --></label>
+        <name>Date_Pharma_Permission_to_Connect__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Informational Letter Sent --></label>
+        <name>Date_Referral_Letter_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Informed --></label>
+        <name>Date_Referred__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Replied to Last Ditch Email --></label>
+        <name>Date_Replied_to_Last_Ditch_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Replied to Outreach Email --></label>
+        <name>Date_Replied_to_Outreach_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Screened --></label>
+        <name>Date_Screened__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Show to Customer --></label>
+        <name>Date_Show_to_Pharma__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of 1st Contact --></label>
+        <name>Date_of_1st_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Failed Screening --></label>
+        <name>Date_of_Failed_Screening__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Last Contact --></label>
+        <name>Date_of_Last_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days to Send Outreach Email --></label>
+        <name>Days_to_Send_Outreach_Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, this overrides &apos;Do Not Contact&apos; = YES setting on the Ordering MD --></help>
+        <label><!-- Do Not Contact Override --></label>
+        <name>Do_Not_Contact_Override__c</name>
+    </fields>
+    <fields>
+        <help><!-- Checked means Do Not Send Initial Outreach Email. --></help>
+        <label><!-- Do not send IOE --></label>
+        <name>Do_not_send_IOE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Documents --></label>
+        <name>Documents__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enrolled/Prescribed? --></label>
+        <name>Enrolled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enrollment Status Notes --></label>
+        <name>Enrollment_Status_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral Status --></label>
+        <name>Enrollment_Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enrolled/Prescribed</masterLabel>
+            <translation><!-- Enrolled/Prescribed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guardant Outreach</masterLabel>
+            <translation><!-- Guardant Outreach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pharma/Site Outreach</masterLabel>
+            <translation><!-- Pharma/Site Outreach --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Referral Sub-Status --></label>
+        <name>Enrollment_Sub_Status__c</name>
+        <picklistValues>
+            <masterLabel>Accepted by Pharma</masterLabel>
+            <translation><!-- Accepted by Pharma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emailed</masterLabel>
+            <translation><!-- Emailed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exhausted Follow-Up</masterLabel>
+            <translation><!-- Exhausted Follow-Up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Future Consideration</masterLabel>
+            <translation><!-- Future Consideration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ineligible</masterLabel>
+            <translation><!-- Ineligible --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Left Message</masterLabel>
+            <translation><!-- Left Message --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Newer Test Results Available</masterLabel>
+            <translation><!-- Newer Test Results Available --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Answer</masterLabel>
+            <translation><!-- No Answer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Response</masterLabel>
+            <translation><!-- No Response --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient Lost to Follow Up</masterLabel>
+            <translation><!-- Patient Lost to Follow Up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient Refusal</masterLabel>
+            <translation><!-- Patient Refusal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending GH Review</masterLabel>
+            <translation><!-- Pending GH Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Pharma</masterLabel>
+            <translation><!-- Pending Pharma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Provider Refusal</masterLabel>
+            <translation><!-- Provider Refusal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready For Outreach</masterLabel>
+            <translation><!-- Ready For Outreach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected by Pharma</masterLabel>
+            <translation><!-- Rejected by Pharma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trial Change</masterLabel>
+            <translation><!-- Trial Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Via Match Program</masterLabel>
+            <translation><!-- Via Match Program --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ExtNote2 --></label>
+        <name>ExtNote2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Email Address derived from the Trial --></help>
+        <label><!-- External Alert Email 1 --></label>
+        <name>External_Alert_Email_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Alert Email 2 --></label>
+        <name>External_Alert_Email_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Alert Email 3 --></label>
+        <name>External_Alert_Email_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Alert Email 4 --></label>
+        <name>External_Alert_Email_4__c</name>
+    </fields>
+    <fields>
+        <help><!-- Internal Only --></help>
+        <label><!-- Final Report Date --></label>
+        <name>Final_Report_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Follow-Up Date --></label>
+        <name>Follow_Up_Reminder__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field records previous versions of field Guardant Notes to resolve discrepancies when that field is overwritten by Portal DB --></help>
+        <label><!-- Guardant Notes 1 --></label>
+        <name>Guardant_Notes_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Guardant Notes 2 --></label>
+        <name>Guardant_Notes_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Guardant Notes --></label>
+        <name>Guardant_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ineligible? --></label>
+        <name>Ineligible__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hidden field to record previous values of Internal Notes --></help>
+        <label><!-- IntNote2 --></label>
+        <name>IntNote2__c</name>
+    </fields>
+    <fields>
+        <label><!-- International Sample --></label>
+        <name>International_Sample__c</name>
+    </fields>
+    <fields>
+        <label><!-- LIMS Patient ID --></label>
+        <name>LIMS_Patient_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- LIMS Project ID --></label>
+        <name>LIMS_Project_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Contact Type --></label>
+        <name>Last_Contact_Type__c</name>
+        <picklistValues>
+            <masterLabel>Call</masterLabel>
+            <translation><!-- Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fax</masterLabel>
+            <translation><!-- Fax --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inbound Call</masterLabel>
+            <translation><!-- Inbound Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outbound Call</masterLabel>
+            <translation><!-- Outbound Call --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Last Ditch Email Sent? --></label>
+        <name>Last_Ditch_Email_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Match API Update --></label>
+        <name>Last_Match_API_Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified by BioPharma --></label>
+        <name>Last_Modified_by_BioPharma__c</name>
+    </fields>
+    <fields>
+        <label><!-- MD Email --></label>
+        <name>MD_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- MD First Name --></label>
+        <name>MD_First_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Who last contacted the MD regarding any match, not necessarily this one. --></help>
+        <label><!-- MD Last Contacted by --></label>
+        <name>MD_Last_Contacted_by__c</name>
+    </fields>
+    <fields>
+        <label><!-- MD Last Name --></label>
+        <name>MD_Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- MD Name --></label>
+        <name>MD_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the date we are next scheduled to follow up with this MD --></help>
+        <label><!-- MD Next Follow-Up --></label>
+        <name>MD_Next_Follow_Up__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date the MD was contacted regarding any match, not just this one. --></help>
+        <label><!-- MD Last Contacted on --></label>
+        <name>MD_last_contacted_on__c</name>
+    </fields>
+    <fields>
+        <label><!-- Match API Error --></label>
+        <name>Match_API_Error__c</name>
+    </fields>
+    <fields>
+        <label><!-- Match Algorithm Version Number --></label>
+        <name>Match_Algorithm_Version_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Internal Only --></help>
+        <label><!-- Match ID --></label>
+        <name>Match_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Match Key --></label>
+        <name>Match_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Match Priority --></label>
+        <name>Match_Priority__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Internal Only --></help>
+        <label><!-- Internal Notes (GH Use Only) --></label>
+        <name>Match_Record_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Match Status --></label>
+        <name>Match_Status__c</name>
+        <picklistValues>
+            <masterLabel>Accepted</masterLabel>
+            <translation><!-- Accepted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Internal Only --></help>
+        <label><!-- NCCN/NCI --></label>
+        <name>NCCN_NCI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes About MD 2 --></label>
+        <name>Notes_About_MD_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Internal Only. Update this field on the &apos;Ordering Physician&apos; record. --></help>
+        <label><!-- Notes About MD (GH Use Only) --></label>
+        <name>Notes_About_MD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ordering MD ID --></label>
+        <name>Ordering_MD_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Looks up to Contact --></help>
+        <label><!-- Ordering Physician Name --></label>
+        <name>Ordering_Physician_Name__c</name>
+        <relationshipLabel><!-- Match Records (Ordering Physician Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Internal Only --></help>
+        <label><!-- Ordering Practice Name --></label>
+        <name>Ordering_Practice_Name__c</name>
+        <relationshipLabel><!-- Match Records for this Practice --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Internal Only --></help>
+        <label><!-- Ordering Practice Referrals POC --></label>
+        <name>Ordering_Practice_Referrals_POC__c</name>
+        <relationshipLabel><!-- Match Records (Ordering Practice Referrals POC) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Ordering Practice Site Type --></label>
+        <name>Ordering_Practice_Site_Type__c</name>
+        <picklistValues>
+            <masterLabel>CRO</masterLabel>
+            <translation><!-- CRO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trial Site</masterLabel>
+            <translation><!-- Trial Site --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Ordering Practice State --></label>
+        <name>Ordering_Practice_State__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of Outreach Activities where Contact Type is not null --></help>
+        <label><!-- Outreach Count --></label>
+        <name>Outreach_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outreach Email Read? --></label>
+        <name>Outreach_Email_Read__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outreach Email Sent? --></label>
+        <name>Outreach_Email_Sent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Internal Only --></help>
+        <label><!-- PI? --></label>
+        <name>PI__c</name>
+    </fields>
+    <fields>
+        <label><!-- PODs --></label>
+        <name>PODs__c</name>
+    </fields>
+    <fields>
+        <label><!-- PTC Connection Preference --></label>
+        <name>PTC_Connection_Preference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient Age --></label>
+        <name>Patient_Age__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient Gender --></label>
+        <name>Patient_Gender__c</name>
+    </fields>
+    <fields>
+        <help><!-- Internal Only --></help>
+        <label><!-- Patient ID --></label>
+        <name>Patient_ID__c</name>
+        <relationshipLabel><!-- Match Records --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Patient Initials --></label>
+        <name>Patient_Initials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient Last Name --></label>
+        <name>Patient_Last_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Internal Only --></help>
+        <label><!-- Patient Report --></label>
+        <name>Patient_Report__c</name>
+    </fields>
+    <fields>
+        <label><!-- Permission to Connect with Pharma? --></label>
+        <name>Permission_to_Connect_with_Pharma__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pharma Company --></label>
+        <name>Pharma_Company__c</name>
+        <relationshipLabel><!-- Match Records --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Pharma PTC Alert Sent? --></label>
+        <name>Pharma_PTC_Alert_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Physician Email --></label>
+        <name>Physician_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Physician phone --></label>
+        <name>Physician_phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Portal Link For MD text --></label>
+        <name>Portal_Link_For_MD_text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Portal Link for MD --></label>
+        <name>Portal_Link_for_MD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Portal Sample ID --></label>
+        <name>Portal_Sample_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Practice Address --></label>
+        <name>Practice_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Practice City --></label>
+        <name>Practice_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Practice State --></label>
+        <name>Practice_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Practice Zip --></label>
+        <name>Practice_Zip__c</name>
+    </fields>
+    <fields>
+        <help><!-- Internal Only --></help>
+        <label><!-- Preferred Contact Method --></label>
+        <name>Preferred_Contact_Method__c</name>
+    </fields>
+    <fields>
+        <label><!-- PtC Contact List --></label>
+        <name>PtC_Contact_List__c</name>
+    </fields>
+    <fields>
+        <label><!-- Qualifying Target Alterations --></label>
+        <name>Qualifying_Target_Alterations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Qualifying Target Gene --></label>
+        <name>Qualifying_Target_Gene__c</name>
+    </fields>
+    <fields>
+        <label><!-- Qualifying Target Genes --></label>
+        <name>Qualifying_Target_Genes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason for Match Rejection --></label>
+        <name>Reason_for_Match_Rejection__c</name>
+    </fields>
+    <fields>
+        <label><!-- Informational Letter Sent? --></label>
+        <name>Referral_Letter_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral Letter Template --></label>
+        <name>Referral_Letter_Template__c</name>
+    </fields>
+    <fields>
+        <help><!-- When checked, a referral letter will be sent to MD --></help>
+        <label><!-- Informed? --></label>
+        <name>Referred__c</name>
+    </fields>
+    <fields>
+        <label><!-- Replied to Last Ditch Email? --></label>
+        <name>Replied_to_Last_Ditch_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Replied to Outreach Email? --></label>
+        <name>Replied_to_Outreach_Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- Report Status of parent Sample --></help>
+        <label><!-- Report Status --></label>
+        <name>Report_Status__c</name>
+        <picklistValues>
+            <masterLabel>Addendum</masterLabel>
+            <translation><!-- Addendum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amended</masterLabel>
+            <translation><!-- Amended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CANCELLED</masterLabel>
+            <translation><!-- CANCELLED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corrected</masterLabel>
+            <translation><!-- Corrected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FINAL</masterLabel>
+            <translation><!-- FINAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PROCESSED</masterLabel>
+            <translation><!-- PROCESSED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reported</masterLabel>
+            <translation><!-- Reported --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Run Process --></label>
+        <name>Run_Process__c</name>
+    </fields>
+    <fields>
+        <help><!-- Internal Only --></help>
+        <label><!-- Sample ID --></label>
+        <name>Sample_ID__c</name>
+        <relationshipLabel><!-- Match Records --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Report Status --></label>
+        <name>Sample_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Screened? --></label>
+        <name>Screened__c</name>
+    </fields>
+    <fields>
+        <label><!-- Script --></label>
+        <name>Script__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send POD No Email --></label>
+        <name>Send_POD_No_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send POD --></label>
+        <name>Send_POD__c</name>
+    </fields>
+    <fields>
+        <help><!-- Internal Only --></help>
+        <label><!-- Show to Customer? --></label>
+        <name>Show_to_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show to Pharma? --></label>
+        <name>Show_to_Pharma__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage Segment --></label>
+        <name>Stage_Segment__c</name>
+        <picklistValues>
+            <masterLabel>Contact Attempted</masterLabel>
+            <translation><!-- Contact Attempted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enrolled</masterLabel>
+            <translation><!-- Enrolled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Permission to Connect with Pharma</masterLabel>
+            <translation><!-- Permission to Connect with Pharma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referred</masterLabel>
+            <translation><!-- Referred --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Show to Customer</masterLabel>
+            <translation><!-- Show to Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spoke to MD</masterLabel>
+            <translation><!-- Spoke to MD --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Starred Notes --></label>
+        <name>Starred_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Starred --></label>
+        <name>Starred__c</name>
+    </fields>
+    <fields>
+        <label><!-- Study Site --></label>
+        <name>Study_Site_Match__c</name>
+        <relationshipLabel><!-- Match Records --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sub-Status Reason --></label>
+        <name>Sub_Status_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Aware</masterLabel>
+            <translation><!-- Aware --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Death</masterLabel>
+            <translation><!-- Death --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Contact</masterLabel>
+            <translation><!-- Do Not Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failed Trial Screening</masterLabel>
+            <translation><!-- Failed Trial Screening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Future Consideration - On Treatment</masterLabel>
+            <translation><!-- Future Consideration - On Treatment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Future Consideration - On Trial</masterLabel>
+            <translation><!-- Future Consideration - On Trial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Future Consideration - Other</masterLabel>
+            <translation><!-- Future Consideration - Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance Coverage</masterLabel>
+            <translation><!-- Insurance Coverage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Left Message</masterLabel>
+            <translation><!-- Left Message --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD Engaged</masterLabel>
+            <translation><!-- MD Engaged --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD Non-Engaged</masterLabel>
+            <translation><!-- MD Non-Engaged --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Match Criteria Changed</masterLabel>
+            <translation><!-- Match Criteria Changed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Answer</masterLabel>
+            <translation><!-- No Answer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Longer Enrolling</masterLabel>
+            <translation><!-- No Longer Enrolling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Treatment</masterLabel>
+            <translation><!-- On Treatment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Trial</masterLabel>
+            <translation><!-- On Trial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Prescription</masterLabel>
+            <translation><!-- Pending Prescription --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prior Treatment</masterLabel>
+            <translation><!-- Prior Treatment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referred to Trial Site</masterLabel>
+            <translation><!-- Referred to Trial Site --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research Objection</masterLabel>
+            <translation><!-- Research Objection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent Email</masterLabel>
+            <translation><!-- Sent Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Too Ill/Hospice</masterLabel>
+            <translation><!-- Too Ill/Hospice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Travel Limitations</masterLabel>
+            <translation><!-- Travel Limitations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Undergoing Screening</masterLabel>
+            <translation><!-- Undergoing Screening --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Today --></label>
+        <name>Today__c</name>
+    </fields>
+    <fields>
+        <label><!-- Treatment Notes --></label>
+        <name>Treatment_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used to enable Webmerge mappings --></help>
+        <label><!-- Trial Casesafe ID --></label>
+        <name>Trial_Casesafe_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trial Code --></label>
+        <name>Trial_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- Internal Only --></help>
+        <label><!-- Trial Contact Opt-Out --></label>
+        <name>Trial_Contact_Opt_Out__c</name>
+    </fields>
+    <fields>
+        <help><!-- Derived from field &apos;Auto-IOE Opt-Out&apos; on Trial record. If checked, matches from this trial never generate automated initial outreach emails. --></help>
+        <label><!-- Trial Do Not Send IOE --></label>
+        <name>Trial_Do_Not_Send_IOE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trial Eligibility Criteria --></label>
+        <name>Trial_Eligibility_Criteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trial Name --></label>
+        <name>Trial_Name__c</name>
+        <relationshipLabel><!-- Match Records --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Trial Sites List --></label>
+        <name>Trial_Sites_List__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trial label --></label>
+        <name>Trial_label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Update --></label>
+        <name>Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- 1st Paragraph --></label>
+        <name>X1st_Paragraph__c</name>
+    </fields>
+    <fields>
+        <label><!-- Yuzu Scheduling Link --></label>
+        <name>YuzuSchedulingLink__c</name>
+    </fields>
+    <fields>
+        <label><!-- 1st Contact Type --></label>
+        <name>x1st_Contact_Type__c</name>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fax</masterLabel>
+            <translation><!-- Fax --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inbound Call</masterLabel>
+            <translation><!-- Inbound Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outbound Call</masterLabel>
+            <translation><!-- Outbound Call --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- BioPharma users must select a valid enrollment sub-status when changing a match record&apos;s enrollment status to &apos;Closed&apos;. --></errorMessage>
+        <name>BioPharma_must_select_closed_substatus</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- &apos;Show to Customer&apos; must be unchecked if Ordering MD&apos;s account is not in US. --></errorMessage>
+        <name>Intl_Show_to_Customer_Unchecked</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Batch_Push --></label>
+        <name>Batch_Push</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Create_Referral_Letter_PDF --></label>
+        <name>Create_Referral_Letter_PDF</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Delete_All_Matches --></label>
+        <name>Delete_All_Matches</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Match_Batch --></label>
+        <name>Match_Batch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Outreach_Activity --></label>
+        <name>Outreach_Activity</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Re_push_to_Portal --></label>
+        <name>Re_push_to_Portal</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Request_Yuzu_URL --></label>
+        <name>Request_Yuzu_URL</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Resync_Record --></label>
+        <name>Resync_Record</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Run_Sync_Checker --></label>
+        <name>Run_Sync_Checker</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Email_with_Attachment --></label>
+        <name>Send_Email_with_Attachment</name>
+    </webLinks>
+</CustomObjectTranslation>

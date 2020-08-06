@@ -1,0 +1,3 @@
+<apex:page standardController="Match_Record__c" docType="html-5.0" title="Webmerge Match Record: {!Match_Record__c.Name}">
+    <webm:WebmergeWizard record="{!Match_Record__c}" />
+</apex:page>

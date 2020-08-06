@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>New design applied</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>bcc_Guardant360_NCCN_West_First_Test_Received</name>
+    <style>none</style>
+    <subject>{!Guardant_360_Sample__c.Name} sample received from {!Contact.Name}</subject>
+    <textOnly>Salesforce link for GH use: {!Guardant_360_Sample__c.Name}
+
+Copy of the email sent to {!Contact.Full_Name__c} shown below:
+
+*****
+
+Dear Dr. {!Contact.Full_Name__c},
+
+Welcome to Guardant Health and thank you for submitting your first Guardant360 order. The patient sample that you submitted has been assigned accession # {!Guardant_360_Sample__c.Name} and is being prepared for sequencing. Expect to receive results within 14 days.
+
+I am your local Medical Science Liaison as well as a certified genetic counselor. Once your first report is finalized, I will email again and make myself available by phone, email or web-conference should you wish to review the result.
+
+Please let me know if you have any questions or requests in the interim.
+
+Sincerely,
+Kimberly Banks, MS, CGC, MBA
+Medical Science Liaison – Western US
+Medical Affairs
+Guardant Health, Inc.
+Cell: 818-239-2708
+Fax: 888-974-4258
+kbanks@guardanthealth.com
+
+Register for our Provider Portal at https://portal.guardanthealth.com/sign_up.
+
+CLIA Certified # 05D2070300 | CAP Accredited # 8765297
+
+To change your notification preferences, please login to your portal account at https://portal.guardanthealth.com.
+
+This message is intended solely for the designated recipient(s). It may contain confidential or proprietary information and may be subject to attorney-client privilege or other confidentiality protections. If you are not a designated recipient you may not review, copy or distribute this message. If you receive this in error, please notify the sender by reply e-mail and delete this message. Thank you.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

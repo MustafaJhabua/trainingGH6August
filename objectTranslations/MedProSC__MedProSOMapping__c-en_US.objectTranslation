@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Text added to button to display to users. For example, an action label of “Contact” would display as “Save As Contact” --></help>
+        <label><!-- Action Label --></label>
+        <name>MedProSC__ActionLabel__c</name>
+    </fields>
+    <fields>
+        <help><!-- The name of the field which will source the CilentID for an in-universe update --></help>
+        <label><!-- ClientID Field API Name --></label>
+        <name>MedProSC__ClientID_Field_API_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, the button for this mapping on the Results Screen is rendered when the referring page is associated with the object in the Target API Name. When unchecked, the button is rendered. Usually you will, set this as all or no active parent mappings. --></help>
+        <label><!-- Contextually Enable Mapping Btn --></label>
+        <name>MedProSC__Contextually_Enable_Mapping_Btn__c</name>
+    </fields>
+    <fields>
+        <help><!-- API Name of the lookup from a child record to a parent record in SF. --></help>
+        <label><!-- Customer Parent API Link --></label>
+        <name>MedProSC__Customer_Parent_API_Link__c</name>
+    </fields>
+    <fields>
+        <help><!-- Prevents the addition of new records into the SF Org from MedPro via the mapping --></help>
+        <label><!-- Do Not Allow Inserts --></label>
+        <name>MedProSC__DoNotAllowInserts__c</name>
+    </fields>
+    <fields>
+        <help><!-- Field name on the SalesForce object which holds the business-unique ID for the record --></help>
+        <label><!-- External ID Field API Name --></label>
+        <name>MedProSC__External_ID_Field_API_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- If this box is checked, the record mapping also has dependent children mappings associated with it. --></help>
+        <label><!-- IsComplexMapping --></label>
+        <name>MedProSC__IsComplexMapping__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sets mapping to be active or inactive.  Inactive mappings get ignored during the process. --></help>
+        <label><!-- Is Active --></label>
+        <name>MedProSC__Is_Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sync – Pull data from MedPro and insert/update in SalesForce
+Search – Fields from an existing SalesForce Object to map to MedPro Search Form when performing a search from an existing SF record --></help>
+        <label><!-- Mapping Source --></label>
+        <name>MedProSC__MappingSource__c</name>
+        <picklistValues>
+            <masterLabel>DRP</masterLabel>
+            <translation><!-- DRP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Search</masterLabel>
+            <translation><!-- Search --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sync</masterLabel>
+            <translation><!-- Sync --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This is the unique key that&apos;s used to identify mappings. This is primarily used to identify different mappings on  the same object. For implementation purposes, this key has to be unique across all mappings. --></help>
+        <label><!-- Mapping Key --></label>
+        <name>MedProSC__Mapping_Key__c</name>
+    </fields>
+    <fields>
+        <help><!-- The associated MedPro Customer for this data mapping --></help>
+        <label><!-- MedPro Customer --></label>
+        <name>MedProSC__MedPro_Customer__c</name>
+        <relationshipLabel><!-- MedPro Data Mappings --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The associated parent mapping for this data mapping.  Only filled out in child mappings. --></help>
+        <label><!-- Parent Data Mapping --></label>
+        <name>MedProSC__ParentDataMapping__c</name>
+        <relationshipLabel><!-- MedPro Dependent Data Mappings --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The column on the SF Object which will link itself to its parent / associated object --></help>
+        <label><!-- Parent Linking Field Name --></label>
+        <name>MedProSC__ParentLinkingField_API_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- This flag will delete existing child records from mappings and prevent more from being created. --></help>
+        <label><!-- Purge Dependent Data --></label>
+        <name>MedProSC__Purge_Dependent_Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- SF Field For In Universe Updates --></label>
+        <name>MedProSC__SF_field_for_In_Universe_Update__c</name>
+    </fields>
+    <fields>
+        <help><!-- The object in SalesForce that MedPro data will be mapped to --></help>
+        <label><!-- Target API Name --></label>
+        <name>MedProSC__SO_API_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the MedPro source representation of the external Id field. --></help>
+        <label><!-- Source External ID Field --></label>
+        <name>MedProSC__Source_External_ID_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- Allow updates of the MedPro in-universe with records that are synced using the search tool. --></help>
+        <label><!-- Sync Updates In-Universe --></label>
+        <name>MedProSC__SyncUpdatesInUniverse__c</name>
+    </fields>
+    <fields>
+        <help><!-- Controls the ordering of sync action buttons on SalesForce Pages. --></help>
+        <label><!-- Sync Option Number --></label>
+        <name>MedProSC__Sync_Option_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the update record label on the Display Results Page. The link on the pop up will only display if this label is defined. --></help>
+        <label><!-- Update Record Label --></label>
+        <name>MedProSC__Update_Record_Label__c</name>
+    </fields>
+    <fields>
+        <help><!-- Only add the VF page (i.e. AddressDetailView), don&apos;t add slashes, namespace, etc. 
+This redirect works when Enable Search for existing records in SF and Disable Multiselect on Results Screen are checked at the Customer level. --></help>
+        <label><!-- VF Redirect after adding an HCP --></label>
+        <name>MedProSC__VF_Redirect_after_adding_an_HCP__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the label for the View link on the Display Results Page. The link on the pop up will only display if this label is defined. --></help>
+        <label><!-- View Label on Display Results Page --></label>
+        <name>MedProSC__View_Label_on_Display_Results_Page__c</name>
+    </fields>
+</CustomObjectTranslation>

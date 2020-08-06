@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>RowCount</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel># of Samples</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_78851745</developerName>
+        <masterLabel>RSD</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Guardant_360_Sample__c$Account__c.Owner.Manager.Name</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Alicia Madison</sourceValue>
+            </sourceValues>
+            <value>Alicia Madison</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Danielle Usilton</sourceValue>
+            </sourceValues>
+            <value>Danielle Usilton</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>James Azzaro</sourceValue>
+            </sourceValues>
+            <value>James Azzaro</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Justin Elders</sourceValue>
+            </sourceValues>
+            <value>Justin Elders</value>
+        </values>
+        <values>
+            <value>Ruben Smith</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Stan Skrzypczak</sourceValue>
+            </sourceValues>
+            <value>Stan Skrzyczpak</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Steven Collora</sourceValue>
+            </sourceValues>
+            <value>Open Territories</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>FORMULA1</column>
+        </chartSummaries>
+        <chartType>LineGrouped</chartType>
+        <enableHoverLabels>true</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>Guardant_360_Sample__c$Date_Received__c</groupingColumn>
+        <legendPosition>Bottom</legendPosition>
+        <location>CHART_TOP</location>
+        <secondaryGroupingColumn>BucketField_78851745</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Large</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <title>Weekly Lung TRF Trend by Region</title>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Guardant_360_Sample__c$Name</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Guardant_360_Sample__c$Account__c.Account_Type__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Clinical Account US</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Guardant_360_Sample__c$Cancer_Class__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Lung</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Guardant_360_Sample__c$Account__c.Account_Type__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsAcross>
+        <dateGranularity>Week</dateGranularity>
+        <field>Guardant_360_Sample__c$Date_Received__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_78851745</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Guardant_360_Sample__c$Account__c.Owner</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Weekly Lung TRF Trend</name>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>Guardant_360_Samples_w_related_Accounts_Contacts__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Guardant_360_Sample__c$Date_Received__c</dateColumn>
+        <endDate>2018-12-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2018-04-01</startDate>
+    </timeFrameFilter>
+</Report>

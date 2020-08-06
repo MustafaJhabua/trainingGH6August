@@ -1,0 +1,5 @@
+<h2>Pharma Sample Received</h2>
+
+<p>Hello! We received sample {!Guardant_360_Sample__c.Name} from {!Guardant_360_Sample__c.Account__c} today.</p>
+
+<p>https://na66.salesforce.com/{!Guardant_360_Sample__c.Id}</p>

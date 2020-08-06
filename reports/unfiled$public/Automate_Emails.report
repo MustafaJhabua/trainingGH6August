@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact.ActivityRelations$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Contact.ActivityRelations$ActivityDate</field>
+    </columns>
+    <columns>
+        <field>Contact$Contact_Role__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Account.Name</field>
+    </columns>
+    <columns>
+        <field>Contact.ActivityRelations$Subject</field>
+    </columns>
+    <columns>
+        <field>Contact$NPI_Number__c</field>
+    </columns>
+    <columns>
+        <field>Contact$EmailBouncedDate</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 AND (2 OR 3) AND 4</booleanFilter>
+        <criteriaItems>
+            <column>Contact.ActivityRelations$CreatedBy</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>danielle krupa</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.ActivityRelations$Account.Owner</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>danielle krupa</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Owner</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Danielle krupa</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.ActivityRelations$Subject</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Email</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Matrix</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Contact$Full_Name__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Automate Emails</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Activities_with_Related_Contacts__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Contact.ActivityRelations$ActivityDate</dateColumn>
+        <interval>INTERVAL_LAST30</interval>
+    </timeFrameFilter>
+</Report>

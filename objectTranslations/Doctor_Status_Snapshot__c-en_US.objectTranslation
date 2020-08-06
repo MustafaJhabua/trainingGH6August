@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Doctor Status Snapshot</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Doctor Status Snapshots</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days since Last Sample --></label>
+        <name>Days_since_Last_Sample__c</name>
+    </fields>
+    <fields>
+        <label><!-- Doctor Name --></label>
+        <name>Doctor_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Sample Date --></label>
+        <name>First_Sample_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Sample Date --></label>
+        <name>Last_Sample_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Samples --></label>
+        <name>Number_of_Samples__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner --></label>
+        <name>Owner__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

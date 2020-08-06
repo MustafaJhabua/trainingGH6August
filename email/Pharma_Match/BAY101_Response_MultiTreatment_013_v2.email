@@ -1,0 +1,19 @@
+Thank you, Dr. {!Match_Record__c.MD_Last_Name__c},
+
+Per your request, I am providing information regarding NTRK gene fusions below and have assigned one of our Clinical Trial Advisor physicians to contact you via phone this week to further discuss treatment options for your patient.
+
+Since NTRK1 fusions are uncommon, we have partnered with Bayer and formed a business and financial relationship to help identify patients and to alert treating physicians about Bayer’s treatment option for patients like {!Match_Record__c.Patient_Initials__c}. Larotrectinib has been approved by the FDA for the treatment of adult and pediatric patients with solid tumors that have a neurotrophic receptor tyrosine kinase (NTRK) gene fusion without a known acquired resistance mutation, who are metastatic, or where surgical resection is likely to result in severe morbidity and have no satisfactory alternative treatments or that have progressed following treatment. More information can be found by <a
+href="http://www.vitrakvi.com">clicking this link</a> or by calling 1-844-634-TRAK.
+
+Would you like us to directly connect you with a Bayer sales consultant?
+
+Sincerely, 
+{!User.Name}, {!User.Degree__c} 
+{!User.Title} 
+Guardant Health 
+
+Guardant Health Match Key: {!Match_Record__c.Match_Key__c} 
+
+Guardant Health partners with the clinical trial sponsor to conduct patient referral activities. 
+
+This message is intended solely for the designated recipient(s). It may contain confidential or proprietary information and may be subject to attorney-client privilege or other confidentiality protections. If you are not a designated recipient you may not review, copy or distribute this message. If you have received this in error, please notify the sender by replying to this e-mail and deleting this message. Thank you. Ref: {!Match_Record__c.Id}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Stark Law Notification</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Stark Law 1</name>
+    <style>none</style>
+    <subject>Physician At Risk || Stark Law Notification</subject>
+    <textOnly>Stark Law One
+
+Dear GH Employee,
+
+This message is to inform you that the person identified below is reaching the Stark Law limit of $407 per year.
+
+
+Person&apos;s name: {!Contact.Full_Name__c}
+Account name: {!Account.Name}
+Total Spend This Year: {!Contact.00N34000005SrXe}
+Account Spend This Year: {!Account.Total_Amount_Spend__c}
+
+Sincerely,
+The Finance Team
+Guardant Health, Inc.
+
+Stark Law Notification 1</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

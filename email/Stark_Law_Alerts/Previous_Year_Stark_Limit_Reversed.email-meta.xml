@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Previous Year Stark Limit Reversed</name>
+    <style>none</style>
+    <subject>{!NPI_Records__c.First_Name__c} {!NPI_Records__c.Last_Name__c} ({!NPI_Records__c.NPI_Number__c}) has exceeded last year&apos;s Stark Limit</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

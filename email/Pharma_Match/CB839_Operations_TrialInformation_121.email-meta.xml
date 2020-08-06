@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This email is sent to ordering physicians with a matched patient who spoke with a CTA or responded to the IOE or Last Ditch email requesting additional information.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>CB839_Operations_TrialInformation_121</name>
+    <style>none</style>
+    <subject>Re:</subject>
+    <textOnly>Thank you, Dr. [Smith].
+
+[Option 1: Response to IOE] Per your request, I have included information about the KEAPSAKE clinical study below as well as assigned one of our Clinical Trial Advisor physicians to contact you via phone this week to further discuss the clinical trial options for your patient who had an NRF2 (NFE2L2) alteration. [Option 1]
+
+[Option 2: Follow-up after phone conversation] It was great speaking with you regarding your patient AM (75 yo female with lung adenocarcinoma) who was found to have an NRF2 (NFE2L2) alteration. To view your patient&apos;s Guardant360 report, click here: https://portal.guardanthealth.com/r/A0141378. Further to our discussion about your patient’s Guardant360 report, you expressed an interest in exploring treatment options based on the NRF2 (NFE2L2) alteration detected. [Option 2]
+
+Since NRF2 (NFE2L2) alterations are uncommon, we have partnered with Calithera Biosciences and formed a business and financial relationship to help identify patients for the KEAPSAKE study and to alert treating physicians about their treatment and trial options for patients like AM. Your patient may be eligible for [X NUMBER] of clinical trials as indicated on the Guardant360 report, including:
+A Study of Telaglenastat (CB-839) With Standard-of-Care Chemoimmunotherapy in 1L KEAP1/NRF2-Mutated, Nonsquamous NSCLC, NCT04265534
+
+KEAPSAKE: Calithera Biosciences
+Calithera’s KEAPSAKE trial is testing investigational agent telaglenastat, a glutaminase inhibitor that blocks glutamine utilization, in patients with NRF2 (NFE2L2) alterations, in combination with SOC chemoimmunotherapy. Details of this trial are in the attached PDF and can be found at www.KEAPSAKEclinicaltrial.com and https://clinicaltrials.gov/ct2/show/NCT04265534 .
+ 
+The closest KEAPSAKE study site is at Duke University in Durham, North Carolina with Dr. Jones; additional study sites are also available around the US.
+
+Would you like me to connect you with Dr. Jones, a nearby PI of the KEAPSAKE study, via email so they may answer additional questions regarding eligibility, inclusion/criteria, etc. for the KEAPSAKE study?
+
+Sincerely,
+Katrina Kesterson, MD
+Guardant Health, Inc.
+On behalf of the Clinical Trial Advisors program
+
+Guardant Health Match Key: CB839-001
+
+
+Guardant Health partners with the clinical trial sponsor to conduct patient referral activities.
+
+This message is intended solely for the designated recipient(s). It may contain confidential or proprietary information and may be subject to attorney-client privilege or other confidentiality protections. If you are not a designated recipient you may not review, copy or distribute this message. If you have received this in error, please reply to this email and delete this message. Thank you. Ref: {!Match_Record__c.Id}
+
+This message is intended solely for the designated recipient(s). It may contain confidential or proprietary information and may be subject to attorney-client privilege or other confidentiality protections. If you are not a designated recipient you may not review, copy or distribute this message. If you have received this in error, please reply to this email and delete this message. Thank you. Ref: {!Match_Record__c.Id}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

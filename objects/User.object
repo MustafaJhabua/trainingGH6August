@@ -1,0 +1,2624 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>DeleteBannerPhotoAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>DeleteBannerPhotoAction</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>DeleteBannerPhotoAction</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EditUserAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EditUserAction</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EditUserAction</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>FreezeUserAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>FreezeUserAction</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>FreezeUserAction</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>LinkToSetupUserDetailAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>LinkToSetupUserDetailAction</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>LinkToSetupUserDetailAction</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ManagePermSetsAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ManagePermSetsAction</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ManagePermSetsAction</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>PasswordUnlockAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>PasswordUnlockAction</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>PasswordUnlockAction</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ResetPasswordAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ResetPasswordAction</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ResetPasswordAction</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>UpdateBannerPhotoAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>UpdateBannerPhotoAction</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>UpdateBannerPhotoAction</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>UserActivationAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>UserActivationAction</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>UserActivationAction</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <externalSharingModel>Private</externalSharingModel>
+    <fieldSets>
+        <fullName>CRMC_PP__CRMC_Action_Grid_Defaults</fullName>
+        <description>Default columns for CRMC Action Grid</description>
+        <displayedFields>
+            <field>Username</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>FirstName</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LastName</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Title</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Phone</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Email</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>CRMC Action Grid Defaults</label>
+    </fieldSets>
+    <fields>
+        <fullName>Approval_Manager__c</fullName>
+        <externalId>false</externalId>
+        <label>Approval Manager</label>
+        <relationshipName>Requestor</relationshipName>
+        <restrictedAdminField>false</restrictedAdminField>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Hierarchy</type>
+    </fields>
+    <fields>
+        <fullName>Apr_Business_Days__c</fullName>
+        <externalId>false</externalId>
+        <label>Apr Business Days</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>April_Actual__c</fullName>
+        <externalId>false</externalId>
+        <label>April-Actual</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>April_Percent__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( April__c &gt;=1, April_Actual__c /  April__c, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>April Percent</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>April__c</fullName>
+        <externalId>false</externalId>
+        <label>April-Quota</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Aug_Business_Days__c</fullName>
+        <externalId>false</externalId>
+        <label>Aug Business Days</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>August_Actual__c</fullName>
+        <externalId>false</externalId>
+        <label>August-Actual</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>August_Percent__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(August__c &gt;=0,  August_Actual__c /  August__c , 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>August Percent</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>August__c</fullName>
+        <externalId>false</externalId>
+        <label>August-Quota</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Dec_Business_Days__c</fullName>
+        <externalId>false</externalId>
+        <label>Dec Business Days</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Dec_Percent__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF (December__c &gt;=1,  December_Actual__c / December__c , 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Dec Percent</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>December_Actual__c</fullName>
+        <externalId>false</externalId>
+        <label>December-Actual</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>December__c</fullName>
+        <externalId>false</externalId>
+        <label>December-Quota</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Degree__c</fullName>
+        <description>Degree(s) obtained. Used for Webmerge</description>
+        <externalId>false</externalId>
+        <label>Degree</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Feb_Business_Days__c</fullName>
+        <externalId>false</externalId>
+        <label>Feb Business Days</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Feb_Percent__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF ( February__c &gt;=1, February_Actual__c  / February__c, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Feb Percent</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>February_Actual__c</fullName>
+        <externalId>false</externalId>
+        <label>February-Actual</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>February__c</fullName>
+        <externalId>false</externalId>
+        <label>February-Quota</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Hire_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Hire Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Initials__c</fullName>
+        <externalId>false</externalId>
+        <formula>LEFT(FirstName, 1)+LEFT(LastName, 1)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Initials</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Jan_Business_Days__c</fullName>
+        <externalId>false</externalId>
+        <label>Jan Business Days</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Jan_Percent__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF ( January__c &gt;=1, January_Actual__c  /  January__c, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Jan Percent</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>January_Actual__c</fullName>
+        <externalId>false</externalId>
+        <label>January-Actual</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>January__c</fullName>
+        <externalId>false</externalId>
+        <label>January-Quota</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>July_Actual__c</fullName>
+        <externalId>false</externalId>
+        <label>July-Actual</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>July_Business_Days__c</fullName>
+        <externalId>false</externalId>
+        <label>July Business Days</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>July_Percent__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF ( July__c &gt;=1, July_Actual__c / July__c, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>July Percent</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>July__c</fullName>
+        <externalId>false</externalId>
+        <label>July-Quota</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>June_Actual__c</fullName>
+        <externalId>false</externalId>
+        <label>June-Actual</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>June_Business_Days__c</fullName>
+        <externalId>false</externalId>
+        <label>June Business Days</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>June_Percent__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( June__c &gt;=1, June_Actual__c /  June__c, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>June Percent</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>June__c</fullName>
+        <externalId>false</externalId>
+        <label>June-Quota</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ManagerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <type>Hierarchy</type>
+    </fields>
+    <fields>
+        <fullName>Mar_Business_Days__c</fullName>
+        <externalId>false</externalId>
+        <label>Mar Business Days</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mar_Percent__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF ( March__c &gt;=1, March_Actual__c /  March__c, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Mar Percent</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>March_Actual__c</fullName>
+        <externalId>false</externalId>
+        <label>March-Actual</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>March__c</fullName>
+        <externalId>false</externalId>
+        <label>March-Quota</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>May_Actual__c</fullName>
+        <externalId>false</externalId>
+        <label>May-Actual</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>May_Business_Days__c</fullName>
+        <externalId>false</externalId>
+        <label>May Business Days</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>May_Percent__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( May__c &gt;=1, May_Actual__c /  May__c, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>May Percent</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>May__c</fullName>
+        <externalId>false</externalId>
+        <label>May-Quota</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Nov_Business_Days__c</fullName>
+        <externalId>false</externalId>
+        <label>Nov Business Days</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Nove_m__c</fullName>
+        <externalId>false</externalId>
+        <label>November-Quota</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>November_Actual__c</fullName>
+        <externalId>false</externalId>
+        <label>November-Actual</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>November_Percent__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF (  Nove_m__c  &gt;=1, November_Actual__c  / Nove_m__c, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>November Percent</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Oct_Business_Days__c</fullName>
+        <externalId>false</externalId>
+        <label>Oct Business Days</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>October_Actual__c</fullName>
+        <externalId>false</externalId>
+        <label>October-Actual</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>October_Percent__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF ( October__c &gt;=1, October_Actual__c / October__c, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>October Percent</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>October__c</fullName>
+        <externalId>false</externalId>
+        <label>October-Quota</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Old_or_New__c</fullName>
+        <defaultValue>&quot;New&quot;</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Old=Start date before 6/1/2017. New=Start date on or after 6/1/2017. Used for CS reports/dashboards.</inlineHelpText>
+        <label>Old or New?</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>true</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>Old</fullName>
+                    <default>false</default>
+                    <label>Old</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Owner__c</fullName>
+        <description>Used for required field for reporting snapshots</description>
+        <externalId>false</externalId>
+        <formula>Manager.Username</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Owner</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Q1_Actual__c</fullName>
+        <externalId>false</externalId>
+        <formula>January_Actual__c +  February_Actual__c +  March_Actual__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Q1-Actual</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Q1_Percent__c</fullName>
+        <externalId>false</externalId>
+        <formula>Q1_Actual__c /  Q1__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Q1 Percent</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Q1__c</fullName>
+        <externalId>false</externalId>
+        <label>Q1-Quota</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Q2_Actual__c</fullName>
+        <externalId>false</externalId>
+        <formula>April_Actual__c +  May_Actual__c +  June_Actual__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Q2 Actual</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Q2_Percent__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF (Q2__c &gt;=1, Q2_Actual__c /  Q2__c, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Q2 Percent</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Q2__c</fullName>
+        <externalId>false</externalId>
+        <label>Q2-Quota</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Q3_Actual__c</fullName>
+        <externalId>false</externalId>
+        <formula>July_Actual__c +  August_Actual__c +  September_Actual__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Q3 Actual</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Q3_Percent__c</fullName>
+        <externalId>false</externalId>
+        <formula>Q3_Actual__c /  Q3__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Q3 Percent</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Q3__c</fullName>
+        <externalId>false</externalId>
+        <label>Q3-Quota</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Q4_Actual__c</fullName>
+        <externalId>false</externalId>
+        <formula>October_Actual__c +  November_Actual__c +  December_Actual__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Q4 Actual</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Q4_Percent__c</fullName>
+        <externalId>false</externalId>
+        <formula>Q4_Actual__c /  Q4__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Q4 Percent</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Q4__c</fullName>
+        <externalId>false</externalId>
+        <label>Q4-Quota</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Region__c</fullName>
+        <externalId>false</externalId>
+        <label>Region</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Atlantic</fullName>
+                    <default>false</default>
+                    <label>Atlantic</label>
+                </value>
+                <value>
+                    <fullName>Great Lakes</fullName>
+                    <default>false</default>
+                    <label>Great Lakes</label>
+                </value>
+                <value>
+                    <fullName>Northeast</fullName>
+                    <default>false</default>
+                    <label>Northeast</label>
+                </value>
+                <value>
+                    <fullName>South</fullName>
+                    <default>false</default>
+                    <label>South</label>
+                </value>
+                <value>
+                    <fullName>Southeast</fullName>
+                    <default>false</default>
+                    <label>Southeast</label>
+                </value>
+                <value>
+                    <fullName>National</fullName>
+                    <default>false</default>
+                    <label>National</label>
+                </value>
+                <value>
+                    <fullName>None</fullName>
+                    <default>false</default>
+                    <label>None</label>
+                </value>
+                <value>
+                    <fullName>International</fullName>
+                    <default>false</default>
+                    <label>International</label>
+                </value>
+                <value>
+                    <fullName>Central</fullName>
+                    <default>false</default>
+                    <label>Central</label>
+                </value>
+                <value>
+                    <fullName>Northwest</fullName>
+                    <default>false</default>
+                    <label>Northwest</label>
+                </value>
+                <value>
+                    <fullName>Southwest</fullName>
+                    <default>false</default>
+                    <label>Southwest</label>
+                </value>
+                <value>
+                    <fullName>Texas</fullName>
+                    <default>false</default>
+                    <label>Texas</label>
+                </value>
+                <value>
+                    <fullName>Mid-Atlantic</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Mid-Atlantic</label>
+                </value>
+                <value>
+                    <fullName>Midsouth</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Midsouth</label>
+                </value>
+                <value>
+                    <fullName>Midwest</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Midwest</label>
+                </value>
+                <value>
+                    <fullName>Rocky Mountain</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Rocky Mountain</label>
+                </value>
+                <value>
+                    <fullName>West</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>West</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Samples_2_months_ago__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>This field is written to by the lookup rollup tool.</description>
+        <externalId>false</externalId>
+        <label>Samples 2 months ago</label>
+        <precision>7</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Samples_3_months_ago__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>This field is written to by the lookup rollup tool</description>
+        <externalId>false</externalId>
+        <label>Samples 3 months ago</label>
+        <precision>7</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Samples_last_month__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>This field is written to by the lookup rollup tool.</description>
+        <externalId>false</externalId>
+        <label>Samples last month</label>
+        <precision>7</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sept_Business_Days__c</fullName>
+        <externalId>false</externalId>
+        <label>Sept Business Days</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sept_Percent__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF ( September__c &gt;=1, September_Actual__c / September__c, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sept Percent</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>September_Actual__c</fullName>
+        <externalId>false</externalId>
+        <label>September-Actual</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>September__c</fullName>
+        <externalId>false</externalId>
+        <label>September-Quota</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Signature1__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Hidden field used to allow multiple signatures on Webmerge documents</inlineHelpText>
+        <label>Signature1</label>
+        <length>60</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Signature2__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Hidden field used to allow multiple signatures on Webmerge documents</inlineHelpText>
+        <label>Signature2</label>
+        <length>60</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Territory__c</fullName>
+        <externalId>false</externalId>
+        <label>Territory</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Region__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Albany</fullName>
+                    <default>false</default>
+                    <label>Albany</label>
+                </value>
+                <value>
+                    <fullName>Arizona N</fullName>
+                    <default>false</default>
+                    <label>Arizona N</label>
+                </value>
+                <value>
+                    <fullName>Atlanta</fullName>
+                    <default>false</default>
+                    <label>Atlanta N</label>
+                </value>
+                <value>
+                    <fullName>Atlanta S</fullName>
+                    <default>false</default>
+                    <label>Atlanta S</label>
+                </value>
+                <value>
+                    <fullName>Austin</fullName>
+                    <default>false</default>
+                    <label>Austin</label>
+                </value>
+                <value>
+                    <fullName>Baltimore</fullName>
+                    <default>false</default>
+                    <label>Baltimore</label>
+                </value>
+                <value>
+                    <fullName>Birmingham</fullName>
+                    <default>false</default>
+                    <label>Birmingham</label>
+                </value>
+                <value>
+                    <fullName>Boroughs</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Boroughs</label>
+                </value>
+                <value>
+                    <fullName>Boston North</fullName>
+                    <default>false</default>
+                    <label>Boston North</label>
+                </value>
+                <value>
+                    <fullName>Boston South</fullName>
+                    <default>false</default>
+                    <label>Boston South</label>
+                </value>
+                <value>
+                    <fullName>Carolinas</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Carolinas</label>
+                </value>
+                <value>
+                    <fullName>Central PA</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Central PA</label>
+                </value>
+                <value>
+                    <fullName>Central Texas</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Central Texas</label>
+                </value>
+                <value>
+                    <fullName>Charleston</fullName>
+                    <default>false</default>
+                    <label>Charleston</label>
+                </value>
+                <value>
+                    <fullName>Charlotte</fullName>
+                    <default>false</default>
+                    <label>Charlotte</label>
+                </value>
+                <value>
+                    <fullName>Chicagoland</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Chicagoland</label>
+                </value>
+                <value>
+                    <fullName>North Chicago</fullName>
+                    <default>false</default>
+                    <label>Chicago N</label>
+                </value>
+                <value>
+                    <fullName>Chicago</fullName>
+                    <default>false</default>
+                    <label>Chicago S</label>
+                </value>
+                <value>
+                    <fullName>Cleveland</fullName>
+                    <default>false</default>
+                    <label>Cleveland</label>
+                </value>
+                <value>
+                    <fullName>Colorado Springs</fullName>
+                    <default>false</default>
+                    <label>Colorado Springs</label>
+                </value>
+                <value>
+                    <fullName>Columbus</fullName>
+                    <default>false</default>
+                    <label>Columbus</label>
+                </value>
+                <value>
+                    <fullName>Connecticut</fullName>
+                    <default>false</default>
+                    <label>Connecticut</label>
+                </value>
+                <value>
+                    <fullName>Dallas</fullName>
+                    <default>false</default>
+                    <label>Dallas</label>
+                </value>
+                <value>
+                    <fullName>East Texas</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Dallas W</label>
+                </value>
+                <value>
+                    <fullName>Denver</fullName>
+                    <default>false</default>
+                    <label>Denver</label>
+                </value>
+                <value>
+                    <fullName>Desert</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Desert</label>
+                </value>
+                <value>
+                    <fullName>Detroit</fullName>
+                    <default>false</default>
+                    <label>Detroit</label>
+                </value>
+                <value>
+                    <fullName>East Bay</fullName>
+                    <default>false</default>
+                    <label>East Bay</label>
+                </value>
+                <value>
+                    <fullName>Florida</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Florida</label>
+                </value>
+                <value>
+                    <fullName>Fort Lauderdale</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Fort Lauderdale</label>
+                </value>
+                <value>
+                    <fullName>Fort Worth</fullName>
+                    <default>false</default>
+                    <label>Fort Worth</label>
+                </value>
+                <value>
+                    <fullName>Fresno</fullName>
+                    <default>false</default>
+                    <label>Fresno</label>
+                </value>
+                <value>
+                    <fullName>GA/North AL</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>GA/North AL</label>
+                </value>
+                <value>
+                    <fullName>Grand Rapids</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Grand Rapids</label>
+                </value>
+                <value>
+                    <fullName>Great Lakes</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Great Lakes</label>
+                </value>
+                <value>
+                    <fullName>Harrisburg</fullName>
+                    <default>false</default>
+                    <label>Harrisburg</label>
+                </value>
+                <value>
+                    <fullName>Hawaii</fullName>
+                    <default>false</default>
+                    <label>Hawaii</label>
+                </value>
+                <value>
+                    <fullName>Houston</fullName>
+                    <default>false</default>
+                    <label>Houston E</label>
+                </value>
+                <value>
+                    <fullName>Houston Med Center</fullName>
+                    <default>false</default>
+                    <label>Houston Med Center</label>
+                </value>
+                <value>
+                    <fullName>Houston W</fullName>
+                    <default>false</default>
+                    <label>Houston W</label>
+                </value>
+                <value>
+                    <fullName>Indianapolis</fullName>
+                    <default>false</default>
+                    <label>Indianapolis</label>
+                </value>
+                <value>
+                    <fullName>International</fullName>
+                    <default>false</default>
+                    <label>International</label>
+                </value>
+                <value>
+                    <fullName>Jacksonville</fullName>
+                    <default>false</default>
+                    <label>Jacksonville</label>
+                </value>
+                <value>
+                    <fullName>Kansas City</fullName>
+                    <default>false</default>
+                    <label>Kansas City</label>
+                </value>
+                <value>
+                    <fullName>LA Central</fullName>
+                    <default>false</default>
+                    <label>LA Central</label>
+                </value>
+                <value>
+                    <fullName>Los Angeles</fullName>
+                    <default>false</default>
+                    <label>LA North</label>
+                </value>
+                <value>
+                    <fullName>Lansing</fullName>
+                    <default>false</default>
+                    <label>Lansing</label>
+                </value>
+                <value>
+                    <fullName>LA South</fullName>
+                    <default>false</default>
+                    <label>LA South</label>
+                </value>
+                <value>
+                    <fullName>Las Vegas</fullName>
+                    <default>false</default>
+                    <label>Las Vegas</label>
+                </value>
+                <value>
+                    <fullName>Lexington</fullName>
+                    <default>false</default>
+                    <label>Lexington</label>
+                </value>
+                <value>
+                    <fullName>Long Island</fullName>
+                    <default>false</default>
+                    <label>Long Island</label>
+                </value>
+                <value>
+                    <fullName>Long Island/NYC</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Long Island/NYC</label>
+                </value>
+                <value>
+                    <fullName>Louisville</fullName>
+                    <default>false</default>
+                    <label>Louisville</label>
+                </value>
+                <value>
+                    <fullName>Manhattan</fullName>
+                    <default>false</default>
+                    <label>Manhattan N</label>
+                </value>
+                <value>
+                    <fullName>Manhattan S</fullName>
+                    <default>false</default>
+                    <label>Manhattan S</label>
+                </value>
+                <value>
+                    <fullName>Memphis</fullName>
+                    <default>false</default>
+                    <label>Memphis</label>
+                </value>
+                <value>
+                    <fullName>Miami</fullName>
+                    <default>false</default>
+                    <label>Miami</label>
+                </value>
+                <value>
+                    <fullName>Mid Atlantic</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Mid Atlantic</label>
+                </value>
+                <value>
+                    <fullName>Milwaukee</fullName>
+                    <default>false</default>
+                    <label>Milwaukee</label>
+                </value>
+                <value>
+                    <fullName>Minneapolis</fullName>
+                    <default>false</default>
+                    <label>Minneapolis</label>
+                </value>
+                <value>
+                    <fullName>Mobile</fullName>
+                    <default>false</default>
+                    <label>Mobile</label>
+                </value>
+                <value>
+                    <fullName>Mountain South</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Mountain South</label>
+                </value>
+                <value>
+                    <fullName>Naples</fullName>
+                    <default>false</default>
+                    <label>Naples</label>
+                </value>
+                <value>
+                    <fullName>Nashville</fullName>
+                    <default>false</default>
+                    <label>Nashville</label>
+                </value>
+                <value>
+                    <fullName>National</fullName>
+                    <default>false</default>
+                    <label>National</label>
+                </value>
+                <value>
+                    <fullName>Newark</fullName>
+                    <default>false</default>
+                    <label>Newark</label>
+                </value>
+                <value>
+                    <fullName>New Brunswick</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>New Brunswick</label>
+                </value>
+                <value>
+                    <fullName>New England</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>New England</label>
+                </value>
+                <value>
+                    <fullName>New Haven</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>New Haven</label>
+                </value>
+                <value>
+                    <fullName>New Orleans</fullName>
+                    <default>false</default>
+                    <label>New Orleans</label>
+                </value>
+                <value>
+                    <fullName>New York City</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>New York City</label>
+                </value>
+                <value>
+                    <fullName>None</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>None</label>
+                </value>
+                <value>
+                    <fullName>Nor Cal</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Nor Cal</label>
+                </value>
+                <value>
+                    <fullName>Northeast</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Northeast</label>
+                </value>
+                <value>
+                    <fullName>Northern VA</fullName>
+                    <default>false</default>
+                    <label>Northern VA</label>
+                </value>
+                <value>
+                    <fullName>North Florida</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>North Florida</label>
+                </value>
+                <value>
+                    <fullName>North Texas</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>North Texas</label>
+                </value>
+                <value>
+                    <fullName>NY/NJ/CT</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>NY/NJ/CT</label>
+                </value>
+                <value>
+                    <fullName>Ohio Valley</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Ohio Valley</label>
+                </value>
+                <value>
+                    <fullName>Oklahoma</fullName>
+                    <default>false</default>
+                    <label>Oklahoma</label>
+                </value>
+                <value>
+                    <fullName>Omaha</fullName>
+                    <default>false</default>
+                    <label>Omaha</label>
+                </value>
+                <value>
+                    <fullName>OPEN Central</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>OPEN Central</label>
+                </value>
+                <value>
+                    <fullName>OPEN Mid-Atlantic</fullName>
+                    <default>false</default>
+                    <label>OPEN Mid-Atlantic</label>
+                </value>
+                <value>
+                    <fullName>OPEN Midwest</fullName>
+                    <default>false</default>
+                    <label>OPEN Midwest</label>
+                </value>
+                <value>
+                    <fullName>OPEN Northeast</fullName>
+                    <default>false</default>
+                    <label>OPEN Northeast</label>
+                </value>
+                <value>
+                    <fullName>OPEN Southeast</fullName>
+                    <default>false</default>
+                    <label>OPEN Southeast</label>
+                </value>
+                <value>
+                    <fullName>OPEN Midsouth</fullName>
+                    <default>false</default>
+                    <label>OPEN Southwest</label>
+                </value>
+                <value>
+                    <fullName>OPEN West</fullName>
+                    <default>false</default>
+                    <label>OPEN West</label>
+                </value>
+                <value>
+                    <fullName>Orange County</fullName>
+                    <default>false</default>
+                    <label>Orange County</label>
+                </value>
+                <value>
+                    <fullName>Portland</fullName>
+                    <default>false</default>
+                    <label>Oregon</label>
+                </value>
+                <value>
+                    <fullName>Orlando</fullName>
+                    <default>false</default>
+                    <label>Orlando</label>
+                </value>
+                <value>
+                    <fullName>Pac NW</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Pac NW</label>
+                </value>
+                <value>
+                    <fullName>Palm Beach</fullName>
+                    <default>false</default>
+                    <label>Palm Beach</label>
+                </value>
+                <value>
+                    <fullName>Philadelphia</fullName>
+                    <default>false</default>
+                    <label>Philadelphia</label>
+                </value>
+                <value>
+                    <fullName>Philly</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Philly</label>
+                </value>
+                <value>
+                    <fullName>Phoenix</fullName>
+                    <default>false</default>
+                    <label>Phoenix</label>
+                </value>
+                <value>
+                    <fullName>Pittsburgh</fullName>
+                    <default>false</default>
+                    <label>Pittsburgh</label>
+                </value>
+                <value>
+                    <fullName>Plains</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Plains</label>
+                </value>
+                <value>
+                    <fullName>Raleigh</fullName>
+                    <default>false</default>
+                    <label>Raleigh</label>
+                </value>
+                <value>
+                    <fullName>Richmond</fullName>
+                    <default>false</default>
+                    <label>Richmond</label>
+                </value>
+                <value>
+                    <fullName>Riverside</fullName>
+                    <default>false</default>
+                    <label>Riverside</label>
+                </value>
+                <value>
+                    <fullName>Sacramento</fullName>
+                    <default>false</default>
+                    <label>Sacramento</label>
+                </value>
+                <value>
+                    <fullName>Salt Lake City</fullName>
+                    <default>false</default>
+                    <label>Salt Lake City</label>
+                </value>
+                <value>
+                    <fullName>San Antonio</fullName>
+                    <default>false</default>
+                    <label>San Antonio</label>
+                </value>
+                <value>
+                    <fullName>San Diego</fullName>
+                    <default>false</default>
+                    <label>San Diego</label>
+                </value>
+                <value>
+                    <fullName>San Francisco</fullName>
+                    <default>false</default>
+                    <label>San Francisco</label>
+                </value>
+                <value>
+                    <fullName>San Jose</fullName>
+                    <default>false</default>
+                    <label>San Jose</label>
+                </value>
+                <value>
+                    <fullName>Seattle</fullName>
+                    <default>false</default>
+                    <label>Seattle</label>
+                </value>
+                <value>
+                    <fullName>SE Texas</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>SE Texas</label>
+                </value>
+                <value>
+                    <fullName>So Cal</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>So Cal</label>
+                </value>
+                <value>
+                    <fullName>South</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>South</label>
+                </value>
+                <value>
+                    <fullName>South Florida</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>South Florida</label>
+                </value>
+                <value>
+                    <fullName>South Texas</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>South Texas</label>
+                </value>
+                <value>
+                    <fullName>Springfield</fullName>
+                    <default>false</default>
+                    <label>Springfield</label>
+                </value>
+                <value>
+                    <fullName>St Louis</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>St Louis</label>
+                </value>
+                <value>
+                    <fullName>St Louis N</fullName>
+                    <default>false</default>
+                    <label>St Louis N</label>
+                </value>
+                <value>
+                    <fullName>St Louis S</fullName>
+                    <default>false</default>
+                    <label>St Louis S</label>
+                </value>
+                <value>
+                    <fullName>SW Texas</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>SW Texas</label>
+                </value>
+                <value>
+                    <fullName>Tacoma</fullName>
+                    <default>false</default>
+                    <label>Tacoma</label>
+                </value>
+                <value>
+                    <fullName>Tampa</fullName>
+                    <default>false</default>
+                    <label>Tampa</label>
+                </value>
+                <value>
+                    <fullName>TN/MS</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Tenn/Mississippi</label>
+                </value>
+                <value>
+                    <fullName>Trenton</fullName>
+                    <default>false</default>
+                    <label>Trenton</label>
+                </value>
+                <value>
+                    <fullName>Tulsa</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Tulsa</label>
+                </value>
+                <value>
+                    <fullName>Upper West</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Upper West</label>
+                </value>
+                <value>
+                    <fullName>Upstate NY</fullName>
+                    <default>false</default>
+                    <label>Upstate NY</label>
+                </value>
+                <value>
+                    <fullName>Washington DC</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Washington DC</label>
+                </value>
+                <value>
+                    <fullName>West</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>West</label>
+                </value>
+                <value>
+                    <fullName>West Lakes</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>West Lakes</label>
+                </value>
+                <value>
+                    <fullName>West Virginia</fullName>
+                    <default>false</default>
+                    <label>West Virginia</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Southwest</controllingFieldValue>
+                <valueName>Arizona N</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Southwest</controllingFieldValue>
+                <valueName>Colorado Springs</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Southwest</controllingFieldValue>
+                <valueName>Denver</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Southwest</controllingFieldValue>
+                <valueName>Hawaii</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Southwest</controllingFieldValue>
+                <valueName>LA Central</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Southwest</controllingFieldValue>
+                <valueName>Los Angeles</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Southwest</controllingFieldValue>
+                <valueName>LA South</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Southwest</controllingFieldValue>
+                <valueName>Las Vegas</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Southwest</controllingFieldValue>
+                <valueName>Orange County</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Southwest</controllingFieldValue>
+                <valueName>Phoenix</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Southwest</controllingFieldValue>
+                <valueName>Riverside</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Southwest</controllingFieldValue>
+                <valueName>San Diego</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Northeast</controllingFieldValue>
+                <valueName>Albany</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Northeast</controllingFieldValue>
+                <valueName>Boston North</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Northeast</controllingFieldValue>
+                <valueName>Boston South</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Northeast</controllingFieldValue>
+                <valueName>Connecticut</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Northeast</controllingFieldValue>
+                <valueName>Long Island</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Northeast</controllingFieldValue>
+                <valueName>Manhattan</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Northeast</controllingFieldValue>
+                <valueName>Manhattan S</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Northeast</controllingFieldValue>
+                <valueName>Newark</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Northeast</controllingFieldValue>
+                <valueName>Upstate NY</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Atlantic</controllingFieldValue>
+                <valueName>Baltimore</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Atlantic</controllingFieldValue>
+                <valueName>Harrisburg</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Atlantic</controllingFieldValue>
+                <valueName>Northern VA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Atlantic</controllingFieldValue>
+                <valueName>Philadelphia</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Atlantic</controllingFieldValue>
+                <valueName>Pittsburgh</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Atlantic</controllingFieldValue>
+                <valueName>Richmond</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Atlantic</controllingFieldValue>
+                <valueName>Trenton</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Atlantic</controllingFieldValue>
+                <valueName>West Virginia</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Southeast</controllingFieldValue>
+                <valueName>Jacksonville</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Southeast</controllingFieldValue>
+                <valueName>Miami</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Southeast</controllingFieldValue>
+                <valueName>Mobile</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Southeast</controllingFieldValue>
+                <valueName>Naples</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Southeast</controllingFieldValue>
+                <valueName>Orlando</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Southeast</controllingFieldValue>
+                <valueName>Palm Beach</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Southeast</controllingFieldValue>
+                <valueName>Tampa</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Great Lakes</controllingFieldValue>
+                <valueName>North Chicago</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Great Lakes</controllingFieldValue>
+                <valueName>Chicago</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Great Lakes</controllingFieldValue>
+                <valueName>Cleveland</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Great Lakes</controllingFieldValue>
+                <valueName>Columbus</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Great Lakes</controllingFieldValue>
+                <valueName>Detroit</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Great Lakes</controllingFieldValue>
+                <valueName>Indianapolis</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Great Lakes</controllingFieldValue>
+                <valueName>Lansing</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Great Lakes</controllingFieldValue>
+                <valueName>Milwaukee</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Great Lakes</controllingFieldValue>
+                <valueName>Springfield</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>South</controllingFieldValue>
+                <valueName>Atlanta</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>South</controllingFieldValue>
+                <valueName>Atlanta S</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>South</controllingFieldValue>
+                <valueName>Birmingham</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>South</controllingFieldValue>
+                <valueName>Charleston</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>South</controllingFieldValue>
+                <valueName>Charlotte</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>South</controllingFieldValue>
+                <valueName>Lexington</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>South</controllingFieldValue>
+                <valueName>Louisville</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>South</controllingFieldValue>
+                <valueName>Nashville</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>South</controllingFieldValue>
+                <valueName>Raleigh</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>International</controllingFieldValue>
+                <valueName>International</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Northwest</controllingFieldValue>
+                <valueName>East Bay</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Northwest</controllingFieldValue>
+                <valueName>Fresno</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Northwest</controllingFieldValue>
+                <valueName>Portland</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Northwest</controllingFieldValue>
+                <valueName>Sacramento</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Northwest</controllingFieldValue>
+                <valueName>Salt Lake City</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Northwest</controllingFieldValue>
+                <valueName>San Francisco</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Northwest</controllingFieldValue>
+                <valueName>San Jose</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Northwest</controllingFieldValue>
+                <valueName>Seattle</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Northwest</controllingFieldValue>
+                <valueName>Tacoma</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Central</controllingFieldValue>
+                <valueName>Kansas City</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Central</controllingFieldValue>
+                <valueName>Memphis</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Central</controllingFieldValue>
+                <valueName>Minneapolis</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Central</controllingFieldValue>
+                <valueName>Oklahoma</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Central</controllingFieldValue>
+                <valueName>Omaha</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Central</controllingFieldValue>
+                <valueName>St Louis N</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Central</controllingFieldValue>
+                <valueName>St Louis S</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Texas</controllingFieldValue>
+                <valueName>Austin</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Texas</controllingFieldValue>
+                <valueName>Dallas</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Texas</controllingFieldValue>
+                <valueName>Fort Worth</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Texas</controllingFieldValue>
+                <valueName>Houston</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Texas</controllingFieldValue>
+                <valueName>Houston W</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Texas</controllingFieldValue>
+                <valueName>New Orleans</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Texas</controllingFieldValue>
+                <valueName>San Antonio</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>National</controllingFieldValue>
+                <valueName>National</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>User_Status__c</fullName>
+        <description>NS:08/28/18 This field provide information about active and inactive user.</description>
+        <externalId>false</externalId>
+        <formula>IF( IsActive , &quot;Active&quot;, &quot;Inactive&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>User Status</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>X20__c</fullName>
+        <externalId>false</externalId>
+        <label>2017-Quota</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>copado__API_URL__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>$Api.Partner_Server_URL_290</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>API_URL</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>copado__Hide_Copado_feedback__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The visibility of the message asking users to rate &amp; feedback Copado on the AppExchange is controlled here.</inlineHelpText>
+        <label>Hide Copado feedback</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>copado__Show_Copado_Tips__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Show Copado Tips</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>copado__Work_Manager_Panels__c</fullName>
+        <deprecated>false</deprecated>
+        <description>JSON containing current user panels on the Backlog</description>
+        <externalId>false</externalId>
+        <label>Work Manager Panels</label>
+        <length>131072</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>dsfs__DSProSFUsername__c</fullName>
+        <deprecated>false</deprecated>
+        <description>DocuSign username</description>
+        <externalId>false</externalId>
+        <label>DSProSFUsername</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>pi__Can_View_Not_Assigned_Prospects__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Can View Not Assigned Prospects</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>pi__Pardot_Api_Key__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Pardot Api Key</label>
+        <length>100</length>
+        <maskChar>X</maskChar>
+        <maskType>all</maskType>
+        <required>false</required>
+        <type>EncryptedText</type>
+    </fields>
+    <fields>
+        <fullName>pi__Pardot_Api_Version__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Pardot Api Version</label>
+        <length>1</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>pi__Pardot_User_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Pardot User Id</label>
+        <length>100</length>
+        <maskChar>X</maskChar>
+        <maskType>all</maskType>
+        <required>false</required>
+        <type>EncryptedText</type>
+    </fields>
+    <fields>
+        <fullName>pi__Pardot_User_Key__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Pardot User Key</label>
+        <length>100</length>
+        <maskChar>X</maskChar>
+        <maskType>all</maskType>
+        <required>false</required>
+        <type>EncryptedText</type>
+    </fields>
+    <fields>
+        <fullName>pi__Pardot_User_Role__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Pardot User Role</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>talkdesk__IsLicensed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Is used to display if a user is a Talkdesk licensed user.</description>
+        <externalId>false</externalId>
+        <label>Talkdesk User</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>talkdesk__talkdeskUserId__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <externalId>true</externalId>
+        <label>Talkdesk User ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <listViews>
+        <fullName>AMEA_Users</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.EMAIL</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>CORE.USERS.TITLE</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>MANAGER</columns>
+        <columns>Region__c</columns>
+        <columns>CORE.USERS.ADDRESS_COUNTRY</columns>
+        <columns>TIMEZONE</columns>
+        <columns>CORE.USERS.DIVISION</columns>
+        <columns>CORE.USERS.DEPARTMENT</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USER_ROLE.NAME</field>
+            <operation>contains</operation>
+            <value>AMEA,CEO-JV</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>AMEA Users</label>
+        <language>en_US</language>
+        <sharedTo>
+            <role>System_Administrator</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>ActiveUsers</fullName>
+        <columns>CORE.USERS.FIRST_NAME</columns>
+        <columns>CORE.USERS.LAST_NAME</columns>
+        <columns>CORE.USERS.EMAIL</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>CORE.USERS.TITLE</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USERS.COMPANY_NAME</columns>
+        <columns>CORE.USERS.DEPARTMENT</columns>
+        <columns>CORE.USERS.DIVISION</columns>
+        <columns>MANAGER</columns>
+        <columns>IS_FROZEN</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>User_Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Active Users</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>AdminUsers</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.EMAIL</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>equals</operation>
+            <value>System Administrator</value>
+        </filters>
+        <label>Admin Users</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>AllUsers</fullName>
+        <columns>CORE.USERS.FIRST_NAME</columns>
+        <columns>CORE.USERS.LAST_NAME</columns>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.EMAIL</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>IS_FROZEN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.NAME</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Users</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>All_Sales_users</fullName>
+        <columns>CORE.USERS.FIRST_NAME</columns>
+        <columns>CORE.USERS.LAST_NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>IS_FROZEN</columns>
+        <columns>CORE.USERS.ADDRESS_CITY</columns>
+        <columns>CORE.USERS.ADDRESS_STATE</columns>
+        <columns>CORE.USERS.TITLE</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>Region__c</columns>
+        <columns>Territory__c</columns>
+        <columns>MANAGER</columns>
+        <columns>CORE.USERS.DEPARTMENT</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>contains</operation>
+            <value>Sales</value>
+        </filters>
+        <label>All Sales users</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Full_License_Active_users</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>IS_FROZEN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.TITLE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <columns>CORE.USERS.COMPANY_NAME</columns>
+        <columns>CORE.USERS.DIVISION</columns>
+        <columns>CORE.USERS.DEPARTMENT</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CORE.PROFILE.USERTYPE</field>
+            <operation>equals</operation>
+            <value>S</value>
+        </filters>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>notContain</operation>
+            <value>Force,Chatter,Analytics,B2BMA</value>
+        </filters>
+        <label>Full License Active users</label>
+        <language>en_US</language>
+        <sharedTo>
+            <role>System_Administrator</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>ISR_Users_1</fullName>
+        <columns>CORE.USERS.FIRST_NAME</columns>
+        <columns>CORE.USERS.LAST_NAME</columns>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.TITLE</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>IS_FROZEN</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>contains</operation>
+            <value>ISR</value>
+        </filters>
+        <label>ISR Users</label>
+        <language>en_US</language>
+        <sharedTo>
+            <role>System_Administrator</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>dsfs__DocuSignActiveUsers</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>dsfs__DSProSFUsername__c</field>
+            <operation>notEqual</operation>
+            <value>null</value>
+        </filters>
+        <filters>
+            <field>dsfs__DSProSFUsername__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>DocuSign Active Users</label>
+    </listViews>
+    <listViews>
+        <fullName>dsfs__DocuSignInactiveUsers</fullName>
+        <booleanFilter>(1 or 2) and 3</booleanFilter>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>dsfs__DSProSFUsername__c</field>
+            <operation>equals</operation>
+            <value>null</value>
+        </filters>
+        <filters>
+            <field>dsfs__DSProSFUsername__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>DocuSign Inactive Users</label>
+    </listViews>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>FULL_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CORE.USER_ROLE.NAME</lookupDialogsAdditionalFields>
+        <lookupFilterFields>FULL_NAME</lookupFilterFields>
+        <lookupPhoneDialogsAdditionalFields>FULL_NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USER_ROLE.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.PHONE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.EXTENSION</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.CELL</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>FULL_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.TITLE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.PHONE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.EMAIL</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>Region_and_Territory_cannot_be_blank</fullName>
+        <active>true</active>
+        <description>NS:06/22/18--Region and Territory fields should not be blank. This rule applies to all Sales profiles.</description>
+        <errorConditionFormula>AND(    ISBLANK( TEXT( Region__c )) 
+, ISBLANK (TEXT( Territory__c ) ),
+ $Profile.Name =&quot;GHI Sales International User&quot;,
+ $Profile.Name =&quot;GHI Sales Management&quot;,
+ $Profile.Name =&quot;GHI Sales Standard User&quot;
+ 
+ 
+)</errorConditionFormula>
+        <errorDisplayField>Region__c</errorDisplayField>
+        <errorMessage>Please enter the values for Region and Territory.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>SmartvCard__Generate_vCard</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Generate vCard</masterLabel>
+        <openType>sidebar</openType>
+        <page>SmartvCard__optuser</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>SmartvCard__Generate_vCard_3_0</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>Generate vCard 3.0</masterLabel>
+        <openType>newWindow</openType>
+        <page>SmartvCard__downloaduser3</page>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+    </webLinks>
+</CustomObject>

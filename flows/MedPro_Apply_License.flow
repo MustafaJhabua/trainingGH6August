@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <name>Update_contact_license_relationship</name>
+        <label>Update contact-license relationship</label>
+        <locationX>437</locationX>
+        <locationY>291</locationY>
+        <assignmentItems>
+            <assignToReference>updateContact.MedPro_State_License__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>CurrentLicense.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Contact_with_License</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Do_licenses_exist</name>
+        <label>Do licenses exist?</label>
+        <locationX>190</locationX>
+        <locationY>106</locationY>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>Yes_there_are_licenses</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>CurrentLicense</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_contact_license_relationship</targetReference>
+            </connector>
+            <label>Yes, there are licenses</label>
+        </rules>
+    </decisions>
+    <interviewLabel>MedPro - Apply License {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>MedPro - Apply License</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_my_contact_record</name>
+        <label>Get my contact record</label>
+        <locationX>51</locationX>
+        <locationY>10</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_my_licenses_from_my_related_NPI</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>ContactID</elementReference>
+            </value>
+        </filters>
+        <object>Contact</object>
+        <outputReference>updateContact</outputReference>
+        <queriedFields>Actual_NPI__c</queriedFields>
+        <queriedFields>MedPro_State_License__c</queriedFields>
+        <queriedFields>MailingState</queriedFields>
+        <queriedFields>Id</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_my_licenses_from_my_related_NPI</name>
+        <label>Get my licenses from my related NPI</label>
+        <locationX>51</locationX>
+        <locationY>106</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Do_licenses_exist</targetReference>
+        </connector>
+        <filters>
+            <field>License_state__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>updateContact.MailingState</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>NPI_Record__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>updateContact.Actual_NPI__c</elementReference>
+            </value>
+        </filters>
+        <object>MedPro_State_Licenses__c</object>
+        <outputReference>CurrentLicense</outputReference>
+        <queriedFields>Expiration_date__c</queriedFields>
+        <queriedFields>License_eligiblility__c</queriedFields>
+        <queriedFields>medproid__c</queriedFields>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Overall_license_eligibility__c</queriedFields>
+        <sortField>medproid__c</sortField>
+        <sortOrder>Asc</sortOrder>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Contact_with_License</name>
+        <label>Update Contact with License</label>
+        <locationX>576</locationX>
+        <locationY>291</locationY>
+        <inputReference>updateContact</inputReference>
+    </recordUpdates>
+    <startElementReference>Get_my_contact_record</startElementReference>
+    <status>Active</status>
+    <textTemplates>
+        <name>EmailText</name>
+        <text>ContactsID: {!ContactID}
+
+LIcenseID: {!LicenseID}
+
+Contact MailingState: {!updateContact.MailingState}
+Contact Actual NPI: {!updateContact.Actual_NPI__c}</text>
+    </textTemplates>
+    <variables>
+        <name>ContactID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>CurrentLicense</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>MedPro_State_Licenses__c</objectType>
+    </variables>
+    <variables>
+        <name>LicenseID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>SLNID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>stateLicenses</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>MedPro_State_Licenses__c</objectType>
+    </variables>
+    <variables>
+        <name>updateContact</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Contact</objectType>
+    </variables>
+</Flow>

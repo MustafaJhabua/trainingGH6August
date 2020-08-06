@@ -1,0 +1,43 @@
+<apex:page standardController="MedProSC__MedProPass2DisplayDetailConfig__c" showHeader="true" sidebar="true" extensions="MedProSC.MedProEditMedProDisplayDetailConfig_Ctrl">
+	<apex:stylesheet value="{!$Resource.MedProSC__MedProTwoPassDisplayDetail_resources}" />
+	<apex:form >
+		<apex:pageBlock title="MedPro Detail Page Element Edit">
+			<apex:pageMessages />
+
+			<apex:pageBlockButtons location="top" >
+				<apex:commandButton value="Save" action="{!save}" />
+				<apex:commandButton value="Cancel" action="{!cancel}" />
+			</apex:pageBlockButtons>
+
+			<apex:pageBlockSection title="Information" collapsible="False" columns="1">
+				<apex:inputField label="Detail Page Configuration" value="{!MedProSC__MedProPass2DisplayDetailConfig__c.MedProSC__MedPro_Pass_2_Display_Head_Config__c}" style="width: 250px" />
+
+				<apex:inputField value="{!MedProSC__MedProPass2DisplayDetailConfig__c.Name}" style="width: 250px" />
+
+				<apex:selectList multiselect="false" size="1" label="Source Field Name" value="{!MedProSC__MedProPass2DisplayDetailConfig__c.MedProSC__MedProFieldName__c}" style="width: 250px" required="true">
+					<apex:selectOptions value="{!sourceFieldNameOptions}" />
+				</apex:selectList>
+
+				<apex:inputField value="{!MedProSC__MedProPass2DisplayDetailConfig__c.MedProSC__Ordinal_Position__c}" style="width: 250px" />
+				<apex:inputField value="{!MedProSC__MedProPass2DisplayDetailConfig__c.MedProSC__Is_Placeholder__c}" style="width: 250px" />
+				<apex:inputField value="{!MedProSC__MedProPass2DisplayDetailConfig__c.MedProSC__IsVisible__c}" style="width: 250px" />
+				<apex:inputField value="{!MedProSC__MedProPass2DisplayDetailConfig__c.MedProSC__Is_Lightning__c}" style="width: 250px" />
+			</apex:pageBlockSection>
+			<apex:outputPanel > 
+				<div class="pbHeader">
+					<table class="medproTable">
+						<tbody>
+							<tr>
+								<td class="pbTitle"><apex:include pageName="MedProSC__MedProStandardCopyrightFooter" /></td>                     
+								<td class="pbButton">
+									<apex:commandButton value="Save" action="{!save}" />
+									<apex:commandButton value="Cancel" action="{!cancel}" />
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</apex:outputPanel>
+		</apex:pageBlock>
+	</apex:form>
+</apex:page>

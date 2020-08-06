@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>&quot;The following person has requested a G360 Kit, but their account is not “Qualified” in SFDC&quot;</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Email to Client Services Dept</name>
+    <style>none</style>
+    <subject>New Guardant360 Kit Request</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

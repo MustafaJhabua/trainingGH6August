@@ -1,0 +1,5 @@
+This is to inform you that a second tube had to be retested for sample {!Case.Guardant_360_Sample__c} for Dr. {!Case.Contact} at {!Case.Account}.
+
+Please check the sample aging for {!Case.Guardant_360_Sample__c}. If sample aging is greater than 3 days, Client Services has notified the customer of the delay. If sample aging is less than 3 days, there is a good chance that the report will be released around day 7, and Client Services will be monitoring the sample for any other potential delays. This may delay report release by 5-7 days from today.  
+
+This is meant to bring awareness to you whenever a sample needs to be retested.  Please do not contact Client Services at this time as they will not have further information.

@@ -1,0 +1,677 @@
+<apex:page controller="MedProSC.MedProOnePassDisplayResults_Controller" tabStyle="SearchMedPro__tab" applyBodyTag="false" action="{!commitLogs}">
+	<div id="spinner" class="spinner" style="display:none;">
+		<br/>
+		<apex:image id="poweredByMedProID2" value="{!$Resource.MedProSC__MedProIDPill2}" width="104" height="104"/>
+		<p></p>
+		<apex:image id="img-spinner" url="{!$Resource.MedProSC__progressBar}" width="32" height="32" styleClass="loading" />
+		<br/>
+		<p><b>Processing data please wait ...</b></p>
+	</div>
+
+	<style>
+		.spinner {
+			border: 2px solid black;
+			background: rgba(230, 230, 230, 1.0);
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			margin-left: -125px; /* half width of the spinner gif */
+			margin-top: -82px; /* half height of the spinner gif */
+			text-align:center;
+			z-index:1234;
+			overflow: hidden;
+			width: 210px; /* width of the spinner gif */
+			height: 210px; /*hight of the spinner gif +2px to fix IE8 issue */
+			padding: {5px 5px 2px 25px};
+		}
+
+		.ui-button-icon-only .ui-icon {
+			margin-left: -8px !important;
+			margin-top: -8px !important;
+		}
+		.loading {
+		    background: transparent;
+		    border: transparent;
+		    -webkit-animation:spin 2s linear infinite;
+		    animation:spin 2s linear infinite;
+		}
+		@-webkit-keyframes spin { 100% {
+		    -webkit-transform:rotate(360deg);
+		    }
+		}
+		@keyframes spin { 100% {
+		    -webkit-transform:rotate(360deg);
+		    transform:rotate(360deg);
+		    }
+		}
+	</style>
+
+	<apex:includeScript value="{!URLFOR($Resource.MedProSC__jQuery_ui_1_10_4, '/jquery-ui-1.10.4.custom/js/jquery-1.10.2.js')}" />
+	<apex:includeScript value="{!URLFOR($Resource.MedProSC__jQuery_ui_1_10_4, '/jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.min.js')}" />
+	<apex:stylesheet value="{!$Resource.MedProSC__MedProTwoPassDisplayDetail_resources}"/>
+
+	<apex:form id="searchResultsForm">
+		<script>
+			Visualforce.remoting.timeout = 120000;//Set timeout at page level
+			var selectedRows = new Array();
+			var pipedMedProIDsToSend = '';
+			var cachedSOMappingID = '';
+
+			var cancelAction = false;
+
+			var jq = $.noConflict();
+
+			var medPro = new (function($){
+				$(function(){
+					//  console.log('ResultsPage: ' + $.fn.jquery);
+					//   console.log($.fn);
+
+                    // $('.helpButton').each(function()
+                    // {
+                    //     $(this).data('dialog', $(this).next('.helpDialog').dialog
+                    //     ({
+                    //         autoOpen: false,
+                    //         modal: true,
+                    //         draggable: false,
+                    //         focus: function()
+                    //         {
+                    //           $(this).find('tr:visible').last().find('a').focus();
+                    //         }
+                    //     }));
+                    // }).click(function()
+                    // {
+                    //     $(this).data('dialog').dialog('open');
+                    //     return false;
+                    // });
+
+					$('.{!IF(currCustomer.Action_Dialog_Trigger__c = "Row", "dataRow", "helpButton")}').each(function()
+					{
+            $(this).data('dialog', $(this).{!IF(currCustomer.Action_Dialog_Trigger__c = "Row", "find", "next")}('.helpDialog').dialog
+					    ({
+							autoOpen: false,
+							modal: true,
+							draggable: false,
+							focus: function()
+							{
+							  $(this).find('tr:visible').last().find('a').focus();
+							}
+						}));
+                    }).click(function(e)
+					{
+					    $(this).data('dialog').dialog('open');
+                        // return false;
+                        e.preventDefault();
+					});
+				});
+
+				return {
+					checkAll: function checkAll(cb)
+					{
+						var inputElem = document.getElementsByTagName("input");
+
+						selectedRows = new Array();
+
+						for (var index = 0; index < inputElem.length; index++)
+						{
+							if (inputElem[index].id.indexOf("checkedoneV1") != -1)
+							{
+								inputElem[index].checked = cb.checked;
+								if (cb.checked)
+									selectedRows.push(inputElem[index].className.substring(4));
+							}
+						}
+					},
+
+          checkSelectOne: function checkSelectOne(cb, e)
+					{
+            e.stopPropagation();
+						if (cb.checked)
+						{
+						    selectedRows.push(cb.className.substring(4));
+						}
+						else
+						{
+						    var index = selectedRows.indexOf(cb.className.substring(4));
+						    if (index > -1) {
+						        selectedRows.splice(index, 1);
+						    }
+						}
+					},
+
+					checkSelectOneOnly: function checkSelectOneOnly(cb)
+					{
+						var initialState = cb.checked;
+						var inputElem = document.getElementsByTagName("input");
+
+						selectedRows = new Array();
+
+						for (var index = 0; index < inputElem.length; index++)
+						{
+						    inputElem[index].checked = false;
+						}
+
+						if (initialState == true)
+						{
+						    cb.checked = true;
+						    selectedRows.push(cb.className.substring(4));
+						}
+					},
+
+					getQueryVariable: function getQueryVariable(variable)
+					{
+					    var query = window.location.search.substring(1);
+					    var vars = query.split('&');
+					    for (var i = 0; i < vars.length; i++) {
+					        var pair = vars[i].split('=');
+					        if (decodeURIComponent(pair[0]) == variable) {
+					            return decodeURIComponent(pair[1]);
+					        }
+					    }
+					    return null;
+					},
+
+					performSyncSelectedV2: function performSyncSelectedV2()
+					{
+						if (selectedRows.length > 0 && !cancelAction)
+						{
+						    //$("#spinner").show();
+						    medPro.showSpinner();
+						    var searchRequestId = medPro.getQueryVariable('searchRequestId')
+						    pipedMedProIDsToSend = selectedRows.join('|');
+						    cachedSOMappingID = null;
+
+						    Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.MedProOnePassDisplayResults_Controller.syncSelectedV2}',
+							   pipedMedProIDsToSend, medPro.handleResult_performSyncSelectedV2);
+						}
+						else if (!cancelAction)
+						{
+						    alert('No records are selected!');
+						}
+					},
+
+					showSpinner: function showSpinner()
+					{
+						$("#spinner").show();
+						cancelAction = true;
+					},
+
+					hideSpinner: function hideSpinner()
+					{
+						$("#spinner").hide();
+						cancelAction = false;
+					},
+
+					performSyncSelectedToSfObjectV2inline: function performSyncSelectedToSfObjectV2inline(soMappingId, medId)
+					{
+					    //$("#spinner").show();
+					    if (!cancelAction)
+					    {
+						    medPro.showSpinner();
+						    var searchRequestId = medPro.getQueryVariable('searchRequestId')
+						    var sfId = '{!sfId}';
+						    var parentId = medPro.getQueryVariable('parentId');
+						    pipedMedProIDsToSend = medId;
+						    cachedSOMappingID = soMappingId;
+
+
+						    Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.MedProOnePassDisplayResults_Controller.syncSelectedToSfObjectV2getIds}',
+						                                              soMappingId, pipedMedProIDsToSend, sfId, parentId, true, '{!jsonPageParams}',
+						                                              medPro.handleResult_performSyncSelectedToSfObjectV2,  {escape: false});
+						}
+					},
+
+					updateLineItem: function updateLineItem ( soMappingId , pipedMedProIDsToSendParam, sfId ){
+					    //$("#spinner").show();
+						if (!cancelAction)
+					    {
+							medPro.showSpinner();
+
+							pipedMedProIDsToSend = pipedMedProIDsToSendParam;
+							cachedSOMappingID = soMappingId;
+							var parentId = medPro.getQueryVariable('parentId');
+							Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.MedProOnePassDisplayResults_Controller.syncSelectedToSfObjectV2getIds}',
+								soMappingId, pipedMedProIDsToSend, sfId, parentId, true, '{!jsonPageParams}',
+								medPro.handleResult_performSyncSelectedToSfObjectV2, {escape: false} );
+						}
+					},
+
+					performSyncSelectedToSfObjectV2: function performSyncSelectedToSfObjectV2(soMappingId)
+					{
+						//alert('cancelAction = ' + cancelAction);
+						if (selectedRows.length > 0 && !cancelAction)
+						{
+							//$("#spinner").show();
+							medPro.showSpinner();
+							var searchRequestId = medPro.getQueryVariable('searchRequestId')
+							var sfId = '{!sfId}';
+							//alert('sfId = ' + sfId);
+							var parentId = medPro.getQueryVariable('parentId');
+							pipedMedProIDsToSend = selectedRows.join('|');
+							cachedSOMappingID = soMappingId;
+
+							Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.MedProOnePassDisplayResults_Controller.syncSelectedToSfObjectV2getIds}',
+							    soMappingId, pipedMedProIDsToSend, sfId, parentId, true, '{!jsonPageParams}',
+							    medPro.handleResult_performSyncSelectedToSfObjectV2 , {escape: false});
+						}
+						else if (!cancelAction)
+						{
+						    alert('No records are selected!');
+						}
+					},
+
+					handleResult_performSyncSelectedV2: function handleResult_performSyncSelectedV2(result, event)
+					{
+
+
+					    Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.MedProOnePassDisplayResults_Controller.checkForRequiredInUniverseUpdate}',
+						  cachedSOMappingID, result, pipedMedProIDsToSend,
+						  medPro.handleResult_performCheckForRequiredInUniverseUpdate , {escape: false} );
+					},
+
+					handleResult_performSyncSelectedToSfObjectV2: function handleResult_performSyncSelectedToSfObjectV2(result, event)
+					{
+
+					    Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.MedProOnePassDisplayResults_Controller.checkForRequiredInUniverseUpdate}',
+						  cachedSOMappingID, result, pipedMedProIDsToSend,
+						  medPro.handleResult_performCheckForRequiredInUniverseUpdate, {escape: false} );
+					},
+
+					handleResult_performCheckForRequiredInUniverseUpdate: function handleResult_performCheckForRequiredInUniverseUpdate(result, event)
+					{
+						//$('#spinner').hide();
+						medPro.hideSpinner();
+						if ((result != null) && (event.status == true))
+						    window.location.href = result;
+					}
+				}
+
+			})(jq);
+
+		//  console.log(medPro);
+
+		</script>
+
+		<style>
+			.value{
+			background-color: #FCF7F7;
+			}
+
+			.ui-widget-header {
+			background: #004386 !IMPORTANT;
+			color: white;
+			}
+			.helpButton, .helpButtonOn {
+			margin-left: 10px;
+			height: 40px;
+			width: 80px;
+			background: #F8F8F8;
+			}
+
+			.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled {
+			opacity: 1 !important;
+			background: #B9B9B9 !important;
+			}
+
+			body .pbBody table.list tr.dataRow td {
+			padding: 10px;
+			}
+
+			.ui-dialog {
+			z-index: 999;
+			}
+
+			.actionSet {
+			width: 100%;
+			}
+
+			.actionSet td{
+			border: 1px silver solid;
+			padding: 10px;
+			font-size: 1.2em;
+			}
+
+			.actionSet td a{
+			color: #000000;
+			text-decoration: none;
+			}
+		</style>
+
+	    <apex:pageBlock title="MedProID Search Results" id="pagination" rendered="{!resultsToDisplay}">
+			<apex:pageBlockButtons id="pageBlockIdent" rendered="{!layoutElements.size!=0}" location="top">
+				<apex:commandButton value="{!currCustomer.MedProSC__Display_Page_Back_Button_Label__c}" action="{!back}" rendered="{!OR (currCustomer.MedProSC__Display_Page_Back_Button_Label__c != null, currCustomer.MedProSC__Display_Page_Back_Button_Label__c != '' )}"/>
+				<apex:commandButton rendered="{!AND (currCustomer.MedProSC__Display_Page_Custom_Nav_Btn_Label_01__c != null, currCustomer.MedProSC__Display_Page_Custom_Nav_Btn_Location_01__c != null)}" value="{!currCustomer.MedProSC__Display_Page_Custom_Nav_Btn_Label_01__c}" action="{!Display_Page_Custom_Nav_Btn_Location_01}"/>
+
+				<apex:commandButton value="New Search" action="{!newSearch}" rendered="{!!areNewSearchesDisabled}" />
+
+				<apex:outputPanel rendered="{!!isMultiSelectDisabled}">
+					<apex:commandButton value="Save As MedPro HCP" onclick="medPro.performSyncSelectedV2(); return false;" rendered="{!isMedProHCP_SyncEnabled}" />
+					<apex:commandButton value="{!syncOption1FoundLabel}" onclick="medPro.performSyncSelectedToSfObjectV2('{!syncOption1FoundId}'); return false;"
+					                    rendered="{!AND( syncButton1Configured, renderButtonsBasedOnSource[0])}">
+					</apex:commandButton>
+
+					<apex:commandButton value="{!syncOption2FoundLabel}" onclick="medPro.performSyncSelectedToSfObjectV2('{!syncOption2FoundId}'); return false;"
+					                    rendered="{!AND(syncButton2Configured , renderButtonsBasedOnSource[1])}">
+					</apex:commandButton>
+
+					<apex:commandButton id="syncButton3" value="{!syncOption3FoundLabel}" onclick="medPro.performSyncSelectedToSfObjectV2('{!syncOption3FoundId}'); return false;"
+					                    rendered="{!AND(syncButton3Configured , renderButtonsBasedOnSource[2])}">
+					</apex:commandButton>
+				</apex:outputPanel>
+
+				<apex:commandButton value="Submit DRP" action="{!performDRP}" rendered="{!isDRPEnabled}"/>
+			</apex:pageBlockButtons>
+
+			<apex:pageMessages />
+
+			<c:PageBlockTableEnhancerADV targetPbTableIds="allData" paginate="true" defaultPageSize="25"
+			                             pageSizeOptions="25,50,75,100" nonSortableColumns="0,{!layoutElements.size+1}"
+                                   hiddenColumns="{!IF(isMultiSelectDisabled,'[0' & IF(currCustomer.MedProSC__Action_Dialog_Trigger__c = 'Row', ',-1', '') &']','[]')}" enableExport="false" onCompleteTableLoad="jQuery('[id$=allData]').css('visibility','');"/>
+
+
+
+			<apex:pageBlockTable value="{!theSearchResultsWrapperMapKeys}" var="item" id="allData" rendered="{!layoutElements.size!=0}" style="visibility:hidden" width="100%">
+
+
+			    <apex:column >
+
+			        <apex:facet name="header">
+			            <apex:inputCheckbox onclick="medPro.checkAll(this)">
+			            </apex:inputCheckbox>
+			        </apex:facet>
+
+			        <apex:inputCheckbox value="{!theSearchResultsWrapperMap[item].sr.is_Selected__c}" id="checkedoneV1" styleClass="tag_{!JSENCODE(theSearchResultsWrapperMap[item].sr.medproid__c)}"
+                                  onclick="medPro.checkSelectOne(this, event);" >
+			        </apex:inputCheckbox>
+			    </apex:column>
+
+				<apex:repeat value="{!layoutElements}" var="element">
+					<apex:column style="{!IF(AND( OR((theSearchResultsWrapperMap[item].mapping1.existsInSf = true), (theSearchResultsWrapperMap[item].mapping2.existsInSf = true),  (theSearchResultsWrapperMap[item].mapping3.existsInSf = true)), isMultiSelectDisabled ), "background-color: "+currCustomer.MedProSC__Display_Page_Row_Color_For_Matches__c+";","")}" rendered="{!element.MedProSC__SourceFieldName__c !='medpro_universe_check__c'}">
+					    <apex:facet name="header">{!element.Name}</apex:facet>
+					    <apex:outputLabel value="{!theSearchResultsWrapperMap[item].sr[element.MedProSC__SourceFieldName__c]}" rendered="{!element.MedProSC__MedPro_Substitute_Parent_Mapping__c == null || !theSearchResultsWrapperMap[item].hasRecord}" />
+					    <apex:outputLabel value="{!theSearchResultsWrapperMap[item].mapping1.obj[element.MedProSC__Substitute_Field__c]}" rendered="{!element.MedProSC__MedPro_Substitute_Parent_Mapping__c != null && theSearchResultsWrapperMap[item].hasRecord && theSearchResultsWrapperMap[item].mapping1.parentMappingId == element.MedProSC__MedPro_Substitute_Parent_Mapping__c}" />
+					    <apex:outputText value="testing" rendered="'{!theSearchResultsWrapperMap[item].mapping1.parentMappingId}' == '{!element.MedProSC__MedPro_Substitute_Parent_Mapping__c}'" />
+					    <apex:outputLabel value="{!theSearchResultsWrapperMap[item].mapping2.obj[element.MedProSC__Substitute_Field__c]}" rendered="{!element.MedProSC__MedPro_Substitute_Parent_Mapping__c != null && theSearchResultsWrapperMap[item].hasRecord && theSearchResultsWrapperMap[item].mapping2.parentMappingId == element.MedProSC__MedPro_Substitute_Parent_Mapping__c}" />
+					    <apex:outputLabel value="{!theSearchResultsWrapperMap[item].mapping3.obj[element.MedProSC__Substitute_Field__c]}" rendered="{!element.MedProSC__MedPro_Substitute_Parent_Mapping__c != null && theSearchResultsWrapperMap[item].hasRecord && theSearchResultsWrapperMap[item].mapping3.parentMappingId == element.MedProSC__MedPro_Substitute_Parent_Mapping__c}" />
+					</apex:column>
+
+					<apex:column style="{!IF(AND( OR((theSearchResultsWrapperMap[item].mapping1.existsInSf = true), (theSearchResultsWrapperMap[item].mapping2.existsInSf = true),  (theSearchResultsWrapperMap[item].mapping3.existsInSf = true)), isMultiSelectDisabled ),"background-color: "+currCustomer.MedProSC__Display_Page_Row_Color_For_Matches__c+";","")}" rendered="{!element.MedProSC__SourceFieldName__c == 'medpro_universe_check__c'}">
+					    <apex:facet name="header">{!element.Name}</apex:facet>
+					    <apex:image value="{!URLFOR($Resource.MedProSC__MedProInUniverseIndicator)}" rendered="{!theSearchResultsWrapperMap[item].sr[element.MedProSC__SourceFieldName__c] == 'Y'}"/>
+					</apex:column>
+				</apex:repeat>
+
+				<!--
+
+				<apex:repeat value="{!metaData}" var="element"  >
+
+	                <apex:column style="{!IF(AND( OR((theSearchResultsWrapperMap[item].mapping1.existsInSf = true), (theSearchResultsWrapperMap[item].mapping2.existsInSf = true),  (theSearchResultsWrapperMap[item].mapping3.existsInSf = true)), isMultiSelectDisabled ), "background-color: "+currCustomer.MedProSC__Display_Page_Row_Color_For_Matches__c+";","")}" rendered="{!element['sourceFieldName'] !='medpro_universe_check__c'}">
+
+	                    <apex:facet name="header">{!element['fieldName']}</apex:facet>
+	                    <apex:outputLabel rendered="{!element."
+	                    <apex:outputLabel value="{!theSearchResultsWrapperMap[item].sr[element['sourceFieldName']]}"/>
+
+	                </apex:column>
+
+
+	                <apex:column style="{!IF(AND( OR((theSearchResultsWrapperMap[item].mapping1.existsInSf = true), (theSearchResultsWrapperMap[item].mapping2.existsInSf = true),  (theSearchResultsWrapperMap[item].mapping3.existsInSf = true)), isMultiSelectDisabled ),"background-color: "+currCustomer.MedProSC__Display_Page_Row_Color_For_Matches__c+";","")}" rendered="{!element['sourceFieldName'] ='medpro_universe_check__c'}">
+	                    <apex:facet name="header">{!element['fieldName']}</apex:facet>
+
+	                    <apex:image value="{!URLFOR($Resource.MedProSC__MedProInUniverseIndicator)}" rendered="{!theSearchResultsWrapperMap[item].sr[element['sourceFieldName']] = 'Y'}"/>
+	                </apex:column>
+
+	            </apex:repeat>
+	            -->
+
+				<apex:column width="150px" style="{!IF(AND(
+				                                  OR(
+				                                  (theSearchResultsWrapperMap[item].mapping1.existsInSf = true),
+				                                  (theSearchResultsWrapperMap[item].mapping2.existsInSf = true),
+				                                  (theSearchResultsWrapperMap[item].mapping3.existsInSf = true)),isMultiSelectDisabled), "background-color: "+currCustomer.Display_Page_Row_Color_For_Matches__c+";","")}">
+				    <apex:facet name="header">Action</apex:facet>
+
+				    <apex:outputPanel rendered="{!!isMultiSelectDisabled}" id="detailLink">
+
+				         <apex:commandLink value="Detail" id="detailButtonAFV2" action="{!doSecondPassV2}" rendered="{!currCustomer.MedProSC__ConfigurePassTwoResults__c}" >
+				            <apex:param value="{!theSearchResultsWrapperMap[item].sr.medproid__c}" assignTo="{!medProIdToRetrieve}" name="medId"/>
+				         </apex:commandLink>
+
+				         <apex:commandLink value="Detail" id="detailButtonAF" action="{!doSecondPass}" rendered="{!!currCustomer.MedProSC__ConfigurePassTwoResults__c}" >
+					        <apex:param value="{!theSearchResultsWrapperMap[item].sr.medproid__c}" assignTo="{!medProIdToRetrieve}" name="medId"/>
+					     </apex:commandLink>
+
+					</apex:outputPanel>
+					<apex:outputPanel rendered="{!isMultiSelectDisabled}">
+						<apex:variable value="{!IF(AND(OR(
+						                      (theSearchResultsWrapperMap[item].mapping1.existsInSf = true),
+						                      (theSearchResultsWrapperMap[item].mapping2.existsInSf = true),
+						                      (theSearchResultsWrapperMap[item].mapping3.existsInSf = true)
+						                      ),isMultiSelectDisabled), currCustomer.Display_Page_Exists_popup_title__c, currCustomer.Display_Page_Doesn_t_exist_popup_title__c)}" var="helpBoxTitleRow"/>
+
+						<button class="helpButton">
+						    Actions
+						</button>
+
+						<div class="helpDialog {!theSearchResultsWrapperMap[item].sr.medproid__c}" title="{!helpBoxTitleRow}">
+							<apex:outputPanel rendered="{!currCustomer.MedProSC__Detail_Link_on_the_Display_Results_Page__c !=null}">
+							    <table class="actionSet">
+							        <tr>
+							            <td>
+
+							                 <apex:commandLink value="{!currCustomer.MedProSC__Detail_Link_on_the_Display_Results_Page__c}" id="detailButtonAFV2popup" action="{!doSecondPassV2}" rendered="{!currCustomer.MedProSC__ConfigurePassTwoResults__c}">
+							                    <apex:param value="{!theSearchResultsWrapperMap[item].sr.medproid__c}" assignTo="{!medProIdToRetrieve}" name="medId"/>
+							                 </apex:commandLink>
+
+							                 <apex:commandLink value="{!currCustomer.MedProSC__Detail_Link_on_the_Display_Results_Page__c}" id="detailButtonAFpopup" action="{!doSecondPass}" rendered="{!!currCustomer.MedProSC__ConfigurePassTwoResults__c}">
+							                    <apex:param value="{!theSearchResultsWrapperMap[item].sr.medproid__c}" assignTo="{!medProIdToRetrieve}" name="medId"/>
+							                 </apex:commandLink>
+							            </td>
+							        </tr>
+							        </table>
+							    </apex:outputPanel>
+							<apex:outputPanel rendered="{!IF(AND(theSearchResultsWrapperMap[item].mapping1.existsInSf, renderButtonsBasedOnSource[0]), true, false)}">
+
+							    <apex:variable value="{!theSearchResultsWrapperMap[item].mapping1}" var="mapping1"/>
+							    <apex:variable value="{!theSearchResultsWrapperMap[item].mapping1.parentMappingId}" var="mapId"/>
+							    <table class="actionSet">
+							        <apex:outputPanel rendered="{!mappings[mapId].View_Label_on_Display_Results_Page__c != null}">
+							            <tr>
+							                <td>
+
+							                    <apex:outputLink value="/{!mapping1.parentSFId}"
+							                                     rendered="{!IF(mapping1.vfRedirect == null, true, false)}">
+							                        {!mappings[mapId].View_Label_on_Display_Results_Page__c}
+							                    </apex:outputLink>
+
+							                    <apex:outputLink value="/apex/c__{!mapping1.vfRedirect}?id={!mapping1.parentSFId}{!addViewParamAndParentId}"
+							                                     rendered="{!IF(mapping1.vfRedirect != null, true, false)}">
+							                        {!mappings[mapId].View_Label_on_Display_Results_Page__c}
+							                    </apex:outputLink>
+							                </td>
+							            </tr>
+							        </apex:outputPanel>
+
+							        <apex:outputPanel rendered="{!mappings[mapId].Update_Record_Label__c != null}">
+							            <tr >
+							                <td>
+							                    <apex:commandLink onclick="medPro.updateLineItem ('{!mapping1.parentMappingId}' , '{!theSearchResultsWrapperMap[item].sr.medproid__c}', '{!mapping1.parentSFId}'); return false; ">
+							                        {!mappings[mapId].Update_Record_Label__c }
+							                    </apex:commandLink>
+							                </td>
+							            </tr>
+							        </apex:outputPanel>
+							    </table>
+							    <hr/>
+							</apex:outputPanel>
+
+							<apex:outputPanel rendered="{!IF(AND(theSearchResultsWrapperMap[item].mapping2.existsInSf, renderButtonsBasedOnSource[1]), true, false)}">
+							    <apex:variable value="{!theSearchResultsWrapperMap[item].mapping2}" var="mapping2"/>
+							    <apex:variable value="{!theSearchResultsWrapperMap[item].mapping2.parentMappingId}" var="mapId"/>
+							    <table class="actionSet">
+
+							        <apex:outputPanel rendered="{!mappings[mapId].View_Label_on_Display_Results_Page__c != null}">
+							            <tr>
+							                <td>
+							                    <apex:outputLink value="/{!mapping2.parentSFId}"
+							                                     rendered="{!IF(mapping2.vfRedirect == null, true, false)}">
+							                        {!mappings[mapId].View_Label_on_Display_Results_Page__c}
+							                    </apex:outputLink>
+
+							                    <apex:outputLink value="/apex/c__{!mapping2.vfRedirect}?id={!mapping2.parentSFId}{!addViewParamAndParentId}"
+							                                     rendered="{!IF(mapping2.vfRedirect != null, true, false)}">
+							                        {!mappings[mapId].View_Label_on_Display_Results_Page__c}
+							                    </apex:outputLink>
+							                </td>
+							            </tr>
+							        </apex:outputPanel>
+
+							        <apex:outputPanel rendered="{!mappings[mapId].Update_Record_Label__c != null}">
+							            <tr>
+							                <td>
+							                    <apex:commandLink onclick="medPro.updateLineItem ('{!mapping2.parentMappingId}' , '{!theSearchResultsWrapperMap[item].sr.medproid__c}', '{!mapping2.parentSFId}'); return false; ">
+							                        {!mappings[mapId].Update_Record_Label__c }
+							                    </apex:commandLink>
+							                </td>
+							            </tr>
+							        </apex:outputPanel>
+
+							    </table>
+							    <hr/>
+							</apex:outputPanel>
+
+							<apex:outputPanel rendered="{!IF(AND(theSearchResultsWrapperMap[item].mapping3.existsInSf, renderButtonsBasedOnSource[2]), true, false)}">
+								<apex:variable value="{!theSearchResultsWrapperMap[item].mapping3}" var="mapping3"/>
+								<apex:variable value="{!theSearchResultsWrapperMap[item].mapping3.parentMappingId}" var="mapId"/>
+								<table class="actionSet">
+								    <apex:outputPanel rendered="{!mappings[mapId].View_Label_on_Display_Results_Page__c != null}">
+								        <tr>
+								            <td>
+								                <apex:outputLink value="/{!mapping3.parentSFId}"
+								                                 rendered="{!IF(mapping3.vfRedirect == null, true, false)}">
+								                    {!mappings[mapId].View_Label_on_Display_Results_Page__c}
+								                </apex:outputLink>
+
+								                <apex:outputLink value="/apex/c__{!mapping3.vfRedirect}?id={!mapping3.parentSFId}{!addViewParamAndParentId}"
+								                                 rendered="{!IF(mapping3.vfRedirect != null, true, false)}">
+								                    {!mappings[mapId].View_Label_on_Display_Results_Page__c}
+								                </apex:outputLink>
+								            </td>
+								        </tr>
+								    </apex:outputPanel>
+
+								    <apex:outputPanel rendered="{!mappings[mapId].Update_Record_Label__c != null}">
+								        <tr>
+								            <td>
+								                <apex:commandLink onclick="medPro.updateLineItem ('{!mapping3.parentMappingId}' , '{!theSearchResultsWrapperMap[item].sr.medproid__c}', '{!mapping3.parentSFId}'); return false; ">
+								                    {!mappings[mapId].Update_Record_Label__c }
+								                </apex:commandLink>
+								            </td>
+								        </tr>
+								    </apex:outputPanel>
+								</table>
+								<hr/>
+							</apex:outputPanel>
+
+							<apex:outputPanel >
+								<apex:variable value="{!IF(theSearchResultsWrapperMap[item].mapping1.existsInSf != true, true, false)}" var="map1"/>
+								<apex:variable value="{!IF(theSearchResultsWrapperMap[item].mapping2.existsInSf != true, true, false)}" var="map2"/>
+								<apex:variable value="{!IF(theSearchResultsWrapperMap[item].mapping3.existsInSf != true, true, false)}" var="map3"/>
+								<table class="actionSet" style="display: {!IF(OR(map1,map2,map3),'table','none')}">
+								    <tr style="display: {!IF(AND(syncButton1Configured, map1, renderButtonsBasedOnSource[0]), 'table-row', 'none')}">
+								        <td>
+								            <apex:outputLink styleClass="tag_{!JSENCODE(theSearchResultsWrapperMap[item].medproId)}"
+								                             onclick="medPro.performSyncSelectedToSfObjectV2inline('{!syncOption1FoundId}', '{!theSearchResultsWrapperMap[item].medproId}'); return false;"
+								                             id="checkedone"
+								                             value="{!theSearchResultsWrapperMap[item].sr.is_Selected__c}">
+								                {!syncOption1FoundLabel}
+								            </apex:outputLink>
+								        </td>
+								    </tr>
+								    <tr style="display: {!IF(AND(syncButton2Configured, map2, renderButtonsBasedOnSource[1]), 'table-row', 'none')}">
+								        <td>
+								            <apex:outputLink styleClass="tag_{!JSENCODE(theSearchResultsWrapperMap[item].medproId)}"
+								                             onclick="medPro.performSyncSelectedToSfObjectV2inline('{!syncOption2FoundId}', '{!theSearchResultsWrapperMap[item].medproId}'); return false;"
+							                                 id="checkedone2"
+							                                 value="{!theSearchResultsWrapperMap[item].sr.is_Selected__c}">
+							                    {!syncOption2FoundLabel}
+							                </apex:outputLink>
+							            </td>
+							        </tr>
+							        <tr style="display: {!IF(AND(syncButton3Configured, map3, renderButtonsBasedOnSource[2]), 'table-row', 'none')}">
+							            <td>
+							                <apex:outputLink styleClass="tag_{!JSENCODE(theSearchResultsWrapperMap[item].medproId)}"
+							                                 onclick="medPro.performSyncSelectedToSfObjectV2inline('{!syncOption3FoundId}', '{!theSearchResultsWrapperMap[item].medproId}'); return false;"
+							                                 id="checkedone3"
+							                                 value="{!theSearchResultsWrapperMap[item].sr.is_Selected__c}">
+							                    {!syncOption3FoundLabel}
+							                </apex:outputLink>
+							            </td>
+							        </tr>
+							    </table>
+							</apex:outputPanel>
+						</div>
+					</apex:outputPanel>
+			    </apex:column>
+			</apex:pageBlockTable>
+			<apex:outputPanel rendered="{!layoutElements.size!=0}">
+				<div class="pbHeader">
+				    <table class="medproTable">
+							<tbody>
+							<tr>
+								<td class="pbTitle"><apex:include pageName="MedProSC__MedProStandardCopyrightFooter"/> </td>
+								<td class="pbButton ">
+									<apex:commandButton value="{!currCustomer.MedProSC__Display_Page_Back_Button_Label__c}" action="{!back}" rendered="{!OR (currCustomer.MedProSC__Display_Page_Back_Button_Label__c != null, currCustomer.MedProSC__Display_Page_Back_Button_Label__c != '' )}"/>
+									<apex:commandButton rendered="{!AND (currCustomer.MedProSC__Display_Page_Custom_Nav_Btn_Label_01__c != null, currCustomer.MedProSC__Display_Page_Custom_Nav_Btn_Location_01__c != null)}" value="{!currCustomer.MedProSC__Display_Page_Custom_Nav_Btn_Label_01__c}" action="{!Display_Page_Custom_Nav_Btn_Location_01}"/>
+
+									<apex:commandButton value="New Search" action="{!newSearch}" rendered="{!!areNewSearchesDisabled}" />
+									<apex:outputPanel rendered="{!!isMultiSelectDisabled}">
+										<apex:commandButton value="Save As MedPro HCP" onclick="medPro.performSyncSelectedV2(); return false;" rendered="{!isMedProHCP_SyncEnabled}" />
+										<apex:commandButton value="{!syncOption1FoundLabel}" onclick="medPro.performSyncSelectedToSfObjectV2('{!syncOption1FoundId}'); return false;"
+										                    rendered="{!AND( syncButton1Configured, renderButtonsBasedOnSource[0])}">
+										</apex:commandButton>
+
+										<apex:commandButton value="{!syncOption2FoundLabel}" onclick="medPro.performSyncSelectedToSfObjectV2('{!syncOption2FoundId}'); return false;"
+										                    rendered="{!AND(syncButton2Configured , renderButtonsBasedOnSource[1])}">
+										</apex:commandButton>
+
+										<apex:commandButton id="syncButton3" value="{!syncOption3FoundLabel}" onclick="medPro.performSyncSelectedToSfObjectV2('{!syncOption3FoundId}'); return false;"
+										                    rendered="{!AND(syncButton3Configured , renderButtonsBasedOnSource[2])}">
+										</apex:commandButton>
+									</apex:outputPanel>
+									<apex:commandButton value="Submit DRP" action="{!performDRP}" rendered="{!isDRPEnabled}"/>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</apex:outputPanel>
+		</apex:pageBlock>
+
+		<apex:pageBlock title="MedProID Search Results" id="topLevelAlt" rendered="{!!resultsToDisplay}">
+			<apex:pageBlockButtons id="pageBlockIdentAlt" location="top">
+				<apex:commandButton value="{!currCustomer.MedProSC__Display_Page_Back_Button_Label__c}" action="{!back}" rendered="{!OR (currCustomer.MedProSC__Display_Page_Back_Button_Label__c != null, currCustomer.MedProSC__Display_Page_Back_Button_Label__c != '' )}"/>
+				<apex:commandButton rendered="{!AND (currCustomer.MedProSC__Display_Page_Custom_Nav_Btn_Label_01__c != null, currCustomer.MedProSC__Display_Page_Custom_Nav_Btn_Location_01__c != null)}" value="{!currCustomer.MedProSC__Display_Page_Custom_Nav_Btn_Label_01__c}" action="{!Display_Page_Custom_Nav_Btn_Location_01}"/>
+				<apex:commandButton value="New Search" action="{!newSearch}" rendered="{!!areNewSearchesDisabled}"/>
+			</apex:pageBlockButtons>
+
+			<apex:pageMessages />
+			<br/>
+
+			<apex:outputPanel > 
+				<div class="pbHeader">
+					<table class="medproTable" >
+						<tbody>
+							<tr>
+								<td class="pbTitle"><apex:include pageName="MedProSC__MedProStandardCopyrightFooter" /></td>
+								<td class="pbButton ">
+									<apex:commandButton value="{!currCustomer.MedProSC__Display_Page_Back_Button_Label__c}" action="{!back}" rendered="{!OR (currCustomer.MedProSC__Display_Page_Back_Button_Label__c != null, currCustomer.MedProSC__Display_Page_Back_Button_Label__c != '' )}" />
+									 <apex:commandButton rendered="{!AND (currCustomer.MedProSC__Display_Page_Custom_Nav_Btn_Label_01__c != null, currCustomer.MedProSC__Display_Page_Custom_Nav_Btn_Location_01__c != null)}" value="{!currCustomer.MedProSC__Display_Page_Custom_Nav_Btn_Label_01__c}" action="{!Display_Page_Custom_Nav_Btn_Location_01}" />
+									<apex:commandButton value="New Search" action="{!newSearch}" rendered="{!!areNewSearchesDisabled}" />
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</apex:outputPanel>
+		</apex:pageBlock>
+	</apex:form>
+</apex:page>

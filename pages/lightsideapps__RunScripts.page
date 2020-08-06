@@ -1,0 +1,64 @@
+<apex:page standardcontroller="lightsideapps__Script__c" extensions="lightsideapps.RunScriptsExtension" action="{!ScriptProcess}" >
+    
+    <apex:includeScript value="/soap/ajax/35.0/connection.js"/>
+    <apex:includeScript value="/soap/ajax/35.0/apex.js"/>
+    
+    <style>
+        .results {width:80%; height:100px;}
+    </style>     
+    
+    <apex:sectionHeader Title="Script executed as {!$User.FirstName} {!$User.LastName}" SubTitle="{!lightsideapps__Script__c.Name}" />
+    <apex:pageMessages id="pageMessages" />
+ 
+    <apex:form > 
+        <apex:actionFunction action="{!writeScriptResults}" name="WriteResults" reRender=""  />
+        
+        <apex:pageblock Title="Script Details" mode="MainDetail" >
+        
+            <apex:pageblockButtons > 
+                <apex:commandbutton action="{!CancelAction}" value="Return" />
+                <apex:commandbutton action="{!Edit}" value="Edit Script" />
+            </apex:pageblockButtons> 
+            
+            <apex:pageblockSection title="Information" columns="2" collapsible="false">
+                <apex:outputField value="{!lightsideapps__Script__c.Name}" style="width:262px;" />
+                <apex:outputField value="{!lightsideapps__Script__c.lightsideapps__APIVersion__c}" />
+                <apex:outputField value="{!lightsideapps__Script__c.lightsideapps__Description__c}" style="width:262px;" />
+                <apex:outputField value="{!lightsideapps__Script__c.lightsideapps__SaveDebugLogs__c}" />
+                <apex:pageBlockSectionItem />
+                <apex:outputField value="{!lightsideapps__Script__c.lightsideapps__ScheduleScript__c}"  />
+            </apex:pageblockSection>
+            
+            <apex:pageblockSection title="Apex Code" columns="1" collapsible="false">
+                <apex:outputField value="{!lightsideapps__Script__c.lightsideapps__Apex_Code__c}" />
+            </apex:pageblockSection>
+            
+            <apex:pageblockSection title="Script Results" columns="1" collapsible="false" >     
+                <apex:outputText rendered="{!NOT(sResult.Compiled)}">Compile Error: {!sResult.CompileProblem} </apex:outputText>
+                <apex:outputText rendered="{!sResult.exceptionMessage != null}"> Exception Message: {!sResult.exceptionMessage}</apex:outputText>
+                <apex:outputText rendered="{!OR(sResult.Line != -1, sResult.Column != -1)}">Line: {!sResult.Line}, Column: {!sResult.Column}</apex:outputText>
+                <apex:outputText rendered="{!sResult.Success}">Successfully Executed</apex:outputText>
+            </apex:pageblockSection>
+            
+            <apex:pageblockSection title="User Debug" columns="1" collapsible="false" >
+                <apex:outputField value="{!SR.lightsideapps__UserDebug__c}" /> 
+            </apex:pageblockSection>
+            
+            <apex:pageblockSection title="Debug Log" columns="1" collapsible="false" >
+                <apex:outputField value="{!SR.lightsideapps__DebugLog__c}" />
+            </apex:pageblockSection>
+ 
+        </apex:pageblock>
+        
+    </apex:form>
+    
+    <script>
+		sforce.connection.sessionId = '{!$Api.Session_ID}';
+    	window.onload = function(){
+   			setTimeout(WriteResults, 2000)
+		};      
+    </script>
+
+
+ 
+</apex:page>

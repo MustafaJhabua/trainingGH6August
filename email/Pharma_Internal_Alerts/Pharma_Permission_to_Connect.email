@@ -1,0 +1,13 @@
+Dr. {!Match_Record__c.Ordering_Physician_Name__c}
+{!Match_Record__c.Ordering_Practice_Name__c}
+{!Contact.MailingAddress}
+{!Contact.Phone}
+{!Contact.Email}
+
+Match Key: {!Match_Record__c.Match_Key__c}
+Cancer Type: {!Match_Record__c.Cancer_Type__c}
+Qualifying Target Alterations: {!Match_Record__c.Qualifying_Target_Alterations__c}
+Guardant Notes: {!Match_Record__c.Guardant_Notes__c}
+Closest Trial Site: {!Match_Record__c.Closest_Trial_Site__c}
+
+https://na29.salesforce.com/{!Match_Record__c.Id}

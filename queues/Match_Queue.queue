@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Match Queue</name>
+    <queueMembers>
+        <users>
+            <user>aolar@guardanthealth.com</user>
+            <user>asiroy@guardanthealth.com</user>
+            <user>agitlin@guardanthealth.com</user>
+            <user>ablair@guardanthealth.com</user>
+            <user>kkesterson@guardanthealth.com</user>
+            <user>mkuenzi@guardanthealth.com</user>
+            <user>mschillebeeckx@guardanthealth.com</user>
+            <user>mkotas@guardanthealth.com</user>
+            <user>nfuentes@guardanthealth.com</user>
+            <user>panaburmath@guardanthealth.com</user>
+            <user>ssun@guardanthealth.com</user>
+            <user>sbecker@guardanthealth.com</user>
+            <user>tpeters@guardanthealth.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Match_Record__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Study__c</sobjectType>
+    </queueSobject>
+</Queue>

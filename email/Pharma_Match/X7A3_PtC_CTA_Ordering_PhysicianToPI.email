@@ -1,0 +1,18 @@
+Dear Dr. {!Match_Record__c.MD_Last_Name__c},
+
+Thank you for talking with me today regarding your patient {!Match_Record__c.Patient_Initials__c}, who has {!Match_Record__c.Qualifying_Target_Genes__c} and for whom you’d like to consider the {!Match_Record__c.Pharma_Company__c} {!Match_Record__c.Trial_Name__c} trial (if you’d like to review the patient’s Guardant360 report, click here). As requested, I would like to refer you to Dr. {PI Full Name} and the team leading the study at the {!Match_Record__c.Connected_Trial_Site_account__c}.
+
+Could you or someone on your staff provide me with some days and times you’ll be available for a brief phone call with Dr. {PI Last Name} by clicking the link below: {!Match_Record__c.YuzuSchedulingLink__c}
+
+Once we receive your availability, your teleconference will be scheduled and an email confirmation will be sent to you. I will follow-up within the next week to ensure you were able to connect.
+
+Sincerely,
+{!User.Name}, {!User.Degree__c}
+{!User.Title}
+Guardant Health
+
+Guardant Health Match Key: {!Match_Record__c.Match_Key__c}
+
+Guardant Health partners with the clinical trial sponsor to conduct patient referral activities. 
+
+This message is intended solely for the designated recipient(s). It may contain confidential or proprietary information and may be subject to attorney-client privilege or other confidentiality protections. If you are not a designated recipient you may not review, copy or distribute this message. If you have received this in error, please notify the sender by replying to this e-mail and deleting this message. Thank you. Ref: {!Match_Record__c.Id}

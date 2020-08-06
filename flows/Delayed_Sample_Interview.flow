@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Delete Paused and Waiting Interviews</description>
+    <interviewLabel>Delayed Sample Interview {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Delayed Sample Interview</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordDeletes>
+        <name>Delete_Delayed_Sample_Case_Interviews</name>
+        <label>Delete Delayed Sample Case Interviews</label>
+        <locationX>145</locationX>
+        <locationY>170</locationY>
+        <filters>
+            <field>CurrentElement</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>myWait_myRule_1</stringValue>
+            </value>
+        </filters>
+        <object>FlowInterview</object>
+    </recordDeletes>
+    <startElementReference>Delete_Delayed_Sample_Case_Interviews</startElementReference>
+    <status>Draft</status>
+</Flow>

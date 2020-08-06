@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Account_Maintenance_Cases</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Creates sharing for GHI ISR users</description>
+        <label>Account Maintenance Cases</label>
+        <sharedTo>
+            <roleAndSubordinates>ISR_Manager</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Account Maintenance Case,Supplies Case</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Finance_AMEA</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Finance AMEA</label>
+        <sharedTo>
+            <roleAndSubordinates>Medical_Client_Services_Manager_AMEA</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>x-Medicare Outbound,x-Benefits Case,Prior Authorization</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>x-Financial Case,x-Billing Problem Case</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Financial_Cases</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>All Client Services and Reimbursement users</description>
+        <label>Financial Cases</label>
+        <sharedTo>
+            <group>Financial_Cases</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>x-Financial Case,x-Medicare Outbound,x-Benefits Case,Prior Authorization,x-Billing Problem Case</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>UK_Ireland_Cases</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>UK-Ireland Cases</label>
+        <sharedTo>
+            <group>UK_Ireland_Med_Affairs</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>x-Financial Case,x-Medicare Outbound,x-Benefits Case,Prior Authorization,x-Billing Problem Case</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>Accessioning</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Allows for Accessioning to reassign cases.</description>
+        <label>Accessioning</label>
+        <sharedTo>
+            <roleAndSubordinates>Accessioning_Supervisor</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <queue>Accessioning</queue>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>CSBA_Owned</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>CSBA Owned</label>
+        <sharedTo>
+            <role>Client_Services_Associate</role>
+        </sharedTo>
+        <sharedFrom>
+            <queue>CSBA</queue>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>CS_and_Reimbursement</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Group created to facilitate ownership transfer between Client Services and Reimbursement</description>
+        <label>CS and Reimbursement</label>
+        <sharedTo>
+            <group>Case_Owner</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Case_Owner</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Edit_all_cases_for_CS</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Edit all cases for CS</label>
+        <sharedTo>
+            <role>Client_Services_Associate</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Client_Services_Associate</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Reimbursement</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Allows Reimbursement to edit each other&apos;s cases</description>
+        <label>Reimbursement</label>
+        <sharedTo>
+            <role>Senior_Financial_Analyst</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Senior_Financial_Analyst</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Reimbursement_Cases</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Reimbursement can read/write to each other&apos;s cases</description>
+        <label>Reimbursement Cases</label>
+        <sharedTo>
+            <role>Reimbursement</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Reimbursement</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

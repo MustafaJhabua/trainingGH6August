@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Read</contactAccessLevel>
+    <description>Reimbursement</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Reimbursement</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>VP_Corporate_Development_and_Reimbursement</parentRole>
+</Role>

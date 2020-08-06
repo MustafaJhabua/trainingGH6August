@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Patient__c$Name</field>
+    </columns>
+    <columns>
+        <field>Patient__c$Billing_Type__c</field>
+    </columns>
+    <columns>
+        <field>Patient__c.Guardant_360_Samples__r$Name</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Patient__c.Guardant_360_Samples__r$Sample_Count__c</field>
+    </columns>
+    <description>Samples by Insurance Co.</description>
+    <filter>
+        <criteriaItems>
+            <column>Patient__c$Billing_Type__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Private Insurance/Employee Health Plan,Medicare,Medicaid,Private Insurance/Employee Health Plan No OOP</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <aggregateType>Sum</aggregateType>
+        <dateGranularity>Day</dateGranularity>
+        <field>Patient__c$Company_Name__c</field>
+        <sortByName>Patient__c.Guardant_360_Samples__r$Sample_Count__c</sortByName>
+        <sortOrder>Desc</sortOrder>
+        <sortType>Aggregate</sortType>
+    </groupingsDown>
+    <name>2017 Patient Insurance report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Patients_with_G360_Samples__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Patient__c$CreatedDate</dateColumn>
+        <endDate>2017-12-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2017-01-01</startDate>
+    </timeFrameFilter>
+</Report>

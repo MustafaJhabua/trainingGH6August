@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Is Visible --></label>
+        <name>MedProSC__IsVisible__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked shows up on the second pass of the Lightning component. --></help>
+        <label><!-- Is Lightning --></label>
+        <name>MedProSC__Is_Lightning__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Placeholder --></label>
+        <name>MedProSC__Is_Placeholder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Field Name --></label>
+        <name>MedProSC__MedProFieldName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Detail Page Configuration --></label>
+        <name>MedProSC__MedPro_Pass_2_Display_Head_Config__c</name>
+        <relationshipLabel><!-- MedPro Detail Page Elements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Ordinal Position --></label>
+        <name>MedProSC__Ordinal_Position__c</name>
+    </fields>
+    <fields>
+        <label><!-- SyncReOrderFlag --></label>
+        <name>MedProSC__SyncReOrderFlag__c</name>
+    </fields>
+</CustomObjectTranslation>

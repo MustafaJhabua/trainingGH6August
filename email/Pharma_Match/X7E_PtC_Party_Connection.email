@@ -1,0 +1,40 @@
+Dear Dr. {!Match_Record__c.MD_Last_Name__c},
+
+Thank you for talking with me today regarding your patient {!Match_Record__c.Match_Key__c}, who has {!Match_Record__c.Qualifying_Target_Genes__c} and for whom you’d like to consider the {!Match_Record__c.Pharma_Company__c} {!Match_Record__c.Trial_Name__c} trial (if you’d like to review the patient’s Guardant360 report, click here). As requested, I would like to refer you to Dr. {PI Full Name} and the team leading the study at the {!Match_Record__c.Connected_Trial_Site_account__c} and provide everyone’s contact information below:
+
+{PI Full Name}
+{PI Email}
+{PI Phone}
+{Staff 1 Full Name}
+{Staff 1 Email}
+{Staff 2 Full Name}
+{Staff 2 Email}
+{!Match_Record__c.Connected_Trial_Site_account__c}
+{!Match_Record__c.Connected_Trial_Site_Address__c}
+{!Match_Record__c.Connected_Trial_Site_City__c}, {!Match_Record__c.Connected_Trial_Site_State__c}, {!Match_Record__c.Connected_Trial_Site_Zip_Code__c}
+
+{!Match_Record__c.Ordering_Physician_Name__c}
+{!Match_Record__c.Physician_Email__c}
+{!Match_Record__c.Physician_phone__c}
+{Staff 1 Full Name}
+{Staff 1 Email}
+{Staff 2 Full Name}
+{Staff 2 Email}
+{!Match_Record__c.Ordering_Practice_Name__c} 
+{!Match_Record__c.Practice_Address__c} 
+{!Match_Record__c.Practice_City__c}, {!Match_Record__c.Practice_State__c} {!Match_Record__c.Practice_Zip__c} 
+
+Please feel free to reach out to the team by responding all to this email. Otherwise, the team at the {!Match_Record__c.Connected_Trial_Site_account__c} can reach out via phone or email.
+
+We will follow-up directly with you in the next week or so to ensure you have what you need.
+
+Sincerely, 
+{!User.Name}, {!User.Degree__c} 
+{!User.Title} 
+Guardant Health 
+
+Guardant Health Match Key: {!Match_Record__c.Match_Key__c} 
+
+Guardant Health partners with the clinical trial sponsor to conduct patient referral activities. 
+
+This message is intended solely for the designated recipient(s). It may contain confidential or proprietary information and may be subject to attorney-client privilege or other confidentiality protections. If you are not a designated recipient you may not review, copy or distribute this message. If you have received this in error, please reply to this email and delete this message. Thank you. Ref: {!Match_Record__c.Id}

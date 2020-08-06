@@ -1,0 +1,42 @@
+<apex:page standardController="MedProSC__MedPro_Pass_1_Layout_Element__c" showHeader="true" sidebar="true" extensions="MedProSC.MedProEditMedProPass1LayoutElement_Ctrl">
+	<apex:stylesheet value="{!$Resource.MedProSC__MedProTwoPassDisplayDetail_resources}" />
+	<apex:form >
+		<apex:pageBlock title="MedPro Search Result Layout Element Edit">
+
+			<apex:pageBlockButtons location="top">
+				<apex:commandButton value="Save" action="{!save}" />
+				<apex:commandButton value="Cancel" action="{!cancel}" />
+			</apex:pageBlockButtons>
+
+			<apex:pageBlockSection title="Information" collapsible="False" columns="1">
+				<apex:inputField value="{!MedProSC__MedPro_Pass_1_Layout_Element__c.Name}" />
+
+				<apex:selectList multiselect="false" size="1" label="Source Field Name" value="{!MedProSC__MedPro_Pass_1_Layout_Element__c.MedProSC__SourceFieldName__c}" required="true">
+				  <apex:selectOptions value="{!sourceFieldNameOptions}" />
+				</apex:selectList>
+
+				<apex:inputField value="{!MedProSC__MedPro_Pass_1_Layout_Element__c.MedProSC__Ordinal_Position__c}" />
+				<apex:inputField value="{!MedProSC__MedPro_Pass_1_Layout_Element__c.MedProSC__MedPro_Customer__c}" />
+				<apex:inputField value="{!MedProSC__MedPro_Pass_1_Layout_Element__c.MedProSC__Is_Active__c}" />
+				<apex:inputField value="{!MedProSC__MedPro_Pass_1_Layout_Element__c.MedProSC__MedPro_Substitute_Parent_Mapping__c}" />
+				<apex:inputField value="{!MedProSC__MedPro_Pass_1_Layout_Element__c.MedProSC__Substitute_Field__c}" />
+				<apex:inputField value="{!MedProSC__MedPro_Pass_1_Layout_Element__c.MedProSC__Lightning_Available__c}" />
+			</apex:pageBlockSection>
+			<apex:outputPanel > 
+				<div class="pbHeader">
+					<table class="medproTable">
+						<tbody>
+							<tr>
+								<td class="pbTitle"><apex:include pageName="MedProSC__MedProStandardCopyrightFooter"/></td>
+								<td class="pbButton">
+									<apex:commandButton value="Save" action="{!save}"/>
+									<apex:commandButton value="Cancel" action="{!cancel}"/>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</apex:outputPanel>
+		</apex:pageBlock>
+	</apex:form>
+</apex:page>

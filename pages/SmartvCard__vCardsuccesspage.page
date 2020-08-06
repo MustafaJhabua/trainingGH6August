@@ -1,0 +1,18 @@
+<apex:page controller="SmartvCard.VCFcontact">
+    <apex:form id="theForm">
+        <apex:Pagemessages /> 
+            <center><h1 style="font-size: 15pt; width: 10px;">Successfully Created Contacts</h1></center>
+            <hr/>
+                <apex:pageblock >
+                    <apex:pageblockTable value="{!arrayinserted}" var="a">
+                        <apex:column headerValue="Name" >
+                            <apex:outputLink value="/{!a.id}" target="_blank"> {!a.salutation} {!a.firstname} {!a.lastname} </apex:outputLink>
+                        </apex:column>
+                        <apex:column headervalue="Phone" value="{!a.Phone}">
+                        </apex:column>
+                        <apex:column headervalue="Email" value="{!a.Email}" >
+                        </apex:column>
+                    </apex:pageblockTable>
+                </apex:pageblock>                           
+        </apex:form>
+</apex:page>

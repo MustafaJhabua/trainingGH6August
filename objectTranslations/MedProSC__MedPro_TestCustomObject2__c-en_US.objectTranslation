@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- MedProID --></label>
+        <name>MedProSC__MedProID__c</name>
+    </fields>
+    <fields>
+        <label><!-- MedPro_Updated_TS --></label>
+        <name>MedProSC__MedPro_Updated_TS__c</name>
+    </fields>
+    <fields>
+        <label><!-- fieldNameM2D1 --></label>
+        <name>MedProSC__fieldNameM2D1__c</name>
+    </fields>
+    <fields>
+        <label><!-- fieldNameM2D2 --></label>
+        <name>MedProSC__fieldNameM2D2__c</name>
+    </fields>
+    <fields>
+        <label><!-- fieldNameM2D3 --></label>
+        <name>MedProSC__fieldNameM2D3__c</name>
+    </fields>
+    <fields>
+        <label><!-- fieldNameM2D4 --></label>
+        <name>MedProSC__fieldNameM2D4__c</name>
+    </fields>
+    <fields>
+        <label><!-- fieldNameM2D5 --></label>
+        <name>MedProSC__fieldNameM2D5__c</name>
+    </fields>
+    <fields>
+        <label><!-- fieldNameM2D6 --></label>
+        <name>MedProSC__fieldNameM2D6__c</name>
+    </fields>
+    <fields>
+        <label><!-- fieldNameM2D7 --></label>
+        <name>MedProSC__fieldNameM2D7__c</name>
+    </fields>
+    <fields>
+        <label><!-- fieldNameM2D8 --></label>
+        <name>MedProSC__fieldNameM2D8__c</name>
+    </fields>
+    <fields>
+        <label><!-- fieldNameM2D9 --></label>
+        <name>MedProSC__fieldNameM2D9__c</name>
+    </fields>
+    <fields>
+        <label><!-- fieldNameZ2D1 --></label>
+        <name>MedProSC__fieldNameZ2D1__c</name>
+    </fields>
+    <fields>
+        <label><!-- fieldNameZ2D2 --></label>
+        <name>MedProSC__fieldNameZ2D2__c</name>
+    </fields>
+    <fields>
+        <label><!-- fieldNameZ2D3 --></label>
+        <name>MedProSC__fieldNameZ2D3__c</name>
+    </fields>
+    <fields>
+        <label><!-- fieldNameZ2D4 --></label>
+        <name>MedProSC__fieldNameZ2D4__c</name>
+    </fields>
+    <fields>
+        <label><!-- fieldNameZ2D5 --></label>
+        <name>MedProSC__fieldNameZ2D5__c</name>
+    </fields>
+    <fields>
+        <label><!-- fieldNameZ2D6 --></label>
+        <name>MedProSC__fieldNameZ2D6__c</name>
+    </fields>
+    <fields>
+        <label><!-- fieldNameZ2D7 --></label>
+        <name>MedProSC__fieldNameZ2D7__c</name>
+    </fields>
+    <fields>
+        <label><!-- fieldNameZ2D8 --></label>
+        <name>MedProSC__fieldNameZ2D8__c</name>
+    </fields>
+    <fields>
+        <label><!-- fieldNameZ2D9 --></label>
+        <name>MedProSC__fieldNameZ2D9__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- MedProTestCO2_RT1 --></label>
+        <name>MedProSC__MedProTestCO2_RT1</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- MedProTestCO2_RT2 --></label>
+        <name>MedProSC__MedProTestCO2_RT2</name>
+    </recordTypes>
+</CustomObjectTranslation>

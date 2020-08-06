@@ -1,0 +1,24 @@
+<apex:page standardController="Match_Record__c" extensions="OutreachExtension">
+    <!--Display the First (Oldest) Outreach task-->
+    <apex:pageBlock title="First Outreach">
+    	<apex:pageBlockTable style="width:100%" value="{!oaOldest}" var="oaOldest">
+            <apex:column style="width:250px" value="{!oaOldest.Subject}"/>
+            <apex:column style="width:250px" value="{!oaOldest.Contact_Type__c}"/>
+            <apex:column style="width:250px" value="{!oaOldest.Enrollment_Status__c}"/>
+            <apex:column style="width:250px" value="{!oaOldest.Enrollment_Sub_Status__c}"/>
+            <apex:column style="width:250px" value="{!oaOldest.Sub_Status_Reason__c}"/>            
+            <apex:column style="width:250px" value="{!oaOldest.CreatedDate}"/>            
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+    <!--Display the Last (Most Recent) Outreach task-->
+    <apex:pageBlock title="Most Recent Outreach">
+        <apex:pageBlockTable style="width:100%" value="{!oaMostRecent}" var="oaMostRecent">
+            <apex:column style="width:250px" value="{!oaMostRecent.Subject}"/>
+            <apex:column style="width:250px" value="{!oaMostRecent.Contact_Type__c}"/>
+            <apex:column style="width:250px" value="{!oaMostRecent.Enrollment_Status__c}"/>
+            <apex:column style="width:250px" value="{!oaMostRecent.Enrollment_Sub_Status__c}"/>
+            <apex:column style="width:250px" value="{!oaMostRecent.Sub_Status_Reason__c}"/>            
+            <apex:column style="width:250px" value="{!oaMostRecent.CreatedDate}"/>  
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+</apex:page>

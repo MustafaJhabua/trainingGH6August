@@ -1,0 +1,36 @@
+<apex:page standardController="User" extensions="SmartvCard.Buttonforuser">
+BEGIN:VCARD<br/>
+VERSION:2.1<br/>
+N:<c:vcard Value="{!user.LastName}"/>;
+<c:vcard Value="{!user.FirstName}"/><br/>
+FN:<c:vcard Value="{!user.FirstName} "/> <c:vcard value="{!user.LastName}"/> <br/>
+ORG:<c:vcard Value="{!user.companyname}"/><br/>
+TITLE:<c:vcard Value="{!user.Title}"/><br/>
+TEL;WORK;VOICE:<c:vcard Value="{!user.phone}"/><br/>
+TEL;Home;VOICE:<c:vcard Value="{!user.mobilePhone}"/><br/>
+ADR;WORK:;;<c:vcard Value="{!user.Street}"/>;<c:vcard Value="{!user.City}"/>;<c:vcard Value="{!user.State}"/>;<c:vcard Value="{!user.PostalCode}"/>;<c:vcard Value="{!user.Country}"/><br/>
+LABEL;WORK;ENCODING=QUOTED-PRINTABLE:<c:vcard Value="{!user.Street} "/><c:vcard Value="{!user.City} "/><c:vcard Value="{!user.State} "/><c:vcard Value="{!user.PostalCode} "/><c:vcard Value="{!user.Country} "/><br/>
+ADR;HOME:;;<br/>
+LABEL;WORK;ENCODING=QUOTED-PRINTABLE:<br/>
+EMAIL;PREF;INTERNET:<c:vcard Value="{!user.Email}"/><br/>
+NOTE: 
+<c:vcard Value="{!Note}" /><br/>
+REV:20080424T195243Z<br/>
+END:VCARD<br/>
+
+
+
+<apex:form >
+<br>
+<apex:commandLink styleClass="btn" value="Download" action="{!DownloadVCF2}"    target="_bottom"  accesskey="r" style="text-decoration: none;" />
+<!-- <apex:commandButton action="{!DownloadVCF2}" value="Download"/> --> &nbsp;&nbsp;&nbsp;
+<apex:commandLink styleClass="btn" value="OK" action="{!redirecttouser}"   accesskey="r" style="text-decoration: none;" />
+<!-- <apex:commandButton action="{!Redirecttocontact}" value="OK" /> -->&nbsp;&nbsp;&nbsp;
+<apex:commandLink styleClass="btn" value="Cancel" action="{!back}"   accesskey="r" style="text-decoration: none;" />
+<!-- <apex:commandButton action="{!back}" value="Cancel"/>  -->
+<!-- <apex:commandButton action="{!DownloadVCF2}" value="Download"/>&nbsp;&nbsp;&nbsp;
+ <apex:commandButton action="{!redirecttouser}" value="OK" />&nbsp;&nbsp;&nbsp;
+ <apex:commandButton action="{!back}" value="Cancel"/>  -->
+ </br>
+</apex:form>
+</apex:page>

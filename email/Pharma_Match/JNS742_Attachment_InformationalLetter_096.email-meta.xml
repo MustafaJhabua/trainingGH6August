@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This email is sent to ordering physicians with a BRCA1, BRCA2, ATM alteration patient who responded to an outreach email or phone call</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>JNS742_Response_TrialInformation_097</name>
+    <style>none</style>
+    <subject>Re:</subject>
+    <textOnly>Thank you, Dr. [Smith].
+
+[Option 1: Response to IOE] Per your request, I have included information about the JNS-742 clinical study below as well as assigned one of our Clinical Trial Advisor physicians to contact you via phone this week to further discuss the clinical trial options for your patient who had an ATM,  BRCA1 and/or BRCA2 alteration. [Option 1]
+
+[Option 2: Follow-up after phone conversation] It was great speaking with you regarding your patient AM (75 yo female with lung adenocarcinoma) who was found to have an ATM, BRCA1 and/or BRCA2 alteration. To view your patient&apos;s Guardant360 report, click here: https://portal.guardanthealth.com/r/A0141378. Further to our discussion about your patient’s Guardant360 report, you expressed an interest in exploring treatment options based on the ATM, BRCA1 and/or BRCA2 alteration detected. [Option 2]
+
+Since ATM, BRCA1 and/or BRCA2 alterations are uncommon, we have partnered with Janssen and formed a business and financial relationship to help identify patients for the JNS-742 study and to alert treating physicians about their treatment and trial options for patients like AM. Your patient may be eligible for [X NUMBER] of clinical trials as indicated on the Guardant360 report, including:
+A Study of Niraparib Combination Therapies for the Treatment of Metastatic Castration-Resistant Prostate Cancer (QUEST), NCT03431350
+A Study of Niraparib in Combination With Abiraterone Acetate and Prednisone Versus Abiraterone Acetate and Prednisone for Treatment of Participants With Metastatic Prostate Cancer (MAGNITUDE), NCT03748641
+
+Niraparib: Janssen
+Relevant clinical data. Details of this trial are in the attached PDF and can be found at https://clinicaltrials.gov/ct2/show/NCT03431350 (QUEST) and https://clinicaltrials.gov/ct2/show/NCT03748641 (MAGNITUDE).
+ 
+The closest study site is at:
+Duke University in Durham, North Carolina with Dr. Jones; (MAGNITUDE)
+Utah Cancer Specialists, Utah with Dr. Smith; (QUEST)
+additional study sites and financial support for patient travel and accommodations are available. 
+
+Would you like me to connect you with Dr. Jones or Dr. Smith, the nearby PIs of the Janssen studies, via email so they may answer additional questions regarding eligibility, inclusion/criteria, etc. for the Janssen studies?
+
+Sincerely,
+Katrina Kesterson, MD
+Guardant Health, Inc.
+On behalf of the Clinical Trial Advisors program
+
+Guardant Health Match Key: JNS742-0001
+
+
+Guardant Health partners with the clinical trial sponsor to conduct patient referral activities.
+
+This message is intended solely for the designated recipient(s). It may contain confidential or proprietary information and may be subject to attorney-client privilege or other confidentiality protections. If you are not a designated recipient you may not review, copy or distribute this message. If you have received this in error, please reply to this email and delete this message. Thank you. Ref: {!Match_Record__c.Id}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

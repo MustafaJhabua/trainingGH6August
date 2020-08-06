@@ -1,0 +1,166 @@
+<apex:page standardController="MedProSC__MedProHCP__c" showHeader="true" sidebar="true" extensions="MedProSC.MedProHCPCustomDetail_Controller">
+    <apex:sectionHeader title="MedPro Search" subtitle="HCP" />
+    <head>
+
+        <div id="spinner" class="spinner" style="display:none;" >
+            <br/>
+            <apex:image id="poweredByMedProID2" value="{!$Resource.MedProSC__MedProIDPill2}" width="144" height="72"/>
+            <p></p>
+            <apex:image id="img-spinner" url="{!$Resource.MedProSC__progressBar}" width="126" height="22" />
+            <br/>
+            <p><b>Processing data please wait ...</b></p>
+        </div>
+
+        <style>
+            .spinner {
+                border: 2px solid black;
+                background: rgba(230, 230, 230, 1.0);
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                margin-left: -125px; /* half width of the spinner gif */
+                margin-top: -82px; /* half height of the spinner gif */
+                text-align:center;
+                z-index:1234;
+                overflow: hidden;
+                width: 210px; /* width of the spinner gif */
+                height: 210px; /*hight of the spinner gif +2px to fix IE8 issue */
+                padding: {5px 5px 2px 25px};
+                }
+                
+                .ui-button-icon-only .ui-icon {
+                margin-left: -8px !important;
+                margin-top: -8px !important;
+                }
+                .loading {
+                    background: transparent;
+                    border: transparent;
+                    -webkit-animation:spin 2s linear infinite;
+                    animation:spin 2s linear infinite;
+                }
+                @-webkit-keyframes spin { 100% { 
+                    -webkit-transform:rotate(360deg); 
+                    }
+                }
+                @keyframes spin { 100% {
+                    -webkit-transform:rotate(360deg);
+                    transform:rotate(360deg);
+                    }
+            }                
+        </style>
+
+    </head>
+    <apex:stylesheet value="{!$Resource.MedProSC__MedProTwoPassDisplayDetail_resources}"/>
+    <apex:includeScript value="{!URLFOR($Resource.MedProSC__jQuery_ui_1_10_4, '/jquery-ui-1.10.4.custom/js/jquery-1.10.2.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.MedProSC__jQuery_ui_1_10_4, '/jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.MedProSC__jQuery_ui_1_10_4, '/jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.min.js')}" />
+
+    <script type="text/javascript">
+        
+        function resetInlineEdit()
+        {
+            $("#editButton").show();
+            $("#deleteButton").show();
+            $("#updateButton").show();
+            $("#submitDRPButton").show();
+            $("#saveButton").hide();
+            $("#cancelButton").hide();
+        }
+
+        function performSyncUpdateFromMedProV2(medProId)
+        {
+            $("#spinner").show();
+
+            Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.MedProHCPCustomDetail_Controller.syncUpdateFromMedProV2}',
+                                                      medProId, handleResult_performSyncUpdateFromMedProV2);
+        }
+
+        function handleResult_performSyncUpdateFromMedProV2(result, event)
+        {
+            $("#spinner").hide();
+
+            if ((result != null) && (event.status == true))
+                window.location.href = result;
+        }
+
+    </script>
+
+    <apex:form >
+        
+        <apex:pageBlock >
+            
+            <apex:pageMessages />
+
+            <apex:pageBlockButtons location="top" >
+
+                <apex:commandButton id="editButton" value="Edit" action="{!edit}" />
+                <apex:commandButton id="deleteButton" value="Delete" action="{!delete}" />
+                <apex:commandButton id="saveButton" value="Save" action="{!save}"  style="display: none;" />
+                <apex:commandButton id="cancelButton" value="Cancel" style="display: none;" onclick="resetInlineEdit()" />
+                <apex:commandButton id="updateButton" value="Update from MedPro" onclick="performSyncUpdateFromMedProV2('{!MedProSC__MedProHCP__c.MedProSC__MedProID__c}'); return false;" />
+                <apex:commandButton id="submitDRPButton" value="Submit DRP" action="{!performDRP}" />
+
+            </apex:pageBlockButtons>
+            
+            <apex:pageBlockSection collapsible="False" columns="1">
+
+				<apex:outputField value="{!MedProSC__MedProHCP__c.Name}"/>
+				<apex:outputField value="{!MedProSC__MedProHCP__c.MedProSC__MedProID__c}"/>
+				<apex:outputField value="{!MedProSC__MedProHCP__c.MedProSC__Transaction_ID__c}"/>
+				<apex:outputField value="{!MedProSC__MedProHCP__c.MedProSC__Suffix__c}"/>
+				<apex:outputField value="{!MedProSC__MedProHCP__c.MedProSC__FirstName__c}"/>
+				<apex:outputField value="{!MedProSC__MedProHCP__c.MedProSC__MiddleName__c}"/>
+				<apex:outputField value="{!MedProSC__MedProHCP__c.MedProSC__LastName__c}"/>
+				<apex:outputField value="{!MedProSC__MedProHCP__c.MedProSC__Title__c}"/>
+				<apex:outputField value="{!MedProSC__MedProHCP__c.MedProSC__StateOfLicense__c}"/>
+				<apex:outputField value="{!MedProSC__MedProHCP__c.MedProSC__StateLicenseNumber__c}"/>
+				<apex:outputField value="{!MedProSC__MedProHCP__c.MedProSC__StateSpecificID__c}"/>
+				<apex:outputField value="{!MedProSC__MedProHCP__c.MedProSC__NPINumber__c}"/> 
+                <apex:outputField value="{!MedProSC__MedProHCP__c.MedProSC__DEA_Number__c}"/> 
+				<apex:outputField value="{!MedProSC__MedProHCP__c.MedProSC__Designation__c}"/>
+				<apex:outputField value="{!MedProSC__MedProHCP__c.MedProSC__AddressLine1__c}"/>
+				<apex:outputField value="{!MedProSC__MedProHCP__c.MedProSC__AddressLine2__c}"/>
+				<apex:outputField value="{!MedProSC__MedProHCP__c.MedProSC__City__c}"/>
+				<apex:outputField value="{!MedProSC__MedProHCP__c.MedProSC__State__c}"/>
+				<apex:outputField value="{!MedProSC__MedProHCP__c.MedProSC__ZipCode__c}"/>
+				<apex:outputField value="{!MedProSC__MedProHCP__c.MedProSC__TaxonomyDescription__c}"/>
+				<apex:outputField value="{!MedProSC__MedProHCP__c.MedProSC__Taxonomy_Code__c}"/>
+				<apex:outputField value="{!MedProSC__MedProHCP__c.MedProSC__Do_Not_Allow_Service_Update__c}"/>
+				<apex:outputField value="{!MedProSC__MedProHCP__c.MedProSC__MedPro_LastUpdatedTS__c}"/>
+				<apex:outputField value="{!MedProSC__MedProHCP__c.MedProSC__ClientID__c}"/>
+				<apex:outputField value="{!MedProSC__MedProHCP__c.MedProSC__samp_overall__c}"/>
+				<apex:outputField value="{!MedProSC__MedProHCP__c.MedProSC__samp_license_status__c}"/>
+				<apex:outputField value="{!MedProSC__MedProHCP__c.MedProSC__sampleability_exp_overall__c}"/>
+				<apex:outputField value="{!MedProSC__MedProHCP__c.MedProSC__state_grace_period__c}"/>
+				<apex:outputField value="{!MedProSC__MedProHCP__c.MedProSC__customer_state_grace_period__c}"/>
+				<apex:outputField value="{!MedProSC__MedProHCP__c.MedProSC__adj_state_lic_exp_date__c}"/>
+				<apex:outputField value="{!MedProSC__MedProHCP__c.MedProSC__samp_desig_status__c}"/>
+				<apex:outputField value="{!MedProSC__MedProHCP__c.MedProSC__samp_fed_sanctions__c}"/>
+				<apex:outputField value="{!MedProSC__MedProHCP__c.MedProSC__samp_last_received__c}"/>
+                
+                <apex:inlineEditSupport event="ondblClick" showOnEdit="saveButton,cancelButton" hideOnEdit="editButton,deleteButton,updateButton,submitDRPButton" />
+
+            </apex:pageBlockSection>
+            <apex:outputPanel > 
+                <div class="pbHeader">
+                    <table class="medproTable" >
+                       <tbody>
+                          <tr>
+                             <td class="pbTitle"><apex:include pageName="MedProSC__MedProStandardCopyrightFooter"/> </td>                     
+                             <td class="pbButton">
+                                <apex:commandButton id="editButton" value="Edit" action="{!edit}" />
+                                <apex:commandButton id="deleteButton" value="Delete" action="{!delete}" />
+                                <apex:commandButton id="saveButton" value="Save" action="{!save}"  style="display: none;" />
+                                <apex:commandButton id="cancelButton" value="Cancel" style="display: none;" onclick="resetInlineEdit()" />
+                                <apex:commandButton id="updateButton" value="Update from MedPro" onclick="performSyncUpdateFromMedProV2('{!MedProSC__MedProHCP__c.MedProSC__MedProID__c}'); return false;" />
+                                <apex:commandButton id="submitDRPButton" value="Submit DRP" action="{!performDRP}" />                               
+                             </td>
+                          </tr>
+                       </tbody>
+                    </table>
+                </div>
+            </apex:outputPanel>            
+
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

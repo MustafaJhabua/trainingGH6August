@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_86694406</developerName>
+        <masterLabel>Created By</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>CREATED_BY</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <value>MSL</value>
+        </values>
+        <values>
+            <value>CS</value>
+        </values>
+        <values>
+            <value>Sales</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_71242692</developerName>
+        <masterLabel>Created By Role</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Activity.Created_by_Role__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Client Services Associate</sourceValue>
+            </sourceValues>
+            <value>Client Services Associate</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Medical Science Liaison</sourceValue>
+            </sourceValues>
+            <value>Medical Science Liaison</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>AE Central</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AE Midwest</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AE Northeast</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AE Southeast</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AE West</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Regional Sales Director - Central</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Regional Sales Director - Northeast</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Int&apos;l Dev - Asia</sourceValue>
+            </sourceValues>
+            <value>Sales</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>WHAT_NAME</field>
+    </columns>
+    <columns>
+        <field>Activity.Created_by_Role__c</field>
+    </columns>
+    <columns>
+        <field>Activity.Activity_Count__c</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>DESCRIPTION</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATE_BY</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Activity.Medaffairs_task__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity.Created_by_Role__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>System Administrator</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Month</dateGranularity>
+        <field>LAST_UPDATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ASSIGNED</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_71242692</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>New Med Affairs tasks</name>
+    <params>
+        <name>closed</name>
+        <value>closed</value>
+    </params>
+    <params>
+        <name>type</name>
+        <value>te</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Activity</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CURY</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <choices>
+        <name>newChoice_Go_Back</name>
+        <choiceText>{!choice_Go_Back}</choiceText>
+        <dataType>Boolean</dataType>
+        <value>
+            <booleanValue>true</booleanValue>
+        </value>
+    </choices>
+    <choices>
+        <name>newChoice_Update</name>
+        <choiceText>{!choice_Update_SOW}</choiceText>
+        <dataType>Boolean</dataType>
+        <value>
+            <booleanValue>false</booleanValue>
+        </value>
+    </choices>
+    <decisions>
+        <name>decision_go_back_or_forward</name>
+        <label>decision: go back or forward</label>
+        <locationX>93</locationX>
+        <locationY>314</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Reenter_Project_ID</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>I_want_to</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>newChoice_Go_Back</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_New_LIMS_ID</targetReference>
+            </connector>
+            <label>Reenter Project ID</label>
+        </rules>
+        <rules>
+            <name>Update_Current_SOW_value</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>I_want_to</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>newChoice_Update</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Previous_SOW</targetReference>
+            </connector>
+            <label>Update Current SOW value</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_SOW_Complete</name>
+        <label>Is SOW Complete</label>
+        <locationX>363</locationX>
+        <locationY>107</locationY>
+        <defaultConnector>
+            <targetReference>Get_Sponsor_Account_LIMS_info</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Incomplete_SOW</name>
+            <conditionLogic>1 OR 2 OR 3 or 4</conditionLogic>
+            <conditions>
+                <leftValueReference>varSOWEMailCheck.Product_Name__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varSOWEMailCheck.Project_Type__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varSOWEMailCheck.Need_Treatment__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varSOWEMailCheck.Product_Name__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>None</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SOW_Is_Not_Complete</targetReference>
+            </connector>
+            <label>Incomplete SOW</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks if Sponsor Account is either already in LIMS (qualified), or can be sent to LIMS (Biopharma OK to Send to LIMS)</description>
+        <name>Is_Sponsor_Account_ready_for_LIMS</name>
+        <label>Is Sponsor Account ready for LIMS?</label>
+        <locationX>807</locationX>
+        <locationY>193</locationY>
+        <defaultConnector>
+            <targetReference>Process_Halted_Account_Cannot_Be_Pushed_to_LIMS</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Qualified</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varAccountLIMSDetail.Qualified__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_New_LIMS_ID</targetReference>
+            </connector>
+            <label>Qualified</label>
+        </rules>
+        <rules>
+            <name>OK_to_Send_to_LIMS</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varAccountLIMSDetail.Biopharma_OK_to_Send_to_LIMS__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varAccountLIMSDetail.Qualified__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Account_to_LIMS</targetReference>
+            </connector>
+            <label>OK to Send to LIMS</label>
+        </rules>
+    </decisions>
+    <description>Used on SOW object to create new LIMS Project ID lookup record. Added LIMS Check/Initiate send account to LIMS if qualified. Updated one screen.</description>
+    <interviewLabel>Create New LIMS Project ID {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Create New LIMS Project ID</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordCreates>
+        <name>Create_New_LIMS_Project_ID</name>
+        <label>Create New LIMS Project ID</label>
+        <locationX>510</locationX>
+        <locationY>478</locationY>
+        <assignRecordIdToReference>varLIMSProjID</assignRecordIdToReference>
+        <connector>
+            <targetReference>Update_SOW</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>LIMS_Project_ID_already_Exists</targetReference>
+        </faultConnector>
+        <inputAssignments>
+            <field>LIMS_Project_ID__c</field>
+            <value>
+                <elementReference>New_LIMS_Project_ID</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>New_LIMS_Project_ID</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>SOW__c</field>
+            <value>
+                <elementReference>varSOWID</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Sponsor_Account__c</field>
+            <value>
+                <elementReference>varSponsorAcct</elementReference>
+            </value>
+        </inputAssignments>
+        <object>LIMS_Project_ID__c</object>
+    </recordCreates>
+    <recordLookups>
+        <description>This checks certain fields on the SOW so that it doesn&apos;t trigger the validation rule &apos;Must have all fields completed&apos; when trying to send email to DL-LIMS-Support</description>
+        <name>Check_SOW_Fields</name>
+        <label>Check SOW Fields</label>
+        <locationX>270</locationX>
+        <locationY>156</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Is_SOW_Complete</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varSOWID</elementReference>
+            </value>
+        </filters>
+        <object>SOW__c</object>
+        <outputReference>varSOWEMailCheck</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Product_Name__c</queriedFields>
+        <queriedFields>Project_Type__c</queriedFields>
+        <queriedFields>Need_Treatment__c</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <description>Gets &apos;Qualified&apos; and &apos;Biopharma OK to Send to LIMS&apos; values for sponsor account</description>
+        <name>Get_Sponsor_Account_LIMS_info</name>
+        <label>Get Sponsor Account LIMS info</label>
+        <locationX>709</locationX>
+        <locationY>50</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Is_Sponsor_Account_ready_for_LIMS</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varSponsorAcct</elementReference>
+            </value>
+        </filters>
+        <object>Account</object>
+        <outputReference>varAccountLIMSDetail</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Biopharma_OK_to_Send_to_LIMS__c</queriedFields>
+        <queriedFields>Qualified__c</queriedFields>
+        <queriedFields>Acct_Name_and_Number__c</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <name>LIMS_Project_ID_already_Exists</name>
+        <label>LIMS Project ID already Exists</label>
+        <locationX>372</locationX>
+        <locationY>479</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Choice_New_Project_ID_or_Update_SOW</targetReference>
+        </connector>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>New_LIMS_Project_ID</elementReference>
+            </value>
+        </filters>
+        <object>LIMS_Project_ID__c</object>
+        <outputReference>ExistingLIMSProjectIDs</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Name</queriedFields>
+        <queriedFields>SOW_Name__c</queriedFields>
+        <queriedFields>SOW__c</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <description>Gets the SOW where the flow was initiated</description>
+        <name>Start_on_SOW</name>
+        <label>Start on SOW</label>
+        <locationX>173</locationX>
+        <locationY>52</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_SOW_Fields</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varSOWID</elementReference>
+            </value>
+        </filters>
+        <object>SOW__c</object>
+        <outputAssignments>
+            <assignToReference>varSOWName</assignToReference>
+            <field>SOW_Name__c</field>
+        </outputAssignments>
+        <outputAssignments>
+            <assignToReference>varSponsorAcct</assignToReference>
+            <field>Sponsor_Account__c</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordUpdates>
+        <description>Sends account to LIMS if &apos;Biopharma OK to Send to LIMS&quot;=TRUE and &quot;Qualified&quot;=FALSE</description>
+        <name>Send_Account_to_LIMS</name>
+        <label>Send Account to LIMS</label>
+        <locationX>593</locationX>
+        <locationY>340</locationY>
+        <connector>
+            <targetReference>Get_New_LIMS_ID</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varAccountLIMSDetail.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Push_to_LabVantage__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Qualified__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>Account</object>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Assumes project ID already exists</description>
+        <name>Update_Existing_Project_ID</name>
+        <label>Update Existing Project ID</label>
+        <locationX>277</locationX>
+        <locationY>604</locationY>
+        <connector>
+            <targetReference>Project_ID_has_been_Updated</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>ExistingLIMSProjectIDs.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>SOW__c</field>
+            <value>
+                <elementReference>varSOWID</elementReference>
+            </value>
+        </inputAssignments>
+        <object>LIMS_Project_ID__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Must erase Project ID field in previous SOW</description>
+        <name>Update_Previous_SOW</name>
+        <label>Update Previous SOW</label>
+        <locationX>109</locationX>
+        <locationY>483</locationY>
+        <connector>
+            <targetReference>Update_SOW_with_existing_LIMS_Project_ID</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>ExistingLIMSProjectIDs.SOW__c</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>LIMS_Project_ID__c</field>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </inputAssignments>
+        <object>SOW__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_SOW</name>
+        <label>Update SOW</label>
+        <locationX>677</locationX>
+        <locationY>478</locationY>
+        <connector>
+            <targetReference>Project_ID_has_been_Created</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varSOWID</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>LIMS_Project_ID__c</field>
+            <value>
+                <elementReference>varLIMSProjID</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Notify_DL_LIMS_Support__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>SOW__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_SOW_with_existing_LIMS_Project_ID</name>
+        <label>Update SOW with existing LIMS Project ID</label>
+        <locationX>106</locationX>
+        <locationY>604</locationY>
+        <connector>
+            <targetReference>Update_Existing_Project_ID</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varSOWID</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>LIMS_Project_ID__c</field>
+            <value>
+                <elementReference>ExistingLIMSProjectIDs.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>SOW__c</object>
+    </recordUpdates>
+    <screens>
+        <description>User chooses to return to screen &apos;Create New Project ID&apos; or move forward and update &apos;Current SOW&apos;</description>
+        <name>Choice_New_Project_ID_or_Update_SOW</name>
+        <label>Choice: New Project ID or Update SOW</label>
+        <locationX>251</locationX>
+        <locationY>390</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>decision_go_back_or_forward</targetReference>
+        </connector>
+        <fields>
+            <name>text_Sorry_Message</name>
+            <fieldText>&lt;p&gt;{!SorryTextTemplate}&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>I_want_to</name>
+            <choiceReferences>newChoice_Go_Back</choiceReferences>
+            <choiceReferences>newChoice_Update</choiceReferences>
+            <dataType>Boolean</dataType>
+            <defaultSelectedChoiceReference>newChoice_Go_Back</defaultSelectedChoiceReference>
+            <fieldText>I would like ...</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Get_New_LIMS_ID</name>
+        <label>Get New LIMS ID</label>
+        <locationX>427</locationX>
+        <locationY>297</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Create_New_LIMS_Project_ID</targetReference>
+        </connector>
+        <fields>
+            <name>New_LIMS_Project_ID</name>
+            <dataType>String</dataType>
+            <fieldText>New LIMS Project ID</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Process_Halted_Account_Cannot_Be_Pushed_to_LIMS</name>
+        <label>Process Halted--Account Cannot Be Pushed to LIMS</label>
+        <locationX>926</locationX>
+        <locationY>64</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>End_Process_Display_Text</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;{!EndFlowandUpdateAccount}&lt;span class=&quot;ql-cursor&quot;&gt;﻿&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Project_ID_has_been_Created</name>
+        <label>Project ID has been Created</label>
+        <locationX>817</locationX>
+        <locationY>470</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>ShowCompletedMessage</name>
+            <fieldText>&lt;p&gt;{!FinishedScreen}&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Project_ID_has_been_Updated</name>
+        <label>Project ID has been Updated</label>
+        <locationX>436</locationX>
+        <locationY>611</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>Display_End_Message</name>
+            <fieldText>&lt;p&gt;{!EndFlowAndUpdateProjectID}&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>SOW_Is_Not_Complete</name>
+        <label>Process Halted-SOW Is Not Complete</label>
+        <locationX>559</locationX>
+        <locationY>164</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>IncompleteSOW</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;{!EndFlowAndUpdateSOW}&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <startElementReference>Start_on_SOW</startElementReference>
+    <status>Active</status>
+    <textTemplates>
+        <name>choice_Go_Back</name>
+        <text>To go back to the last screen and enter a new Project ID.</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Updates existing Project ID with the SOW that began this Process</description>
+        <name>choice_Update_SOW</name>
+        <text>All new samples with this Project ID roll up to {!varSOWName}.</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Emailsubject</name>
+        <text>&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:12px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;LIMS Project Fault&lt;/FONT&gt;&lt;/DIV&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>This screen displays when the sponsor account can&apos;t be sent to LIMS</description>
+        <name>EndFlowandUpdateAccount</name>
+        <text>This Project ID cannot be created because the Sponsor Account for this SOW, {!varAccountLIMSDetail.Acct_Name_and_Number__c}, cannot be pushed into LIMS.
+
+Please go to the Sponsor Account&apos;s page and ensure that it has both a complete reporting address and a phone number.</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Displays when user enters a Project ID that already exists, and chooses to update the &apos;Current SOW&apos; value on that ID .</description>
+        <name>EndFlowAndUpdateProjectID</name>
+        <text>The Project ID {!varLIMSProjID} has been changed. 
+
+From this point forward, all samples received with this Project ID will now roll up to {!varSOWName}. (This can still be changed for individual samples, if necessary.)
+
+Thank you!</text>
+    </textTemplates>
+    <textTemplates>
+        <description>End Flow and fix SOW</description>
+        <name>EndFlowAndUpdateSOW</name>
+        <text>This Project ID cannot be created because this SOW, {!varSOWName}, needs values within each of the following fields: 
+
+Product Name:  {!varSOWEMailCheck.Product_Name__c}
+Program Type:    {!varSOWEMailCheck.Project_Type__c}
+Needs Treatment {N-of-1}:   {!varSOWEMailCheck.Need_Treatment__c}
+
+Please click the &quot;Finish&quot; button to return to the SOW page and add values to these fields. Then click the &quot;Create New Project ID&quot; button again.</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Displays when Project ID has been created and flow completes successfully</description>
+        <name>FinishedScreen</name>
+        <text>The Project ID has been completed and is now attached to this SOW. All samples received with this Project ID will roll up to this SOW.
+
+You will receive an email confirmation when the LIMS Support team has created this Project ID in LIMS.</text>
+    </textTemplates>
+    <textTemplates>
+        <description>This is a list of all current LIMS Project IDs</description>
+        <name>ListOfExistingLIMSProjectIDs</name>
+        <text>&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:12px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;&lt;/FONT&gt;&lt;/DIV&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>SorryTextTemplate</name>
+        <text>This Project ID already exists. Currently, all samples with this Project ID are rolling up to {!ExistingLIMSProjectIDs.SOW_Name__c}.
+
+You can choose to enter a different Project ID, or you can change the SOW that all new samples with this Project ID will roll up to. (Changing the SOW will not apply to samples already received. Also, this value can be edited for any samples retroactively.)</text>
+    </textTemplates>
+    <variables>
+        <name>ExistingLIMSProjectIDs</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>LIMS_Project_ID__c</objectType>
+    </variables>
+    <variables>
+        <description>Contains LIMS details for sponsor account</description>
+        <name>varAccountLIMSDetail</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Account</objectType>
+    </variables>
+    <variables>
+        <name>varLIMSProjID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Checks if SOW is complete for email to LIMS Support</description>
+        <name>varSOWEMailCheck</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>SOW__c</objectType>
+    </variables>
+    <variables>
+        <name>varSOWID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Contains the friendly text name of the SOW</description>
+        <name>varSOWName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>varSponsorAcct</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

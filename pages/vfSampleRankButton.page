@@ -1,0 +1,12 @@
+<apex:page id="vfSampleRankButton"
+           standardController="Guardant_360_Sample__c"
+           extensions="SampleRankButtonController"
+           action="{!autoRun}">
+    <apex:pageMessages />
+    <apex:outputPanel rendered="false">
+        <apex:outputField value="{!Guardant_360_Sample__c.Contact__c}"/>
+        <apex:outputField value="{!Guardant_360_Sample__c.Patient__c}"/>
+        <apex:outputField value="{!Guardant_360_Sample__c.Test_Count__c}"/>
+        <apex:outputField value="{!Guardant_360_Sample__c.Patient_Test_Count__c}"/>
+    </apex:outputPanel>
+</apex:page>

@@ -1,0 +1,1664 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Guardant Sample</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Guardant Samples</value>
+    </caseValues>
+    <fields>
+        <label><!-- ACCA Notification Sent --></label>
+        <name>ACCA_Notification_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accession Date --></label>
+        <name>Accession_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Exec. --></label>
+        <name>Account_AE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Case Safe ID --></label>
+        <name>Account_Case_Safe_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Class --></label>
+        <name>Account_Class__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ordering account&apos;s Reporting country --></help>
+        <label><!-- Reporting Country --></label>
+        <name>Account_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account GHI # --></label>
+        <name>Account_GHI__c</name>
+    </fields>
+    <fields>
+        <help><!-- Derived from the field &apos;IRB Date&apos; from the sample&apos;s account. Used only for VISION Study samples --></help>
+        <label><!-- Account IRB Date --></label>
+        <name>Account_IRB_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- TRUE if contact is part of AIT program but hasn&apos;t committed yet or sample was received before commitment --></help>
+        <label><!-- Account Integration Baseline --></label>
+        <name>Account_Integration_Baseline__c</name>
+    </fields>
+    <fields>
+        <help><!-- TRUE if the sample was received after the contact&apos;s Account Integration Commitment Date (after the contact committed to the Account Integration program). --></help>
+        <label><!-- Account Integration Sample --></label>
+        <name>Account_Integration_Sample__c</name>
+    </fields>
+    <fields>
+        <help><!-- Derived from account&apos;s &apos;Account MSL&apos; field --></help>
+        <label><!-- Account MSL --></label>
+        <name>Account_MSL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Derived from &apos;Territory Region&apos; field on Account --></help>
+        <label><!-- Account Region --></label>
+        <name>Account_Region__c</name>
+    </fields>
+    <fields>
+        <help><!-- Reporting Zip Code from the associated account. Used to determine territory alignment. --></help>
+        <label><!-- Account Reporting Zip --></label>
+        <name>Account_Reporting_Zip__c</name>
+    </fields>
+    <fields>
+        <help><!-- derived from account&apos;s Trial Site Number --></help>
+        <label><!-- Account Trial Site Number --></label>
+        <name>Account_Trial_Site_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Type --></label>
+        <name>Account_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Guardant Samples (Account) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account passed IRB? --></label>
+        <name>Account_passed_IRB__c</name>
+    </fields>
+    <fields>
+        <help><!-- Derived from account&apos;s &apos;MSL&apos; field --></help>
+        <label><!-- Acct MSL --></label>
+        <name>Acct_MSL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formula field. TRUE if this sample doesn&apos;t come from contact&apos;s main account, and if contact is an Account Integration Target. --></help>
+        <label><!-- Affiliation Sample --></label>
+        <name>Affiliation_Sample__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alteration --></label>
+        <name>Alteration__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Accession # Dupe Check --></label>
+        <name>Assession_Dupe_Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- Basic Report Released Email Sent --></label>
+        <name>Basic_Report_Released_email_sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To --></label>
+        <name>Bill_To__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Type --></label>
+        <name>Billing_Type__c</name>
+        <picklistValues>
+            <masterLabel>Clinical Trial : US</masterLabel>
+            <translation><!-- Clinical Trial : US --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clinical Trial: ROW</masterLabel>
+            <translation><!-- Clinical Trial: ROW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DirectBill : US</masterLabel>
+            <translation><!-- DirectBill : US --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distributors : ROW</masterLabel>
+            <translation><!-- Distributors : ROW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Bill - Cancelled</masterLabel>
+            <translation><!-- Do Not Bill - Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Bill - Clinical Utility</masterLabel>
+            <translation><!-- Do Not Bill - Clinical Utility --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Bill - LUNAR</masterLabel>
+            <translation><!-- Do Not Bill - LUNAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Bill - Medical Affairs</masterLabel>
+            <translation><!-- Do Not Bill - Medical Affairs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Bill - Pharma</masterLabel>
+            <translation><!-- Do Not Bill - Pharma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Bill - Proficiency</masterLabel>
+            <translation><!-- Do Not Bill - Proficiency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Bill - Promotional</masterLabel>
+            <translation><!-- Do Not Bill - Promotional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Bill - Quality Testing</masterLabel>
+            <translation><!-- Do Not Bill - Quality Testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Bill - ROW</masterLabel>
+            <translation><!-- Do Not Bill - ROW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Indigent</masterLabel>
+            <translation><!-- Financial Indigent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Institutional Billing</masterLabel>
+            <translation><!-- Institutional Billing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medicaid</masterLabel>
+            <translation><!-- Medicaid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medicare</masterLabel>
+            <translation><!-- Medicare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pharma : ROW</masterLabel>
+            <translation><!-- Pharma : ROW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pharma : US</masterLabel>
+            <translation><!-- Pharma : US --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private Insurance/Employee Health Plan</masterLabel>
+            <translation><!-- Private Insurance/Employee Health Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private Insurance/Employee Health Plan No OOP</masterLabel>
+            <translation><!-- Private Insurance/Employee Health Plan No OOP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Requesting Physician</masterLabel>
+            <translation><!-- Requesting Physician --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research : ROW</masterLabel>
+            <translation><!-- Research : ROW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research : US</masterLabel>
+            <translation><!-- Research : US --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self-Pay Patient</masterLabel>
+            <translation><!-- Self-Pay Patient --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self-Pay Sponsored</masterLabel>
+            <translation><!-- Self-Pay Sponsored --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Checked means this sample belongs to an account whose samples are stored and not processed immediately. When checked, delayed-report cases will not be generated for samples for this account. --></help>
+        <label><!-- Bio-Banked Account? --></label>
+        <name>Bio_Banked_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Blood Collection Date --></label>
+        <name>Blood_Collection_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Boomi Key --></label>
+        <name>Boomi_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- CH1 Notification Sent --></label>
+        <name>CH1_Notification_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- CORE --></label>
+        <name>CORE__c</name>
+    </fields>
+    <fields>
+        <label><!-- CRC Email Sent --></label>
+        <name>CRC_Email_sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancellation Commission Override --></label>
+        <name>Cancellation_Commission_Override__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancellation Reason --></label>
+        <name>Cancellation_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancer Category --></label>
+        <name>Cancer_Category__c</name>
+        <picklistValues>
+            <masterLabel>Bladder</masterLabel>
+            <translation><!-- Bladder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brain</masterLabel>
+            <translation><!-- Brain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Breast</masterLabel>
+            <translation><!-- Breast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cervix</masterLabel>
+            <translation><!-- Cervix --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Endometrial/Uterine</masterLabel>
+            <translation><!-- Endometrial/Uterine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GI</masterLabel>
+            <translation><!-- GI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Head &amp; Neck</masterLabel>
+            <translation><!-- Head &amp; Neck --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kidney</masterLabel>
+            <translation><!-- Kidney --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lung</masterLabel>
+            <translation><!-- Lung --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ovarian</masterLabel>
+            <translation><!-- Ovarian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Skin</masterLabel>
+            <translation><!-- Skin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Soft Tissue/Bone</masterLabel>
+            <translation><!-- Soft Tissue/Bone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thyroid</masterLabel>
+            <translation><!-- Thyroid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Urogenital</masterLabel>
+            <translation><!-- Urogenital --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Cancer Class --></label>
+        <name>Cancer_Class__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancer Stage --></label>
+        <name>Cancer_Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancer Type --></label>
+        <name>Cancer_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Change --></label>
+        <name>Change_del__c</name>
+    </fields>
+    <fields>
+        <help><!-- N/A =  No Alteration found or Alteration was found and the sample was NOT submitted to N of 1. --></help>
+        <label><!-- Clinical Trial --></label>
+        <name>Clinical_Trial__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Commission --></label>
+        <name>Commission__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact: 2020 Lung Quintile --></label>
+        <name>Contact_2020_Lung_Quintile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact: 2020 MD Universe --></label>
+        <name>Contact_2020_MD_Universe__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact: 2020 Pan-Cancer Quintile --></label>
+        <name>Contact_2020_Pan_Cancer_Quintile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact: 2020 Tier --></label>
+        <name>Contact_2020_Tier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact: Breast Prescriber --></label>
+        <name>Contact_Breast_Prescriber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact: CRC Prescriber --></label>
+        <name>Contact_CRC_Prescriber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Case Safe ID --></label>
+        <name>Contact_Case_Safe_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Email --></label>
+        <name>Contact_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Fax --></label>
+        <name>Contact_Fax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact: Lung Prescriber --></label>
+        <name>Contact_Lung_Prescriber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact: Marketable User --></label>
+        <name>Contact_Marketable_User__c</name>
+    </fields>
+    <fields>
+        <help><!-- Derived from contact&apos;s NPI --></help>
+        <label><!-- Contact NPI --></label>
+        <name>Contact_NPI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Phone --></label>
+        <name>Contact_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact: Prostate Prescriber --></label>
+        <name>Contact_Prostate_Prescriber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Role --></label>
+        <name>Contact_Role__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Guardant 360 Samples --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contract Sample --></label>
+        <name>Contract_Sample__c</name>
+    </fields>
+    <fields>
+        <label><!-- Courtesy Call Task Process --></label>
+        <name>Courtesy_Call_Task_Process__c</name>
+    </fields>
+    <fields>
+        <label><!-- Courtesy Call Task Skip --></label>
+        <name>Courtesy_Call_Task_Skip__c</name>
+    </fields>
+    <fields>
+        <label><!-- Create Delayed Sample Case --></label>
+        <name>Create_Delayed_Sample_Case__c</name>
+    </fields>
+    <fields>
+        <help><!-- Test field; no functionality in place --></help>
+        <label><!-- Create New Prior Auth Case --></label>
+        <name>Create_New_Prior_Auth_Case__c</name>
+    </fields>
+    <fields>
+        <label><!-- DSM Email --></label>
+        <name>DSM_Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- Derived from Blood Collection date. Used for VISION sample reports. AB 7/31/18 --></help>
+        <label><!-- Date Coll alpha --></label>
+        <name>Date_Coll_alpha__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Final Alpha --></label>
+        <name>Date_Final_Alpha__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Recd Alpha --></label>
+        <name>Date_Recd_Alpha__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Received --></label>
+        <name>Date_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Svc alpha --></label>
+        <name>Date_Svc_alpha__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Service --></label>
+        <name>Date_of_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Since Received --></label>
+        <name>Days_Since_Created__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Since Last Contact Sample --></label>
+        <name>Days_Since_Last_Contact_Sample__c</name>
+    </fields>
+    <fields>
+        <help><!-- Was a Delayed Sample Case Created for this sample? --></help>
+        <label><!-- Delayed Sample Case Created? --></label>
+        <name>Delayed_Sample_Case_Created__c</name>
+    </fields>
+    <fields>
+        <label><!-- Derived Portal Link for MD --></label>
+        <name>Derived_Portal_Link_for_MD__c</name>
+    </fields>
+    <fields>
+        <label><!-- District Mgr Email --></label>
+        <name>District_Mgr_Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- Internal Only --></help>
+        <label><!-- Do not contact --></label>
+        <name>Do_not_contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient Report --></label>
+        <name>Download_Patient_Report__c</name>
+    </fields>
+    <fields>
+        <label><!-- East --></label>
+        <name>East__c</name>
+    </fields>
+    <fields>
+        <label><!-- Elite Sample --></label>
+        <name>Elite_Sample__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fellowship Sample --></label>
+        <name>Fellowship_Sample__c</name>
+    </fields>
+    <fields>
+        <label><!-- Final Report Date --></label>
+        <name>Final_Report_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fire Workflow --></label>
+        <name>Fire_Workflow__c</name>
+    </fields>
+    <fields>
+        <label><!-- GHI-002779 Notification --></label>
+        <name>GHI_002779_Notification__c</name>
+    </fields>
+    <fields>
+        <label><!-- ICD 10 --></label>
+        <name>ICD_10__c</name>
+    </fields>
+    <fields>
+        <label><!-- ICD 1 --></label>
+        <name>ICD_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- ICD 2 --></label>
+        <name>ICD_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- ICD 3 --></label>
+        <name>ICD_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- ICD 4 --></label>
+        <name>ICD_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- ICD 5 --></label>
+        <name>ICD_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- ICD 6 --></label>
+        <name>ICD_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- ICD 7 --></label>
+        <name>ICD_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- ICD 8 --></label>
+        <name>ICD_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- ICD 9 --></label>
+        <name>ICD_9__c</name>
+    </fields>
+    <fields>
+        <label><!-- Insurance Company --></label>
+        <name>Insurance_Company__c</name>
+    </fields>
+    <fields>
+        <label><!-- LIMS Case Comments --></label>
+        <name>LIMS_Case_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- LIMS Derived Pt ID --></label>
+        <name>LIMS_Derived_Pt_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- LIMS Length --></label>
+        <name>LIMS_Length__c</name>
+    </fields>
+    <fields>
+        <label><!-- LIMS Patient ID --></label>
+        <name>LIMS_Patient_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- LIMS Project ID --></label>
+        <name>LIMS_Project_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- LIMS Project ID - Lookup --></label>
+        <name>LIMS_Project_ID_lookup__c</name>
+        <relationshipLabel><!-- Guardant Samples --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- LIMS Request Record ID --></label>
+        <name>LIMS_Request_Record_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lamp --></label>
+        <name>Lamp__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hidden field. Used to check Previous Date Received-Contact field --></help>
+        <label><!-- Last Sample Recd Contact --></label>
+        <name>Last_Sample_Recd_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Latest Report Date --></label>
+        <name>Latest_Report_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Low MAF Email Sent --></label>
+        <name>Low_MAF_Email_sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Low MAF --></label>
+        <name>Low_MAF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lung Cancer email 1 --></label>
+        <name>Lung_Cancer_email_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lung Cancer email 2 --></label>
+        <name>Lung_Cancer_email_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lung Sample --></label>
+        <name>Lung_Sample__c</name>
+    </fields>
+    <fields>
+        <label><!-- MA Task Closed --></label>
+        <name>MA_Task_Closed__c</name>
+    </fields>
+    <fields>
+        <label><!-- MA Task Completed for Stale Tester --></label>
+        <name>MA_Task_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accession - MRN --></label>
+        <name>MDACC_Accession__c</name>
+    </fields>
+    <fields>
+        <label><!-- MD Replied to Stale Tester contact --></label>
+        <name>MD_Replied_to_Stale_Tester_contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- MR Match Key --></label>
+        <name>MR_Match_Key__c</name>
+    </fields>
+    <fields>
+        <help><!-- When was the most recent time this sample was updated by a Match Record? --></help>
+        <label><!-- MR Match Record Update --></label>
+        <name>MR_Match_Record_Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- MR Patient Initials --></label>
+        <name>MR_Patient_Initials__c</name>
+    </fields>
+    <fields>
+        <label><!-- MR Qualifying Target Gene --></label>
+        <name>MR_Qualifying_Target_Alterations__c</name>
+    </fields>
+    <fields>
+        <label><!-- MR Update Date --></label>
+        <name>MR_Update_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date field will populate when the email notification is sent to the NCCN MSL (Becky - east, Kim - west). --></help>
+        <label><!-- MSL 1st Sample Notification --></label>
+        <name>MSL_1st_Sample_Notification__c</name>
+    </fields>
+    <fields>
+        <label><!-- MSL Cell --></label>
+        <name>MSL_Cell__c</name>
+    </fields>
+    <fields>
+        <label><!-- MSL Email --></label>
+        <name>MSL_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- MSL Signature First Line --></label>
+        <name>MSL_Signature_First_Line__c</name>
+    </fields>
+    <fields>
+        <label><!-- MSL --></label>
+        <name>MSL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Matches Identified? --></label>
+        <name>Matches_Identified__c</name>
+    </fields>
+    <fields>
+        <label><!-- Medicare Coverage --></label>
+        <name>Medicare_Coverage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month Coll Date --></label>
+        <name>Month_Coll_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month Date Recd --></label>
+        <name>Month_Date_Recd__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month Date Service --></label>
+        <name>Month_Date_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month Final Report --></label>
+        <name>Month_Final_Report__c</name>
+    </fields>
+    <fields>
+        <help><!-- Month and Year the sample was received. --></help>
+        <label><!-- Month-Year --></label>
+        <name>Month_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- NCCN East --></label>
+        <name>NCCN_East__c</name>
+    </fields>
+    <fields>
+        <label><!-- NCCN Sample Reported Email Sent --></label>
+        <name>NCCN_Sample_Reported_Email_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- NCCN Sample --></label>
+        <name>NCCN_Sample__c</name>
+    </fields>
+    <fields>
+        <label><!-- NCCN West --></label>
+        <name>NCCN_West__c</name>
+    </fields>
+    <fields>
+        <label><!-- NCI East --></label>
+        <name>NCI_East__c</name>
+    </fields>
+    <fields>
+        <label><!-- NCI Email Sent --></label>
+        <name>NCI_Email_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- NCI/NCCN Region --></label>
+        <name>NCI_NCCN_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- NCI Sample --></label>
+        <name>NCI_Sample__c</name>
+    </fields>
+    <fields>
+        <label><!-- NCI West --></label>
+        <name>NCI_West__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name Derived Length --></label>
+        <name>Name_Derived_Length__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name Derived --></label>
+        <name>Name_Derived__c</name>
+    </fields>
+    <fields>
+        <label><!-- New International Report Released --></label>
+        <name>New_International_Report_Released__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hidden field. &apos;1&apos; if field &apos;Previous Date Received Contact&apos; is less than Today - 366 (i.e., if the contact&apos;s last order was over a year ago) or blank --></help>
+        <label><!-- New Ordering MD? --></label>
+        <name>New_Ordering_MD__c</name>
+    </fields>
+    <fields>
+        <label><!-- New York Sample --></label>
+        <name>New_York_Sample__c</name>
+    </fields>
+    <fields>
+        <label><!-- No Alt Email Sent --></label>
+        <name>No_Alt_Email_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- No Alt Email Sent to Physician --></label>
+        <name>No_Alt_Email_Sent_to_Physician__c</name>
+    </fields>
+    <fields>
+        <label><!-- Numbers of months between samples --></label>
+        <name>Numbers_of_months_between_samples__c</name>
+    </fields>
+    <fields>
+        <help><!-- Two-letter country code. OMD = &apos;Ordering MD&apos;. Entered on the Physician record. --></help>
+        <label><!-- OMD Country --></label>
+        <name>OMD_Country__c</name>
+    </fields>
+    <fields>
+        <help><!-- N/A =  No Alteration found or Alteration was found and the sample was NOT submitted to N of 1. --></help>
+        <label><!-- Off Label --></label>
+        <name>Off_Label__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- N/A =  No Alteration found or Alteration was found and the sample was NOT submitted to N of 1. --></help>
+        <label><!-- On Label --></label>
+        <name>On_Label__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- TRUE if initial outreach email was auto-sent. --></help>
+        <label><!-- Outreach Email Auto-sent? --></label>
+        <name>Outreach_Email_Auto_sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner Email --></label>
+        <name>Owner_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- PI? --></label>
+        <name>PI__c</name>
+    </fields>
+    <fields>
+        <label><!-- POD Date --></label>
+        <name>POD_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient Age --></label>
+        <name>Patient_Age__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient Case Safe ID --></label>
+        <name>Patient_Case_Safe_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient Gender --></label>
+        <name>Patient_Gender__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient Last Name --></label>
+        <name>Patient_Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient Last Sample Date --></label>
+        <name>Patient_Last_Sample_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates how many samples (across all request types) were ordered for this Patient when this sample was ordered. This field rolls up the patient’s test count by SFDC Patient ID if available. --></help>
+        <label><!-- Patient Test Count --></label>
+        <name>Patient_Test_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient Test Number --></label>
+        <name>Patient_Test_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient --></label>
+        <name>Patient__c</name>
+        <relationshipLabel><!-- Guardant Samples --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Patient received bill from Xifin --></label>
+        <name>Patient_received_bill_from_Xifin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Tier --></label>
+        <name>Payment_Teir_del__c</name>
+        <picklistValues>
+            <masterLabel>Bill Client</masterLabel>
+            <translation><!-- Bill Client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HIP/KOL</masterLabel>
+            <translation><!-- HIP/KOL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lung/Super High</masterLabel>
+            <translation><!-- Lung/Super High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lung/Super Low</masterLabel>
+            <translation><!-- Lung/Super Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Physician 1st F/U --></label>
+        <name>Physician_1st_F_U__c</name>
+    </fields>
+    <fields>
+        <label><!-- Physician 1st Lung --></label>
+        <name>Physician_1st_Lung__c</name>
+    </fields>
+    <fields>
+        <label><!-- Physician 2nd F/U --></label>
+        <name>Physician_2nd_F_U__c</name>
+    </fields>
+    <fields>
+        <label><!-- Physician 2nd Lung --></label>
+        <name>Physician_2nd_Lung__c</name>
+    </fields>
+    <fields>
+        <label><!-- Physician Name --></label>
+        <name>Physician_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Physician SL Percent --></label>
+        <name>Physician_SL_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Physician&apos;s First Sample Date --></label>
+        <name>Physician_s_First_Sample_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Physician&apos;s NPI # --></label>
+        <name>Physician_s_NPI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Portal Link for MD --></label>
+        <name>Portal_Link_for_MD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Portal Primary Email Address --></label>
+        <name>Portal_Primary_Email_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Portal Quaternary Email Address --></label>
+        <name>Portal_Quaternary_Email_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Portal Quinary Email Address --></label>
+        <name>Portal_Quinary_Email_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Portal Secondary Email Address --></label>
+        <name>Portal_Secondary_Email_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Portal Senary Email Address --></label>
+        <name>Portal_Senary_Email_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Portal Tertiary Email Address --></label>
+        <name>Portal_Tertiary_Email_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post Event Sample --></label>
+        <name>Post_Event_Sample__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous Date Received (Contact) --></label>
+        <name>Previous_Date_Received_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary ICD Code Lookup --></label>
+        <name>Primary_ICD_Code_Lookup__c</name>
+        <relationshipLabel><!-- Guardant Samples (Primary ICD Code Lookup) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Primary ICD Code --></label>
+        <name>Primary_ICD_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Ins Co Name --></label>
+        <name>Primary_PayorID__c</name>
+        <relationshipLabel><!-- Guardant Samples (Primary PayorID) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Promotion Code --></label>
+        <name>Promotion_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Provider Replied to 1st Result Contact --></label>
+        <name>Provider_Replied_to_1st_Result_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient Benefits Authorization --></label>
+        <name>Pt_Benefits_Authorization__c</name>
+        <picklistValues>
+            <masterLabel>Missing TRF</masterLabel>
+            <translation><!-- Missing TRF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Old TRF</masterLabel>
+            <translation><!-- Old TRF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed</masterLabel>
+            <translation><!-- Signed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsigned</masterLabel>
+            <translation><!-- Unsigned --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pt. DOB --></label>
+        <name>Pt_DOB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pt. First Name --></label>
+        <name>Pt_First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pt. Last Name --></label>
+        <name>Pt_Last_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formula used to bring over the Number of Samples value from Patient record --></help>
+        <label><!-- Pt No of tests --></label>
+        <name>Pt_No_of_tests__c</name>
+    </fields>
+    <fields>
+        <label><!-- Qualifies for Outreach Email Auto-send? --></label>
+        <name>Qualifies_for_Outreach_Email_Auto_send__c</name>
+    </fields>
+    <fields>
+        <label><!-- MR Qualifying Target Genes --></label>
+        <name>Qualifying_Target_Genes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Fiscal Quarter of the Sample Date --></help>
+        <label><!-- Quarter Received --></label>
+        <name>Quarter_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- RSD Email --></label>
+        <name>RSD_Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of months ago sample was received. &apos;0&apos; = received this month --></help>
+        <label><!-- Received this month --></label>
+        <name>Received_this_month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Type ID --></label>
+        <name>Record_Type_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relevant Clinical History Confirmed --></label>
+        <name>Relevant_Clinical_History_Confirmed__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Report Link --></label>
+        <name>Report_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Study ID --></label>
+        <name>Request_Study_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Type --></label>
+        <name>Request_Type__c</name>
+        <picklistValues>
+            <masterLabel>Clinical</masterLabel>
+            <translation><!-- Clinical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merati</masterLabel>
+            <translation><!-- Merati --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pharma</masterLabel>
+            <translation><!-- Pharma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research</masterLabel>
+            <translation><!-- Research --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SWOG</masterLabel>
+            <translation><!-- SWOG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Validation</masterLabel>
+            <translation><!-- Validation --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Request type selected --></label>
+        <name>Request_type_selected__c</name>
+    </fields>
+    <fields>
+        <label><!-- Run Process --></label>
+        <name>Run_Process__c</name>
+    </fields>
+    <fields>
+        <label><!-- SC Trigger --></label>
+        <name>SAC_Trigger__c</name>
+    </fields>
+    <fields>
+        <label><!-- SL Notification 1 --></label>
+        <name>SL_Notification_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- SL Notification 2 --></label>
+        <name>SL_Notification_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- SL Notification 3 --></label>
+        <name>SL_Notification_3__c</name>
+    </fields>
+    <fields>
+        <help><!-- Checking this box will update the SOW field to the value in the &apos;Current SOW&apos; field on the associated Project ID. --></help>
+        <label><!-- SOW Update --></label>
+        <name>SOW_Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- SOW --></label>
+        <name>SOW__c</name>
+        <relationshipLabel><!-- Guardant Samples --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Derived from Territory field on Sample Owner. --></help>
+        <label><!-- Sample Owner Territory --></label>
+        <name>Sales_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Counter --></label>
+        <name>SampleCounter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Aging --></label>
+        <name>Sample_Aging__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Count --></label>
+        <name>Sample_Count__c</name>
+    </fields>
+    <fields>
+        <help><!-- Marks samples that should not have IOEs sent for any of their matches --></help>
+        <label><!-- Sample Do Not Send IOE --></label>
+        <name>Sample_Do_Not_Send_IOE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Fax Number --></label>
+        <name>Sample_Fax_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Flag for First Time Tester report. If box is checked, the MD has submitted another sample before this one was finalized. --></help>
+        <label><!-- Sample Flag --></label>
+        <name>Sample_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Month --></label>
+        <name>Sample_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Off-label IOE --></label>
+        <name>Sample_Off_label_IOE__c</name>
+    </fields>
+    <fields>
+        <help><!-- Box is checked when a match generated by the sample is eligible for on-label IOE, e.g. Bayer VITRAKVI study. Modified by process &apos;Match: Outreach Email&apos;. --></help>
+        <label><!-- Sample On-Label IOE --></label>
+        <name>Sample_On_Label_Match__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Owner --></label>
+        <name>Sample_Owner__c</name>
+        <relationshipLabel><!-- Guardant Samples --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Secondary ICD Code Lookup --></label>
+        <name>Secondary_ICD_Code_Lookup__c</name>
+        <relationshipLabel><!-- Guardant Samples (Secondary ICD Code Lookup) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Secondary ICD Code --></label>
+        <name>Secondary_ICD_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary Ins Co Name --></label>
+        <lookupFilter>
+            <errorMessage><!-- Must choose Payor Account. --></errorMessage>
+        </lookupFilter>
+        <name>Secondary_PayorID__c</name>
+        <relationshipLabel><!-- Guardant Samples (Secondary PayorID) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Selling Price --></label>
+        <name>Selling_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sent Fax --></label>
+        <name>Sent_Fax__c</name>
+        <relationshipLabel><!-- Guardant Samples --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Ship To --></label>
+        <name>Ship_To__c</name>
+    </fields>
+    <fields>
+        <label><!-- Signed Agreement Date --></label>
+        <name>Signed_Agreement_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Do we have a signed PBA for this patient on file from old samples? --></help>
+        <label><!-- Signed PBA on File? --></label>
+        <name>Signed_PBA_on_File__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold To --></label>
+        <name>Sold_To__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Sample from Stale Customer --></label>
+        <name>Stale_Sample_customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stale Tester 1st Sample Task Sent --></label>
+        <name>Stale_Tester_1st_Sample_Task_Sent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used to mark the first sample from a Stale tester (over 365 days). --></help>
+        <label><!-- Stale Tester 1st Sample --></label>
+        <name>Stale_Tester_1st_Sample__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stale Tester MA Comments --></label>
+        <name>Stale_Tester_MA_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stale Tester Result assigned to MA --></label>
+        <name>Stale_Tester_Result_assigned_to_MA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stale Tester Task Assigned To --></label>
+        <name>Stale_Tester_Task_Assigned_To__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Addendum</masterLabel>
+            <translation><!-- Addendum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amended</masterLabel>
+            <translation><!-- Amended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CANCELLED</masterLabel>
+            <translation><!-- CANCELLED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corrected</masterLabel>
+            <translation><!-- Corrected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PROCESSED</masterLabel>
+            <translation><!-- PROCESSED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reported</masterLabel>
+            <translation><!-- Reported --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TRF ICD 1 CType --></label>
+        <name>TRF_ICD_1_CType__c</name>
+    </fields>
+    <fields>
+        <label><!-- TRF ICD 2 CType --></label>
+        <name>TRF_ICD_2_CType__c</name>
+    </fields>
+    <fields>
+        <label><!-- TRF Signed? --></label>
+        <name>TRF_Signed__c</name>
+    </fields>
+    <fields>
+        <label><!-- TX Status --></label>
+        <name>TX_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Assigned To --></label>
+        <name>Task_Assigned_To__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates how many samples (across all request types) were ordered by this physician  **when this sample was ordered.**  This field rolls up the physician’s test count by NPI number if available. --></help>
+        <label><!-- Physician Test Count --></label>
+        <name>Test_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Test SFDC --></label>
+        <name>Test_SFDC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Test Type --></label>
+        <name>Test_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tetreault Notification --></label>
+        <name>Tetreault_Notification__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Promotion Code --></label>
+        <name>Total_Promotion_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Treatment Notes --></label>
+        <name>Treatment_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of trial, if sample is associated with one --></help>
+        <label><!-- Trial Name --></label>
+        <name>Trial_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trial --></label>
+        <name>Trial__c</name>
+    </fields>
+    <fields>
+        <help><!-- NONE is used for samples received prior to 2/2/2016. --></help>
+        <label><!-- UE Sample Workflow --></label>
+        <name>UE_Sample_Workflow__c</name>
+        <picklistValues>
+            <masterLabel>NONE</masterLabel>
+            <translation><!-- NONE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UE 1st F/U</masterLabel>
+            <translation><!-- UE 1st F/U --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UE 1st Sample Received</masterLabel>
+            <translation><!-- UE 1st Sample Received --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UE 1st Sample Reported</masterLabel>
+            <translation><!-- UE 1st Sample Reported --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UE 2nd F/U</masterLabel>
+            <translation><!-- UE 2nd F/U --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UE Basic</masterLabel>
+            <translation><!-- UE Basic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UE CRC</masterLabel>
+            <translation><!-- UE CRC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UE Int&apos;l Report</masterLabel>
+            <translation><!-- UE Int&apos;l Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UE Low MAF</masterLabel>
+            <translation><!-- UE Low MAF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UE Lung 1</masterLabel>
+            <translation><!-- UE Lung 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UE Lung 2</masterLabel>
+            <translation><!-- UE Lung 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UE NCCN Reported</masterLabel>
+            <translation><!-- UE NCCN Reported --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UE NCI Reported</masterLabel>
+            <translation><!-- UE NCI Reported --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UE No Alt</masterLabel>
+            <translation><!-- UE No Alt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UE VUS</masterLabel>
+            <translation><!-- UE VUS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Derived from &apos;Region&apos; field on Sample Owner. --></help>
+        <label><!-- Sample Owner Region --></label>
+        <name>US_Region__c</name>
+    </fields>
+    <fields>
+        <help><!-- Derived from current Account Territory. --></help>
+        <label><!-- Account Territory --></label>
+        <name>US_Territory__c</name>
+    </fields>
+    <fields>
+        <help><!-- If sample is unreported as of this date, then a process creates a delayed sample case. This date is 10 days after the Date Received for Clinical samples, 15 days after for Pharma samples. --></help>
+        <label><!-- Unreported Sample Alert Date --></label>
+        <name>Unreported_Sample_Alert_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- VUS Email Sent to Physician --></label>
+        <name>VUS_Email_Sent_to_Physician__c</name>
+    </fields>
+    <fields>
+        <help><!-- N/A =  No Alteration found or Alteration was found and the sample was NOT submitted to N of 1. --></help>
+        <label><!-- VUS --></label>
+        <name>VUS_Picklist__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- xVUS --></label>
+        <name>VUS__c</name>
+    </fields>
+    <fields>
+        <label><!-- West --></label>
+        <name>West__c</name>
+    </fields>
+    <fields>
+        <label><!-- 1st Result Assigned to MA --></label>
+        <name>X1st_Result_Assigned_to_MA__c</name>
+    </fields>
+    <fields>
+        <label><!-- 1st Result MA Comments --></label>
+        <name>X1st_Result_MA_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- 1st Test Delivered Email Sent --></label>
+        <name>X1st_Test_Delivered_email_sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- 1st Time Receiving Email --></label>
+        <name>X1st_Time_Receiving_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- 1st Time Tester Task Sent --></label>
+        <name>X1st_Time_Tester_Task_Sent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used to identify when the 1st Follow Up Email was sent to physician. --></help>
+        <label><!-- 1st Follow Up Email Sent --></label>
+        <name>X2nd_Time_Receiving_Email_Sent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used to identify when the 2nd Follow Up Email was sent to physician. --></help>
+        <label><!-- 2nd Follow Up Email Sent --></label>
+        <name>X3rd_Time_Receiving_email_sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Xifin Bill Date --></label>
+        <name>Xifin_Bill_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Xifin ICD 10 --></label>
+        <name>Xifin_ICD_10__c</name>
+    </fields>
+    <fields>
+        <label><!-- Xifin ICD 1 --></label>
+        <name>Xifin_ICD_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Xifin ICD 2 --></label>
+        <name>Xifin_ICD_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Xifin ICD 3 --></label>
+        <name>Xifin_ICD_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Xifin ICD 4 --></label>
+        <name>Xifin_ICD_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Xifin ICD 5 --></label>
+        <name>Xifin_ICD_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Xifin ICD 6 --></label>
+        <name>Xifin_ICD_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Xifin ICD 7 --></label>
+        <name>Xifin_ICD_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Xifin ICD 8 --></label>
+        <name>Xifin_ICD_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Xifin ICD 9 --></label>
+        <name>Xifin_ICD_9__c</name>
+    </fields>
+    <fields>
+        <label><!-- Xifin ICD CType 10 --></label>
+        <name>Xifin_ICD_CType_10__c</name>
+    </fields>
+    <fields>
+        <label><!-- Xifin ICD CType 1 --></label>
+        <name>Xifin_ICD_CType_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Xifin ICD CType 2 --></label>
+        <name>Xifin_ICD_CType_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Xifin ICD CType 3 --></label>
+        <name>Xifin_ICD_CType_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Xifin ICD CType 4 --></label>
+        <name>Xifin_ICD_CType_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Xifin ICD CType 5 --></label>
+        <name>Xifin_ICD_CType_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Xifin ICD CType 6 --></label>
+        <name>Xifin_ICD_CType_6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Xifin ICD CType 7 --></label>
+        <name>Xifin_ICD_CType_7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Xifin ICD CType 8 --></label>
+        <name>Xifin_ICD_CType_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Xifin ICD CType 9 --></label>
+        <name>Xifin_ICD_CType_9__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year Received --></label>
+        <name>Year_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To Type --></label>
+        <name>u_billtotype__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Type --></label>
+        <name>u_shiptotype__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold To Type --></label>
+        <name>u_soldtotype__c</name>
+    </fields>
+    <fields>
+        <label><!-- update --></label>
+        <name>update__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Guardant 360 --></label>
+        <name>Guardant_360</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Cannot change alteration field if Cancellation Reason is populated. --></errorMessage>
+        <name>Lock_Accession_Field_if_Sample_Cancelled</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Concierge_Follow_Up --></label>
+        <name>Concierge_Follow_Up</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Create_Delayed_Case --></label>
+        <name>Create_Delayed_Case</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Germline_Survey --></label>
+        <name>Germline_Survey</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- MSI_H_Survey --></label>
+        <name>MSI_H_Survey</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Prior_Authorization --></label>
+        <name>New_Prior_Authorization</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Recalculate_Test_Counts --></label>
+        <name>Recalculate_Test_Counts</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Record_a_Call_G360 --></label>
+        <name>Record_a_Call_G360</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- VISION_Cover_page --></label>
+        <name>VISION_Cover_page</name>
+    </webLinks>
+</CustomObjectTranslation>

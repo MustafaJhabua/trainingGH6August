@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- How often should the Auto Approval Schedule run --></help>
+        <label><!-- Auto Appoval Interval (Minutes) --></label>
+        <name>lightsideapps__Auto_Appoval_Interval_Minutes__c</name>
+    </fields>
+    <fields>
+        <help><!-- If selected the Script Schedule fields (including credentials) will be cleared upon the final schedule run --></help>
+        <label><!-- Clear Script Schedule Fields --></label>
+        <name>lightsideapps__ClearScriptScheduleFields__c</name>
+    </fields>
+    <fields>
+        <help><!-- Setting this to True will default the &apos;Enable Quantity Schedule&apos; field on the ProductCreatorPage to be True for NEW Products --></help>
+        <label><!-- DefaultQTYScheduleEnabledToTrue --></label>
+        <name>lightsideapps__DefaultQTYScheduleEnabledToTrue__c</name>
+    </fields>
+    <fields>
+        <help><!-- Setting this to True will default the &apos;Enable Revenue Schedule&apos; field on the ProductCreatorPage to be True for NEW Products --></help>
+        <label><!-- DefaultRevScheduleEnabledToTrue --></label>
+        <name>lightsideapps__DefaultRevScheduleEnabledToTrue__c</name>
+    </fields>
+    <fields>
+        <help><!-- Allows a message (or instructions) for Delegate Approvers to be shown on the &apos;My Approvals&apos; page --></help>
+        <label><!-- Delegate Approver Message --></label>
+        <name>lightsideapps__Delegate_Approver_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delegation Interval (Minutes) --></label>
+        <name>lightsideapps__Delegation_Interval__c</name>
+    </fields>
+    <fields>
+        <help><!-- For Group Task Sync. 
+If set to True the all the Synced Tasks will be deleted if any of the synced tasks are deleted. 
+If set to False (default value) only the task deleted will be removed, with the rest of the Group Tasks remaining. --></help>
+        <label><!-- Delete All Group Tasks on Delete --></label>
+        <name>lightsideapps__Delete_All_Group_Tasks_on_Delete__c</name>
+    </fields>
+    <fields>
+        <help><!-- For Synced Group Tasks. 
+If set to true, then only the Task Closed will be kept and the other group tasks deleted. 
+If set to False (default), all group tasks will remain and be synced. --></help>
+        <label><!-- Delete Duplicate Closed Group Tasks --></label>
+        <name>lightsideapps__Delete_Duplicate_Closed_Group_Tasks__c</name>
+    </fields>
+    <fields>
+        <help><!-- How often should the Deployment Polling Schedule run --></help>
+        <label><!-- Deployment Poll Interval (Minutes) --></label>
+        <name>lightsideapps__Deployment_Poll_Interval_Minutes__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Id of the Task Record Type to use for Tasks created via the Email Attachment Tool. If this is left blank or the user does not have access to this Record Type, the Task Record Type will be the users default Task Record Type. --></help>
+        <label><!-- Email Attachment Task RecordType --></label>
+        <name>lightsideapps__Email_Attachment_Task_RecordType__c</name>
+    </fields>
+    <fields>
+        <help><!-- Forces the creation of an Activity on all emails sent via the File and Attachment Email Tool and removes the &apos;Create Activity.&apos; checkbox as an option. Note: The Object must be setup to allow Activities and the user have permissions to create Activities. --></help>
+        <label><!-- Force Activity on Attachment Email --></label>
+        <name>lightsideapps__Force_Activity_on_Attachment_Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- If unchecked Deployments will be saved as Attachments. --></help>
+        <label><!-- Save Deployments as Files --></label>
+        <name>lightsideapps__Save_Deployments_as_Files__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used to determine whether to show both Active and Inactive Pricebooks on the ProductCreator page or only Active. --></help>
+        <label><!-- ShowActivePricebooksOnly --></label>
+        <name>lightsideapps__ShowActivePricebooksOnly__c</name>
+    </fields>
+</CustomObjectTranslation>

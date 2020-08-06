@@ -1,0 +1,23 @@
+<apex:page showHeader="true" sidebar="true" controller="MedProSC.MedProSearchMessagesController">
+	<apex:form >
+		<apex:pageBlock >
+			<apex:pageBlockSection columns="1">
+				Some of the records you wished to insert already exist in your system.  Please use the links below to access the updated records:
+				<apex:pageBlockTable value="{!objs}" var="obj">
+					<apex:column >
+						<apex:facet name="header">Link</apex:facet>
+						<apex:outputLink value="/{!obj.objId}">{!obj.objId}</apex:outputLink>
+					</apex:column>
+					<apex:column >
+						<apex:facet name="header">Name</apex:facet>
+						<apex:outputText value="{!obj.name}" />
+					</apex:column>
+					<apex:column >
+						<apex:facet name="header">Type</apex:facet>
+						<apex:outputText value="{!obj.objType}" />
+					</apex:column>
+				</apex:pageBlockTable>
+			</apex:pageBlockSection>
+		</apex:pageBlock>
+	</apex:form>
+</apex:page>

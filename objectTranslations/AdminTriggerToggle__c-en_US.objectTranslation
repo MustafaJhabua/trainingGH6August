@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Admin Trigger Toggle</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Admin Trigger Toggle</value>
+    </caseValues>
+    <fields>
+        <label><!-- Bypass Sample Update Trigger --></label>
+        <name>BypassSampleUpdateTrigger__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this to deactivate the Account Triggers --></help>
+        <label><!-- Bypass Account Trigger --></label>
+        <name>Bypass_Account_Trigger__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bypass Address Trigger --></label>
+        <name>Bypass_Address_Trigger__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box to deactivate the Affiliation Triggers --></help>
+        <label><!-- Bypass Affiliation Trigger --></label>
+        <name>Bypass_Affiliation_Trigger__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bypass Contact Trigger --></label>
+        <name>Bypass_Contact_Trigger__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bypass Veeva Contact Affiliation Trigger --></label>
+        <name>Bypass_Veeva_Contact_Affiliation_Trigger__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

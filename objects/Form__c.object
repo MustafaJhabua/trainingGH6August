@@ -1,0 +1,1779 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Form_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Account_Executive__c</fullName>
+        <externalId>false</externalId>
+        <formula>Owner:User.FirstName &amp; &quot; &quot; &amp;  Owner:User.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Executive</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Additional_Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>Additional Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Amount_Paid_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Paid</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Amount_Paid__c</fullName>
+        <externalId>false</externalId>
+        <label>Amount Paid</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Approval_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Approval Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Not Required</fullName>
+                    <default>false</default>
+                    <label>Not Required</label>
+                </value>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>false</default>
+                    <label>Pending</label>
+                </value>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                    <label>Approved</label>
+                </value>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                    <label>Rejected</label>
+                </value>
+                <value>
+                    <fullName>Cancelled</fullName>
+                    <default>false</default>
+                    <label>Cancelled</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Audio_Visual_Requirements__c</fullName>
+        <externalId>false</externalId>
+        <label>Audio/Visual Requirements</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Projector</fullName>
+                    <default>false</default>
+                    <label>Projector</label>
+                </value>
+                <value>
+                    <fullName>Projector Screen</fullName>
+                    <default>false</default>
+                    <label>Projector Screen</label>
+                </value>
+                <value>
+                    <fullName>Speakers</fullName>
+                    <default>false</default>
+                    <label>Speakers</label>
+                </value>
+                <value>
+                    <fullName>Podium</fullName>
+                    <default>false</default>
+                    <label>Podium</label>
+                </value>
+                <value>
+                    <fullName>Laptops</fullName>
+                    <default>false</default>
+                    <label>Laptops</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Budget__c</fullName>
+        <description>Budget is for the event itself - does not include honorarium.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Budget is for the event itself - does not include honorarium.</inlineHelpText>
+        <label>Budget</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Campaign__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is required. For speaker events, please select &apos;2019 KOL Speaker Events&apos;. For conferences, please select &apos;2019 Exhibit Events&apos;.</inlineHelpText>
+        <label>Campaign</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Please select active Master Campaign for the specified year.</errorMessage>
+            <filterItems>
+                <field>Campaign.Is_Parent_Campaign__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <infoMessage>For speaker events, please select &apos;2019 KOL Speaker Events&apos;.
+For conferences, please select &apos;2019 Exhibit Events&apos;.</infoMessage>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Campaign</referenceTo>
+        <relationshipLabel>Forms</relationshipLabel>
+        <relationshipName>Forms</relationshipName>
+        <required>true</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Collateral_to_be_Sent__c</fullName>
+        <externalId>false</externalId>
+        <label>Collateral to be Sent</label>
+        <length>200</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Company_Name__c</fullName>
+        <defaultValue>&quot;Guardant Health&quot;</defaultValue>
+        <externalId>false</externalId>
+        <label>Company Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Event_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Event Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Event_Location__c</fullName>
+        <externalId>false</externalId>
+        <label>Event City</label>
+        <length>75</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Event_Name__c</fullName>
+        <description>Name of event</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of the event, conference, or exhibit. Required.</inlineHelpText>
+        <label>Event Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Event_Time__c</fullName>
+        <externalId>false</externalId>
+        <label>Event Time</label>
+        <length>8</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Exhibit_Agreement_Uploaded_to_Salesforce__c</fullName>
+        <externalId>false</externalId>
+        <label>Exhibit Agreement Uploaded to Salesforce</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Exhibit_Fee__c</fullName>
+        <externalId>false</externalId>
+        <label>Exhibit Fee</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Exhibit_Materials__c</fullName>
+        <externalId>false</externalId>
+        <label>Exhibit Materials</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Table Throw (6Ft)</fullName>
+                    <default>false</default>
+                    <label>Table Throw (6Ft)</label>
+                </value>
+                <value>
+                    <fullName>Table Top Display</fullName>
+                    <default>false</default>
+                    <label>Table Top Display</label>
+                </value>
+                <value>
+                    <fullName>No materials needed</fullName>
+                    <default>false</default>
+                    <label>No materials needed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Exhibitor_Documents_Received__c</fullName>
+        <externalId>false</externalId>
+        <label>Exhibitor Documents Received</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Fax_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Fax Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Flight_Arrival__c</fullName>
+        <externalId>false</externalId>
+        <label>Flight Arrival</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Flight_Departure__c</fullName>
+        <externalId>false</externalId>
+        <label>Flight Departure</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Form_Counter__c</fullName>
+        <externalId>false</externalId>
+        <formula>1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Form Counter</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Hotel_Arrival__c</fullName>
+        <externalId>false</externalId>
+        <label>Hotel Arrival</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Hotel_Check_Out__c</fullName>
+        <externalId>false</externalId>
+        <label>Hotel Check-Out</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Hotel_of_Nights__c</fullName>
+        <externalId>false</externalId>
+        <label>Hotel # of Nights</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Justification__c</fullName>
+        <externalId>false</externalId>
+        <formula>&quot;Exhibitor registration for &quot; &amp; Event_Name__c &amp; &quot; on &quot; &amp; TEXT(Event_Date__c) &amp; &quot; in &quot; &amp; Event_Location__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Copy and paste this line into the Netsuite form</inlineHelpText>
+        <label>Justification</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Location_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Location Name</label>
+        <length>70</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Materials_Shipping_Address__c</fullName>
+        <externalId>false</externalId>
+        <label>Materials Shipping Address</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Name_of_Additional_Exhibitor__c</fullName>
+        <externalId>false</externalId>
+        <label>Name of Additional Exhibitor</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_Attendees__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Attendees</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PDF_Invite_Needed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>PDF Invite Needed</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Recipient_Address__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Recipient/Address</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Phone_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Phone Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Preferred_Venues__c</fullName>
+        <externalId>false</externalId>
+        <label>Preferred Venues</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Primary_Exhibitor_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Primary Exhibitor Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Purchase_Requisition_Requested__c</fullName>
+        <externalId>false</externalId>
+        <label>Purchase Requisition Requested</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Purchase_Requisition__c</fullName>
+        <externalId>false</externalId>
+        <label>Purchase Requisition #</label>
+        <length>12</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RSD__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>RSD</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Forms</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SFDC_User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Forms1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Manager_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Manager Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>David Salo</fullName>
+                    <default>false</default>
+                    <label>David Salo</label>
+                </value>
+                <value>
+                    <fullName>Isabelle Eyman</fullName>
+                    <default>false</default>
+                    <label>Isabelle Eyman</label>
+                </value>
+                <value>
+                    <fullName>Justin Elders</fullName>
+                    <default>false</default>
+                    <label>Justin Elders</label>
+                </value>
+                <value>
+                    <fullName>Eric Trierweiler</fullName>
+                    <default>false</default>
+                    <label>Eric Trierweiler</label>
+                </value>
+                <value>
+                    <fullName>Danielle Usilton</fullName>
+                    <default>false</default>
+                    <label>Danielle Usilton</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Sales_Manager__c</fullName>
+        <externalId>false</externalId>
+        <formula>Owner:User.Manager.FirstName &amp; &quot; &quot; &amp;  Owner:User.Manager.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sales Manager</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Representative_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Representative Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Kim Forte</fullName>
+                    <default>false</default>
+                    <label>Kim Forte</label>
+                </value>
+                <value>
+                    <fullName>Phil Renda</fullName>
+                    <default>false</default>
+                    <label>Phil Renda</label>
+                </value>
+                <value>
+                    <fullName>Sean Dattoli</fullName>
+                    <default>false</default>
+                    <label>Sean Dattoli</label>
+                </value>
+                <value>
+                    <fullName>Christine Roche</fullName>
+                    <default>false</default>
+                    <label>Christine Roche</label>
+                </value>
+                <value>
+                    <fullName>Dawn Korinek</fullName>
+                    <default>false</default>
+                    <label>Dawn Korinek</label>
+                </value>
+                <value>
+                    <fullName>Stephanie Shannon</fullName>
+                    <default>false</default>
+                    <label>Stephanie Shannon</label>
+                </value>
+                <value>
+                    <fullName>Charles Truan</fullName>
+                    <default>false</default>
+                    <label>Charles Truan</label>
+                </value>
+                <value>
+                    <fullName>Roger Hunter</fullName>
+                    <default>false</default>
+                    <label>Roger Hunter</label>
+                </value>
+                <value>
+                    <fullName>Beth Zubal</fullName>
+                    <default>false</default>
+                    <label>Beth Zubal</label>
+                </value>
+                <value>
+                    <fullName>Sara Lapomarda</fullName>
+                    <default>false</default>
+                    <label>Sara Lapomarda</label>
+                </value>
+                <value>
+                    <fullName>Katie Sapp</fullName>
+                    <default>false</default>
+                    <label>Katie Sapp</label>
+                </value>
+                <value>
+                    <fullName>Marlon Hopgood</fullName>
+                    <default>false</default>
+                    <label>Marlon Hopgood</label>
+                </value>
+                <value>
+                    <fullName>Shelley Marino</fullName>
+                    <default>false</default>
+                    <label>Shelley Marino</label>
+                </value>
+                <value>
+                    <fullName>Shannon Dean</fullName>
+                    <default>false</default>
+                    <label>Shannon Dean</label>
+                </value>
+                <value>
+                    <fullName>Brian Long</fullName>
+                    <default>false</default>
+                    <label>Brian Long</label>
+                </value>
+                <value>
+                    <fullName>Marcus Outzen</fullName>
+                    <default>false</default>
+                    <label>Marcus Outzen</label>
+                </value>
+                <value>
+                    <fullName>Danielle Uliston</fullName>
+                    <default>false</default>
+                    <label>Danielle Uliston</label>
+                </value>
+                <value>
+                    <fullName>Eric Trierweiler</fullName>
+                    <default>false</default>
+                    <label>Eric Trierweiler</label>
+                </value>
+                <value>
+                    <fullName>Kris Weinberg</fullName>
+                    <default>false</default>
+                    <label>Kris Weinberg</label>
+                </value>
+                <value>
+                    <fullName>David Salo</fullName>
+                    <default>false</default>
+                    <label>David Salo</label>
+                </value>
+                <value>
+                    <fullName>Isabelle Eyman</fullName>
+                    <default>false</default>
+                    <label>Isabelle Eyman</label>
+                </value>
+                <value>
+                    <fullName>Justin Elders</fullName>
+                    <default>false</default>
+                    <label>Justin Elders</label>
+                </value>
+                <value>
+                    <fullName>Steven Collora</fullName>
+                    <default>false</default>
+                    <label>Steven Collora</label>
+                </value>
+                <value>
+                    <fullName>Stan Welle</fullName>
+                    <default>false</default>
+                    <label>Stan Welle</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Scope_of_Event__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Reason for event.</inlineHelpText>
+        <label>Scope of Event</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Shipping_Address__c</fullName>
+        <externalId>false</externalId>
+        <label>Shipping Address</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Signage_Needed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Signage Needed</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Speaker_Contact_Info__c</fullName>
+        <externalId>false</externalId>
+        <formula>Speaker__r.MailingStreet &amp; &quot; &quot; 
+&amp; BR() &amp;
+Speaker__r.MailingCity &amp; &quot;, &quot; &amp; Speaker__r.MailingState &amp; &quot; &quot; 
+&amp;  BR() &amp;
+Speaker__r.MailingPostalCode &amp; &quot; &quot; 
+&amp; BR() &amp;
+&quot;Email:&quot; &amp; &quot; &quot; &amp; Speaker__r.Email &amp; &quot; &quot;  
+&amp; BR() &amp;
+&quot;Phone:&quot; &amp; &quot; &quot; &amp; Speaker__r.Phone</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Speaker Contact Info</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Speaker_DOB__c</fullName>
+        <externalId>false</externalId>
+        <formula>Speaker__r.DOB__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Speaker DOB</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Speaker_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Speaker__r.Full_Name__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Speaker Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Speaker__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>The speaker selected must be approved to speak at corporate events. Contact Heather Chan or Ruben Smith for further information</inlineHelpText>
+        <label>Speaker</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Contact.GH_Approved_Speaker__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Forms</relationshipLabel>
+        <relationshipName>Forms</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Submit_For_Approval__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Submit For Approval?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Travel_Arrangements_Needed__c</fullName>
+        <externalId>false</externalId>
+        <label>Travel Arrangements Needed?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Type_of_Event__c</fullName>
+        <externalId>false</externalId>
+        <label>Type of Event</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Dinner</fullName>
+                    <default>false</default>
+                    <label>Dinner</label>
+                </value>
+                <value>
+                    <fullName>Convention</fullName>
+                    <default>false</default>
+                    <label>Convention</label>
+                </value>
+                <value>
+                    <fullName>Conference</fullName>
+                    <default>false</default>
+                    <label>Conference</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Exhibit</fullName>
+                    <default>false</default>
+                    <label>Exhibit</label>
+                </value>
+                <value>
+                    <fullName>Trade Show</fullName>
+                    <default>false</default>
+                    <label>Trade Show</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Form</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>Account_Executive__c</columns>
+        <columns>NAME</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Event_Date__c</columns>
+        <columns>Event_Location__c</columns>
+        <columns>Purchase_Requisition__c</columns>
+        <columns>Payment_Recipient_Address__c</columns>
+        <columns>Approval_Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>By_AE</fullName>
+        <columns>Account_Executive__c</columns>
+        <columns>NAME</columns>
+        <columns>Type_of_Event__c</columns>
+        <columns>Event_Date__c</columns>
+        <columns>Event_Location__c</columns>
+        <columns>Scope_of_Event__c</columns>
+        <columns>Approval_Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_Executive__c</field>
+            <operation>contains</operation>
+            <value>paul</value>
+        </filters>
+        <label>By AE</label>
+    </listViews>
+    <listViews>
+        <fullName>HHC</fullName>
+        <columns>NAME</columns>
+        <columns>Campaign__c</columns>
+        <columns>Event_Location__c</columns>
+        <columns>Event_Date__c</columns>
+        <columns>Type_of_Event__c</columns>
+        <columns>Speaker__c</columns>
+        <columns>OWNER.FIRST_NAME</columns>
+        <columns>Approval_Status__c</columns>
+        <columns>Purchase_Requisition__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Event_Date__c</field>
+            <operation>greaterThan</operation>
+            <value>1/1/2017</value>
+        </filters>
+        <filters>
+            <field>Budget__c</field>
+            <operation>greaterThan</operation>
+            <value>5000</value>
+        </filters>
+        <label>HHC</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Pending_Exhibits</fullName>
+        <columns>Account_Executive__c</columns>
+        <columns>NAME</columns>
+        <columns>Event_Name__c</columns>
+        <columns>Additional_Comments__c</columns>
+        <columns>Campaign__c</columns>
+        <columns>Event_Location__c</columns>
+        <columns>Event_Date__c</columns>
+        <columns>Sales_Manager__c</columns>
+        <columns>Submit_For_Approval__c</columns>
+        <columns>Approval_Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Approval_Status__c</field>
+            <operation>equals</operation>
+            <value>Pending</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Form__c.Exhibitor_Event_Request_Form</value>
+        </filters>
+        <filters>
+            <field>Event_Date__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>4/1/2020</value>
+        </filters>
+        <label>Pending Exhibits</label>
+        <language>en_US</language>
+        <sharedTo>
+            <roleAndSubordinates>Sr_Vice_President_Sales</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>X2017_Events</fullName>
+        <columns>NAME</columns>
+        <columns>Account_Executive__c</columns>
+        <columns>Event_Name__c</columns>
+        <columns>Event_Location__c</columns>
+        <columns>Event_Date__c</columns>
+        <columns>Purchase_Requisition__c</columns>
+        <columns>Additional_Comments__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Event_Date__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>1/1/2017</value>
+        </filters>
+        <filters>
+            <field>Approval_Status__c</field>
+            <operation>equals</operation>
+            <value>Approved</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Form__c.Exhibitor_Event_Request_Form</value>
+        </filters>
+        <label>2017 Approved Events</label>
+    </listViews>
+    <listViews>
+        <fullName>X2018_Events</fullName>
+        <columns>NAME</columns>
+        <columns>Account_Executive__c</columns>
+        <columns>Event_Name__c</columns>
+        <columns>Event_Location__c</columns>
+        <columns>Event_Date__c</columns>
+        <columns>Purchase_Requisition__c</columns>
+        <columns>Additional_Comments__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Event_Date__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>1/1/2019</value>
+        </filters>
+        <filters>
+            <field>Approval_Status__c</field>
+            <operation>equals</operation>
+            <value>Approved</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Form__c.Exhibitor_Event_Request_Form</value>
+        </filters>
+        <label>2019 Approved Events</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>Form Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Forms</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Exhibitor_Event_Request_Form</fullName>
+        <active>true</active>
+        <label>Exhibitor Event Request Form</label>
+        <picklistValues>
+            <picklist>Approval_Status__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Required</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Audio_Visual_Requirements__c</picklist>
+            <values>
+                <fullName>Laptops</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Podium</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Projector</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Projector Screen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Speakers</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Exhibit_Agreement_Uploaded_to_Salesforce__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Exhibit_Materials__c</picklist>
+            <values>
+                <fullName>No materials needed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Table Throw %286Ft%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Table Top Display</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Exhibitor_Documents_Received__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sales_Manager_Name__c</picklist>
+            <values>
+                <fullName>Danielle Usilton</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>David Salo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Eric Trierweiler</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Isabelle Eyman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Justin Elders</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sales_Representative_Name__c</picklist>
+            <values>
+                <fullName>Beth Zubal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Brian Long</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Charles Truan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Christine Roche</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Danielle Uliston</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>David Salo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dawn Korinek</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Eric Trierweiler</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Isabelle Eyman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Justin Elders</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Katie Sapp</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kim Forte</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kris Weinberg</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marcus Outzen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marlon Hopgood</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phil Renda</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Roger Hunter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sara Lapomarda</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sean Dattoli</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shannon Dean</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shelley Marino</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stan Welle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stephanie Shannon</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Steven Collora</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Travel_Arrangements_Needed__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Event__c</picklist>
+            <values>
+                <fullName>Conference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Exhibit</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Speaker_Function_Request_Form</fullName>
+        <active>true</active>
+        <label>Speaker Function Request Form</label>
+        <picklistValues>
+            <picklist>Approval_Status__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Required</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Audio_Visual_Requirements__c</picklist>
+            <values>
+                <fullName>Laptops</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Podium</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Projector</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Projector Screen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Speakers</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Exhibit_Agreement_Uploaded_to_Salesforce__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Exhibit_Materials__c</picklist>
+            <values>
+                <fullName>No materials needed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Table Throw %286Ft%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Table Top Display</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Exhibitor_Documents_Received__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sales_Manager_Name__c</picklist>
+            <values>
+                <fullName>Danielle Usilton</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>David Salo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Eric Trierweiler</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Isabelle Eyman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Justin Elders</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sales_Representative_Name__c</picklist>
+            <values>
+                <fullName>Beth Zubal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Brian Long</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Charles Truan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Christine Roche</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Danielle Uliston</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>David Salo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dawn Korinek</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Eric Trierweiler</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Isabelle Eyman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Justin Elders</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Katie Sapp</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kim Forte</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kris Weinberg</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marcus Outzen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marlon Hopgood</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phil Renda</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Roger Hunter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sara Lapomarda</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sean Dattoli</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shannon Dean</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shelley Marino</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stan Welle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stephanie Shannon</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Steven Collora</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Travel_Arrangements_Needed__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Event__c</picklist>
+            <values>
+                <fullName>Conference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Convention</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dinner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>RECORDTYPE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Account_Executive__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Event_Location__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Event_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Approval_Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>LAST_UPDATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Purchase_Requisition__c</customTabListAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Campaign__c</searchFilterFields>
+        <searchFilterFields>Event_Date__c</searchFilterFields>
+        <searchFilterFields>Speaker__c</searchFilterFields>
+        <searchFilterFields>Type_of_Event__c</searchFilterFields>
+        <searchFilterFields>RECORDTYPE</searchFilterFields>
+        <searchResultsAdditionalFields>Account_Executive__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>RECORDTYPE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Event_Location__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Event_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Approval_Status__c</searchResultsAdditionalFields>
+        <searchResultsCustomButtons>New</searchResultsCustomButtons>
+        <searchResultsCustomButtons>New_Exhibit_Form</searchResultsCustomButtons>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Exhibit_Form_must_include_documents</fullName>
+        <active>true</active>
+        <description>Exhibit Forms must include W9, prospectus/invitation, and cost information</description>
+        <errorConditionFormula>AND 
+(RecordType.DeveloperName = &quot;Exhibitor_Event_Request_Form&quot;, 
+OR( 
+NOT(ISPICKVAL(Exhibitor_Documents_Received__c, &quot;Yes&quot;)), 
+NOT(ISPICKVAL(Exhibit_Agreement_Uploaded_to_Salesforce__c, &quot;Yes&quot;))))</errorConditionFormula>
+        <errorMessage>Please do not answer &quot;Yes&quot; to either &apos;Exhibitor Documents Received&apos; or Exhibit Agreement Uploaded to Salesforce&apos; until you have attached the vendor W9, prospectus or invitation, and documentation referencing the exhibit cost, to this form.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Exhibitor_Event_Date_must_be_30_days_out</fullName>
+        <active>true</active>
+        <errorConditionFormula>RecordType.DeveloperName = &quot;Exhibitor_Event_Request_Form&quot; &amp;&amp;    !ISPICKVAL(Approval_Status__c, &quot;Approved&quot;) &amp;&amp;  
+Event_Date__c  - Today() &lt;= 30</errorConditionFormula>
+        <errorDisplayField>Event_Date__c</errorDisplayField>
+        <errorMessage>Event Date must be at least 30 days in the future.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Speaker_Event_Date_must_be_45_days_out</fullName>
+        <active>true</active>
+        <errorConditionFormula>RecordType.DeveloperName = &quot;Speaker_Function_Request_Form&quot; &amp;&amp; !ISPICKVAL(Approval_Status__c, &quot;Approved&quot;) &amp;&amp;   
+Event_Date__c  - Today() &lt;= 45</errorConditionFormula>
+        <errorDisplayField>Event_Date__c</errorDisplayField>
+        <errorMessage>Event Date must be at least 45 days in the future.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Travel_Arrangement_Info</fullName>
+        <active>true</active>
+        <description>If travel arrangements are needed for an event, hotel and flight info.</description>
+        <errorConditionFormula>ISPICKVAL(Travel_Arrangements_Needed__c, &apos;Yes&apos;) &amp;&amp;
+OR (ISBLANK(Hotel_of_Nights__c),
+ISBLANK(Hotel_Arrival__c),
+ISBLANK(Hotel_Check_Out__c),
+ISBLANK(Flight_Arrival__c),
+ISBLANK(Flight_Departure__c))</errorConditionFormula>
+        <errorDisplayField>Travel_Arrangements_Needed__c</errorDisplayField>
+        <errorMessage>If travel arrangements are needed, please enter values for flight and hotel section.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>New</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New KOL Speaker Form</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/a0H/e?CF00N80000005OBA0={!Campaign.Name}&amp;
+Name=&lt;DO+NOT+TYPE+HERE&gt;&amp;
+CF00N80000005OBA0_lkid={!Campaign.Id}&amp;
+retURL=%2F70180000000UuYd&amp;
+RecordType=01280000000HoR9&amp;
+ent=01I80000000tpzw</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Exhibit_Form</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Exhibit Form</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/a0H/e?CF00N80000005OBA0={!Campaign.Name}&amp;
+Name=&lt;DO+NOT+TYPE+HERE&gt;&amp;
+CF00N80000005OBA0_lkid={!Campaign.Id}&amp;
+retURL=%2F70180000000UuYd&amp;
+RecordType=01280000000HoRE&amp;
+ent=01I80000000tpzw</url>
+    </webLinks>
+</CustomObject>

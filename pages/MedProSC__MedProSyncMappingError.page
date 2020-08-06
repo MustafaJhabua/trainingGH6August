@@ -1,0 +1,15 @@
+<apex:page controller="MedProSC.MedProSyncMappingError_Controller" tabStyle="SearchMedPro__tab">
+
+	<apex:pageBlock title="MedPro Search Connector">
+		<apex:pageBlockSection columns="1" title="Error">
+			<apex:outputText value="{!message}" />
+		</apex:pageBlockSection>
+		<apex:pageMessages />
+
+	
+
+	<br/><br/><br/><br/><br/>
+
+    <apex:include pageName="MedProSC__MedProStandardCopyrightFooter"/>
+    </apex:pageBlock>
+</apex:page>

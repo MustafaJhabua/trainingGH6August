@@ -1,0 +1,1373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>talkdesk__Talkdesk_Activity_Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>talkdesk__Talkdesk_Activity_Compact_Layout</fullName>
+        <fields>talkdesk__Start_Time__c</fields>
+        <fields>Name</fields>
+        <fields>talkdesk__Contact__c</fields>
+        <fields>talkdesk__Case__c</fields>
+        <fields>talkdesk__User__c</fields>
+        <fields>talkdesk__CallDuration__c</fields>
+        <fields>talkdesk__Disposition_Code__c</fields>
+        <fields>talkdesk__Recording__c</fields>
+        <label>Talkdesk Activity Compact Layout</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>talkdesk__Abandoned__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>AND(CONTAINS(LOWER(TEXT(talkdesk__Type__c)), &quot;abandoned&quot;), NOT(CONTAINS(LOWER(TEXT(talkdesk__Type__c)), &quot;short&quot;)))</formula>
+        <label>Is Abandoned</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>talkdesk__Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Talkdesk Activities</relationshipLabel>
+        <relationshipName>Talkdesk_Activities</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>talkdesk__CSAT_Icon__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(talkdesk__CSAT__c &lt;= 0 || talkdesk__CSAT__c &gt; 5,
+            &quot;&quot;,
+            IMAGE(&quot;/resource/talkdesk__assets/csat_icons/&quot; &amp; TEXT(talkdesk__CSAT__c) &amp; &quot;-stars.png&quot;, TEXT(talkdesk__CSAT__c))
+            )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>CSAT Icon</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>talkdesk__CSAT_Response_del__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF ( ISBLANK( talkdesk__CSAT__c ), false, true)</formula>
+        <label>CSAT Response</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>talkdesk__CSAT_Text_Response__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Contains free form text from CSAT SMS response</description>
+        <externalId>false</externalId>
+        <label>CSAT Text Response</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>talkdesk__CSAT__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>CSAT</label>
+        <precision>1</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>talkdesk__CallDuration__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(FLOOR(ROUND(talkdesk__Talk_Time_sec__c,0)/(60*60))&lt;10, &quot;0&quot;&amp;TEXT(FLOOR(ROUND(talkdesk__Talk_Time_sec__c,0)/(60*60))),TEXT(FLOOR(ROUND(talkdesk__Talk_Time_sec__c,0)/(60*60))))
+            &amp;&quot;:&quot; &amp;
+            IF(MOD(FLOOR(ROUND(talkdesk__Talk_Time_sec__c,0)/60),60)&lt;10, &quot;0&quot;&amp;TEXT(MOD(FLOOR(ROUND(talkdesk__Talk_Time_sec__c,0)/60),60)),TEXT(MOD(FLOOR(ROUND(talkdesk__Talk_Time_sec__c,0)/60),60)))
+            &amp;&quot;:&quot; &amp;
+            IF(MOD(ROUND(talkdesk__Talk_Time_sec__c,0),(60))&lt;10, &quot;0&quot;&amp; TEXT(FLOOR(MOD(ROUND(talkdesk__Talk_Time_sec__c,0),(60)))), TEXT(FLOOR(MOD(ROUND(talkdesk__Talk_Time_sec__c,0),(60)))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Talk Time</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>talkdesk__Call_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Call Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>talkdesk__Case__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Case</label>
+        <referenceTo>Case</referenceTo>
+        <relationshipLabel>Talkdesk Activities</relationshipLabel>
+        <relationshipName>Talkdesk_Activities</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>talkdesk__Channel__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Channel</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>SMS</fullName>
+                    <default>false</default>
+                    <label>SMS</label>
+                </value>
+                <value>
+                    <fullName>Voice</fullName>
+                    <default>true</default>
+                    <label>Voice</label>
+                </value>
+                <value>
+                    <fullName>Chat</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Chat</label>
+                </value>
+                <value>
+                    <fullName>MMS</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>MMS</label>
+                </value>
+                <value>
+                    <fullName>Video</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Video</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>talkdesk__Contact_Phone__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Contact Phone</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>talkdesk__Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Talkdesk Activities</relationshipLabel>
+        <relationshipName>Talkdesk_Activities</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>talkdesk__Created_Time__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Holds the time at when the Talkdesk Activity was created, following the value of Start Time field.</description>
+        <externalId>false</externalId>
+        <label>Created Time</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>talkdesk__Day_of_Week__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(talkdesk__Created_Time__c), case(
+            mod( dateValue(talkdesk__Start_Time__c + (talkdesk__user_timezone__c / 24)) - date(1900, 1, 7), 7),
+            0, &quot;7 - Sunday&quot;,
+            1, &quot;1 - Monday&quot;,
+            2, &quot;2 - Tuesday&quot;,
+            3, &quot;3 - Wednesday&quot;,
+            4, &quot;4 - Thursday&quot;,
+            5, &quot;5 - Friday&quot;,
+            6, &quot;6 - Saturday&quot;,
+            &quot;&quot;
+            ), case(
+            mod( DATE(
+            VALUE(LEFT(talkdesk__Created_Time__c , 4)),
+            VALUE(MID(talkdesk__Created_Time__c, 6, 2)),
+            VALUE(MID(talkdesk__Created_Time__c , 9, 2))) - date(1900, 1, 7), 7),
+            0, &quot;7 - Sunday&quot;,
+            1, &quot;1 - Monday&quot;,
+            2, &quot;2 - Tuesday&quot;,
+            3, &quot;3 - Wednesday&quot;,
+            4, &quot;4 - Thursday&quot;,
+            5, &quot;5 - Friday&quot;,
+            6, &quot;6 - Saturday&quot;,
+            &quot;&quot;
+            ))</formula>
+        <label>Day of Week</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>talkdesk__DispositionCode__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Disposition Code (Lookup)</label>
+        <referenceTo>talkdesk__Talkdesk_Disposition_Code__c</referenceTo>
+        <relationshipLabel>Talkdesk Activities</relationshipLabel>
+        <relationshipName>Talkdesk_Activities</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>talkdesk__Disposition_Code_External_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Disposition Code External Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>talkdesk__Disposition_Code__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Disposition Code</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Attempting Contact</fullName>
+                    <default>false</default>
+                    <label>Attempting Contact</label>
+                </value>
+                <value>
+                    <fullName>Not Interested</fullName>
+                    <default>false</default>
+                    <label>Not Interested</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Successful Call</fullName>
+                    <default>false</default>
+                    <label>Successful Call</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>talkdesk__End_Time__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>End Time</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>talkdesk__External_Number__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Selected if phone call was forwarded or transferred to an external number</description>
+        <externalId>false</externalId>
+        <label>Is External Number</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>talkdesk__Half_Hour__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(talkdesk__Created_Time__c), mid(text(talkdesk__Start_Time__c + (talkdesk__user_timezone__c / 24)), 12, 2) &amp; IF(VALUE(MID(TEXT(talkdesk__Start_Time__c), 15, 2)) &lt; 30, &apos;:00&apos;,&apos;:30&apos;), mid(talkdesk__Created_Time__c, 12, 2) &amp; IF(VALUE(MID(talkdesk__Created_Time__c, 15, 2)) &lt; 30, &apos;:00&apos;,&apos;:30&apos;))</formula>
+        <label>Half Hour of Day</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>talkdesk__Hold_TIme_sec__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Hold Time (sec)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>talkdesk__Hold_Time__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(FLOOR(ROUND(talkdesk__Hold_TIme_sec__c,0)/(60*60))&lt;10, &quot;0&quot;&amp;TEXT(FLOOR(ROUND(talkdesk__Hold_TIme_sec__c,0)/(60*60))),TEXT(FLOOR(ROUND(talkdesk__Hold_TIme_sec__c,0)/(60*60))))
+            &amp;&quot;:&quot; &amp;
+            IF(MOD(FLOOR(ROUND(talkdesk__Hold_TIme_sec__c,0)/60),60)&lt;10, &quot;0&quot;&amp;TEXT(MOD(FLOOR(ROUND(talkdesk__Hold_TIme_sec__c,0)/60),60)),TEXT(MOD(FLOOR(ROUND(talkdesk__Hold_TIme_sec__c,0)/60),60)))
+            &amp;&quot;:&quot; &amp;
+            IF(MOD(ROUND(talkdesk__Hold_TIme_sec__c,0),(60))&lt;10, &quot;0&quot;&amp; TEXT(FLOOR(MOD(ROUND(talkdesk__Hold_TIme_sec__c,0),(60)))), TEXT(FLOOR(MOD(ROUND(talkdesk__Hold_TIme_sec__c,0),(60)))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Hold Time</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>talkdesk__Hour_of_Day__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(talkdesk__Created_Time__c), mid(text(talkdesk__Start_Time__c + (talkdesk__user_timezone__c / 24)), 12, 2) &amp; &apos;:00&apos;, mid(talkdesk__Created_Time__c, 12, 2) &amp; &apos;:00&apos;)</formula>
+        <label>Hour of Day</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>talkdesk__IVR_Options_raw__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>IVR Options (raw)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>talkdesk__If_No_Answer__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Selected if the &quot;If No Answer&quot; rules configured in Talkdesk for this phone number were executed for this call</description>
+        <externalId>false</externalId>
+        <label>If No Answer</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>talkdesk__In_Business_Hours_del__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>In Business Hours</label>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>talkdesk__Is_Callback_del__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Is Callback</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>talkdesk__Is_Deleted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Is Deleted</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>talkdesk__Is_Mood_set__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF (talkdesk__MoodNumValue__c  &lt;1 || talkdesk__MoodNumValue__c &gt;5, false, true)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Mood set</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>talkdesk__Is_Sample__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Denotes if the log entry was uploaded as a sample</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes if the log entry was uploaded as a sample</inlineHelpText>
+        <label>Is Sample</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>talkdesk__Is_Transfer_del__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Is Transfer</label>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>talkdesk__Last_Trigger_Executed__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Last trigger executed for TD Activity</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>talkdesk__Lead__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Lead</label>
+        <referenceTo>Lead</referenceTo>
+        <relationshipLabel>Talkdesk Activities</relationshipLabel>
+        <relationshipName>Talkdesk_Activities</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>talkdesk__Missed__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>CONTAINS(LOWER(TEXT(talkdesk__Type__c)), &quot;missed&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Missed</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>talkdesk__Month_of_Year__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(talkdesk__Created_Time__c), case(
+            value(mid(text(talkdesk__Start_Time__c + (talkdesk__user_timezone__c / 24)), 6, 2)),
+            1, &quot;January&quot;,
+            2, &quot;February&quot;,
+            3, &quot;March&quot;,
+            4, &quot;April&quot;,
+            5, &quot;May&quot;,
+            6, &quot;June&quot;,
+            7, &quot;July&quot;,
+            8, &quot;August&quot;,
+            9, &quot;September&quot;,
+            10, &quot;October&quot;,
+            11, &quot;November&quot;,
+            &quot;December&quot;
+            ), case(
+            value(mid(talkdesk__Created_Time__c, 6, 2)),
+            1, &quot;January&quot;,
+            2, &quot;February&quot;,
+            3, &quot;March&quot;,
+            4, &quot;April&quot;,
+            5, &quot;May&quot;,
+            6, &quot;June&quot;,
+            7, &quot;July&quot;,
+            8, &quot;August&quot;,
+            9, &quot;September&quot;,
+            10, &quot;October&quot;,
+            11, &quot;November&quot;,
+            &quot;December&quot;
+            ))</formula>
+        <label>Month of Year</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>talkdesk__MoodNumValue__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>CASE(TEXT(talkdesk__Mood_PL__c), &quot;happy&quot;, 5, &quot;neutral&quot;, 3, &quot;unhappy&quot;, 1,null)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Mood Num Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>talkdesk__Mood_Face__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>CASE(
+            TEXT(talkdesk__Mood_PL__c),
+
+            &quot;happy&quot;, IMAGE(&quot;/resource/talkdesk__assets/mood_icons/mood--happy.png&quot;, &apos;Happy&apos;),
+
+            &quot;neutral&quot;, IMAGE(&quot;/resource/talkdesk__assets/mood_icons/mood--neutral.png&quot;, &apos;Neutral&apos;),
+
+            &quot;unhappy&quot;, IMAGE(&quot;/resource/talkdesk__assets/mood_icons/mood--unhappy.png&quot;, &apos;Unhappy&apos;),
+
+            &quot;not_applicable&quot;, IMAGE(&quot;/resource/talkdesk__assets/mood_icons/mood--na.png&quot;, &apos;N/A&apos;),
+
+            &quot;&quot;
+            )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Mood Face</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>talkdesk__Mood_PL__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Mood</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>happy</fullName>
+                    <default>false</default>
+                    <label>happy</label>
+                </value>
+                <value>
+                    <fullName>unhappy</fullName>
+                    <default>false</default>
+                    <label>unhappy</label>
+                </value>
+                <value>
+                    <fullName>neutral</fullName>
+                    <default>false</default>
+                    <label>neutral</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>talkdesk__Name_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Name Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>talkdesk__Notes__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Notes</label>
+        <length>32768</length>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>talkdesk__Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Talkdesk Activities</relationshipLabel>
+        <relationshipName>Talkdesk_Activities</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>talkdesk__Recording__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Recording</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>talkdesk__Related_To__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Related To</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>talkdesk__Result__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Hangup</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Offered</fullName>
+                    <default>false</default>
+                    <label>Offered</label>
+                </value>
+                <value>
+                    <fullName>IVR</fullName>
+                    <default>false</default>
+                    <label>IVR</label>
+                </value>
+                <value>
+                    <fullName>Handled</fullName>
+                    <default>false</default>
+                    <label>Handled</label>
+                </value>
+                <value>
+                    <fullName>Hold</fullName>
+                    <default>false</default>
+                    <label>Hold</label>
+                </value>
+                <value>
+                    <fullName>Transfer</fullName>
+                    <default>false</default>
+                    <label>Transfer</label>
+                </value>
+                <value>
+                    <fullName>Waiting</fullName>
+                    <default>false</default>
+                    <label>Waiting</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>talkdesk__Ring_Groups__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Ring Groups</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Admins</fullName>
+                    <default>false</default>
+                    <label>Admins</label>
+                </value>
+                <value>
+                    <fullName>Agents</fullName>
+                    <default>false</default>
+                    <label>Agents</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>talkdesk__SLA__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>if(  ISPICKVAL(talkdesk__Channel__c , &quot;Voice&quot;), if(talkdesk__Wait_Time_sec__c &lt; 20,true,false), false)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SLA</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>talkdesk__SMS_Job_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field relating the Talkdesk activity to a given instance of the SMS batch job</description>
+        <externalId>false</externalId>
+        <label>SMS Job Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>talkdesk__Speed_to_Answer__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(FLOOR(ROUND(talkdesk__Speed_to_Answer_sec_del__c,0)/(60*60))&lt;10, &quot;0&quot;&amp;TEXT(FLOOR(ROUND(talkdesk__Speed_to_Answer_sec_del__c,0)/(60*60))),TEXT(FLOOR(talkdesk__Speed_to_Answer_sec_del__c/(60*60))))
+            &amp;&quot;:&quot; &amp;
+            IF(MOD(FLOOR(ROUND(talkdesk__Speed_to_Answer_sec_del__c,0)/60),60)&lt;10, &quot;0&quot;&amp;TEXT(MOD(FLOOR(ROUND(talkdesk__Speed_to_Answer_sec_del__c,0)/60),60)),TEXT(MOD(FLOOR(ROUND(talkdesk__Speed_to_Answer_sec_del__c,0)/60),60)))
+            &amp;&quot;:&quot; &amp;
+            IF(MOD(ROUND(talkdesk__Speed_to_Answer_sec_del__c,0),(60))&lt;10, &quot;0&quot;&amp; TEXT(FLOOR(MOD(ROUND(talkdesk__Speed_to_Answer_sec_del__c,0),(60)))), TEXT(FLOOR( MOD(ROUND(talkdesk__Speed_to_Answer_sec_del__c,0),(60)))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Speed to Answer</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>talkdesk__Speed_to_Answer_sec_del__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Speed to Answer (sec)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>talkdesk__Start_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>DATEVALUE(talkdesk__Start_Time__c +
+            ( ($Setup.talkdesk__Talkdesk__c.talkdesk__UTC_Offset__c * 60) / 1440 ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>talkdesk__Start_Time__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Start Time</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>talkdesk__Status__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Delivery status of SMS message</description>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Sending</fullName>
+                    <default>false</default>
+                    <label>Sending</label>
+                </value>
+                <value>
+                    <fullName>Received</fullName>
+                    <default>false</default>
+                    <label>Received</label>
+                </value>
+                <value>
+                    <fullName>Sent</fullName>
+                    <default>false</default>
+                    <label>Sent</label>
+                </value>
+                <value>
+                    <fullName>Delivered</fullName>
+                    <default>false</default>
+                    <label>Delivered</label>
+                </value>
+                <value>
+                    <fullName>Failed</fullName>
+                    <default>false</default>
+                    <label>Failed</label>
+                </value>
+                <value>
+                    <fullName>Undelivered</fullName>
+                    <default>false</default>
+                    <label>Undelivered</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>talkdesk__Talk_Time_sec__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Talk Time (sec)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>talkdesk__Talkdesk_Id__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <externalId>true</externalId>
+        <label>Talkdesk Id</label>
+        <length>255</length>
+        <required>true</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>talkdesk__Talkdesk_Phone_Number__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Talkdesk Phone</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>talkdesk__Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Abandoned</fullName>
+                    <default>false</default>
+                    <label>Abandoned</label>
+                </value>
+                <value>
+                    <fullName>Inbound</fullName>
+                    <default>false</default>
+                    <label>Inbound</label>
+                </value>
+                <value>
+                    <fullName>Missed</fullName>
+                    <default>false</default>
+                    <label>Missed</label>
+                </value>
+                <value>
+                    <fullName>Outbound</fullName>
+                    <default>false</default>
+                    <label>Outbound</label>
+                </value>
+                <value>
+                    <fullName>Outbound_Missed</fullName>
+                    <default>false</default>
+                    <label>Outbound_Missed</label>
+                </value>
+                <value>
+                    <fullName>Outbound_Voicemail</fullName>
+                    <default>false</default>
+                    <label>Outbound_Voicemail</label>
+                </value>
+                <value>
+                    <fullName>Voicemail</fullName>
+                    <default>false</default>
+                    <label>Voicemail</label>
+                </value>
+                <value>
+                    <fullName>Short_Abandoned</fullName>
+                    <default>false</default>
+                    <label>Short_Abandoned</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>talkdesk__UserEmail__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>User Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>talkdesk__User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Talkdesk_Activities</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>talkdesk__Wait_Time__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(FLOOR(ROUND(talkdesk__Wait_Time_sec__c,0)/(60*60))&lt;10, &quot;0&quot;&amp;TEXT(FLOOR(ROUND(talkdesk__Wait_Time_sec__c,0)/(60*60))),TEXT(FLOOR(ROUND(talkdesk__Wait_Time_sec__c,0)/(60*60))))
+            &amp;&quot;:&quot; &amp;
+            IF(MOD(FLOOR(ROUND(talkdesk__Wait_Time_sec__c,0)/60),60)&lt;10, &quot;0&quot;&amp;TEXT(MOD(FLOOR(ROUND(talkdesk__Wait_Time_sec__c,0)/60),60)),TEXT(MOD(FLOOR(ROUND(talkdesk__Wait_Time_sec__c,0)/60),60)))
+            &amp;&quot;:&quot; &amp;
+            IF(MOD(ROUND(talkdesk__Wait_Time_sec__c,0),(60))&lt;10, &quot;0&quot;&amp; TEXT(FLOOR(MOD(ROUND(talkdesk__Wait_Time_sec__c,0),(60)))), TEXT(FLOOR(MOD(ROUND(talkdesk__Wait_Time_sec__c,0),(60)))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Wait Time</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>talkdesk__Wait_Time_sec__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Wait Time (sec)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>talkdesk__user_timezone__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>(dateValue(dateTimeValue(text(today())+&quot; 00:00:00&quot;)) - today()) +
+            (dateValue(dateTimeValue(text(today()) + &quot; 01:00:00&quot;)) - today()) +
+            (dateValue(dateTimeValue(text(today()) + &quot; 02:00:00&quot;)) - today()) +
+            (dateValue(dateTimeValue(text(today()) + &quot; 03:00:00&quot;)) - today()) +
+            (dateValue(dateTimeValue(text(today()) + &quot; 04:00:00&quot;)) - today()) +
+            (dateValue(dateTimeValue(text(today()) + &quot; 05:00:00&quot;)) - today()) +
+            (dateValue(dateTimeValue(text(today()) + &quot; 06:00:00&quot;)) - today()) +
+            (dateValue(dateTimeValue(text(today()) + &quot; 07:00:00&quot;)) - today()) +
+            (dateValue(dateTimeValue(text(today()) + &quot; 08:00:00&quot;)) - today()) +
+            (dateValue(dateTimeValue(text(today()) + &quot; 09:00:00&quot;)) - today()) +
+            (dateValue(dateTimeValue(text(today()) + &quot; 10:00:00&quot;)) - today()) +
+            (dateValue(dateTimeValue(text(today()) + &quot; 11:00:00&quot;)) - today()) +
+            (dateValue(dateTimeValue(text(today()) + &quot; 12:00:00&quot;)) - today()) +
+            (dateValue(dateTimeValue(text(today()) + &quot; 13:00:00&quot;)) - today()) +
+            (dateValue(dateTimeValue(text(today()) + &quot; 14:00:00&quot;)) - today()) +
+            (dateValue(dateTimeValue(text(today()) + &quot; 15:00:00&quot;)) - today()) +
+            (dateValue(dateTimeValue(text(today()) + &quot; 16:00:00&quot;)) - today()) +
+            (dateValue(dateTimeValue(text(today()) + &quot; 17:00:00&quot;)) - today()) +
+            (dateValue(dateTimeValue(text(today()) + &quot; 18:00:00&quot;)) - today()) +
+            (dateValue(dateTimeValue(text(today()) + &quot; 19:00:00&quot;)) - today()) +
+            (dateValue(dateTimeValue(text(today()) + &quot; 20:00:00&quot;)) - today()) +
+            (dateValue(dateTimeValue(text(today()) + &quot; 21:00:00&quot;)) - today()) +
+            (dateValue(dateTimeValue(text(today()) + &quot; 22:00:00&quot;)) - today()) +
+            (dateValue(dateTimeValue(text(today()) + &quot; 23:00:00&quot;)) - today())</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>User Timezone</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Talkdesk Activity</label>
+    <listViews>
+        <fullName>talkdesk__Abandoned_Calls</fullName>
+        <columns>talkdesk__Start_Time__c</columns>
+        <columns>talkdesk__In_Business_Hours_del__c</columns>
+        <columns>NAME</columns>
+        <columns>talkdesk__Contact__c</columns>
+        <columns>talkdesk__Ring_Groups__c</columns>
+        <columns>talkdesk__Wait_Time__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>talkdesk__Abandoned__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Abandoned Calls</label>
+    </listViews>
+    <listViews>
+        <fullName>talkdesk__All</fullName>
+        <columns>talkdesk__Start_Time__c</columns>
+        <columns>talkdesk__Channel__c</columns>
+        <columns>NAME</columns>
+        <columns>talkdesk__Contact__c</columns>
+        <columns>talkdesk__Case__c</columns>
+        <columns>talkdesk__User__c</columns>
+        <columns>talkdesk__Ring_Groups__c</columns>
+        <columns>talkdesk__CallDuration__c</columns>
+        <columns>talkdesk__Notes__c</columns>
+        <columns>talkdesk__Recording__c</columns>
+        <columns>talkdesk__Disposition_Code__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>talkdesk__Connected_Calls</fullName>
+        <columns>talkdesk__Start_Time__c</columns>
+        <columns>NAME</columns>
+        <columns>talkdesk__Contact__c</columns>
+        <columns>talkdesk__Case__c</columns>
+        <columns>talkdesk__User__c</columns>
+        <columns>talkdesk__Ring_Groups__c</columns>
+        <columns>talkdesk__CallDuration__c</columns>
+        <columns>talkdesk__Notes__c</columns>
+        <columns>talkdesk__Recording__c</columns>
+        <columns>talkdesk__DispositionCode__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>talkdesk__Type__c</field>
+            <operation>equals</operation>
+            <value>Inbound,Outbound,Outbound_Voicemail</value>
+        </filters>
+        <filters>
+            <field>talkdesk__Channel__c</field>
+            <operation>equals</operation>
+            <value>Voice</value>
+        </filters>
+        <label>Connected Calls</label>
+    </listViews>
+    <listViews>
+        <fullName>talkdesk__Missed_Calls</fullName>
+        <columns>talkdesk__Start_Time__c</columns>
+        <columns>talkdesk__In_Business_Hours_del__c</columns>
+        <columns>NAME</columns>
+        <columns>talkdesk__Contact__c</columns>
+        <columns>talkdesk__Talkdesk_Phone_Number__c</columns>
+        <columns>talkdesk__Ring_Groups__c</columns>
+        <columns>talkdesk__Wait_Time__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>talkdesk__Missed__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>talkdesk__Channel__c</field>
+            <operation>equals</operation>
+            <value>Voice</value>
+        </filters>
+        <label>Missed Calls</label>
+    </listViews>
+    <listViews>
+        <fullName>talkdesk__Recent_Calls</fullName>
+        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <columns>talkdesk__Start_Time__c</columns>
+        <columns>NAME</columns>
+        <columns>talkdesk__Contact__c</columns>
+        <columns>talkdesk__Case__c</columns>
+        <columns>talkdesk__User__c</columns>
+        <columns>talkdesk__Ring_Groups__c</columns>
+        <columns>talkdesk__CallDuration__c</columns>
+        <columns>talkdesk__Notes__c</columns>
+        <columns>talkdesk__Recording__c</columns>
+        <columns>talkdesk__Disposition_Code__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>talkdesk__Type__c</field>
+            <operation>equals</operation>
+            <value>Inbound,Outbound,Outbound_Voicemail</value>
+        </filters>
+        <filters>
+            <field>talkdesk__Channel__c</field>
+            <operation>equals</operation>
+            <value>Voice</value>
+        </filters>
+        <filters>
+            <field>talkdesk__Start_Date__c</field>
+            <operation>equals</operation>
+            <value>LAST_N_DAYS:30</value>
+        </filters>
+        <label>Recent Calls</label>
+    </listViews>
+    <listViews>
+        <fullName>talkdesk__Voicemails</fullName>
+        <columns>talkdesk__Start_Time__c</columns>
+        <columns>talkdesk__In_Business_Hours_del__c</columns>
+        <columns>NAME</columns>
+        <columns>talkdesk__Contact__c</columns>
+        <columns>talkdesk__Talkdesk_Phone_Number__c</columns>
+        <columns>talkdesk__Ring_Groups__c</columns>
+        <columns>talkdesk__Wait_Time__c</columns>
+        <columns>talkdesk__Recording__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>talkdesk__Type__c</field>
+            <operation>equals</operation>
+            <value>Voicemail</value>
+        </filters>
+        <filters>
+            <field>talkdesk__Channel__c</field>
+            <operation>equals</operation>
+            <value>Voice</value>
+        </filters>
+        <label>Voicemails</label>
+    </listViews>
+    <nameField>
+        <label>Talkdesk Activity Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Talkdesk Activities</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>talkdesk__Start_Time__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>talkdesk__Contact__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>talkdesk__Case__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>talkdesk__User__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>talkdesk__Ring_Groups__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>talkdesk__CallDuration__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>talkdesk__Disposition_Code__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>talkdesk__Notes__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>talkdesk__Recording__c</customTabListAdditionalFields>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <excludedStandardButtons>New</excludedStandardButtons>
+        <lookupDialogsAdditionalFields>talkdesk__Start_Time__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>talkdesk__Contact__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>talkdesk__Case__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>talkdesk__User__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>talkdesk__Ring_Groups__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>talkdesk__CallDuration__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>talkdesk__Disposition_Code__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>talkdesk__Notes__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>talkdesk__Recording__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>talkdesk__Start_Time__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>talkdesk__Contact__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>talkdesk__Case__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>talkdesk__User__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>talkdesk__Ring_Groups__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>talkdesk__CallDuration__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>talkdesk__Disposition_Code__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>talkdesk__Notes__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>talkdesk__Recording__c</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>talkdesk__Start_Time__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>talkdesk__Contact__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>talkdesk__Case__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>talkdesk__User__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>talkdesk__Ring_Groups__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>talkdesk__CallDuration__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>talkdesk__Disposition_Code__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>talkdesk__Notes__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>talkdesk__Recording__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

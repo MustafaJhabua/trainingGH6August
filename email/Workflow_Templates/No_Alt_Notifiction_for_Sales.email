@@ -1,0 +1,15 @@
+Hello,
+This is to notify you that NO ALTERATIONS were found on: 
+
+G360 Sample # {!Guardant_360_Sample__c.Name}
+
+Account Name: {!Guardant_360_Sample__c.Account__c}
+Doctor Name: {!Guardant_360_Sample__c.Contact__c}
+Date Received: {!Guardant_360_Sample__c.Date_Received__c}
+Final Report Date {!Guardant_360_Sample__c.Final_Report_Date__c}
+
+
+
+Thanks
+
+End of message.

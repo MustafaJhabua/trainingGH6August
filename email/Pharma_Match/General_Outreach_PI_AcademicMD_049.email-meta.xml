@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Used for comunication to PI&apos;s and academic MD&apos;s to summarize open matches</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>General_Outreach _PI_AcademicMD_049</name>
+    <style>none</style>
+    <subject>Re:</subject>
+    <textOnly>Dear Dr. {!Contact.LastName},
+ 
+The Guardant360 tests you ordered to identify circulating tumor biomarkers for [#] of your patients (listed below), have reported uncommon alteration(s). We found that these alterations could qualify your patients for a curated list of clinical trials and/or a recently FDA approved therapy.
+ 
+Patient [Insert: Patient Initials] reported an [Insert: Qualifying Target Alteration] on [Insert: Final Report Date], see report link: [Insert: Report Link]
+Patient [Insert: Patient Initials] reported an [Insert: Qualifying Target Alteration] on [Insert: Final Report Date], see report link: [Insert: Report Link]
+Patient [Insert: Patient Initials] reported an [Insert: Qualifying Target Alteration] on [Insert: Final Report Date], see report link: [Insert: Report Link]
+Patient [Insert: Patient Initials] reported an [Insert: Qualifying Target Alteration] on [Insert: Final Report Date], see report link: [Insert: Report Link]
+
+There are trial sites nearby your institution with the closest trial site being at [Insert: closest trial site, city, state].   
+
+Please reply if information about trials/therapy are of interest, we will gladly provide you with more detailed information or connect you to the study team or therapy representative. 
+
+Sincerely, 
+{!User.Name}, {!User.Degree__c} 
+{!User.Title} 
+Guardant Health
+On behalf of the Clinical Trial Advisors program 
+
+Guardant Health Match Key: {!Match_Record__c.Match_Key__c} 
+ 
+This message is intended solely for the designated recipient(s). It may contain confidential or proprietary information and may be subject to attorney-client privilege or other confidentiality protections. If you are not a designated recipient you may not review, copy or distribute this message. If you have received this in error, please reply to this email and delete this message. Thank you. Ref: {!Match_Record__c.Id}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

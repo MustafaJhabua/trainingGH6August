@@ -1,0 +1,25 @@
+<apex:page controller="SmartvCard.VCFcontact">
+<script>
+    function takeFile(){
+          var file = document.querySelector('input[type=file]').files[0];
+          
+    }
+</script>
+
+    <apex:form id="theForm">
+        <apex:Pagemessages />   
+                                                  
+            <apex:pageBlock title="Importing contact from VCF file ">    
+                    <h4><font color="red">Steps for importing  a VCF file</font></h4>         
+                    <ol>     
+                                                                              
+                        <li>Click on "Choose File" button to Browse VCF file. The format of the file should be VCF. The name of the VCF file will be displayed on the screen.<br/> There may be more than one VCF records in this file</li><br></br>
+                        <li>After this click on "Import Contact" Button to import contacts</li><br></br>
+                   
+                    </ol>
+                   
+                    <apex:inputFile value="{!vcffile}"  filename="update" contentType="{!type}"/> 
+                    <apex:commandButton value="Import Contact" action="{!parsingVCF}"/>              
+            </apex:pageBlock>
+    </apex:form>
+</apex:page>

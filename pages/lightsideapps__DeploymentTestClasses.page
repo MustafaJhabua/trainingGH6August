@@ -1,0 +1,38 @@
+<apex:page standardController="lightsideapps__Deployment_Package__c" extensions="lightsideapps.DeploymentTestClassExtension" >
+     <apex:includeScript value="{!$Resource.lightsideapps__jquery_1_11_3}"/>
+    
+    <style>
+        .LSAOutputLabel {display:inline-block; width:100px; text-align:right; padding:5px;}
+        .LSASelectList {display:inline-block; min-width:100px; padding:5px;}
+        .InputDiv {width:500px; margin:5px;}
+        .addbutton {width:60px; padding:5px; margin:5px;}
+        .removebutton {width:60px; padding:5px; margin:5px;}
+        .componentHeader {width:500px; height:20px; text-align:center; font-weight:bold; line-height:20px;}
+    </style>
+    
+    <apex:sectionHeader Title="Choose Test Classes to run for your change set" Subtitle="Select Test Classes"/>
+    <apex:pageMessages id="pageMessages" />
+    
+    <apex:form >
+		
+		<div style="min-width:150px;border:solid 1px blue;max-width:320px;">
+			<apex:selectList size="15" style="min-width:150px;width:100%" value="{!ClassesToAdd}">
+            	<apex:selectOptions value="{!AllTestClasses}"></apex:selectOptions>
+            </apex:selectList>       
+        </div>
+        <div style="min-width:150px;border:solid 1px blue;max-width:320px;">
+            <apex:commandButton style="width:20px;" value=">" />
+            <apex:commandButton style="width:20px;" value=">>" />
+            <apex:commandButton style="width:20px;" value="<" />
+            <apex:commandButton style="width:20px;" value="<<" />
+        </div>
+        <div style="min-width:150px;border:solid 1px blue;max-width:320px;">
+             <apex:selectList size="15" style="min-width:150px;width:100%;">
+            
+            </apex:selectList>      
+        </div>     
+    
+        
+    </apex:form>
+    
+</apex:page>

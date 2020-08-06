@@ -1,0 +1,12 @@
+Thank you for the follow-up, Dr. {!Contact.LastName}. We really appreciate it. We’ve assigned one of our Clinical Trial Advisors to reach out to you within the next week.
+
+Please let us know if would you like additional information regarding these clinical trials. We are happy to provide additional assistance as needed.
+
+Kind Regards,
+{!User.Name}, {!User.Degree__c} 
+Clinical Trial Advisor
+Guardant Health, Inc.
+
+Guardant Health Match Key: {!Match_Record__c.Match_Key__c} 
+
+This message is intended solely for the designated recipient(s). It may contain confidential or proprietary information and may be subject to attorney-client privilege or other confidentiality protections. If you are not a designated recipient you may not review, copy or distribute this message. If you have received this in error, please reply to this email and delete this message. Thank you. Ref: {!Match_Record__c.Id}

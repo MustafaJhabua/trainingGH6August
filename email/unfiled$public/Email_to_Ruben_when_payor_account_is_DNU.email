@@ -1,0 +1,16 @@
+Hello,
+This account has been designated as "DNU". 
+Please update the status of the original Payor to "Inactive".
+
+Following are the details of Payor account.
+
+Account Name: {!Account.Name}
+Account ID: {!Account.Id}
+Account #: {!Account.Account__c}
+Payor ID: {!Account.Payor_ID__c}
+
+Link: {!Account.Link}
+
+
+Thank you,
+Andrew Blair

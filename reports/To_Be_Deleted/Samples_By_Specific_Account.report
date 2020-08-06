@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.Guardant_360_Samples__r$Name</field>
+    </columns>
+    <description>Dan Douglas</description>
+    <filter>
+        <criteriaItems>
+            <column>Account$Account__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>GHI-001642,GHI-005541,GHI-002421,GHI-001357,GHI-001640,GHI-001328,GHI-001421,GHI-001353,GHI-001124,GHI-000203,GHI-000201,GHI-001137,GHI-000202,GHI-002796,GHI-002680,GHI-001038,GHI-001299,GHI-000905,GHI-003747,GHI-001106,GHI-002700,GHI-000900,GHI-005487,GHI-001531,GHI-004036,GHI-000205,GHI-001296,GHI-000977,GHI-000978,GHI-002589,GHI-001232,GHI-002573,GHI-004081</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Month</dateGranularity>
+        <field>Account.Contacts.Guardant_360_Samples__r$Date_Received__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account$Owner</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account$Account__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Samples By Specific Account #</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_and_Samples__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account.Contacts.Guardant_360_Samples__r$Date_Received__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2015-01-01</startDate>
+    </timeFrameFilter>
+</Report>

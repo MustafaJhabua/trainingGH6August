@@ -1,0 +1,7 @@
+<apex:page id="vfGetYuzuLink"
+           standardController="Match_Record__c"
+           extensions="YuzuSchedulingButtonController"
+           action="{!autoRun}">
+<apex:pageMessages />
+    
+</apex:page>

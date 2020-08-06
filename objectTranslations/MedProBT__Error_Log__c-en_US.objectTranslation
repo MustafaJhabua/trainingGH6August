@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Created Time --></label>
+        <name>MedProBT__Created_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Messages --></label>
+        <name>MedProBT__Error_Messages__c</name>
+    </fields>
+</CustomObjectTranslation>

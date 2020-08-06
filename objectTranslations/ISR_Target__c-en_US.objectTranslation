@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>ISR Target</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>ISR Targets</value>
+    </caseValues>
+    <fields>
+        <help><!-- What is the administrator&apos;s contact information? --></help>
+        <label><!-- Administrator&apos;s Contact info --></label>
+        <name>Administrator_s_Contact_info__c</name>
+    </fields>
+    <fields>
+        <help><!-- What is the best way to contact the decision maker? --></help>
+        <label><!-- Best way to contact decision maker? --></label>
+        <name>Best_way_to_contact_decision_maker__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call Notes --></label>
+        <name>Call_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Call Result --></help>
+        <label><!-- Call Result --></label>
+        <name>Call_Result__c</name>
+        <picklistValues>
+            <masterLabel>Left Voicemail</masterLabel>
+            <translation><!-- Left Voicemail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Answer</masterLabel>
+            <translation><!-- No Answer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spoke to Nursing Staff</masterLabel>
+            <translation><!-- Spoke to Nursing Staff --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spoke to Office Admin</masterLabel>
+            <translation><!-- Spoke to Office Admin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spoke to Prescriber (MD/DO, NP/PA)</masterLabel>
+            <translation><!-- Spoke to Prescriber (MD/DO, NP/PA) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Is the practice currently using liquid biopsy testing? --></help>
+        <label><!-- Currently using liquid biopsy testing? --></label>
+        <name>Currently_using_liquid_biopsy_testing__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Does office know liquid biopsy benefits? --></label>
+        <name>Does_office_know_liquid_biopsy_benefits__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If there is no Precision Medicine Navigator, who is the facilitator of specialty tests? --></help>
+        <label><!-- Facilitator of Specialty Tests? --></label>
+        <name>Facilitator_of_Specialty_Tests__c</name>
+    </fields>
+    <fields>
+        <label><!-- ISR Contact --></label>
+        <name>ISR_Contact__c</name>
+        <relationshipLabel><!-- ISR Targets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Did the office request an inservice visit from the AE? --></help>
+        <label><!-- Inservice Requested --></label>
+        <name>Inservice_Requested__c</name>
+    </fields>
+    <fields>
+        <help><!-- Does one of the providers acts as the laboratory director? --></help>
+        <label><!-- Lab Director? --></label>
+        <name>Lab_Director__c</name>
+    </fields>
+    <fields>
+        <help><!-- What laboratory do you use for NGS? If it’s the hospital, then who do they send to for testing? --></help>
+        <label><!-- NGS Laboratory? --></label>
+        <name>NGS_Laboratory__c</name>
+    </fields>
+    <fields>
+        <help><!-- Do you use NGS on tissue as part of standard testing before treatment?​ --></help>
+        <label><!-- NGS on tissue? --></label>
+        <name>NGS_on_tissue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Note Entry --></label>
+        <name>Note_Entry__c</name>
+    </fields>
+    <fields>
+        <help><!-- Does the practice have a Precision Medicine Navigator? If so, who? --></help>
+        <label><!-- Precision Medicine navigator? --></label>
+        <name>Precision_Medicine_navigator__c</name>
+    </fields>
+    <fields>
+        <help><!-- Did the office request a kit? --></help>
+        <label><!-- Request a Kit --></label>
+        <name>Request_a_Kit__c</name>
+    </fields>
+    <fields>
+        <help><!-- Was a sample received from the office? --></help>
+        <label><!-- Sample Received from Office --></label>
+        <name>Sample_Received_from_Office__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time of Call --></label>
+        <name>Time_of_Call__c</name>
+    </fields>
+    <fields>
+        <help><!-- Which doctor is the decision maker in the practice? --></help>
+        <label><!-- Which doctor is the decision maker? --></label>
+        <name>Which_doctor_is_the_decision_maker__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

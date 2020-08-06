@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Scheduled Record Update</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Scheduled Record Updates</value>
+    </caseValues>
+    <fields>
+        <help><!-- Default is 200. Lower this if you run into CPU Timeout issues or Record-locking issues. --></help>
+        <label><!-- Batch Size --></label>
+        <name>Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help><!-- Generate CRON here: https://www.freeformatter.com/cron-expression-generator-quartz.html --></help>
+        <label><!-- CRON Expression --></label>
+        <name>CRON_Expression__c</name>
+    </fields>
+    <fields>
+        <help><!-- Leave this blank, it will auto-populate when the job is scheduled. --></help>
+        <label><!-- JobId --></label>
+        <name>JobId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Must include the name of the field to be modified (the &quot;Write To Field&quot;) --></help>
+        <label><!-- SOQL Query --></label>
+        <name>SOQL_Query__c</name>
+    </fields>
+    <fields>
+        <help><!-- Write text that will trigger a process in Process Builder --></help>
+        <label><!-- Write Text --></label>
+        <name>Write_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Write To Field --></label>
+        <name>Write_To_Field__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

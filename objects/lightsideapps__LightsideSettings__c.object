@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>Stores Settings for the Lightside Power Tools App</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>lightsideapps__Auto_Appoval_Interval_Minutes__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>How often should the Auto Approval Schedule run</inlineHelpText>
+        <label>Auto Appoval Interval (Minutes)</label>
+        <precision>2</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>lightsideapps__ClearScriptScheduleFields__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>If selected the Script Schedule fields (including credentials) will be cleared upon the final schedule run</inlineHelpText>
+        <label>Clear Script Schedule Fields</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>lightsideapps__DefaultQTYScheduleEnabledToTrue__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Setting this to True will default the &apos;Enable Quantity Schedule&apos; field on the ProductCreatorPage to be True for NEW Products</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Setting this to True will default the &apos;Enable Quantity Schedule&apos; field on the ProductCreatorPage to be True for NEW Products</inlineHelpText>
+        <label>DefaultQTYScheduleEnabledToTrue</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>lightsideapps__DefaultRevScheduleEnabledToTrue__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Setting this to True will default the &apos;Enable Revenue Schedule&apos; field on the ProductCreatorPage to be True for NEW Products</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Setting this to True will default the &apos;Enable Revenue Schedule&apos; field on the ProductCreatorPage to be True for NEW Products</inlineHelpText>
+        <label>DefaultRevScheduleEnabledToTrue</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>lightsideapps__Delegate_Approver_Message__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Allows a message (or instructions) for Delegate Approvers to be shown on the &apos;My Approvals&apos; page</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Allows a message (or instructions) for Delegate Approvers to be shown on the &apos;My Approvals&apos; page</inlineHelpText>
+        <label>Delegate Approver Message</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>lightsideapps__Delegation_Interval__c</fullName>
+        <defaultValue>5</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Delegation Interval (Minutes)</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>lightsideapps__Delete_All_Group_Tasks_on_Delete__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>For Group Task Sync. 
+If set to True the all the Synced Tasks will be deleted if any of the synced tasks are deleted. 
+If set to False (default value) only the task deleted will be removed, with the rest of the Group Tasks remaining.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>For Group Task Sync. 
+If set to True the all the Synced Tasks will be deleted if any of the synced tasks are deleted. 
+If set to False (default value) only the task deleted will be removed, with the rest of the Group Tasks remaining.</inlineHelpText>
+        <label>Delete All Group Tasks on Delete</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>lightsideapps__Delete_Duplicate_Closed_Group_Tasks__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>For Synced Group Tasks. 
+If set to true, then only the Task Closed will be kept and the other group tasks deleted. 
+If set to False (default), all group tasks will remain and be synced.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>For Synced Group Tasks. 
+If set to true, then only the Task Closed will be kept and the other group tasks deleted. 
+If set to False (default), all group tasks will remain and be synced.</inlineHelpText>
+        <label>Delete Duplicate Closed Group Tasks</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>lightsideapps__Deployment_Poll_Interval_Minutes__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>How often should the Deployment Polling Schedule run</inlineHelpText>
+        <label>Deployment Poll Interval (Minutes)</label>
+        <precision>2</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>lightsideapps__Email_Attachment_Task_RecordType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The Id of the Task Record Type to use for Tasks created via the Email Attachment Tool. If this is left blank or the user does not have access to this Record Type, the Task Record Type will be the users default Task Record Type.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Id of the Task Record Type to use for Tasks created via the Email Attachment Tool. If this is left blank or the user does not have access to this Record Type, the Task Record Type will be the users default Task Record Type.</inlineHelpText>
+        <label>Email Attachment Task RecordType</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>lightsideapps__Force_Activity_on_Attachment_Email__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Forces the creation of an Activity on all emails sent via the File and Attachment Email Tool and removes the &apos;Create Activity.&apos; checkbox as an option. Note: The Object must be setup to allow Activities and the user have permissions to create Activities.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Forces the creation of an Activity on all emails sent via the File and Attachment Email Tool and removes the &apos;Create Activity.&apos; checkbox as an option. Note: The Object must be setup to allow Activities and the user have permissions to create Activities.</inlineHelpText>
+        <label>Force Activity on Attachment Email</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>lightsideapps__Save_Deployments_as_Files__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>If unchecked Deployments will be saved as Attachments.</inlineHelpText>
+        <label>Save Deployments as Files</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>lightsideapps__ShowActivePricebooksOnly__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Used to determine whether to show both Active and Inactive Pricebooks on the ProductCreator page or only Active.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to determine whether to show both Active and Inactive Pricebooks on the ProductCreator page or only Active.</inlineHelpText>
+        <label>ShowActivePricebooksOnly</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>LightsideSettings</label>
+    <visibility>Public</visibility>
+</CustomObject>

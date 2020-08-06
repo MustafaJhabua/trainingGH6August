@@ -1,0 +1,12 @@
+Hello, 
+This message is to inform you that the event below has been denied.
+
+Name: {!Form__c.Name}   {!Form__c.Link}
+Location: {!Form__c.Location_Name__c}
+Date: {!Form__c.Event_Date__c}
+
+Please contact your direct Sales Manager to discuss further.
+
+Please refer back to the event campaign or the form in salesforce to review further. 
+
+Thanks

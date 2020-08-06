@@ -1,0 +1,1486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <assignments>
+        <description>Assigns account name</description>
+        <name>Assign_Account_Name</name>
+        <label>Change Account Name</label>
+        <locationX>806</locationX>
+        <locationY>456</locationY>
+        <assignmentItems>
+            <assignToReference>txtAccountName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Enter_the_correct_Practice_Name</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Changes_to_Address</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns account name and address to variables</description>
+        <name>Assign_Account_Name_and_Address</name>
+        <label>Assign Account Name and Address</label>
+        <locationX>334</locationX>
+        <locationY>100</locationY>
+        <assignmentItems>
+            <assignToReference>txtAccountName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Contact_Record.Account.Name</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varStreet</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Contact_Record.MailingStreet</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varCity</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Contact_Record.MailingCity</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varState</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Contact_Record.MailingState</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varZIPCode</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Contact_Record.MailingPostalCode</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Confirm_Address</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns record ID for ISR Contact</description>
+        <name>Assign_POC_Id</name>
+        <label>Assign POC Id</label>
+        <locationX>1318</locationX>
+        <locationY>438</locationY>
+        <assignmentItems>
+            <assignToReference>varCSPOCId.Id</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Select_POC</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Contact_with_POC</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Changes the account Address</description>
+        <name>Change_Address</name>
+        <label>Change Address</label>
+        <locationX>1009</locationX>
+        <locationY>412</locationY>
+        <assignmentItems>
+            <assignToReference>varStreet</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Street</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varCity</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>City</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varState</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>State</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varZIPCode</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>ZIP_Code</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Who_is_the_best_Point_of_Contact</targetReference>
+        </connector>
+    </assignments>
+    <choices>
+        <description>This allows the user to add a new ISR Contact record</description>
+        <name>Add_New_ISR_Contact</name>
+        <choiceText>Add a new contact</choiceText>
+        <dataType>String</dataType>
+    </choices>
+    <choices>
+        <name>Address_is_correct</name>
+        <choiceText>Yes</choiceText>
+        <dataType>String</dataType>
+    </choices>
+    <choices>
+        <description>Choice is No</description>
+        <name>No</name>
+        <choiceText>No</choiceText>
+        <dataType>String</dataType>
+    </choices>
+    <choices>
+        <name>Practice_Name_is_correct</name>
+        <choiceText>Yes</choiceText>
+        <dataType>String</dataType>
+    </choices>
+    <choices>
+        <name>Practice_name_is_wrong</name>
+        <choiceText>No</choiceText>
+        <dataType>String</dataType>
+    </choices>
+    <choices>
+        <description>THis choice is for when we have the wrong address</description>
+        <name>Wrong_address</name>
+        <choiceText>No</choiceText>
+        <dataType>String</dataType>
+    </choices>
+    <choices>
+        <description>Choice is Yes</description>
+        <name>Yes</name>
+        <choiceText>Yes</choiceText>
+        <dataType>String</dataType>
+    </choices>
+    <constants>
+        <name>CaseRecordType</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>01280000000HmTr</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <description>Default country = US</description>
+        <name>Text_Country</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>US</stringValue>
+        </value>
+    </constants>
+    <decisions>
+        <description>Were there changes to the account name?</description>
+        <name>Changes_to_Account_Name</name>
+        <label>Changes to Account Name?</label>
+        <locationX>722</locationX>
+        <locationY>294</locationY>
+        <defaultConnector>
+            <targetReference>Changes_to_Address</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Account_Name_Was_Changed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Enter_Correct_Practice_Name_Checkbox</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Account_Name</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Is there a change to the address?</description>
+        <name>Changes_to_Address</name>
+        <label>Changes to Address?</label>
+        <locationX>938</locationX>
+        <locationY>290</locationY>
+        <defaultConnector>
+            <targetReference>Who_is_the_best_Point_of_Contact</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Address_Needs_To_Be_Changed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Enter_correct_address_checkbox</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Change_Address</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Does the user want to create a new ISR Contact record?</description>
+        <name>Create_a_new_ISR_Contact</name>
+        <label>Create a new ISR Contact</label>
+        <locationX>1433</locationX>
+        <locationY>101</locationY>
+        <defaultConnector>
+            <targetReference>Update_ISR_Contact</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_create_a_new_ISR_Contact</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Existing_ISR_Contacts</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>Add_New_ISR_Contact</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Create_a_new_Office_Contact_record</targetReference>
+            </connector>
+            <label>Yes, create a new ISR Contact</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Is the account qualified?</description>
+        <name>Is_the_account_qualified</name>
+        <label>Is the account qualified and the address correct?</label>
+        <locationX>523</locationX>
+        <locationY>206</locationY>
+        <defaultConnector>
+            <targetReference>Changes_to_Account_Name</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Account is NOT qualified</defaultConnectorLabel>
+        <rules>
+            <name>Account_is_qualified</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Contact_Record.Account_Qualified__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Enter_Correct_Practice_Name_Checkbox</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Enter_correct_address_checkbox</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Contact_Record.Qualified__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Contact_Stage_0</targetReference>
+            </connector>
+            <label>Account and Contact are qualified</label>
+        </rules>
+        <rules>
+            <name>Contact_not_Qualified_no_address_changes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Contact_Record.Qualified__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Enter_Correct_Practice_Name_Checkbox</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Enter_correct_address_checkbox</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Who_is_the_best_Point_of_Contact</targetReference>
+            </connector>
+            <label>Contact not Qualified, no address changes</label>
+        </rules>
+    </decisions>
+    <description>Added instruction when contact is already qualified</description>
+    <dynamicChoiceSets>
+        <description>ISR_Contact__c.Office_Role__c. (Field label is &quot;Title&quot;)</description>
+        <name>ISR_Contact_Title</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Office_Role__c</picklistField>
+        <picklistObject>ISR_Contact__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <description>Select an office contact who is the best person for CS to reach out to, or create a new one</description>
+        <name>Select_POC</name>
+        <dataType>String</dataType>
+        <displayField>Full_Name__c</displayField>
+        <filters>
+            <field>Related_Contact__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Contact_Record.Id</elementReference>
+            </value>
+        </filters>
+        <object>ISR_Contact__c</object>
+        <outputAssignments>
+            <assignToReference>txtOfficeContact</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+        <valueField>Id</valueField>
+    </dynamicChoiceSets>
+    <interviewLabel>Request Contact Qualification {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Request Contact Qualification</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordCreates>
+        <name>Create_Case_0</name>
+        <label>Create Case</label>
+        <locationX>1400</locationX>
+        <locationY>811</locationY>
+        <assignRecordIdToReference>txtCaseRecordID</assignRecordIdToReference>
+        <connector>
+            <targetReference>Create_Case_Questions</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Activity_Type__c</field>
+            <value>
+                <elementReference>txtActivityType</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ContactId</field>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Origin</field>
+            <value>
+                <elementReference>txtOrigin</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>txtQueueId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RecordTypeId</field>
+            <value>
+                <elementReference>CaseRecordType</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>New</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <elementReference>txtSubject</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+    </recordCreates>
+    <recordCreates>
+        <name>Create_Case_0_0</name>
+        <label>Create Case</label>
+        <locationX>2022</locationX>
+        <locationY>171</locationY>
+        <assignRecordIdToReference>txtCaseRecordID</assignRecordIdToReference>
+        <connector>
+            <targetReference>Create_Case_Questions_0</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Activity_Type__c</field>
+            <value>
+                <elementReference>txtActivityType</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ContactId</field>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Origin</field>
+            <value>
+                <elementReference>txtOrigin</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>txtQueueId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RecordTypeId</field>
+            <value>
+                <elementReference>CaseRecordType</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>New</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <elementReference>txtSubject</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+    </recordCreates>
+    <recordCreates>
+        <description>Creates new ISR contact attached to the ISR target</description>
+        <name>Create_New_ISR_Contact</name>
+        <label>Create New ISR Contact</label>
+        <locationX>1674</locationX>
+        <locationY>88</locationY>
+        <assignRecordIdToReference>varCSPOCId.Id</assignRecordIdToReference>
+        <connector>
+            <targetReference>Update_Contact_with_POC_0</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Best_Time_To_Call__c</field>
+            <value>
+                <elementReference>Best_time_to_call</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Client_Services_POC__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Email__c</field>
+            <value>
+                <elementReference>ISR_Contact_Email.value</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>First_Name__c</field>
+            <value>
+                <elementReference>First_Name</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>Last_Name</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Office_Role__c</field>
+            <value>
+                <elementReference>Title</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Phone__c</field>
+            <value>
+                <elementReference>ISR_Contact_phone.value</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Related_Contact__c</field>
+            <value>
+                <elementReference>Get_Contact_Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>ISR_Contact__c</object>
+    </recordCreates>
+    <recordLookups>
+        <name>Get_Contact_Record</name>
+        <label>Get Contact Record</label>
+        <locationX>176</locationX>
+        <locationY>59</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Assign_Account_Name_and_Address</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Contact</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Get ISR Office Contact Record</description>
+        <name>Get_ISR_Contact_Record</name>
+        <label>Get ISR Contact Record</label>
+        <locationX>1324</locationX>
+        <locationY>688</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Create_Case_0</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varCSPOCId.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>ISR_Contact__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Get ISR Office Contact Record</description>
+        <name>Get_ISR_Contact_Record_0</name>
+        <label>Get ISR Contact Record</label>
+        <locationX>1900</locationX>
+        <locationY>85</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Create_Case_0_0</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varCSPOCId.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>ISR_Contact__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Lookup_Case_Info</name>
+        <label>Lookup Case Info</label>
+        <locationX>1481</locationX>
+        <locationY>563</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Case</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>txtCaseRecordID</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Case</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Lookup_Case_Info_0</name>
+        <label>Lookup Case Info</label>
+        <locationX>1904</locationX>
+        <locationY>376</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Case_0</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>txtCaseRecordID</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Case</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Updates Case</description>
+        <name>Update_Case</name>
+        <label>Update Case</label>
+        <locationX>1486</locationX>
+        <locationY>453</locationY>
+        <connector>
+            <targetReference>Update_Contact_Stage</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>txtCaseRecordID</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Description</field>
+            <value>
+                <elementReference>txtPlainTextCaseDescr</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Updates Case</description>
+        <name>Update_Case_0</name>
+        <label>Update Case</label>
+        <locationX>1904</locationX>
+        <locationY>498</locationY>
+        <connector>
+            <targetReference>Update_Contact_Stage_0_0</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>txtCaseRecordID</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Description</field>
+            <value>
+                <elementReference>txtPlainTextCaseDescrNewISR</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Updates ISR Stage to &apos;Closing&apos;</description>
+        <name>Update_Contact_Stage</name>
+        <label>Update ISR Stage</label>
+        <locationX>1473</locationX>
+        <locationY>319</locationY>
+        <connector>
+            <targetReference>Case_Created</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>ISR_Stage__c</field>
+            <value>
+                <stringValue>Stage 3</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Contact</object>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Updates ISR Stage to &apos;Closing&apos;</description>
+        <name>Update_Contact_Stage_0</name>
+        <label>Update ISR Stage</label>
+        <locationX>528</locationX>
+        <locationY>363</locationY>
+        <connector>
+            <targetReference>All_done</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>ISR_Stage__c</field>
+            <value>
+                <stringValue>Stage 3</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Contact</object>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Updates ISR Stage to &apos;Closing&apos;</description>
+        <name>Update_Contact_Stage_0_0</name>
+        <label>Update ISR Stage</label>
+        <locationX>1901</locationX>
+        <locationY>611</locationY>
+        <connector>
+            <targetReference>Case_Created_0</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>ISR_Stage__c</field>
+            <value>
+                <stringValue>Stage 3</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Contact</object>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Updates the contact record with the ISR Contact selected as best POC for CS</description>
+        <name>Update_Contact_with_POC</name>
+        <label>Update Contact with POC</label>
+        <locationX>1317</locationX>
+        <locationY>559</locationY>
+        <connector>
+            <targetReference>Get_ISR_Contact_Record</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Contact_Record.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>CS_POC__c</field>
+            <value>
+                <elementReference>Select_POC</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Contact</object>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Updates the contact record with the ISR Contact selected as best POC for CS</description>
+        <name>Update_Contact_with_POC_0</name>
+        <label>Update Contact with POC</label>
+        <locationX>1799</locationX>
+        <locationY>85</locationY>
+        <connector>
+            <targetReference>Get_ISR_Contact_Record_0</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Contact_Record.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>CS_POC__c</field>
+            <value>
+                <elementReference>txtOfficeContact</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Contact</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_ISR_Contact</name>
+        <label>Update ISR Contact</label>
+        <locationX>1315</locationX>
+        <locationY>298</locationY>
+        <connector>
+            <targetReference>Assign_POC_Id</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Select_POC</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Client_Services_POC__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>ISR_Contact__c</object>
+    </recordUpdates>
+    <runInMode>DefaultMode</runInMode>
+    <screens>
+        <description>End of flow</description>
+        <name>All_done</name>
+        <label>All done</label>
+        <locationX>523</locationX>
+        <locationY>526</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>End_msg</name>
+            <fieldText>&lt;p&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;All done!&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;If the office needs more kits, ask them how many, then email Client Services directly (kits@guardanthealth.com) with this request. Be sure to include the best point of contact in the email.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Click &quot;Finish&quot;. &lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Case_Created</name>
+        <label>Case Created</label>
+        <locationX>1596</locationX>
+        <locationY>324</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>txtCaption1</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px; color: rgb(0, 0, 0);&quot;&gt;Case# {!Lookup_Case_Info.CaseNumber} for this contact has been created with this info:&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>CaseCreatedMessage</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;﻿{!txtCaseDescription}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;﻿&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>txtCaption2</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px; color: rgb(0, 0, 0);&quot;&gt;Press Finish to return to the contact page.&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Case_Created_0</name>
+        <label>Case Created</label>
+        <locationX>1909</locationX>
+        <locationY>778</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>txtCaption1_0</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px; color: rgb(0, 0, 0);&quot;&gt;Case# {!Lookup_Case_Info.CaseNumber} for this contact has been created with this info:&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>CaseCreatedMessage_0</name>
+            <fieldText>&lt;p&gt;{!txtCaseDescrNewISR}&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;﻿&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>txtCaption2_0</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px; color: rgb(0, 0, 0);&quot;&gt;Press Finish to return to the contact page.&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>Confirm that we have the correct practice name and address</description>
+        <name>Confirm_Address</name>
+        <label>Confirm Practice Name and Address</label>
+        <locationX>529</locationX>
+        <locationY>60</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Is_the_account_qualified</targetReference>
+        </connector>
+        <fields>
+            <name>Practice_Name_text</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Is this the correct name of the practice?&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;{!Get_Contact_Record.Account.Name} &lt;/b&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Enter_Correct_Practice_Name_Checkbox</name>
+            <dataType>Boolean</dataType>
+            <fieldText>No, I need to enter the correct practice name</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Enter_the_correct_Practice_Name</name>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>Get_Contact_Record.Account.Name</elementReference>
+            </defaultValue>
+            <fieldText>Enter the correct Practice Name:</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>Enter_Correct_Practice_Name_Checkbox</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <booleanValue>true</booleanValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Confirm_Practice_Address</name>
+            <fieldText>&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;﻿﻿&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Is this the correct address?&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;{!Get_Contact_Record.MailingStreet}&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;{!Get_Contact_Record.MailingCity}, &lt;/b&gt;&lt;b style=&quot;font-size: 14px; color: rgb(62, 62, 60); background-color: rgb(255, 255, 255);&quot;&gt;{!Get_Contact_Record.MailingState}   &lt;/b&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;{!Get_Contact_Record.MailingPostalCode}&lt;/b&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Enter_correct_address_checkbox</name>
+            <dataType>Boolean</dataType>
+            <fieldText>No, I need to correct the address</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Street</name>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>Get_Contact_Record.MailingStreet</elementReference>
+            </defaultValue>
+            <fieldText>Street Address:</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>Enter_correct_address_checkbox</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <booleanValue>true</booleanValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>City</name>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>Get_Contact_Record.MailingCity</elementReference>
+            </defaultValue>
+            <fieldText>City:</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>Enter_correct_address_checkbox</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <booleanValue>true</booleanValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>State</name>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>Get_Contact_Record.MailingState</elementReference>
+            </defaultValue>
+            <fieldText>State:</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>Enter_correct_address_checkbox</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <booleanValue>true</booleanValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>ZIP_Code</name>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>Get_Contact_Record.MailingPostalCode</elementReference>
+            </defaultValue>
+            <fieldText>ZIP Code</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>Enter_correct_address_checkbox</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <booleanValue>true</booleanValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>Creates a new ISR Contact record</description>
+        <name>Create_a_new_Office_Contact_record</name>
+        <label>Create a new Office Contact record</label>
+        <locationX>1563</locationX>
+        <locationY>89</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Create_New_ISR_Contact</targetReference>
+        </connector>
+        <fields>
+            <name>First_Name</name>
+            <dataType>String</dataType>
+            <fieldText>First Name</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Last_Name</name>
+            <dataType>String</dataType>
+            <fieldText>Last Name</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Title</name>
+            <choiceReferences>ISR_Contact_Title</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Title</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>ISR_Contact_phone</name>
+            <extensionName>flowruntime:phone</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>placeholder</name>
+                <value>
+                    <stringValue>(555) 555-1212</stringValue>
+                </value>
+            </inputParameters>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+        </fields>
+        <fields>
+            <name>Best_time_to_call</name>
+            <dataType>String</dataType>
+            <fieldText>Best time to call</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>ISR_Contact_Email</name>
+            <extensionName>flowruntime:email</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Create_Case_Questions</name>
+        <label>Create Case Questions</label>
+        <locationX>1526</locationX>
+        <locationY>811</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Lookup_Case_Info</targetReference>
+        </connector>
+        <fields>
+            <name>txtCaseCreateCaption</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-size: 14px;&quot;&gt;This will create a case for  Client Services to order the following for this account:&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>QTY_KITS</name>
+            <dataType>Number</dataType>
+            <fieldText>QTY:  KITS</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+            <scale>0</scale>
+        </fields>
+        <fields>
+            <name>DELIVER_BY_KITS</name>
+            <dataType>Date</dataType>
+            <fieldText>DELIVER BY:</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>QTY_REQS</name>
+            <dataType>Number</dataType>
+            <fieldText>QTY:  REQS</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+            <scale>0</scale>
+        </fields>
+        <fields>
+            <name>DELIVER_BY_REQS</name>
+            <dataType>Date</dataType>
+            <fieldText>DELIVER BY:</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>Request_Portal_Setup</name>
+            <dataType>Boolean</dataType>
+            <fieldText>Request Portal Setup</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Additional_Notes</name>
+            <fieldText>Additional Notes:</fieldText>
+            <fieldType>LargeTextArea</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Create_Case_Questions_0</name>
+        <label>Create Case Questions</label>
+        <locationX>1903</locationX>
+        <locationY>238</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Lookup_Case_Info_0</targetReference>
+        </connector>
+        <fields>
+            <name>txtCaseCreateCaption_0</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-size: 14px;&quot;&gt;This will create a case for  Client Services to order the following for this account:&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>QTY_KITS_0</name>
+            <dataType>Number</dataType>
+            <fieldText>QTY:  KITS</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+            <scale>0</scale>
+        </fields>
+        <fields>
+            <name>DELIVER_BY_KITS_0</name>
+            <dataType>Date</dataType>
+            <fieldText>DELIVER BY:</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>QTY_REQS_0</name>
+            <dataType>Number</dataType>
+            <fieldText>QTY:  REQS</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+            <scale>0</scale>
+        </fields>
+        <fields>
+            <name>DELIVER_BY_REQS_0</name>
+            <dataType>Date</dataType>
+            <fieldText>DELIVER BY:</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>Request_Portal_Setup_0</name>
+            <dataType>Boolean</dataType>
+            <fieldText>Request Portal Setup</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Additional_Notes_0</name>
+            <fieldText>Additional Notes:</fieldText>
+            <fieldType>LargeTextArea</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>Who is the best person in the office for Client Services to reach out to regarding supplies</description>
+        <name>Who_is_the_best_Point_of_Contact</name>
+        <label>Who is the best Point of Contact?</label>
+        <locationX>1314</locationX>
+        <locationY>93</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Create_a_new_ISR_Contact</targetReference>
+        </connector>
+        <fields>
+            <name>txtClientServicesPOC</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Who is the best person in the office for Client Services to speak with regarding supplies? &lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Existing_ISR_Contacts</name>
+            <choiceReferences>Select_POC</choiceReferences>
+            <choiceReferences>Add_New_ISR_Contact</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Required</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>26</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Get_Contact_Record</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>Activity_type</name>
+        <text>&lt;p&gt;Qualify Account&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Template that displays the provided account name and address</description>
+        <name>txtAccountInfo</name>
+        <text>PRACTICE NAME:
+
+{!Enter_the_correct_Practice_Name}
+
+
+
+PRACTICE ADDRESS:
+
+{!Street}
+
+{!City}, {!State} {!ZIP_Code}
+
+
+
+This is the account information provided. Please search for this account and if not found, create a new account record and qualify it.</text>
+    </textTemplates>
+    <textTemplates>
+        <name>txtCaseDescription</name>
+        <text>&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;PRACTICE NAME: {!txtAccountName}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;PRACTICE ADDRESS:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;{!varStreet}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;{!varCity}, {!varState}   {!varZIPCode}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 13px; color: rgb(0, 0, 0);&quot;&gt;SUPPLIES POINT OF CONTACT:&amp;nbsp;{!Get_ISR_Contact_Record.Full_Name__c},&amp;nbsp;{!Get_ISR_Contact_Record.Office_Role__c}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 13px; color: rgb(0, 0, 0);&quot;&gt;Phone: {!Get_ISR_Contact_Record.Phone__c}; Best time to call: {!Get_ISR_Contact_Record.Best_Time_To_Call__c}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 13px; color: rgb(0, 0, 0);&quot;&gt;Email:&amp;nbsp;{!Get_ISR_Contact_Record.Email__c}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;QTY KITS: {!QTY_KITS}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;DELIVER BY: {!DELIVER_BY_KITS}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;QTY REQS: {!QTY_REQS}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;DELIVER BY: {!DELIVER_BY_REQS}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Request Portal Setup: {!Request_Portal_Setup}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Additional Notes:  {!Additional_Notes}&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Used when new ISR record is created</description>
+        <name>txtCaseDescrNewISR</name>
+        <text>&lt;p&gt;PRACTICE NAME: &lt;/p&gt;&lt;p&gt;{!txtAccountName}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;PRACTICE ADDRESS:&lt;/p&gt;&lt;p&gt;{!varStreet}&lt;/p&gt;&lt;p&gt;{!varCity}, {!varState}  {!varZIPCode}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;SUPPLIES POINT OF CONTACT:  &lt;/p&gt;&lt;p&gt;{!Get_ISR_Contact_Record_0.Full_Name__c},  {!Get_ISR_Contact_Record_0.Office_Role__c}&lt;/p&gt;&lt;p&gt;Phone: {!Get_ISR_Contact_Record_0.Phone__c}; Best time to call: {!Get_ISR_Contact_Record_0.Best_Time_To_Call__c}&lt;/p&gt;&lt;p&gt;Email:  {!Get_ISR_Contact_Record_0.Email__c}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;QTY KITS {!QTY_KITS_0}&lt;/p&gt;&lt;p&gt;DELIVER BY: {!DELIVER_BY_KITS_0}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;QTY REQS {!QTY_REQS_0}&lt;/p&gt;&lt;p&gt;DELIVER BY: {!DELIVER_BY_REQS_0}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Request Portal Setup: {!Request_Portal_Setup_0}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Additional Notes: Contact qualification requested by ISR group. {!Additional_Notes_0}&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Plain Text case Description</description>
+        <name>txtPlainTextCaseDescr</name>
+        <text>PRACTICE NAME: 
+{!txtAccountName}
+
+PRACTICE ADDRESS:
+{!varStreet}
+{!varCity}, {!varState}   {!varZIPCode}
+
+This is the account information provided. Please search for this account and if not found, create a new account record and qualify it. 
+
+SUPPLIES POINT OF CONTACT:  {!Get_ISR_Contact_Record.Full_Name__c},  {!Get_ISR_Contact_Record.Office_Role__c}
+Phone: {!Get_ISR_Contact_Record.Phone__c}; Best time to call: {!Get_ISR_Contact_Record.Best_Time_To_Call__c}
+Email:  {!Get_ISR_Contact_Record.Email__c}
+
+QTY KITS {!QTY_KITS}
+DELIVER BY: {!DELIVER_BY_KITS}
+
+QTY REQS {!QTY_REQS}
+DELIVER BY: {!DELIVER_BY_REQS}
+
+Request Portal Setup: {!Request_Portal_Setup}
+
+Additional Notes: Contact qualification requested by ISR group. {!Additional_Notes}</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Used when the flow creates a new ISR Contact.</description>
+        <name>txtPlainTextCaseDescrNewISR</name>
+        <text>PRACTICE NAME: 
+{!txtAccountName}
+
+PRACTICE ADDRESS:
+{!varStreet}
+{!varCity}, {!varState}  {!varZIPCode}
+
+This is the account information provided. Please search for this account and if not found, create a new account record and qualify it. 
+
+SUPPLIES POINT OF CONTACT:  {!Get_ISR_Contact_Record_0.Full_Name__c},  {!Get_ISR_Contact_Record_0.Office_Role__c}
+Phone: {!Get_ISR_Contact_Record_0.Phone__c}; Best time to call: {!Get_ISR_Contact_Record_0.Best_Time_To_Call__c}
+Email:  {!Get_ISR_Contact_Record_0.Email__c}
+
+QTY KITS {!QTY_KITS_0}
+DELIVER BY: {!DELIVER_BY_KITS_0}
+
+QTY REQS {!QTY_REQS_0}
+DELIVER BY: {!DELIVER_BY_REQS_0}
+
+Request Portal Setup: {!Request_Portal_Setup_0}
+
+Additional Notes: Contact qualification requested by ISR group. {!Additional_Notes_0}</text>
+    </textTemplates>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>txtAccountName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <elementReference>Get_Contact_Record.Account.Name</elementReference>
+        </value>
+    </variables>
+    <variables>
+        <name>txtActivityType</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue>Qualify MD</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <name>txtCaseRecordID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>txtCaseRecordTypeId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <elementReference>CaseRecordType</elementReference>
+        </value>
+    </variables>
+    <variables>
+        <description>Office Contact</description>
+        <name>txtOfficeContact</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>txtOrigin</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>ISR Sales Rep</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Record ID of ISR Contact selected as Best point of contact for Client Services</description>
+        <name>txtPOCId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>txtQueueId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>00G80000002vLPH</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <name>txtSubject</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Qualify Contact and Account</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>City</description>
+        <name>varCity</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <elementReference>Get_Contact_Record.MailingCity</elementReference>
+        </value>
+    </variables>
+    <variables>
+        <description>Record variable of ISR Contact selected as POC</description>
+        <name>varCSPOCId</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <objectType>ISR_Contact__c</objectType>
+    </variables>
+    <variables>
+        <description>Mailing State</description>
+        <name>varState</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <elementReference>Get_Contact_Record.MailingState</elementReference>
+        </value>
+    </variables>
+    <variables>
+        <description>Street Address</description>
+        <name>varStreet</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <elementReference>Get_Contact_Record.MailingStreet</elementReference>
+        </value>
+    </variables>
+    <variables>
+        <description>Mailing Zip Code</description>
+        <name>varZIPCode</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <elementReference>Get_Contact_Record.MailingPostalCode</elementReference>
+        </value>
+    </variables>
+</Flow>

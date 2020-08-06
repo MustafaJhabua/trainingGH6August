@@ -1,0 +1,8 @@
+Hello,
+This provider received a G360 result after not having one for at least a year. Please reach out to MD for discussion.
+
+Name of Physician: {!Guardant_360_Sample__c.Physician_Name__c}
+Link to Sample: {!Guardant_360_Sample__c.Link}
+
+Thanks,
+Sales Operations

@@ -1,0 +1,5 @@
+<apex:page id="standardCopyrightFooter" controller="MedProSC.MedProStandardCopyrightFooterController">
+	<apex:stylesheet value="{!$Resource.MedProSC__MedProTwoPassDisplayDetail_resources}" />
+
+	<apex:outputLabel value="Current tool installed: {!$Setup.MedProSC__MedProAppSettings__c.MedProSC__Installation_Details__c} " styleClass="medproFont" rendered="{!showInstallDate}" />
+</apex:page>

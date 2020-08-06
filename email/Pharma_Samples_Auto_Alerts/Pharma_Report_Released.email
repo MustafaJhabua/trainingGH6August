@@ -1,0 +1,5 @@
+<h2>Pharma Report Released</h2>
+
+<p>Hello! We just released report {!Guardant_360_Sample__c.Name} to {!Guardant_360_Sample__c.Account__c} today.</p>
+
+<p>https://na66.salesforce.com/{!Guardant_360_Sample__c.Id}</p>

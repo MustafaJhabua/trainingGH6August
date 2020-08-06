@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>This email will be sent to a PI who is running a Clovis TRITON2 or TRITON3 trial</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>CLO338_Outreach_PI_019</name>
+    <style>none</style>
+    <subject>Guardant Health Patient Referrals for TRITON2 and TRITON3</subject>
+    <textOnly>Dear {!Contact.Salutation} {!Contact.Name} and [insert staff],
+
+We’d like to introduce you to the Guardant Health Patient Referrals Program. The referrals program identifies patients that may be eligible for clinical trials based on their molecular genetic results as determined by Guardant360, a comprehensive genomic liquid biopsy test.
+
+As you’re likely aware, we’ve partnered with Clovis Oncology to help identify and recruit patients who have BRCA1 or BRCA2 alterations, for the TRITON2 and TRITON3 studies. As part of the partnership, we may:
+     - Refer treating physicians to you who are interested in learning more about the TRITON studies and/or enrolling their patient(s) 
+     - Alert you of patients who may be eligible for TRITON2 or TRITON3, for whom you ordered a Guardant360 test
+
+To ensure our communication methods best meet your preferences, we’d like to know: 
+     - Whether you prefer email and/or phone contact? 
+     - Whether we should include any additional research staff?
+
+We’d like to thank you in advance for your time and dedication to the TRITON studies and look forward to helping you enroll patients. Please don’t hesitate to contact me with any questions, concerns, or feedback.
+
+
+Warm Regards, 
+{!User.Name} 
+Clinical Trial Referrals Coordinator
+On behalf of the Guardant Health Patient Referrals Program
+
+This message is intended solely for the designated recipient(s). It may contain confidential or proprietary information and may be subject to attorney-client privilege or other confidentiality protections. If you are not a designated recipient you may not review, copy or distribute this message. If you have received this in error, please notify the sender by replying to this e-mail and delete this message. Thank you.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

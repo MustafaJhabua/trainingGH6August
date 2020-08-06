@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notification for Sales that a patient has been contacted by Billing Associate.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Patient Contacted by CSBA</name>
+    <style>none</style>
+    <subject>ATTN: A patient from {!Case.Account_Name__c} has been contacted by Client Services.</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

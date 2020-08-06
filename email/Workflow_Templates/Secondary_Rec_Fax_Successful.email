@@ -1,0 +1,12 @@
+Hello
+This message is to inform you that the fax was successfully sent to {!efaxapp__Sent_Fax__c.efaxapp__Fax_Number__c},  {!efaxapp__Sent_Fax__c.Secondary_Fax_Recipient__c}, for Sample # {!efaxapp__Sent_Fax__c.X2nd_Recipient_Sample__c}.
+
+
+ID:  {!efaxapp__Sent_Fax__c.Name}
+To:  {!efaxapp__Sent_Fax__c.efaxapp__Fax_Number__c}
+Status:  {!efaxapp__Sent_Fax__c.efaxapp__Status__c}
+Subject:  {!efaxapp__Sent_Fax__c.efaxapp__Subject__c}
+Pages:  {!efaxapp__Sent_Fax__c.efaxapp__Total_Pages__c}
+Sent:  {!efaxapp__Sent_Fax__c.efaxapp__Send_Date__c}
+Delivered:  {!efaxapp__Sent_Fax__c.efaxapp__Delivery_Date__c}
+View Fax:  https://na29.salesforce.com/{!efaxapp__Sent_Fax__c.Id}

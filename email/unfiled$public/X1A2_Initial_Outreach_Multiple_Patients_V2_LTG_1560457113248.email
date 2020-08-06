@@ -1,0 +1,13 @@
+Dear Dr. {{{Match_Record__c.MD_Last_Name__c}}},<br />
+<br />
+The Guardant360 tests you ordered to identify circulating tumor biomarkers for [#] of your patients have reported several rare molecular alteration(s), including {{{Match_Record__c.Qualifying_Target_Genes__c}}}. We found that these rare alterations could qualify your patients for a curated list of clinical trials.&nbsp;<br />
+<br />
+If you would like to receive more information, please reply to this email.&nbsp;<br />
+<br />
+Sincerely,&nbsp;<br />
+Katrina Kesterson, MD&nbsp;<br />
+Clinical Trial Advisor&nbsp;<br />
+Guardant Health, Inc.&nbsp;<br />
+On behalf of the Clinical Trial Advisors program&nbsp;<br />
+<br />
+This message is intended solely for the designated recipient(s). It may contain confidential or proprietary information and may be subject to attorney-client privilege or other confidentiality protections. If you are not a designated recipient you may not review, copy or distribute this message. If you have received this in error, please notify the sender by replying to this e-mail and deleting this message. Thank you. Ref:&nbsp;&nbsp;{{{Match_Record__c.Id}}}

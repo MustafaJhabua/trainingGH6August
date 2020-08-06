@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Default Value --></label>
+        <name>MedProSC__Default_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Help_Text_Available --></label>
+        <name>MedProSC__Help_Text_Available__c</name>
+    </fields>
+    <fields>
+        <label><!-- Help Text --></label>
+        <name>MedProSC__Help_Text__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sets this search form element to active (show) or inactive (hide) on the Search Form --></help>
+        <label><!-- Is Active --></label>
+        <name>MedProSC__Is_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Focus --></label>
+        <name>MedProSC__Is_Focus__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, use in Lightning version of tool as well. --></help>
+        <label><!-- Is Lightning --></label>
+        <name>MedProSC__Is_Lightning__c</name>
+    </fields>
+    <fields>
+        <help><!-- The associated MedPro Customer for this Search Form element --></help>
+        <label><!-- MedPro Customer --></label>
+        <name>MedProSC__MedPro_Customer__c</name>
+        <relationshipLabel><!-- MedPro Search Form Elements --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The name of the MedPro searchable field which will be displayed on the Search Form --></help>
+        <label><!-- Med Pro Search Field --></label>
+        <name>MedProSC__Med_Pro_Search_Field__c</name>
+        <picklistValues>
+            <masterLabel>Addr Line 1</masterLabel>
+            <translation><!-- Addr Line 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CDS Number</masterLabel>
+            <translation><!-- CDS Number --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>City</masterLabel>
+            <translation><!-- City --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Country Code</masterLabel>
+            <translation><!-- Country Code --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DEA Number</masterLabel>
+            <translation><!-- DEA Number --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>First Name</masterLabel>
+            <translation><!-- First Name --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last Name</masterLabel>
+            <translation><!-- Last Name --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Middle Name</masterLabel>
+            <translation><!-- Middle Name --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NPI Number</masterLabel>
+            <translation><!-- NPI Number --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Professional Designation</masterLabel>
+            <translation><!-- Professional Designation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>State</masterLabel>
+            <translation><!-- State --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>State License Number</masterLabel>
+            <translation><!-- State License Number --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>State Of License</masterLabel>
+            <translation><!-- State Of License --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zip Code</masterLabel>
+            <translation><!-- Zip Code --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Numeric value allows this element to be reordered relative to other elements --></help>
+        <label><!-- Ordinal Position --></label>
+        <name>MedProSC__Ordinal_Position__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override Display Label --></label>
+        <name>MedProSC__Override_Display_Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Required Flag String --></label>
+        <name>MedProSC__Required_Flag_String__c</name>
+    </fields>
+    <fields>
+        <label><!-- Required --></label>
+        <name>MedProSC__Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- SyncReOrderFlag --></label>
+        <name>MedProSC__SyncReOrderFlag__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,283 @@
+<template>
+    <!-- <lightning-card title="Account Integration Tasks" icon-name="custom:custom14"> -->
+        <template if:true={showSpinner}>
+            <lightning-spinner alternative-text="Loading" size="medium" variant="brand"></lightning-spinner>
+        </template>
+        <template if:true={records}>
+            <template if:true={mdsSection}>
+                <div class="slds-section slds-is-open" onclick={closeSection}>
+                    <h3 class="slds-section__title slds-theme_shade">
+                        <span class="slds-truncate slds-p-horizontal_small" title="MD">MD</span>
+                    </h3>
+                    <div aria-hidden="false" class="slds-section__content">
+                        <p>
+                            <template if:true={mds}>
+                                <template for:each={mds} for:item="md">
+                                    <div class="slds-box" key={md.id}>
+                                        <a href="#" title={md.Name} data-record-id={md.Id} onclick={handleClick}>{md.Name}</a>
+                                        <template if:true={md.Mark_Completed__c}>
+                                            <p class="slds-truncate" title={md.Mark_Completed__c}>Completed : <input type="checkbox" checked disabled></p>
+                                        </template>
+                                        <template if:false={md.Mark_Completed__c}>
+                                            <p class="slds-truncate" title={md.Mark_Completed__c}>Completed : <input type="checkbox" disabled></p>
+                                        </template>
+                                    </div>
+                                </template>
+                            </template>
+                        </p>
+                    </div>
+                </div>
+            </template>
+            <template if:true={schedulersSection}>
+                <div class="slds-section slds-is-open" onclick={closeSection}>
+                    <h3 class="slds-section__title slds-theme_shade">
+                        <span class="slds-truncate slds-p-horizontal_small" title="Identifies patients">Identifies patients</span>
+                    </h3>
+                    <div aria-hidden="false" class="slds-section__content">
+                        <p>
+                            <template if:true={schedulers}>
+                                <template for:each={schedulers} for:item="scheduler">
+                                    <div class="slds-box" key={scheduler.id}>
+                                        <a href="#" title={scheduler.Name} data-record-id={scheduler.Id} onclick={handleClick}>{scheduler.Name}</a>
+                                        <template if:true={scheduler.Mark_Completed__c}>
+                                            <p class="slds-truncate" title={scheduler.Mark_Completed__c}>Completed : <input type="checkbox" checked disabled></p>
+                                        </template>
+                                        <template if:false={scheduler.Mark_Completed__c}>
+                                            <p class="slds-truncate" title={scheduler.Mark_Completed__c}>Completed : <input type="checkbox" disabled></p>
+                                        </template>
+                                    </div>
+                                </template>
+                            </template>
+                        </p>
+                    </div>
+                </div>
+            </template>
+            <template if:true={fillsSection}>
+                <div class="slds-section slds-is-open" onclick={closeSection}>
+                    <h3 class="slds-section__title slds-theme_shade">
+                        <span class="slds-truncate slds-p-horizontal_small" title="Fills out TRF">Fills out TRF</span>
+                    </h3>
+                    <div aria-hidden="false" class="slds-section__content">
+                        <p>
+                            <template if:true={fills}>
+                                <template for:each={fills} for:item="fill">
+                                    <div class="slds-box" key={fill.id}>
+                                        <a href="#" title={fill.Name} data-record-id={fill.Id} onclick={handleClick}>{fill.Name}</a>
+                                        <template if:true={fill.Mark_Completed__c}>
+                                            <p class="slds-truncate" title={fill.Mark_Completed__c}>Completed : <input type="checkbox" checked disabled></p>
+                                        </template>
+                                        <template if:false={fill.Mark_Completed__c}>
+                                            <p class="slds-truncate" title={fill.Mark_Completed__c}>Completed : <input type="checkbox" disabled></p>
+                                        </template>
+                                    </div>
+                                </template>
+                            </template>
+                        </p>
+                    </div>
+                </div>
+            </template>
+            <template if:true={educatesSection}>
+                <div class="slds-section slds-is-open" onclick={closeSection}>
+                    <h3 class="slds-section__title slds-theme_shade">
+                        <span class="slds-truncate slds-p-horizontal_small" title="Educates patient">Educates patient</span>
+                    </h3>
+                    <div aria-hidden="false" class="slds-section__content">
+                        <p>
+                            <template if:true={educates}>
+                                <template for:each={educates} for:item="educate">
+                                    <div class="slds-box" key={educate.id}>
+                                        <a href="#" title={educate.Name} data-record-id={educate.Id} onclick={handleClick}>{educate.Name}</a>
+                                        <template if:true={educate.Mark_Completed__c}>
+                                            <p class="slds-truncate" title={educate.Mark_Completed__c}>Completed : <input type="checkbox" checked disabled></p>
+                                        </template>
+                                        <template if:false={educate.Mark_Completed__c}>
+                                            <p class="slds-truncate" title={educate.Mark_Completed__c}>Completed : <input type="checkbox" disabled></p>
+                                        </template>
+                                    </div>
+                                </template>
+                            </template>
+                        </p>
+                    </div>
+                </div>
+            </template>
+            <template if:true={handlesSection}>
+                <div class="slds-section slds-is-open" onclick={closeSection}>
+                    <h3 class="slds-section__title slds-theme_shade">
+                        <span class="slds-truncate slds-p-horizontal_small" title="Handles billing">Handles billing</span>
+                    </h3>
+                    <div aria-hidden="false" class="slds-section__content">
+                        <p>
+                            <template if:true={handles}>
+                                <template for:each={handles} for:item="handle">
+                                    <div class="slds-box" key={handle.id}>
+                                        <a href="#" title={handle.Name} data-record-id={handle.Id} onclick={handleClick}>{handle.Name}</a>
+                                        <template if:true={handle.Mark_Completed__c}>
+                                            <p class="slds-truncate" title={handle.Mark_Completed__c}>Completed : <input type="checkbox" checked disabled></p>
+                                        </template>
+                                        <template if:false={handle.Mark_Completed__c}>
+                                            <p class="slds-truncate" title={handle.Mark_Completed__c}>Completed : <input type="checkbox" disabled></p>
+                                        </template>
+                                    </div>
+                                </template>
+                            </template>
+                        </p>
+                    </div>
+                </div>
+            </template>
+            <template if:true={drawsSection}>
+                <div class="slds-section slds-is-open" onclick={closeSection}>
+                    <h3 class="slds-section__title slds-theme_shade">
+                        <span class="slds-truncate slds-p-horizontal_small" title="Draws the blood">Draws the blood</span>
+                    </h3>
+                    <div aria-hidden="false" class="slds-section__content">
+                        <p>
+                            <template if:true={draws}>
+                                <template for:each={draws} for:item="draw">
+                                    <div class="slds-box" key={draw.id}>
+                                        <a href="#" title={draw.Name} data-record-id={draw.Id} onclick={handleClick}>{draw.Name}</a>
+                                        <template if:true={draw.Mark_Completed__c}>
+                                            <p class="slds-truncate" title={draw.Mark_Completed__c}>Completed : <input type="checkbox" checked disabled></p>
+                                        </template>
+                                        <template if:false={draw.Mark_Completed__c}>
+                                            <p class="slds-truncate" title={draw.Mark_Completed__c}>Completed : <input type="checkbox" disabled></p>
+                                        </template>
+                                    </div>
+                                </template>
+                            </template>
+                        </p>
+                    </div>
+                </div>
+            </template>
+            <template if:true={sendsSection}>
+                <div class="slds-section slds-is-open" onclick={closeSection}>
+                    <h3 class="slds-section__title slds-theme_shade">
+                        <span class="slds-truncate slds-p-horizontal_small" title="Sends the kit">Sends the kit</span>
+                    </h3>
+                    <div aria-hidden="false" class="slds-section__content">
+                        <p>
+                            <template if:true={sends}>
+                                <template for:each={sends} for:item="send">
+                                    <div class="slds-box" key={send.id}>
+                                        <a href="#" title={send.Name} data-record-id={send.Id} onclick={handleClick}>{send.Name}</a>
+                                        <template if:true={send.Mark_Completed__c}>
+                                            <p class="slds-truncate" title={send.Mark_Completed__c}>Completed : <input type="checkbox" checked disabled></p>
+                                        </template>
+                                        <template if:false={send.Mark_Completed__c}>
+                                            <p class="slds-truncate" title={send.Mark_Completed__c}>Completed : <input type="checkbox" disabled></p>
+                                        </template>
+                                    </div>
+                                </template>
+                            </template>
+                        </p>
+                    </div>
+                </div>
+            </template>
+            <template if:true={reportsSection}>
+                <div class="slds-section slds-is-open" onclick={closeSection}>
+                    <h3 class="slds-section__title slds-theme_shade">
+                        <span class="slds-truncate slds-p-horizontal_small" title="Gets the reports">Gets the reports</span>
+                    </h3>
+                    <div aria-hidden="false" class="slds-section__content">
+                        <p>
+                            <template if:true={reports}>
+                                <template for:each={reports} for:item="report">
+                                    <div class="slds-box" key={report.id}>
+                                        <a href="#" title={report.Name} data-record-id={report.Id} onclick={handleClick}>{report.Name}</a>
+                                        <template if:true={report.Mark_Completed__c}>
+                                            <p class="slds-truncate" title={report.Mark_Completed__c}>Completed : <input type="checkbox" checked disabled></p>
+                                        </template>
+                                        <template if:false={report.Mark_Completed__c}>
+                                            <p class="slds-truncate" title={report.Mark_Completed__c}>Completed : <input type="checkbox" disabled></p>
+                                        </template>
+                                    </div>
+                                </template>
+                            </template>
+                        </p>
+                    </div>
+                </div>
+            </template>
+        </template>
+
+        <template if:true={activityTasks}>
+            <div class="slds-section slds-is-open" onclick={closeSection}>
+                <h3 class="slds-section__title slds-theme_shade">
+                    <span class="slds-truncate slds-p-horizontal_small" title="Pull-Through Activities">Pull-Through Activities</span>
+                </h3>
+                <div aria-hidden="false" class="slds-section__content">
+                    <p>
+                        <template for:each={activityTasks} for:item="activityTask">
+                            <div class="slds-box" key={activityTask.Id}>
+                                <!-- <a href="#" title={activityTask.Subject} data-record-id={activityTask.Id} >{activityTask.Subject}</a> -->
+                                <p>{activityTask.Subject}</p>
+                                <!-- <template if:true={activityTask.checkboxStatus}>
+                                    <p>Completed : <lightning-input type="checkbox" data-record-id={activityTask.Id} onchange={updateTask} checked></lightning-input></p>
+                                    <lightning-input type="checkbox" label="Completed : " data-record-id={activityTask.Id} onchange={updateTask} checked></lightning-input> 
+                                </template> 
+                                <template if:false={activityTask.checkboxStatus}>
+                                    <lightning-input type="checkbox" label="Completed : " data-record-id={activityTask.Id} onchange={updateTask}></lightning-input>
+                                </template> -->
+                                <p>Completed Date : <lightning-formatted-date-time value={activityTask.CreatedDate}></lightning-formatted-date-time></p>
+                            </div>
+                        </template>
+                    </p>
+                </div>
+            </div>
+        </template>
+        <!--<template if:true={records}>
+            <template for:each={records} for:item="record">
+                <div key={record.Id} class="slds-box slds-m-around_medium">
+                    <p class="slds-truncate slds-text-heading_medium" title={record.Name}></p>
+                    <a href="#" title={record.Name} data-record-id={record.Id} onclick={handleClick}>{record.Name}</a>
+                    </p>
+                    <template if:true={record.Mark_Completed__c}>
+                        <p class="slds-truncate" title={record.Mark_Completed__c}>Completed : <input type="checkbox" checked></p>
+                    </template>
+                    <template if:false={record.Mark_Completed__c}>
+                        <p class="slds-truncate" title={record.Mark_Completed__c}>Completed : <input type="checkbox" checked></p>
+                    </template>
+                    <lightning-record-form
+                        record-id={record.Id}
+                        object-api-name="Account_Integration_Tasks__c"
+                        fields={fields}
+                        onsuccess={handleSuccess}
+                        onerror={handleError}
+                    >
+                    </lightning-record-form>
+                </div>
+            </template>
+        </template>-->
+        <template if:false={records}>
+            <div class="slds-box">
+                <p class="slds-text-align_center slds-text-color_error">No Any Child Record Associated</p>
+            </div>
+        </template>
+    <!-- </lightning-card> -->
+    <template if:true={modal.recordId}>
+        <div>
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open" style="bottom: unset;">
+                <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" onclick={closeModal} title="Close">
+                    <span><lightning-icon icon-name="action:close" ></lightning-icon></span>
+                    </button>
+                    <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">{modal.header}</h2>
+                </header>
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                    <lightning-record-form 
+                        record-id={modal.recordId}
+                        object-api-name="Account_Integration_Tasks__c" 
+                        fields={fields} 
+                        onsuccess={handleNewSave}>
+                        <lightning-messages>
+                        </lightning-messages>
+                    </lightning-record-form>
+                </div>
+                <footer class="slds-modal__footer">
+
+                </footer>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+        </div>        
+    </template>
+</template>

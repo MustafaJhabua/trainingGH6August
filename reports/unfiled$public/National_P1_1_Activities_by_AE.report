@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ASSIGNED</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>Activity.Call_Type__c</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>CONTACT</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT</field>
+    </columns>
+    <description>National Physician 1:1 Activities by AE</description>
+    <filter>
+        <criteriaItems>
+            <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Physician 1:1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ASSIGNED_ALIAS</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>abrady,ACall,AFore,AGran,AHumb,AKrug,amcgann,Arrah,BillH,Brenda,Bryan,Candy,CBarg,cdorris,Charles,Delaina,DKiyo,DKrup,dpuopolo,dwilliam,EStev,gutknech,JasonM,JBorg,JDay,jharris,jholt,jkeller,JKim,Jodi,JulieL,jutz,kalbano,Kate W,KelliS,KHo,KHong,KimF,KimS,KMald,krisl,Lana,LauraF,Magali,mandy,MBust,MDorn,MHigg,mmont,moutz,NCowg,NCurry,nhetzel,paige,Pam,prend,RAkra,RBarb,RVaug,SarahA,sbowden,shaffer,Shelley,ShelleyG,simone,slapo,Susy,TFong,TProud,Treva,Trista,UCing,VRigb</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ASSIGNED_ALIAS</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>National P1:1 Activities by AE</name>
+    <params>
+        <name>closed</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>type</name>
+        <value>te</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Activity</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_LASTMONTH</interval>
+    </timeFrameFilter>
+</Report>

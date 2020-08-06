@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Match Portal Configuration</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Match Portal Configurations</value>
+    </caseValues>
+    <fields>
+        <label><!-- Endpoint --></label>
+        <name>Endpoint__c</name>
+    </fields>
+    <fields>
+        <help><!-- Authentication Token --></help>
+        <label><!-- Token --></label>
+        <name>Token__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

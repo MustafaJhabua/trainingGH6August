@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>ablair@guardanthealth.com</contactEmail>
+    <label>Seismic OAUTH</label>
+    <oauthConfig>
+        <callbackUrl>https://guardanthealth.seismic.com/Integration/SalesforceOauth.aspx</callbackUrl>
+        <consumerKey>3MVG9lJB4lV8F4SjfGf0sZm0U_LVSxJHPwfEPiOv77GejyXrZJb2eR.BzgmeU48gKO8wIuDmwdXf.isxk6woA</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <scopes>Full</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+</ConnectedApp>

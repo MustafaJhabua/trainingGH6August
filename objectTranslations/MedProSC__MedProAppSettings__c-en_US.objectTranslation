@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Debug Enabled --></label>
+        <name>MedProSC__Debug_Enabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hide Transient Classes --></label>
+        <name>MedProSC__Hide_Transient_Classes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Installation Details --></label>
+        <name>MedProSC__Installation_Details__c</name>
+    </fields>
+    <fields>
+        <help><!-- The email address that will be used to notify an alternate system admin via email that a mass update of all MedProID stamped records has been performed. --></help>
+        <label><!-- MassUpdateEmailNotification_Address --></label>
+        <name>MedProSC__MassUpdateEmailNotification_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Namespace Prefix --></label>
+        <name>MedProSC__Namespace_Prefix__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notification Addresses --></label>
+        <name>MedProSC__Notification_Addresses__c</name>
+    </fields>
+</CustomObjectTranslation>

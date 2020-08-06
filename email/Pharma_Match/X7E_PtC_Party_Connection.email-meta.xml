@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>PtC follow up email to Ordering MD&apos;s and PI/Pharma</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>General_Response_PtC_028</name>
+    <style>none</style>
+    <subject>Re: Connecting to Dr. {PI Full Name} for {!Match_Record__c.Pharma_Company__c} {!Match_Record__c.Trial_Name__c} for Patient {!Match_Record__c.Match_Key__c}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

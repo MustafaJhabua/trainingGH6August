@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Guardant_360_Samples__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Guardant_360_Samples__r$Sample_Owner__c</field>
+    </columns>
+    <description>Samples since 11/1/2019</description>
+    <filter>
+        <criteriaItems>
+            <column>Account$Territory_Name__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Springfield</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Guardant_360_Samples__r$Date_Received__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>11/1/2019</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Week</dateGranularity>
+        <field>Account.Guardant_360_Samples__r$Date_Received__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Samples by Territory-Springfield</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Samples_by_Account_with_Territories__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

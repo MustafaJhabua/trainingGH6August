@@ -1,0 +1,151 @@
+<apex:page standardController="MedProSC__MedProSOMappingDetail__c" showHeader="true" sidebar="true" extensions="MedProSC.MedProEditMedProSOMappingDetail_Ctrl">
+	<html>
+		<head>
+			<script type="text/javascript">
+				$(document).ready(function()
+				{
+					$('[id$=usesDefaultValue]').each(function(index)
+					{
+						$(this).change(function(event)
+						{
+							if ($('[id$=usesDefaultValue]').prop('checked'))
+							{
+								$('[id$=sourceFieldName]').val("N/A");
+								$('[id$=sourceFieldName2]').val("N/A");
+							}
+							else
+							{
+								$('[id$=sourceFieldName]').val('');
+								$('[id$=sourceFieldName2]').val('');
+							}
+						});
+					});
+	
+					$('[id$=isTimeStampField]').each(function(index)
+					{
+						$(this).change(function(event)
+						{
+							if ($('[id$=isTimeStampField]').prop('checked'))
+							{
+								$('[id$=sourceFieldName]').val("N/A");
+								$('[id$=sourceFieldName2]').val("N/A");
+							}
+							else
+							{
+								$('[id$=sourceFieldName]').val('');
+								$('[id$=sourceFieldName2]').val('');
+							}
+						});
+					});
+	
+					$('[id$=isDateField]').each(function(index)
+					{
+						$(this).change(function(event)
+						{
+							if ($('[id$=isDateField]').prop('checked'))
+							{
+								$('[id$=sourceFieldName]').val("N/A");
+								$('[id$=sourceFieldName2]').val("N/A");
+							}
+							else
+							{
+								$('[id$=sourceFieldName]').val('');
+								$('[id$=sourceFieldName2]').val('');
+							}
+						});
+					});
+	
+					$('[id$=isRecordTypeField]').each(function(index)
+					{
+						$(this).change(function(event)
+						{
+							if ($('[id$=isRecordTypeField]').prop('checked'))
+							{
+								$('[id$=sourceFieldName]').val("N/A");
+								$('[id$=sourceFieldName2]').val("N/A");
+							}
+							else
+							{
+								$('[id$=sourceFieldName]').val('');
+								$('[id$=sourceFieldName2]').val('');
+							}
+						});
+					});
+				});
+			</script>
+		</head>
+		<apex:stylesheet value="{!$Resource.MedProSC__MedProTwoPassDisplayDetail_resources}"/>
+		<apex:includeScript value="{!URLFOR($Resource.MedProSC__jQuery_ui_1_10_4, '/jquery-ui-1.10.4.custom/js/jquery-1.10.2.js')}" />
+		<apex:includeScript value="{!URLFOR($Resource.MedProSC__jQuery_ui_1_10_4, '/jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.js')}" />
+		<apex:includeScript value="{!URLFOR($Resource.MedProSC__jQuery_ui_1_10_4, '/jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.min.js')}" />
+	
+		<apex:form >
+			<apex:pageBlock title="MedPro Data Mapping Detail Edit">
+				<apex:pageMessages />
+	
+				<apex:pageBlockButtons location="top">
+					<apex:commandButton value="Save" action="{!save}"/>
+					<apex:commandButton value="Cancel" action="{!cancel}"/>
+				</apex:pageBlockButtons>
+				
+				<apex:pageBlockSection title="Information" collapsible="False" columns="1">
+	
+					<apex:inputField label="Data Mapping Name" value="{!MedProSC__MedProSOMappingDetail__c.MedProSC__MedProSOMapping__c}" style="width: 250px"/>
+	
+					<apex:selectList multiselect="false" size="1" label="Target Field API Name" value="{!MedProSC__MedProSOMappingDetail__c.name}" 
+										required="true" rendered="{!isSearchOrDRPMapping==false}">
+						<apex:selectOptions value="{!destinationFieldNameOptions}" />
+					</apex:selectList>
+	
+					<apex:selectList multiselect="false" size="1" label="Target Field API Name" value="{!MedProSC__MedProSOMappingDetail__c.name}" required="true" rendered="{!isSearchOrDRPMapping==true}">
+						<apex:selectOptions value="{!destinationFieldNameOptions}" />
+					</apex:selectList>
+	
+					<apex:selectList id="sourceFieldName" multiselect="false" size="1" label="Source Field Name" value="{!MedProSC__MedProSOMappingDetail__c.MedProSC__SourceFieldName__c}" 
+										required="true" rendered="{!isSearchOrDRPMapping==false}">
+						<apex:selectOptions value="{!sourceFieldNameOptions}" />
+					</apex:selectList>
+	
+					<apex:selectList id="sourceFieldName2" multiselect="false" size="1" label="Mapped Search Field" value="{!MedProSC__MedProSOMappingDetail__c.MedProSC__SourceFieldName__c}" 
+										required="true" rendered="{!isSearchOrDRPMapping}">
+						<apex:selectOptions value="{!sourceFieldNameOptions}" />
+					</apex:selectList>
+	
+					<apex:inputField value="{!MedProSC__MedProSOMappingDetail__c.MedProSC__Convert_To_Mixed_Case__c}" rendered="{!isSearchOrDRPMapping==false}" />
+					<apex:inputField value="{!MedProSC__MedProSOMappingDetail__c.MedProSC__ConvertDataToDate__c}" rendered="{!isSearchOrDRPMapping==false}" />
+					<apex:inputField id="usesDefaultValue" value="{!MedProSC__MedProSOMappingDetail__c.MedProSC__UsesDefaultValue__c}" rendered="{!isSearchOrDRPMapping==false}" />
+					<apex:inputField value="{!MedProSC__MedProSOMappingDetail__c.MedProSC__DefaultValue__c}" rendered="{!isSearchOrDRPMapping==false}" />
+					<apex:inputField id="isExternalIdField" value="{!MedProSC__MedProSOMappingDetail__c.MedProSC__Is_ExternalIDField__c}" rendered="{!isSearchOrDRPMapping==false}" />
+					<apex:inputField id="isRecordTypeField" value="{!MedProSC__MedProSOMappingDetail__c.MedProSC__Is_RecordTypeField__c}" rendered="{!isSearchOrDRPMapping==false}" />
+					<apex:inputField id="isNumericDataField" value="{!MedProSC__MedProSOMappingDetail__c.MedProSC__Is_Numeric_Data_Field__c}" rendered="{!isSearchOrDRPMapping==false}" />
+					<apex:inputField id="isCheckboxField" value="{!MedProSC__MedProSOMappingDetail__c.MedProSC__Is_Checkbox_Field__c}" rendered="{!isSearchOrDRPMapping==false}" />
+					<apex:inputField id="isDateField" value="{!MedProSC__MedProSOMappingDetail__c.MedProSC__Is_Date_Field__c}" rendered="{!isSearchOrDRPMapping==false}" />
+					<apex:inputField id="isTimeStampField" value="{!MedProSC__MedProSOMappingDetail__c.MedProSC__IsTimeStampField__c}" rendered="{!isSearchOrDRPMapping==false}" />
+					<apex:inputField value="{!MedProSC__MedProSOMappingDetail__c.MedProSC__Is_Required__c}" rendered="{!isSearchOrDRPMapping==false}" />
+					<apex:inputField value="{!MedProSC__MedProSOMappingDetail__c.MedProSC__Is_Active__c}" />
+					<apex:inputField value="{!MedProSC__MedProSOMappingDetail__c.MedProSC__Is_Mapping_Key__c}" />
+					<apex:inputField value="{!MedProSC__MedProSOMappingDetail__c.MedProSC__Is_Insert__c}" />
+					<apex:inputField value="{!MedProSC__MedProSOMappingDetail__c.MedProSC__Is_Update__c}" />
+					<apex:inputField value="{!MedProSC__MedProSOMappingDetail__c.MedProSC__Value_Mapping_Enabled__c}" />
+					<apex:inputField value="{!MedProSC__MedProSOMappingDetail__c.MedProSC__Is_Passthrough_Data__c}" />
+					
+				</apex:pageBlockSection>
+				<apex:outputPanel > 
+	                <div class="pbHeader">
+	                    <table class="medproTable" >
+	                       <tbody>
+	                          <tr>
+	                             <td class="pbTitle"><apex:include pageName="MedProSC__MedProStandardCopyrightFooter"/> </td>                     
+	                             <td class="pbButton">
+	                             	<apex:commandButton value="Save" action="{!save}"/>
+									<apex:commandButton value="Cancel" action="{!cancel}"/>
+	                             </td>
+	                          </tr>
+	                       </tbody>
+	                    </table>
+	                </div>
+	            </apex:outputPanel>		
+			</apex:pageBlock>
+		</apex:form>
+	</html>
+</apex:page>

@@ -1,0 +1,215 @@
+<apex:page standardcontroller="lightsideapps__Deployment_Package__c" extensions="lightsideapps.Deployment_Package_Extension" Title="Deployment Package">
+    
+    <apex:includeScript value="{!$Resource.lightsideapps__jquery_1_11_3}"/>
+    
+    <style>
+        .LSAOutputLabel {display:inline-block; width:100px; text-align:right; padding:5px;}
+        .LSASelectList {display:inline-block; min-width:100px; padding:5px;}
+        .InputDiv {width:500px; margin:5px;}
+        .addbutton {width:60px; padding:5px; margin:5px;}
+        .removebutton {width:60px; padding:5px; margin:5px;}
+        .componentHeader {width:500px; height:20px; text-align:center; font-weight:bold; line-height:20px;}
+    </style>
+    
+    <apex:sectionHeader Title="Choose components to add to your change set" Subtitle="Create Deployment Package"/>
+    <apex:pageMessages id="pageMessages" />
+    
+    <apex:form >
+        
+        <apex:pageBlock title="" mode="edit" >
+            <apex:pageblockButtons id="pagebuttons"> 
+                <apex:commandbutton action="{!QuickSave}" value="Quick Save" rerender="BottomPanelGrid,pageMessages" />
+                <apex:commandbutton action="{!SaveReturn}" value="Save" />
+                <apex:commandbutton action="{!SaveDeploy}" value="Save and Deploy" id="deploybutton"/>
+                <apex:commandbutton action="{!Cancel}" value="Cancel" />
+            </apex:pageblockButtons> 
+            
+            <apex:pageblockSection title="Change Set Information" columns="1" id="TopSection">
+                <apex:pageblockSectionItem >
+                    <apex:outputLabel value="{!$ObjectType.lightsideapps__Deployment_Package__c.fields.Name.Label}" />
+                    <apex:outputPanel styleClass="requiredInput" layout="block" >
+                        <apex:outputPanel styleClass="requiredBlock" layout="block"/>
+                        <apex:inputField value="{!lightsideapps__Deployment_Package__c.Name}" style="width:184px" />
+                    </apex:outputPanel>
+                </apex:pageblockSectionItem>
+                
+                <apex:pageblockSectionItem >
+                    <apex:outputLabel value="{!$ObjectType.lightsideapps__Deployment_Package__c.fields.lightsideapps__Status__c.Label}" />
+                    <apex:outputPanel styleClass="requiredInput" layout="block" >
+                        <apex:outputPanel styleClass="requiredBlock" layout="block"/>
+                        <apex:selectlist value="{!lightsideapps__Deployment_Package__c.lightsideapps__Status__c}" style="width:190px" size="1" multiselect="false">
+                            <apex:selectOptions value="{!DeploymentStatuses}"/>
+                        </apex:selectlist>
+                    </apex:outputPanel>
+                </apex:pageblockSectionItem>
+                
+                <apex:pageblockSectionItem >
+                    <apex:outputLabel value="{!$ObjectType.lightsideapps__Deployment_Package__c.fields.lightsideapps__Description__c.Label}" />
+                    <apex:inputField value="{!lightsideapps__Deployment_Package__c.lightsideapps__Description__c}" style="width:80%;" />
+                </apex:pageblockSectionItem>
+                
+                <apex:pageblockSectionItem helpText="Enter a comma delimited list of test classes to run on deployment. eg. TestClass1, TestClass2">
+                    <apex:outputLabel value="{!$ObjectType.lightsideapps__Deployment_Package__c.fields.lightsideapps__SelectedTestClasses__c.Label}" />
+                    <apex:inputField value="{!lightsideapps__Deployment_Package__c.lightsideapps__SelectedTestClasses__c}" style="width:80%;" />
+                </apex:pageblockSectionItem>
+            </apex:pageblockSection>
+            
+            <apex:pageBlockSection title="Change Set Details" columns="1">
+                <apex:panelGrid columns="3" id="TopPanelGrid" >
+                    
+                    <apex:panelGroup id="TopAvailableComponents" style="width:550px;" >
+                        
+                        <div style="width:500px;">
+                            <apex:outputLabel value="Component Type" styleclass="LSAOutputLabel labelCol vfLabelColTextWrap" style="margin:4px; margin-left:20px; width:100px;" />
+                            <apex:selectList value="{!metaDataType}" title="Choose an object type" size="1" multiselect="False"  >
+                                <apex:selectOptions value="{!ObjectTypes}" />
+                                <apex:actionSupport event="onchange" rerender="SObjectPanel,objectList,BottomComponentButtons" status="status"/>
+                            </apex:selectList>
+                            <apex:actionStatus id="status">
+                                <apex:facet name="start">
+                                    <div style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.25; z-index: 1000; background-color: black;">
+                                        &nbsp;
+                                    </div>
+                                    <div style="position: fixed; left: 0; top: 0; bottom: 0; right: 0; z-index: 1001; margin: 15% 50%">
+                                        <div style="display: inline-block; padding: 2px; background-color: #fff; width: 125px;">
+                                            <img src="/img/loading.gif" style="float: left; margin: 8px;" />
+                                            <span style="display: inline-block; padding: 10px 0px;">Please Wait...</span>
+                                        </div>
+                                    </div>
+                                </apex:facet>
+                            </apex:actionStatus>
+                            
+                        </div>
+                        <div>
+                            <apex:outputPanel id="SObjectPanel"  >
+                                <apex:outputLabel value="Object" styleclass="LSAOutputLabel labelCol vfLabelColTextWrap" style="margin:4px; margin-left:20px; width:100px;" rendered="{!Objects.size>0}"/>
+                                <apex:selectList value="{!metaDatasObject}" title="Choose an object" size="1" id="sObjectlist" multiselect="False" rendered="{!Objects.size>0}">
+                                    <apex:selectOptions value="{!Objects}" />
+                                    <apex:actionSupport event="onchange" rerender="objectList" status="status"/>
+                                </apex:selectList>
+                            </apex:outputPanel>
+                        </div>
+                        
+                    </apex:panelGroup>
+                    
+                    <apex:panelGroup id="TopComponentButtons" style="width:82px;">
+                        <div style="width:80px;" >&nbsp;</div>
+                    </apex:panelGroup>
+                     
+                    <apex:panelGroup id="TopSelectedComponents" style="width:550px;" >
+                        
+                        <div style="visibility: hidden; width:500px; height:32px">
+                            
+                        </div>
+                        
+                    </apex:panelGroup>
+                    
+                </apex:panelGrid>
+                
+                <apex:panelGrid columns="3" id="BottomPanelGrid">
+                    
+                    <apex:panelGroup id="BottomAvailableComponents" style="width:550px;">
+                        
+                        <div style="width:500px;">
+                            <apex:outputLabel value="Filter" styleclass="LSAOutputLabel labelCol vfLabelColTextWrap" style="margin: 0px 4px 4px 20px; width:100px;" />
+                            <apex:inputText id="FilterInput" styleclass="FilterInput" value="{!availfilter}" style="width:186px;" onkeyup="FilterOptions();"/>
+                            <input type="button" id="ClearFilter" value=" Clear " onclick="FilterClear();" />
+                        </div>
+                        <div style="width:500px; margin-top:5px;">
+                            <div class="componentHeader">Available Components</div>
+                            <div style="width:500px;float:left;">
+                                <apex:selectList value="{!selectedObjects}" id="objectList" style="width:100%; padding:8px; height:300px;" multiselect="true" styleclass="ListItem" >
+                                    <apex:selectOptions value="{!ObjectList}"/>
+                                    <apex:selectOptions value="{!SecondObjectList}"/>
+                                </apex:selectList>
+                            </div>
+                        </div>
+                    </apex:panelGroup>
+                    
+                    <apex:panelGroup id="BottomComponentButtons" style="width:82px;">
+                        <div style="width:80px;float:left; text-align:center; padding-top:80px;">
+                            <apex:commandbutton action="{!AddMetaData}" value="Add" styleclass="addbutton" status="status" style="margin:5px;" oncomplete="FilterClear();SelectedFilterClear();"  rerender="deploybutton,BottomSelectedComponents,BottomAvailableComponents"/> <br />
+                            <apex:commandbutton action="{!AddMetaData}" value="Add All" styleclass="addbutton"  status="status" style="margin:5px;" onclick="SelectOptions();" oncomplete="FilterClear();SelectedFilterClear();" rerender="deploybutton,BottomSelectedComponents,BottomAvailableComponents" /> <br />
+                            <apex:commandbutton action="{!RemoveMetaData}" value="Remove" styleclass="removebutton" status="status" style="margin:5px;" oncomplete="FilterClear();SelectedFilterClear();" rerender="deploybutton,BottomAvailableComponents,BottomSelectedComponents" /> <br />
+                            <apex:commandButton action="{!addTest}" rendered="{!metaDataType == 'ApexClass'}" value="Add Test" styleClass="addbutton" status="status" style="margin:5px;" rerender="TopSection"/>
+                        </div> 
+                    </apex:panelGroup>
+                    
+                    <apex:panelGroup id="BottomSelectedComponents" style="width:550px;">
+                        <div>
+                            <apex:outputLabel value="Filter" styleclass="LSAOutputLabel labelCol vfLabelColTextWrap" style="margin: 0px 4px 4px 20px; width:100px;" />
+                            <apex:inputText id="SelectedFilterInput" styleclass="SelectedFilterInput" value="{!selectedfilter}" style="width:186px;" onkeyup="SelectedFilterOptions();"/>
+                            <input type="button" id="ClearFilter" value=" Clear " onclick="SelectedFilterClear();" />
+                        </div>
+                        
+                        <div style="width:500px; margin-top:5px; float:left;">
+                            <div class="componentHeader">Selected Components</div>
+                            <apex:selectList value="{!selectedObjectsToRemove}" id="SelectedobjectList" style="width:100%; padding:8px; height:300px;" multiselect="true" styleclass="SelectedItem" >
+                                <apex:selectOptions value="{!SelectedObjectList}"/>
+                            </apex:selectList> 
+                        </div>
+                    </apex:panelGroup>
+                    
+                </apex:panelGrid>
+                
+            </apex:pageBlockSection>
+            
+        </apex:pageBlock> 
+        
+    </apex:form> 
+    
+    <script>
+    
+    var $LSA = jQuery.noConflict();
+    
+    function SelectOptions(){
+        $LSA(".ListItem > option").each(function() {
+            if( $LSA(this).is(":visible") ) {
+                $LSA(this).prop("selected", true);
+            } 
+        });
+        // $LSA( ".ListItem" ).focus();
+    }
+    
+    function FilterOptions(){
+        var filter = $LSA(".FilterInput").val();
+        $LSA(".ListItem > option").each(function() {
+            
+            if($LSA(this).val().toLowerCase().indexOf(filter.toLowerCase()) >= 0)
+                $LSA(this).show();
+            else
+                $LSA(this).hide();
+        });
+    }
+    
+    function FilterClear(){
+        $LSA('.FilterInput').val('');
+        $LSA(".ListItem > option").each(function() {
+            $LSA(this).show();
+        });
+    }
+    
+    
+    function SelectedFilterOptions(){
+        var filter = $LSA(".SelectedFilterInput").val();
+        
+        $LSA(".SelectedItem > option").each(function() {
+            
+            if($LSA(this).html().toLowerCase().indexOf(filter.toLowerCase()) >= 0)
+                $LSA(this).show();
+            else
+                $LSA(this).hide();
+        });
+    }
+    
+    function SelectedFilterClear(){
+        $LSA('.SelectedFilterInput').val('');
+        $LSA(".SelectedItem > option").each(function() {
+            $LSA(this).show();
+        });
+    }
+    
+    
+    </script>
+    
+</apex:page>

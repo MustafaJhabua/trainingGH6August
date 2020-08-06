@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This template been used to send out an email to CS team when there is a new lead created from requesta kit</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>GH_Logo_Small</letterhead>
+    <name>LeadUpdateOnRequestAkit</name>
+    <style>freeForm</style>
+    <subject>Lead created for Guardant360 Kit Request</subject>
+    <textOnly>The following lead was created for a Guardant360 kit request: {!Lead.Lead_URL__c}
+
+
+Please verify an existing contact doesn’t already exist for the Ordering MD prior to processing the kit request.
+
+
+
+Ordering MD: {!Lead.Physician_First_Name__c} {!Lead.Physician_Last_Name__c}
+
+NPI Number: {!Lead.NPI_Number__c}
+
+Email for results delivery: {!Lead.Email}
+
+
+
+Practice:
+
+{!Lead.Company}
+
+{!Lead.Address}
+
+
+Practice Contact:
+
+{!Lead.Practice_Contact_First_Name__c} {!Lead.Practice_Contact_Last_Name__c}
+
+{!Lead.Practice_Office_Contact_Email__c}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

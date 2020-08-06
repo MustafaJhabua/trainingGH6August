@@ -1,0 +1,4 @@
+<apex:page id="Dialer_ContactPage" standardController="Contact" extensions="talkdesk.DialerController" recordSetVar="contacts"
+           action="{! checkTalkdeskIntegration }">
+    <c:Dialer_Component records="{! selected }" objType="Contact" phoneField="{! ContactDefaultPhoneField }"/>
+</apex:page>

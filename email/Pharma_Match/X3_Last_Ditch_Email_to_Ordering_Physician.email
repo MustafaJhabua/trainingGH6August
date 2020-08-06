@@ -1,0 +1,19 @@
+Dear Dr. {!Contact.LastName},
+
+I called your office and left a message but figured email might be a better method of communication.
+
+On the Guardant360 test report we sent you on {!Match_Record__c.Final_Report_Date__c}, patient {!Match_Record__c.Patient_Initials__c} was identified as having a relatively rare {!Match_Record__c.Qualifying_Target_Gene__c} alteration for which there are enrolling clinical trials.
+
+Would you like to receive more information regarding these clinical trials?
+
+To view your report in our secure online portal, click the following link: 
+{!Match_Record__c.Portal_Link_For_MD_text__c}.
+
+Warm regards,
+{!User.Name}, {!User.Degree__c}
+Clinical Trial Advisor
+Guardant Health
+
+Guardant Health Match Key: {!Match_Record__c.Match_Key__c}
+
+This message is intended solely for the designated recipient(s). It may contain confidential or proprietary information and may be subject to attorney-client privilege or other confidentiality protections. If you are not a designated recipient you may not review, copy or distribute this message. If you have received this in error, please reply to this email and delete this message. Thank you. Ref: {!Match_Record__c.Id}

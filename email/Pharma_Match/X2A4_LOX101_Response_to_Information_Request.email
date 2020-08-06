@@ -1,0 +1,33 @@
+Thank you, Dr. {!Contact.LastName}.
+
+Per your request, I have included a list of relevant trials below as well as assigned one of our Clinical Trial Advisor physicians to contact you via phone this week to further discuss the clinical trial options for your patient who had an NTRK1 fusion.
+
+There are several relevant trials underway: 
+- NCT02920996: Phase 2; Merestinib in NTRK or MET positive solid tumors by Eli Lilly
+- NCT02568267: Phase 2; Entrectinib (RXDX-101) in NTRK, ROS1, or ALK positive advanced cancers by Ignyta
+- NCT00585195: Phase 1; PF-02341066 in advanced cancer by Pfizer
+
+In addition, we have a financial and business relationship with Loxo Oncology who has developed Larotrectinib, the only selective TRK inhibitor in clinical development designed specifically to inhibit TRK. As of 11/26/18, Vitrakvi (larotrectinib) was FDA approved for the treatment of adult and pediatric patients with solid tumors that have a neurotrophic receptor tyrosine kinase (NTRK) gene fusion without a known acquired resistance mutation, who are metastatic or where surgical resection is likely to result in severe morbidity and have no satisfactory alternative treatments or that have progressed following treatment.
+
+The most recent data on Larotrectinib were presented at ASCO in June 2017 summarizing activity in 55 adult and pediatric patients treated at 100mg BID and showed:
+
+- Confirmed response rate by RECIST 1.1 of 76% across 17 different tumor types.
+- Response regardless of TRK gene fusion partner or age of patient.
+- Median PFS yet to be reached with a median follow up of over 7 months.
+- Median duration of response yet to be reached with median follow up of 5.8 months; 12 month duration of response is 79%. Longest duration of response is in excess of 24 months and ongoing.
+- Median time to response is 1.3 months.
+- Side effects: Only 7 patients of the 55 required a dose reduction for any AE but all have remained on larotrectinib with all responding: 1 CR, 5 PR and 1 SD by RECIST.
+- Dizziness requiring dose hold or modification occurred in only 2 patients with only 1 patient's experience reported to be treatment related.
+
+If we can help connect you with Loxo, please let us know. You can also contact Loxo Oncology directly, at their Physician and Patient Clinical Trial Hotline: 1-855-NTRK-123.
+
+Kind Regards,
+{!User.Name}, {!User.Degree__c} 
+Clinical Trial Advisor
+Guardant Health, Inc.
+
+Guardant Health Match Key: {!Match_Record__c.Match_Key__c} 
+
+Guardant Health partners with the clinical trial sponsor to conduct patient referral activities. 
+
+This message is intended solely for the designated recipient(s). It may contain confidential or proprietary information and may be subject to attorney-client privilege or other confidentiality protections. If you are not a designated recipient you may not review, copy or distribute this message. If you have received this in error, please notify the sender by replying to this e-mail and deleting this message. Thank you. Ref: {!Match_Record__c.Id}

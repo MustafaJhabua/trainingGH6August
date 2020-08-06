@@ -1,0 +1,14 @@
+Hello
+Please note that  ** {!Case.Contact} from {!Case.Account} ** has requested the following supplies from Client Services:
+
+Order Details:
+  Kits: {!Case.Kits_Clinical_domestic__c}
+  Reprint TRFs: {!Case.Preprint_TRFs__c}
+  Diagnosis Information Form:  {!Case.Diagnosis_Information_Form_TST_TRF_001__c}
+  Shipping Labels: {!Case.Fed_Ex_label_Site_specific_domestic__c}
+
+Shipment Details:
+  Shipping Attention To: {!Case.Ship_To_Contact__c}
+  Shipping Method: {!Case.Shipping_Method__c}
+
+Case #: {!Case.CaseNumber}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>SOW__c.Sponsor_Account__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>SOW__c.LIMS_Project_ID__c</field>
+    </columns>
+    <columns>
+        <field>SOW__c.SOW_Number__c</field>
+    </columns>
+    <columns>
+        <field>SOW__c.Product_Name__c</field>
+    </columns>
+    <columns>
+        <field>SOW__c.SOW_Status__c</field>
+    </columns>
+    <description>All SOWs by Sponsor Account w/o &apos;Project ID #&apos;</description>
+    <filter>
+        <criteriaItems>
+            <column>SOW__c.LIMS_Project_ID__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>SOWs without Project IDs</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$SOW__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>SOW__c.Sponsor_Account__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

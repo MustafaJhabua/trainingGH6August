@@ -1,0 +1,245 @@
+<apex:page controller="VeevaWidgetSearchController">
+    <script type="text/javascript" src="https://widgets.veevanetwork.com/veeva-network-manifest.js"></script>
+    <script type="text/javascript" src="https://widgets.veevanetwork.com/veeva-network-search-widget-loader.js"></script>
+    <apex:slds />
+    
+    <apex:remoteObjects >
+        <apex:remoteObjectModel name="Account" fields="Name,Veeva_ID__c"></apex:remoteObjectModel>
+        <apex:remoteObjectModel name="Contact" fields="FirstName,LastName,Veeva_ID__c"></apex:remoteObjectModel>
+        <apex:remoteObjectModel name="Address__c" fields="ID"></apex:remoteObjectModel>
+    </apex:remoteObjects>
+    
+    <div class="container">
+        <veeva-network-search-widget
+                                     id="searchWidget"
+                                     widget-name="{!records[0].MasterLabel}"
+                                     auth-domain="{!records[0].auth_domain__c}"
+                                     widget-id="{!records[0].widget_id__c}"
+                                     username="{!records[0].username__c}"
+                                     password="{!records[0].password__c}">
+        </veeva-network-search-widget>
+        
+         
+    </div>
+    
+    
+    
+    <div class="slds-spinner_container hide" style="position: fixed;" id="spinner">
+        <div role="status" class="slds-spinner slds-spinner--large slds-spinner--brand">
+            <div class="slds-spinner__dot-a"></div>
+            <div class="slds-spinner__dot-b"></div>
+        </div>
+    </div>
+    
+    <style>
+    .hide{
+    display:none;
+    }
+    </style>
+    
+    <script>
+    
+    function spinnerToggle(){
+    	var element = document.getElementById("spinner");
+  		element.classList.toggle("hide");
+    }
+    const registerListeners = () => {
+        const searchWidget = document.getElementById('searchWidget');
+        searchWidget.addEventListener(
+        'veeva-network:gh_search_widget:select',
+        (ev) => {
+        const { entity } = ev.detail.entity;
+    //spinnerToggle();
+    debugger;
+    var dType = '';
+    var cardAddress = {};
+    if(entity.addresses__v != null && entity.addresses__v != undefined){
+        if(entity.addresses__v.length > 0){
+            dType = entity.addresses__v[0].entity_type__v;
+            for(var add=0;add < entity.addresses__v.length;add++){
+        		if(entity.addresses__v[add].address_ordinal__v === 1){
+                	cardAddress = entity.addresses__v[add];
+                    break;
+                }	        
+            }
+        }
+        else{
+            //alert('No address found. There is some issue with this record please contact salesforce administrator');
+        }
+    }
+    if(dType === 'HCP'){
+        fetchContactDetails(entity,dType,cardAddress);
+    }
+    else if(dType === 'HCO'){
+        fetchAccountDetails(entity,dType,cardAddress);
+    }
+    
+    
+    }
+    );
+    };
+    if (document.attachEvent ? document.readyState === 'completed' : document.readyState !== 'loading') {
+        registerListeners();
+    } else {
+        document.addEventListener('DOMContentLoaded', registerListeners);
+    }
+    
+    
+    var fetchContactDetails = function(entity,dType,cardAddress){
+        const salesforceContact = new SObjectModel.Contact();
+        
+        salesforceContact.retrieve(function(){
+            return({where: {Veeva_ID__c: {eq: entity.vid__v }}});
+        }, 
+                                   function(error, records) {
+                                       if(records != null && records.length > 0){
+                                           //spinnerToggle();
+                                           //alert("Record with similar v id already exist");
+                                       }
+                                       else
+                                       {
+                                           //createContact(entity,cardAddress);
+                                       }
+                                       debugger;
+                                   }); // function returning query object
+        
+        
+    };
+    var fetchAccountDetails = function(entity,dType,cardAddress){
+        const salesforceAccount = new SObjectModel.Account();
+        
+        salesforceAccount.retrieve(function(){
+            return({where: {Veeva_ID__c: {eq: entity.vid__v }}});
+        }, 
+                                   function(error, records) {
+                                       if(records != null && records.length > 0){
+                                           //spinnerToggle();
+                                           //alert("Record with similar v id already exist");
+                                       }
+                                       else
+                                       {
+                                           //createAccount(entity,cardAddress);
+                                       }
+                                       debugger;
+                                   }); // function returning query object
+        
+        
+    };
+    function createContact(entity,cardAddress){
+        debugger;
+        console.log(entity);
+        const contact = {
+            FirstName: entity.first_name__v,
+            LastName: entity.last_name__v,
+            AccountId: '001c000002TpmXo',
+            Veeva_ID__c:entity.vid__v,
+            NPI__c:entity.npi_num__v,
+            NPI_Number__c:entity.npi_num__v,
+            MailingStreet:cardAddress.address_line_1__v,
+            MailingCity:cardAddress.locality__v,
+            MailingCountry:cardAddress.country__v,
+            Phone:cardAddress.phone_1__v,
+            MailingPostalCode:cardAddress.postal_code__v
+            //:entity.fax_1__v,
+            
+        };
+        const salesforceContact = new SObjectModel.Contact();
+        salesforceContact.create(contact, (err, results, ev) => {
+            //spinnerToggle();
+            if (results && results.length > 0) {
+            createAddress(entity,results[0],null);
+            alert('Record inserted successfully');
+            //fetchAccount();
+        } else {
+            alert('Error occurred - '+ err.message);       
+                                 console.error(err.message + '\n', err);
+        const match = err.message.match(/^duplicate value found: .* with id: (.+)$/i);
+        if (match) {
+            sforce.one.navigateToSObject(match[1]);
+        }
+    }
+    });
+    }
+
+    function createAccount(entity,cardAddress){
+        const account = {
+            Name: entity.corporate_name__v,
+            PersonEmail: entity.email_1__v,
+            Veeva_ID__c:entity.vid__v,
+            BillingStreet:cardAddress.address_line_1__v,
+            BillingCity:cardAddress.locality__v,
+            BillingCountry:cardAddress.country__v,
+            Phone:cardAddress.phone_1__v,
+            BillingPostalCode:cardAddress.postal_code__v
+        };
+        const salesforceAccount = new SObjectModel.Account();
+        salesforceAccount.create(account, (err, results, ev) => {
+            //spinnerToggle();
+            if (results && results.length > 0) {
+            alert('Record inserted successfully');
+            createAddress(entity,null,results[0]);
+            //fetchAccount();
+        } else {
+                          alert('Error occurred - '+ err.message);       
+                                 console.error(err.message + '\n', err);
+        const match = err.message.match(/^duplicate value found: .* with id: (.+)$/i);
+        if (match) {
+            sforce.one.navigateToSObject(match[1]);
+        }
+    }
+    });
+    }
+    function createAddress(entity, contactID, accountID){
+       debugger;
+        console.log(entity);
+        for(var i = 0; i < entity.addresses__v.length; i++){
+            var defaultAddress = false;
+            if(entity.addresses__v[i].address_ordinal__v === 1){
+            	defaultAddress = true;
+        	}
+            var recordType = '';
+            if(contactID === '' || contactID ===  null || contactID === undefined){
+        	recordType = '012c00000002RucAAE';
+        	}
+            else{
+        		recordType = '012c00000002RuhAAE';
+        	}
+        const address = {
+            Address_Line_1__c: entity.addresses__v[i].address_line_1__v,
+            Address_Line_2__c: entity.addresses__v[i].address_line_2__v,
+            Contact__c: contactID,
+            Account__c: accountID,
+            RecordTypeId: recordType,
+            //Address_Ordinal__c:entity.addresses__v[i].address_ordinal__v,//Error: Address Ordinal: value not of required type: 1
+            Default_Address__c: defaultAddress,
+            Address_Status__c:entity.addresses__v[i].address_status__v,
+            Address_Type__c:entity.addresses__v[i].address_type__v,
+            City__c:entity.addresses__v[i].locality__v,
+            Country__c:entity.addresses__v[i].country__v,
+            Entity_VID__c:entity.addresses__v[i].entity_vid__v,
+            Is_Externally_Mastered__c:entity.addresses__v[i].is_externally_mastered__v,
+            Is_Veeva_Master__c:entity.addresses__v[i].is_veeva_master__v,
+            Postal_Code__c: entity.addresses__v[i].postal_code__v,
+            State__c: entity.addresses__v[i].administrative_area__v,
+            VID__c : entity.addresses__v[i].vid__v,
+        };
+        const salesforceAddress = new SObjectModel.Address__c();
+        salesforceAddress.create(address, (err, results, ev) => {
+            //spinnerToggle();
+            if (results && results.length > 0) {
+            alert('Record inserted successfully');
+        } else {
+            alert('Error occurred - '+ err.message);       
+                                 console.error(err.message + '\n', err);
+        const match = err.message.match(/^duplicate value found: .* with id: (.+)$/i);
+        if (match) {
+            sforce.one.navigateToSObject(match[1]);
+        }
+        }
+    });
+    } 
+	
+	}      
+	
+    </script>
+</apex:page>

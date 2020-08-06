@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Describe what data is being replaced and what criteria used so that it has meaningful information visible when selecting. --></help>
+        <label><!-- Description --></label>
+        <name>lightsideapps__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object --></label>
+        <name>lightsideapps__Object__c</name>
+    </fields>
+    <fields>
+        <label><!-- QueryString --></label>
+        <name>lightsideapps__QueryString__c</name>
+    </fields>
+    <fields>
+        <label><!-- Query --></label>
+        <name>lightsideapps__Query__c</name>
+        <relationshipLabel><!-- User Data Management Templates --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Only Active Templates are available to select on User Management Records --></help>
+        <label><!-- Status --></label>
+        <name>lightsideapps__Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation><!-- Draft --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User Reference Field --></label>
+        <name>lightsideapps__User_Field_To_Update__c</name>
+    </fields>
+</CustomObjectTranslation>

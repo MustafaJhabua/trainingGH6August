@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Affilation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Affilations</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- LIMS Affiliation Change Tracking --></label>
+        <name>LIMS_Affiliation_Change_Tracking</name>
+    </fieldSets>
+    <fields>
+        <help><!-- TRUE if both the account and contact are Account Integration Targets --></help>
+        <label><!-- Account Integration Target-Affiliation --></label>
+        <name>Account_Integration_Target_Affiliation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Qualified --></label>
+        <name>Account_Qualified__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Search --></label>
+        <name>Account_Search__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Contact Affilations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account in LIMS --></label>
+        <name>Account_in_LIMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Affiliated Fax --></label>
+        <name>Affiliated_Fax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Affiliation Case Safe ID --></label>
+        <name>Affiliation_Case_Safe_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Affiliation Username --></label>
+        <name>Affiliation_Username__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Search --></label>
+        <name>Contact_Search__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Account Affilations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Delivery Report Type --></label>
+        <name>Delivery_Report_Type__c</name>
+        <picklistValues>
+            <masterLabel>Courier</masterLabel>
+            <translation><!-- Courier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fax</masterLabel>
+            <translation><!-- Fax --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portal</masterLabel>
+            <translation><!-- Portal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portal and Fax</masterLabel>
+            <translation><!-- Portal and Fax --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- New York Sample --></label>
+        <name>NY_Sample__c</name>
+    </fields>
+    <fields>
+        <label><!-- Needs Long Report --></label>
+        <name>Needs_Long_Report__c</name>
+    </fields>
+    <fields>
+        <label><!-- Needs Treatment --></label>
+        <name>Needs_Treatment__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Case --></label>
+        <name>New_Case__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other NPI No --></label>
+        <name>Other_NPI_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Type --></label>
+        <name>Physician_Billing_Type__c</name>
+        <picklistValues>
+            <masterLabel>Clinical Trial : ROW</masterLabel>
+            <translation><!-- Clinical Trial : ROW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clinical Trial : US</masterLabel>
+            <translation><!-- Clinical Trial : US --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DirectBill : US</masterLabel>
+            <translation><!-- DirectBill : US --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distributors : ROW</masterLabel>
+            <translation><!-- Distributors : ROW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Bill - Cancelled</masterLabel>
+            <translation><!-- Do Not Bill - Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Bill - Clinical Utility</masterLabel>
+            <translation><!-- Do Not Bill - Clinical Utility --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Bill - LUNAR</masterLabel>
+            <translation><!-- Do Not Bill - LUNAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Bill - Medical Affairs</masterLabel>
+            <translation><!-- Do Not Bill - Medical Affairs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Bill - Pharma</masterLabel>
+            <translation><!-- Do Not Bill - Pharma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Bill - Proficiency</masterLabel>
+            <translation><!-- Do Not Bill - Proficiency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Bill - Promotional</masterLabel>
+            <translation><!-- Do Not Bill - Promotional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Bill - Quality Testing</masterLabel>
+            <translation><!-- Do Not Bill - Quality Testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Bill - ROW</masterLabel>
+            <translation><!-- Do Not Bill - ROW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Indigent</masterLabel>
+            <translation><!-- Financial Indigent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medicaid</masterLabel>
+            <translation><!-- Medicaid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medicare</masterLabel>
+            <translation><!-- Medicare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pharma : ROW</masterLabel>
+            <translation><!-- Pharma : ROW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pharma : US</masterLabel>
+            <translation><!-- Pharma : US --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private Insurance/Employee Health Plan</masterLabel>
+            <translation><!-- Private Insurance/Employee Health Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private Insurance/Employee Health Plan No OOP</masterLabel>
+            <translation><!-- Private Insurance/Employee Health Plan No OOP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research : ROW</masterLabel>
+            <translation><!-- Research : ROW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research : US</masterLabel>
+            <translation><!-- Research : US --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self-Pay Patient</masterLabel>
+            <translation><!-- Self-Pay Patient --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self-Pay Sponsored</masterLabel>
+            <translation><!-- Self-Pay Sponsored --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Portal User Name --></label>
+        <name>Portal_User_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Push to Labvantage --></label>
+        <name>Push_to_Labvantage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Qualified AF --></label>
+        <name>Qualified_AF__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formula derived from the Contact&apos;s &apos;Qualified to Send to LIMS&apos; field --></help>
+        <label><!-- Qualified to send to LIMS --></label>
+        <name>Qualified_to_send_to_LIMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Role --></label>
+        <name>Role__c</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sent to LIMS --></label>
+        <name>Sent_to_LIMS__c</name>
+    </fields>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please select the values for Delivery Report Type &amp; Billing Type --></errorMessage>
+        <name>Delivery_and_BillingType_Required</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- New_Affiliation --></label>
+        <name>New_Affiliation</name>
+    </webLinks>
+</CustomObjectTranslation>

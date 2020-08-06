@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>RowCount</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel># of Samples</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_36888556</developerName>
+        <masterLabel>District Mgr</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Account.Guardant_360_Samples__r$Sample_Owner__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Brian Long</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Danielle Usilton</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Magali Trujillo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Marcus Outzen</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Robin Shafer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Shannon Dean</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Anita Roque</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jacob Estes</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kate Williams</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Perilyn Mitchell</sourceValue>
+            </sourceValues>
+            <value>Danielle Usilton</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Beth Zubal</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Charles Truan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sheila Sutherland</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jason Clendaniel</sourceValue>
+            </sourceValues>
+            <value>Justin Elders</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Alicia Madison</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Leeann Barlow</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pam Olsen</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Shelley Marino</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Katie Sapp</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Eric Trierweiler</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sara Lapomarda</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jaime James</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jill Beckman</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Shelley Gaidos</sourceValue>
+            </sourceValues>
+            <value>Alicia Madison</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Brenda Davies</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Christine Roche</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>David Salo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Dawn Lawrence</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Isabelle Eyman</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kim Forte</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Stephanie Shannon</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Philip Renda</sourceValue>
+            </sourceValues>
+            <value>Isabelle Eyman</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>LineGrouped</chartType>
+        <enableHoverLabels>true</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>Account.Guardant_360_Samples__r$Date_Received__c</groupingColumn>
+        <legendPosition>Bottom</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <secondaryGroupingColumn>BucketField_36888556</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Huge</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account$Account_Type__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Clinical Account US</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Month</dateGranularity>
+        <field>Account.Guardant_360_Samples__r$Date_Received__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_36888556</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>G360 Trending by District</name>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>Samples_by_Account_with_Territories__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account.Guardant_360_Samples__r$Date_Received__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2016-01-01</startDate>
+    </timeFrameFilter>
+</Report>

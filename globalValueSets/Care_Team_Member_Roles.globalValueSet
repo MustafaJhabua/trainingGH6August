@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Identifies Patients</fullName>
+        <default>false</default>
+        <label>Identifies Patients</label>
+    </customValue>
+    <customValue>
+        <fullName>Fills out TRF</fullName>
+        <default>false</default>
+        <label>Fills out TRF</label>
+    </customValue>
+    <customValue>
+        <fullName>Educates Patient</fullName>
+        <default>false</default>
+        <label>Educates Patient</label>
+    </customValue>
+    <customValue>
+        <fullName>Handles Billing</fullName>
+        <default>false</default>
+        <label>Handles Billing</label>
+    </customValue>
+    <customValue>
+        <fullName>Draws the Blood</fullName>
+        <default>false</default>
+        <label>Draws the Blood</label>
+    </customValue>
+    <customValue>
+        <fullName>Sends the Kit</fullName>
+        <default>false</default>
+        <label>Sends the Kit</label>
+    </customValue>
+    <customValue>
+        <fullName>Gets the Reports</fullName>
+        <default>false</default>
+        <label>Gets the Reports</label>
+    </customValue>
+    <masterLabel>Care Team Member Roles</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

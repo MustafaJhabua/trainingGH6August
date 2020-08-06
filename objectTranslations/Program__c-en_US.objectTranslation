@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Program</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Programs</value>
+    </caseValues>
+    <fields>
+        <label><!-- Audit Requirement --></label>
+        <name>Audit_Requirement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Biomarker --></label>
+        <name>Biomarker__c</name>
+    </fields>
+    <fields>
+        <label><!-- Drug --></label>
+        <name>Drug__c</name>
+    </fields>
+    <fields>
+        <help><!-- Derived from the Sponsor Account --></help>
+        <label><!-- Executed CDA? --></label>
+        <name>Executed_CDA__c</name>
+    </fields>
+    <fields>
+        <help><!-- Derived from Sponsor Account --></help>
+        <label><!-- Executed MSA? --></label>
+        <name>Executed_MSA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Genes of Interest --></label>
+        <name>Gene_Targets__c</name>
+    </fields>
+    <fields>
+        <label><!-- Indications --></label>
+        <name>Indications__c</name>
+    </fields>
+    <fields>
+        <label><!-- Line of Therapy --></label>
+        <name>Line_of_Therapy__c</name>
+        <picklistValues>
+            <masterLabel>1st line</masterLabel>
+            <translation><!-- 1st line --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2nd line</masterLabel>
+            <translation><!-- 2nd line --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2nd line+</masterLabel>
+            <translation><!-- 2nd line+ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adjuvent</masterLabel>
+            <translation><!-- Adjuvent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neo-adjuvent</masterLabel>
+            <translation><!-- Neo-adjuvent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recurrent</masterLabel>
+            <translation><!-- Recurrent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refractory</masterLabel>
+            <translation><!-- Refractory --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- NCT Trial Link --></label>
+        <name>NCT_Trial_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Probability --></label>
+        <name>Probability__c</name>
+    </fields>
+    <fields>
+        <label><!-- Program # --></label>
+        <name>Program_no__c</name>
+    </fields>
+    <fields>
+        <label><!-- Program Status --></label>
+        <name>Project_Status__c</name>
+        <picklistValues>
+            <masterLabel>Executed</masterLabel>
+            <translation><!-- Executed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Initiated</masterLabel>
+            <translation><!-- Initiated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost</masterLabel>
+            <translation><!-- Lost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Program Canceled</masterLabel>
+            <translation><!-- Program Canceled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOW Drafting</masterLabel>
+            <translation><!-- SOW Drafting --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Protocol Name --></label>
+        <name>Protocol_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason Opportunity Lost --></label>
+        <name>Reason_Opportunity_Lost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sponsor Account --></label>
+        <name>Sponsor_Account__c</name>
+        <relationshipLabel><!-- Programs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Study ID --></label>
+        <name>Study_ID_del__c</name>
+    </fields>
+    <fields>
+        <label><!-- Study Title --></label>
+        <name>Study_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Success Criteria --></label>
+        <name>Success_Criteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Therapy Type --></label>
+        <name>Therapy_Type__c</name>
+        <picklistValues>
+            <masterLabel>Adj Targeted</masterLabel>
+            <translation><!-- Adj Targeted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chemo</masterLabel>
+            <translation><!-- Chemo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Combo</masterLabel>
+            <translation><!-- Combo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hormonal</masterLabel>
+            <translation><!-- Hormonal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IO</masterLabel>
+            <translation><!-- IO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parp</masterLabel>
+            <translation><!-- Parp --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Targeted</masterLabel>
+            <translation><!-- Targeted --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total Anticipated Volume --></label>
+        <name>Total_Anticipated_Volume__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trial Name --></label>
+        <name>Trial_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trial Phase --></label>
+        <name>Trial_Phase__c</name>
+        <picklistValues>
+            <masterLabel>I</masterLabel>
+            <translation><!-- I --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>I/II</masterLabel>
+            <translation><!-- I/II --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>II</masterLabel>
+            <translation><!-- II --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>II/III</masterLabel>
+            <translation><!-- II/III --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>III</masterLabel>
+            <translation><!-- III --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>III/IV</masterLabel>
+            <translation><!-- III/IV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IV</masterLabel>
+            <translation><!-- IV --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Guardant Sponsored</masterLabel>
+            <translation><!-- Guardant Sponsored --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pharma Sponsored</masterLabel>
+            <translation><!-- Pharma Sponsored --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- update --></label>
+        <name>update__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- New_SOW --></label>
+        <name>New_SOW</name>
+    </webLinks>
+</CustomObjectTranslation>

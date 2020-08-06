@@ -1,0 +1,7 @@
+<apex:page standardController="Account">
+      
+       if( '{!Account.Push_To_TheraPak__c}'==true and '{!Account.TheraPak_Account_Name__c}'==null )
+       ApexPages.addmessage(new ApexPages.message(ApexPages.severity.INFO,'Please enter Account site'));
+        
+       
+</apex:page>

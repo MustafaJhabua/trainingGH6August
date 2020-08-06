@@ -1,0 +1,4 @@
+<apex:page id="Dialer_OpportunityPage" standardController="Opportunity" extensions="talkdesk.DialerController"
+           recordSetVar="opportunities" action="{! checkTalkdeskIntegration }">
+    <c:Dialer_Component records="{! selected }" objType="Opportunity" phoneField="Account.Phone"/>
+</apex:page>

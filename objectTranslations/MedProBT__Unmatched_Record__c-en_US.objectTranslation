@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Expiration date --></label>
+        <name>Expiration_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Name --></label>
+        <name>First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gender --></label>
+        <name>Gender__c</name>
+    </fields>
+    <fields>
+        <label><!-- Graduation Year --></label>
+        <name>Graduation_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group Practice Name --></label>
+        <name>Group_Practice_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- ID Case Safe ID --></label>
+        <name>ID_Case_Safe_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Name --></label>
+        <name>Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- License eligiblility --></label>
+        <name>License_eligiblility__c</name>
+    </fields>
+    <fields>
+        <label><!-- License state --></label>
+        <name>License_state__c</name>
+    </fields>
+    <fields>
+        <label><!-- License type --></label>
+        <name>License_type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Literal License Status --></label>
+        <name>Literal_License_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- MP NPI Active --></label>
+        <name>MP_NPI_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- MP NPI City --></label>
+        <name>MP_NPI_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- MP NPI Number --></label>
+        <name>MP_NPI_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- MP NPI State --></label>
+        <name>MP_NPI_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- MP PECOS O R --></label>
+        <name>MP_PECOS_O_R__c</name>
+    </fields>
+    <fields>
+        <label><!-- AnnualRevenue --></label>
+        <name>MedProBT__AnnualRevenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- BillingCity --></label>
+        <name>MedProBT__BillingCity__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>MedProBT__City__c</name>
+    </fields>
+    <fields>
+        <label><!-- MedProBT  Contact2 --></label>
+        <name>MedProBT__Contact2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>MedProBT__Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Date --></label>
+        <name>MedProBT__Created_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- CustomerPriority --></label>
+        <name>MedProBT__CustomerPriority__c</name>
+    </fields>
+    <fields>
+        <label><!-- DEA registration --></label>
+        <name>MedProBT__DEA_registration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Designation --></label>
+        <name>MedProBT__Designation__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>MedProBT__External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- FirstName --></label>
+        <name>MedProBT__FirstName__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Name --></label>
+        <name>MedProBT__First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- ID_External ID --></label>
+        <name>MedProBT__ID_External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- ID ID --></label>
+        <name>MedProBT__ID_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- ID MedPro Validated --></label>
+        <name>MedProBT__ID_MedPro_Validated__c</name>
+    </fields>
+    <fields>
+        <label><!-- ID NPI number --></label>
+        <name>MedProBT__ID_NPI_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- ID_Name --></label>
+        <name>MedProBT__ID_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- ID --></label>
+        <name>MedProBT__ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Industry --></label>
+        <name>MedProBT__Industry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Languages --></label>
+        <name>MedProBT__Languages__c</name>
+    </fields>
+    <fields>
+        <label><!-- LastName --></label>
+        <name>MedProBT__LastName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Name --></label>
+        <name>MedProBT__Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- License Status --></label>
+        <name>MedProBT__License_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- MailingCity --></label>
+        <name>MedProBT__MailingCity__c</name>
+    </fields>
+    <fields>
+        <label><!-- MailingState --></label>
+        <name>MedProBT__MailingState__c</name>
+    </fields>
+    <fields>
+        <label><!-- MedProID --></label>
+        <name>MedProBT__MedProID__c</name>
+    </fields>
+    <fields>
+        <label><!-- MedPro Validated --></label>
+        <name>MedProBT__MedPro_Validated__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPI Number --></label>
+        <name>MedProBT__NPI_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name --></label>
+        <name>MedProBT__Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- MedProBT  Prof Desig --></label>
+        <name>MedProBT__Prof_Desig__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLAExpirationDate --></label>
+        <name>MedProBT__SLAExpirationDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sic --></label>
+        <name>MedProBT__Sic__c</name>
+    </fields>
+    <fields>
+        <label><!-- State License Issue Date --></label>
+        <name>MedProBT__State_License_Issue_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- State License Number --></label>
+        <name>MedProBT__State_License_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>MedProBT__State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Times Updated --></label>
+        <name>MedProBT__Times_Updated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unmatched Reason --></label>
+        <name>MedProBT__Unmatched_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Validation status --></label>
+        <name>MedProBT__Validation_status__c</name>
+    </fields>
+    <fields>
+        <label><!-- MedPro Last Update --></label>
+        <name>MedPro_Last_Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPI First Name --></label>
+        <name>NPI_First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPI Last Name --></label>
+        <name>NPI_Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPI Number --></label>
+        <name>NPI_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sanction 1 Affects Eligibility --></label>
+        <name>Sanction_1_Affects_Eligibility__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sanction 1 Date --></label>
+        <name>Sanction_1_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sanction 2 Affects Eligibility --></label>
+        <name>Sanction_2_Affects_Eligibility__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sanction 2 Date --></label>
+        <name>Sanction_2_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sanction 3 Affects Eligibility --></label>
+        <name>Sanction_3_Affects_Eligibility__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sanction 3 Date --></label>
+        <name>Sanction_3_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sanction 4 Affects Eligibility --></label>
+        <name>Sanction_4_Affects_Eligibility__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sanction 4 Date --></label>
+        <name>Sanction_4_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sanction Source 1 --></label>
+        <name>Sanction_Source_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sanction Source 2 --></label>
+        <name>Sanction_Source_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sanction Source 3 --></label>
+        <name>Sanction_Source_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sanction Source 4 --></label>
+        <name>Sanction_Source_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sanction Type 1 --></label>
+        <name>Sanction_Type_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sanction Type 2 --></label>
+        <name>Sanction_Type_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sanction Type 3 --></label>
+        <name>Sanction_Type_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sanction Type 4 --></label>
+        <name>Sanction_Type_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- State license number --></label>
+        <name>State_license_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- medproid --></label>
+        <name>medproid__c</name>
+    </fields>
+</CustomObjectTranslation>

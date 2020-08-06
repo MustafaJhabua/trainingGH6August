@@ -1,0 +1,10 @@
+Hello,
+Please note that  ** {!Case.Contact} from {!Case.Account} ** has contacted client Services to report an issue. 
+
+Click here to open the case: {!Case.Link}
+
+Issue Details:
+    Status: {!Case.Status}
+    Call From: {!Case.Call_From__c}
+    Subject: {!Case.Subject}
+    Description: {!Case.Description}

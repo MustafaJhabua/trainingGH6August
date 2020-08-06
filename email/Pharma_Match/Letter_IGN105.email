@@ -1,0 +1,21 @@
+Dear Dr. {!Contact.LastName},
+
+Further to our discussion about your patient’s Guardant360 report, you will notice that we detected a RET fusion.
+ 
+This molecular alteration is notable because it is rare and there is a drug in clinical trials that may be effective for patients whose tumors harbor this alteration. The drug is called RXDX-105 and it is being developed by a company called Ignyta. RXDX-105 is a RET inhibitor that targets RET mutations or gene rearrangements and is open to patients with any solid tumor (excluding primary brain tumors and ocular melanoma) that harbors one of these alterations. 
+ 
+More information on the clinical trial (NCT01877811) can be found here:
+https://clinicaltrials.gov/ct2/show/NCT01877811
+ 
+Ignyta has a number of trial sites across the country, and additionally, through a partnership with Pharmatech, it is possible that a closer trial site, including your own site, can be opened for Ignyta’s trial in as little as 2 weeks. Ignyta has a concierge program that can arrange travel for your patient to travel to a trial site.
+ 
+For more information or to enroll your patient, please contact Ignyta directly at: Rupal A. Patel, MS, 858-332-0774 or rpatel@ignyta.com.
+
+Sincerely,
+{!User.Name}, {!User.Degree__c} 
+Clinical Trial Advisor
+Guardant Health
+
+Guardant Health partners with the clinical trial sponsor to conduct patient referral activities.
+
+This message is intended solely for the designated recipient(s). It may contain confidential or proprietary information and may be subject to attorney-client privilege or other confidentiality protections. If you are not a designated recipient you may not review, copy or distribute this message. If you have received this in error, please notify the sender by replying to this e-mail and deleting this message. Thank you. Ref: {!Match_Record__c.Id}

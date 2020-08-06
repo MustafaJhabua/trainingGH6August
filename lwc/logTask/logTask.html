@@ -1,0 +1,31 @@
+<template>
+    <lightning-card title="Log Task" icon-name="standard:task">
+        <div class="slds-m-around_medium">
+            <template if:true={showSpinner}>
+                <lightning-spinner alternative-text="Loading" size="medium" variant="brand"></lightning-spinner>
+            </template>
+            <p>
+                <lightning-dual-listbox name="taskSubjects"
+                    label="Subject"
+                    source-label="Available"
+                    selected-label="Selected"
+                    options={options}
+                    onchange={handleChange}
+                >
+                </lightning-dual-listbox>
+            </p>
+            <!-- <p>
+                <lightning-input type="date" label="Enter Due Date" onchange={getDate} ></lightning-input>
+            </p> -->
+            <br>
+            <p>
+                <lightning-button variant="neutral" label="Cancel" title="Cancel" onclick={hideLogTaskWindow}></lightning-button>
+                <lightning-button variant="brand" class="slds-float_right" label="Log Task" title="Log Task" onclick={submitTask}></lightning-button>
+            </p>
+            <div class="slds-box slds-hide" >
+                <p>Selected values are: {selected}</p>
+                {reRender}
+            </div>
+        </div>
+    </lightning-card>
+</template>

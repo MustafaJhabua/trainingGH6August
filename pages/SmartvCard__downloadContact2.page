@@ -1,0 +1,22 @@
+<apex:page cache="True" contentType="text/x-vcard#{!Contact.Name}.vcf" standardcontroller="Contact" extensions="SmartvCard.NotesContact">BEGIN:VCARD
+VERSION:2.1
+N:<c:vcard Value="{!Contact.LastName}"/>;
+<c:vcard Value="{!Contact.FirstName}"/>
+FN:<c:vcard Value="{!contact.Salutation} "/><c:vcard Value="{!Contact.FirstName} "/><c:vcard value="{!Contact.LastName}"/> 
+ORG:<c:vcard Value="{!Contact.Account.Name}"/>
+TITLE:<c:vcard Value="{!Contact.Title}"/>
+TEL;WORK;VOICE:<c:vcard Value="{!Contact.Phone}"/>
+TEL;Home;VOICE:<c:vcard Value="{!Contact.HomePhone}"/>
+TEL;CELL;VOICE:<c:vcard Value="{!Contact.mobilePhone}"/>
+TEL;WORK;FAX:<c:vcard Value="{!contact.fax}"/>
+ADR;WORK:;;<c:vcard Value="{!Contact.MailingStreet}"/>;<c:vcard Value="{!Contact.MailingCity}"/>;<c:vcard Value="{!Contact.MailingState}"/>;<c:vcard Value="{!Contact.MailingPostalCode}"/>;<c:vcard Value="{!Contact.MailingCountry}"/>
+LABEL;WORK;ENCODING=QUOTED-PRINTABLE:<c:vcard Value="{!Contact.MailingStreet} "/><c:vcard Value="{!Contact.MailingCity} "/><c:vcard Value="{!Contact.MailingState} "/><c:vcard Value="{!Contact.MailingPostalCode} "/><c:vcard Value="{!Contact.MailingCountry}"/>
+ADR;HOME:;;<c:vcard Value="{!Contact.otherStreet}"/>;<c:vcard Value="{!Contact.otherCity}"/>;<c:vcard Value="{!Contact.otherState}"/>;<c:vcard Value="{!Contact.otherPostalCode}"/>;<c:vcard Value="{!Contact.otherCountry}"/>
+LABEL;WORK;ENCODING=QUOTED-PRINTABLE:<c:vcard Value="{!Contact.otherStreet} "/><c:vcard Value="{!Contact.otherCity} "/><c:vcard Value="{!Contact.otherState} "/><c:vcard Value="{!Contact.otherPostalCode} "/><c:vcard Value="{!Contact.otherCountry}"/>
+EMAIL;PREF;INTERNET:<c:vcard Value="{!Contact.Email}"/>
+URL;WORK:<c:vcard Value="{!contact.account.website}"/>
+NOTE: 
+<c:vcard Value="{!Note}"/>
+REV:20080424T195243Z
+END:VCARD
+</apex:page>

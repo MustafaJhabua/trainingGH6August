@@ -1,0 +1,154 @@
+<apex:page controller="MedProSC.MedProTwoPassDisplayDetailV2_Controller" tabStyle="SearchMedPro__tab" sidebar="{!renderforViewing}" renderAs="{!renderType}" action="{!commitLogs}">
+	<apex:sectionHeader title="MedPro Search" subtitle="Practitioner Details"  rendered="{!renderType='html'}" />  
+	<apex:outputPanel layout="none" rendered="{!renderType='pdf'}">
+	    <h1>MedPro Search:</h1>
+	    <h2>Practitioner Details</h2>
+	</apex:outputPanel>
+
+	<div id="spinner" class="spinner" style="display:none;" >
+	    <br/>
+	    <apex:image id="poweredByMedProID2" value="{!$Resource.MedProSC__MedProIDPill2}" width="104" height="104"/>
+	    <p></p>
+	    <apex:image id="img-spinner" url="{!$Resource.MedProSC__progressBar}" width="32" height="32" styleClass="loading" />
+	    <br/>
+	    <p><b>Processing data please wait ...</b></p>
+	</div>
+
+	<apex:stylesheet value="{!URLFOR($Resource.MedProSC__MedProTwoPassDisplayDetail_resources, 'styles.css')}" />
+
+	<apex:includeScript value="{!URLFOR($Resource.MedProSC__jQuery_ui_1_10_4, '/jquery-ui-1.10.4.custom/js/jquery-1.10.2.js')}" />
+	<apex:includeScript value="{!URLFOR($Resource.MedProSC__jQuery_ui_1_10_4, '/jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.js')}" />
+	<apex:includeScript value="{!URLFOR($Resource.MedProSC__jQuery_ui_1_10_4, '/jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.min.js')}" />
+
+	<script type="text/javascript">
+		Visualforce.remoting.timeout = 120000; // Set timeout at page level
+		var pipedMedProIDsToSend = '';
+		var cachedSOMappingID = '';
+
+		function getQueryVariable(variable)
+		{
+		    var query = window.location.search.substring(1);
+		    var vars = query.split('&');
+		    for (var i = 0; i < vars.length; i++) {
+		        var pair = vars[i].split('=');
+		        if (decodeURIComponent(pair[0]) == variable) {
+		            return decodeURIComponent(pair[1]);
+		        }
+		    }
+		    return null;
+		}
+
+		function performSyncSelectedV2()
+		{
+		    $("#spinner").show();
+		    var medProId = getQueryVariable('medProId');
+		    pipedMedProIDsToSend = medProId;
+		    cachedSOMappingID = null;
+
+		    Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.MedProTwoPassDisplayDetailV2_Controller.syncSelectedV2}', medProId, handleResult_performSyncSelectedV2);
+		}
+
+		function performSyncSelectedToSfObjectV2(soMappingId)
+		{
+		    $("#spinner").show();
+		    var medProId = getQueryVariable('medProId');
+		    var sfId = getQueryVariable('sfId');
+		    var parentId = getQueryVariable('parentId');
+		    pipedMedProIDsToSend = medProId;
+		    cachedSOMappingID = soMappingId;
+		    
+		    Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.MedProTwoPassDisplayDetailV2_Controller.syncSelectedToSfObjectV2}', soMappingId, pipedMedProIDsToSend, sfId, parentId, true, '{!jsonPageParams}',
+		        handleResult_performSyncSelectedToSfObjectV2);
+		}
+
+		function handleResult_performSyncSelectedV2(result, event)
+		{
+		    Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.MedProTwoPassDisplayDetailV2_Controller.checkForRequiredInUniverseUpdate}', cachedSOMappingID, result, pipedMedProIDsToSend, handleResult_performCheckForRequiredInUniverseUpdate);
+		}
+
+		function handleResult_performSyncSelectedToSfObjectV2(result, event)
+		{
+		    Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.MedProTwoPassDisplayDetailV2_Controller.checkForRequiredInUniverseUpdate}', cachedSOMappingID, result, pipedMedProIDsToSend, handleResult_performCheckForRequiredInUniverseUpdate);
+		}
+
+		function handleResult_performCheckForRequiredInUniverseUpdate(result, event)
+		{
+		    $('#spinner').hide();
+		    if ((result != null) && (event.status == true))
+		        window.location.href = result;
+		}
+	</script>
+	    
+	<apex:form >
+		<apex:pageBlock id="topLevel">
+			<apex:pageMessages rendered="{!renderType != 'pdf'}" />
+			<apex:pageBlockButtons location="top">
+
+				<apex:commandButton value="{!currentActiveCustomer.MedProSC__TwoPassDisplayDetail_V2_Page_Back_btn__c}" action="{!back}"/>  
+
+				<apex:commandButton value="New Search" action="{!newSearch}" rendered="{!!areNewSearchesDisabled}"/>
+
+				<apex:commandButton value="Save As MedPro HCP" onclick="performSyncSelectedV2(); return false;" rendered="{!isMedProHCP_SyncEnabled==true}"/>
+
+				<apex:commandButton value="{!syncOption1FoundLabel}" onclick="performSyncSelectedToSfObjectV2('{!syncOption1FoundId}'); return false;" rendered="{!AND( syncButton1Configured, renderButtonsBasedOnSource[0])}">
+				</apex:commandButton>
+
+				<apex:commandButton value="{!syncOption2FoundLabel}" onclick="performSyncSelectedToSfObjectV2('{!syncOption2FoundId}'); return false;" rendered="{!AND(syncButton2Configured , renderButtonsBasedOnSource[1])}">
+				</apex:commandButton>
+
+				<apex:commandButton id="syncButton3" value="{!syncOption3FoundLabel}" onclick="performSyncSelectedToSfObjectV2('{!syncOption3FoundId}'); return false;" rendered="{!AND(syncButton3Configured , renderButtonsBasedOnSource[2])}">
+				</apex:commandButton>
+
+				<apex:commandButton value="Submit DRP" action="{!performDRP}" rendered="{!isDRPEnabled==true}"/>
+
+				<apex:commandButton value="Printable View" action="{!generatePDF}" />
+			</apex:pageBlockButtons>
+
+			<apex:repeat id="outerRepeat" value="{!displayHeaders}" var="outerItem">
+
+				<apex:pageBlockSection title="{!outerItem.name}:" collapsible="true" columns="{!cols}">
+
+					<apex:repeat id="innerRepeat" value="{!displayDetails}" var="innerItem">
+
+						<apex:pageBlockSectionItem rendered="{!IF(outerItem.id==innerItem.MedProSC__MedPro_Pass_2_Display_Head_Config__c, True, False)}">
+
+							<apex:outputLabel id="theLabel" value="{!innerItem.name}:"  
+							            rendered="{!IF((innerItem.MedProSC__Is_Placeholder__c==False), True, False)}"/>
+
+							<c:MedProCompTest2 id="theValue"
+							          medProField="{!innerItem.MedProSC__MedProFieldName__c}"
+							     resultFieldNames="{!allFieldNames}"
+							    resultFieldValues="{!allFieldValues}"
+							             rendered="{!IF((innerItem.MedProSC__Is_Placeholder__c==False), True, False)}"/>
+						</apex:pageBlockSectionItem>
+					</apex:repeat>
+				</apex:pageBlockSection>
+			</apex:repeat>
+
+			<apex:outputPanel > 
+				<div class="pbHeader">
+					<table class="medproTable" >
+						<tbody>
+							<tr>
+								<td class="pbTitle"><apex:include pageName="MedProSC__MedProStandardCopyrightFooter"/> </td>
+								<td class="pbButton ">
+									<apex:commandButton value="{!currentActiveCustomer.MedProSC__TwoPassDisplayDetail_V2_Page_Back_btn__c}" action="{!back}"/>  
+									<apex:commandButton value="New Search" action="{!newSearch}" rendered="{!!areNewSearchesDisabled}"/>                                
+									<apex:commandButton value="Save As MedPro HCP" onclick="performSyncSelectedV2(); return false;" rendered="{!isMedProHCP_SyncEnabled==true}"/>
+									<apex:commandButton value="{!syncOption1FoundLabel}" onclick="performSyncSelectedToSfObjectV2('{!syncOption1FoundId}'); return false;" rendered="{!AND( syncButton1Configured, renderButtonsBasedOnSource[0])}">
+									</apex:commandButton>
+									<apex:commandButton value="{!syncOption2FoundLabel}" onclick="performSyncSelectedToSfObjectV2('{!syncOption2FoundId}'); return false;" rendered="{!AND(syncButton2Configured , renderButtonsBasedOnSource[1])}">
+									</apex:commandButton>
+									<apex:commandButton id="syncButton3" value="{!syncOption3FoundLabel}" onclick="performSyncSelectedToSfObjectV2('{!syncOption3FoundId}'); return false;" rendered="{!AND(syncButton3Configured , renderButtonsBasedOnSource[2])}">
+									</apex:commandButton>                                
+									<apex:commandButton value="Submit DRP" action="{!performDRP}" rendered="{!isDRPEnabled==true}"/>
+									<apex:commandButton value="Printable View" action="{!generatePDF}" />  
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+		    </apex:outputPanel>
+		</apex:pageBlock>
+	</apex:form>
+</apex:page>

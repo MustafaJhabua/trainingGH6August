@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notify DL when New Contract is created</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Text: Sales Contract-New Record Created</name>
+    <style>none</style>
+    <subject>ATTN: New Contract created for {!Sales_Contract__c.Sales_Contract_Account__c}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

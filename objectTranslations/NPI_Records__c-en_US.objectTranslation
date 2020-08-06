@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>NPI Record</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>NPI Records</value>
+    </caseValues>
+    <fields>
+        <label><!-- AE Email --></label>
+        <name>AE_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Safe ID --></label>
+        <name>Case_Safe_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exceeded Current Year Stark Limit --></label>
+        <name>Exceeded_Current_Year_Stark_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exceeded Last Year Stark Limit --></label>
+        <name>Exceeded_Last_Year_Stark_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Year Expense Total --></label>
+        <name>Expense_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Name --></label>
+        <name>First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Full Name --></label>
+        <name>Full_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gender --></label>
+        <name>Gender__c</name>
+    </fields>
+    <fields>
+        <label><!-- Graduation Year --></label>
+        <name>Graduation_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group Practice Name --></label>
+        <name>Group_Practice_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Expense Amount --></label>
+        <name>Last_Expense_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Expense Date --></label>
+        <name>Last_Expense_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Expense Submitted By --></label>
+        <name>Last_Expense_Submitted_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Expense Submitted On --></label>
+        <name>Last_Expense_Submitted_On__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Name --></label>
+        <name>Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Year&apos;s Expense Total --></label>
+        <name>Last_Year_s_Expense_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPI Active --></label>
+        <name>MP_NPI_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- PECOS O&amp;R --></label>
+        <name>MP_PECOS_O_R__c</name>
+    </fields>
+    <fields>
+        <label><!-- MedPro Last Update --></label>
+        <name>MedPro_Last_Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPI City --></label>
+        <name>NPI_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPI Number --></label>
+        <name>NPI_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPI Record Count --></label>
+        <name>NPI_Record_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPI State --></label>
+        <name>NPI_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPI Trigger --></label>
+        <name>NPI_Trigger__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous Year&apos;s Expense Total --></label>
+        <name>Previous_Year_s_Expense_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quintile --></label>
+        <name>Quintile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Samples --></label>
+        <name>Total_Samples__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2018 Expense Total --></label>
+        <name>X2018_Expense_Total__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

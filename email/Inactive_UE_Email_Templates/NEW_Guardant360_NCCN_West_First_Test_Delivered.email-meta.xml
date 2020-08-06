@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>New design applied</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Guardant360_NCCN_West_First_Test_Delivered_V2</name>
+    <style>none</style>
+    <subject>Guardant360 Report for Sample: {!Guardant_360_Sample__c.Name}</subject>
+    <textOnly>Dear Dr. {!Contact.Full_Name__c},
+
+The Guardant360 sample, {!Guardant_360_Sample__c.Name}, you submitted has been processed and is ready for your review. You can access the results immediately in our Provider Portal (https://portal.guardanthealth.com/patients/{!Guardant_360_Sample__c.LIMS_Patient_ID__c}?request_id&amp;#61;{!Guardant_360_Sample__c.Name}) or look for it on your fax machine.
+
+As this is your first Guardant360 report, I am reaching out to make myself available for a quick case review and discussion if that would be helpful. Please feel free to email or call me directly should you wish to discuss the result.
+
+Sincerely,
+Kimberly Banks, MS, CGC, MBA
+Medical Science Liaison – Western US
+Medical Affairs
+Guardant Health, Inc.
+Cell: 818-239-2708
+Fax: 888-974-4258
+kbanks@guardanthealth.com
+
+CLIA Certified # 05D2070300 | CAP Accredited # 8765297
+
+To change your notification preferences, please login to your portal account.
+
+This message is intended solely for the designated recipient(s). It may contain confidential or proprietary information and may be subject to attorney-client privilege or other confidentiality protections. If you are not a designated recipient you may not review, copy or distribute this message. If you receive this in error, please notify the sender by reply e-mail and delete this message. Thank you.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

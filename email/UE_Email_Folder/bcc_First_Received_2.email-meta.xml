@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Report Notification Engagement Emails - Signature The Medical Affairs Team</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>bcc_First_Received_2</name>
+    <style>none</style>
+    <subject>{!Guardant_360_Sample__c.Name} sample received from {!Contact.Name} [first-bot]</subject>
+    <textOnly>Salesforce link for GH use: {!Guardant_360_Sample__c.Name}
+
+Copy of the email sent to {!Contact.Full_Name__c} ( {!Contact.Portal_Primary__c} {!Contact.Portal_Secondary__c} {!Contact.Portal_Tertiary__c}) shown below:
+
+Dear Dr. {!Contact.Full_Name__c},
+
+Welcome to Guardant Health and thank you for submitting your first Guardant360 order. The patient sample that you submitted has been assigned accession # {!Guardant_360_Sample__c.Name} and is being prepared for sequencing. Expect to receive results within 14 days.
+
+We have a team of genomics specialists and certified genetic counselors. As soon as we finalize your report, we will contact you again inviting you to a five-minute consultation. We hope we find time to connect.
+
+Sincerely,
+The Medical Affairs Team
+Guardant Health, Inc.
+Ph: 855-698-8887
+Fax: 888-974-4258
+medicalaffairs@guardanthealth.com
+
+Register for our Provider Portal.
+
+CLIA Certified # 05D2070300 | CAP Accredited # 8765297
+
+To change your notification preferences, please login to your portal account.
+
+This message is intended solely for the designated recipient(s). It may contain confidential or proprietary information and may be subject to attorney-client privilege or other confidentiality protections. If you are not a designated recipient you may not review, copy or distribute this message. If you received this in error, please notify the sender by reply e-mail and delete this message. Thank you.
+
+-ue-</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

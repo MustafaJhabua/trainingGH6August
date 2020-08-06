@@ -1,0 +1,18 @@
+Thank you, Dr. {!Contact.LastName}. 
+
+The patient’s name and other identifying information can be viewed directly on the patient’s report by clicking the following link: {!Match_Record__c.Portal_Link_For_MD_text__c}.
+
+Alternatively, feel free to call me directly at {!User.Phone}.
+
+Please don’t hesitate to reach out if you are unable to access the patient’s report.
+
+Kind Regards, 
+{!User.Name}, {!User.Degree__c} 
+Clinical Trial Advisor 
+Guardant Health, Inc. 
+
+Guardant Health Match Key: {!Match_Record__c.Match_Key__c} 
+
+Guardant Health partners with the clinical trial sponsor to conduct patient referral activities. 
+
+This message is intended solely for the designated recipient(s). It may contain confidential or proprietary information and may be subject to attorney-client privilege or other confidentiality protections. If you are not a designated recipient you may not review, copy or distribute this message. If you have received this in error, please reply to this email and delete this message. Thank you. Ref: {!Match_Record__c.Id}

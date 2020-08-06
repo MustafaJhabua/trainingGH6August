@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>Send to physician who requests more information about Blueprint BLU-667</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>BLU667_Response_TrialInformation_059</name>
+    <style>none</style>
+    <subject>Clinical Trial Opportunity: Blueprint BLU-667 Trial</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

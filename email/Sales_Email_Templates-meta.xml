@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessType>Shared</accessType>
+    <name>Sales Email Templates</name>
+    <publicFolderAccess>ReadOnly</publicFolderAccess>
+    <sharedTo>
+        <group>US_Sales</group>
+        <role>Int_l_Dev_Europe</role>
+        <role>Int_l_Dev_Latin_America_SoPac</role>
+        <role>Sr_Vice_President_Sales</role>
+        <role>System_Administrator</role>
+        <roleAndSubordinates>Sr_Vice_President_Sales</roleAndSubordinates>
+        <roleAndSubordinates>VP_Marketing</roleAndSubordinates>
+    </sharedTo>
+</EmailFolder>

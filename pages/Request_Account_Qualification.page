@@ -1,0 +1,11 @@
+<apex:page standardController="Account">
+    <flow:interview name="Request_Account_Qualification" finishLocation="{!URLFOR('/'+Account.Id)}">
+        <apex:param name="txtAccountId" value="{!Account.Id}"/>
+        <apex:param name="txtAccountName" value="{!Account.Name}"/>
+        <apex:param name="txtSubject" value="Qualify Account"/>
+        <apex:param name="txtCaseRecordTypeId" value="01280000000HmTr"/>
+        <apex:param name="txtActivityType" value="Qualify Account"/>
+        <apex:param name="txtOrigin" value="Sales Rep"/>
+        <apex:param name="txtQueueId" value="00G80000002vLPH"/>
+    </flow:interview>
+</apex:page>

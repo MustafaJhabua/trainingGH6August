@@ -1,0 +1,24 @@
+Thank you, Dr. {!Match_Record__c.Ordering_Physician_Name__c}.
+
+Per your request,  I have included information below about Sym015 sponsored by Symphogen as well as assigned one of our Clinical Trial Advisor physicians to contact you via phone this week to further discuss the clinical trial options for your patient who had a MET amplification.
+
+We have formed a financial and business relationship with Symphogen, who is developing Sym015 that targets MET alterations (including amplifications and exon 14 skipping alterations) and is open to patients with non-small cell lung cancer or other MET-altered advanced solid tumors. Early preclinical evidence supporting the use of Sym015 in patients with MET-amplified tumors can be found in Poulsen et al., 2017 (PMID: 28679766) and Grandal et al., 2017 (PMID: 28802255). More information on Symphogen’s clinical trial can be found here: https://clinicaltrials.gov/show/NCT02648724.
+ 
+The closest SYM015 study site is {!Match_Record__c.Closest_Trial_Site__c} in {!Match_Record__c.Closest_Trial_Site_City__c}, {!Match_Record__c.Closest_Trial_Site_State__c}  with Dr. {PI Full Name}; additional study sites are also available around the US. 
+
+A travel service is available for eligible patients and caregivers to reduce out-of-pocket expenses and to ensure travel to the study site is simple and comfortable.
+ 
+Please contact Guardant Health by emailing trials@guardanthealth.com or calling 1-314-795-7737 to receive more information related to this study, to discuss the patient enrollment procedure, or to be connected to the Principal Investigator at the nearest trial site. Please also contact Symphogen directly if needed by reaching out to Helle Rudbaek (heru@symphogen.com; +45 40 83 61 77). Your patient may also qualify for alternative treatments or clinical trials in addition to the SYM015 trial as indicated on the CLIA report for this patient.
+
+
+Kind Regards,
+{!User.Name}, {!User.Degree__c} 
+Guardant Health, Inc.
+On behalf of the Clinical Trial Advisors program
+
+Guardant Health Match Key: {!Match_Record__c.Match_Key__c} 
+
+
+Guardant Health partners with the clinical trial sponsor to conduct patient referral activities.
+
+This message is intended solely for the designated recipient(s). It may contain confidential or proprietary information and may be subject to attorney-client privilege or other confidentiality protections. If you are not a designated recipient you may not review, copy or distribute this message. If you have received this in error, please notify the sender by replying to this email and delete this message. Thank you. Ref: {!Match_Record__c.Id}

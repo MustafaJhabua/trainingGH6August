@@ -1,0 +1,9 @@
+A physician with a qualified account has requested a kit via the Request a Kit section of our website. 
+
+Case Number: {!Case.CaseNumber}
+Contact: {!Case.Contact}
+Case Subject: {!Case.Subject} 
+Case Type: {!Case.RecordType} 
+
+
+Link to Case: {!Case.Link}

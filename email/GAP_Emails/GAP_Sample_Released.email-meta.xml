@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sent to Iris when any sample from a GAP account is released</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>GAP Sample Released</name>
+    <style>none</style>
+    <subject>GAP sample has been reported, {!Guardant_360_Sample__c.Name}.</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

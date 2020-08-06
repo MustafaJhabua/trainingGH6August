@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Past Case</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Past Cases</value>
+    </caseValues>
+    <fields>
+        <label><!-- Current Case --></label>
+        <name>Current_Case__c</name>
+        <relationshipLabel><!-- Past Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Past Case Account --></label>
+        <name>Past_Case_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Past Case Contact --></label>
+        <name>Past_Case_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Past Case Status --></label>
+        <name>Past_Case_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Past Case Subject --></label>
+        <name>Past_Case_Subject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Past Case --></label>
+        <name>Past_Case__c</name>
+        <relationshipLabel><!-- Current Cases --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- MedProID --></label>
+        <name>MedProSC__MedProID__c</name>
+    </fields>
+    <fields>
+        <label><!-- MedProMasterID --></label>
+        <name>MedProSC__MedProMasterID__c</name>
+    </fields>
+    <fields>
+        <label><!-- MedPro Updated TS --></label>
+        <name>MedProSC__MedPro_Updated_TS__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPI Number --></label>
+        <name>MedProSC__NPI_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Test Lookup --></label>
+        <name>MedProSC__Test_Lookup__c</name>
+        <relationshipLabel><!-- MedPro_TestCustomObject1 --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- fieldNameM1D1 --></label>
+        <name>MedProSC__fieldNameM1D1__c</name>
+    </fields>
+    <fields>
+        <label><!-- fieldNameM1D2 --></label>
+        <name>MedProSC__fieldNameM1D2__c</name>
+    </fields>
+    <fields>
+        <label><!-- fieldNameM1D3 --></label>
+        <name>MedProSC__fieldNameM1D3__c</name>
+    </fields>
+    <fields>
+        <label><!-- fieldNameM1D4 --></label>
+        <name>MedProSC__fieldNameM1D4__c</name>
+    </fields>
+    <fields>
+        <label><!-- fieldNameM1D5 --></label>
+        <name>MedProSC__fieldNameM1D5__c</name>
+    </fields>
+    <fields>
+        <label><!-- fieldNameM1D6 --></label>
+        <name>MedProSC__fieldNameM1D6__c</name>
+    </fields>
+    <fields>
+        <label><!-- fieldNameM1D7 --></label>
+        <name>MedProSC__fieldNameM1D7__c</name>
+    </fields>
+    <fields>
+        <label><!-- fieldNameM1D8 --></label>
+        <name>MedProSC__fieldNameM1D8__c</name>
+    </fields>
+    <fields>
+        <label><!-- fieldNameM1D9 --></label>
+        <name>MedProSC__fieldNameM1D9__c</name>
+    </fields>
+    <fields>
+        <label><!-- fieldNameZ1D1 --></label>
+        <name>MedProSC__fieldNameZ1D1__c</name>
+    </fields>
+    <fields>
+        <label><!-- fieldNameZ1D2 --></label>
+        <name>MedProSC__fieldNameZ1D2__c</name>
+    </fields>
+    <fields>
+        <label><!-- fieldNameZ1D3 --></label>
+        <name>MedProSC__fieldNameZ1D3__c</name>
+    </fields>
+    <fields>
+        <label><!-- fieldNameZ1D4 --></label>
+        <name>MedProSC__fieldNameZ1D4__c</name>
+    </fields>
+    <fields>
+        <label><!-- fieldNameZ1D5 --></label>
+        <name>MedProSC__fieldNameZ1D5__c</name>
+    </fields>
+    <fields>
+        <label><!-- fieldNameZ1D6 --></label>
+        <name>MedProSC__fieldNameZ1D6__c</name>
+    </fields>
+    <fields>
+        <label><!-- fieldNameZ1D7 --></label>
+        <name>MedProSC__fieldNameZ1D7__c</name>
+    </fields>
+    <fields>
+        <label><!-- fieldNameZ1D8 --></label>
+        <name>MedProSC__fieldNameZ1D8__c</name>
+    </fields>
+    <fields>
+        <label><!-- fieldNameZ1D9 --></label>
+        <name>MedProSC__fieldNameZ1D9__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- MedProTestCO1_RT1 --></label>
+        <name>MedProSC__MedProTestCO1_RT1</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- MedProTestCO1_RT2 --></label>
+        <name>MedProSC__MedProTestCO1_RT2</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- List_New_Potential_Prescriber --></label>
+        <name>MedProSC__List_New_Potential_Prescriber</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Potential_Prescriber --></label>
+        <name>MedProSC__New_Potential_Prescriber</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Search_MedPro --></label>
+        <name>MedProSC__Search_MedPro</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Submit_DRP --></label>
+        <name>MedProSC__Submit_DRP</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Update_Children_from_Medpro --></label>
+        <name>MedProSC__Update_Children_from_Medpro</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Update_Records_from_MedPro --></label>
+        <name>MedProSC__Update_Records_from_MedPro</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Update_from_MedPro --></label>
+        <name>MedProSC__Update_from_MedPro</name>
+    </webLinks>
+</CustomObjectTranslation>

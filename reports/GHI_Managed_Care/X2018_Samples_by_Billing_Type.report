@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_58245380</developerName>
+        <masterLabel>Do Not Bill</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Guardant_360_Sample__c.Patients__r$Billing_Type__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Do Not Bill - Clinical Utility</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Do Not Bill - Cancelled</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Do Not Bill - Pharma</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Do Not Bill - Proficiency</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Do Not Bill - Promotional	 Quality Testing</sourceValue>
+            </sourceValues>
+            <value>Do Not Bill</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>Pie</chartType>
+        <enableHoverLabels>true</enableHoverLabels>
+        <expandOthers>false</expandOthers>
+        <groupingColumn>Guardant_360_Sample__c$Billing_Type__c</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>true</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Large</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <title>2018 Samples By Billing Type</title>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Guardant_360_Sample__c$Name</field>
+    </columns>
+    <columns>
+        <field>Guardant_360_Sample__c.Patients__r$Name</field>
+    </columns>
+    <columns>
+        <field>Guardant_360_Sample__c$Sample_Count__c</field>
+    </columns>
+    <columns>
+        <field>BucketField_58245380</field>
+    </columns>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Guardant_360_Sample__c$Billing_Type__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>2018 Samples by Billing Type</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>G360_Samples_with_Patients__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Guardant_360_Sample__c$Date_Received__c</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- AddressID --></label>
+        <name>MedProBT__AddressID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact2 --></label>
+        <name>MedProBT__Contact2__c</name>
+        <relationshipLabel><!-- Addresses (Contact2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>MedProBT__Contact__c</name>
+        <relationshipLabel><!-- Addresses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DEA registration --></label>
+        <name>MedProBT__DEA_registration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Name --></label>
+        <name>MedProBT__Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- License Status --></label>
+        <name>MedProBT__License_Status__c</name>
+        <picklistValues>
+            <masterLabel>Invalid_vod</masterLabel>
+            <translation><!-- Invalid_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Valid_vod</masterLabel>
+            <translation><!-- Valid_vod --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- MedProID --></label>
+        <name>MedProBT__MedProID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prof Desig --></label>
+        <name>MedProBT__Prof_Desig__c</name>
+    </fields>
+    <fields>
+        <label><!-- State License Exp. Date --></label>
+        <name>MedProBT__State_License_Issue_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- State License Number --></label>
+        <name>MedProBT__State_License_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>MedProBT__State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street Address 1 --></label>
+        <name>MedProBT__Street_Address_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street Address 2 --></label>
+        <name>MedProBT__Street_Address_2__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- State can&apos;t be LA --></errorMessage>
+        <name>MedProBT__No_LA</name>
+    </validationRules>
+</CustomObjectTranslation>

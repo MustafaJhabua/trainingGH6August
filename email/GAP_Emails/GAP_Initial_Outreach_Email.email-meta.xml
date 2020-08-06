@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>For trial matches within GAP</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>GAP Initial Outreach Email</name>
+    <style>none</style>
+    <subject>Your patient {!Match_Record__c.Patient_Last__Name__c}’s genomic alteration indicates potential clinical trial match</subject>
+    <textOnly>Dear Dr. {!Match_Record__c.MD_Last_Name__c}, 
+
+The Guardant360 test you ordered to guide treatment selection for your patient {!Match_Record__c.Patient_Last__Name__c} reported {!Match_Record__c.Qualifying_Target_Genes__c} on {!Match_Record__c.Final_Report_Date__c}. We found that this alteration could qualify your patient for the {!Match_Record__c.Trial_Name__c} clinical trial at your institution. 
+
+The Principal Investigator for {!Match_Record__c.Trial_Name__c}, [Principal Investigator Name], and their research staff are included on this email. If you would like to learn more about this trial, please reply to [Principal Investigator Name] ([PI email]) and their team.  
+
+To view the patient’s Guardant360 report in our secure online portal, click the following link: 
+{!Match_Record__c.Portal_Link_For_MD_text__c}. 
+
+Sincerely, 
+GuardantConnect Global Access Program 
+Guardant Health, Inc.
+
+Guardant Health Match Key: {!Match_Record__c.Match_Key__c}
+
+This message is intended solely for the designated recipient(s). It may contain confidential or proprietary information and may be subject to attorney-client privilege or other confidentiality protections. If you are not a designated recipient you may not review, copy or distribute this message. If you have received this in error, please notify the sender by replying to this e-mail and delete this message. Thank you.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Approve, Reject or Recall the Approval Process --></help>
+        <label><!-- Action --></label>
+        <name>lightsideapps__Action__c</name>
+        <picklistValues>
+            <masterLabel>Approve</masterLabel>
+            <translation><!-- Approve --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recall</masterLabel>
+            <translation><!-- Recall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reject</masterLabel>
+            <translation><!-- Reject --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>lightsideapps__Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the Type of Duration to Approve by. --></help>
+        <label><!-- Approval Duration Type --></label>
+        <name>lightsideapps__Approval_Duration_Type__c</name>
+        <picklistValues>
+            <masterLabel>Business Hours</masterLabel>
+            <translation><!-- Business Hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Minutes</masterLabel>
+            <translation><!-- Business Minutes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Total Hours</masterLabel>
+            <translation><!-- Total Hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Total Minutes</masterLabel>
+            <translation><!-- Total Minutes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The minutes or hours that the Approval Automation for this object will run after. --></help>
+        <label><!-- Approval Duration --></label>
+        <name>lightsideapps__Approval_Duration__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of Business Mins before the Approval Automation should be run. Business Mins is based on the Default Organization Business Hours. --></help>
+        <label><!-- Business Minutes Before Auto Sign --></label>
+        <name>lightsideapps__BusinessMinutesBeforeAutoSign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approval Comments --></label>
+        <name>lightsideapps__Comments__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of Total Elapsed Mins before the Approval Automation should be run. --></help>
+        <label><!-- Minutes Before Auto Sign --></label>
+        <name>lightsideapps__Mins_Before_AutoSign__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Object Type of the Record that the Approval Automation will be run on. --></help>
+        <label><!-- Object --></label>
+        <name>lightsideapps__Object__c</name>
+    </fields>
+    <fields>
+        <help><!-- The User Field on the Record where that User is nominated at the Step for Approval Automation. This field is only available if a User Field has been found on the selected Object. --></help>
+        <label><!-- Sign on Behalf of Field --></label>
+        <name>lightsideapps__Sign_on_Behalf_of_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Queue nominated at the Step to Auto Approve or Reject. This field is only available if Queue&apos;s have been setup. --></help>
+        <label><!-- Sign on Behalf of Queue --></label>
+        <name>lightsideapps__Sign_on_Behalf_of_Queue_Label__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Queue nominated at the Step to Auto Approve or Reject. This field is only available if Queue&apos;s have been setup. --></help>
+        <label><!-- Sign on Behalf of Queue --></label>
+        <name>lightsideapps__Sign_on_Behalf_of_Queue__c</name>
+    </fields>
+    <fields>
+        <help><!-- The User nominated at the Step for Approval Automation --></help>
+        <label><!-- Sign on Behalf of User --></label>
+        <name>lightsideapps__Sign_on_Behalf_of_User__c</name>
+        <relationshipLabel><!-- Approval Automations --></relationshipLabel>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Business Minutes Before Auto Sign and Mins Before Auto Sign are mutually exclusive. --></errorMessage>
+        <name>lightsideapps__Minutes_Mutualls_exclusive</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Business Minutes before Autosign or Minutes before Autosign must have a value. --></errorMessage>
+        <name>lightsideapps__Minutes_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sign on Behalf of User, Sign on Behalf of Field and Sign on Behalf of Queue are mutually exclusive. --></errorMessage>
+        <name>lightsideapps__Sign_On_Behalf_of_User_Mutually_Exclusiv</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must select a User, Field or Queue to sign on behalf of. --></errorMessage>
+        <name>lightsideapps__Sign_on_Behalf_of_required</name>
+    </validationRules>
+</CustomObjectTranslation>

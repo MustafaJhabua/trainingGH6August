@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- ActiveSync --></label>
+        <name>MedProBT__ActiveSync__c</name>
+    </fields>
+    <fields>
+        <label><!-- ExternalID --></label>
+        <name>MedProBT__ExternalID__c</name>
+    </fields>
+    <fields>
+        <label><!-- MappingField --></label>
+        <name>MedProBT__MappingField__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Field --></label>
+        <name>MedProBT__Parent_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- SecondaryMatch --></label>
+        <name>MedProBT__SecondaryMatch__c</name>
+    </fields>
+    <fields>
+        <label><!-- UMR Passthrough --></label>
+        <name>MedProBT__UMR_Passthrough__c</name>
+    </fields>
+    <fields>
+        <label><!-- Update SFDC with NULL Values --></label>
+        <name>MedProBT__Update_SFDC_with_NULL_Values__c</name>
+    </fields>
+</CustomObjectTranslation>

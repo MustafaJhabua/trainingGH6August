@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>MedProBT__Column_Headers__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Column Headers</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>MedProBT__Created_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Created Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>MedProBT__Delimiter__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Delimiter</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProBT__File_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>File Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProBT__Inbound_ID__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Inbound ID</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProBT__Info_Messages__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Info Messages</label>
+        <length>700</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>MedProBT__Number_of_Batches__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Number of Batches</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProBT__Number_of_Records__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Number of Records</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProBT__Number_of_Records_per_Batch__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Number of Records per Batch</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProBT__Status__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Received</fullName>
+                    <default>false</default>
+                    <label>Received</label>
+                </value>
+                <value>
+                    <fullName>Not Processed</fullName>
+                    <default>false</default>
+                    <label>Not Processed</label>
+                </value>
+                <value>
+                    <fullName>Processed Successfully</fullName>
+                    <default>false</default>
+                    <label>Processed Successfully</label>
+                </value>
+                <value>
+                    <fullName>Processed with Errors</fullName>
+                    <default>false</default>
+                    <label>Processed with Errors</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>MedProBT__UMR_Count__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>UMR Count</label>
+        <summarizedField>MedProBT__Batch_Result__c.MedProBT__UMR_Count__c</summarizedField>
+        <summaryForeignKey>MedProBT__Batch_Result__c.MedProBT__File_Result__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <label>MedPro File Result</label>
+    <listViews>
+        <fullName>MedProBT__All</fullName>
+        <columns>NAME</columns>
+        <columns>MedProBT__Created_Date__c</columns>
+        <columns>MedProBT__Delimiter__c</columns>
+        <columns>MedProBT__File_Type__c</columns>
+        <columns>MedProBT__Inbound_ID__c</columns>
+        <columns>MedProBT__Number_of_Batches__c</columns>
+        <columns>MedProBT__Number_of_Records__c</columns>
+        <columns>MedProBT__Number_of_Records_per_Batch__c</columns>
+        <columns>MedProBT__Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>FR-{0000000}</displayFormat>
+        <label>File Results Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>MedPro File Results</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>MedProBT__Created_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>MedProBT__Delimiter__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>MedProBT__File_Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>MedProBT__Inbound_ID__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>MedProBT__Number_of_Batches__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>MedProBT__Number_of_Records__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>MedProBT__Number_of_Records_per_Batch__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>MedProBT__Status__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>MedProBT__Created_Date__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>MedProBT__Delimiter__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>MedProBT__File_Type__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>MedProBT__Inbound_ID__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>MedProBT__Number_of_Batches__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>MedProBT__Number_of_Records__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>MedProBT__Number_of_Records_per_Batch__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>MedProBT__Status__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>MedProBT__Created_Date__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>MedProBT__Delimiter__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>MedProBT__File_Type__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>MedProBT__Inbound_ID__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>MedProBT__Number_of_Batches__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>MedProBT__Number_of_Records__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>MedProBT__Number_of_Records_per_Batch__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>MedProBT__Status__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>MedProBT__Created_Date__c</searchFilterFields>
+        <searchFilterFields>MedProBT__Delimiter__c</searchFilterFields>
+        <searchFilterFields>MedProBT__File_Type__c</searchFilterFields>
+        <searchFilterFields>MedProBT__Inbound_ID__c</searchFilterFields>
+        <searchFilterFields>MedProBT__Number_of_Batches__c</searchFilterFields>
+        <searchFilterFields>MedProBT__Number_of_Records__c</searchFilterFields>
+        <searchFilterFields>MedProBT__Number_of_Records_per_Batch__c</searchFilterFields>
+        <searchFilterFields>MedProBT__Status__c</searchFilterFields>
+        <searchResultsAdditionalFields>MedProBT__Created_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>MedProBT__Delimiter__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>MedProBT__File_Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>MedProBT__Inbound_ID__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>MedProBT__Number_of_Batches__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>MedProBT__Number_of_Records__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>MedProBT__Number_of_Records_per_Batch__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>MedProBT__Status__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>MedProBT__Re_Process_File</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Re-Process File</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/19.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/19.0/apex.js&quot;)} 
+
+var answer = confirm(&quot;Re-processing a file may overwrite newer data with older data from the file.  Click OK to proceed with an update or click Cancel to prevent any update.&quot;); 
+if (answer){ 
+var response = sforce.apex.execute(&quot;MedProBT.MED_ButtonMethods&quot;, &quot;rerunWholeFile&quot;, {fileResultID:&quot;{!MedProBT__File_Result__c.Id}&quot;}); 
+alert(response);
+} 
+else{ 
+alert(&quot;No Processing has begun.&quot;); 
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>MedProBT__Re_Process_Incomplete_Batches</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Re-Process Incomplete Batches</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/19.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/19.0/apex.js&quot;)} 
+
+var answer = confirm(&quot;Any batches that were not 100% successful will be re-processed.  If records were successfully processed in a batch, they will be processed again.  Re-processing may overwrite newer data with older data from the file. Click OK to proceed with an update or click Cancel to prevent any update.&quot;); 
+if (answer){ 
+var response = sforce.apex.execute(&quot;MedProBT.MED_ButtonMethods&quot;, &quot;rerunPartialFile&quot;, {fileResultID:&quot;{!MedProBT__File_Result__c.Id}&quot;}); 
+alert(response);
+} 
+else{ 
+alert(&quot;No Processing has begun.&quot;); 
+}</url>
+    </webLinks>
+</CustomObject>

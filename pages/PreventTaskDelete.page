@@ -1,0 +1,16 @@
+<apex:page standardController="Task"
+    action="{!IF ($Profile.Name =='Force Platform-BioPharma' || $Profile.Name =='GHI Medical Affairs - BioPharma',
+        NULL, 
+        URLFOR(
+        $Action.Task.Delete, 
+        Task.Id,
+        [retURL="/a1H"],  
+        TRUE))}"> 
+        
+        <apex:pageMessage severity="ERROR" 
+        strength="3" 
+        title="Task Delete" 
+        summary="You are not allowed to Delete Task records. Sorry.">
+    </apex:pageMessage>
+
+</apex:page>

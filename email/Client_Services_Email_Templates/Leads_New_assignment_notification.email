@@ -1,0 +1,18 @@
+Hello {!Lead.OwnerFirstName},
+
+The following lead has been assigned to you. Please click on the link to access the lead directly: {!Lead.Link} 
+
+
+Contact Type: {!Lead.Inquiry_Type__c} 
+
+Lead Name: {!Lead.Name} 
+
+Location: {!Lead.State} 
+
+Company: {!Lead.Company} 
+
+Lead Phone: {!Lead.Phone} 
+
+Lead Email: {!Lead.Email} 
+
+Notes: {!Lead.Description}

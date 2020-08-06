@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>7/17/20 changed sender to Adriana. 2/20 Created by AF for Auto IOEs for On-Label and Clinical Trial matches</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>1D3_Automated IOE On Label and Clinical Trial (Do Not Use for Manual IOE)</name>
+    <style>none</style>
+    <subject>Your patient {!Guardant_360_Sample__c.MR_Patient_Initials__c}&apos;s genomic alteration indicates potential eligibility for targeted therapy clinical trials and a recently FDA approved targeted therapy</subject>
+    <textOnly>Dear Dr. {!Contact.LastName},
+
+The Guardant360 test you ordered to identify circulating tumor biomarkers for your patient {!Guardant_360_Sample__c.MR_Patient_Initials__c} reported an NTRK1 fusion on {!Guardant_360_Sample__c.Final_Report_Date__c}. We found that this uncommon alteration could qualify your patient for a curated list of clinical trials and recently FDA approved therapy.
+
+If you would like to receive more information, please reply to this email.
+
+To view your Guardant360 report in our secure online portal, click here: {!Guardant_360_Sample__c.Portal_Link_for_MD__c}.
+
+Sincerely,  
+
+Adriana Olar, MD  
+Clinical Trial Advisor  
+Guardant Health, Inc.  
+On behalf of the Clinical Trial Advisors program
+
+This message is intended solely for the designated recipient(s). It may contain confidential or proprietary information and may be subject to attorney-client privilege or other confidentiality protections. If you are not a designated recipient you may not review, copy or distribute this message. If you have received this in error, please notify the sender by replying to this e-mail and delete this message. Thank you.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

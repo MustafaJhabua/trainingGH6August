@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>This email is sent to ordering physicians who spoke with a CTA  and would like additional information.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>BAY101_Response_TreatmentInfo_014_v2</name>
+    <style>none</style>
+    <subject>Re:</subject>
+    <textOnly>Dear Dr. {!Match_Record__c.MD_Last_Name__c},  
+
+It was great speaking with you regarding your patient {!Match_Record__c.Patient_Initials__c} ({!Match_Record__c.Patient_Age__c} yo {!Match_Record__c.Patient_Gender__c} with {!Match_Record__c.Cancer_Type__c}) who was found to have an NTRK1 fusion. To view your patient&apos;s report, click here: {!Match_Record__c.Portal_Link_For_MD_text__c}. Further to our discussion about your patient’s Guardant360 report, you expressed interest in exploring treatment options based on the NTRK1 fusion detected.  
+
+As we discussed, Larotrectinib has been approved by the FDA for the treatment of adult and pediatric patients with solid tumors that have a neurotrophic receptor tyrosine kinase (NTRK) gene fusion without a known acquired resistance mutation, who are metastatic, or where surgical resection is likely to result in severe morbidity and have no satisfactory alternative treatments or that have progressed following treatment. More information can be found at http://www.vitrakvi.com or by calling 1-844-634-TRAK.
+
+Please let us know if we can be helpful in any way or if you would like us to directly connect you with a Bayer sales consultant, otherwise we’ll plan to follow-up in a few weeks.  
+Sincerely, 
+{!User.Name}, {!User.Degree__c} 
+{!User.Title} 
+Guardant Health  
+Guardant Health Match Key: {!Match_Record__c.Match_Key__c}   
+
+Guardant Health partners with the clinical trial sponsor to conduct patient referral activities.  
+
+This message is intended solely for the designated recipient(s). It may contain confidential or proprietary information and may be subject to attorney-client privilege or other confidentiality protections. If you are not a designated recipient you may not review, copy or distribute this message. If you have received this in error, please notify the sender by replying to this e-mail and deleting this message. Thank you. Ref: {!Match_Record__c.Id}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

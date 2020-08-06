@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Territory2Rule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <booleanFilter>1 AND ((2 and 7) OR 3 OR 4 OR 5 OR 6)</booleanFilter>
+    <name>Tampa</name>
+    <objectType>Account</objectType>
+    <ruleItems>
+        <field>Account.Account_Type__c</field>
+        <operation>equals</operation>
+        <value>Clinical Account US</value>
+    </ruleItems>
+    <ruleItems>
+        <field>Account.BillingPostalCode</field>
+        <operation>startsWith</operation>
+        <value>324,325,335,336,337,338,344,346</value>
+    </ruleItems>
+    <ruleItems>
+        <field>Account.BillingPostalCode</field>
+        <operation>equals</operation>
+        <value>32008,32013,32066,32158,32159,32162,32163</value>
+    </ruleItems>
+    <ruleItems>
+        <field>Account.BillingPostalCode</field>
+        <operation>equals</operation>
+        <value>32618,32619,32621,32625,32626,32628,32639,32644,32648,32668,32669,32680,32683,32692,32693,32696,34219,34240,34251</value>
+    </ruleItems>
+    <ruleItems>
+        <field>Account.BillingPostalCode</field>
+        <operation>equals</operation>
+        <value>34714,34731,34736,34748,34749,34753,34762,34785</value>
+    </ruleItems>
+    <ruleItems>
+        <field>Account.BillingPostalCode</field>
+        <operation>equals</operation>
+        <value>32301,32302,32303,32304,32305,32306,32307,32308,32309,32310,32311,32312,32313,32314,32315,32316,32317,32318,32320,32321,32322,32323,32324,32326,32327,32328,32329,32330,32332,32333,32334,32335,32336,32337,32343,32344,32345,32346,32347,32348,32351,32352,32353,32355,32356,32358,32359,32360,32361,32362,32395,32399</value>
+    </ruleItems>
+    <ruleItems>
+        <field>Account.BillingPostalCode</field>
+        <operation>notEqual</operation>
+        <value>34420,34421,34470,34472,34473,34475,34476,34479,34480,34482,34483,34484,34488,34489,34491,34492</value>
+    </ruleItems>
+</Territory2Rule>

@@ -1,0 +1,13 @@
+<apex:page standardController="Contact" extensions="ContactExtensionController">
+    <script type="text/javascript" src="https://sandboxwidgets.veevanetwork.com/veeva-network-manifest.js"></script>
+    <script type="text/javascript" src="https://sandboxwidgets.veevanetwork.com/veeva-network-profile-widget-loader.js"></script>
+    
+    <veeva-network-profile-widget
+                                  widget-name="{!records[0].MasterLabel}"
+                                  auth-domain="{!records[0].auth_domain__c}"
+                                  widget-id="{!records[0].widget_id__c}"
+                                  username="{!records[0].username__c}"
+                                  password="{!records[0].password__c}"
+                                  identifier="{!contactVeevaID}">
+    </veeva-network-profile-widget> 
+</apex:page>

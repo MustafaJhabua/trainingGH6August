@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>This email is sent to ordering physicians with a matched patient who spoke with a CTA or responded to the IOE or Last Ditch email requesting additional information.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>TAK788_Response_TrialInformation_064</name>
+    <style>none</style>
+    <subject>Re:</subject>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

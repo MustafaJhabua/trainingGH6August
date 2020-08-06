@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Supplies Order Line</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Supplies Order Lines</value>
+    </caseValues>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Supplies Order Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivered To TheraPak --></label>
+        <name>Delivered_To_TheraPak__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item # --></label>
+        <name>Item_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Push To TheraPak --></label>
+        <name>Push_To_TheraPak__c</name>
+    </fields>
+    <fields>
+        <label><!-- Qty --></label>
+        <name>Qty__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request No --></label>
+        <name>Request_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requested Ship Date --></label>
+        <name>Requested_Ship_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Seconds Since Push Request --></label>
+        <name>Seconds_Since_Push_Request__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Address 1 --></label>
+        <name>Ship_To_Address_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Address 2 --></label>
+        <name>Ship_To_Address_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To City --></label>
+        <name>Ship_To_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Company --></label>
+        <name>Ship_To_Company__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Contact --></label>
+        <name>Ship_To_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Country --></label>
+        <name>Ship_To_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Phone --></label>
+        <name>Ship_To_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Postal Code --></label>
+        <name>Ship_To_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To State/Province --></label>
+        <name>Ship_To_State_Province__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Method --></label>
+        <name>Shipping_Method__c</name>
+    </fields>
+    <fields>
+        <label><!-- TheraPak Status --></label>
+        <name>TheraPak_Status__c</name>
+        <picklistValues>
+            <masterLabel>Delivered</masterLabel>
+            <translation><!-- Delivered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Unique Site Identifier --></label>
+        <name>Unique_Site_Identifier__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

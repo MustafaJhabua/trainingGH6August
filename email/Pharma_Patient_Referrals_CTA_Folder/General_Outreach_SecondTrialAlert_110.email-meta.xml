@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This email is sent when an IOE has already been sent to an MD about the same alteration</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>General_Outreach_SecondTrialAlert_110</name>
+    <style>none</style>
+    <subject>Your patient {!Match_Record__c.Patient_Initials__c}’s genomic alteration indicates potential clinical trial match</subject>
+    <textOnly>Dear Dr. {!Match_Record__c.MD_Last_Name__c}, 
+
+We have previously reached out to you about the Guardant360 test you ordered to identify circulating tumor biomarkers for your patient {!Match_Record__c.Patient_Initials__c} reported {!Match_Record__c.Qualifying_Target_Genes__c} on {!Match_Record__c.Final_Report_Date__c}. We found that this rare alteration could qualify your patient for additional clinical trials. 
+
+If you would like to receive more information, please reply to this email.
+
+To view your report in our secure online portal, click the following link: 
+{!Match_Record__c.Portal_Link_For_MD_text__c}.
+
+Sincerely, 
+Katrina Kesterson, MD 
+Clinical Trial Advisor
+Guardant Health, Inc.
+On behalf of the Clinical Trial Advisors program
+
+This message is intended solely for the designated recipient(s). It may contain confidential or proprietary information and may be subject to attorney-client privilege or other confidentiality protections. If you are not a designated recipient you may not review, copy or distribute this message. If you have received this in error, please notify the sender by replying to this email and delete this message. Thank you.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

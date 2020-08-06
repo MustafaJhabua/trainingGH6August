@@ -1,0 +1,47 @@
+<apex:page standardController="lightsideapps__User_Delegation__c" extensions="lightsideapps.userDelegationExtension" tabstyle="lightsideapps__User_Delegation__c">
+    <apex:sectionHeader Title="User Delegation Edit" subtitle="{!if(lightsideapps__User_Delegation__c.Id==null,'New User Delegation',lightsideapps__User_Delegation__c.Name)}"/>
+    <apex:pageMessages />
+    
+    <apex:form >
+        <apex:pageBlock Title="User Delegation Edit" mode="edit">
+            
+            <apex:pageBlockButtons >
+                <apex:commandbutton action="{!save}" value="Save"/>
+                <apex:commandbutton action="{!cancel}" value="Cancel"/>
+            </apex:pageBlockButtons>
+            
+            <apex:pageblocksection columns="2" title="Delegation Information" id="wholePage">
+                <apex:inputField value="{!lightsideapps__User_Delegation__c.lightsideapps__Approver__c}" required="true" />
+                <apex:inputField value="{!lightsideapps__User_Delegation__c.lightsideapps__Delegate__c}"/>
+                
+                <apex:pageblocksectionitem >
+                    <apex:outputLabel value="Object" for="objectlisting"/>
+                    <apex:actionRegion > 
+                        <apex:outputPanel layout="block" styleClass="requiredInput">
+                            <apex:outputPanel layout="block" styleClass="requiredBlock"/>
+                            <apex:SelectList value="{!lightsideapps__User_Delegation__c.lightsideapps__Object__c}" size="1" id="objectlisting" required="true">
+                                <apex:selectOptions value="{!ObjectList}"></apex:selectOptions>
+                                <apex:actionSupport event="onchange" />
+                            </apex:SelectList>
+                        </apex:outputPanel>
+                    </apex:actionRegion>
+                </apex:pageblocksectionitem>
+                <apex:inputField value="{!lightsideapps__User_Delegation__c.lightsideapps__Sharing_Rule__c}" required="true" />
+                
+                <apex:pageblocksectionitem >
+                    <apex:outputLabel for="specificPeriod" >Specific Period</apex:outputLabel>
+                    <apex:actionRegion > 
+                        <apex:inputCheckbox value="{!lightsideapps__User_Delegation__c.lightsideapps__Specific_Period__c}" id="specificPeriod">
+                            <apex:actionSupport event="onclick"  action="{!ClearDates}" rerender="wholePage" />
+                        </apex:inputCheckbox>
+                    </apex:actionRegion>
+                </apex:pageblocksectionitem>
+                
+                <apex:pageblocksectionitem />
+                <apex:inputField value="{!lightsideapps__User_Delegation__c.lightsideapps__Start_Date__c}" rendered="{!lightsideapps__User_Delegation__c.lightsideapps__Specific_Period__c}" />
+                <apex:inputField value="{!lightsideapps__User_Delegation__c.lightsideapps__End_Date__c}" rendered="{!lightsideapps__User_Delegation__c.lightsideapps__Specific_Period__c}"/>
+                
+            </apex:pageblocksection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessType>Shared</accessType>
+    <name>Client Services Email Templates</name>
+    <publicFolderAccess>ReadWrite</publicFolderAccess>
+    <sharedTo>
+        <roleAndSubordinates>Client_Services_Associate</roleAndSubordinates>
+        <roleAndSubordinates>Manager_Client_Services</roleAndSubordinates>
+        <roleAndSubordinates>System_Administrator</roleAndSubordinates>
+    </sharedTo>
+</EmailFolder>

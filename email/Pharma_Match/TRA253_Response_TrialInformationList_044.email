@@ -1,0 +1,23 @@
+Thank you, Dr. {!Match_Record__c.MD_Last_Name__c},
+
+[Option 1: Response to IOE] Per your request, I have provided information regarding TRC253, the only currently known trial recruiting AR F877L prostate cancer patients. One of our Clinical Trial Advisor physicians will contact you via phone next week to further discuss this trial as a treatment option for XX. [Option 1]
+
+[Option 2: Follow-up after phone conversation] It was great speaking with you regarding your patientx {!Match_Record__c.Patient_Initials__c} ({!Match_Record__c.Patient_Age__c} yo {!Match_Record__c.Patient_Gender__c} with {!Match_Record__c.Cancer_Type_Lower_Case__c}) who was found to have an AR F877L mutation. To view your patient's Guardant360 report, click here: {!Match_Record__c.Portal_Link_For_MD_text__c}. Further to our discussion about your patient’s Guardant360 report, you expressed an interest in exploring treatment options based on the AR F877L mutation detected. [Option 2]
+
+Since AR F877L mutations are uncommon, we have partnered with Tracon Pharmaceutical and formed a business and financial relationship to help identify patients and to alert treating physicians about their treatment and trial options for patients like {!Match_Record__c.Patient_Initials__c}. Your patient may be eligible for <strong>[X NUMBER]</strong> of additional clinical trials as indicated on the Guardant360 report, including:<ul>
+<li> Phase 1/2A Study of TRC253, an Androgen Receptor Antagonist, in Metastatic Castration-resistant Prostate Cancer Patients, NCT02987829</li></ul>
+
+
+<u>TRA-253: Tracon Pharmaceutical</u>
+Tracon’s trial involves a drug called TRC253 that targets the AR receptor and may be effective in metastatic castration resistant prostate cancer patients with AR F877L mutations. 
+
+The closest 253PC101 study site is {!Match_Record__c.Closest_Trial_Site__c} in {!Match_Record__c.Closest_Trial_Site_City__c}, {!Match_Record__c.Closest_Trial_Site_State__c}; additional study sites are also available. Travel reimbursement is available for eligible patients to reduce out-of-pocket expenses. Details of this trial are in the attached PDF and can be found at https://clinicaltrials.gov/ct2/show/NCT02987829.
+
+<strong>Would you like me to connect you with {PI Full Name}, a nearby PI of the TRC-253 study, via email so they may answer additional questions regarding eligibility, inclusion/criteria, etc. for the TRC-253 study? </strong>
+Sincerely, 
+{!User.Name}, {!User.Degree__c} 
+{!User.Title} 
+Guardant Health 
+Guardant Health Match Key: {!Match_Record__c.Match_Key__c} 
+Guardant Health partners with the clinical trial sponsor to conduct patient referral activities.
+This message is intended solely for the designated recipient(s). It may contain confidential or proprietary information and may be subject to attorney-client privilege or other confidentiality protections. If you are not a designated recipient you may not review, copy or distribute this message. If you have received this in error, please reply to this email and delete this message. Thank you. Ref: {!Match_Record__c.Id}

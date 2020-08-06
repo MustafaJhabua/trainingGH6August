@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Alerts shipping contact of Tracking Number for Supplies Case</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>GH_Logo_Small</letterhead>
+    <name>Case: Tracking Number</name>
+    <style>freeForm</style>
+    <subject>Your Guardant Health Supplies have been shipped</subject>
+    <textOnly>Hello,
+
+
+This is to notify you that your supplies have been shipped for {!Case.Account}.
+
+
+
+Tracking #: {!Case.Tracking_Number__c}
+
+
+
+Protocol # (if applicable): {!Account.Protocol__c}
+
+
+
+Please feel free to reach out to us if you have any questions or concerns.
+
+
+
+Best Regards,
+
+Guardant Health Client Services
+
+(855) 698-8887 Opt 1</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

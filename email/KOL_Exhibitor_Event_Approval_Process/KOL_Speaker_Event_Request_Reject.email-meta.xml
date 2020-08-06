@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>KOL Speaker Event || Request Denied</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>KOL Speaker Event Request Reject</name>
+    <style>none</style>
+    <subject>KOL Speaker Event || Denied</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

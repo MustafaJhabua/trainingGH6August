@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>6/13/19: Composed in Lightning for HTML Tracking. 1/17/19 changed sender to Katrina 7/31/18 Removed Match Key7/30 Added &quot;Qualifying Target Genes&quot; merge field which is now supported by Portal 7.1 -AF. Subject line Version A (Your patients&apos; genomic...). To be sent to ordering physicians who have multiple patients with matches.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>1A2 Initial Outreach - Multiple Patients V2-LTG</name>
+    <relatedEntityType>Match_Record__c</relatedEntityType>
+    <style>none</style>
+    <subject>Your patients’ genomic alterations indicate potential clinical trial match</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

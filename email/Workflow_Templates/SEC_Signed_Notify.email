@@ -1,0 +1,8 @@
+Hello,
+
+Please note that a Sales Enterprise Contact is now active for {!Account.Name}. 
+
+Click here for more info: https://guardanthealth.my.salesforce.com/{!Account.Id}
+
+Thank you, 
+Sales Operations

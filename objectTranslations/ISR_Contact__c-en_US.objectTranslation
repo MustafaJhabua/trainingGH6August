@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>ISR Contact</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>ISR Contacts</value>
+    </caseValues>
+    <fields>
+        <help><!-- When is the best time to contact this person? --></help>
+        <label><!-- Best Time To Call --></label>
+        <name>Best_Time_To_Call__c</name>
+    </fields>
+    <fields>
+        <help><!-- Best person for Client Services to contact regarding kit supplies. --></help>
+        <label><!-- Client Services POC --></label>
+        <name>Client_Services_POC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Draws the Blood --></label>
+        <name>Draws_the_Blood__c</name>
+    </fields>
+    <fields>
+        <label><!-- Educates Patients on Testing --></label>
+        <name>Educates_Patients_on_Testing__c</name>
+    </fields>
+    <fields>
+        <help><!-- Email for this user --></help>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fills out the TRF --></label>
+        <name>Fills_out_the_TRF__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Name --></label>
+        <name>First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Full Name --></label>
+        <name>Full_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is this person someone who controls whether you can speak directly to the target MD? --></help>
+        <label><!-- Gatekeeper? --></label>
+        <name>Gatekeeper__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identifies Patients for Genomic Testing and/or Prepares Charts --></help>
+        <label><!-- Identifies Patients --></label>
+        <name>Identifies_Patients_for_Genomic_Testing__c</name>
+    </fields>
+    <fields>
+        <label><!-- MD Preference --></label>
+        <name>MD_Preference__c</name>
+        <relationshipLabel><!-- MD Preferences --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- May Answer Patient Billing Questions --></label>
+        <name>May_Answer_Patient_Billing_Questions__c</name>
+    </fields>
+    <fields>
+        <help><!-- Call History for this person --></help>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- What is their role in the office? --></help>
+        <label><!-- Title --></label>
+        <name>Office_Role__c</name>
+        <picklistValues>
+            <masterLabel>Genomics Navigator</masterLabel>
+            <translation><!-- Genomics Navigator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Assistant</masterLabel>
+            <translation><!-- Medical Assistant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nurse</masterLabel>
+            <translation><!-- Nurse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nurse Practitioner</masterLabel>
+            <translation><!-- Nurse Practitioner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Office Admin</masterLabel>
+            <translation><!-- Office Admin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Physicians Assistant</masterLabel>
+            <translation><!-- Physicians Assistant --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Direct line to this user --></help>
+        <label><!-- Phone --></label>
+        <name>Phone__c</name>
+    </fields>
+    <fields>
+        <help><!-- Main contact related to this person. --></help>
+        <label><!-- Related Contact --></label>
+        <name>Related_Contact__c</name>
+        <relationshipLabel><!-- Office Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sends the Kits --></label>
+        <name>Sends_the_Kits__c</name>
+    </fields>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

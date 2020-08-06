@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Config</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Configs</value>
+    </caseValues>
+    <fields>
+        <label><!-- Debug --></label>
+        <name>Debug__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable Logging --></label>
+        <name>Enable_Logging__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable Validation Rules --></label>
+        <name>Enable_Validation_Rules__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,6 @@
+This is a notification that {!Contact.LastModifiedBy} has modified the address for the qualified contact {!Contact.Full_Name__c}. You may wish to review the changes by clicking the link below. 
+
+Link to contact: https://guardanthealth.my.salesforce.com/{!Contact.Id}
+
+Regards, 
+Sales Operations

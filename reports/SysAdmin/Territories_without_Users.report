@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Territory2Model.Territory2s$Name</field>
+    </columns>
+    <columns>
+        <field>Territory2Model.Territory2s.UserTerritory2Associations$Name</field>
+    </columns>
+    <columns>
+        <field>Territory2Model.Territory2s.UserTerritory2Associations*User$Territory__c</field>
+    </columns>
+    <columns>
+        <field>Territory2Model.Territory2s.UserTerritory2Associations$RoleInTerritory2</field>
+    </columns>
+    <description>New territories and their users. &apos;Label&apos; is Territory. &apos;Territory&apos; column is from the User table.</description>
+    <filter>
+        <criteriaItems>
+            <column>Territory2Model$Name</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Mid-2018 US Sales Realignment</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Territory2Model.Territory2s$ParentTerritory2</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>2018 Territories and Users</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Territories_without_assigned_users__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Territory2Model$ActivatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

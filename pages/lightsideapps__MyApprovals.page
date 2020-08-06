@@ -1,0 +1,323 @@
+<apex:page controller="lightsideapps.MyApprovalsController" lightningStylesheets="true" >
+    <apex:sectionHeader title="Approval Requests" subtitle="Items to Approve"/>
+    <apex:includeScript value="{!$Resource.lightsideapps__jquery_1_11_3}"/>
+    <style>
+        .bluelink {color:#015ba7 !important; text-decoration:none !important;}
+        .bluelink:hover {text-decoration:underline !important;}
+        .divider {color:#999999;}
+    </style>
+    <apex:form > 
+        <!--
+        <span style="font-weight:bold;margin-left:10px;">Filter&nbsp;&nbsp;</span>
+        <apex:selectList value="{!ObjectFilter}" multiselect="false" size="1" >
+            <apex:selectOptions value="{!ObjectFilterOptions}"/>
+            <apex:actionSupport event="onchange" rerender="ApproverTable,DelegateTable" action="{!null}" status="status"/>
+        </apex:selectList>
+        <br/><br/>
+		-->
+        <apex:pageBlock mode="maindetail" title="My Approvals" >
+            <apex:pageBlockSection columns="1" collapsible="false" id="ApprovalList" >
+                <apex:pageBlockTable value="{!MyApprovalsList}" var="Approval" style="margin-bottom:0px;" id="ApproverTable" >
+                    <apex:column style="Width:160px;" headerValue="Action" >
+                        <apex:outputLink value="/{!Approval.ApprovalId}/e?et=REASSIGN&retURL=/apex/MyApprovals" styleClass="bluelink">Reassign</apex:outputLink>
+                        <apex:outputText value=" | " styleClass="divider" />
+                        <apex:outputLink value="/p/process/ProcessInstanceWorkitemWizardStageManager?id={!Approval.ApprovalId}&retURL=/apex/MyApprovals" styleClass="bluelink">Approve / Reject</apex:outputLink>
+                    </apex:column>
+                    <apex:column headerValue="Related To">
+                        <apex:facet name="header">
+                            <apex:commandLink action="{!sortApprovalByRelatedTo}" reRender="ApprovalList">Related To
+                                <apex:outputPanel layout="none" rendered="{!ApprovalSortOrder=='ProcessInstance.TargetObject.Name ASC '}" >
+                                    <img src="/img/s.gif" alt="Sorted Ascending" class="sortAsc" title="Sorted Ascending" />
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!ApprovalSortOrder=='ProcessInstance.TargetObject.Name DESC '}" >
+                                    <img src="/img/s.gif" alt="Sorted Descending" class="sortDesc" title="Sorted Descending" />
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!AND(ApprovalSortOrder!='ProcessInstance.TargetObject.Name ASC ',ApprovalSortOrder!='ProcessInstance.TargetObject.Name DESC ')}" >
+                                    <img src="/img/s.gif" class="sortDesc" style="visibility:hidden;" />
+                                </apex:outputPanel>
+                            </apex:commandLink>
+                        </apex:facet>
+                        <apex:outputLink value="/{!Approval.RelatedToRecordId}">{!Approval.RelatedToRecordName}</apex:outputLink>
+                    </apex:column>
+                    <apex:column value="{!Approval.RelatedtoObjectName}">
+                        <apex:facet name="header">
+                            <apex:commandLink action="{!sortApprovalByType}" reRender="ApprovalList">Type
+                                <apex:outputPanel layout="none" rendered="{!ApprovalSortOrder=='ProcessInstance.ProcessDefinition.TableEnumOrId ASC '}" >
+                                    <img src="/img/s.gif" alt="Sorted Ascending" class="sortAsc" title="Sorted Ascending" />
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!ApprovalSortOrder=='ProcessInstance.ProcessDefinition.TableEnumOrId DESC '}" >
+                                    <img src="/img/s.gif" alt="Sorted Descending" class="sortDesc" title="Sorted Descending" />
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!AND(ApprovalSortOrder!='ProcessInstance.ProcessDefinition.TableEnumOrId ASC ',ApprovalSortOrder!='ProcessInstance.ProcessDefinition.TableEnumOrId DESC ')}" >
+                                    <img src="/img/s.gif" class="sortDesc" style="visibility:hidden;" />
+                                </apex:outputPanel>
+                            </apex:commandLink>
+                        </apex:facet>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">
+                            <apex:commandLink action="{!sortApprovalByMostRecentApprover}" reRender="ApprovalList">Most Recent Approver
+                                <apex:outputPanel layout="none" rendered="{!ApprovalSortOrder=='ProcessInstance.LastActor.Name ASC '}" >
+                                    <img src="/img/s.gif" alt="Sorted Ascending" class="sortAsc" title="Sorted Ascending" />
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!ApprovalSortOrder=='ProcessInstance.LastActor.Name DESC '}" >
+                                    <img src="/img/s.gif" alt="Sorted Descending" class="sortDesc" title="Sorted Descending" />
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!AND(ApprovalSortOrder!='ProcessInstance.LastActor.Name ASC ',ApprovalSortOrder!='ProcessInstance.LastActor.Name DESC ')}" >
+                                    <img src="/img/s.gif" class="sortDesc" style="visibility:hidden;" />
+                                </apex:outputPanel>
+                            </apex:commandLink>
+                        </apex:facet>
+                        <apex:outputLink value="/{!Approval.MostRecentApproverId}">{!Approval.MostRecentApproverName}</apex:outputLink>
+                    </apex:column>
+                    <apex:column value=" {!Approval.DateSubmitted}" style="width:130px;" >
+                        <apex:facet name="header">
+                            <apex:commandLink action="{!sortApprovalByDateSubmitted}" reRender="ApprovalList">Date Submitted
+                                <apex:outputPanel layout="none" rendered="{!ApprovalSortOrder=='ProcessInstance.CreatedDate ASC '}" >
+                                    <img src="/img/s.gif" alt="Sorted Ascending" class="sortAsc" title="Sorted Ascending" />
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!ApprovalSortOrder=='ProcessInstance.CreatedDate DESC '}" >
+                                    <img src="/img/s.gif" alt="Sorted Descending" class="sortDesc" title="Sorted Descending" />
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!AND(ApprovalSortOrder!='ProcessInstance.CreatedDate ASC ',ApprovalSortOrder!='ProcessInstance.CreatedDate DESC ')}" >
+                                    <img src="/img/s.gif" class="sortDesc" style="visibility:hidden;" />
+                                </apex:outputPanel>
+                            </apex:commandLink>
+                        </apex:facet>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">
+                            <apex:commandLink action="{!sortApprovalBySubmitter}" reRender="ApprovalList">Submitter
+                                <apex:outputPanel layout="none" rendered="{!ApprovalSortOrder=='ProcessInstance.SubmittedBy.Name ASC '}" >
+                                    <img src="/img/s.gif" alt="Sorted Ascending" class="sortAsc" title="Sorted Ascending" />
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!ApprovalSortOrder=='ProcessInstance.SubmittedBy.Name DESC '}" >
+                                    <img src="/img/s.gif" alt="Sorted Descending" class="sortDesc" title="Sorted Descending" />
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!AND(ApprovalSortOrder!='ProcessInstance.SubmittedBy.Name ASC ',ApprovalSortOrder!='ProcessInstance.SubmittedBy.Name DESC ')}" >
+                                    <img src="/img/s.gif" class="sortDesc" style="visibility:hidden;" />
+                                </apex:outputPanel>
+                            </apex:commandLink>
+                        </apex:facet>
+                        <apex:outputLink value="/{!Approval.SubmitterId}">{!Approval.SubmitterName}</apex:outputLink>
+                    </apex:column>
+                    <apex:column value="{!Approval.ApprovalProcessName}" >
+                        <apex:facet name="header">
+                            <apex:commandLink action="{!sortApprovalByProcessName}" reRender="ApprovalList">Process Name
+                                <apex:outputPanel layout="none" rendered="{!ApprovalSortOrder=='ProcessInstance.ProcessDefinition.Name ASC '}" >
+                                    <img src="/img/s.gif" alt="Sorted Ascending" class="sortAsc" title="Sorted Ascending" />
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!ApprovalSortOrder=='ProcessInstance.ProcessDefinition.Name DESC '}" >
+                                    <img src="/img/s.gif" alt="Sorted Descending" class="sortDesc" title="Sorted Descending" />
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!AND(ApprovalSortOrder!='ProcessInstance.ProcessDefinition.Name ASC ',ApprovalSortOrder!='ProcessInstance.ProcessDefinition.Name DESC ')}" >
+                                    <img src="/img/s.gif" class="sortDesc" style="visibility:hidden;" />
+                                </apex:outputPanel>
+                            </apex:commandLink>
+                        </apex:facet>
+                    </apex:column>
+                 <!--   <apex:column value="{!Approval.ApprovalProcessDescription}" >
+                        <apex:facet name="header">
+                            <apex:commandLink action="{!sortApprovalByDescription}" reRender="ApprovalList">Description
+                                <apex:outputPanel layout="none" rendered="{!ApprovalSortOrder=='ProcessInstance.ProcessDefinition.Description ASC '}" >
+                                    <img src="/img/s.gif" alt="Sorted Ascending" class="sortAsc" title="Sorted Ascending" />
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!ApprovalSortOrder=='ProcessInstance.ProcessDefinition.Description DESC '}" >
+                                    <img src="/img/s.gif" alt="Sorted Descending" class="sortDesc" title="Sorted Descending" />
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!AND(ApprovalSortOrder!='ProcessInstance.ProcessDefinition.Description ASC ',ApprovalSortOrder!='ProcessInstance.ProcessDefinition.Description DESC ')}" >
+                                    <img src="/img/s.gif" class="sortDesc" style="visibility:hidden;" />
+                                </apex:outputPanel>
+                            </apex:commandLink>
+                        </apex:facet>
+                    </apex:column>  -->
+                    <apex:column value=" {!Approval.DateAtCurrentApprover}" style="width:130px;" >
+                        <apex:facet name="header">
+                            <apex:commandLink action="{!sortApprovalByWithApproverSince}" reRender="ApprovalList">With Approver Since
+                                <apex:outputPanel layout="none" rendered="{!ApprovalSortOrder=='CreatedDate ASC '}" >
+                                    <img src="/img/s.gif" alt="Sorted Ascending" class="sortAsc" title="Sorted Ascending" />
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!ApprovalSortOrder=='CreatedDate DESC '}" >
+                                    <img src="/img/s.gif" alt="Sorted Descending" class="sortDesc" title="Sorted Descending" />
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!AND(ApprovalSortOrder!='CreatedDate ASC ',ApprovalSortOrder!='CreatedDate DESC ')}" >
+                                    <img src="/img/s.gif" class="sortDesc" style="visibility:hidden;" />
+                                </apex:outputPanel>
+                            </apex:commandLink>
+                        </apex:facet>
+                    </apex:column>
+                </apex:pageBlockTable>
+                <apex:outputPanel rendered="{!MyApprovalsList.size==0}" >
+                	<div style="padding:4px;margin:0px;border:1px solid #e0e3e5; font-size:8.5pt;">No records to display.</div>
+           	 	</apex:outputPanel>
+            </apex:pageBlockSection> 
+        </apex:pageBlock>
+        
+        <apex:pageBlock mode="maindetail" title="My Delegated Approvals" id="DelegateList" >
+            <apex:pageBlockSection columns="1" rendered="{!AND(StandardLightsideSettings.lightsideapps__Delegate_Approver_Message__c != null,StandardLightsideSettings.lightsideapps__Delegate_Approver_Message__c != '')}">
+                <span >{!StandardLightsideSettings.lightsideapps__Delegate_Approver_Message__c}</span>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection columns="1" collapsible="false" >
+                <apex:pageBlockTable value="{!MyDelegateList}" var="Delegate" id="DelegateTable">
+                    <apex:column style="Width:160px;" headerValue="Action" >
+                        <apex:outputLink value="/{!Delegate.ApprovalId}/e?et=REASSIGN&retURL=/apex/MyApprovals" styleClass="bluelink">Reassign</apex:outputLink>
+                        <apex:outputText value=" | " styleClass="divider" />
+                        <apex:outputLink value="/p/process/ProcessInstanceWorkitemWizardStageManager?id={!Delegate.ApprovalId}&retURL=/apex/MyApprovals" styleClass="bluelink">Approve / Reject</apex:outputLink>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">
+                            <apex:commandLink action="{!sortDelegateByApprover}" reRender="DelegateList">Current Approver
+                                <apex:outputPanel layout="none" rendered="{!DelegateSortOrder=='Actor.Name ASC '}" >
+                                    <img src="/img/s.gif" alt="Sorted Ascending" class="sortAsc" title="Sorted Ascending" />
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!DelegateSortOrder=='Actor.Name DESC '}" >
+                                    <img src="/img/s.gif" alt="Sorted Descending" class="sortDesc" title="Sorted Descending" />
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!AND(DelegateSortOrder!='Actor.Name ASC ',DelegateSortOrder!='Actor.Name DESC ')}" >
+                                    <img src="/img/s.gif" class="sortDesc" style="visibility:hidden;" />
+                                </apex:outputPanel>
+                            </apex:commandLink>
+                        </apex:facet>
+                        <apex:outputLink value="/{!Delegate.ApproverId}">{!Delegate.ApproverName}</apex:outputLink>
+                    </apex:column>
+                    <apex:column headerValue="Related To">
+                        <apex:facet name="header">
+                            <apex:commandLink action="{!sortDelegateByRelatedTo}" reRender="DelegateList">Related To
+                                <apex:outputPanel layout="none" rendered="{!DelegateSortOrder=='ProcessInstance.TargetObject.Name ASC '}" >
+                                    <img src="/img/s.gif" alt="Sorted Ascending" class="sortAsc" title="Sorted Ascending" />
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!DelegateSortOrder=='ProcessInstance.TargetObject.Name DESC '}" >
+                                    <img src="/img/s.gif" alt="Sorted Descending" class="sortDesc" title="Sorted Descending" />
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!AND(DelegateSortOrder!='ProcessInstance.TargetObject.Name ASC ',DelegateSortOrder!='ProcessInstance.TargetObject.Name DESC ')}" >
+                                    <img src="/img/s.gif" class="sortDesc" style="visibility:hidden;" />
+                                </apex:outputPanel>
+                            </apex:commandLink>
+                        </apex:facet>
+                        <apex:outputLink value="/{!Delegate.RelatedToRecordId}">{!Delegate.RelatedToRecordName}</apex:outputLink>
+                    </apex:column>
+                    <apex:column value="{!Delegate.RelatedtoObjectName}">
+                        <apex:facet name="header">
+                            <apex:commandLink action="{!sortDelegateByType}" reRender="DelegateList">Type
+                                <apex:outputPanel layout="none" rendered="{!DelegateSortOrder=='ProcessInstance.ProcessDefinition.TableEnumOrId ASC '}" >
+                                    <img src="/img/s.gif" alt="Sorted Ascending" class="sortAsc" title="Sorted Ascending" />
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!DelegateSortOrder=='ProcessInstance.ProcessDefinition.TableEnumOrId DESC '}" >
+                                    <img src="/img/s.gif" alt="Sorted Descending" class="sortDesc" title="Sorted Descending" />
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!AND(DelegateSortOrder!='ProcessInstance.ProcessDefinition.TableEnumOrId ASC ',DelegateSortOrder!='ProcessInstance.ProcessDefinition.TableEnumOrId DESC ')}" >
+                                    <img src="/img/s.gif" class="sortDesc" style="visibility:hidden;" />
+                                </apex:outputPanel>
+                            </apex:commandLink>
+                        </apex:facet>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">
+                            <apex:commandLink action="{!sortDelegateByMostRecentApprover}" reRender="DelegateList">Most Recent Approver
+                                <apex:outputPanel layout="none" rendered="{!DelegateSortOrder=='ProcessInstance.LastActor.Name ASC '}" >
+                                    <img src="/img/s.gif" alt="Sorted Ascending" class="sortAsc" title="Sorted Ascending" />
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!DelegateSortOrder=='ProcessInstance.LastActor.Name DESC '}" >
+                                    <img src="/img/s.gif" alt="Sorted Descending" class="sortDesc" title="Sorted Descending" />
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!AND(DelegateSortOrder!='ProcessInstance.LastActor.Name ASC ',DelegateSortOrder!='ProcessInstance.LastActor.Name DESC ')}" >
+                                    <img src="/img/s.gif" class="sortDesc" style="visibility:hidden;" />
+                                </apex:outputPanel>
+                            </apex:commandLink>
+                        </apex:facet>
+                        <apex:outputLink value="/{!Delegate.MostRecentApproverId}">{!Delegate.MostRecentApproverName}</apex:outputLink>
+                    </apex:column>
+                    <apex:column value=" {!Delegate.DateSubmitted}" style="width:130px;" >
+                        <apex:facet name="header">
+                            <apex:commandLink action="{!sortDelegateByDateSubmitted}" reRender="DelegateList">Date Submitted
+                                <apex:outputPanel layout="none" rendered="{!DelegateSortOrder=='ProcessInstance.CreatedDate ASC '}" >
+                                    <img src="/img/s.gif" alt="Sorted Ascending" class="sortAsc" title="Sorted Ascending" />
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!DelegateSortOrder=='ProcessInstance.CreatedDate DESC '}" >
+                                    <img src="/img/s.gif" alt="Sorted Descending" class="sortDesc" title="Sorted Descending" />
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!AND(DelegateSortOrder!='ProcessInstance.CreatedDate ASC ',DelegateSortOrder!='ProcessInstance.CreatedDate DESC ')}" >
+                                    <img src="/img/s.gif" class="sortDesc" style="visibility:hidden;" />
+                                </apex:outputPanel>
+                            </apex:commandLink>
+                        </apex:facet>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">
+                            <apex:commandLink action="{!sortDelegateBySubmitter}" reRender="DelegateList">Submitter
+                                <apex:outputPanel layout="none" rendered="{!DelegateSortOrder=='ProcessInstance.SubmittedBy.Name ASC '}" >
+                                    <img src="/img/s.gif" alt="Sorted Ascending" class="sortAsc" title="Sorted Ascending" />
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!DelegateSortOrder=='ProcessInstance.SubmittedBy.Name DESC '}" >
+                                    <img src="/img/s.gif" alt="Sorted Descending" class="sortDesc" title="Sorted Descending" />
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!AND(DelegateSortOrder!='ProcessInstance.SubmittedBy.Name ASC ',DelegateSortOrder!='ProcessInstance.SubmittedBy.Name DESC ')}" >
+                                    <img src="/img/s.gif" class="sortDesc" style="visibility:hidden;" />
+                                </apex:outputPanel>
+                            </apex:commandLink>
+                        </apex:facet>
+                        <apex:outputLink value="/{!Delegate.SubmitterId}">{!Delegate.SubmitterName}</apex:outputLink>
+                    </apex:column>
+                    <apex:column value="{!Delegate.ApprovalProcessName}" >
+                        <apex:facet name="header">
+                            <apex:commandLink action="{!sortDelegateByProcessName}" reRender="DelegateList">Process Name
+                                <apex:outputPanel layout="none" rendered="{!DelegateSortOrder=='ProcessInstance.ProcessDefinition.Name ASC '}" >
+                                    <img src="/img/s.gif" alt="Sorted Ascending" class="sortAsc" title="Sorted Ascending" />
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!DelegateSortOrder=='ProcessInstance.ProcessDefinition.Name DESC '}" >
+                                    <img src="/img/s.gif" alt="Sorted Descending" class="sortDesc" title="Sorted Descending" />
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!AND(DelegateSortOrder!='ProcessInstance.ProcessDefinition.Name ASC ',DelegateSortOrder!='ProcessInstance.ProcessDefinition.Name DESC ')}" >
+                                    <img src="/img/s.gif" class="sortDesc" style="visibility:hidden;" />
+                                </apex:outputPanel>
+                            </apex:commandLink>
+                        </apex:facet>
+                    </apex:column>
+               <!--     <apex:column value="{!Delegate.ApprovalProcessDescription}" >
+                        <apex:facet name="header">
+                            <apex:commandLink action="{!sortDelegateByDescription}" reRender="DelegateList">Description
+                                <apex:outputPanel layout="none" rendered="{!DelegateSortOrder=='ProcessInstance.ProcessDefinition.Description ASC '}" >
+                                    <img src="/img/s.gif" alt="Sorted Ascending" class="sortAsc" title="Sorted Ascending" />
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!DelegateSortOrder=='ProcessInstance.ProcessDefinition.Description DESC '}" >
+                                    <img src="/img/s.gif" alt="Sorted Descending" class="sortDesc" title="Sorted Descending" />
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!AND(DelegateSortOrder!='ProcessInstance.ProcessDefinition.Description ASC ',DelegateSortOrder!='ProcessInstance.ProcessDefinition.Description DESC ')}" >
+                                    <img src="/img/s.gif" class="sortDesc" style="visibility:hidden;" />
+                                </apex:outputPanel>
+                            </apex:commandLink>
+                        </apex:facet>
+                    </apex:column>  -->
+                    <apex:column value=" {!Delegate.DateAtCurrentApprover}" style="width:130px;" >
+                        <apex:facet name="header">
+                            <apex:commandLink action="{!sortDelegateByWithApproverSince}" reRender="DelegateList">With Approver Since
+                                <apex:outputPanel layout="none" rendered="{!DelegateSortOrder=='CreatedDate ASC '}" >
+                                    <img src="/img/s.gif" alt="Sorted Ascending" class="sortAsc" title="Sorted Ascending" />
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!DelegateSortOrder=='CreatedDate DESC '}" >
+                                    <img src="/img/s.gif" alt="Sorted Descending" class="sortDesc" title="Sorted Descending" />
+                                </apex:outputPanel>
+                                <apex:outputPanel layout="none" rendered="{!AND(DelegateSortOrder!='CreatedDate ASC ',DelegateSortOrder!='CreatedDate DESC ')}" >
+                                    <img src="/img/s.gif" class="sortDesc" style="visibility:hidden;" />
+                                </apex:outputPanel>
+                            </apex:commandLink>
+                        </apex:facet>
+                    </apex:column>
+                </apex:pageBlockTable>
+                <apex:outputPanel rendered="{!MyDelegateList.size==0}" >
+                	<div style="padding:4px;margin:0px;border:1px solid #e0e3e5; font-size:8.5pt;">No records to display.</div>
+           	 	</apex:outputPanel>
+            </apex:pageBlockSection> 
+        </apex:pageBlock>
+        
+    </apex:form>
+    
+    <script>
+    // Select/Unselect All for Emails. Changes disabled prop of email type selection
+    $LSA(".SelectAllEmailCheckbox").change(function(){
+        $LSA(".QuickSelectCheckbox").prop('checked', $LSA(this).prop("checked"));
+        $LSA(".QuickSelectType").prop('disabled',!$LSA(this).prop("checked"));
+    });
+    </script>
+</apex:page>

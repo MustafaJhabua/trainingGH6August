@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Primary Rec Fax Successful</name>
+    <style>none</style>
+    <subject>RS Fax successfully sent to Primary Recipient {!efaxapp__Sent_Fax__c.efaxapp__Fax_Number__c}, {!efaxapp__Sent_Fax__c.Fax_Recipient__c}, {!efaxapp__Sent_Fax__c.G360__c}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

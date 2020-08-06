@@ -1,0 +1,27 @@
+<p>Hello!</p>
+
+<p>Dr. {!Match_Record__c.Ordering_Physician_Name__c} would like to connect regarding {!Match_Record__c.Match_Key__c}.</p>
+
+<p><strong>Contact Information:<br /></strong>
+{!Match_Record__c.Ordering_Physician_Name__c}<br />
+{!Match_Record__c.Ordering_Practice_Name__c}<br />
+{!Match_Record__c.Practice_Address__c}<br />
+{!Match_Record__c.Practice_City__c}, {!Match_Record__c.Practice_State__c {!Match_Record__c.Practice_Zip__c}<br />
+{!Match_Record__c.Physician_phone__c}<br />
+{!Match_Record__c.Physician_Email__c}</p>
+
+<p><strong>Match Information<br /></strong>
+Match Key: {!Match_Record__c.Match_Key__c}<br />
+Cancer Type: {!Match_Record__c.Cancer_Type__c}<br />
+Qualifying Target Alteration: {!Match_Record__c.Qualifying_Target_Alterations__c} <br /></p>
+
+<p><strong>Match Information<br /></strong>
+Closest Trial Site: {!Match_Record__c.Closest_Trial_Site__c}<br/>
+Closest Trial Site Type: {!Match_Record__c.00N34000005oRJ0}
+</p>
+
+<p><strong>Notes from Guardant: <br /></strong>
+{!Match_Record__c.Guardant_Notes__c}</p>
+<p>Sincerely,<br />
+The Guardant Health Patient Referrals Team<br />
+https://portal.guardanthealth.com</p>

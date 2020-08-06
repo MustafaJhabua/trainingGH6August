@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>V1</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Lung: EGFR T790M</name>
+    <style>none</style>
+    <subject>Important clinical information regarding your recent Guardant360 report</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

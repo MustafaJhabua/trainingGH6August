@@ -1,0 +1,39 @@
+Hello, 
+This message is to inform you that the event below has been approved and is ready for processing. 
+
+Form Name: {!Form__c.Name} ||  {!Form__c.Location_Name__c}
+
+{!Form__c.Link} 
+
+
+Below are the details of the event: 
+
+Requestor:  {!Form__c.Account_Executive__c}
+Sales Manager: {!Form__c.Sales_Manager__c}
+Primary Exhibitor: {!Form__c.Primary_Exhibitor_Name__c} 
+Additional Exhibitor: {!Form__c.Name_of_Additional_Exhibitor__c} 
+
+Type: {!Form__c.Type_of_Event__c} 
+Date: {!Form__c.Event_Date__c} 
+Time: {!Form__c.Event_Time__c} 
+Exhibit Fees: {!Form__c.Exhibit_Fee__c} 
+# of Attendees: {!Form__c.Number_of_Attendees__c} 
+
+Location: {!Form__c.Location_Name__c} 
+Exhibit Materials: {!Form__c.Exhibit_Materials__c}
+Event City: {!Form__c.Event_Location__c}
+Ship Materials To:  {!Form__c.Materials_Shipping_Address__c} 
+Payment Recipient/Address: {!Form__c.Payment_Recipient_Address__c}
+Phone: {!Form__c.Phone_Number__c}
+
+Additional Comments: {!Form__c.Additional_Comments__c}
+
+
+
+
+Please refer back to the event form {!Form__c.Link} in salesforce to review further. 
+
+
+Thank you, 
+
+{!Form__c.OwnerFullName}

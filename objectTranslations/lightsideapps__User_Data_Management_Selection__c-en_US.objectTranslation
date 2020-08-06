@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Which User will be replacing the selected User field on the User Data Management Template --></help>
+        <label><!-- Change to User --></label>
+        <name>lightsideapps__Change_to_User__c</name>
+        <relationshipLabel><!-- User Data Management Selections --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Stores the results of the UDMS after being run --></help>
+        <label><!-- Result --></label>
+        <name>lightsideapps__Result__c</name>
+    </fields>
+    <fields>
+        <help><!-- Leave blank. Will be populated when the scheduled Job is started. --></help>
+        <label><!-- Scheduled Job Id --></label>
+        <name>lightsideapps__Scheduled_Job_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Data Management Template --></label>
+        <lookupFilter>
+            <errorMessage><!-- Only Active User Data Management Templates can be selected --></errorMessage>
+            <informationalMessage><!-- Only Active Templates are Available to Select --></informationalMessage>
+        </lookupFilter>
+        <name>lightsideapps__User_Data_Management_Template__c</name>
+        <relationshipLabel><!-- User Data Management Selections --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- User Management Record --></label>
+        <name>lightsideapps__User_Management_Record__c</name>
+        <relationshipLabel><!-- User Data Management Selections --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,9 @@
+Hello 
+This message is to inform you that {!NPI_Records__c.First_Name__c} {!NPI_Records__c.Last_Name__c}  had exceeded last year's Stark Limit, however that expense total has been reversed. 
+
+Last year's expense total exceeded $407, but is now: {!NPI_Records__c.Previous_Year_s_Expense_Total__c}
+
+According to the latest expense, this person is located in: {!NPI_Records__c.NPI_City__c}, {!NPI_Records__c.NPI_State__c}
+
+Regards,
+Ruben Smith

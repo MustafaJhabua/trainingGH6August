@@ -1,0 +1,3 @@
+<apex:page >
+  <apex:image value="{!$Resource.GH_US_Sales_Territories}" alt="US Sales Territories as of April 2019" title="US Sales Territories as of April 2019" />
+</apex:page>

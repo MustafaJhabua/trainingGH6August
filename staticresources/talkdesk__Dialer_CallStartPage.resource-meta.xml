@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StaticResource xmlns="http://soap.sforce.com/2006/04/metadata">
+    <cacheControl>Private</cacheControl>
+    <contentType>text/html</contentType>
+    <description>This page acts enables Salesforce to issue calls through to Talkdesk Callbar from within custom
+        components</description>
+</StaticResource>

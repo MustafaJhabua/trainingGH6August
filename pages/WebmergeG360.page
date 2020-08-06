@@ -1,0 +1,4 @@
+<apex:page standardController="Guardant_360_Sample__c" docType="html-5.0" title="Webmerge Sample: {!Guardant_360_Sample__c.Name}"  >
+    <webm:WebmergeWizard record="{!Guardant_360_Sample__c}" />
+
+</apex:page>

@@ -1,0 +1,13 @@
+Hello Sales Leader, 
+
+This email is to inform you that 2 weeks have passed since an open opportunity was missed in your region/district. The original close date was {!Opportunity.CloseDate}. 
+
+Please contact the Account Owner to review this opportunity and have them update the opportunity accordingly. 
+The person who created the opportunity has been notified several times that this opportunity is out of date. 
+
+
+Opportunity Name: {!Opportunity.Name} 
+Opportunity Owner: {!Opportunity.OwnerFullName} 
+Click here to view Opportunity: {!Opportunity.Id} 
+
+Thank you for your attention in this matter.

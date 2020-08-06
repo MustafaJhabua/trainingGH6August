@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <description>Assigns contact record ID</description>
+        <name>Assign_Contact_ID</name>
+        <label>Assign Contact ID</label>
+        <locationX>114</locationX>
+        <locationY>206</locationY>
+        <assignmentItems>
+            <assignToReference>Get_Contact_Record.Id</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Get_Contact_Record</targetReference>
+        </connector>
+    </assignments>
+    <description>Initializes contact record for ISR</description>
+    <interviewLabel>ISR Initialization {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>ISR Initialization</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <description>Creates child ISR Target record linked to the main contact record</description>
+        <name>Create_ISR_Target_Record</name>
+        <label>Create ISR Target Record</label>
+        <locationX>360</locationX>
+        <locationY>57</locationY>
+        <assignRecordIdToReference>txtISRTargetID</assignRecordIdToReference>
+        <connector>
+            <targetReference>Update_Contact_with_ISR_Target_ID</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>ISR_Contact__c</field>
+            <value>
+                <elementReference>Get_Contact_Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>Get_Contact_Record.Full_Name__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>ISR_Target__c</object>
+    </recordCreates>
+    <recordLookups>
+        <description>Gets initial contact record</description>
+        <name>Get_Contact_Record</name>
+        <label>Get Contact Record</label>
+        <locationX>201</locationX>
+        <locationY>57</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Create_ISR_Target_Record</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Contact</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Updates Contact record with ISR Target ID</description>
+        <name>Update_Contact_with_ISR_Target_ID</name>
+        <label>Update Contact with ISR Target ID</label>
+        <locationX>522</locationX>
+        <locationY>58</locationY>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Contact_Record.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>ISR_Page__c</field>
+            <value>
+                <elementReference>txtISRTargetID</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Contact</object>
+    </recordUpdates>
+    <runInMode>DefaultMode</runInMode>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Assign_Contact_ID</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>txtISRTargetID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

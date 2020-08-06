@@ -1,0 +1,2858 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ComposeGmail</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ComposeGmail</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ComposeGmail</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>LogCall</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>LogCall</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>LogCall</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>MailMerge</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>MailMerge</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>MailMerge</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SendEmail</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SendEmail</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SendEmail</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewAll</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewAll</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewAll</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>AE_Email__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>AE&apos;s Email address. Used only in Med Affairs tasks to ensure the AE receives an email when the task is created.</inlineHelpText>
+        <label>AE Email</label>
+        <required>false</required>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Accession_Number__c</fullName>
+        <description>Plain text field used to capture tasks associated to Guardant Samples.</description>
+        <externalId>false</externalId>
+        <label>Accession Number</label>
+        <length>10</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Activity_Count__c</fullName>
+        <externalId>false</externalId>
+        <formula>1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Activity Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Activity_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( BEGINS( Subject , &apos;Email&apos;), &apos;Email&apos;, Subject)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Activity Type</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Activity_is_Due__c</fullName>
+        <description>Needed to add this formula to get process to work</description>
+        <externalId>false</externalId>
+        <formula>DATEVALUE(DATETIMEVALUE(ActivityDate))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Activity is Due</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Before_First_Account_Sample__c</fullName>
+        <externalId>false</externalId>
+        <formula>ActivityDate &lt; Account.First_Sample_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Before First Account Sample</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CTA_Contact_Attempted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>ENT-3915</description>
+        <externalId>false</externalId>
+        <label>CTA Contact Attempted?</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Call_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Call Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Selling (Target MD)</fullName>
+                    <default>false</default>
+                    <label>Selling (Target MD)</label>
+                </value>
+                <value>
+                    <fullName>Account Management</fullName>
+                    <default>false</default>
+                    <label>Account Management</label>
+                </value>
+                <value>
+                    <fullName>Selling (Non-Target MD)</fullName>
+                    <default>false</default>
+                    <label>Selling (Non-Target MD)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Call_managed_without_followup__c</fullName>
+        <description>For Project Hermes</description>
+        <externalId>false</externalId>
+        <label>Was call managed w/o follow-up?</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Was_this_a_direct_call_transfer__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Yes</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>No</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Cancer_Class__c</fullName>
+        <description>Hidden field for Webmerge</description>
+        <externalId>false</externalId>
+        <label>Cancer Class</label>
+        <length>20</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Clinician_expresses__c</fullName>
+        <externalId>false</externalId>
+        <label>Clinician expresses:</label>
+        <required>false</required>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Gratitude</fullName>
+                    <default>false</default>
+                    <label>Gratitude</label>
+                </value>
+                <value>
+                    <fullName>Frustration</fullName>
+                    <default>false</default>
+                    <label>Frustration</label>
+                </value>
+                <value>
+                    <fullName>Need for CS Support</fullName>
+                    <default>false</default>
+                    <label>Need for CS Support</label>
+                </value>
+                <value>
+                    <fullName>Tx info- plans on G360 driven tx</fullName>
+                    <default>false</default>
+                    <label>Tx info - plans on G360 driven tx</label>
+                </value>
+                <value>
+                    <fullName>Tx info- plans on non-G360 driven tx</fullName>
+                    <default>false</default>
+                    <label>Tx info - plans on non-G360 driven tx</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Confusion</fullName>
+                    <default>false</default>
+                    <label>Confusion</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Communication_Type_Details_Other__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>If creating a task for Med Affairs, use this field to note the associated record (account or contact.) This allows Med Affairs to cross-reference without the risk of PHI being exposed.</inlineHelpText>
+        <label>Record for Med Affairs</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Communication_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Communication Type Details</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New custom email</fullName>
+                    <default>false</default>
+                    <label>New custom email</label>
+                </value>
+                <value>
+                    <fullName>Physician replied to custom email</fullName>
+                    <default>false</default>
+                    <label>Physician replied to custom email</label>
+                </value>
+                <value>
+                    <fullName>Physician replied to automated email</fullName>
+                    <default>false</default>
+                    <label>Physician replied to automated email</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>New personal email</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>New personal email</label>
+                </value>
+                <value>
+                    <fullName>Physician replying to automated email</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Physician replying to automated email</label>
+                </value>
+                <value>
+                    <fullName>Physician replying to personal email</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Physician replying to personal email</label>
+                </value>
+                <value>
+                    <fullName>Replying to physician&apos;s email</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Replying to physician&apos;s email</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Concierge_activity__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Field formerly was labeled &quot;Concierge F/U Activity?&apos; Changed 7/18/18 -AB</description>
+        <externalId>false</externalId>
+        <label>Provider Replied to 1st Result Contact</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Contact_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Contact Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Outbound Call</fullName>
+                    <default>false</default>
+                    <label>Outbound Call</label>
+                </value>
+                <value>
+                    <fullName>Inbound Call</fullName>
+                    <default>false</default>
+                    <label>Inbound Call</label>
+                </value>
+                <value>
+                    <fullName>Email</fullName>
+                    <default>false</default>
+                    <label>Email</label>
+                </value>
+                <value>
+                    <fullName>Fax</fullName>
+                    <default>false</default>
+                    <label>Fax</label>
+                </value>
+                <value>
+                    <fullName>Call</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Call</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Create_a_follow_up_task_for_Med_Affairs__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this box to create a follow-up task for Medical Affairs. PLEASE EXPLAIN YOUR REQUEST IN THE COMMENTS FIELD.</inlineHelpText>
+        <label>Create a follow-up task for Med Affairs?</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Created_by_Role__c</fullName>
+        <externalId>false</externalId>
+        <formula>CreatedBy.UserRole.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Created by Role</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Custom_Signature__c</fullName>
+        <externalId>false</externalId>
+        <label>Custom Signature</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Generic Signature</fullName>
+                    <default>true</default>
+                    <label>Generic Signature</label>
+                </value>
+                <value>
+                    <fullName>Tim Schmidt, MD, PhD</fullName>
+                    <default>false</default>
+                    <label>Tim Schmidt, MD, PhD</label>
+                </value>
+                <value>
+                    <fullName>Jason Zhu, MD</fullName>
+                    <default>false</default>
+                    <label>Jason Zhu, MD</label>
+                </value>
+                <value>
+                    <fullName>Maya Kotas, MD, PhD</fullName>
+                    <default>false</default>
+                    <label>Maya Kotas, MD, PhD</label>
+                </value>
+                <value>
+                    <fullName>Shawn Becker, MD</fullName>
+                    <default>false</default>
+                    <label>Shawn Becker, MD</label>
+                </value>
+                <value>
+                    <fullName>Rick Lanman, MD</fullName>
+                    <default>false</default>
+                    <label>Rick Lanman, MD</label>
+                </value>
+                <value>
+                    <fullName>Sam Sun, MD</fullName>
+                    <default>false</default>
+                    <label>Sam Sun, MD</label>
+                </value>
+                <value>
+                    <fullName>None</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>None</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Date_Enrolled__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Enrolled</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Date_Ineligible__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Ineligible</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Date_Referred__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Referred</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Date_of_Failed_Screening__c</fullName>
+        <externalId>false</externalId>
+        <label>Date of Failed Screening</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Details_of_Provider_Interaction__c</fullName>
+        <externalId>false</externalId>
+        <label>Details of Provider Interaction</label>
+        <required>false</required>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Requests assistance finding a lab for confirmatory testing</fullName>
+                    <default>false</default>
+                    <label>Requests assistance finding a lab for confirmatory testing</label>
+                </value>
+                <value>
+                    <fullName>Requests assistance finding a GC</fullName>
+                    <default>false</default>
+                    <label>Requests assistance finding a GC</label>
+                </value>
+                <value>
+                    <fullName>Asks for assistance explaining result to patient</fullName>
+                    <default>false</default>
+                    <label>Asks for assistance explaining result to patient</label>
+                </value>
+                <value>
+                    <fullName>Questions need to confirm finding</fullName>
+                    <default>false</default>
+                    <label>Questions need to confirm finding</label>
+                </value>
+                <value>
+                    <fullName>Asks about somatic vs germline differentiation</fullName>
+                    <default>false</default>
+                    <label>Asks about somatic vs germline differentiation</label>
+                </value>
+                <value>
+                    <fullName>Requests assistance with interpretation beyond secondary finding</fullName>
+                    <default>false</default>
+                    <label>Requests assistance with interpretation beyond secondary finding</label>
+                </value>
+                <value>
+                    <fullName>Questions need for future germline testing as secondary findings are now being reported</fullName>
+                    <default>false</default>
+                    <label>Questions need for future germline testing as secondary findings are now being reported</label>
+                </value>
+                <value>
+                    <fullName>Asks which other genes are included in germline reporting</fullName>
+                    <default>false</default>
+                    <label>Asks which other genes are included in germline reporting</label>
+                </value>
+                <value>
+                    <fullName>Other (please describe in Comments field)</fullName>
+                    <default>false</default>
+                    <label>Other (please describe in Comments field)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>9</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Did_TRF_Influence_Outreach__c</fullName>
+        <externalId>false</externalId>
+        <label>Did Data Review Influence Outreach?</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes-no outreach made</fullName>
+                    <default>false</default>
+                    <label>Yes-no outreach made</label>
+                </value>
+                <value>
+                    <fullName>Yes-custom email/contact</fullName>
+                    <default>false</default>
+                    <label>Yes-custom email/contact</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Did_provider_reply_respond__c</fullName>
+        <externalId>false</externalId>
+        <label>Did provider reply/respond?</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Enrollment_Status_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Enrollment Status Notes</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Enrollment_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Referral Status</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>false</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>Guardant Outreach</fullName>
+                    <default>false</default>
+                    <label>Guardant Outreach</label>
+                </value>
+                <value>
+                    <fullName>Pharma Outreach</fullName>
+                    <default>false</default>
+                    <label>Pharma/Site Outreach</label>
+                </value>
+                <value>
+                    <fullName>Enrolled</fullName>
+                    <default>false</default>
+                    <label>Enrolled/Prescribed</label>
+                </value>
+                <value>
+                    <fullName>Closed</fullName>
+                    <default>false</default>
+                    <label>Closed</label>
+                </value>
+                <value>
+                    <fullName>Contact Attempted</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Contact Attempted</label>
+                </value>
+                <value>
+                    <fullName>Future Consideration</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Future Consideration</label>
+                </value>
+                <value>
+                    <fullName>Open</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Open</label>
+                </value>
+                <value>
+                    <fullName>Pharma Permission to Connect</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Pharma Permission to Connect</label>
+                </value>
+                <value>
+                    <fullName>Referred</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Referred</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Enrollment_Sub_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Referral Sub-Status</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Enrollment_Status__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pending Pharma</fullName>
+                    <default>false</default>
+                    <label>Pending Pharma</label>
+                </value>
+                <value>
+                    <fullName>Accepted by Pharma</fullName>
+                    <default>false</default>
+                    <label>Accepted by Pharma</label>
+                </value>
+                <value>
+                    <fullName>Emailed</fullName>
+                    <default>false</default>
+                    <label>Emailed</label>
+                </value>
+                <value>
+                    <fullName>Ready For Outreach</fullName>
+                    <default>false</default>
+                    <label>Ready For Outreach</label>
+                </value>
+                <value>
+                    <fullName>No Answer</fullName>
+                    <default>false</default>
+                    <label>No Answer</label>
+                </value>
+                <value>
+                    <fullName>Left Message</fullName>
+                    <default>false</default>
+                    <label>Left Message</label>
+                </value>
+                <value>
+                    <fullName>Future Consideration</fullName>
+                    <default>false</default>
+                    <label>Future Consideration</label>
+                </value>
+                <value>
+                    <fullName>Via Match Program</fullName>
+                    <default>false</default>
+                    <label>Via Match Program</label>
+                </value>
+                <value>
+                    <fullName>Ineligible</fullName>
+                    <default>false</default>
+                    <label>Ineligible</label>
+                </value>
+                <value>
+                    <fullName>Patient Lost to Follow Up</fullName>
+                    <default>false</default>
+                    <label>Patient Lost to Follow Up</label>
+                </value>
+                <value>
+                    <fullName>Provider Refusal</fullName>
+                    <default>false</default>
+                    <label>Provider Refusal</label>
+                </value>
+                <value>
+                    <fullName>Patient Refusal</fullName>
+                    <default>false</default>
+                    <label>Patient Refusal</label>
+                </value>
+                <value>
+                    <fullName>No Response</fullName>
+                    <default>false</default>
+                    <label>No Response</label>
+                </value>
+                <value>
+                    <fullName>Trial Change</fullName>
+                    <default>false</default>
+                    <label>Trial Change</label>
+                </value>
+                <value>
+                    <fullName>Rejected by Pharma</fullName>
+                    <default>false</default>
+                    <label>Rejected by Pharma</label>
+                </value>
+                <value>
+                    <fullName>Newer Test Results Available</fullName>
+                    <default>false</default>
+                    <label>Newer Test Results Available</label>
+                </value>
+                <value>
+                    <fullName>Exhausted Follow-Up</fullName>
+                    <default>false</default>
+                    <label>Exhausted Follow-Up</label>
+                </value>
+                <value>
+                    <fullName>New</fullName>
+                    <default>false</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>Do Not Contact</fullName>
+                    <default>false</default>
+                    <label>Do Not Contact</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Contact Attempted</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Contact Attempted</label>
+                </value>
+                <value>
+                    <fullName>Enrolled</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Enrolled</label>
+                </value>
+                <value>
+                    <fullName>Failed Screening</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Failed Screening</label>
+                </value>
+                <value>
+                    <fullName>Information Sent</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Information Sent</label>
+                </value>
+                <value>
+                    <fullName>On Treatment</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>On Treatment</label>
+                </value>
+                <value>
+                    <fullName>Pharma in Contact</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Pharma in Contact</label>
+                </value>
+                <value>
+                    <fullName>Referral Letter Sent</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Referral Letter Sent</label>
+                </value>
+                <value>
+                    <fullName>Trial</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Trial</label>
+                </value>
+                <value>
+                    <fullName>With Potential</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>With Potential</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Closed</controllingFieldValue>
+                <valueName>Ineligible</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Closed</controllingFieldValue>
+                <valueName>Patient Lost to Follow Up</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Closed</controllingFieldValue>
+                <valueName>Provider Refusal</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Closed</controllingFieldValue>
+                <valueName>Patient Refusal</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Closed</controllingFieldValue>
+                <valueName>No Response</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Closed</controllingFieldValue>
+                <valueName>Trial Change</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Closed</controllingFieldValue>
+                <valueName>Rejected by Pharma</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Closed</controllingFieldValue>
+                <valueName>Newer Test Results Available</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Closed</controllingFieldValue>
+                <valueName>Exhausted Follow-Up</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Closed</controllingFieldValue>
+                <valueName>Do Not Contact</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Closed</controllingFieldValue>
+                <controllingFieldValue>Enrolled</controllingFieldValue>
+                <valueName>Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>New</controllingFieldValue>
+                <valueName>Pending Pharma</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>New</controllingFieldValue>
+                <valueName>Accepted by Pharma</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>New</controllingFieldValue>
+                <valueName>Emailed</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>New</controllingFieldValue>
+                <valueName>Ready For Outreach</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Guardant Outreach</controllingFieldValue>
+                <valueName>No Answer</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Guardant Outreach</controllingFieldValue>
+                <valueName>Left Message</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Guardant Outreach</controllingFieldValue>
+                <valueName>Future Consideration</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pharma Outreach</controllingFieldValue>
+                <valueName>New</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pharma Outreach</controllingFieldValue>
+                <valueName>In Progress</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Enrolled</controllingFieldValue>
+                <valueName>Via Match Program</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>External_Guardant_Notes__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>(max 255 characters), text will be displayed to pharma partners</inlineHelpText>
+        <label>External Guardant Notes</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Follow_Up_Details__c</fullName>
+        <externalId>false</externalId>
+        <label>Follow-Up Details</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Follow_Up_Reminder__c</fullName>
+        <externalId>false</externalId>
+        <label>Follow-Up Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>GH_Challenge_1st_Time_Tester__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>NS:09/18/18 This checkbox is used to keep track of Promotion code(ie CH1)</description>
+        <externalId>false</externalId>
+        <label>GH Challenge 1st Time Tester</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>GH_Challenge_Stale_Tester__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>NS:09/18/18 This checkbox is used to keep track of Promotion code(ie CH1)</description>
+        <externalId>false</externalId>
+        <label>GH Challenge Stale Tester</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Gene_nomenclature_ERRB2_HER2__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Gene nomenclature (ERRB2=HER2)</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Germline_mutation_previously_known__c</fullName>
+        <externalId>false</externalId>
+        <label>Germline mutation previously known?</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Unknown</fullName>
+                    <default>false</default>
+                    <label>Unknown</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Germline_vs_Somatic__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Germline vs Somatic</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ISR_Call_Result__c</fullName>
+        <description>Used only on ISR Tasks</description>
+        <externalId>false</externalId>
+        <label>Result</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No Answer</fullName>
+                    <default>false</default>
+                    <label>No Answer</label>
+                </value>
+                <value>
+                    <fullName>Left Voicemail</fullName>
+                    <default>false</default>
+                    <label>Left Voicemail</label>
+                </value>
+                <value>
+                    <fullName>Spoke to Office Admin</fullName>
+                    <default>false</default>
+                    <label>Spoke to Office Admin</label>
+                </value>
+                <value>
+                    <fullName>Spoke to Nursing Staff</fullName>
+                    <default>false</default>
+                    <label>Spoke to Nursing Staff</label>
+                </value>
+                <value>
+                    <fullName>Spoke to Prescriber (MD/DO, NP/PA)</fullName>
+                    <default>false</default>
+                    <label>Spoke to Prescriber (MD/DO, NP/PA)</label>
+                </value>
+                <value>
+                    <fullName>Spoke to Nurse</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Spoke to Nurse</label>
+                </value>
+                <value>
+                    <fullName>Spoke to Oncologist</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Spoke to Oncologist</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Ideal_timing_of_testing__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Ideal timing of testing</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Internal_Notes_GH_Use_Only__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>(max 255 characters), text will be displayed on the match record</inlineHelpText>
+        <label>Internal Notes (GH Use Only)</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Is_there_enough_MAF_to_treat__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is there enough MAF to treat</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Last_Ditch_Email_Sent__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>ENT-3922</description>
+        <externalId>false</externalId>
+        <label>Last Ditch Email Sent?</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MA_Task_Completed_By__c</fullName>
+        <externalId>false</externalId>
+        <label>MA Task Completed By</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Email</fullName>
+                    <default>false</default>
+                    <label>Email</label>
+                </value>
+                <value>
+                    <fullName>In-Person</fullName>
+                    <default>false</default>
+                    <label>In-Person</label>
+                </value>
+                <value>
+                    <fullName>Phone</fullName>
+                    <default>false</default>
+                    <label>Phone</label>
+                </value>
+                <value>
+                    <fullName>No Contact</fullName>
+                    <default>false</default>
+                    <label>No Contact</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>MD_Email__c</fullName>
+        <description>Passed through from Ordering Physician&apos;s contact record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Don&apos;t generate email if this field is blank!</inlineHelpText>
+        <label>MD Email</label>
+        <length>80</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MD_Granted_Permission_to_Connect__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>If this box is checked, the Connected Trial Site field must be filled before the outreach activity can be saved</inlineHelpText>
+        <label>MD Granted Permission to Connect?</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MD_Replied_to_Slate_Tester_contact__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>NS:09/06/18 This is recent change to match the Stale tester report.</description>
+        <externalId>false</externalId>
+        <label>MD Replied to Stale Tester contact</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MSI_H_Status_Already_Known__c</fullName>
+        <externalId>false</externalId>
+        <label>MSI-H Status Already Known?</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Unknown</fullName>
+                    <default>false</default>
+                    <label>Unknown</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>MSL__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>MSL for the account (if any)</inlineHelpText>
+        <label>MSL</label>
+        <length>80</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>M_A_Follow_Up__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Use this field only on Mobile Layouts</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this box to create a follow-up task for Medical Affairs. PLEASE EXPLAIN YOUR REQUEST IN THE COMMENTS FIELD.</inlineHelpText>
+        <label>M/A Follow Up?</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Match_Priority__c</fullName>
+        <externalId>false</externalId>
+        <label>Match Priority</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>None</fullName>
+                    <default>false</default>
+                    <label>None</label>
+                </value>
+                <value>
+                    <fullName>Low</fullName>
+                    <default>false</default>
+                    <label>Low</label>
+                </value>
+                <value>
+                    <fullName>Medium</fullName>
+                    <default>false</default>
+                    <label>Medium</label>
+                </value>
+                <value>
+                    <fullName>High</fullName>
+                    <default>false</default>
+                    <label>High</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>MedAffairs_Comments__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter your notes for the Med Affairs Task</inlineHelpText>
+        <label>Med Affairs Comments</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Medaffairs_task__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Hidden checkbox used to track all tasks originally assigned to user Medaffairs Task</description>
+        <externalId>false</externalId>
+        <label>MedAffairs Task</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Messaging__c</fullName>
+        <externalId>false</externalId>
+        <label>Other Messaging</label>
+        <required>false</required>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Introduction to G360</fullName>
+                    <default>false</default>
+                    <label>Introduction to G360</label>
+                </value>
+                <value>
+                    <fullName>1st Line Undergenotyped</fullName>
+                    <default>false</default>
+                    <label>1st Line Undergenotyped</label>
+                </value>
+                <value>
+                    <fullName>QNS</fullName>
+                    <default>false</default>
+                    <label>1st Line QNS</label>
+                </value>
+                <value>
+                    <fullName>Progressing patient discussion</fullName>
+                    <default>false</default>
+                    <label>Progressing patient discussion</label>
+                </value>
+                <value>
+                    <fullName>QNS at Progression</fullName>
+                    <default>false</default>
+                    <label>QNS at Progression</label>
+                </value>
+                <value>
+                    <fullName>Competitive (vs Hotspot)</fullName>
+                    <default>false</default>
+                    <label>Competitive (vs Hotspot)</label>
+                </value>
+                <value>
+                    <fullName>Competitive vs NGS or CGP</fullName>
+                    <default>false</default>
+                    <label>Competitive vs NGS or CGP</label>
+                </value>
+                <value>
+                    <fullName>Tissue Paradigm (IO/Targeted/Chemo</fullName>
+                    <default>false</default>
+                    <label>Tissue Paradigm (IO/Targeted/Chemo</label>
+                </value>
+                <value>
+                    <fullName>Billing concerns</fullName>
+                    <default>false</default>
+                    <label>Billing concerns</label>
+                </value>
+                <value>
+                    <fullName>Med Affairs</fullName>
+                    <default>false</default>
+                    <label>Med Affairs</label>
+                </value>
+                <value>
+                    <fullName>Patient Results Review</fullName>
+                    <default>false</default>
+                    <label>Patient Results Review</label>
+                </value>
+                <value>
+                    <fullName>Competitive (vs Next Gen)</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Competitive (vs Next Gen)</label>
+                </value>
+                <value>
+                    <fullName>First Line Metastatic Discussion</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>First Line Metastatic Discussion</label>
+                </value>
+                <value>
+                    <fullName>Immunotherapy, time to treat use Guardant first</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Immunotherapy-time to treat use G360 1st</label>
+                </value>
+                <value>
+                    <fullName>Medical Science Discussion</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Medical Science Discussion</label>
+                </value>
+                <value>
+                    <fullName>Patient identification</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Patient identification</label>
+                </value>
+                <value>
+                    <fullName>Results discussion</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Results discussion</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Mutation_Flag__c</fullName>
+        <externalId>false</externalId>
+        <label>Mutation Flag</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>EGFR Exon 19del/L858R</fullName>
+                    <default>false</default>
+                    <label>EGFR Exon 19del/L858R</label>
+                </value>
+                <value>
+                    <fullName>EGFR T790M</fullName>
+                    <default>false</default>
+                    <label>EGFR T790M</label>
+                </value>
+                <value>
+                    <fullName>EGFR C797X</fullName>
+                    <default>false</default>
+                    <label>EGFR C797X</label>
+                </value>
+                <value>
+                    <fullName>EGFR primary resistance mutations (i.e. exon 20 insertions)</fullName>
+                    <default>false</default>
+                    <label>EGFR primary resistance mutations (i.e. exon 20 insertions)</label>
+                </value>
+                <value>
+                    <fullName>EGFR other driver</fullName>
+                    <default>false</default>
+                    <label>EGFR other driver</label>
+                </value>
+                <value>
+                    <fullName>ALK fusion</fullName>
+                    <default>false</default>
+                    <label>ALK fusion</label>
+                </value>
+                <value>
+                    <fullName>ROS1 fusion</fullName>
+                    <default>false</default>
+                    <label>ROS1 fusion</label>
+                </value>
+                <value>
+                    <fullName>BRAF V600E</fullName>
+                    <default>false</default>
+                    <label>BRAF V600E</label>
+                </value>
+                <value>
+                    <fullName>ALK SNV</fullName>
+                    <default>false</default>
+                    <label>ALK SNV</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>NewReferred__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Generate an Informational PDF?</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Not_related_to_specific_A__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>If the task is for Med Affairs and it is not related to a specific A number, check this box and enter the contact/account into the &apos;Record for Med Affairs&apos; field</inlineHelpText>
+        <label>Not related to specific A#</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Notes_about_MD__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>(max 255 characters), text will be displayed on the contact record</inlineHelpText>
+        <label>Notes About MD (GH Use Only)</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Origin_of_COntact__c</fullName>
+        <externalId>false</externalId>
+        <label>Origin of Contact</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>First test questions (not reply to auto-email)</fullName>
+                    <default>false</default>
+                    <label>First test questions (not reply to auto-email)</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Patient</fullName>
+                    <default>false</default>
+                    <label>Patient</label>
+                </value>
+                <value>
+                    <fullName>Provider reached out at the request of sales</fullName>
+                    <default>false</default>
+                    <label>Provider reached out at the request of sales</label>
+                </value>
+                <value>
+                    <fullName>Provider reached out independently</fullName>
+                    <default>false</default>
+                    <label>Provider reached out independently</label>
+                </value>
+                <value>
+                    <fullName>Provider replied to auto email from 1st time test/offer for case review</fullName>
+                    <default>false</default>
+                    <label>Provider replied to auto email from 1st time test/offer for case review</label>
+                </value>
+                <value>
+                    <fullName>Provider was contacted per medical affairs</fullName>
+                    <default>false</default>
+                    <label>Provider was contacted per medical affairs</label>
+                </value>
+                <value>
+                    <fullName>Provider was contacted per request from sales</fullName>
+                    <default>false</default>
+                    <label>Provider was contacted per request from sales</label>
+                </value>
+                <value>
+                    <fullName>Report Email Notification</fullName>
+                    <default>false</default>
+                    <label>Report Email Notification</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Other_Message_s_Delivered__c</fullName>
+        <externalId>false</externalId>
+        <label>Other Message(s) Delivered</label>
+        <required>false</required>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Problems with Tissue</fullName>
+                    <default>false</default>
+                    <label>Problems with Tissue</label>
+                </value>
+                <value>
+                    <fullName>Guardant360 Clinical Data</fullName>
+                    <default>false</default>
+                    <label>Guardant360 Clinical Data</label>
+                </value>
+                <value>
+                    <fullName>Lung</fullName>
+                    <default>false</default>
+                    <label>Lung</label>
+                </value>
+                <value>
+                    <fullName>Non-Lung</fullName>
+                    <default>false</default>
+                    <label>Non-Lung</label>
+                </value>
+                <value>
+                    <fullName>Ease-of-Use</fullName>
+                    <default>false</default>
+                    <label>Ease-of-Use</label>
+                </value>
+                <value>
+                    <fullName>Commitment - Onboarding SOP</fullName>
+                    <default>false</default>
+                    <label>Commitment - Onboarding SOP</label>
+                </value>
+                <value>
+                    <fullName>In-Service - Onboarding SOP</fullName>
+                    <default>false</default>
+                    <label>In-Service - Onboarding SOP</label>
+                </value>
+                <value>
+                    <fullName>Pull Through - Onboarding SOP</fullName>
+                    <default>false</default>
+                    <label>Pull Through - Onboarding SOP</label>
+                </value>
+                <value>
+                    <fullName>Patient Identification</fullName>
+                    <default>false</default>
+                    <label>Patient Identification</label>
+                </value>
+                <value>
+                    <fullName>Account Service - Reactive</fullName>
+                    <default>false</default>
+                    <label>Account Service - Reactive</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Outreach__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Outreach</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PHI_Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>PHI Comments</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>POD__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used in PB to indicate an activity is a replacement for a POD</description>
+        <externalId>false</externalId>
+        <label>POD</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Permission_to_Connect_with_Pharma__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Permission to Connect with Pharma?</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Previous_Test__c</fullName>
+        <externalId>false</externalId>
+        <label>Previous Test Info</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Tissue QNS</fullName>
+                    <default>false</default>
+                    <label>Tissue QNS</label>
+                </value>
+                <value>
+                    <fullName>Undergenotyped</fullName>
+                    <default>false</default>
+                    <label>Undergenotyped</label>
+                </value>
+                <value>
+                    <fullName>Unknown</fullName>
+                    <default>false</default>
+                    <label>Unknown</label>
+                </value>
+                <value>
+                    <fullName>Tissue Miss</fullName>
+                    <default>false</default>
+                    <label>Tissue Negative for mut</label>
+                </value>
+                <value>
+                    <fullName>Blood Negative for mut</fullName>
+                    <default>false</default>
+                    <label>Blood Negative for mut</label>
+                </value>
+                <value>
+                    <fullName>Blood confirmed tissue finding</fullName>
+                    <default>false</default>
+                    <label>Blood confirmed tissue finding</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Primary_Message_Delivered__c</fullName>
+        <externalId>false</externalId>
+        <label>Primary Message Delivered</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Call_Type__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Problems with Tissue</fullName>
+                    <default>false</default>
+                    <label>Problems with Tissue</label>
+                </value>
+                <value>
+                    <fullName>Guardant360 Clinical Data</fullName>
+                    <default>false</default>
+                    <label>Guardant360 Clinical Data</label>
+                </value>
+                <value>
+                    <fullName>Lung</fullName>
+                    <default>false</default>
+                    <label>Lung</label>
+                </value>
+                <value>
+                    <fullName>Non-Lung</fullName>
+                    <default>false</default>
+                    <label>Non-Lung</label>
+                </value>
+                <value>
+                    <fullName>Ease-Of-Use</fullName>
+                    <default>false</default>
+                    <label>Ease-Of-Use</label>
+                </value>
+                <value>
+                    <fullName>Commitment - Onboarding SOP</fullName>
+                    <default>false</default>
+                    <label>Commitment - Onboarding SOP</label>
+                </value>
+                <value>
+                    <fullName>In-Service - Onboarding SOP</fullName>
+                    <default>false</default>
+                    <label>In-Service - Onboarding SOP</label>
+                </value>
+                <value>
+                    <fullName>Pull Through - Onboarding SOP</fullName>
+                    <default>false</default>
+                    <label>Pull Through - Onboarding SOP</label>
+                </value>
+                <value>
+                    <fullName>Patient Identification</fullName>
+                    <default>false</default>
+                    <label>Patient Identification</label>
+                </value>
+                <value>
+                    <fullName>Account Service - Reactive</fullName>
+                    <default>false</default>
+                    <label>Account Service - Reactive</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Selling (Target MD)</controllingFieldValue>
+                <controllingFieldValue>Selling (Non-Target MD)</controllingFieldValue>
+                <valueName>Problems with Tissue</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Selling (Target MD)</controllingFieldValue>
+                <controllingFieldValue>Selling (Non-Target MD)</controllingFieldValue>
+                <valueName>Guardant360 Clinical Data</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Selling (Target MD)</controllingFieldValue>
+                <controllingFieldValue>Selling (Non-Target MD)</controllingFieldValue>
+                <valueName>Lung</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Selling (Target MD)</controllingFieldValue>
+                <controllingFieldValue>Selling (Non-Target MD)</controllingFieldValue>
+                <valueName>Non-Lung</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Selling (Target MD)</controllingFieldValue>
+                <controllingFieldValue>Selling (Non-Target MD)</controllingFieldValue>
+                <valueName>Ease-Of-Use</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Account Management</controllingFieldValue>
+                <valueName>Commitment - Onboarding SOP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Account Management</controllingFieldValue>
+                <valueName>In-Service - Onboarding SOP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Account Management</controllingFieldValue>
+                <valueName>Pull Through - Onboarding SOP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Account Management</controllingFieldValue>
+                <valueName>Patient Identification</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Account Management</controllingFieldValue>
+                <valueName>Account Service - Reactive</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Primary_Messaging__c</fullName>
+        <defaultValue>&quot;Introduction to G360&quot;</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Mandatory</inlineHelpText>
+        <label>Primary Messaging</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Introduction to G360</fullName>
+                    <default>true</default>
+                    <label>Introduction to G360</label>
+                </value>
+                <value>
+                    <fullName>1st Line Undergenotyped</fullName>
+                    <default>false</default>
+                    <label>1st Line Undergenotyped</label>
+                </value>
+                <value>
+                    <fullName>1st Line QNS</fullName>
+                    <default>false</default>
+                    <label>1st Line QNS</label>
+                </value>
+                <value>
+                    <fullName>Progressing patient discussion</fullName>
+                    <default>false</default>
+                    <label>Progressing patient discussion</label>
+                </value>
+                <value>
+                    <fullName>QNS at Progression</fullName>
+                    <default>false</default>
+                    <label>QNS at Progression</label>
+                </value>
+                <value>
+                    <fullName>Competitive (vs Hotspot)</fullName>
+                    <default>false</default>
+                    <label>Competitive (vs Hotspot)</label>
+                </value>
+                <value>
+                    <fullName>Competitive vs NGS or CGP</fullName>
+                    <default>false</default>
+                    <label>Competitive vs NGS or CGP</label>
+                </value>
+                <value>
+                    <fullName>Tissue Paradigm (IO/Targeted/Chemo)</fullName>
+                    <default>false</default>
+                    <label>Tissue Paradigm (IO/Targeted/Chemo)</label>
+                </value>
+                <value>
+                    <fullName>Billing concerns</fullName>
+                    <default>false</default>
+                    <label>Billing concerns</label>
+                </value>
+                <value>
+                    <fullName>Med Affairs</fullName>
+                    <default>false</default>
+                    <label>Med Affairs</label>
+                </value>
+                <value>
+                    <fullName>Patient Results Review</fullName>
+                    <default>false</default>
+                    <label>Patient Results Review</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Priority__c</fullName>
+        <externalId>false</externalId>
+        <label>Task Priority</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>None</fullName>
+                    <default>true</default>
+                    <label>None</label>
+                </value>
+                <value>
+                    <fullName>Low</fullName>
+                    <default>false</default>
+                    <label>Low</label>
+                </value>
+                <value>
+                    <fullName>Medium</fullName>
+                    <default>false</default>
+                    <label>Medium</label>
+                </value>
+                <value>
+                    <fullName>High</fullName>
+                    <default>false</default>
+                    <label>High</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Provider_Replied__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Provider Replied?</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Referral_Letter_Delivery_Method__c</fullName>
+        <externalId>false</externalId>
+        <label>Referral Letter Delivery Method</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Fax</fullName>
+                    <default>true</default>
+                    <label>Fax</label>
+                </value>
+                <value>
+                    <fullName>Email</fullName>
+                    <default>false</default>
+                    <label>Email</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Referred__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>When checked, a referral letter will be generated</inlineHelpText>
+        <label>Generate Referral Letter?</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Report_Feedback_Given__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Report Feedback Given?</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Rule_in_vs_rule_out__c</fullName>
+        <externalId>false</externalId>
+        <label>Rule in vs. rule out</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>When to consider looking in tumor tissue</fullName>
+                    <default>false</default>
+                    <label>When to consider looking in tumor tissue</label>
+                </value>
+                <value>
+                    <fullName>If NMD, does patient not have cancer?</fullName>
+                    <default>false</default>
+                    <label>If NMD, does patient not have cancer?</label>
+                </value>
+                <value>
+                    <fullName>Remission with + MAF = current cancer?</fullName>
+                    <default>false</default>
+                    <label>Remission with + MAF = current cancer?</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Secondary_Messaging__c</fullName>
+        <externalId>false</externalId>
+        <label>Secondary Messaging</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Introduction to G360</fullName>
+                    <default>false</default>
+                    <label>Introduction to G360</label>
+                </value>
+                <value>
+                    <fullName>1st Line Undergenotyped</fullName>
+                    <default>false</default>
+                    <label>1st Line Undergenotyped</label>
+                </value>
+                <value>
+                    <fullName>1st Line QNS</fullName>
+                    <default>false</default>
+                    <label>1st Line QNS</label>
+                </value>
+                <value>
+                    <fullName>Progressing patient discussion</fullName>
+                    <default>false</default>
+                    <label>Progressing patient discussion</label>
+                </value>
+                <value>
+                    <fullName>QNS at Progression</fullName>
+                    <default>false</default>
+                    <label>QNS at Progression</label>
+                </value>
+                <value>
+                    <fullName>Competitive (vs Hotspot)</fullName>
+                    <default>false</default>
+                    <label>Competitive (vs Hotspot)</label>
+                </value>
+                <value>
+                    <fullName>Competitive vs NGS or CGP</fullName>
+                    <default>false</default>
+                    <label>Competitive vs NGS or CGP</label>
+                </value>
+                <value>
+                    <fullName>Tissue Paradigm (IO/Targeted/Chemo)</fullName>
+                    <default>false</default>
+                    <label>Tissue Paradigm (IO/Targeted/Chemo)</label>
+                </value>
+                <value>
+                    <fullName>Billing concerns</fullName>
+                    <default>false</default>
+                    <label>Billing concerns</label>
+                </value>
+                <value>
+                    <fullName>Med Affairs</fullName>
+                    <default>false</default>
+                    <label>Med Affairs</label>
+                </value>
+                <value>
+                    <fullName>Patient Results Review</fullName>
+                    <default>false</default>
+                    <label>Patient Results Review</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Serial_Sample__c</fullName>
+        <externalId>false</externalId>
+        <label>Serial Sample?</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Spoke_to_MD__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Reached Provider?</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Sub_Status_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Sub-Status Reason</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Enrollment_Sub_Status__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>On Treatment</fullName>
+                    <default>false</default>
+                    <label>On Treatment</label>
+                </value>
+                <value>
+                    <fullName>Trial</fullName>
+                    <default>false</default>
+                    <label>On Trial</label>
+                </value>
+                <value>
+                    <fullName>Death</fullName>
+                    <default>false</default>
+                    <label>Death</label>
+                </value>
+                <value>
+                    <fullName>Too Ill/Hospice</fullName>
+                    <default>false</default>
+                    <label>Too Ill/Hospice</label>
+                </value>
+                <value>
+                    <fullName>Prior Treatment</fullName>
+                    <default>false</default>
+                    <label>Prior Treatment</label>
+                </value>
+                <value>
+                    <fullName>Failed Eligibility Criteria</fullName>
+                    <default>false</default>
+                    <label>Failed Eligibility Criteria</label>
+                </value>
+                <value>
+                    <fullName>Failed Pharma Screening</fullName>
+                    <default>false</default>
+                    <label>Failed Trial Screening</label>
+                </value>
+                <value>
+                    <fullName>Travel</fullName>
+                    <default>false</default>
+                    <label>Travel Limitations</label>
+                </value>
+                <value>
+                    <fullName>Research Objection</fullName>
+                    <default>false</default>
+                    <label>Research Objection</label>
+                </value>
+                <value>
+                    <fullName>No Longer Enrolling</fullName>
+                    <default>false</default>
+                    <label>No Longer Enrolling</label>
+                </value>
+                <value>
+                    <fullName>Match Criteria Changed</fullName>
+                    <default>false</default>
+                    <label>Match Criteria Changed</label>
+                </value>
+                <value>
+                    <fullName>MD Engaged</fullName>
+                    <default>false</default>
+                    <label>MD Engaged</label>
+                </value>
+                <value>
+                    <fullName>MD Non-Engaged</fullName>
+                    <default>false</default>
+                    <label>MD Non-Engaged</label>
+                </value>
+                <value>
+                    <fullName>No Answer</fullName>
+                    <default>false</default>
+                    <label>No Answer</label>
+                </value>
+                <value>
+                    <fullName>Left Message</fullName>
+                    <default>false</default>
+                    <label>Left Message</label>
+                </value>
+                <value>
+                    <fullName>Sent Email</fullName>
+                    <default>false</default>
+                    <label>Sent Email</label>
+                </value>
+                <value>
+                    <fullName>Future Consideration - On Treatment</fullName>
+                    <default>false</default>
+                    <label>Future Consideration - On Treatment</label>
+                </value>
+                <value>
+                    <fullName>Future Consideration - On Trial</fullName>
+                    <default>false</default>
+                    <label>Future Consideration - On Trial</label>
+                </value>
+                <value>
+                    <fullName>Future Consideration - Other</fullName>
+                    <default>false</default>
+                    <label>Future Consideration - Other</label>
+                </value>
+                <value>
+                    <fullName>Referred to Trial Site</fullName>
+                    <default>false</default>
+                    <label>Referred to Trial Site</label>
+                </value>
+                <value>
+                    <fullName>Pending Prescription</fullName>
+                    <default>false</default>
+                    <label>Pending Prescription</label>
+                </value>
+                <value>
+                    <fullName>Undergoing Screening</fullName>
+                    <default>false</default>
+                    <label>Undergoing Screening</label>
+                </value>
+                <value>
+                    <fullName>Aware of Trial</fullName>
+                    <default>false</default>
+                    <label>Aware</label>
+                </value>
+                <value>
+                    <fullName>Insurance Coverage</fullName>
+                    <default>false</default>
+                    <label>Insurance Coverage</label>
+                </value>
+                <value>
+                    <fullName>Do Not Contact</fullName>
+                    <default>false</default>
+                    <label>Do Not Contact</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Hospice/Comfort Care</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Hospice/Comfort Care</label>
+                </value>
+                <value>
+                    <fullName>Per Pharma</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Per Pharma</label>
+                </value>
+                <value>
+                    <fullName>Second Opinion Only</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Second Opinion Only</label>
+                </value>
+                <value>
+                    <fullName>Transferred Care</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Transferred Care</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Trial Change</controllingFieldValue>
+                <valueName>No Longer Enrolling</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Trial Change</controllingFieldValue>
+                <valueName>Match Criteria Changed</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>In Progress</controllingFieldValue>
+                <valueName>No Answer</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>In Progress</controllingFieldValue>
+                <valueName>Left Message</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>In Progress</controllingFieldValue>
+                <valueName>Sent Email</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>In Progress</controllingFieldValue>
+                <valueName>Future Consideration - On Treatment</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>In Progress</controllingFieldValue>
+                <valueName>Future Consideration - On Trial</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>In Progress</controllingFieldValue>
+                <valueName>Future Consideration - Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>In Progress</controllingFieldValue>
+                <valueName>Referred to Trial Site</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>In Progress</controllingFieldValue>
+                <valueName>Pending Prescription</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>In Progress</controllingFieldValue>
+                <valueName>Undergoing Screening</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ready For Outreach</controllingFieldValue>
+                <valueName>MD Engaged</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ready For Outreach</controllingFieldValue>
+                <valueName>MD Non-Engaged</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ineligible</controllingFieldValue>
+                <valueName>Death</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ineligible</controllingFieldValue>
+                <valueName>Too Ill/Hospice</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ineligible</controllingFieldValue>
+                <valueName>Prior Treatment</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ineligible</controllingFieldValue>
+                <valueName>Failed Pharma Screening</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ineligible</controllingFieldValue>
+                <controllingFieldValue>Provider Refusal</controllingFieldValue>
+                <controllingFieldValue>Patient Refusal</controllingFieldValue>
+                <controllingFieldValue>Future Consideration</controllingFieldValue>
+                <valueName>Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Provider Refusal</controllingFieldValue>
+                <valueName>Aware of Trial</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Provider Refusal</controllingFieldValue>
+                <valueName>Do Not Contact</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Patient Refusal</controllingFieldValue>
+                <valueName>Travel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Patient Refusal</controllingFieldValue>
+                <valueName>Research Objection</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Patient Refusal</controllingFieldValue>
+                <valueName>Insurance Coverage</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Future Consideration</controllingFieldValue>
+                <valueName>On Treatment</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Future Consideration</controllingFieldValue>
+                <valueName>Trial</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Subject_Check__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(Subject, &quot;Update Opportunity - Missed Close Date&quot;, &quot;Valid&quot;, &quot;Physician 1:1&quot;, &quot;Valid&quot;, &quot;Patient Case Review&quot;,&quot;Email&quot;, &quot;Valid&quot;, &quot;Valid&quot;, &quot;E-mail&quot;, &quot;Valid&quot;, &quot;Office Visit&quot;, &quot;Valid&quot;, &quot;Staff Inservice&quot;, &quot;Valid&quot;, &quot;Phone Call&quot;, &quot;Valid&quot;, &quot;Office Meal&quot;, &quot;Valid&quot;, &quot;Tumor Board&quot;, &quot;Valid&quot;, &quot;Grand Rounds&quot;, &quot;Valid&quot;, 
+&quot;Dinner Meeting&quot;, &quot;Valid&quot;, &quot;Speaker Program&quot;, &quot;Valid&quot;, &quot;Medical Affairs Presentation&quot;, &quot;Valid&quot;, &quot;Presentation&quot;, &quot;Valid&quot;, &quot;Qualification/Lab-Set up&quot;, &quot;Valid&quot;, &quot;Follow-up visit&quot;, &quot;Valid&quot;, &quot;Lab In-service&quot;, &quot;Valid&quot;, &quot;Problem case resolution&quot;, &quot;Valid&quot;, &quot;Group Presentation&quot;, &quot;Valid&quot;, &quot;Speaker&quot;, &quot;Valid&quot;, &quot;Billing Resolution&quot;, &quot;Valid&quot;, &quot;Portal Demonstration&quot;, &quot;Valid&quot;, &quot;Literature Drop&quot;, &quot;Valid&quot;, &quot;Staff 1:1&quot;, &quot;Valid&quot;, &quot;Lab 1:1&quot;, &quot;Valid&quot;, 
+ 
+CASE(Task_Subject__c, &quot;Email&quot;, &quot;Valid&quot;, &quot;Update Opportunity - Missed Close Date&quot;, &quot;Valid&quot;, &quot;Physician 1:1&quot;, &quot;Valid&quot;, &quot;Patient Case Review&quot;, &quot;Valid&quot;, &quot;E-mail&quot;, &quot;Valid&quot;, &quot;Office Visit&quot;, &quot;Valid&quot;, &quot;Staff Inservice&quot;, &quot;Valid&quot;, &quot;Phone Call&quot;, &quot;Valid&quot;, &quot;Office Meal&quot;, &quot;Valid&quot;, &quot;Tumor Board&quot;, &quot;Valid&quot;, &quot;Grand Rounds&quot;, &quot;Valid&quot;, 
+&quot;Dinner Meeting&quot;, &quot;Valid&quot;, &quot;Speaker Program&quot;, &quot;Valid&quot;, &quot;Medical Affairs Presentation&quot;, &quot;Valid&quot;, &quot;Presentation&quot;, &quot;Valid&quot;, &quot;Qualification/Lab-Set up&quot;, &quot;Valid&quot;, &quot;Follow-up visit&quot;, &quot;Valid&quot;, &quot;Lab In-service&quot;, &quot;Valid&quot;, &quot;Problem case resolution&quot;, &quot;Valid&quot;, &quot;Group Presentation&quot;, &quot;Valid&quot;, &quot;Speaker&quot;, &quot;Valid&quot;, &quot;Billing Resolution&quot;, &quot;Valid&quot;, &quot;Portal Demonstration&quot;, &quot;Valid&quot;, &quot;Literature Drop&quot;, &quot;Valid&quot;, &quot;Staff 1:1&quot;, &quot;Valid&quot;, &quot;Lab 1:1&quot;, &quot;Valid&quot;, &quot;Invalid&quot;))</formula>
+        <label>Subject Check</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Task_Subject__c</fullName>
+        <description>Was formerly &apos;Task Subject&apos;</description>
+        <externalId>false</externalId>
+        <label>Subject:</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Physician 1:1</fullName>
+                    <default>false</default>
+                    <label>Physician 1:1</label>
+                </value>
+                <value>
+                    <fullName>Patient Case Review</fullName>
+                    <default>false</default>
+                    <label>Patient Case Review</label>
+                </value>
+                <value>
+                    <fullName>E-mail</fullName>
+                    <default>false</default>
+                    <label>E-mail</label>
+                </value>
+                <value>
+                    <fullName>Office Visit</fullName>
+                    <default>false</default>
+                    <label>Office Visit</label>
+                </value>
+                <value>
+                    <fullName>Staff Inservice</fullName>
+                    <default>false</default>
+                    <label>Staff Inservice</label>
+                </value>
+                <value>
+                    <fullName>Phone Call</fullName>
+                    <default>false</default>
+                    <label>Phone Call</label>
+                </value>
+                <value>
+                    <fullName>Office Meal</fullName>
+                    <default>false</default>
+                    <label>Office Meal</label>
+                </value>
+                <value>
+                    <fullName>Tumor Board</fullName>
+                    <default>false</default>
+                    <label>Tumor Board</label>
+                </value>
+                <value>
+                    <fullName>Grand Rounds</fullName>
+                    <default>false</default>
+                    <label>Grand Rounds</label>
+                </value>
+                <value>
+                    <fullName>Dinner Meeting</fullName>
+                    <default>false</default>
+                    <label>Dinner Meeting</label>
+                </value>
+                <value>
+                    <fullName>Speaker Program</fullName>
+                    <default>false</default>
+                    <label>Speaker Program</label>
+                </value>
+                <value>
+                    <fullName>Medical Affairs Presentation</fullName>
+                    <default>false</default>
+                    <label>Medical Affairs Presentation</label>
+                </value>
+                <value>
+                    <fullName>Qualification/Lab-Set up</fullName>
+                    <default>false</default>
+                    <label>Qualification/Lab-Set up</label>
+                </value>
+                <value>
+                    <fullName>Problem case resolution</fullName>
+                    <default>false</default>
+                    <label>Problem case resolution</label>
+                </value>
+                <value>
+                    <fullName>Billing Resolution</fullName>
+                    <default>false</default>
+                    <label>Billing Resolution</label>
+                </value>
+                <value>
+                    <fullName>Portal Demonstration</fullName>
+                    <default>false</default>
+                    <label>Portal Demonstration</label>
+                </value>
+                <value>
+                    <fullName>Staff 1:1</fullName>
+                    <default>false</default>
+                    <label>Staff 1:1</label>
+                </value>
+                <value>
+                    <fullName>Group Inservice</fullName>
+                    <default>false</default>
+                    <label>Group Inservice</label>
+                </value>
+                <value>
+                    <fullName>Email/Phone Call</fullName>
+                    <default>false</default>
+                    <label>Email/Phone Call</label>
+                </value>
+                <value>
+                    <fullName>Conference/Meeting</fullName>
+                    <default>false</default>
+                    <label>Conference/Meeting</label>
+                </value>
+                <value>
+                    <fullName>Lab 1:1</fullName>
+                    <default>false</default>
+                    <label>Lab 1:1</label>
+                </value>
+                <value>
+                    <fullName>Med Affairs Courtesy Call</fullName>
+                    <default>false</default>
+                    <label>Med Affairs Courtesy Call</label>
+                </value>
+                <value>
+                    <fullName>Literature Drop</fullName>
+                    <default>false</default>
+                    <label>Literature Drop</label>
+                </value>
+                <value>
+                    <fullName>MSI-H Follow Up</fullName>
+                    <default>false</default>
+                    <label>MSI-H Follow Up</label>
+                </value>
+                <value>
+                    <fullName>MA High Impact Interaction – Target</fullName>
+                    <default>false</default>
+                    <label>MA High Impact Interaction – Target</label>
+                </value>
+                <value>
+                    <fullName>MA High Impact Interaction – Non-Target</fullName>
+                    <default>false</default>
+                    <label>MA High Impact Interaction – Non-Target</label>
+                </value>
+                <value>
+                    <fullName>Follow-up visit</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Follow-up visit</label>
+                </value>
+                <value>
+                    <fullName>Group Presentation</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Group Presentation</label>
+                </value>
+                <value>
+                    <fullName>Lab In-service</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Lab In-service</label>
+                </value>
+                <value>
+                    <fullName>Presentation</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Presentation</label>
+                </value>
+                <value>
+                    <fullName>Speaker Presentation</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Speaker Presentation</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Test_Timing__c</fullName>
+        <externalId>false</externalId>
+        <label>Test Timing</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1st line</fullName>
+                    <default>false</default>
+                    <label>1st line</label>
+                </value>
+                <value>
+                    <fullName>Progression</fullName>
+                    <default>false</default>
+                    <label>Progression</label>
+                </value>
+                <value>
+                    <fullName>Unknown</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Unknown</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Time_Spent__c</fullName>
+        <externalId>false</externalId>
+        <label>Time Spent</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>5 Mins</fullName>
+                    <default>false</default>
+                    <label>5 Mins</label>
+                </value>
+                <value>
+                    <fullName>15 Mins</fullName>
+                    <default>false</default>
+                    <label>15 Mins</label>
+                </value>
+                <value>
+                    <fullName>30 Mins</fullName>
+                    <default>false</default>
+                    <label>30 Mins</label>
+                </value>
+                <value>
+                    <fullName>45 Mins</fullName>
+                    <default>false</default>
+                    <label>45 Mins</label>
+                </value>
+                <value>
+                    <fullName>60 Mins</fullName>
+                    <default>false</default>
+                    <label>60 Mins</label>
+                </value>
+                <value>
+                    <fullName>60 + Mins</fullName>
+                    <default>false</default>
+                    <label>60 + Mins</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Topics_Discussed__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>You can select multiple choices</inlineHelpText>
+        <label>Topics Discussed</label>
+        <required>false</required>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Orientated the client on the Report</fullName>
+                    <default>false</default>
+                    <label>Orientated the client on the Report</label>
+                </value>
+                <value>
+                    <fullName>What MAF means</fullName>
+                    <default>false</default>
+                    <label>What MAF means</label>
+                </value>
+                <value>
+                    <fullName>What is a VUS</fullName>
+                    <default>false</default>
+                    <label>What is a VUS</label>
+                </value>
+                <value>
+                    <fullName>What the TRM means</fullName>
+                    <default>false</default>
+                    <label>What the TRM means</label>
+                </value>
+                <value>
+                    <fullName>Do we test for certain mutations?</fullName>
+                    <default>false</default>
+                    <label>Do we test for certain mutations?</label>
+                </value>
+                <value>
+                    <fullName>Do we test for a certain gene?</fullName>
+                    <default>false</default>
+                    <label>Do we test for a certain gene?</label>
+                </value>
+                <value>
+                    <fullName>Other (please explain in Comments field)</fullName>
+                    <default>false</default>
+                    <label>Other--please explain in Comments field</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>7</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Trial_Casesafe_ID__c</fullName>
+        <description>Pass-through field from Match Record. Filled when &apos;Log Outreach Activity&apos; button is used on Match Record.</description>
+        <externalId>false</externalId>
+        <label>Trial Casesafe ID</label>
+        <length>20</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Trial_Site__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Connected Trial Site</label>
+        <referenceTo>Study_Site__c</referenceTo>
+        <relationshipLabel>Match Records</relationshipLabel>
+        <relationshipName>Activities</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Trial__c</fullName>
+        <description>Pass-through field from Match Record</description>
+        <externalId>false</externalId>
+        <label>Trial</label>
+        <length>30</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tumor_result_vs_cfDNA_result__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Tumor result vs. cfDNA result</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Type_of_communication__c</fullName>
+        <externalId>false</externalId>
+        <label>Type of communication</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Email</fullName>
+                    <default>false</default>
+                    <label>Email</label>
+                </value>
+                <value>
+                    <fullName>Phone</fullName>
+                    <default>false</default>
+                    <label>Phone</label>
+                </value>
+                <value>
+                    <fullName>Both</fullName>
+                    <default>false</default>
+                    <label>Both</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>VUS_SYN_Actionable_mutations_TND__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>VUS/SYN/Actionable mutations/TND</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Was_knowledge_gap_observed__c</fullName>
+        <externalId>false</externalId>
+        <label>Was knowledge gap observed?</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Was_this_a_direct_call_transfer__c</fullName>
+        <description>For tracking purposes/Project Hermes. Only visible to Med Affairs</description>
+        <externalId>false</externalId>
+        <label>Was this a direct call transfer?</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>X1st_Paragraph__c</fullName>
+        <externalId>false</externalId>
+        <label>1st Paragraph</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>X1st_assigned__c</fullName>
+        <description>Hidden field. Records who the task was first assigned to.</description>
+        <externalId>false</externalId>
+        <label>1st assigned</label>
+        <length>60</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>lightsideapps__Created_By_Attachment_Email__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Flags the Activity as having been created from Power Tools Attachment Email</description>
+        <externalId>false</externalId>
+        <label>Created By Attachment Email</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>lightsideapps__Keep_In_Sync__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Tick this check box to keep Tasks sent to multiple recipients synchronized</inlineHelpText>
+        <label>Keep In Sync</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>lightsideapps__LSA_GroupID__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Group Id used to connect Group tasks together.</description>
+        <externalId>false</externalId>
+        <label>LSA_GroupID</label>
+        <length>37</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>talkdesk__Talkdesk_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Talkdesk Id</label>
+        <length>40</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <listViews>
+        <fullName>MyActivities</fullName>
+        <filterScope>Mine</filterScope>
+        <label>My Activities</label>
+    </listViews>
+    <listViews>
+        <fullName>MyDelegatedActivities</fullName>
+        <filterScope>Delegated</filterScope>
+        <label>My Delegated Activities</label>
+    </listViews>
+    <listViews>
+        <fullName>MyTeamsActivities</fullName>
+        <filterScope>Team</filterScope>
+        <label>My Team&apos;s Activities</label>
+    </listViews>
+    <listViews>
+        <fullName>TodaysTasks</fullName>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>TASK.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>TASK.DUE_DATE</field>
+            <operation>lessThan</operation>
+            <value>TOMORROW</value>
+        </filters>
+        <label>Today&apos;s Tasks</label>
+    </listViews>
+    <listViews>
+        <fullName>UpcomingEvents</fullName>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>TASK.DUE_DATE</field>
+            <operation>greaterThan</operation>
+            <value>YESTERDAY</value>
+        </filters>
+        <label>Upcoming Events</label>
+    </listViews>
+    <searchLayouts>
+        <excludedStandardButtons>NewEvent</excludedStandardButtons>
+        <searchResultsAdditionalFields>TASK.SUBJECT</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TASK.WHO_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TASK.WHAT_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TASK.DUE_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

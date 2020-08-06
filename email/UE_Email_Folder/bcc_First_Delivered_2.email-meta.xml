@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Report Notification Engagement Emails - Signature The Medical Affairs Team</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>bcc_First_Delivered_2</name>
+    <style>none</style>
+    <subject>{!Guardant_360_Sample__c.Name} report delivered to {!Contact.Name} [first-bot]</subject>
+    <textOnly>GH - Report Summary Final
+
+Salesforce link for GH use: {!Guardant_360_Sample__c.Name}
+
+Copy of the email sent to {!Contact.Full_Name__c} ( {!Contact.Portal_Primary__c} {!Contact.Portal_Secondary__c} {!Contact.Portal_Tertiary__c}) at {!Guardant_360_Sample__c.Account__c} shown below:
+
+Dear Dr. {!Contact.Full_Name__c},
+
+The Guardant360 sample, {!Guardant_360_Sample__c.Name}, you submitted has been processed and is ready for your review. You can access the results immediately in our Provider Portal or look for it on your fax machine.
+
+As this is your first Guardant360 report, we are reaching out to offer a quick case review and discussion if that would be helpful. Please feel free to email or call us directly should you wish to discuss the result.
+
+Sincerely,
+The Medical Affairs Team
+Guardant Health, Inc.
+Ph: 855-698-8887
+Fax: 888-974-4258
+medicalaffairs@guardanthealth.com
+
+Register for our Provider Portal.
+
+CLIA Certified # 05D2070300 | CAP Accredited # 8765297
+
+To change your notification preferences, please login to your portal account.
+
+This message is intended solely for the designated recipient(s). It may contain confidential or proprietary information and may be subject to attorney-client privilege or other confidentiality protections. If you are not a designated recipient you may not review, copy or distribute this message. If you receive this in error, please notify the sender by replying to this e-mail and deleting this message. Thank you.
+
+-ue-</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

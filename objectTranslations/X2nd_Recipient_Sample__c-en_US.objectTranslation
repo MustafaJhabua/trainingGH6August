@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>2nd Recipient Sample</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>2nd Recipient Samples</value>
+    </caseValues>
+    <fields>
+        <label><!-- Date Received --></label>
+        <name>Date_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Final Report Date --></label>
+        <name>Final_Report_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- G360 Sample # --></label>
+        <name>G360_Sample__c</name>
+    </fields>
+    <fields>
+        <help><!-- There cannot be a 2nd Recipient record without a 360 Sample record. --></help>
+        <label><!-- Guardant360 Sample # --></label>
+        <name>Guardant_360_Sample__c</name>
+        <relationshipLabel><!-- 2nd Recipient Samples --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sent Fax --></label>
+        <name>Sent_Fax__c</name>
+        <relationshipLabel><!-- 2nd Recipient Samples --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- 2nd Recipient Account --></label>
+        <name>X2nd_Recipient_Account__c</name>
+        <relationshipLabel><!-- 2nd Recipient Samples --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- 2nd Recipient Contact --></label>
+        <name>X2nd_Recipient_Contact__c</name>
+        <relationshipLabel><!-- 2nd Recipient Samples --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Insert from LIMS via Jitterbit integration. --></help>
+        <label><!-- 2nd Recipient Fax # --></label>
+        <name>X2nd_Recipient_Fax__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

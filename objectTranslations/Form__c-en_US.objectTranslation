@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Form</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Forms</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Executive --></label>
+        <name>Account_Executive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Comments --></label>
+        <name>Additional_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Paid --></label>
+        <name>Amount_Paid_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount Paid --></label>
+        <name>Amount_Paid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approval Status --></label>
+        <name>Approval_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Required</masterLabel>
+            <translation><!-- Not Required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Audio/Visual Requirements --></label>
+        <name>Audio_Visual_Requirements__c</name>
+        <picklistValues>
+            <masterLabel>Laptops</masterLabel>
+            <translation><!-- Laptops --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Podium</masterLabel>
+            <translation><!-- Podium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Projector</masterLabel>
+            <translation><!-- Projector --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Projector Screen</masterLabel>
+            <translation><!-- Projector Screen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speakers</masterLabel>
+            <translation><!-- Speakers --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Budget is for the event itself - does not include honorarium. --></help>
+        <label><!-- Budget --></label>
+        <name>Budget__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is required. For speaker events, please select &apos;2019 KOL Speaker Events&apos;. For conferences, please select &apos;2019 Exhibit Events&apos;. --></help>
+        <label><!-- Campaign --></label>
+        <lookupFilter>
+            <errorMessage><!-- Please select active Master Campaign for the specified year. --></errorMessage>
+            <informationalMessage><!-- For speaker events, please select &apos;2019 KOL Speaker Events&apos;.
+For conferences, please select &apos;2019 Exhibit Events&apos;. --></informationalMessage>
+        </lookupFilter>
+        <name>Campaign__c</name>
+        <relationshipLabel><!-- Forms --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Collateral to be Sent --></label>
+        <name>Collateral_to_be_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Name --></label>
+        <name>Company_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Date --></label>
+        <name>Event_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event City --></label>
+        <name>Event_Location__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of the event, conference, or exhibit. Required. --></help>
+        <label><!-- Event Name --></label>
+        <name>Event_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Time --></label>
+        <name>Event_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exhibit Agreement Uploaded to Salesforce --></label>
+        <name>Exhibit_Agreement_Uploaded_to_Salesforce__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Exhibit Fee --></label>
+        <name>Exhibit_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exhibit Materials --></label>
+        <name>Exhibit_Materials__c</name>
+        <picklistValues>
+            <masterLabel>No materials needed</masterLabel>
+            <translation><!-- No materials needed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Table Throw (6Ft)</masterLabel>
+            <translation><!-- Table Throw (6Ft) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Table Top Display</masterLabel>
+            <translation><!-- Table Top Display --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Exhibitor Documents Received --></label>
+        <name>Exhibitor_Documents_Received__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Fax Number --></label>
+        <name>Fax_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flight Arrival --></label>
+        <name>Flight_Arrival__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flight Departure --></label>
+        <name>Flight_Departure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Form Counter --></label>
+        <name>Form_Counter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hotel Arrival --></label>
+        <name>Hotel_Arrival__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hotel Check-Out --></label>
+        <name>Hotel_Check_Out__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hotel # of Nights --></label>
+        <name>Hotel_of_Nights__c</name>
+    </fields>
+    <fields>
+        <help><!-- Copy and paste this line into the Netsuite form --></help>
+        <label><!-- Justification --></label>
+        <name>Justification__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Name --></label>
+        <name>Location_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Materials Shipping Address --></label>
+        <name>Materials_Shipping_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name of Additional Exhibitor --></label>
+        <name>Name_of_Additional_Exhibitor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Attendees --></label>
+        <name>Number_of_Attendees__c</name>
+    </fields>
+    <fields>
+        <label><!-- PDF Invite Needed --></label>
+        <name>PDF_Invite_Needed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Recipient/Address --></label>
+        <name>Payment_Recipient_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone Number --></label>
+        <name>Phone_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preferred Venues --></label>
+        <name>Preferred_Venues__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Exhibitor Name --></label>
+        <name>Primary_Exhibitor_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase Requisition Requested --></label>
+        <name>Purchase_Requisition_Requested__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase Requisition # --></label>
+        <name>Purchase_Requisition__c</name>
+    </fields>
+    <fields>
+        <label><!-- RSD --></label>
+        <name>RSD__c</name>
+        <relationshipLabel><!-- Forms (RSD) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>SFDC_User__c</name>
+        <relationshipLabel><!-- Forms (User) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sales Manager Name --></label>
+        <name>Sales_Manager_Name__c</name>
+        <picklistValues>
+            <masterLabel>Danielle Usilton</masterLabel>
+            <translation><!-- Danielle Usilton --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>David Salo</masterLabel>
+            <translation><!-- David Salo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eric Trierweiler</masterLabel>
+            <translation><!-- Eric Trierweiler --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Isabelle Eyman</masterLabel>
+            <translation><!-- Isabelle Eyman --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Justin Elders</masterLabel>
+            <translation><!-- Justin Elders --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sales Manager --></label>
+        <name>Sales_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Representative Name --></label>
+        <name>Sales_Representative_Name__c</name>
+        <picklistValues>
+            <masterLabel>Beth Zubal</masterLabel>
+            <translation><!-- Beth Zubal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brian Long</masterLabel>
+            <translation><!-- Brian Long --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Charles Truan</masterLabel>
+            <translation><!-- Charles Truan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Christine Roche</masterLabel>
+            <translation><!-- Christine Roche --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Danielle Uliston</masterLabel>
+            <translation><!-- Danielle Uliston --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>David Salo</masterLabel>
+            <translation><!-- David Salo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dawn Korinek</masterLabel>
+            <translation><!-- Dawn Korinek --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eric Trierweiler</masterLabel>
+            <translation><!-- Eric Trierweiler --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Isabelle Eyman</masterLabel>
+            <translation><!-- Isabelle Eyman --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Justin Elders</masterLabel>
+            <translation><!-- Justin Elders --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Katie Sapp</masterLabel>
+            <translation><!-- Katie Sapp --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kim Forte</masterLabel>
+            <translation><!-- Kim Forte --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kris Weinberg</masterLabel>
+            <translation><!-- Kris Weinberg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marcus Outzen</masterLabel>
+            <translation><!-- Marcus Outzen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marlon Hopgood</masterLabel>
+            <translation><!-- Marlon Hopgood --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phil Renda</masterLabel>
+            <translation><!-- Phil Renda --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roger Hunter</masterLabel>
+            <translation><!-- Roger Hunter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sara Lapomarda</masterLabel>
+            <translation><!-- Sara Lapomarda --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sean Dattoli</masterLabel>
+            <translation><!-- Sean Dattoli --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shannon Dean</masterLabel>
+            <translation><!-- Shannon Dean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shelley Marino</masterLabel>
+            <translation><!-- Shelley Marino --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stan Welle</masterLabel>
+            <translation><!-- Stan Welle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stephanie Shannon</masterLabel>
+            <translation><!-- Stephanie Shannon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Steven Collora</masterLabel>
+            <translation><!-- Steven Collora --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Reason for event. --></help>
+        <label><!-- Scope of Event --></label>
+        <name>Scope_of_Event__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Address --></label>
+        <name>Shipping_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Signage Needed --></label>
+        <name>Signage_Needed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Speaker Contact Info --></label>
+        <name>Speaker_Contact_Info__c</name>
+    </fields>
+    <fields>
+        <label><!-- Speaker DOB --></label>
+        <name>Speaker_DOB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Speaker Name --></label>
+        <name>Speaker_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- The speaker selected must be approved to speak at corporate events. Contact Heather Chan or Ruben Smith for further information --></help>
+        <label><!-- Speaker --></label>
+        <name>Speaker__c</name>
+        <relationshipLabel><!-- Forms --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Submit For Approval? --></label>
+        <name>Submit_For_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel Arrangements Needed? --></label>
+        <name>Travel_Arrangements_Needed__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type of Event --></label>
+        <name>Type_of_Event__c</name>
+        <picklistValues>
+            <masterLabel>Conference</masterLabel>
+            <translation><!-- Conference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Convention</masterLabel>
+            <translation><!-- Convention --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dinner</masterLabel>
+            <translation><!-- Dinner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exhibit</masterLabel>
+            <translation><!-- Exhibit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trade Show</masterLabel>
+            <translation><!-- Trade Show --></translation>
+        </picklistValues>
+    </fields>
+    <recordTypes>
+        <label><!-- Exhibitor Event Request Form --></label>
+        <name>Exhibitor_Event_Request_Form</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Speaker Function Request Form --></label>
+        <name>Speaker_Function_Request_Form</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please do not answer &quot;Yes&quot; to either &apos;Exhibitor Documents Received&apos; or Exhibit Agreement Uploaded to Salesforce&apos; until you have attached the vendor W9, prospectus or invitation, and documentation referencing the exhibit cost, to this form. --></errorMessage>
+        <name>Exhibit_Form_must_include_documents</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Event Date must be at least 30 days in the future. --></errorMessage>
+        <name>Exhibitor_Event_Date_must_be_30_days_out</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Event Date must be at least 45 days in the future. --></errorMessage>
+        <name>Speaker_Event_Date_must_be_45_days_out</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If travel arrangements are needed, please enter values for flight and hotel section. --></errorMessage>
+        <name>Travel_Arrangement_Info</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- New --></label>
+        <name>New</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Exhibit_Form --></label>
+        <name>New_Exhibit_Form</name>
+    </webLinks>
+</CustomObjectTranslation>

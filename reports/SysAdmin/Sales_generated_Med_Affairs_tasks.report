@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_95780956</developerName>
+        <masterLabel>Created by Profile</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>CREATED_BY</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Alicia Madison</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Beth Zubal</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bill Hutsell</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bryan Lorenz</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Candy Steed</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Charles Truan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Cindy Kaleh</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Danielle Usilton</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Gigi Bellamy</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Helen Bullen</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jason Morrow</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jodi Merkle</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kate Williams</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kelli Schafer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kim Forte</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lana Mironer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Leeann Barlow</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Magali Trujillo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Marcus Outzen</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Maya Kiss</sourceValue>
+            </sourceValues>
+            <value>Sales</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Pam Olsen</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Parisa Saki</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Patrick McFarlane</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Paul Robin</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Philip Renda</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sarah Ashton</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sharon Kaufman</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Shelley Gaidos</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Shelley Marino</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Steve Bui</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Susy Northrop</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Trista Hughes</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Troy Pollok</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Yukimasa Shiotsu</sourceValue>
+            </sourceValues>
+            <value>Also Sales</value>
+        </values>
+        <values>
+            <value>Not Sales</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>LAST_UPDATE</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATE_BY</field>
+    </columns>
+    <columns>
+        <field>CREATED_BY</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>ACCOWNER</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>Activity.Medaffairs_task__c</field>
+    </columns>
+    <columns>
+        <field>RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>WHAT_NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT</field>
+    </columns>
+    <columns>
+        <field>CONTACT</field>
+    </columns>
+    <description>Med Affairs tasks created by Sales</description>
+    <filter>
+        <criteriaItems>
+            <column>Activity.Medaffairs_task__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>BucketField_95780956</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Sales,Also Sales</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Sales-generated Med Affairs tasks</name>
+    <params>
+        <name>closed</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>type</name>
+        <value>t</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Activity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>LAST_UPDATE</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2018-04-01</startDate>
+    </timeFrameFilter>
+</Report>

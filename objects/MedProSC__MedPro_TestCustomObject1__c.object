@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>A transient custom object used by the MedPro Search Connector&apos;s suite of Apex Test Classes</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>MedProSC__MedProID__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>MedProID</label>
+        <length>32</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProSC__MedProMasterID__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>true</externalId>
+        <label>MedProMasterID</label>
+        <length>25</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProSC__MedPro_Updated_TS__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>MedPro Updated TS</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>MedProSC__NPI_Number__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>NPI Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProSC__Test_Lookup__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Test Lookup</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>MedPro_TestCustomObject1</relationshipLabel>
+        <relationshipName>MedPro_TestCustomObject1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>MedProSC__fieldNameM1D1__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>fieldNameM1D1</label>
+        <length>250</length>
+        <required>true</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProSC__fieldNameM1D2__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>fieldNameM1D2</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>MedProSC__fieldNameM1D3__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>fieldNameM1D3</label>
+        <length>250</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProSC__fieldNameM1D4__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>fieldNameM1D4</label>
+        <length>250</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProSC__fieldNameM1D5__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>fieldNameM1D5</label>
+        <length>250</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProSC__fieldNameM1D6__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>fieldNameM1D6</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>MedProSC__fieldNameM1D7__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>fieldNameM1D7</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>MedProSC__fieldNameM1D8__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>fieldNameM1D8</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProSC__fieldNameM1D9__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>fieldNameM1D9</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MedProSC__fieldNameZ1D1__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>fieldNameZ1D1</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProSC__fieldNameZ1D2__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>fieldNameZ1D2</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProSC__fieldNameZ1D3__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>fieldNameZ1D3</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProSC__fieldNameZ1D4__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>fieldNameZ1D4</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProSC__fieldNameZ1D5__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>fieldNameZ1D5</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProSC__fieldNameZ1D6__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>fieldNameZ1D6</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProSC__fieldNameZ1D7__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>fieldNameZ1D7</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProSC__fieldNameZ1D8__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>fieldNameZ1D8</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MedProSC__fieldNameZ1D9__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>fieldNameZ1D9</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>MedPro_TestCustomObject1</label>
+    <listViews>
+        <fullName>MedProSC__All</fullName>
+        <columns>NAME</columns>
+        <columns>MedProSC__fieldNameM1D4__c</columns>
+        <columns>MedProSC__fieldNameM1D5__c</columns>
+        <columns>MedProSC__NPI_Number__c</columns>
+        <columns>MedProSC__MedProID__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>MedPro_TestCustomObject1 Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>MedPro_TestCustomObject1</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>MedProSC__MedProTestCO1_RT1</fullName>
+        <active>true</active>
+        <label>MedProTestCO1_RT1</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>MedProSC__MedProTestCO1_RT2</fullName>
+        <active>true</active>
+        <label>MedProTestCO1_RT2</label>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>MedProSC__List_New_Potential_Prescriber</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>New Potential Prescriber</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/14.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/14.0/apex.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/resource/MedPro_SC_API_JsLibrary_2_6&quot;)} 
+
+var param1 = &apos;{!MedProSC__MedPro_TestCustomObject1__c.Id}&apos;; 
+var param2 = &apos;MedPro_TestCustomObject1__c&apos;; 
+
+var nameSpaceToUse = &quot;{!$Setup.MedProSC__MedProAppSettings__c.MedProSC__Namespace_Prefix__c}&quot;; 
+var isDebugEnabled = &quot;{!$Setup.MedProSC__MedProAppSettings__c.MedProSC__Debug_Enabled__c}&quot;; 
+
+searchForSingleRecordInMedPro(param1,param2,nameSpaceToUse);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>MedProSC__New_Potential_Prescriber</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>New Potential Prescriber</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/14.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/14.0/apex.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/resource/MedPro_SC_API_JsLibrary_2_6&quot;)} 
+
+var param1 = &apos;{!MedProSC__MedPro_TestCustomObject1__c.Id}&apos;; 
+var param2 = &apos;MedPro_TestCustomObject1__c&apos;; 
+
+var nameSpaceToUse = &quot;{!$Setup.MedProSC__MedProAppSettings__c.MedProSC__Namespace_Prefix__c}&quot;; 
+var isDebugEnabled = &quot;{!$Setup.MedProSC__MedProAppSettings__c.MedProSC__Debug_Enabled__c}&quot;; 
+
+searchForSingleRecordInMedPro(param1,param2,nameSpaceToUse);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>MedProSC__Search_MedPro</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Search MedPro</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/14.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/14.0/apex.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/resource/MedPro_SC_API_JsLibrary_2_6&quot;)} 
+
+var param1 = &apos;{!MedProSC__MedPro_TestCustomObject1__c.Id}&apos;; 
+var param2 = &apos;MedPro_TestCustomObject1__c&apos;; 
+
+var nameSpaceToUse = &quot;{!$Setup.MedProSC__MedProAppSettings__c.MedProSC__Namespace_Prefix__c}&quot;; 
+var isDebugEnabled = &quot;{!$Setup.MedProSC__MedProAppSettings__c.MedProSC__Debug_Enabled__c}&quot;; 
+
+searchForSingleRecordInMedPro(param1,param2,nameSpaceToUse);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>MedProSC__Submit_DRP</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Submit DRP</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/14.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/14.0/apex.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/resource/MedPro_SC_API_JsLibrary_2_6&quot;)} 
+
+var param1 = &apos;{!MedProSC__MedPro_TestCustomObject1__c.Id}&apos;; 
+var param2 = &apos;MedPro_TestCustomObject1__c&apos;; 
+
+var nameSpaceToUse = &quot;{!$Setup.MedProSC__MedProAppSettings__c.MedProSC__Namespace_Prefix__c}&quot;; 
+var isDebugEnabled = &quot;{!$Setup.MedProSC__MedProAppSettings__c.MedProSC__Debug_Enabled__c}&quot;; 
+
+performDRPSubmissionForSpecificRecord(param1,param2,nameSpaceToUse);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>MedProSC__Update_Children_from_Medpro</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Update Children from Medpro</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/14.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/14.0/apex.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/resource/MedPro_SC_API_JsLibrary_2_6&quot;)} 
+
+var param1 = &apos;{!MedProSC__MedPro_TestCustomChildObjectA__c.Id}&apos;; 
+var param2 = &apos;{!MedProSC__MedPro_TestCustomChildObjectA__c.MedProSC__MedProID__c}&apos;; 
+var param3 = &apos;MedProSC__MedPro_TestCustomChildObjectA__c&apos;; 
+
+var nameSpaceToUse = &quot;{!$Setup.MedProSC__MedProAppSettings__c.MedProSC__Namespace_Prefix__c}&quot;; 
+var isDebugEnabled = &quot;{!$Setup.MedProSC__MedProAppSettings__c.MedProSC__Debug_Enabled__c}&quot;; 
+
+updateSingleRecordFromMedPro(param1,param2,param3,nameSpaceToUse);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>MedProSC__Update_Records_from_MedPro</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Update Records from MedPro</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/14.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/14.0/apex.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/resource/MedPro_SC_API_JsLibrary_2_6&quot;)} 
+
+
+var parsfId = &apos;{!MedProSC__MedPro_TestCustomObject1__c.Id}&apos;;
+
+var parentobjectApiName = &apos;MedPro_TestCustomObject1__c&apos;;
+
+var childobjectApiName = &apos;MedPro_TestCustomChildObjectA__c&apos;;
+
+var nameSpaceToUse = &quot;{!$Setup.MedProSC__MedProAppSettings__c.MedProSC__Namespace_Prefix__c}&quot;; 
+
+var parentmedproid = &apos;{!MedProSC__MedPro_TestCustomObject1__c.MedProSC__MedProID__c}&apos;;
+
+//var result = sforce.apex.execute(nameSpaceToUse + &quot;MedPro_SC_API&quot;, &quot;updateChildrenRecordsFromMedPro&quot;,{parsfId:parsfId, parentmedproid:parentmedproid, parentobjectApiName:parentobjectApiName, childobjectApiName:childobjectApiName});
+    
+
+
+var result = sforce.apex.execute(nameSpaceToUse + &quot;MedPro_SC_API&quot;, &quot;updateChildrenRecordsFromMedPro&quot;,{parsfId:parsfId, childobjectApiName:childobjectApiName});
+      	  	
+      alert(result);
+
+document.location.reload(true);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>MedProSC__Update_from_MedPro</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Update from MedPro</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/14.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/14.0/apex.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/resource/MedPro_SC_API_JsLibrary_2_6&quot;)} 
+
+var param1 = &apos;{!MedProSC__MedPro_TestCustomObject1__c.Id}&apos;; 
+var param2 = &apos;{!MedProSC__MedPro_TestCustomObject1__c.MedProSC__MedProID__c}&apos;; 
+var param3 = &apos;MedPro_TestCustomObject1__c&apos;; 
+
+var nameSpaceToUse = &quot;{!$Setup.MedProSC__MedProAppSettings__c.MedProSC__Namespace_Prefix__c}&quot;; 
+var isDebugEnabled = &quot;{!$Setup.MedProSC__MedProAppSettings__c.MedProSC__Debug_Enabled__c}&quot;; 
+
+updateSingleRecordFromMedPro(param1,param2,param3,nameSpaceToUse);</url>
+    </webLinks>
+</CustomObject>

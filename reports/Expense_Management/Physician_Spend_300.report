@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_90774465</developerName>
+        <masterLabel>Spend Level</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>Contact.Cumulative_Expenses__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>175</to>
+            </sourceValues>
+            <value>Below 175</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>175</from>
+                <to>275</to>
+            </sourceValues>
+            <value>Half of Max</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>275</from>
+                <to>325</to>
+            </sourceValues>
+            <value>At Risk</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>325</from>
+            </sourceValues>
+            <value>No More Spend</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>OWNER_FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>Contact.Cumulative_Expenses__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Total_Amount_Spend__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact.Cumulative_Expenses__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>300</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Physician Spend &gt; $300</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Contact.Cumulative_Expenses__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

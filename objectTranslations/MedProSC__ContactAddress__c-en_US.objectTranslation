@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Address line 1 --></label>
+        <name>MedProSC__Address_line_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address line 2 --></label>
+        <name>MedProSC__Address_line_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>MedProSC__City__c</name>
+    </fields>
+    <fields>
+        <label><!-- License state --></label>
+        <name>MedProSC__License_state__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mapping Key From Mapping --></label>
+        <name>MedProSC__Mapping_Key_From_Mapping__c</name>
+    </fields>
+    <fields>
+        <label><!-- MedProID --></label>
+        <name>MedProSC__MedProID__c</name>
+    </fields>
+    <fields>
+        <label><!-- MedProMasterID --></label>
+        <name>MedProSC__MedProMasterID__c</name>
+    </fields>
+    <fields>
+        <label><!-- MedPro_Updated_TS --></label>
+        <name>MedProSC__MedPro_Updated_TS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>MedProSC__RelatedContact__c</name>
+        <relationshipLabel><!-- ContactAddresses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>MedProSC__State__c</name>
+    </fields>
+    <fields>
+        <label><!-- State license --></label>
+        <name>MedProSC__State_license__c</name>
+    </fields>
+    <fields>
+        <label><!-- TestDateMap --></label>
+        <name>MedProSC__TestDateMap__c</name>
+    </fields>
+    <fields>
+        <label><!-- TestNumberMap --></label>
+        <name>MedProSC__TestNumberMap__c</name>
+    </fields>
+    <fields>
+        <label><!-- TestTextMap --></label>
+        <name>MedProSC__TestTextMap__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zip --></label>
+        <name>MedProSC__Zip__c</name>
+    </fields>
+</CustomObjectTranslation>

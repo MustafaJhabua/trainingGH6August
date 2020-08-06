@@ -1,0 +1,31 @@
+Hello, 
+
+{!Form__c.Account_Executive__c} has requested your approval for the following event.
+
+Below are the details of the event: 
+Primary Exhibitor: {!Form__c.Primary_Exhibitor_Name__c}
+Additional Exhibitor: {!Form__c.Name_of_Additional_Exhibitor__c}
+Type: {!Form__c.Type_of_Event__c}
+Date: {!Form__c.Event_Date__c}
+Time: {!Form__c.Event_Time__c}
+Location: {!Form__c.Location_Name__c}
+# of Attendees: {!Form__c.Number_of_Attendees__c}
+Exhibit Fees:  {!Form__c.Exhibit_Fee__c}
+
+Additional Comments: {!Form__c.Additional_Comments__c}
+
+Please refer back to the event form {!Form__c.Link} in salesforce to review further. 
+
+To approve or reject this item, reply to this email with the word:
+
+APPROVE, APPROVED, YES, REJECT, REJECTED, or NO  ...in the first line of the email message. 
+ 
+If replying via email you can also add comments on the second line. The comments will be stored with the approval request in Salesforce CRM.
+
+Note: For salesforce.com to process your response the word, APPROVE, APPROVED, YES, REJECT, REJECTED, or NO must be in the very first line of the reply email. 
+
+Any comment must be in the second line.
+
+Thank you, 
+
+{!Form__c.OwnerFullName}

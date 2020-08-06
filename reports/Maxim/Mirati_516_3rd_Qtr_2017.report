@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Match_Record__c.Date_Identified__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Match_Record__c.Match_Key__c</field>
+    </columns>
+    <columns>
+        <field>Match_Record__c.Enrollment_Status__c</field>
+    </columns>
+    <columns>
+        <field>Match_Record__c.Enrollment_Sub_Status__c</field>
+    </columns>
+    <columns>
+        <field>Match_Record__c.Sub_Status_Reason__c</field>
+    </columns>
+    <columns>
+        <field>Match_Record__c.Date_Referred__c</field>
+    </columns>
+    <columns>
+        <field>Match_Record__c.Date_Referral_Letter_Sent__c</field>
+    </columns>
+    <columns>
+        <field>Match_Record__c.Pharma_PTC_Alert_Sent__c</field>
+    </columns>
+    <columns>
+        <field>Match_Record__c.Date_PTC_Alert_Sent__c</field>
+    </columns>
+    <description>For updating pharma about status of matches identified in current quarter.</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Match_Record__c.Trial_Name__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Client Update: Current Qtr Matches</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Match_Record__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Match_Record__c.Enrollment_Status__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Match_Record__c.Date_Identified__c</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

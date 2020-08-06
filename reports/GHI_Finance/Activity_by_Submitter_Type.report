@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_57355171</developerName>
+        <masterLabel>Group</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Account.Contacts.ActivityRelations$Owner</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Jamie Geary</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Carissa Aguilar</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Khristine Resurreccion</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kimberly Hallam</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pamela Spitzer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Veronica Mosqueda</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Karri Voytilla</sourceValue>
+            </sourceValues>
+            <value>CS</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Beth Zubal</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Brenda Davies</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Brian Long</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Charles Truan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Christine Roche</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>David Salo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jason Clendaniel</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Katie Sapp</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kim Forte</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Leeann Barlow</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Magali Trujillo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Marcus Outzen</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pam Olsen</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Philip Renda</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Robin Shafer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sheila Sutherland</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Shelley Marino</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Stephanie Shannon</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Stan Skrzypczak</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jill Beckman</sourceValue>
+            </sourceValues>
+            <value>Sales</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Richard Lanman</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kimberly Banks</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Becky Nagy</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Christine Lee</sourceValue>
+            </sourceValues>
+            <value>MSL</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Alicia Madison</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Dawn Korinek</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Isabelle Eyman</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Justin Elders</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ruben Smith</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Stanley Welle</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Maya Kiss</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sara Lapomarda</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Steven Collora</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Danielle Usilton</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Dawn Lawrence</sourceValue>
+            </sourceValues>
+            <value>Sales Mngmt</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_39132246</developerName>
+        <masterLabel>Submitter Type</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>Account.Contacts$Number_of_Samples__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>4</to>
+            </sourceValues>
+            <value>Hunt</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>4</from>
+            </sourceValues>
+            <value>Farm</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Account.Contacts.ActivityRelations$CreatedBy</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.ActivityRelations$Owner</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.ActivityRelations*Activity$Activity_Type__c</field>
+    </columns>
+    <columns>
+        <field>Account$BillingState</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$Number_of_Samples__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$Last_Sample_Date__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account$Account_Type__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Clinical Account US</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Quarter</dateGranularity>
+        <field>Account.Contacts.ActivityRelations$CreatedDate</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_39132246</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_57355171</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Activity by Submitter Type</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_Contacts_Activities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account.Contacts.ActivityRelations$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2017-07-01</startDate>
+    </timeFrameFilter>
+</Report>

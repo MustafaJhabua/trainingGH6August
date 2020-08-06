@@ -1,0 +1,11 @@
+Hello,
+Please reach out to this 1st time tester and document your interaction.
+
+Date Received: {!Guardant_360_Sample__c.Date_Received__c}
+Final Report Date: {!Guardant_360_Sample__c.Final_Report_Date__c}
+Cancer Class: {!Guardant_360_Sample__c.Cancer_Class__c}
+Name of Physician: {!Guardant_360_Sample__c.Physician_Name__c}
+{!Guardant_360_Sample__c.Link} to Sample.
+
+Thanks
+Sales Operations

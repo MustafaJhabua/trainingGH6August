@@ -1,0 +1,10 @@
+<apex:page standardController="LIMS_Project_ID__c" >
+    <apex:form >                   
+          <apex:pageBlock >
+             <div style="vertical-align: middle;height:100px; text-align: center;margin-top:50px;"> 
+                <span style="font-size:16px;"> <I>Please create Project IDs only from the 'Create New Project ID' button on the SOW.</I></span>
+             </div>
+     
+               </apex:pageBlock>
+   </apex:form>    
+</apex:page>

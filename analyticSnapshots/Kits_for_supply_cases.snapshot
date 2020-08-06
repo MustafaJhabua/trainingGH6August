@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AnalyticSnapshot xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Used for Kits vs Samples report/dashboard</description>
+    <mappings>
+        <sourceField>ACCOUNT.NAME</sourceField>
+        <sourceType>tabular</sourceType>
+        <targetField>Date__c.Account__c</targetField>
+    </mappings>
+    <mappings>
+        <sourceField>CASE_NUMBER</sourceField>
+        <sourceType>tabular</sourceType>
+        <targetField>Date__c.Case_Number__c</targetField>
+    </mappings>
+    <mappings>
+        <sourceField>CREATED_DATEONLY</sourceField>
+        <sourceType>tabular</sourceType>
+        <targetField>Date__c.Date__c</targetField>
+    </mappings>
+    <mappings>
+        <sourceField>CASE_ID</sourceField>
+        <sourceType>tabular</sourceType>
+        <targetField>Date__c.Record_ID__c</targetField>
+    </mappings>
+    <mappings>
+        <sourceField>Case.Total_Kits__c</sourceField>
+        <sourceType>tabular</sourceType>
+        <targetField>Date__c.Kits__c</targetField>
+    </mappings>
+    <name>Kits for supply cases</name>
+    <runningUser>ablair@guardanthealth.com</runningUser>
+    <sourceReport>GHI_CS_Manager_Reports/Kits_sent_in_supply_cases</sourceReport>
+    <targetObject>Date__c</targetObject>
+</AnalyticSnapshot>

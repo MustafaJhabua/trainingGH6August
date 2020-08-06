@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Trial</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Trials</value>
+    </caseValues>
+    <fields>
+        <help><!-- Box is checked if any external alert email field is filled. Hidden field used to determine whether to bypass process Match: External PTC Emails --></help>
+        <label><!-- Any External Email --></label>
+        <name>Any_External_Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- When checked, this trial will not generate automatic IOE&apos;s. --></help>
+        <label><!-- Auto-IOE Opt-Out --></label>
+        <name>Auto_IOE_Opt_Out__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Safe Trial ID --></label>
+        <name>Case_Safe_Trial_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- External Email Address at Pharma Company to receive Email Alerts --></help>
+        <label><!-- External Alert Email 1 --></label>
+        <name>External_Alert_Email_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Alert Email 2 --></label>
+        <name>External_Alert_Email_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Alert Email 3 --></label>
+        <name>External_Alert_Email_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Alert Email 4 --></label>
+        <name>External_Alert_Email_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- NCT Identifier --></label>
+        <name>NCT_Identifier__c</name>
+    </fields>
+    <fields>
+        <label><!-- NCT Link --></label>
+        <name>NCT_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pharma Company --></label>
+        <name>Pharma_Company__c</name>
+        <relationshipLabel><!-- Trials --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- PtC Contact List --></label>
+        <name>PtC_Contact_List__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral Letter Template --></label>
+        <name>Referral_Letter_Template__c</name>
+    </fields>
+    <fields>
+        <label><!-- Script --></label>
+        <name>Script__c</name>
+    </fields>
+    <fields>
+        <label><!-- Study Folder Link --></label>
+        <name>Study_Folder_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Study Title --></label>
+        <name>Study_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trial Code --></label>
+        <name>Trial_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trial Eligibility Criteria --></label>
+        <name>Trial_Eligibility_Criteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trial Sites List --></label>
+        <name>Trial_Sites_List__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

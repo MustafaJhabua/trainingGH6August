@@ -1,0 +1,131 @@
+<apex:page showHeader="true" sidebar="true" standardController="MedProSC__MedProCustomer__c" extensions="MedProSC.MedProEditMedProCustomer_Ctrl">
+    
+    <apex:pageMessage escape="false" severity="error" summary="This page has been deprecated. Please take a screen shot, and send it to your System Administrator." strength="3" />  
+   
+
+<!-- Commented out by MED-403
+<html>
+
+    <head>
+
+        <div id="spinner" class="spinner" style="display:none;" >
+            <br/>
+            <apex:image id="poweredByMedProID2" value="{!$Resource.MedProIDPill2}" width="144" height="72"/>
+            <p></p>
+            <apex:image id="img-spinner" url="{!$Resource.progressBar}" width="126" height="22" />
+            <br/>
+            <p><b>Processing data please wait ...</b></p>
+        </div>
+
+        <style>
+            .spinner {
+                border: 2px solid black;
+                background: rgba(23, 151, 192, .95);
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                margin-left: -125px; /* half width of the spinner gif */
+                margin-top: -82px; /* half height of the spinner gif */
+                text-align:center;
+                z-index:1234;
+                overflow: auto;
+                width: 250px; /* width of the spinner gif */
+                height: 164px; /*hight of the spinner gif +2px to fix IE8 issue */
+            }
+        </style>
+
+        <script src="/soap/ajax/14.0/connection.js" type="text/javascript"></script>
+        <script src="/soap/ajax/14.0/apex.js" type="text/javascript"></script>
+
+        <script type="text/javascript">
+
+            function updateAllMedProIdStampedRecords()
+            {
+                if (confirm('Are you sure you want to update all MedProID stamped records?')) 
+                { 
+                    try 
+                    { 
+                        var nameSpaceToUse = '';
+
+                        var fullyQualifiedClass = (nameSpaceToUse + 'MedPro_SC_API');
+                        var result = sforce.apex.execute(fullyQualifiedClass, 'updateAllMedProIdStampedRecords', {});
+
+                        if (result[0].returnCode == "200") 
+                        { 
+                            alert('Successfully updated all MedProID stamped records!'); 
+                        } 
+                        else 
+                            alert(result[0].message); 
+                    } 
+                    catch (err) 
+                    { 
+                        txt = 'There was an unexpected error on this page.\n\n'; 
+                        txt += 'Error description: ' + err.description + '\n\n'; 
+                        txt += 'Click OK to continue.\n\n'; 
+                        alert(txt); 
+                    } 
+                }
+            }
+
+        </script>
+
+    </head>
+
+    <apex:stylesheet value="{!$Resource.MedProTwoPassDisplayDetail_resources}"/>
+
+    <apex:includeScript value="{!URLFOR($Resource.jQuery_ui_1_10_4, '/jquery-ui-1.10.4.custom/js/jquery-1.10.2.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.jQuery_ui_1_10_4, '/jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.jQuery_ui_1_10_4, '/jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.min.js')}" />
+
+    <apex:form >
+
+        <apex:pageBlock title="MedPro Customer Edit">
+            
+            <apex:pageMessages />
+
+            <apex:pageBlockButtons location="top" >
+                <apex:commandButton action="{!URLFOR($Action.MedProSC__MedProCustomer__c.MedProSC__Update_All_MedProID_Stamped_Records)}" onclick="updateAllMedProIdStampedRecords(); return(false);" value="Update All MedProID Stamped Records"/>
+            </apex:pageBlockButtons>
+
+            <apex:pageBlockSection collapsible="False" columns="1">
+                <apex:inputField label="Parent Data Mapping" value="{!MedProCustomer__c.Name}"/>
+                <apex:inputField label="Parent Data Mapping" value="{!MedProCustomer__c.Name}"/>
+                <apex:inputField label="Parent Data Mapping" value="{!MedProCustomer__c.Name}"/>
+                <apex:inputField label="Parent Data Mapping" value="{!MedProCustomer__c.Name}"/>
+                <apex:inputField label="Parent Data Mapping" value="{!MedProCustomer__c.Name}"/>
+                <apex:inputField label="Parent Data Mapping" value="{!MedProCustomer__c.Name}"/>
+                <apex:inputField label="Parent Data Mapping" value="{!MedProCustomer__c.Name}"/>
+                <apex:inputField label="Parent Data Mapping" value="{!MedProCustomer__c.Name}"/>
+                <apex:inputField label="Parent Data Mapping" value="{!MedProCustomer__c.Name}"/>
+                <apex:inputField label="Parent Data Mapping" value="{!MedProCustomer__c.Name}"/>
+                <apex:inputField label="Parent Data Mapping" value="{!MedProCustomer__c.Name}"/>
+                <apex:inputField label="Parent Data Mapping" value="{!MedProCustomer__c.Name}"/>
+                <apex:inputField label="Parent Data Mapping" value="{!MedProCustomer__c.Name}"/>
+                <apex:inputField label="Parent Data Mapping" value="{!MedProCustomer__c.Name}"/>
+                <apex:inputField label="Parent Data Mapping" value="{!MedProCustomer__c.Name}"/>
+            </apex:pageBlockSection>
+            <apex:outputPanel > 
+                <div class="pbHeader">
+                    <table class="medproTable" >
+                       <tbody>
+                          <tr>
+                             <td class="pbTitle"><apex:include pageName="MedProStandardCopyrightFooter"/> </td>                     
+                             <td class="pbButton">
+                               <apex:commandButton action="{!URLFOR($Action.MedProCustomer__c.Update_All_MedProID_Stamped_Records)}" onclick="updateAllMedProIdStampedRecords(); return(false);" value="Update All MedProID Stamped Records"/>
+
+                             </td>
+                          </tr>
+                       </tbody>
+                    </table>
+                </div>
+            </apex:outputPanel>
+        </apex:pageBlock>        
+    </apex:form>
+    <apex:relatedList list="MedPro_Customer_Pass_2_Fields__r" />
+    <apex:relatedList list="MedPro_Search_Input_Elements__r" />
+    <apex:relatedList list="MedPro_Pass_1_Layout_Elements__r" />
+    <apex:relatedList list="MedPro_Pass_2_Display_Head_Configs__r" />
+    <apex:relatedList list="MedPro_SO_Mappings__r" />
+</html>
+-->
+</apex:page>

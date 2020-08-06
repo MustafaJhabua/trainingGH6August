@@ -1,0 +1,32 @@
+Thank you, Dr. {!Contact.LastName}.
+
+[Option 1: Response to IOE] Per your request, I have included information about the BLU-667 and LOXO-292 clinical study below as well as assigned one of our Clinical Trial Advisor physicians to contact you via phone this week to further discuss these clinical trial options for your patient who had a RET alteration. [Option 1]
+
+[Option 2: Follow-up after phone conversation] It was great speaking with you regarding your patient {!Match_Record__c.Patient_Initials__c} ({!Match_Record__c.Patient_Age__c} yo {!Match_Record__c.Patient_Gender__c} with {!Match_Record__c.Cancer_Type_Lower_Case__c}) who was found to have an a RET alteration fusion. To view your patient's Guardant360 report, click here: {!Match_Record__c.Portal_Link_For_MD_text__c}. Further to our discussion about your patient’s Guardant360 report, you expressed an interest in exploring treatment options based on the a RET alteration detected. [Option 2]
+
+Since RET alterations are uncommon, we have partnered with Blueprint Medicines and Loxo Oncology and formed a business and financial relationship to help identify patients for their studies. As a part of this partnership we alert treating physicians about treatment and trial options for patients like {!Match_Record__c.Patient_Initials__c}. Your patient may be eligible for [X NUMBER] clinical trials as indicated on the Guardant360 report, including: <ul><li>Phase 1/2 Study of the Highly-selective RET Inhibitor, Pralsetinib (BLU-667), in Patients With Thyroid Cancer, Non-Small Cell Lung Cancer, and Other Advanced Solid Tumors (ARROW), NCT03037385</li><li>Phase 1/2 Study of LOXO-292 in Patients With Advanced Solid Tumors, RET Fusion-Positive Solid Tumors, and Medullary Thyroid Cancer (LIBRETTO-001), NCT03157128</li></ul>
+
+<u>Loxo Oncology’s LOXO-292 LIBRETTO trial:</u>
+https://clinicaltrials.gov/ct2/show/NCT03157128
+1st or 2nd line setting
+Closest location: <strong>TRIAL SITE NAMES in TRIAL SITE CITY, TRIAL SITE STATE;</strong> additional study sites are also available. 
+<u>Blueprint Medicines’ Pralsetinib (BLU-667) ARROW trial:</u>
+https://clinicaltrials.gov/ct2/show/NCT03037385
+Lung cancer patients treated with platinum-based chemotherapy are ineligible (Group 1)
+Treatment-naive lung cancer patients are eligible (Group 2)
+Medullary thyroid cancer patients treated with cabozantinib and/or vandetanib are ineligible (Group 3)
+Closest location: <strong>TRIAL SITE in TRIAL CITY, TRIAL STATE;</strong> additional study sites are also available. 
+
+<strong>Would you like me to connect you with the clinical study team at Blueprint and/or Loxo Oncology via email so they may answer additional questions regarding eligibility, inclusion/criteria, etc. for these trials?</strong>
+
+Kind Regards,
+CTA Credentials
+Guardant Health, Inc.
+On behalf of the Clinical Trial Advisors program
+
+Guardant Health Patient Identifier: ??????
+
+
+Guardant Health partners with the clinical trial sponsor to conduct patient referral activities.
+
+This message is intended solely for the designated recipient(s). It may contain confidential or proprietary information and may be subject to attorney-client privilege or other confidentiality protections. If you are not a designated recipient you may not review, copy or distribute this message. If you have received this in error, please notify the sender by replying to this e-mail and deleting this message. Thank you.

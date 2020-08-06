@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Action Dialog Trigger --></label>
+        <name>MedProSC__Action_Dialog_Trigger__c</name>
+        <picklistValues>
+            <masterLabel>Button</masterLabel>
+            <translation><!-- Button --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Row</masterLabel>
+            <translation><!-- Row --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Allows standard users to use sync actions buttons or dialog --></help>
+        <label><!-- Allow Action Buttons --></label>
+        <name>MedProSC__Allow_Action_Buttons__c</name>
+    </fields>
+    <fields>
+        <help><!-- Controls whether the “Save as MedPro HCP” action button appears on Search Results screen for a non-admin user. --></help>
+        <label><!-- Allow Save as MedPro HCP --></label>
+        <name>MedProSC__Allow_Action_on_DRP__c</name>
+    </fields>
+    <fields>
+        <help><!-- If this is checked, all users with access to the search tool will see the Submit DRP button when the Enable DRP flag is checked.  Otherwise, only the “System Administrator” profile can see this button. --></help>
+        <label><!-- Allow DRP All --></label>
+        <name>MedProSC__Allow_DRP_All__c</name>
+    </fields>
+    <fields>
+        <help><!-- If this is turned on, original record is overlayed.  Ex: if the HCP exists w/out a MedProID and  Search MedPro is clicked then the HCP name is used on the Search screen &amp; the original record will be overlayed with MedPro data. --></help>
+        <label><!-- Allow Id Search Passing --></label>
+        <name>MedProSC__Allow_Id_Search_Passing__c</name>
+    </fields>
+    <fields>
+        <help><!-- If an HCP is selected from the DisplayResults page that already exists under another parentId, this is the alternate location to redirect the user. Please note that the parentId that was passed into the Display Results page is now set to the id parameter. --></help>
+        <label><!-- Bypass for the HCP Exists Page --></label>
+        <name>MedProSC__Bypass_for_the_SearchMessages_Page__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates if an update to MedPro universe requires a Client ID to be passed back.  Need client ID to be passed and “Sync updated in-universe.” flag checked for this to work successfully. --></help>
+        <label><!-- ClientID Required to Update In-Universe --></label>
+        <name>MedProSC__ClientIDRequiredToUpdateInUniverse__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates if the configuration of the customer object is active.  When there is more than one configuration, only one can be active.  If this is checked, any existing configurations for this customer will be de-selected. --></help>
+        <label><!-- ConfigStatus --></label>
+        <name>MedProSC__ConfigStatus__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Allows access to dynamically control the list fields shown to user on the detail screen of the search results screen.  If this is not checked, all available fields are displayed on the Detail page. --></help>
+        <label><!-- Configure Search Results Detail --></label>
+        <name>MedProSC__ConfigurePassTwoResults__c</name>
+    </fields>
+    <fields>
+        <help><!-- Label that the Detail link shows up as on the MedProOnePassDisplayResults page. --></help>
+        <label><!-- Detail Link on the Display Results Page --></label>
+        <name>MedProSC__Detail_Link_on_the_Display_Results_Page__c</name>
+    </fields>
+    <fields>
+        <help><!-- If this is checked, users will not see “New Search” button on the Search Results screen.  Users will only use the back button to get back to original Search.  They can always press “Clear Form” to start over. --></help>
+        <label><!-- Disable New Searches --></label>
+        <name>MedProSC__DisableNewSearches__c</name>
+    </fields>
+    <fields>
+        <help><!-- If this is checked, the user will not be able to see the “Search History” from the MedPro Search page. --></help>
+        <label><!-- Disable Search History --></label>
+        <name>MedProSC__DisableSearchHistory__c</name>
+    </fields>
+    <fields>
+        <help><!-- Toggles the multi-select of records on the MedProOnePassDisplayResults screen. --></help>
+        <label><!-- Disable Multiselect on Results Screen --></label>
+        <name>MedProSC__Disable_Multiselect_on_Results_Screen__c</name>
+    </fields>
+    <fields>
+        <help><!-- On the MedProOnePassDisplayResults page, the button label for the &apos;back&apos; button. --></help>
+        <label><!-- Display Page- Back Button Label --></label>
+        <name>MedProSC__Display_Page_Back_Button_Label__c</name>
+    </fields>
+    <fields>
+        <help><!-- The label for the custom button on the DisplayResults Page. The button calls a method that takes the search query the user entered and parameters in the url (SFID, parentId), and passes it to the VF page outside the package. --></help>
+        <label><!-- Display Page-Custom Nav Btn 1 Label --></label>
+        <name>MedProSC__Display_Page_Custom_Nav_Btn_Label_01__c</name>
+    </fields>
+    <fields>
+        <help><!-- The location that the custom button on the DisplayResults Page navigates to. The button calls a method that takes the search query the user entered and parameters in the url (SFID, parentId), and passes it to this VF page outside the package. --></help>
+        <label><!-- Display Page-Custom Nav Btn 1 Location --></label>
+        <name>MedProSC__Display_Page_Custom_Nav_Btn_Location_01__c</name>
+    </fields>
+    <fields>
+        <help><!-- On the MedProOnePassDisplayResults page when multiselect is disabled AND the mapping for a record does NOT exist in Salesforce, then display this on the help box title row. --></help>
+        <label><!-- Display Page-Doesn&apos;t exist popup title --></label>
+        <name>MedProSC__Display_Page_Doesn_t_exist_popup_title__c</name>
+    </fields>
+    <fields>
+        <help><!-- On the Display Results Page, this is for the title of the pop up when the record exists --></help>
+        <label><!-- Display Page- Exists popup title --></label>
+        <name>MedProSC__Display_Page_Exists_popup_title__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the color that rows are colored on the search results page when there is a match. Please enter the color in hex. --></help>
+        <label><!-- Display Page- Row Color For Matches --></label>
+        <name>MedProSC__Display_Page_Row_Color_For_Matches__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable access to the MedPro Data Resolution Process (DRP) form on the MedPro Search Results List View Page, Search Results Detail Page, and MedPro HCP Detail Page. --></help>
+        <label><!-- Enable DRP --></label>
+        <name>MedProSC__Enable_DRP__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enables the search for existing records in SF. --></help>
+        <label><!-- Enable Search for existing records in SF --></label>
+        <name>MedProSC__Enable_Search_for_existing_records_in_SF__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this box if  you want to display the Canadian Provinces when the US States are listed. --></help>
+        <label><!-- Include Canadian Provinces --></label>
+        <name>MedProSC__Include_Canadian_Provinces__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the MedPro HCP Sync Allowed is checked and this box  is checked, then updates will be sent to the MedPro universe from the MedPro HCP object. --></help>
+        <label><!-- MedPro HCP Sync Updates In-Universe --></label>
+        <name>MedProSC__MedProHCPSyncUpdatesInUniverse__c</name>
+    </fields>
+    <fields>
+        <help><!-- If MedPro HCP Sync Allowed and related Sync updates in-universe flag are both checked, this will identify the name of the field within the MedPro HCP object that will hold the Client ID value if it is required to update the universe. --></help>
+        <label><!-- MedPro HCP ClientID Field API Name --></label>
+        <name>MedProSC__MedProHCP_ClientID_Field_API_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Provides access to action buttons to sync data to the MedPro HCP custom object. --></help>
+        <label><!-- MedPro HCP Sync Allowed --></label>
+        <name>MedProSC__MedProHCP_SyncAllowed__c</name>
+    </fields>
+    <fields>
+        <help><!-- –Manages ordinal position for Details
+-Straight Replace–ordinal position is not auto resorted
+-Queue based–Existing order #s are pushed down one position below updated value
+-No Restriction–Does not update other ordinal values --></help>
+        <label><!-- Child Node ReOrdering Mode --></label>
+        <name>MedProSC__PassTwoDisplay_ReOrdering_Mode__c</name>
+        <picklistValues>
+            <masterLabel>No Restriction ReOrdering</masterLabel>
+            <translation><!-- No Restriction ReOrdering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Queue Based ReOrdering</masterLabel>
+            <translation><!-- Queue Based ReOrdering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Straight Replace ReOrdering</masterLabel>
+            <translation><!-- Straight Replace ReOrdering --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The label for the custom button on the Search Page. The button passes all the params in the URL to this VF page outside the package. --></help>
+        <label><!-- Search Page-Custom Nav Btn 1 Label --></label>
+        <name>MedProSC__Search_Page_Custom_Nav_Btn_1_Label__c</name>
+    </fields>
+    <fields>
+        <help><!-- The location that the custom button on the Search Page navigates to. The button passes all the params in the URL to this VF page outside the package. --></help>
+        <label><!-- Search Page-Custom Nav Btn 1 Location --></label>
+        <name>MedProSC__Search_Page_Custom_Nav_Btn_1_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show Install Date --></label>
+        <name>MedProSC__Show_Install_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the label for the back button --></help>
+        <label><!-- TwoPassDisplayDetail Page-Back btn --></label>
+        <name>MedProSC__TwoPassDisplayDetail_Page_Back_btn__c</name>
+    </fields>
+    <fields>
+        <help><!-- Label for the back button on the TwoPassDisplayResults page.Label for the back button on the TwoPassDisplayResultsv2 page. --></help>
+        <label><!-- TwoPassDisplayDetail V2 Page-Back btn --></label>
+        <name>MedProSC__TwoPassDisplayDetail_V2_Page_Back_btn__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the Client ID Required to Update in-Universe is checked and this flag is checked then the Client ID will be set to the Salesforce ID within MedPro.  Any sync mapping of MedPro that does not specify a Client ID will use the Salesforce ID instead. --></help>
+        <label><!-- Use SF Id As ClientID --></label>
+        <name>MedProSC__Use_SF_Id_As_ClientID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Production: https://service.medproid.com/ 
+Test:  http://servicetest.medproid.com/ --></help>
+        <label><!-- WS EndPoint --></label>
+        <name>MedProSC__WSEndPoint__c</name>
+    </fields>
+    <fields>
+        <help><!-- The unique password provided by MedPro to connect to MedProID® --></help>
+        <label><!-- WS Password --></label>
+        <name>MedProSC__WSPassword__c</name>
+    </fields>
+    <fields>
+        <help><!-- The unique username provided by MedPro to connect to MedProID® --></help>
+        <label><!-- WS UserName --></label>
+        <name>MedProSC__WSUserName__c</name>
+    </fields>
+    <webLinks>
+        <label><!-- Clear_Customer_Fields --></label>
+        <name>MedProSC__Clear_Customer_Fields</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Clear_Pass_1_Layout_Elements --></label>
+        <name>MedProSC__Clear_Pass_1_Layout_Elements</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Clear_Search_Input_fields --></label>
+        <name>MedProSC__Clear_Search_Input_fields</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Load_Customer_Fields --></label>
+        <name>MedProSC__Load_Customer_Fields</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Load_Default_Pass_1_Layout_Elements --></label>
+        <name>MedProSC__Load_Default_Pass_1_Layout_Elements</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Load_Default_Search_Input_Fields --></label>
+        <name>MedProSC__Load_Default_Search_Input_Fields</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Update_All_MedProID_Stamped_Records --></label>
+        <name>MedProSC__Update_All_MedProID_Stamped_Records</name>
+    </webLinks>
+</CustomObjectTranslation>

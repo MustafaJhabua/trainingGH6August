@@ -1,0 +1,33 @@
+Thank you, Dr. {!Match_Record__c.MD_Last_Name__c},
+
+Per your request, I have included a list of relevant trials below as well as assigned one of our Clinical Trial Advisor physicians to contact you via phone this week to further discuss the clinical trial options for your patient who had a {!Match_Record__c.Qualifying_Target_Genes__c} alteration.
+
+There are several relevant trials underway: 
+NCT02975934: Phase 3; Rucaparib in mCRPC (TRITON3); Clovis Oncology
+NCT02952534: Phase 2; Rucaparib in mCRPC (TRITON2); Clovis Oncology
+NCT02854436: Phase 2; Niraparib in mCRPC; Janssen
+NCT02203513: Phase 2; Chk1/2 Inhibitor (LY2606368) in mCRCP and other solid tumors; National Cancer Institute
+NCT02598895: Phase 2; Docetaxel and Carboplatin in mCRPC; National Cancer Institute
+NCT03442556: Phase 2; Docetaxel, Carboplatin, and Rucaparib in mCRPC; National Cancer Institute
+NCT02985021: Phase 2; Docetaxel and Carboplatin in mCRPC; Seattle Institute for Biomedical and Clinical Research
+NCT03012321: Phase 2; Abiraterone/Prednisone, Olaparib, or Abiraterone/Prednisone + Olaparib in mCRPC; AstraZeneca and National Cancer Institute
+NCT03148795: Phase 2; Talazoparib in mCRPC; Pfizer
+NCT03565991: Phase 2; Avelumab and Talazoparib in Solid Tumors; Pfizer
+
+In addition, we have partnered with Clovis Oncology and formed a business and financial relationship to help identify potential patients and to provide their trials as an option to you and potential patients like {!Match_Record__c.Patient_Initials__c}. Clovis’ trials, TRITON2 and TRITON3, involve a drug called rucaparib, that is being investigated in metastatic castrate-resistant prostate cancer (mCRPC) patients with BRCA1 or BRCA2 alterations. Details of these trials are in the attached PDF can be found by clicking this link: https://studypages.com/guardant/trials/{!Match_Record__c.Match_Key__c}
+
+ The closest study site is at {!Match_Record__c.Closest_Trial_Site__c} in {!Match_Record__c.Closest_Trial_Site_City__c}, {!Match_Record__c.Closest_Trial_Site_State__c} with Dr. {PI Full Name}; additional study sites are also available around the US.
+
+Would you like me to connect you with Dr. {PI Full Name} via email so they may answer additional questions regarding eligibility, inclusion/criteria, etc.?
+
+Sincerely, 
+{!User.Name}, {!User.Degree__c} 
+{!User.Title} 
+Guardant Health 
+
+Guardant Health Match Key: {!Match_Record__c.Match_Key__c} 
+
+
+Guardant Health partners with the clinical trial sponsor to conduct patient referral activities.
+
+This message is intended solely for the designated recipient(s). It may contain confidential or proprietary information and may be subject to attorney-client privilege or other confidentiality protections. If you are not a designated recipient you may not review, copy or distribute this message. If you have received this in error, please notify the sender by replying to this e-mail and deleting this message. Thank you. Ref: {!Match_Record__c.Id}

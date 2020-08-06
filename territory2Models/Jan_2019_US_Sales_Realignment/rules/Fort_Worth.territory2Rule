@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Territory2Rule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <booleanFilter>1 AND (2 OR 3 OR 4 OR 5 OR 6)</booleanFilter>
+    <name>Fort Worth</name>
+    <objectType>Account</objectType>
+    <ruleItems>
+        <field>Account.Account_Type__c</field>
+        <operation>equals</operation>
+        <value>Clinical Account US</value>
+    </ruleItems>
+    <ruleItems>
+        <field>Account.BillingPostalCode</field>
+        <operation>startsWith</operation>
+        <value>760,761,762,763,764,767,768,769,790,791,792,793,794,795,796</value>
+    </ruleItems>
+    <ruleItems>
+        <field>Account.BillingPostalCode</field>
+        <operation>equals</operation>
+        <value>73960,75261,75459,75020,75022,75027,75028,75058,75068,75076,75077,75090,75091,75092,75154,75167,78605,78607,78608,78609,78611,78639,78643,78654,78657,78672</value>
+    </ruleItems>
+    <ruleItems>
+        <field>Account.BillingPostalCode</field>
+        <operation>equals</operation>
+        <value>76522,76524,76525,76526,76528,76531,76538,76539,76544,76550,76558,76561,76565,76566,76596,76597,76598,76599</value>
+    </ruleItems>
+    <ruleItems>
+        <field>Account.BillingPostalCode</field>
+        <operation>equals</operation>
+        <value>76621,76622,76627,76630,76633,76634,76636,76637,76638,76640,76643,76644,76645,76649,76651,76652,76655,76657,76665,76670,76671,76684,76689,76690,76691,76692</value>
+    </ruleItems>
+    <ruleItems>
+        <field>Account.BillingPostalCode</field>
+        <operation>equals</operation>
+        <value>79705,79710,79713,79714,79720,79721,79733,79738,79748,79749,79782,79783</value>
+    </ruleItems>
+</Territory2Rule>

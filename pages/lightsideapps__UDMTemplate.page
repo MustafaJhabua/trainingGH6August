@@ -1,0 +1,204 @@
+<apex:page standardController="lightsideapps__User_Data_Management_Template__c" extensions="lightsideapps.UDMTemplateExtension" tabstyle="lightsideapps__User_Data_Management_Template__c">
+    
+    <style>
+        .inputFieldStyle {width:200px;}
+        .NumberTD {width: 50px !important; text-align:right; padding: 5px 5px 1px 2px; vertical-align:bottom;}
+        .FilterField {width:200px !important; padding: 3px 10px 3px 2px; }
+        .FilterOperator {width:50px !important; padding: 3px 10px 3px 2px; }
+        .FilterValue {width:210px !important; padding: 3px 10px 3px 2px; }
+        .AddFilterButtonTD {vertical-align:middle; text-align:left;}
+        
+        .redwarning {border-color:#CC0000; border-style: solid;}
+        .normal {}
+
+    </style>
+     
+    <apex:includeScript value="{!$Resource.lightsideapps__jquery_1_11_3}"/>    
+    
+    <apex:sectionHeader Title="User Data Management Tempate Edit" Subtitle="{!if(lightsideapps__User_Data_Management_Template__c.id==null,'New User Data Management Template',lightsideapps__User_Data_Management_Template__c.Name)}"/>
+    <apex:pageMessages id="pageMessages" escape="false" />
+    <apex:variable value="{!lightsideapps__User_Data_Management_Template__c}" var="UDMT" />
+    <apex:variable value="{!UDMT.lightsideapps__Query__c}" var="UDMTQuery" />
+    
+    <apex:form >
+
+        <apex:pageblock Title="User Data Management Template Edit" mode="edit" >
+         
+            <apex:pageblockButtons > 
+                <apex:commandbutton action="{!createQuery}" value="Quick Save" />
+                <apex:commandbutton action="{!SaveAction}" value="Save" />
+                <apex:commandbutton action="{!Cancel}" value="Cancel" />
+            </apex:pageblockButtons>
+        
+            <apex:pageblockSection title="User Data Management Template Information" columns="2" id="UDMInfo">
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="{!$ObjectType.lightsideapps__User_Data_Management_Template__c.fields.Name.Label}" />
+                    <apex:outputPanel styleClass="requiredInput" layout="block" >
+                        <apex:outputPanel styleClass="requiredBlock" layout="block"/>
+                        <apex:inputField value="{!UDMT.Name}" styleclass="inputFieldStyle" />
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="{!$ObjectType.lightsideapps__User_Data_Management_Template__c.fields.lightsideapps__Status__c.Label}" />
+                    <apex:outputPanel styleClass="requiredInput" layout="block" >
+                        <apex:outputPanel styleClass="requiredBlock" layout="block"/>
+                        <apex:inputField value="{!UDMT.lightsideapps__Status__c}" styleclass="inputFieldStyle" />
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+            </apex:pageblockSection>
+            <apex:pageblockSection columns="1" id="UDMDescription">
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="{!$ObjectType.lightsideapps__User_Data_Management_Template__c.fields.lightsideapps__Description__c.Label}" />
+                    <apex:outputPanel styleClass="requiredInput" layout="block" >
+                        <apex:outputPanel styleClass="requiredBlock" layout="block"/>
+                        <apex:inputField value="{!UDMT.lightsideapps__Description__c}" style="width:80%;height:40px;"  />
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                
+                
+            </apex:pageblockSection>
+        
+            <apex:pageblockSection title="Select an Object and User Lookup Field" columns="1" id="RelatedInfo">
+                
+                <apex:pageblockSectionItem >
+                    <apex:outputLabel value="{!$ObjectType.lightsideapps__User_Data_Management_Template__c.fields.lightsideapps__Object__c.Label}" />
+                    <apex:outputPanel styleClass="requiredInput" layout="block" >
+                        <apex:outputPanel styleClass="requiredBlock" layout="block"/>
+                        <apex:SelectList value="{!UDMT.lightsideapps__Object__c}" size="1"  >
+                            <apex:selectOptions value="{!ObjectNames}"></apex:selectOptions>
+                            <apex:actionSupport event="onchange" action="{!ObjectSelected}" reRender="UserFields,QueryFilterTable,QueryStringPanel,FilterStuffPanel,AddFilterButton,FilterPanel"/>  
+                        </apex:SelectList>
+                    </apex:outputPanel>
+                </apex:pageblockSectionItem>
+                
+                <apex:pageblockSectionItem >
+                    <apex:outputLabel value="User Reference Field" />
+                    <apex:outputPanel styleClass="requiredInput" layout="block" >
+                        <apex:outputPanel styleClass="requiredBlock" layout="block"/>
+                        <apex:SelectList value="{!UDMT.lightsideapps__User_Field_To_Update__c}" size="1" id="UserFields"  disabled="{!UDMT.lightsideapps__Object__c==null}" > 
+                            <apex:selectOptions value="{!UserFields}" />
+                            <apex:actionSupport event="onchange"  reRender="QueryStringPanel,AddFilterButton,FilterPanel"/>
+                        </apex:SelectList>
+                    </apex:outputPanel>
+                </apex:pageblockSectionItem>
+                <span style="display:block; height:10px;"> </span>
+            </apex:pageblockSection>
+            
+            <apex:outputPanel id="FilterPanel">
+                <apex:pageblockSection title="Filter" columns="1" rendered="{!AND(UDMT.lightsideapps__Object__c!=null,UDMT.lightsideapps__User_Field_To_Update__c!=null)}" />
+            </apex:outputPanel>
+                <apex:outputPanel id="AddFilterButton" >
+                    <apex:commandbutton value=" Add Filter " immediate="true" action="{!AddFilterRow}" rendered="{!AND(QueryFilterList.size==0,UDMT.lightsideapps__Object__c!=null,UDMT.lightsideapps__User_Field_To_Update__c!=null)}" style="margin-left:15px;"/>
+                </apex:outputPanel> 
+                <apex:outputPanel layout="block" id="QueryFilterTable"> 
+                    <apex:variable var="rowNum" value="{!1}" id="rowNum"/>
+                
+                    <apex:pageBlockTable value="{!QueryFilterList}" var="QueryFilter" style="margin-left:10px; margin-right:10px; width:90%;" rendered="{!QueryFilterList.size!=0}"  > 
+                        <apex:column style="width:15px;" styleClass="rowNum" >{!rowNum}.</apex:column> 
+                        <apex:column headerValue="Field" styleClass="FilterField">
+                            <apex:selectList value="{!QueryFilter.lightsideapps__Field__c}" size="1" style="min-width:169px;">
+                                <apex:selectOptions value="{!ObjectFields}"/> 
+                            </apex:selectList>
+                        </apex:column>
+                        <apex:column headerValue="Operator" styleClass="FilterOperator">
+                            <apex:inputField value="{!QueryFilter.lightsideapps__Operator__c}" styleclass="{!if(QueryFilter.lightsideapps__Operator__c==null,'redwarning','normal')}" onchange="changeClass(this)" />
+                        </apex:column>
+                        <apex:column headerValue="Value" styleClass="FilterValue" style="">
+                            <apex:inputText value="{!QueryFilter.lightsideapps__Value__c}"  style="width:190px;" />
+                        </apex:column>
+                        <apex:column style="width:45px;">
+                            <apex:commandLink title="remove" value="  remove"  action="{!RemoveItem}" rerender="QueryFilterTable,pageMessages,AddFilterButton,FilterStuffPanel" >
+                                <apex:param name="rowNumber"  value="{!rowNum}" assignTo="{!RowNumber}"/>
+                            </apex:commandLink>
+                        </apex:column>  
+                        <apex:column style="width:25px;" >
+                            <apex:commandButton action="{!AddFilterRow}" rendered="{!QueryFilterList.Size==rowNum}" reRender="QueryFilterTable,pageMessages" image="{!URLFOR($Resource.lightsideapps__LightsideAppsResources,'images/plus_icon.png')}" onmouseup="AddFilterRow();" style="border:none;background:none;padding:0px;vertical-align:middle;"/>
+                            <apex:variable var="rowNum" value="{!rowNum + 1}"/>
+                        </apex:column>
+                        
+                        <apex:column >  </apex:column>                  
+                    </apex:pageBlockTable>
+                </apex:outputPanel>
+            
+            <apex:outputPanel id="FilterStuffPanel" >
+                <!-- Field Filter Button and Values -->
+                <div style="margin-top:10px;margin-left:10px;">
+                
+                    <button id="FilterLogicButton"  type="button" class="{!if(AND(QueryFilterList.size>1,OR(QueryObject.Filter_Logic__c == '',QueryObject.Filter_Logic__c == null)),'','hidden')} AddFilterButton"
+                        onclick="var $LSA = jQuery.noConflict();$LSA('.FilterInputField').removeClass('hidden');$LSA('.FilterLabel').removeClass('hidden');$LSA('.RemoveFilterButton').removeClass('hidden');$LSA('.AddFilterButton').addClass('hidden');NewFilter();" >
+                        Add Filter Logic
+                    </button>
+                    <button type="button" class="{!if(QueryObject.Filter_Logic__c == '','hidden','')} RemoveFilterButton" style="margin-bottom:10px;"
+                        onclick="var $LSA = jQuery.noConflict();$LSA('.FilterInputField').val('');$LSA('.FilterInputField').addClass('hidden');$LSA('.FilterLabel').addClass('hidden');$LSA('.AddFilterButton').removeClass('hidden');$LSA('.RemoveFilterButton').addClass('hidden');">
+                        Remove Filter Logic
+                    </button>
+                    <br/>
+                    <font class="{!if(QueryObject.Filter_Logic__c == '','hidden','')} FilterLabel">Filter Logic: </font>
+                    <apex:inputField value="{!QueryObject.lightsideapps__Filter_Logic__c}" style="width:80%;margin-left:10px;margin-right:10px;" styleclass="{!if(QueryObject.lightsideapps__Filter_Logic__c == '','hidden','')} FilterInputField" onkeydown="" />
+
+                </div>
+            </apex:outputPanel>
+            
+            <apex:outputPanel id="QueryStringPanel" style="margin-top:15px; padding-top:15px;" >
+                <div style="margin-top:15px;" >
+                    <apex:pageblockSection Title="Query" columns="1" rendered="{!AND(UDMT.lightsideapps__Object__c!=null,UDMT.lightsideapps__User_Field_To_Update__c!=null)}" />
+                    <div style="width:80%; margin:10px 10px 20px 20px;">{!UDMT.lightsideapps__QueryString__c}</div>
+                    <div>
+                        <apex:commandButton value="{!if(UDMT.lightsideapps__Object__c==null,'Quick Save and Create Query','Quick Save and Refresh Query')}" action="{!createQuery}" rendered="{!AND(UDMT.lightsideapps__Object__c!=null,UDMT.lightsideapps__User_Field_To_Update__c!=null)}" 
+                        rerender="QueryStringPanel,pageMessages,UDMInfo,RelatedInfo,FilterStuffPanel" style="margin-left:20px;margin-bottom:15px;"/>
+                    </div>
+                </div>
+            </apex:outputPanel>
+
+            
+        </apex:pageblock>
+    </apex:form>
+ 
+    <script>
+    
+        var $LSA = jQuery.noConflict();
+        
+        function changeClass(fld)
+        {
+            if (fld.value == null || fld.value == "") {
+                fld.className = "redwarning";
+                if(fld.tagName.toUpperCase() == "SELECT" && fld.getAttribute("multiple")  == "multiple"){
+                    var unselectedinput = fld.id+"_unselected";
+                    var selectedinput = fld.id+"_selected";
+                    document.getElementById(selectedinput).className = "redwarning";
+                    document.getElementById(unselectedinput).className = "redwarning";                   
+                }
+            }
+            else {
+                fld.className = "normal";
+                if(fld.tagName.toUpperCase() == "SELECT" && fld.getAttribute("multiple")  == "multiple"){
+                    var unselectedinput = fld.id+"_unselected";
+                    var selectedinput = fld.id+"_selected";
+                    document.getElementById(unselectedinput).className = "normal";
+                    document.getElementById(selectedinput).className = "normal";                
+                }
+            }
+        } 
+        
+        function AddFilterRow()
+        {
+            if($LSA('.RemoveFilterButton').hasClass("hidden")) $LSA('#FilterLogicButton').removeClass('hidden');
+        }
+        
+        function NewFilter()
+        {
+            var filterString = '';
+            $LSA( ".rowNum" ).each(function() {
+                filterString += $LSA(this).text().charAt(0) + ' AND '
+            });
+
+            $LSA('.FilterInputField').val(filterString.substring(0,filterString.length - 5));
+        }
+        
+        function checkfilter(){
+            var filterString = $LSA('.FilterInputField').val();
+            // not completed
+            
+        }
+    </script>
+</apex:page>

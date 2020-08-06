@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>Send to physician who requests more information about ARRAY ARR-818</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Letter - ARR818</name>
+    <style>none</style>
+    <subject>Clinical Trial Opportunity: Array Biopharma BEACON Trial</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

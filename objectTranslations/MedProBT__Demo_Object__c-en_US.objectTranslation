@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account --></label>
+        <name>MedProBT__Account__c</name>
+        <relationshipLabel><!-- Demo Objects --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>MedProBT__City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Designation --></label>
+        <name>MedProBT__Designation__c</name>
+    </fields>
+    <fields>
+        <label><!-- MedPro ID --></label>
+        <name>MedProBT__External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Object --></label>
+        <name>MedProBT__Parent_Object__c</name>
+        <relationshipLabel><!-- Demo Objects --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

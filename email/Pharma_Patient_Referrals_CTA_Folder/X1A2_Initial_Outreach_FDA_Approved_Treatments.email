@@ -1,0 +1,16 @@
+Dear Dr. {!Contact.LastName}, 
+
+The Guardant360 test you ordered to identify circulating tumor biomarkers for your patient {!Guardant_360_Sample__c.MR_Patient_Initials__c} reported {!Guardant_360_Sample__c.MR_Qualifying_Target_Alterations__c} on {!Guardant_360_Sample__c.Final_Report_Date__c}. We found that this uncommon alteration could qualify your patient for a recently FDA approved therapy.
+
+If you would like to receive more information, please reply to this email.
+
+To view your report in our secure online portal, click the following link: 
+{!Guardant_360_Sample__c.Portal_Link_for_MD__c}.
+
+Sincerely, 
+Katrina Kesterson, MD 
+Clinical Trial Advisor
+Guardant Health, Inc.
+On behalf of the Clinical Trial Advisors program
+
+This message is intended solely for the designated recipient(s). It may contain confidential or proprietary information and may be subject to attorney-client privilege or other confidentiality protections. If you are not a designated recipient you may not review, copy or distribute this message. If you have received this in error, please notify the sender by replying to this email and delete this message. Thank you.

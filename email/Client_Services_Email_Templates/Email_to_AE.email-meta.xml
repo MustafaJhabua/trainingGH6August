@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Automated email sent.  Please contact via phone.  Once account verified, request qualification.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Email to AE</name>
+    <style>none</style>
+    <subject>Unqualified Account G360 Kit Request</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

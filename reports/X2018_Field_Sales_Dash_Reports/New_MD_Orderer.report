@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Guardant_360_Sample__c$Name</field>
+    </columns>
+    <columns>
+        <field>Guardant_360_Sample__c$Date_Received__c</field>
+    </columns>
+    <columns>
+        <field>Guardant_360_Sample__c$Previous_Date_Received_Contact__c</field>
+    </columns>
+    <columns>
+        <field>Guardant_360_Sample__c$New_Ordering_MD__c</field>
+    </columns>
+    <columns>
+        <field>Guardant_360_Sample__c.Contacts__r$Name</field>
+    </columns>
+    <columns>
+        <field>Guardant_360_Sample__c$Contact__c.Number_of_Samples__c</field>
+    </columns>
+    <description>Count of MDs who have never ordered or who haven&apos;t ordered in a year</description>
+    <filter>
+        <criteriaItems>
+            <column>Guardant_360_Sample__c.Contacts__r$Number_of_Samples__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Guardant_360_Sample__c$New_Ordering_MD__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>New MD Orderer</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Guardant_360_Samples_w_related_Accounts_Contacts__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Guardant_360_Sample__c$Date_Received__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Guardant_360_Sample__c$Date_Received__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2017-05-17</startDate>
+    </timeFrameFilter>
+</Report>

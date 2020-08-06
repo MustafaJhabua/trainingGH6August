@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- cds-number --></label>
+        <name>MedProSC__CDS_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- dea-number --></label>
+        <name>MedProSC__DEA_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Existing Object Ids --></label>
+        <name>MedProSC__Existing_Object_Ids__c</name>
+    </fields>
+    <fields>
+        <label><!-- Existing Object Types --></label>
+        <name>MedProSC__Existing_Object_Types__c</name>
+    </fields>
+    <fields>
+        <label><!-- medpro-master-id --></label>
+        <name>MedProSC__MedProMasterID__c</name>
+    </fields>
+    <fields>
+        <label><!-- address-line-one --></label>
+        <name>MedProSC__address_line_one__c</name>
+    </fields>
+    <fields>
+        <label><!-- address-line-two --></label>
+        <name>MedProSC__address_line_two__c</name>
+    </fields>
+    <fields>
+        <label><!-- address-state --></label>
+        <name>MedProSC__address_state__c</name>
+    </fields>
+    <fields>
+        <label><!-- adj-state-lic-exp-date --></label>
+        <name>MedProSC__adj_state_lic_exp_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- affiliated-org --></label>
+        <name>MedProSC__affiliated_org__c</name>
+    </fields>
+    <fields>
+        <label><!-- ama-medproid-number --></label>
+        <name>MedProSC__ama_medproid_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- best-mmid-specialty-primary --></label>
+        <name>MedProSC__best_mmid_specialty_primary__c</name>
+    </fields>
+    <fields>
+        <label><!-- best-mmid-specialty-secondary --></label>
+        <name>MedProSC__best_mmid_specialty_secondary__c</name>
+    </fields>
+    <fields>
+        <label><!-- best-specialty-primary --></label>
+        <name>MedProSC__best_specialty_primary__c</name>
+    </fields>
+    <fields>
+        <label><!-- best-specialty-secondary --></label>
+        <name>MedProSC__best_specialty_secondary__c</name>
+    </fields>
+    <fields>
+        <label><!-- cds-license-num --></label>
+        <name>MedProSC__cds_license_num__c</name>
+    </fields>
+    <fields>
+        <label><!-- cds-medproid --></label>
+        <name>MedProSC__cds_medproid__c</name>
+    </fields>
+    <fields>
+        <label><!-- city --></label>
+        <name>MedProSC__city__c</name>
+    </fields>
+    <fields>
+        <label><!-- customer-client-id --></label>
+        <name>MedProSC__clientId__c</name>
+    </fields>
+    <fields>
+        <label><!-- country --></label>
+        <name>MedProSC__country__c</name>
+    </fields>
+    <fields>
+        <label><!-- customer-business-unit --></label>
+        <name>MedProSC__customer_business_unit__c</name>
+    </fields>
+    <fields>
+        <label><!-- customer-comment-1 --></label>
+        <name>MedProSC__customer_comment_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- customer-comment-2 --></label>
+        <name>MedProSC__customer_comment_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- customer-comment-3 --></label>
+        <name>MedProSC__customer_comment_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- customer-comment --></label>
+        <name>MedProSC__customer_comment__c</name>
+    </fields>
+    <fields>
+        <label><!-- customer-script-tracking --></label>
+        <name>MedProSC__customer_script_tracking__c</name>
+    </fields>
+    <fields>
+        <label><!-- customer-state-grace-period --></label>
+        <name>MedProSC__customer_state_grace_period__c</name>
+    </fields>
+    <fields>
+        <label><!-- customer-territory-id --></label>
+        <name>MedProSC__customer_territory_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- dea-medproid-number --></label>
+        <name>MedProSC__dea_medproid_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- error-code --></label>
+        <name>MedProSC__error_code__c</name>
+    </fields>
+    <fields>
+        <label><!-- error-message --></label>
+        <name>MedProSC__error_message__c</name>
+    </fields>
+    <fields>
+        <label><!-- first-name --></label>
+        <name>MedProSC__first_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- is Selected --></label>
+        <name>MedProSC__is_Selected__c</name>
+    </fields>
+    <fields>
+        <label><!-- last-name --></label>
+        <name>MedProSC__last_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- medpro-master-idxxx --></label>
+        <name>MedProSC__medpro_master_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- medpro-universe-check --></label>
+        <name>MedProSC__medpro_universe_check__c</name>
+    </fields>
+    <fields>
+        <label><!-- medproid --></label>
+        <name>MedProSC__medproid__c</name>
+    </fields>
+    <fields>
+        <label><!-- middle-initial --></label>
+        <name>MedProSC__middle_initial__c</name>
+    </fields>
+    <fields>
+        <label><!-- npi-cms-alt-first-name --></label>
+        <name>MedProSC__npi_cms_alt_first_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- npi-cms-alt-last-name --></label>
+        <name>MedProSC__npi_cms_alt_last_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- npi-cms-first-name --></label>
+        <name>MedProSC__npi_cms_first_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- npi-cms-last-name --></label>
+        <name>MedProSC__npi_cms_last_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- npi-cms-lic-state-id1 --></label>
+        <name>MedProSC__npi_cms_lic_state_id1__c</name>
+    </fields>
+    <fields>
+        <label><!-- npi-cms-state-lic-num1 --></label>
+        <name>MedProSC__npi_cms_state_lic_num1__c</name>
+    </fields>
+    <fields>
+        <label><!-- npi-formatted-state-license-number --></label>
+        <name>MedProSC__npi_formatted_state_license_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- npi-medproid-number --></label>
+        <name>MedProSC__npi_medproid_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- npi-number --></label>
+        <name>MedProSC__npi_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- npi-on-pecos-o-and-r --></label>
+        <name>MedProSC__npi_on_pecos_o_and_r__c</name>
+    </fields>
+    <fields>
+        <label><!-- npi-primary-taxonomy-code --></label>
+        <name>MedProSC__npi_primary_taxonomy_code__c</name>
+    </fields>
+    <fields>
+        <label><!-- npi-primary-taxonomy-name --></label>
+        <name>MedProSC__npi_primary_taxonomy_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- previously-searched-hcp --></label>
+        <name>MedProSC__previously_searched_hcp__c</name>
+    </fields>
+    <fields>
+        <label><!-- related-licenses --></label>
+        <name>MedProSC__related_licenses__c</name>
+    </fields>
+    <fields>
+        <label><!-- samp-desig-status --></label>
+        <name>MedProSC__samp_desig_status__c</name>
+    </fields>
+    <fields>
+        <label><!-- samp-fed-sanctions --></label>
+        <name>MedProSC__samp_fed_sanctions__c</name>
+    </fields>
+    <fields>
+        <label><!-- samp-last-received --></label>
+        <name>MedProSC__samp_last_received__c</name>
+    </fields>
+    <fields>
+        <label><!-- samp-license-status --></label>
+        <name>MedProSC__samp_license_status__c</name>
+    </fields>
+    <fields>
+        <label><!-- samp-overall --></label>
+        <name>MedProSC__samp_overall__c</name>
+    </fields>
+    <fields>
+        <label><!-- sampleability-exp-overall --></label>
+        <name>MedProSC__sampleability_exp_overall__c</name>
+    </fields>
+    <fields>
+        <label><!-- sln-medproid-number --></label>
+        <name>MedProSC__sln_medproid_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- sln-professional-designation --></label>
+        <name>MedProSC__sln_professional_designation__c</name>
+    </fields>
+    <fields>
+        <label><!-- sln-state-license-number --></label>
+        <name>MedProSC__sln_state_license_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- state --></label>
+        <name>MedProSC__state__c</name>
+    </fields>
+    <fields>
+        <label><!-- state-grace-period --></label>
+        <name>MedProSC__state_grace_period__c</name>
+    </fields>
+    <fields>
+        <label><!-- state-of-license --></label>
+        <name>MedProSC__state_of_license__c</name>
+    </fields>
+    <fields>
+        <label><!-- state-reporting-chk --></label>
+        <name>MedProSC__state_reporting_chk__c</name>
+    </fields>
+    <fields>
+        <label><!-- state-spec-id --></label>
+        <name>MedProSC__state_spec_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- suffix-name --></label>
+        <name>MedProSC__suffix_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- title --></label>
+        <name>MedProSC__title__c</name>
+    </fields>
+    <fields>
+        <label><!-- transaction_id --></label>
+        <name>MedProSC__transaction_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- zip --></label>
+        <name>MedProSC__zip__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,433 @@
+<!--***********************************************************************
+Author : Paramasivan
+Description : this page is published in Force.com site and it will be used by physician to enter the requesta kit details.
+               This page uses Gotham Font. 
+**************************************************************************-->
+<apex:page showHeader="false" standardStylesheets="false"  controller="requestaKitFormController" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0">
+  <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <!-- Meta Information Begin -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Guardant360</title>    
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="title" content="Oncologist Panel | The Limitations of Tissue Biopsies" />
+    <meta name="description" content="A physician panel of Oncologists discuss their own experiences with the limitations of tissue and how an extensively validated liquid biopsy helps guide treatment selection" /> 
+    <meta name="keywords" content="Liquid biopsy, treatment selection, Oncology Panel, Panel of Oncologists, physician panel, NSCLC, Lung Cancer, Guardant360, Guardant Health" /> 
+    <meta name="copyright" content="© 2018 Guardant Health, Inc. " />
+    <meta name="robots" content="All" />
+    <!-- Meta Information End -->
+    <!--<link href="./Guardant360_files/icon" rel="stylesheet">-->
+    <!-- CSS Style Begin -->
+    <apex:stylesheet value="{!$Resource.BootstrapForKit}"/>
+    <apex:stylesheet value="{!$Resource.FontawesomeForKit}"/>
+     <apex:stylesheet value="{!$Resource.materialcssforRequestForm}"/>
+    <apex:stylesheet value="{!$Resource.RoundedForKit}"/>
+    
+    <apex:stylesheet value="{!URLFOR($Resource.HCo_fonts,'hco_fonts/hco_fonts.css')}"/>
+       
+    <apex:stylesheet value="{!$Resource.StyleForKit}"/>
+    <apex:stylesheet value="{!$Resource.gothamfontcss}"/>
+    <!-- CSS Style End -->
+    <!-- Script Begin -->
+    <apex:includeScript value="{!$Resource.Jqueryfile}"/>
+    <!--<apex:includeScript value="{!$Resource.Googlecode}"/>-->
+    <apex:includeScript value="{!$Resource.BootstrapJs}"/>
+  <!--  <apex:includeScript value="{!$Resource.Appforkitnew}"/> -->
+  <style>
+        .overlay {
+            display: none;
+            height: 100%;
+            left: 0;
+            position: fixed;
+            top: 0;
+            opacity: 0.3;
+            -moz-opacity: 0.3;
+            width: 100%;
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+            filter: alpha(opacity=30);
+            background: #000;
+            -khtml-opacity: 0.3;
+            z-index: 1000;
+        }
+ 
+        .loader {
+            background: url('/img/loading32.gif') scroll no-repeat 0 0;
+            width: 32px;
+            height: 32px;
+            position: absolute;
+            left: 50%;
+        }
+    </style>
+  <script src="https://www.googletagmanager.com/gtag/js?id=AW-818573828"></script>
+    
+    <!-- Event snippet for Guardant360 Kit Request conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. --> 
+   <script>
+    window.$Label = window.$Label || {};
+    $Label.conversionTrackerURL = '{!JSENCODE($Label.conversionTrackerURL)}';
+  </script>
+    <script>
+    <!--   Added for google code -->
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-818573828');
+    function gtag_report_conversion(url) { 
+    //alert($Label.conversionTrackerURL);
+    var callback = function () { if (typeof(url) != 'undefined') { window.location = url; } }; gtag('event', 'conversion', { 'send_to': 'AW-818573828/1fGFCJvQj7UBEITkqYYD', 'event_callback': callback }); } 
+  
+    $(document).ready(function() {
+    $("#form3").hide(), $("#form4").hide(), $(".validate").click(function() {
+        if($('#npi').hasClass('warning_red'))
+        {
+            return false;
+        }
+        if ($("input[name=typeOfCancer]:checked").val()) {
+            if ($(".cancer-type").remove(), !t($("#sEmail").val())) return $("#sEmail").closest("div").find("p").remove(), $("#sEmail").closest("div").append('<p class="error-msg">Invalid Email Address</p>'), !1;
+            $("#sEmail").closest("div").find("p").remove(), $(".form-one input").each(function() {
+                if ("" == $(this).val()) return $(this).addClass("warning_red"), $(this).closest("div").find("p").remove(), $(this).closest("div").append('<p class="error-msg">This field is required.</p>'), !1;
+                $(this).removeClass("warning_red"), $(this).closest("div").find("p").remove()
+            }), $(".form-one input[type=text]").hasClass("warning_red") || ($(".validate .stepwizard-step").hide(500), $("#two").removeClass("btn-default"), $("#two").addClass("btn-primary"), $(".form-two").show(500), $(".form-one").hide(500), "one" == $(this).attr("id") ? ($("#next").show(500), $("#two").removeClass("btn-primary"), $("#two").addClass("btn-default"), $(".form-one").show(500), $(".form-two").hide(500)) : ($(this).removeClass("btn-default"), $(".form-two").show(500), $(".form-one").hide(500), $("#next").hide(500)))
+        } else $(".cancer-type").remove(), $("#cancer-type").append('<div class="col-md-12 text-center cancer-type error-msg">Please select cancer type</div>'), $(".form-one input").each(function() {
+            "" == $(this).val() ? ($(this).addClass("warning_red"), $(this).closest("div").find("p").remove(), $(this).closest("div").append('<p class="error-msg">This field is required.</p>')) : ($(this).removeClass("warning_red"), $(this).closest("div").find("p").remove())
+        })
+    }),$("#SubmitButton").click(function() {
+        if ($(".form-one input[type=text]").each(function() {
+                "" == $(this).val() ? ($(this).addClass("warning_red"), $(this).closest("div").find("p").remove(), $(this).closest("div").append('<p class="error-msg">This field is required.</p>')) : ($(this).removeClass("warning_red"), $(this).closest("div").find("p").remove())
+            }),$(".cancer-type-container input[type=text]").each(function() {
+                "" == $(this).val() ? ($(this).addClass("warning_red"), $(this).closest("div").find("p").remove(), $(this).closest("div").append('<p class="error-msg">This field is required.</p>')) : ($(this).removeClass("warning_red"), $(this).closest("div").find("p").remove())
+            }),(!$(".cancer-type-container input[type=text]").hasClass("warning_red") && !$(".form-one input[type=text]").hasClass("warning_red"))) {
+            if (!t($("#pcEmail").val())) return $("#pcEmail").closest("div").find("p").remove(), $("#pcEmail").closest("div").append('<p class="error-msg">Invalid Email Address</p>'), !1;
+            $("#pcEmail").closest("div").find("p").remove(), $("#two").removeClass("btn-default"), $("#two").addClass("btn-primary");
+             var e = document.getElementsByName("FirstName")[0].value,
+                s = document.getElementsByName("LastName")[0].value,
+                i = document.getElementsByName("NPINumber")[0].value,
+                a = document.getElementsByName("Email")[0].value,
+                o = document.getElementsByName("pcFname")[0].value,
+                n = document.getElementsByName("pcLname")[0].value,
+                r = document.getElementsByName("pcEmail")[0].value,
+                l = document.getElementsByName("pcShipping")[0].value,
+                d = document.getElementsByName("pcAddress")[0].value,
+                m = document.getElementsByName("pcCity")[0].value,
+                c = document.getElementsByName("pcState")[0].value,
+                p = document.getElementsByName("pcZip")[0].value;
+                z = document.getElementsByName("noofkit")[0].value;
+
+            var con = e+';#'+s+';#'+i+';#'+a+';#'+o+';#'+n+';#'+r+';#'+l+';#'+d+';#'+m+';#'+c+';#'+p+';#'+z;
+            $('.loadingBox').show();
+
+            Visualforce.remoting.Manager.invokeAction( 
+            //Invoking controller action FormDetails
+            '{!$RemoteAction.requestaKitFormController.FormDetails}',con,function(result, event){
+               //We can access the records through the parameter result
+               //event.status determines if there is error or not 
+                if(result != 'Error'){
+                $('.loadingBox').hide();
+                 $(".form-one").hide(500),$(".cancer-type-container").hide(500),$("#form3").show(500);
+                }
+                else{
+                $('.loadingBox').hide();
+                return false;
+                }
+
+               if(event.status){
+                  //  alert(event.status);                                
+               }               
+            },
+            {escape: true});
+        }
+        
+        gtag('event', 'conversion', { 'send_to': 'AW-818573828/1fGFCJvQj7UBEITkqYYD', 'event_callback': function() {
+       // alert('ALL tags which fire on {{event}} equals fireTags have now fired');
+    } }); 
+       // gtag_report_conversion($Label.conversionTrackerURL);
+
+    }), $(".custom-button .btn-default").click(function() {
+        $(".custom-label").removeClass("active"), $(this).addClass("active")
+    });
+    var e = document.getElementById("video-container");
+
+    function t(e) {
+        return !!/^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/.test(e)
+    }
+      $("#video-section").click(function() {
+        $(this).find('i').hasClass("fa-pause") ? ($(this).find('i').removeClass("fa-pause"), $(this).find('i').addClass("fa-play"), e.pause()) : ($(this).find('i').removeClass("fa-play"), $(this).find('i').addClass("fa-pause"), e.play())
+        $(".vid-controller").toggle()
+    }), $(".stepwizard-step .btn").click(function() {
+        "one" == $(this).attr("id") && ($("#two").removeClass("btn-primary"), $("#two").addClass("btn-default"), $(".form-one").show(500), $(".form-two").hide(500), $("#next").show(500))
+    }), $("input[type=text]").keyup(function(event) {
+        "" == $(this).val() ? ($(this).addClass("warning_red"), $(this).closest("div").find("p").remove(), $(this).closest("div").append('<p class="error-msg">This field is required.</p>')) : ($(this).removeClass("warning_red"), $(this).closest("div").find("p").remove());
+        var e = $(this).attr("id"),
+            s = $("#" + e).val();
+        if ("sEmail" == e || "pcEmail" == e) {
+            if (!t(s)) return $("#" + e).closest("div").find("p").remove(), $("#" + e).closest("div").append('<p class="error-msg">Invalid Email Address</p>'), !1;
+            $("#" + e).closest("div").find("p").remove()
+        }
+        var npi = $(this).attr("id"),
+            npiVal = $("#" + npi).val();
+            
+        if(npi=='npi')
+        {
+        if (npiVal.match(/^\d+$/)) { 
+            if(npiVal.length!=10){
+                $(this).addClass("warning_red");
+               $(this).closest("div").find('p').remove();
+               $(this).closest("div").append('<p class="error-msg">Enter 10 digit only</p>');
+               return false;
+            }
+            if(!npiVal.match("^1")) {
+               $(this).addClass("warning_red");
+               $(this).closest("div").find('p').remove();
+               $(this).closest("div").append('<p class="error-msg">NPI number always starts with 1</p>');
+               return false;
+             }
+            else{
+                $(this).removeClass("warning_red");
+                $(this).closest("div").find('p').remove();
+            }
+                   
+        }else{
+            $("#" + npi).val('');
+            $(this).closest("div").find('p').remove();
+            $(this).closest("div").append('<p class="error-msg">Enter digit only</p>');
+            return false;
+        }
+    
+    }
+    
+    stat = $("#pcState").val();
+    if(stat.length!=2){
+            $("#pcState").addClass("warning_red");
+            $("#pcState").closest("div").find('p').remove();
+            $("#pcState").closest("div").append('<p class="error-msg">State contains only two letters</p>');
+            return false;
+    }
+    zip = $("#pcZip").val();
+    if(zip.match(/^\d+$/)){
+    
+    if(zip.length==5 || zip.length==9 ){
+              $("#pcZip").removeClass("warning_red");
+                $("#pcZip").closest("div").find('p').remove();
+    }
+       else{
+             $("#pcZip").addClass("warning_red");
+            $("#pcZip").closest("div").find('p').remove();
+            $("#pcZip").closest("div").append('<p class="error-msg">Zip code only contains 5 or 9 digits</p>');
+            return false;
+               
+            }
+    }
+    
+     noofkits = $("#noofkit").val();
+   
+   if(noofkits.match(/^\d+$/)){
+    if(noofkits.length>2 || noofkits > 5 || noofkits == 0){
+    $(this).addClass("warning_red");
+               $(this).closest("div").find('p').remove();
+               $(this).closest("div").append('<p class="error-msg">NoOfKits Should be between 1 to 5</p>');
+               return false;
+    }
+   }  else{
+           $("#" + noofkits).val('');
+            $(this).closest("div").find('p').remove();
+            $(this).closest("div").append('<p class="error-msg">Enter digit only</p>');
+            return false;
+    }
+    
+    
+    }), $("input[name=typeOfCancer]").click(function() {
+        $(".cancer-type").remove()
+    })
+});
+
+       
+    </script>
+    <!-- Script End -->
+    </head>
+
+
+ 
+<body class="req-body" style="display: block;font-family:HCo Gotham;">
+ <div id="load_scrl" class="loadingBox loader" style="display:none"> <div style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.25; z-index: 1000; background-color: black;">
+        &nbsp;
+    </div>
+    <div style="position: fixed; left: 0; top: 0; bottom: 0; right: 0; z-index: 1001; margin: 15% 50%">
+        <div style="display: inline-block; padding: 2px; background-color: #fff; width: 125px;">
+            <img src="/img/loading.gif" style="float: left; margin: 8px;" />
+            <span style="display: inline-block; padding: 10px 0px;">Please Wait...</span>
+        </div>
+    </div></div>
+    <div class="loadingBox overlay"> </div>
+   
+   
+
+ <!-- Logo Section Begin -->
+    <div class="container-fluid">
+        <header>
+            <div class="row text-center request-head">
+                <h3>Request a  &nbsp;<apex:image url="{!$Resource.Guardant360}"/> Kit</h3>
+            </div>          
+        </header>
+    </div>
+ <!-- Logo Section End -->
+   
+<!-- Body section Begin -->
+<div class="main-container"> 
+    <div class="container custom-container"> 
+        <div class="wrapper">
+            <!-- Page1 form section Begin -->
+                <form class="form">
+                <div class="form-one" id="form-one">
+                   
+                        <div class="row">
+                        <div class="cancer-type-container">
+                                <div>
+
+                                <div class="row">
+                                   
+                                <div class="col-md-12">
+                                        
+                                            <label class="labelnew "> Ordering MD</label>
+                                       
+                                 </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="First Name" class="form-control input-type " name="FirstName" required=""/>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Last Name" class="form-control input-type " name="LastName" required=""/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="npi number" class="form-control input-type " id="npi" name="NPINumber" required=""/>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Email for results delivery" class="form-control input-type " name="Email" id="sEmail"/>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                </div>
+                  <div class="row">
+                <div class="cancer-type-container">
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label class="info-text">Practice Contact</label>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" placeholder="First Name" class="form-control input-type " name="pcFname" required="true"/>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" placeholder="Last Name" class="form-control input-type " name="pcLname" required="true"/>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="text" placeholder="Office Contact Email" class="form-control input-type " name="pcEmail" id="pcEmail" required="true"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label class="info-text">Shipping Information</label>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="text" placeholder="Practice name" class="form-control input-type " name="pcShipping" required="true"/>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="text" placeholder="Address" class="form-control input-type " name="pcAddress" required="true"/>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="form-group">
+                                <input type="text" placeholder="city" class="form-control input-type " name="pcCity" required="true"/>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <input type="text" placeholder="state" class="form-control input-type " name="pcState" id ="pcState" required="true"/>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <input type="text" placeholder="zip code" class="form-control input-type " name="pcZip" id ="pcZip" required="true"/>
+                            </div>
+                        </div>
+                         <div class="col-md-3">
+                            <div class="form-group">
+                                <input type="text" placeholder="No Of Kits(1 to 5)" class="form-control input-type " name="noofkit" id ="noofkit" required="true"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+        </div>
+        <div class="row">
+           <div class="col-md-12">
+           <label class="info-text"></label>
+           </div>
+            <div class="col-md-8 col-md-offset-2 submit">
+                <div class="form-one">                
+                <button type="button" id="SubmitButton"  class="btn-primary btn-submit form-control">SUBMIT</button>
+               </div>
+               
+            </div>
+        </div>
+           <div class="form-three" id="form3" style="display: none;">
+            <div class="row  text-center">
+                 <i class="material-icons check-circle">✓</i>
+            </div>
+            <div class="row text-center">
+                <h4 class="success">Success!</h4>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-8 col-md-offset-2">
+                    <p class="success-content">A Guardant Health representative will be in contact shortly.
+                    </p>
+                     <p class="success-content-link"> Click below to download the Physician Portal App.</p>
+                </div>
+            </div>
+            <div class="row text-center portal-app">
+                <a href="https://itunes.apple.com/us/app/guardant-health-physician-and-provider-portal/id1137717305?mt=8" target="_blank">
+                    <apex:image url="{!$Resource.iTunesArtwork_2x}" styleclass="itune"/>
+
+                </a>
+                <a href="https://itunes.apple.com/us/app/guardant-health-physician-and-provider-portal/id1137717305?mt=8" target="_blank">
+                    <apex:image url="{!$Resource.Downloadappstore}" styleclass="app-store"/>
+                </a>
+            </div>
+        </div>
+        </form>
+        <!-- Page1 form section End -->
+    </div></div>
+    <!-- Page2 form section Begin -->
+        
+          
+      </Div>
+
+
+<style>
+    body{
+        display:none;
+    }
+</style>
+</body>
+</html>
+</apex:page>

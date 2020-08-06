@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Territory2Rule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <booleanFilter>1 AND (2 OR 3 OR 4)</booleanFilter>
+    <name>Houston</name>
+    <objectType>Account</objectType>
+    <ruleItems>
+        <field>Account.Account_Type__c</field>
+        <operation>equals</operation>
+        <value>Clinical Account US</value>
+    </ruleItems>
+    <ruleItems>
+        <field>Account.BillingPostalCode</field>
+        <operation>startsWith</operation>
+        <value>759,770,772,773,774,775,776,777,778,779,784</value>
+    </ruleItems>
+    <ruleItems>
+        <field>Account.BillingPostalCode</field>
+        <operation>equals</operation>
+        <value>75760,75788,75831,75833,75834,75835,75839,75844,75845,75846,75847,75849,75850,75851,75852,75856,75858,75862,75865</value>
+    </ruleItems>
+    <ruleItems>
+        <field>Account.BillingPostalCode</field>
+        <operation>equals</operation>
+        <value>78335,78336,78340,78347,78352,78358,78359,78362,78368,78370,78373,78374,78377,78381,78382,78387,78389,78390,78391,78393,78102,78104,78107,78125,78142,78145,78146,78162</value>
+    </ruleItems>
+</Territory2Rule>

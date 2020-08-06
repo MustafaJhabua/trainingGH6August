@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>12/13/18 updated MS edits. NF 12/12/18 created new template. NF SYM015 Ordering MD provides affirmative response to initial outreach or last ditch email</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>SYM015_Response_TrialInformationList_METSkipping_038</name>
+    <style>none</style>
+    <subject>Re:</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,9 @@
+Hello, 
+
+{!User.Name} updated {!Contact.Name}'s Secondary Email to {!Contact.Secondary_Email__c}. 
+
+You may want to double-check this contact's primary email address and see if it needs to be updated as well: 
+https://na66.salesforce.com/{!Contact.Id} 
+
+Thanks, 
+User Engagement Team

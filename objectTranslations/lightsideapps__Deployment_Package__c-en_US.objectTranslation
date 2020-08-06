@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Description --></label>
+        <name>lightsideapps__Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- How many components are included in the Deployment Package --></help>
+        <label><!-- Number of Components --></label>
+        <name>lightsideapps__Number_of_Components__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter a comma delimited list of test classes to run on deployment.
+eg. TestClass1, TestClass2 --></help>
+        <label><!-- Selected Test Classes --></label>
+        <name>lightsideapps__SelectedTestClasses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>lightsideapps__Status__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deployed</masterLabel>
+            <translation><!-- Deployed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deploying</masterLabel>
+            <translation><!-- Deploying --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation><!-- Draft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation><!-- Failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready for Deployment</masterLabel>
+            <translation><!-- Ready for Deployment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Validating</masterLabel>
+            <translation><!-- Validating --></translation>
+        </picklistValues>
+    </fields>
+    <recordTypes>
+        <description><!-- Outbound changeset - for deployment to other instances. --></description>
+        <label><!-- Outbound --></label>
+        <name>lightsideapps__Outbound</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- Deploy --></label>
+        <name>lightsideapps__Deploy</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Select_Test_Classes --></label>
+        <name>lightsideapps__Select_Test_Classes</name>
+    </webLinks>
+</CustomObjectTranslation>

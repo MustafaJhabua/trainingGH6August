@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Confirmation that secondary recipient fax failed.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Secondary Rec Fax Failed</name>
+    <style>none</style>
+    <subject>RS FAX FAILED to Secondary Recipient: {!efaxapp__Sent_Fax__c.efaxapp__Fax_Number__c}, {!efaxapp__Sent_Fax__c.Secondary_Fax_Recipient__c}, {!efaxapp__Sent_Fax__c.X2nd_Recipient_Sample__c}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

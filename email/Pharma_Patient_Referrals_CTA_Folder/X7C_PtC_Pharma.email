@@ -1,0 +1,20 @@
+Dear {!Match_Record__c.Pharma_Company__c} Team,
+
+We recently spoke to Dr. {!Match_Record__c.Ordering_Physician_Name__c} from {!Match_Record__c.Ordering_Practice_Name__c} in {!Match_Record__c.Practice_City__c}, {!Match_Record__c.Ordering_Practice_State__c} regarding the {!Match_Record__c.Pharma_Company__c} {!Match_Record__c.Trial_Name__c} trial for their patient ({!Match_Record__c.Match_Key__c}) with {!Match_Record__c.Qualifying_Target_Genes__c} alteration. Dr. {!Match_Record__c.MD_Last_Name__c} is interested in speaking with you regarding the trial and potentially referring their patient.
+
+We have asked Dr. {!Match_Record__c.MD_Last_Name__c} to provide their availability to schedule a short phone call with you. Once Dr. {!Match_Record__c.MD_Last_Name__c} provides their availability, you will be prompted to select a time to speak with them. Our automated system will then call you and Dr. {!Match_Record__c.MD_Last_Name__c} at the scheduled time to discuss the trial.
+
+Please let us know if you do not receive a scheduling email in the next few days. Please be sure to reference the patient match key, {!Match_Record__c.Match_Key__c}, in the event that the patient is referred, screened, and/or enrolled.
+
+We hope the introduction is fruitful and will follow-up within the week.
+
+Sincerely,
+{!User.Name}, {!User.Degree__c}
+{!User.Title}
+Guardant Health
+
+Guardant Health Match Key: {!Match_Record__c.Match_Key__c}
+
+Guardant Health partners with the clinical trial sponsor to conduct patient referral activities. 
+
+This message is intended solely for the designated recipient(s). It may contain confidential or proprietary information and may be subject to attorney-client privilege or other confidentiality protections. If you are not a designated recipient you may not review, copy or distribute this message. If you have received this in error, please notify the sender by replying to this e-mail and deleting this message. Thank you. Ref: {!Match_Record__c.Id}

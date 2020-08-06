@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>WCLC Update</name>
+    <style>none</style>
+    <subject>End of the year update from Guardant Health</subject>
+    <textOnly>Dear Dr. {!Contact.LastName},
+
+I hope you are enjoying the holiday season. Before the year ends, I wanted to make sure you saw that Guardant Health had a Podium presentation and 8 accepted abstracts/posters at the World Lung Conference held in Vienna, Austria, between December 4th and 7th 2016.
+
+Clinical utility of Guardant360 in &gt;8000+ NSCLC patients, 45% ORR for Guardant-selected patients, detection of ALK fusions missed by FISH testing, and potential utility in Squamous Cell Carcinoma were some of the key highlights of the studies presented.
+
+Top study details
+
+- 8,388-NSCLC-patient data on the clinical utility of Guardant360 presented by Dr. Philip Mack, PhD, showing the test helped identify FDA-approved therapy options in 38% of patients, based on alterations detected in 6 guideline-recommended genes: EGFR, ALK, ROS1, RET, MET and BRAF.
+
+- 92-NSCLC-patient study with clinical outcomes by Dr Nir Peled, Davidoff Cancer Center, Israel, in which Guardant360 identified FDA-approved therapy options in 62% of patients, treatment was impacted in 25% of patients, and the ORR in treated patients was 45%
+
+Please follow this link to view these and the other posters our collaborators presented in Vienna.
+
+Sincerely,
+{!User.FirstName} {!User.LastName}
+{!User.Title}
+{!User.Phone}
+GUARDANTHEALTH
+
+Guardant Health, Inc.
+505 Penobscot Drive
+Redwood City, CA 94063</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

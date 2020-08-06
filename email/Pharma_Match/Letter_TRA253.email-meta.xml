@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>6/25/19 Retired sfdc version. NF Send to physician who requests more information about Tracon 253PC101</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>TRA253_Attachment_InformationalLetter_043</name>
+    <style>none</style>
+    <subject>Clinical Trial Opportunity: Tracon 253PC101 Trial</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

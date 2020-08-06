@@ -1,0 +1,14 @@
+Dear Dr. {!Contact.LastName}, 
+
+By way of introduction, Dr. David Hyman can speak to you about the SUMMIT trial for ERBB2 positive cancer patients. Dr. Hyman is a PI on the study and available to answer any questions you may have; I’ve also cc’ed other members of his team to help coordinate. Please feel free to reach out to him and his team via email or phone (646-888-4226).
+
+Thank you for speaking with Dr. {!Contact.LastName}, Dr. Hyman. Dr. {!Contact.LastName}, from {!Account.Name}, would like to speak to you about the Puma trial regarding a {!Match_Record__c.Cancer_Type_Lower_Case__c} cancer patient with an ERBB2 mutation. Dr. {!Contact.LastName} can be reached at {!Contact.Phone}.
+
+Kind regards,
+{!User.Name}, {!User.Degree__c}
+Clinical Trial Advisor
+Guardant Health
+
+Guardant Health Match Key: {!Match_Record__c.Match_Key__c}
+
+This message is intended solely for the designated recipient(s). It may contain confidential or proprietary information and may be subject to attorney-client privilege or other confidentiality protections. If you are not a designated recipient you may not review, copy or distribute this message. If you have received this in error, please notify the sender by replying to this e-mail and deleting this message. Thank you. Ref: {!Match_Record__c.Id}

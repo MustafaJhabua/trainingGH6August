@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>Core team&apos;s email to inform the Trial Site of ordering MD&apos;s PtC</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>7B_PtC_Trial_Site</name>
+    <style>none</style>
+    <subject>Patient Referral for {!Match_Record__c.Trial_Name__c} trial: Dr. {!Match_Record__c.Ordering_Physician_Name__c}; Patient {!Match_Record__c.Match_Key__c}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

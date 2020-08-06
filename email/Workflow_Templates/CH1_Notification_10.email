@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[Hello<div>This is to inform you that Dr.&nbsp;{!Contact.Full_Name__c} from {!Account.Name} has submitted&nbsp;{!Contact.Total_Promo_Code__c} Guardant Challenge Samples. The limit for each provider is 10 tests.&nbsp;</div><div><br></div><div>Thanks</div><div>Ruben Smith</div><div><br></div><div><br></div>]]></td>
+</tr>
+</table>

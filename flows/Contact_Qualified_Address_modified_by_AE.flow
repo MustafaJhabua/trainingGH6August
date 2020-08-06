@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>Contact_AE_modified_address_of_Qualified_contact</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_1_A1</name>
+        <label>Email CS Manager, RSD</label>
+        <locationX>100</locationX>
+        <locationY>200</locationY>
+        <actionName>Contact.Contact_AE_modified_address_of_Qualified_contact</actionName>
+        <actionType>emailAlert</actionType>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <assignments>
+        <name>myVariable_waitStartTimeAssignment</name>
+        <label>myVariable_waitStartTimeAssignment</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>myVariable_waitStartTimeVariable</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>myDecision</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>0.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision</name>
+        <label>myDecision</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_1</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_1_A1</targetReference>
+            </connector>
+            <label>Qualified &amp; any address field modified by AE</label>
+        </rules>
+    </decisions>
+    <description>Sends email to CS and RSD when an AE modifies the address of a qualified contact</description>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(
+[Contact].Qualified__c  = TRUE,
+[Contact].LastModifiedBy.Profile.Name  =&apos;GHI Sales Standard User&apos;,
+OR
+( 
+(ISCHANGED([Contact].MailingStreet) = TRUE), 
+(ISCHANGED([Contact].MailingCity) = TRUE),
+(ISCHANGED([Contact].MailingState) = TRUE), 
+(ISCHANGED([Contact].MailingPostalCode) = TRUE), 
+(ISCHANGED([Contact].MailingCountry) = TRUE),
+(ISCHANGED([Contact].OtherStreet) = TRUE),
+(ISCHANGED([Contact].OtherCity) = TRUE),
+(ISCHANGED([Contact].OtherState) = TRUE), 
+(ISCHANGED([Contact].OtherPostalCode) = TRUE), 
+(ISCHANGED([Contact].OtherCountry) = TRUE)))</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_1</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+{!myVariable_current.Qualified__c}  = TRUE,
+{!myVariable_current.LastModifiedBy.Profile.Name}  =&apos;GHI Sales Standard User&apos;,
+OR
+( 
+(ISCHANGED({!myVariable_current.MailingStreet}) = TRUE), 
+(ISCHANGED({!myVariable_current.MailingCity}) = TRUE),
+(ISCHANGED({!myVariable_current.MailingState}) = TRUE), 
+(ISCHANGED({!myVariable_current.MailingPostalCode}) = TRUE), 
+(ISCHANGED({!myVariable_current.MailingCountry}) = TRUE),
+(ISCHANGED({!myVariable_current.OtherStreet}) = TRUE),
+(ISCHANGED({!myVariable_current.OtherCity}) = TRUE),
+(ISCHANGED({!myVariable_current.OtherState}) = TRUE), 
+(ISCHANGED({!myVariable_current.OtherPostalCode}) = TRUE), 
+(ISCHANGED({!myVariable_current.OtherCountry}) = TRUE)))</expression>
+    </formulas>
+    <interviewLabel>Contact_Qualified_Address_modified_by_AE-2_InterviewLabel</interviewLabel>
+    <label>Contact: Qualified Address modified by AE</label>
+    <processMetadataValues>
+        <name>ObjectType</name>
+        <value>
+            <stringValue>Contact</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>ObjectVariable</name>
+        <value>
+            <elementReference>myVariable_current</elementReference>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OldObjectVariable</name>
+        <value>
+            <elementReference>myVariable_old</elementReference>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>TriggerType</name>
+        <value>
+            <stringValue>onAllChanges</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Workflow</processType>
+    <startElementReference>myVariable_waitStartTimeAssignment</startElementReference>
+    <status>Draft</status>
+    <variables>
+        <name>myVariable_current</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Contact</objectType>
+    </variables>
+    <variables>
+        <name>myVariable_old</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Contact</objectType>
+    </variables>
+    <variables>
+        <name>myVariable_waitStartTimeVariable</name>
+        <dataType>DateTime</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <elementReference>$Flow.CurrentDateTime</elementReference>
+        </value>
+    </variables>
+</Flow>

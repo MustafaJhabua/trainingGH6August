@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Guardant_360_Sample__c$Name</field>
+    </columns>
+    <columns>
+        <field>Guardant_360_Sample__c$LastModifiedDate</field>
+    </columns>
+    <columns>
+        <field>Guardant_360_Sample__c$LastModifiedBy</field>
+    </columns>
+    <columns>
+        <field>Guardant_360_Sample__c$Status__c</field>
+    </columns>
+    <columns>
+        <field>Guardant_360_Sample__c.Patients__r$Name</field>
+    </columns>
+    <columns>
+        <field>Guardant_360_Sample__c.Patients__r$Number_of_Samples__c</field>
+    </columns>
+    <columns>
+        <field>Guardant_360_Sample__c$Patient_Test_Number__c</field>
+    </columns>
+    <description>Testing field Patient Test Number</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Guardant_360_Sample__c$CreatedDate</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Samples this week</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>G360_Samples_with_Patients__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Guardant_360_Sample__c$CreatedDate</dateColumn>
+        <endDate>2017-05-10</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2017-05-05</startDate>
+    </timeFrameFilter>
+</Report>

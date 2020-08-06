@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Europe</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Europe</label>
+        <sharedTo>
+            <group>Iris_Faull</group>
+        </sharedTo>
+        <booleanFilter>1 or 2</booleanFilter>
+        <criteriaItems>
+            <field>MailingCountry</field>
+            <operation>equals</operation>
+            <value>GB,FR,AT,BE,CH,CZ,DE,DK,ES,FI,GR,HU</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>MailingCountry</field>
+            <operation>equals</operation>
+            <value>IE,IT,NL,PL,PT,SE</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>ISR_Atlantic</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>ISR Atlantic</label>
+        <sharedTo>
+            <role>ISR_Atlantic_South</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>ISR_Region__c</field>
+            <operation>equals</operation>
+            <value>Atlantic-South</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>ISR_Central_Texas</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>ISR Central-Texas</label>
+        <sharedTo>
+            <role>ISR_Central_Texas</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>ISR_Region__c</field>
+            <operation>equals</operation>
+            <value>Central-Texas</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>ISR_Great_Lakes</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>ISR Great Lakes</label>
+        <sharedTo>
+            <role>ISR_Great_Lakes_Southeast</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>ISR_Region__c</field>
+            <operation>equals</operation>
+            <value>Great Lakes-Southeast</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>ISR_Northeast</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>ISR-Northeast</label>
+        <sharedTo>
+            <role>ISR_Northeast</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>ISR_Region__c</field>
+            <operation>equals</operation>
+            <value>Northeast</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>ISR_Northwest</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>ISR Northwest</label>
+        <sharedTo>
+            <role>ISR_Northwest</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>ISR_Region__c</field>
+            <operation>equals</operation>
+            <value>Northwest</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>ISR_Southwest</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>ISR Southwest</label>
+        <sharedTo>
+            <role>ISR_Southwest</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>ISR_Region__c</field>
+            <operation>equals</operation>
+            <value>Southwest</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>ISR_Targets</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>ISR Targets</label>
+        <sharedTo>
+            <role>ISR_Manager</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>ISR_Target__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Pharma_CTA</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Pharma CTA</label>
+        <sharedTo>
+            <group>Clinical_Trial_Advisors</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Contact Type</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>Sacramento</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Temporary sharing rule allowing Brenda Davies to see Sacramento contacts/samples while training Angie Gass. -AB 6/18/2020</description>
+        <label>Sacramento</label>
+        <sharedTo>
+            <group>Sacramento</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Sacramento</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

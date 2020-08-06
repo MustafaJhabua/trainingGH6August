@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Customer</fullName>
+        <default>false</default>
+        <label>Customer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Prospect</fullName>
+        <default>false</default>
+        <label>Prospect</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Clinical Trial Partner</fullName>
+        <default>false</default>
+        <label>Clinical Trial Partner</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Research Partner</fullName>
+        <default>false</default>
+        <label>Research Partner</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Pharmaceutical Partner</fullName>
+        <default>false</default>
+        <label>Pharmaceutical Partner</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Distributor</fullName>
+        <default>false</default>
+        <label>Distributor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Investor</fullName>
+        <default>false</default>
+        <label>Investor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Contact</fullName>
+        <default>false</default>
+        <label>Contact</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Presented</fullName>
+        <default>false</default>
+        <label>Presented</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Pilot</fullName>
+        <default>false</default>
+        <label>Pilot</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Research</fullName>
+        <default>false</default>
+        <label>Research</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Trial (Prospective)</fullName>
+        <default>false</default>
+        <label>Trial (Prospective)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Trial (Retrospective)</fullName>
+        <default>false</default>
+        <label>Trial (Retrospective)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>CDx</fullName>
+        <default>false</default>
+        <label>CDx</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Custom Panel</fullName>
+        <default>false</default>
+        <label>Custom Panel</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Partner</fullName>
+        <default>false</default>
+        <label>Partner</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Lost To Competition</fullName>
+        <default>false</default>
+        <label>Lost To Competition</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Dormant</fullName>
+        <default>false</default>
+        <label>Dormant</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Insurance</fullName>
+        <default>false</default>
+        <label>Insurance</label>
+    </standardValue>
+</StandardValueSet>

@@ -1,0 +1,15 @@
+Dear Dr. {!Contact.LastName},
+ 
+This email provides additional information in regard to a targetable genomic alteration found in your recently reported lung cancer case, {!Guardant_360_Sample__c.Name}. An ALK fusion was identified in this sample, (LEAVE BLANK OR ENTER MANUALLY).  Guideline-recommended available treatments include alectinib, crizotinib and ceritinib.
+
+Click to view your report in our secure online portal: {!Guardant_360_Sample__c.Portal_Link_for_MD__c}.
+ 
+To discuss this finding in the context of your patient’s clinical situation, please contact our medical affairs team at 1-855-698-8887, or reply to this email.
+ 
+Sincerely,
+The Medical Affairs Team
+Guardant Health, Inc.
+ 
+This email is intended for informational purposes only and does not constitute an official report of test results. Please see the Guardant360 report of record for actual analytical results.
+
+To opt out of future emails, please reply to this email with “opt out” in the subject line.

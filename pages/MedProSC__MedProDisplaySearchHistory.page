@@ -1,0 +1,58 @@
+<apex:page controller="MedProSC.MedProDisplaySearchHistory_Controller" tabStyle="SearchMedPro__tab">
+    <apex:sectionHeader title="MedPro Search" subtitle="History" />  
+    <apex:stylesheet value="{!$Resource.MedProSC__MedProTwoPassDisplayDetail_resources}"/>
+    <apex:form id="searchResultsForm">
+        <apex:pageBlock id="topLevel">
+            <apex:pageMessages />
+    
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton value="Back" action="{!back}"/>
+                <apex:commandButton value="New Search" action="{!newSearch}" rendered="{!!areNewSearchesDisabled}"/>                
+            </apex:pageBlockButtons>
+
+            <apex:actionFunction name="myActFunc" action="{!redoSearch}" reRender="topLevel">
+               <apex:param name="elementIdToSearchAgain" value="" assignTo="{!searchRequestId}" />
+            </apex:actionFunction>
+
+            <c:PageBlockTableEnhancerADV targetPbTableIds="allData" paginate="true" defaultPageSize="25" pageSizeOptions="25,50,75,100" nonSortableColumns="0" enableExport="false"  onCompleteTableLoad="jQuery('[id$=allData]').css('visibility','');"/>   
+
+            <apex:pageBlockTable value="{!theSearchResults}" var="item" id="allData" style="visibility:hidden">
+            
+                <apex:column width="50">
+                    <apex:facet name="header">Action</apex:facet>
+                    <apex:commandButton value="Search Again" id="searchButton" onclick="myActFunc('{!item.id}')" reRender="topLevel"/>
+                </apex:column>
+      
+                <apex:column rendered="{!showAllSearches}" headerValue="Searcher" value="{!item.createdBy.name}" />
+                <apex:column headerValue="State of License" value="{!item.MedProSC__StateOfLicense__c}"/>
+                <apex:column headerValue="Last Name" value="{!item.MedProSC__LastName__c}"/> 
+                <apex:column headerValue="First Name" value="{!item.MedProSC__FirstName__c}"/>
+                <apex:column headerValue="Middle Name" value="{!item.MedProSC__MiddleName__c}"/>
+                <apex:column headerValue="Professional Designation" value="{!item.MedProSC__ProfessionalDesignation__c}"/> 
+                <apex:column headerValue="SLN #" value="{!item.MedProSC__StateLicenseNumber__c}"/>
+                <apex:column headerValue="NPI #" value="{!item.MedProSC__NPINumber__c}"/>                
+                <apex:column headerValue="DEA #" value="{!item.MedProSC__DEA_Number__c}"/>
+                <apex:column headerValue="Addr Line1" value="{!item.MedProSC__AddrLine1__c}"/>
+                <apex:column headerValue="City" value="{!item.MedProSC__City__c}"/>
+                <apex:column headerValue="State" value="{!item.MedProSC__State__c}"/> 
+                <apex:column headerValue="Zip Code" value="{!item.MedProSC__ZipCode__c}"/>
+                <apex:column headerValue="Country Code" value="{!item.MedProSC__CountryCode__c}"/> 
+            </apex:pageBlockTable> 
+            <apex:outputPanel > 
+                <div class="pbHeader">
+                    <table class="medproTable" >
+                       <tbody>
+                          <tr>
+                             <td class="pbTitle"><apex:include pageName="MedProSC__MedProStandardCopyrightFooter"/> </td>                     
+                             <td class="pbButton">
+                                <apex:commandButton value="Back" action="{!back}"/>
+                                <apex:commandButton value="New Search" action="{!newSearch}" rendered="{!!areNewSearchesDisabled}"/>  
+                             </td>
+                          </tr>
+                       </tbody>
+                    </table>
+                </div>
+            </apex:outputPanel>                
+        </apex:pageBlock>        
+    </apex:form>
+</apex:page>

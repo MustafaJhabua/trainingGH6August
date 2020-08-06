@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Field --></label>
+        <name>lightsideapps__Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Query Object --></label>
+        <name>lightsideapps__Query_Object__c</name>
+        <relationshipLabel><!-- Query Fields --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

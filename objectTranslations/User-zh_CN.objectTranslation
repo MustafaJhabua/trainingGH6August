@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- CRMC Action Grid Defaults --></label>
+        <name>CRMC_PP__CRMC_Action_Grid_Defaults</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Approval Manager --></label>
+        <name>Approval_Manager__c</name>
+        <relationshipLabel><!-- Users --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Apr Business Days --></label>
+        <name>Apr_Business_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- April-Actual --></label>
+        <name>April_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- April Percent --></label>
+        <name>April_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- April-Quota --></label>
+        <name>April__c</name>
+    </fields>
+    <fields>
+        <label><!-- Aug Business Days --></label>
+        <name>Aug_Business_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- August-Actual --></label>
+        <name>August_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- August Percent --></label>
+        <name>August_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- August-Quota --></label>
+        <name>August__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dec Business Days --></label>
+        <name>Dec_Business_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dec Percent --></label>
+        <name>Dec_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- December-Actual --></label>
+        <name>December_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- December-Quota --></label>
+        <name>December__c</name>
+    </fields>
+    <fields>
+        <label><!-- Degree --></label>
+        <name>Degree__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feb Business Days --></label>
+        <name>Feb_Business_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feb Percent --></label>
+        <name>Feb_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- February-Actual --></label>
+        <name>February_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- February-Quota --></label>
+        <name>February__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hire Date --></label>
+        <name>Hire_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initials --></label>
+        <name>Initials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Jan Business Days --></label>
+        <name>Jan_Business_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Jan Percent --></label>
+        <name>Jan_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- January-Actual --></label>
+        <name>January_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- January-Quota --></label>
+        <name>January__c</name>
+    </fields>
+    <fields>
+        <label><!-- July-Actual --></label>
+        <name>July_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- July Business Days --></label>
+        <name>July_Business_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- July Percent --></label>
+        <name>July_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- July-Quota --></label>
+        <name>July__c</name>
+    </fields>
+    <fields>
+        <label><!-- June-Actual --></label>
+        <name>June_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- June Business Days --></label>
+        <name>June_Business_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- June Percent --></label>
+        <name>June_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- June-Quota --></label>
+        <name>June__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mar Business Days --></label>
+        <name>Mar_Business_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mar Percent --></label>
+        <name>Mar_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- March-Actual --></label>
+        <name>March_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- March-Quota --></label>
+        <name>March__c</name>
+    </fields>
+    <fields>
+        <label><!-- May-Actual --></label>
+        <name>May_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- May Business Days --></label>
+        <name>May_Business_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- May Percent --></label>
+        <name>May_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- May-Quota --></label>
+        <name>May__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nov Business Days --></label>
+        <name>Nov_Business_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- November-Quota --></label>
+        <name>Nove_m__c</name>
+    </fields>
+    <fields>
+        <label><!-- November-Actual --></label>
+        <name>November_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- November Percent --></label>
+        <name>November_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Oct Business Days --></label>
+        <name>Oct_Business_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- October-Actual --></label>
+        <name>October_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- October Percent --></label>
+        <name>October_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- October-Quota --></label>
+        <name>October__c</name>
+    </fields>
+    <fields>
+        <help><!-- Old=Start date before 6/1/2017. New=Start date on or after 6/1/2017. Used for CS reports/dashboards. --></help>
+        <label><!-- Old or New? --></label>
+        <name>Old_or_New__c</name>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Old</masterLabel>
+            <translation><!-- Old --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Owner --></label>
+        <name>Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q1-Actual --></label>
+        <name>Q1_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q1 Percent --></label>
+        <name>Q1_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q1-Quota --></label>
+        <name>Q1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q2 Actual --></label>
+        <name>Q2_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q2 Percent --></label>
+        <name>Q2_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q2-Quota --></label>
+        <name>Q2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q3 Actual --></label>
+        <name>Q3_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q3 Percent --></label>
+        <name>Q3_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q3-Quota --></label>
+        <name>Q3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q4 Actual --></label>
+        <name>Q4_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q4 Percent --></label>
+        <name>Q4_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Q4-Quota --></label>
+        <name>Q4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+        <picklistValues>
+            <masterLabel>Atlantic</masterLabel>
+            <translation><!-- Atlantic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Central</masterLabel>
+            <translation><!-- Central --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Great Lakes</masterLabel>
+            <translation><!-- Great Lakes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>International</masterLabel>
+            <translation><!-- International --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>National</masterLabel>
+            <translation><!-- National --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Northeast</masterLabel>
+            <translation><!-- Northeast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Northwest</masterLabel>
+            <translation><!-- Northwest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South</masterLabel>
+            <translation><!-- South --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Southeast</masterLabel>
+            <translation><!-- Southeast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Southwest</masterLabel>
+            <translation><!-- Southwest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Texas</masterLabel>
+            <translation><!-- Texas --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Samples 2 months ago --></label>
+        <name>Samples_2_months_ago__c</name>
+    </fields>
+    <fields>
+        <label><!-- Samples 3 months ago --></label>
+        <name>Samples_3_months_ago__c</name>
+    </fields>
+    <fields>
+        <label><!-- Samples last month --></label>
+        <name>Samples_last_month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sept Business Days --></label>
+        <name>Sept_Business_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sept Percent --></label>
+        <name>Sept_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- September-Actual --></label>
+        <name>September_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- September-Quota --></label>
+        <name>September__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hidden field used to allow multiple signatures on Webmerge documents --></help>
+        <label><!-- Signature1 --></label>
+        <name>Signature1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hidden field used to allow multiple signatures on Webmerge documents --></help>
+        <label><!-- Signature2 --></label>
+        <name>Signature2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory --></label>
+        <name>Territory__c</name>
+        <picklistValues>
+            <masterLabel>Albany</masterLabel>
+            <translation><!-- Albany --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Arizona N</masterLabel>
+            <translation><!-- Arizona N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Atlanta N</masterLabel>
+            <translation><!-- Atlanta N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Atlanta S</masterLabel>
+            <translation><!-- Atlanta S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Austin</masterLabel>
+            <translation><!-- Austin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Baltimore</masterLabel>
+            <translation><!-- Baltimore --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Birmingham</masterLabel>
+            <translation><!-- Birmingham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Boston North</masterLabel>
+            <translation><!-- Boston North --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Boston South</masterLabel>
+            <translation><!-- Boston South --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Charleston</masterLabel>
+            <translation><!-- Charleston --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Charlotte</masterLabel>
+            <translation><!-- Charlotte --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chicago N</masterLabel>
+            <translation><!-- Chicago N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chicago S</masterLabel>
+            <translation><!-- Chicago S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cleveland</masterLabel>
+            <translation><!-- Cleveland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Colorado Springs</masterLabel>
+            <translation><!-- Colorado Springs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Columbus</masterLabel>
+            <translation><!-- Columbus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Connecticut</masterLabel>
+            <translation><!-- Connecticut --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dallas</masterLabel>
+            <translation><!-- Dallas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Denver</masterLabel>
+            <translation><!-- Denver --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Detroit</masterLabel>
+            <translation><!-- Detroit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>East Bay</masterLabel>
+            <translation><!-- East Bay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fort Worth</masterLabel>
+            <translation><!-- Fort Worth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fresno</masterLabel>
+            <translation><!-- Fresno --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Harrisburg</masterLabel>
+            <translation><!-- Harrisburg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hawaii</masterLabel>
+            <translation><!-- Hawaii --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Houston E</masterLabel>
+            <translation><!-- Houston E --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Houston Med Center</masterLabel>
+            <translation><!-- Houston Med Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Houston W</masterLabel>
+            <translation><!-- Houston W --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indianapolis</masterLabel>
+            <translation><!-- Indianapolis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>International</masterLabel>
+            <translation><!-- International --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jacksonville</masterLabel>
+            <translation><!-- Jacksonville --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kansas City</masterLabel>
+            <translation><!-- Kansas City --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA Central</masterLabel>
+            <translation><!-- LA Central --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA North</masterLabel>
+            <translation><!-- LA North --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA South</masterLabel>
+            <translation><!-- LA South --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lansing</masterLabel>
+            <translation><!-- Lansing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Las Vegas</masterLabel>
+            <translation><!-- Las Vegas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lexington</masterLabel>
+            <translation><!-- Lexington --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Long Island</masterLabel>
+            <translation><!-- Long Island --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Louisville</masterLabel>
+            <translation><!-- Louisville --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manhattan N</masterLabel>
+            <translation><!-- Manhattan N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manhattan S</masterLabel>
+            <translation><!-- Manhattan S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Memphis</masterLabel>
+            <translation><!-- Memphis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Miami</masterLabel>
+            <translation><!-- Miami --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Milwaukee</masterLabel>
+            <translation><!-- Milwaukee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minneapolis</masterLabel>
+            <translation><!-- Minneapolis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mobile</masterLabel>
+            <translation><!-- Mobile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Naples</masterLabel>
+            <translation><!-- Naples --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nashville</masterLabel>
+            <translation><!-- Nashville --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>National</masterLabel>
+            <translation><!-- National --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Orleans</masterLabel>
+            <translation><!-- New Orleans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Newark</masterLabel>
+            <translation><!-- Newark --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Northern VA</masterLabel>
+            <translation><!-- Northern VA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OPEN Mid-Atlantic</masterLabel>
+            <translation><!-- OPEN Mid-Atlantic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OPEN Midwest</masterLabel>
+            <translation><!-- OPEN Midwest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OPEN Northeast</masterLabel>
+            <translation><!-- OPEN Northeast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OPEN Southeast</masterLabel>
+            <translation><!-- OPEN Southeast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OPEN Southwest</masterLabel>
+            <translation><!-- OPEN Southwest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OPEN West</masterLabel>
+            <translation><!-- OPEN West --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oklahoma</masterLabel>
+            <translation><!-- Oklahoma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Omaha</masterLabel>
+            <translation><!-- Omaha --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Orange County</masterLabel>
+            <translation><!-- Orange County --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oregon</masterLabel>
+            <translation><!-- Oregon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Orlando</masterLabel>
+            <translation><!-- Orlando --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Palm Beach</masterLabel>
+            <translation><!-- Palm Beach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Philadelphia</masterLabel>
+            <translation><!-- Philadelphia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phoenix</masterLabel>
+            <translation><!-- Phoenix --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pittsburgh</masterLabel>
+            <translation><!-- Pittsburgh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Raleigh</masterLabel>
+            <translation><!-- Raleigh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Richmond</masterLabel>
+            <translation><!-- Richmond --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Riverside</masterLabel>
+            <translation><!-- Riverside --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sacramento</masterLabel>
+            <translation><!-- Sacramento --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salt Lake City</masterLabel>
+            <translation><!-- Salt Lake City --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>San Antonio</masterLabel>
+            <translation><!-- San Antonio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>San Diego</masterLabel>
+            <translation><!-- San Diego --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>San Francisco</masterLabel>
+            <translation><!-- San Francisco --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>San Jose</masterLabel>
+            <translation><!-- San Jose --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seattle</masterLabel>
+            <translation><!-- Seattle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Springfield</masterLabel>
+            <translation><!-- Springfield --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>St Louis N</masterLabel>
+            <translation><!-- St Louis N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>St Louis S</masterLabel>
+            <translation><!-- St Louis S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tacoma</masterLabel>
+            <translation><!-- Tacoma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tampa</masterLabel>
+            <translation><!-- Tampa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trenton</masterLabel>
+            <translation><!-- Trenton --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upstate NY</masterLabel>
+            <translation><!-- Upstate NY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West Virginia</masterLabel>
+            <translation><!-- West Virginia --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User Status --></label>
+        <name>User_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2017-Quota --></label>
+        <name>X20__c</name>
+    </fields>
+    <fields>
+        <label><!-- API_URL --></label>
+        <name>copado__API_URL__c</name>
+    </fields>
+    <fields>
+        <help><!-- The visibility of the message asking users to rate &amp; feedback Copado on the AppExchange is controlled here. --></help>
+        <label><!-- Hide Copado feedback --></label>
+        <name>copado__Hide_Copado_feedback__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show Copado Tips --></label>
+        <name>copado__Show_Copado_Tips__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work Manager Panels --></label>
+        <name>copado__Work_Manager_Panels__c</name>
+    </fields>
+    <fields>
+        <label><!-- DSProSFUsername --></label>
+        <name>dsfs__DSProSFUsername__c</name>
+    </fields>
+    <fields>
+        <label><!-- Can View Not Assigned Prospects --></label>
+        <name>pi__Can_View_Not_Assigned_Prospects__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Api Key --></label>
+        <name>pi__Pardot_Api_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Api Version --></label>
+        <name>pi__Pardot_Api_Version__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot User Id --></label>
+        <name>pi__Pardot_User_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot User Key --></label>
+        <name>pi__Pardot_User_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot User Role --></label>
+        <name>pi__Pardot_User_Role__c</name>
+    </fields>
+    <fields>
+        <label><!-- Talkdesk User --></label>
+        <name>talkdesk__IsLicensed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Talkdesk User ID --></label>
+        <name>talkdesk__talkdeskUserId__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Please enter the values for Region and Territory. --></errorMessage>
+        <name>Region_and_Territory_cannot_be_blank</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Generate_vCard --></label>
+        <name>SmartvCard__Generate_vCard</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_vCard_3_0 --></label>
+        <name>SmartvCard__Generate_vCard_3_0</name>
+    </webLinks>
+</CustomObjectTranslation>

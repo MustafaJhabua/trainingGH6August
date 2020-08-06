@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>New</fullName>
+        <default>true</default>
+        <label>New</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>In Progress</fullName>
+        <default>false</default>
+        <label>In Progress</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Correspondence</fullName>
+        <default>false</default>
+        <label>Correspondence</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Physician Outreach</fullName>
+        <default>false</default>
+        <label>Physician Outreach</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Gap Exception</fullName>
+        <default>false</default>
+        <label>Gap Exception</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Insurance Follow Up</fullName>
+        <default>false</default>
+        <label>Insurance Follow Up</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Faxed Gap Request</fullName>
+        <default>false</default>
+        <label>Faxed Gap Request</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Resolved</fullName>
+        <default>false</default>
+        <label>Resolved</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Escalated</fullName>
+        <default>false</default>
+        <label>Escalated</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Investigation</fullName>
+        <default>false</default>
+        <label>Investigation</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>HIPAA</fullName>
+        <default>false</default>
+        <label>HIPAA</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>On Hold</fullName>
+        <default>false</default>
+        <label>On Hold</label>
+        <closed>false</closed>
+    </standardValue>
+</StandardValueSet>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <body>&lt;img alt=&quot;User-added image&quot; src=&quot;https://c.na66.content.force.com/servlet/servlet.ImageServer?id=015800000020hhJ&amp;amp;oid=00D2g0000000ZI1&amp;amp;lastMod=1547581330000&quot;&gt;&lt;/img&gt;</body>
+    <pageComponentType>htmlArea</pageComponentType>
+    <width>wide</width>
+</HomePageComponent>

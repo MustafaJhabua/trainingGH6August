@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Veeva Configuration</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Veeva Configurations</value>
+    </caseValues>
+    <fields>
+        <label><!-- auth-domain --></label>
+        <name>auth_domain__c</name>
+    </fields>
+    <fields>
+        <label><!-- password --></label>
+        <name>password__c</name>
+    </fields>
+    <fields>
+        <label><!-- username --></label>
+        <name>username__c</name>
+    </fields>
+    <fields>
+        <label><!-- widget-id --></label>
+        <name>widget_id__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

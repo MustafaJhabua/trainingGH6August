@@ -1,0 +1,304 @@
+<apex:page controller="MedProSC.MedProAllHCPsCustomList_Controller">
+	<apex:sectionHeader title="MedPro Search" subtitle="HCPs" />    
+	<head>
+
+	    <div id="spinner" class="spinner" style="display:none;" >
+	        <br/>
+	        <apex:image id="poweredByMedProID2" value="{!$Resource.MedProSC__MedProIDPill2}" width="144" height="72"/>
+	        <p></p>
+	        <apex:image id="img-spinner" url="{!$Resource.MedProSC__progressBar}" width="126" height="22" />
+	        <br/>
+	        <p><b>Processing data please wait ...</b></p>
+	    </div>
+
+	    <style>
+	        .spinner {
+	            border: 2px solid black;
+	            background: rgba(23, 151, 192, .95);
+	            position: fixed;
+	            top: 50%;
+	            left: 50%;
+	            margin-left: -125px; /* half width of the spinner gif */
+	            margin-top: -82px; /* half height of the spinner gif */
+	            text-align:center;
+	            z-index:1234;
+	            overflow: auto;
+	            width: 250px; /* width of the spinner gif */
+	            height: 164px; /*hight of the spinner gif +2px to fix IE8 issue */
+	        }
+	    </style>
+
+	</head>
+	<apex:stylesheet value="{!$Resource.MedProSC__MedProTwoPassDisplayDetail_resources}"/>
+	<apex:includeScript value="{!URLFOR($Resource.MedProSC__jQuery_ui_1_10_4, '/jquery-ui-1.10.4.custom/js/jquery-1.10.2.js')}" />
+	<apex:includeScript value="{!URLFOR($Resource.MedProSC__jQuery_ui_1_10_4, '/jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.js')}" />
+	<apex:includeScript value="{!URLFOR($Resource.MedProSC__jQuery_ui_1_10_4, '/jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.min.js')}" />
+
+	<script type="text/javascript">
+	        
+	    Visualforce.remoting.timeout = 120000; // Set timeout at page level
+	    var selectedRows = new Array();
+	    var pipedMedProIDsToSend = '';
+	    var cachedSOMappingID = '';
+
+	    function setButtonCollectionState()
+	    {
+	        $scJQuery = jQuery.noConflict();
+	        if (selectedRows.length > 0)
+	        {
+	            $scJQuery("[id*=syncButton1]").prop('disabled', false);
+	            $scJQuery("[id*=syncButton2]").prop('disabled', false);
+	            $scJQuery("[id*=syncButtonMedProHCP]").prop('disabled', false);
+	            $scJQuery("[id*=deleteButtonMedProHCP]").prop('disabled', false);
+	        }
+	        else
+	        {
+	            $scJQuery("[id*=syncButton1]").prop('disabled', true);
+	            $scJQuery("[id*=syncButton2]").prop('disabled', true);
+	            $scJQuery("[id*=syncButtonMedProHCP]").prop('disabled', true);
+	            $scJQuery("[id*=deleteButtonMedProHCP]").prop('disabled', true);
+	        }
+	    }
+
+	    $(document).ready( function() {
+	        // setButtonCollectionState();
+	    });
+
+	    function checkAll(cb)
+	    {
+	        var inputElem = document.getElementsByTagName("input");
+
+	        selectedRows = new Array();
+
+	        for (var index = 0; index < inputElem.length; index++)
+	        {
+	            if (inputElem[index].id.indexOf("checkedone") != -1)
+	            {
+	                inputElem[index].checked = cb.checked;
+	                if (cb.checked)
+	                    selectedRows.push(inputElem[index].className.substring(4)); 
+	            }
+	        }
+	        // setButtonCollectionState();
+	    }
+
+	    function checkSelectOne(cb)
+	    {
+	        if (cb.checked)
+	        {
+	            selectedRows.push(cb.className.substring(4)); 
+	        }
+	        else
+	        {
+	            var index = selectedRows.indexOf(cb.className.substring(4));
+	            if (index > -1) {
+	                selectedRows.splice(index, 1);
+	            }
+	        }
+	        // setButtonCollectionState();
+	    }
+
+	    function getQueryVariable(variable)
+	    {
+	        var query = window.location.search.substring(1);
+	        var vars = query.split('&');
+	        for (var i = 0; i < vars.length; i++) {
+	            var pair = vars[i].split('=');
+	            if (decodeURIComponent(pair[0]) == variable) {
+	                return decodeURIComponent(pair[1]);
+	            }
+	        }
+	        return null;
+	    }
+
+	    function performSyncSelectedToSfObjectV2(soMappingId)
+	    {
+	        if (selectedRows.length > 0)
+	        {
+	            $("#spinner").show();
+	            var sfId = getQueryVariable('sfId');
+	            var parentId = getQueryVariable('parentId');
+	            pipedMedProIDsToSend = selectedRows.join('|');
+	            cachedSOMappingID = soMappingId;
+
+	            Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.MedProAllHCPsCustomList_Controller.syncSelectedToSfObjectV2}',
+	                                                      soMappingId, pipedMedProIDsToSend, sfId, parentId, true, '{!jsonPageParams}',handleResult_performSyncSelectedToSfObjectV2);
+	        }
+	        else
+	        {
+	            alert('No records are selected!');
+	        }
+	    }
+
+	    function performSyncUpdateFromMedProV2()
+	    {
+	        if (selectedRows.length > 0)
+	        {
+	            $("#spinner").show();
+	            pipedMedProIDsToSend = selectedRows.join('|');
+
+	            Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.MedProAllHCPsCustomList_Controller.syncUpdateFromMedProV2}',
+	                                                      pipedMedProIDsToSend, handleResult_performSyncUpdateFromMedProV2);
+	        }
+	        else
+	        {
+	            alert('No records are selected!');
+	        }
+	    }
+
+	    function performDeleteSelectedFromSfObjectV2()
+	    {
+	        if (selectedRows.length > 0)
+	        {
+	            if (window.confirm('Are you sure want to delete the selected HCPs?'))
+	            {
+	                var medProIdsToSend = selectedRows.join(',');
+
+	                Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.MedProAllHCPsCustomList_Controller.deleteSelectedFromSfObjectV2}',
+	                                                          medProIdsToSend, handleResult_performDeleteSelectedFromSfObjectV2);
+	            }
+	        }
+	        else
+	        {
+	            alert('No records are selected!');
+	        }
+	    }
+
+	    function handleResult_performSyncSelectedToSfObjectV2(result, event)
+	    {
+	        Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.MedProAllHCPsCustomList_Controller.checkForRequiredInUniverseUpdate}',
+	                                                  cachedSOMappingID, result, pipedMedProIDsToSend, handleResult_performCheckForRequiredInUniverseUpdate);
+	    }
+
+	    function handleResult_performSyncUpdateFromMedProV2(result, event)
+	    {
+	        if ((result != null) && (event.status == true))
+	            window.location.href = result;
+	    }
+
+	    function handleResult_performDeleteSelectedFromSfObjectV2(result, event)
+	    {
+	        if ((result != null) && (event.status == true))
+	            window.location.href = result;
+	        else
+	            if ((result == null) && (event.status == true))
+	                location.reload();
+	    }
+
+	    function handleResult_performCheckForRequiredInUniverseUpdate(result, event)
+	    {
+	        $('#spinner').hide();
+	        if ((result != null) && (event.status == true))
+	            window.location.href = result;
+	    }
+	        
+	</script>
+
+	<apex:form id="searchResultsForm">
+
+	    <apex:pageBlock id="topLevel">
+
+	        <apex:pageMessages />
+
+	        <apex:pageBlockButtons location="top">
+	        
+	            <apex:commandButton value="New MedPro Search" action="{!newSearch}"/>
+
+	            <apex:commandButton id="syncButton1" value="{!syncOption1FoundLabel}" onclick="performSyncSelectedToSfObjectV2('{!syncOption1FoundId}'); return false;" 
+	                             rendered="{!syncButton1Configured==true}">
+	            </apex:commandButton>
+
+	            <apex:commandButton id="syncButton2" value="{!syncOption2FoundLabel}" onclick="performSyncSelectedToSfObjectV2('{!syncOption2FoundId}'); return false;" 
+	                             rendered="{!syncButton2Configured==true}">
+	            </apex:commandButton>
+
+	            <apex:commandButton id="syncButton3" value="{!syncOption3FoundLabel}" onclick="performSyncSelectedToSfObjectV2('{!syncOption3FoundId}'); return false;" 
+	                             rendered="{!syncButton3Configured==true}">
+	            </apex:commandButton>
+
+	            <apex:commandButton id="syncButtonMedProHCP" value="Update from MedPro" onclick="performSyncUpdateFromMedProV2(); return false;" />
+	            <apex:commandButton id="deleteButtonMedProHCP" value="Delete HCPs" onclick="performDeleteSelectedFromSfObjectV2(); return false;" />
+
+	            <apex:commandButton value="Submit DRP" action="{!performDRP}" rendered="{!isDRPEnabled==true}"/>
+
+	        </apex:pageBlockButtons>
+
+	        <apex:actionFunction name="DeleteRecord" action="{!DeleteRecord}" reRender="searchResultsForm" >
+	           <apex:param name="sfId" value="" assignTo="{!SelectedRecordId}"/>
+	        </apex:actionFunction>
+
+	        <c:PageBlockTableEnhancerADV targetPbTableIds="allData" paginate="true" defaultPageSize="25" pageSizeOptions="25,50,75,100" nonSortableColumns="0,1" enableExport="false"/>   
+	        <apex:pageBlockTable value="{!listForDisplay}" var="item" id="allData">
+	        
+	            <apex:column >
+	            
+	                <apex:facet name="header">
+	                    <apex:inputCheckbox onclick="checkAll(this)"></apex:inputCheckbox>
+	                </apex:facet>
+
+	                <apex:inputCheckbox value="{!item.checkBoxSelected}" id="checkedone" styleClass="tag_{!JSENCODE(item.medProId)}" onclick="checkSelectOne(this);">
+	                </apex:inputCheckbox>
+	                
+	            </apex:column>
+
+	            <apex:column width="110px">
+	                <apex:facet name="header">Action</apex:facet>
+	                <apex:outputLink title="" value="/{!item.sfRecordID}?retURL=/apex/{!$CurrentPage.Name}">View</apex:outputLink>&nbsp;|&nbsp;
+	                <apex:outputLink title="" value="/{!item.sfRecordID}/e?retURL=/apex/{!$CurrentPage.Name}">Edit</apex:outputLink>&nbsp;|
+	                <a href="javascript:if (window.confirm('Are you sure want to delete the selected HCP?')) DeleteRecord('{!item.sfRecordID}');">Del</a>
+	            </apex:column>
+
+	            <apex:column headerValue="Last Updated" value="{!item.createdDate}" rendered="{!item.lastModifiedDate==null}"/>
+	            <apex:column headerValue="Last Updated" value="{!item.lastModifiedDate}" rendered="{!item.lastModifiedDate!=null}"/> 
+	            <apex:column headerValue="License State" value="{!item.stateOfLicense}"/>
+	            <apex:column headerValue="Designation" value="{!item.designation}"/> 
+	            <apex:column headerValue="Last Name" value="{!item.lastName}"/> 
+	            <apex:column headerValue="First Name" value="{!item.firstname } {!item.middleName}"/>
+	            <apex:column headerValue="SLN #" value="{!item.stateLicenseNumber}"/>
+	            <apex:column headerValue="NPI #" value="{!item.npiNumber}"/> 
+	            <apex:column headerValue="DEA #" value="{!item.deaNumber}"/> 
+	            <apex:column headerValue="CDS #" value="{!item.cdsNumber}"/>
+	            <apex:column headerValue="Speciality" value="{!item.taxonomyDescription}"/> 
+	            <apex:column headerValue="City" value="{!item.city}"/>
+	            <apex:column headerValue="State" value="{!item.state}"/> 
+	            <apex:column headerValue="Zip Code" value="{!item.zipCode}"/>
+	            <apex:column headerValue="Client ID" value="{!item.clientId}"/>
+	        </apex:pageBlockTable> 
+
+
+	         <apex:outputPanel > 
+	            <div class="pbHeader">
+	                <table class="medproTable" >
+	                   <tbody>
+	                      <tr>
+	                         <td class="pbTitle"><apex:include pageName="MedProSC__MedProStandardCopyrightFooter"/> </td>                 
+	                         <td class="pbButton">
+	                            <apex:commandButton value="New MedPro Search" action="{!newSearch}"/>
+
+	                            <apex:commandButton id="syncButton1" value="{!syncOption1FoundLabel}" onclick="performSyncSelectedToSfObjectV2('{!syncOption1FoundId}'); return false;" 
+	                                             rendered="{!syncButton1Configured==true}">
+	                            </apex:commandButton>
+
+	                            <apex:commandButton id="syncButton2" value="{!syncOption2FoundLabel}" onclick="performSyncSelectedToSfObjectV2('{!syncOption2FoundId}'); return false;" 
+	                                             rendered="{!syncButton2Configured==true}">
+	                            </apex:commandButton>
+
+	                            <apex:commandButton id="syncButton3" value="{!syncOption3FoundLabel}" onclick="performSyncSelectedToSfObjectV2('{!syncOption3FoundId}'); return false;" 
+	                                             rendered="{!syncButton3Configured==true}">
+	                            </apex:commandButton>
+
+	                            <apex:commandButton id="syncButtonMedProHCP" value="Update from MedPro" onclick="performSyncUpdateFromMedProV2(); return false;" />
+	                            <apex:commandButton id="deleteButtonMedProHCP" value="Delete HCPs" onclick="performDeleteSelectedFromSfObjectV2(); return false;" />
+
+	                            <apex:commandButton value="Submit DRP" action="{!performDRP}" rendered="{!isDRPEnabled==true}"/>                               
+	                         </td>
+	                      </tr>
+	                   </tbody>
+	                </table>
+	            </div>
+	        </apex:outputPanel>
+
+	    </apex:pageBlock>
+	    
+	</apex:form>
+</apex:page>

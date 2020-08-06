@@ -1,0 +1,11 @@
+Please note that a new Sales Contract has been created within Salesforce for the {!Sales_Contract__c.Sales_Contract_Account__c} account:
+
+Contract Name: {!Sales_Contract__c.Name} 
+
+Current Status: {!Sales_Contract__c.Status__c}
+
+To review the contract within Salesforce, please click on this link: 
+{!Sales_Contract__c.Link} 
+
+Thank you, 
+Sales Operations

@@ -1,0 +1,65 @@
+<apex:page controller="lightsideapps.splashExtention" standardStylesheets="true"  >
+    
+    <style>
+        li {margin: 5px 0px;}
+        ul {padding-left: 10px; padding-right:50px;}
+        /* DivTable.com */
+        .divTable{ display: table; width: 100%; }
+        .divTableRow { display: table-row; }
+        .divTableCell { display: table-cell; padding: 10px; vertical-align:top; padding-top:20px; }
+        .divTableBody { display: table-row-group; }
+    </style>
+    
+    <apex:form >
+        <!-- Define the JavaScript function sayHello-->
+        <apex:actionFunction name="sayHello" action="{!CreateRequiredSites}" rerender="out" status="myStatus" />
+    </apex:form>   
+    
+    <!--  The Actual Page -->
+    
+    <div class="divTable" style="clear:both;">
+        <div class="divTableBody">
+            <div class="divTableRow" >
+                <div class="divTableCell" >
+                    <apex:image url="{!URLFOR($Resource.lightsideapps__LightsideAppsResources,'images/LightsideAppsLogo2.png')}" width="200px" /> 
+                </div> 
+                <div class="divTableCell" style="vertical-align:top;padding-top:30px;" >
+                    <div style="width:100%;text-align:center;">
+                        <h1 style="text-align:centre; color:#2A96F6; font-size:16pt;">Power Tools Setup</h1>
+                    </div>
+                    <div style="margin-top:5px;font: 11pt Verdana, Geneva, sans-serif;text-align:left; clear:">
+                        Power Tools by Lightside Apps requires a number of Remote Site Settings for use with Script Library, Deployment and Code Coverage Charts. 
+                        <br/><br/>
+                        This page should have created these for you already but if they don't exist or have been deleted, please ensure they are made available and active.
+                        <br /><br />
+                        The Remote Site URL's required are:
+                        <ul style="padding-left:20px;">
+                            <li> https://login.salesforce.com </li>
+                            <li> https://{Your Domain Name}.my.salesforce.com/services/Soap/m/39.0 (if using a 'My Domain') </li> 
+                            <li> https://{Your Domain Name}.visualforce.com/services/Soap/m/39.0 (if using a 'My Domain')</li>
+                            <li> https://salesforce.com/services/Soap/m/39.0 (if not using a 'My Domain') </li>
+                         <!--   <li> https://salesforce.visualforce.com/services/Soap/m/39.0 (if not using a 'My Domain') </li> Need to Test This -->
+                            <li> https://{!hostName} </li>
+                        </ul>
+                        <br/>
+                        For further setup information please review the <a href="http://www.lightsideapps.com/documentation/setup/index.html" target="_blank">Power Tools Setup</a> guide.
+                        <br/><br/>
+                        For configuration options please review the <a href="http://www.lightsideapps.com/documentation/config/index.html" target="_blank">Power Tools Configuration</a> guide.
+                        <br/><br/>
+                        For general user guides please review the <a href="http://www.lightsideapps.com/documentation/index.html" target="_blank">Support and Documentation</a> guide
+                    </div>
+                </div> 
+                <div class="divTableCell" style="vertical-align:top;">
+                    <apex:image url="{!URLFOR($Resource.lightsideapps__LightsideAppsResources,'images/TitleImage.png')}" width="200px" style="margin 0px 20px;" />
+                </div> 
+            </div>
+        </div>
+    </div>    
+    
+    <script>
+    window.setTimeout(sayHello,2000)
+    </script>
+    
+    <c:LSACreateRemoteSite rssName="LSAApps" rssDescription="Lightside applications MetaData API" rssHost="{!hostName + '/services/Soap/m/39.0'}" />
+    
+</apex:page>

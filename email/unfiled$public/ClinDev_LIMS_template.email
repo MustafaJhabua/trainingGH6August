@@ -1,0 +1,17 @@
+Hi LIMS Team, 
+
+Please create a new Project ID with the following information: 
+
+Sponsoring Pharma:  {!SOW__c.Sponsor_Account__c}
+GHI #: {!SOW__c.Sponsor_Acct_GHI__c} 
+Product:  {!SOW__c.Product_Name__c}
+Program Type:  {!SOW__c.Project_Type__c}
+Project ID:  {!SOW__c.LIMS_Project_ID_display__c}
+Project Name:  {!SOW__c.SOW_Name__c}
+Program Name:  {!SOW__c.Project__c}
+Needs Treatment:  {!SOW__c.Need_Treatment__c}
+Needs IUO Report: {!SOW__c.Needs_IUO_Report__c} 
+Program Description:  {!SOW__c.Project_Description__c}
+
+Thank you
+Andrew Blair

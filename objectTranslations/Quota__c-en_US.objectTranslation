@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Quota</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Quotas</value>
+    </caseValues>
+    <fields>
+        <label><!-- Actual-Apr --></label>
+        <name>Actual_Apr__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual-Aug --></label>
+        <name>Actual_Aug__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual-Dec --></label>
+        <name>Actual_Dec__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual-Feb --></label>
+        <name>Actual_Feb__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual-Jan --></label>
+        <name>Actual_Jan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual-Jul --></label>
+        <name>Actual_Jul__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual-Jun --></label>
+        <name>Actual_Jun__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual-Mar --></label>
+        <name>Actual_Mar__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual-May --></label>
+        <name>Actual_May__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual-Nov --></label>
+        <name>Actual_Nov__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual-Oct --></label>
+        <name>Actual_Oct__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Q1 --></label>
+        <name>Actual_Q1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sum of April-June --></help>
+        <label><!-- Actual-Q2 --></label>
+        <name>Actual_Q2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sum of July-Sept --></help>
+        <label><!-- Actual-Q3 --></label>
+        <name>Actual_Q3__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sum of Oct-Dec --></help>
+        <label><!-- Actual-Q4 --></label>
+        <name>Actual_Q4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual-Sep --></label>
+        <name>Actual_Sep__c</name>
+    </fields>
+    <fields>
+        <label><!-- Full Name --></label>
+        <name>Full_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manager: Full name --></label>
+        <name>Manager_Full_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent Apr --></label>
+        <name>Percent_Apr__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent Aug --></label>
+        <name>Percent_Aug__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent Dec --></label>
+        <name>Percent_Dec__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent Feb --></label>
+        <name>Percent_Feb__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent Jan --></label>
+        <name>Percent_Jan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent Jul --></label>
+        <name>Percent_Jul__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent Jun --></label>
+        <name>Percent_Jun__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent Mar --></label>
+        <name>Percent_Mar__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent May --></label>
+        <name>Percent_May__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent Nov --></label>
+        <name>Percent_Nov__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent Oct --></label>
+        <name>Percent_Oct__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent Q1 --></label>
+        <name>Percent_Q1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent Q2 --></label>
+        <name>Percent_Q2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent Q3 --></label>
+        <name>Percent_Q3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent Q4 --></label>
+        <name>Percent_Q4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent Sep --></label>
+        <name>Percent_Sep__c</name>
+    </fields>
+    <fields>
+        <label><!-- Profile name --></label>
+        <name>Profile_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quota-2017 --></label>
+        <name>Quota_2017__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quota-Apr --></label>
+        <name>Quota_Apr__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quota-Aug --></label>
+        <name>Quota_Aug__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quota-Dec --></label>
+        <name>Quota_Dec__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quota-Feb --></label>
+        <name>Quota_Feb__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quota-Jan --></label>
+        <name>Quota_Jan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quota-Jul --></label>
+        <name>Quota_Jul__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quota-Jun --></label>
+        <name>Quota_Jun__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quota-Mar --></label>
+        <name>Quota_Mar__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quota-May --></label>
+        <name>Quota_May__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quota-Nov --></label>
+        <name>Quota_Nov__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quota-Oct --></label>
+        <name>Quota_Oct__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quota-Q1 --></label>
+        <name>Quota_Q1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quota-Q2 --></label>
+        <name>Quota_Q2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quota-Q3 --></label>
+        <name>Quota_Q3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quota-Q4 --></label>
+        <name>Quota_Q4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quota-Sep --></label>
+        <name>Quota_Sep__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Region --></label>
+        <name>Sales_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- User ID --></label>
+        <name>User_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Username --></label>
+        <name>Username__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

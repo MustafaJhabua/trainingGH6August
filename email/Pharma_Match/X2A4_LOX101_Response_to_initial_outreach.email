@@ -1,0 +1,41 @@
+Thank you, Dr. {!Contact.LastName}.
+
+Per your request, I have included a list of relevant trials below as well as assigned one of our Clinical Trial Advisor physicians to contact you via phone this week to further discuss the clinical trial options for your patient who had an NTRK1 fusion.
+
+There are several relevant trials underway: 
+- NCT02568267: Phase 2; Entrectinib (RXDX-101) in NTRK, ROS1, or ALK positive advanced cancers by Ignyta
+- NCT02576431: Phase 2; Larotrectinib in NTRK positive solid tumors by Loxo Oncology
+- NCT02219711: Phase 1/1b; MGCD516 in advanced cancer by Mirati Therapeutics
+- NCT00585195: Phase 1; PF-02341066 in advanced cancer by Pfizer
+- NCT02097810: Phase 1; Entrectinib (RXDX-101) in NTRK, ROS1, or ALK positive advanced cancers by Ignyta
+
+In addition, we have a financial and business relationship with Loxo Oncology who is developing Larotrectinib, the only selective TRK inhibitor in clinical development designed specifically to inhibit TRK. Loxo Oncology is developing the drug specifically for patients with NTRK fusions. Preliminary Larotrectinib NTRK fusion clinical efficacy data were reported in Cancer Discovery by Doebele et al. in July 2015 (PMID: 26216294) and at the AACR-NCI-EORTC meeting in November 2015. Based on efficacy seen in these early phase clinical trials, Larotrectinib received FDA Breakthrough Designation in July 2016 “for the treatment of unresectable or metastatic solid tumors with NTRK-fusion proteins in adult and pediatric patients who require systemic therapy and who have either progressed following prior treatment or who have no acceptable alternative treatments.” The most recent data on Larotrectinib were presented at ASCO in June 2017 summarizing activity in 55 adult and pediatric patients treated at 100mg BID and showed:
+
+- Confirmed response rate by RECIST 1.1 of 76% across 17 different tumor types.
+- Response regardless of TRK gene fusion partner or age of patient.
+- Median PFS yet to be reached with a median follow up of over 7 months.
+- Median duration of response yet to be reached with median follow up of 5.8 months; 12 month duration of response is 79%. Longest duration of response is in excess of 24 months and ongoing.
+- Median time to response is 1.3 months.
+- Side effects: Only 7 patients of the 55 required a dose reduction for any AE but all have remained on larotrectinib with all responding: 1 CR, 5 PR and 1 SD by RECIST.
+- Dizziness requiring dose hold or modification occurred in only 2 patients with only 1 patient's experience reported to be treatment related.
+
+More information on Loxo Oncology’s clinical trials, NCT02576431 (Adult Phase 2) and NCT02122913 (Adult Phase 1), can be found here:
+- Phase 2: https://clinicaltrials.gov/ct2/show/NCT02576431.
+- Phase 1: https://clinicaltrials.gov/ct2/show/NCT02122913.
+
+The closest LOXO-101 study site is {!Match_Record__c.Closest_Trial_Site__c} in {!Match_Record__c.Closest_Trial_Site_City__c}, {!Match_Record__c.Closest_Trial_Site_State__c}; additional study sites are also available around the US. 
+
+If your patient wants to participate in one of Loxo's clinical trials, travel logistics and costs to participate in a clinical trial can be addressed under the trial by Loxo Oncology. Loxo Oncology has engaged a concierge-level travel service to arrange and pay for travel and accommodations with no out of pocket expenses for both the patient and a caregiver to make study-related visits. This support is offered with the site's IRB approval and is arranged for your patient once you make the referral for the patient.
+
+If we can help connect you with Loxo, please let us know. You can also contact Loxo Oncology directly, at their Physician and Patient Clinical Trial Hotline: 1-855-NTRK-123.
+
+Kind Regards,
+{!User.Name}, {!User.Degree__c} 
+Clinical Trial Advisor
+Guardant Health, Inc.
+
+Guardant Health Match Key: {!Match_Record__c.Match_Key__c} 
+
+Guardant Health partners with the clinical trial sponsor to conduct patient referral activities. 
+
+This message is intended solely for the designated recipient(s). It may contain confidential or proprietary information and may be subject to attorney-client privilege or other confidentiality protections. If you are not a designated recipient you may not review, copy or distribute this message. If you have received this in error, please notify the sender by replying to this e-mail and deleting this message. Thank you. Ref: {!Match_Record__c.Id}

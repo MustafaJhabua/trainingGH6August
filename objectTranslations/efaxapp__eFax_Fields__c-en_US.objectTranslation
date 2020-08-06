@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Auto Send Fax Criteria Code --></label>
+        <name>efaxapp__Auto_Send_Fax_Criteria_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auto Send Fax Pattern --></label>
+        <name>efaxapp__Auto_Send_Fax_Pattern__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the number of pixels barcode should appear from the left of the page --></help>
+        <label><!-- Barcode Posistion from Left --></label>
+        <name>efaxapp__Barcode_Posistion_Left__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter number of pixels barcode should appear from the top of the page --></help>
+        <label><!-- Barcode Posistion from Top --></label>
+        <name>efaxapp__Barcode_Posistion_Top__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the size in pixels for the barcode. This will be applied to the width. --></help>
+        <label><!-- Barcode Size Width --></label>
+        <name>efaxapp__Barcode_Size_Width__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document ID --></label>
+        <name>efaxapp__Document_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document Path --></label>
+        <name>efaxapp__Document_Path__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fax Field Label --></label>
+        <name>efaxapp__Fax_Field_Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fax Field --></label>
+        <name>efaxapp__Fax_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fax Number Critera Code --></label>
+        <name>efaxapp__Fax_Number_Critera_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fax Number Pattern --></label>
+        <name>efaxapp__Fax_Number_Pattern__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Fax Number Within Attachment Name --></label>
+        <name>efaxapp__Is_Fax_Number_Within_Attachment_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object Label --></label>
+        <name>efaxapp__Object_Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object Prefix --></label>
+        <name>efaxapp__Object_Prefix__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object --></label>
+        <name>efaxapp__Object__c</name>
+    </fields>
+    <fields>
+        <label><!-- Organization Fax Number --></label>
+        <name>efaxapp__Org_Fax_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Received Fax Relationship Field --></label>
+        <name>efaxapp__Received_Fax_Relationship_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sent Fax Relationship Field --></label>
+        <name>efaxapp__Sent_Fax_Relationship_Field__c</name>
+    </fields>
+</CustomObjectTranslation>

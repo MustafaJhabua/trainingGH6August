@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>To be sent to site contacts to introduce Guardant, and ensure emails are correct</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Salesforce Contacts Outreach Email</name>
+    <style>none</style>
+    <subject>TRIAL NAME: Guardant Health Patient Referrals for GENETIC MUTATION Patients</subject>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

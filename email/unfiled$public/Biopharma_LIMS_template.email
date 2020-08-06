@@ -1,0 +1,22 @@
+Hi LIMS Team, 
+
+Please create a new Project ID with the following information: 
+
+Sponsoring Pharma:  {!SOW__c.Sponsor_Account__c}
+GHI #: {!SOW__c.Sponsor_Acct_GHI__c} 
+Product:  {!SOW__c.Product_Name__c}
+Program Type:  {!SOW__c.Project_Type__c}
+Project ID:  {!SOW__c.LIMS_Project_ID_display__c}
+Project Name:  {!SOW__c.SOW_Name__c}
+Program Name:  {!SOW__c.Project__c}
+Needs Treatment:  {!SOW__c.Need_Treatment__c}
+Program Description:  {!SOW__c.Project_Description__c}
+Send RUO Report to Box:  {!IF(SOW__c.Send_RUO_Report_to_Box__c, 'Yes', 'No')}
+Box Data Transfer Folder: {!SOW__c.Box_Data_Transfer_Folder__c}
+IUO Reporting Required: {!IF(SOW__c.IUO_Reporting_Required__c, 'Yes', 'No')}
+IUO Protocol Version:  {!SOW__c.IUO_Protocol_Version__c}
+LDT Reporting Required: {!IF(SOW__c.LDT_Reporting_Required__c, 'Yes', 'No')}
+
+
+Thank you
+Andrew Blair

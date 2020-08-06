@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>7/17/20 changed sender to Adriana. 2/20/19 Updated by AF to reflect Clinical Trials only 1/17/19 changed sender to Katrina 7/31/18 Removed Match Key 7/30/18 Added shortened Portal URL (now supported by Portal 7.1) -AF. 2/16/18 text copied from 1A1 Initial outreach for auto generated emailV1.A1  -AF</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>General_Operations_IOEAutomation_031</name>
+    <style>none</style>
+    <subject>Your patient {!Guardant_360_Sample__c.MR_Patient_Initials__c}&apos;s genomic alteration indicates a potential targeted therapy clinical trial match</subject>
+    <textOnly>Dear Dr. {!Contact.LastName},
+
+The Guardant360 test you ordered to identify circulating tumor biomarkers for your patient {!Guardant_360_Sample__c.MR_Patient_Initials__c} reported a {!Guardant_360_Sample__c.MR_Qualifying_Target_Alterations__c} alteration on {!Guardant_360_Sample__c.Final_Report_Date__c}. We found that this rare alteration could qualify your patient for a curated list of clinical trials.
+
+If you would like to receive more information, please reply to this email.
+
+To view your Guardant360 report in our secure online portal, click here: {!Guardant_360_Sample__c.Portal_Link_for_MD__c}.
+
+Sincerely,  
+
+Adriana Olar, MD  
+Clinical Trial Advisor  
+Guardant Health, Inc.  
+On behalf of the Clinical Trial Advisors program
+
+This message is intended solely for the designated recipient(s). It may contain confidential or proprietary information and may be subject to attorney-client privilege or other confidentiality protections. If you are not a designated recipient you may not review, copy or distribute this message. If you have received this in error, please notify the sender by replying to this e-mail and deleting this message. Thank you.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

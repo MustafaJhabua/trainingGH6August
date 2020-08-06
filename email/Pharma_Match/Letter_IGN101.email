@@ -1,0 +1,24 @@
+Dear Dr. {!Contact.LastName},
+
+Further to our discussion about your patient’s Guardant360 report, you will notice that we detected [an NTRK / an ALK / a ROS1] fusion.
+
+This molecular alteration is notable because it is rare, and there is a drug in clinical trials that may be effective for patients whose tumors harbor this alteration. The drug is called entrectinib, and it is being developed by a company called Ignyta. Entrectinib is a potent, CNS-penetrant, oral selective tyrosine kinase inhibitor that targets NTRK, ROS1, and ALK fusions. Preliminary entrectinib clinical efficacy data were reported in 19 patients treated out of 24 (79%) with durable responses with the longest response ongoing for > 2 years.
+https://ignyta.com/wp-content/uploads/2016/10/160417-Drilon-AACR-2016-vF.pdf
+
+More information on the clinical trial (NCT 02568267) can be found here:
+https://clinicaltrials.gov/ct2/show/NCT02568267
+
+Ignyta has a number of trial sites across the country and through a partnership with Pharmatech, it is possible that a new trial site can be opened for Ignyta’s trial based on where the patient lives. This partnership has enabled trial sites to be opened and patients to be enrolled in as little as 1 week. If opening a closer trial site is not possible, then travel accommodations can be made for your patient to travel to a trial site through Ignyta’s concierge program.
+
+For more information or to enroll your patient, please contact Ignyta directly, at 1-858-255-5956.
+
+Sincerely,
+{!User.Name}, {!User.Degree__c} 
+Clinical Trial Advisor
+Guardant Health
+
+Guardant Health Match Key: {!Match_Record__c.Match_Key__c} 
+
+Guardant Health partners with the clinical trial sponsor to conduct patient referral activities.
+
+This message is intended solely for the designated recipient(s). It may contain confidential or proprietary information and may be subject to attorney-client privilege or other confidentiality protections. If you are not a designated recipient you may not review, copy or distribute this message. If you have received this in error, please notify the sender by replying to this e-mail and deleting this message. Thank you. Ref: {!Match_Record__c.Id}

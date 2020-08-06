@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Address</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Addresses</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Addresses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Address Line 1 --></label>
+        <name>Address_Line_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Line   2 --></label>
+        <name>Address_Line_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Ordinal --></label>
+        <name>Address_Ordinal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Status --></label>
+        <name>Address_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Type --></label>
+        <name>Address_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address --></label>
+        <name>Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Addresses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Address --></label>
+        <name>Default_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Entity Type --></label>
+        <name>Entity_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Entity VID --></label>
+        <name>Entity_VID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Externally Mastered --></label>
+        <name>Is_Externally_Mastered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Proprietary? --></label>
+        <name>Is_Proprietary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Veeva Master --></label>
+        <name>Is_Veeva_Master__c</name>
+    </fields>
+    <fields>
+        <label><!-- Postal Code --></label>
+        <name>Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+    </fields>
+    <fields>
+        <label><!-- VID --></label>
+        <name>VID__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Account Address --></label>
+        <name>Account_Address</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Contact Address --></label>
+        <name>Contact_Address</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please select contact or account while creating address --></errorMessage>
+        <name>Contact_or_Account_is_Required</name>
+    </validationRules>
+</CustomObjectTranslation>

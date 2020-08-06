@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Expense</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Expenses</value>
+    </caseValues>
+    <fields>
+        <label><!-- Contact Record --></label>
+        <name>Contact_Record__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Date Index --></label>
+        <name>Current_Year_Date_Index__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employee --></label>
+        <name>Employee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expense Amount --></label>
+        <name>Expense_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expense Approval Date --></label>
+        <name>Expense_Approval_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expense Comments --></label>
+        <name>Expense_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expense Date --></label>
+        <name>Expense_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expense Submission Date --></label>
+        <name>Expense_Submission_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field captures the current expense system (Concur) ID, which should be unique and used as an external identifier. --></help>
+        <label><!-- Expense System ID --></label>
+        <name>Expense_System_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Institution City --></label>
+        <name>Institution_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Institution Name --></label>
+        <name>Institution_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Institution State --></label>
+        <name>Institution_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPI Number --></label>
+        <name>NPI_Number__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- NPI Record --></label>
+        <name>NPI_Record__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Physician Name --></label>
+        <name>Physician_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- RSD Email --></label>
+        <name>RSD_Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of Days between the date the expense was incurred and the date it was submitted --></help>
+        <label><!-- Submitted # Days after Expense --></label>
+        <name>Submitted_Days_after_Expense__c</name>
+    </fields>
+    <fields>
+        <label><!-- update --></label>
+        <name>update__c</name>
+    </fields>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

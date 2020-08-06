@@ -1,0 +1,4 @@
+<apex:page standardController="SOW__c" docType="html-5.0" title="Webmerge SOW: {!SOW__c.Name}" >
+    <webm:WebmergeWizard record="{!SOW__c}" />
+    
+</apex:page>

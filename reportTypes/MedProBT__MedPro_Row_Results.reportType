@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>MedProBT__Row_Result__c</baseObject>
+    <category>admin</category>
+    <deployed>true</deployed>
+    <description>MedPro Row Results for reporting</description>
+    <label>MedPro Row Results</label>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Id</field>
+            <table>MedProBT__Row_Result__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Name</field>
+            <table>MedProBT__Row_Result__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CreatedDate</field>
+            <table>MedProBT__Row_Result__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CreatedBy</field>
+            <table>MedProBT__Row_Result__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastModifiedDate</field>
+            <table>MedProBT__Row_Result__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastModifiedBy</field>
+            <table>MedProBT__Row_Result__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>MedProBT__Batch_Result__c</field>
+            <table>MedProBT__Row_Result__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>MedProBT__Row_Number__c</field>
+            <table>MedProBT__Row_Result__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>MedProBT__Error_Message__c</field>
+            <table>MedProBT__Row_Result__c</table>
+        </columns>
+        <masterLabel>MedPro Row Results</masterLabel>
+    </sections>
+</ReportType>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessType>Shared</accessType>
+    <name>Pharma Patient Referrals: CTA Folder</name>
+    <publicFolderAccess>ReadWrite</publicFolderAccess>
+    <sharedTo>
+        <group>Biopharma</group>
+        <group>Clinical_Trial_Advisors</group>
+        <role>System_Administrator</role>
+        <role>User_Engagement_Team</role>
+    </sharedTo>
+</EmailFolder>

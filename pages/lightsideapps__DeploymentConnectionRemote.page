@@ -1,0 +1,6 @@
+<apex:page standardcontroller="lightsideapps__Deployment_Connection__c">
+    <c:LSACreateRemoteSite rssName="LSAApps_{!lightsideapps__Deployment_Connection__c.Name}"
+                            rssDescription="Lightside applications - {!lightsideapps__Deployment_Connection__c.Name}"
+                            rssHost="{!lightsideapps__Deployment_Connection__c.lightsideapps__Hostname__c}"
+                            />
+</apex:page>

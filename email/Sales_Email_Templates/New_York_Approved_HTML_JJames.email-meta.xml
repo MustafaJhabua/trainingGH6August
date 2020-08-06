@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>GH_Logo_Small</letterhead>
+    <name>New York Approved--HTML-JJames</name>
+    <style>freeForm</style>
+    <subject>Guardant360 is New York Approved</subject>
+    <textOnly>Dear Dr. {!Contact.LastName},
+
+Did you hear? The #1 ordered comprehensive liquid biopsy is now New York State Department of Health approved! That means you can order the Guardant360 assay for your advanced cancer patients without completing a DOH waiver.
+
+Is your practice fully stocked with Guardant360 sample collection kits? I can drop by at your convenience with some fresh supplies and review our latest panel updates. When is the best day next week for a visit?
+
+Best,
+
+Jaime James
+Account Executive
+mobile: (631) 235-8289
+jjames@guardanthealth.com
+
+Guardant Health
+This message may contain confidential or privileged information. If you are not the intended recipient, please advise the sender immediately by reply email and delete this message and any attachments without retaining a copy. Reviewing, disclosing, distributing, or using the contents of this message is strictly prohibited if you are not the intended recipient. Guardant Health, Inc. prohibits users of our system from sending any e-mail containing anything defamatory, improper or discriminatory.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

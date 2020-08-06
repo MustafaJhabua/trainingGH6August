@@ -1,0 +1,246 @@
+<apex:page standardController="Product2" extensions="lightsideapps.ProductCreatorExtension" tabStyle="Product2">
+    <apex:sectionHeader Title="Product Edit" subtitle="{!if(Product2.Id==null,'New Product',Product2.Name)}"/>
+    <apex:includeScript value="{!$Resource.lightsideapps__jquery_1_11_3}"/>
+    <style> 
+        .CenteredHeader {text-align:center;}
+        #StandardPricebookAlertNew, #StandardPricebookAlertUpdate {width:550px;text-align:center;background-color:#F7F6E3;padding:5px;color:#FF5F49;border: 1px solid #F2F4CB;margin-bottom:2px;}
+
+    </style>
+     
+    <apex:pageMessages />
+     
+    <div class="bDescription">
+        Enter the Product details and add to your relevant Price Books. Products and Price Books must be Active for them to be available for opportunities or quotes.
+    </div>
+    <apex:form >
+ 
+        <apex:pageBlock mode="edit" title="Product Edit">
+            
+            <apex:pageBlockButtons >
+                <apex:commandButton title="Save" value=" Save " action="{!SaveAction}" styleClass="SaveButton" rendered="{!ProdPricebookDetails.size>0}"/>
+                <apex:commandButton title="Cancel" value=" Cancel " action="{!cancel}" />
+            </apex:pageBlockButtons>
+            
+            <apex:pageBlockSection title="Product Information" columns="2" >
+                <apex:inputField value="{!Product2.Name}"/>
+                <apex:inputField value="{!Product2.IsActive}"/>
+                <apex:inputField value="{!Product2.ProductCode}"/>
+                <apex:inputField value="{!Product2.Family}"/>
+                 
+                    <apex:pageBlockSectionItem rendered="{!QuantityScheduleEnabled}">
+                        <apex:outputLabel value="Quantity Scheduling Enabled" />
+                        <apex:actionRegion >
+                        <apex:inputCheckbox value="{!CanUseQuantitySchedule}" >
+                            <apex:actionSupport event="onchange" reRender="DefaultSchedule,QTYSchedule,REVSchedule"  />
+                        </apex:inputCheckbox>
+                        </apex:actionRegion>
+                    </apex:pageBlockSectionItem>
+                
+                    <apex:pageBlockSectionItem rendered="{!RevenueScheduleEnabled}">
+                        <apex:outputLabel value="Revenue Scheduling Enabled" />
+                        <apex:actionRegion >
+                        <apex:inputCheckbox value="{!CanUseRevenueSchedule}" >
+                            <apex:actionSupport event="onchange" reRender="DefaultSchedule,QTYSchedule,REVSchedule" />
+                        </apex:inputCheckbox>
+                        </apex:actionRegion>
+                    </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection columns="1">
+                <apex:inputField value="{!Product2.Description}" style="width:80%; height:40px;" />     
+            </apex:pageBlockSection>    
+             
+            <apex:pageblocksection Title="Custom Fields" columns="2" rendered="{!$ObjectType.Product2.FieldSets.lightsideapps__ProductCreator.size>0}" >
+                <apex:repeat value="{!$ObjectType.Product2.FieldSets.lightsideapps__ProductCreator}" var="p" > 
+                    <apex:pageblocksectionitem >
+                        <apex:outputLabel value="{!p.Label}" />
+                        <apex:inputfield value="{!Product2[p]}" required="{!OR(p.required, p.dbrequired)}" />
+                    </apex:pageblocksectionitem>
+                </apex:repeat>
+            </apex:pageblocksection>
+            
+            <apex:outputPanel id="DefaultSchedule" styleClass="PageBlockPanel" rendered="{!OR(RevenueScheduleEnabled,QuantityScheduleEnabled)}">
+                <br />
+                <apex:pageblocksection Title="Default Schedules" columns="1" rendered="{!OR(CanUseQuantitySchedule,CanUseRevenueSchedule)}"  >
+                    <apex:outputText >
+                        <div> 
+                            The default schedules will be applied every time users add this product to an opportunity or quote. Users can refine the schedules as necessary on that opportunity or quote. The default schedules use the product date as the start date for the installments. The default revenue schedule uses the product total price as the revenue.
+                            <br /><br />
+                            For the Schedule Type, select "Divide" to split the amount into multiple installments occurring every week, month, or other period. Select "Repeat" to repeat the entire amount every week, month, or other period for multiple installments 
+                        </div>
+                    </apex:outputText>
+                </apex:pageblocksection> 
+            </apex:outputPanel> 
+            
+            <apex:outputPanel id="QTYSchedule" styleClass="PageBlockPanel" rendered="{!QuantityScheduleEnabled}">
+                <br />
+                <apex:pageBlockSection title="Default Quantity Schedule" columns="1" rendered="{!AND(CanUseQuantitySchedule,CanUseRevenueSchedule)}"  > 
+                    <div>Note: If you set both schedules, the quantity schedule will be applied first and used to calculate the total revenue. The revenue schedule will then be applied to that amount.</div>
+                </apex:pageBlockSection>
+                <apex:pageBlockSection title="Default Quantity Schedule" columns="1" rendered="{!AND(CanUseQuantitySchedule,NOT(CanUseRevenueSchedule))}"  > 
+                </apex:pageBlockSection>
+                <apex:pageBlockSection columns="2" rendered="{!CanUseQuantitySchedule}"  > 
+                    <apex:pageblockSectionItem >
+                        <apex:outputLabel value="Quantity Schedule Type" />
+                        <apex:selectList value="{!SelectedQTYScheduleType}" size="1" >
+                            <apex:selectOptions value="{!QTYScheduleTypeOptions}"/>
+                        </apex:selectList>
+                    </apex:pageblockSectionItem>
+                    <apex:pageblockSectionItem >
+                        <apex:outputLabel value="Number Of Quantity Installments" />
+                        <apex:inputText value="{!QTYInstallmentNumber}" onkeypress="return inputLimiter(event,'Numbers');"/>
+                    </apex:pageblockSectionItem>
+                    <apex:pageblockSectionItem >
+                        <apex:outputLabel value="Quantity Installment Period" />
+                        <apex:selectList value="{!SelectedQTYInstallmentPeriod}" size="1">
+                            <apex:selectOptions value="{!QTYInstallmentPeriodOptions}"/>
+                        </apex:selectList>
+                    </apex:pageblockSectionItem>
+                </apex:pageBlockSection>
+            </apex:outputPanel> 
+             
+            <apex:outputPanel id="REVSchedule" styleClass="PageBlockPanel" rendered="{!RevenueScheduleEnabled}">
+                <apex:pageBlockSection title="Default Revenue Schedule" columns="2" rendered="{!CanUseRevenueSchedule}"> 
+                    <apex:pageblockSectionItem >
+                        <apex:outputLabel value="Revenue Schedule Type" />
+                        <apex:selectList value="{!SelectedREVScheduleType}" size="1" >
+                            <apex:selectOptions value="{!REVScheduleTypeOptions}"/>
+                        </apex:selectList>
+                    </apex:pageblockSectionItem>
+                    <apex:pageblockSectionItem >
+                        <apex:outputLabel value="Number Of Revenue Installments" />
+                        <apex:inputText value="{!REVInstallmentNumber}" onkeypress="return inputLimiter(event,'Numbers');"/>
+                    </apex:pageblockSectionItem>
+                    <apex:pageblockSectionItem >
+                        <apex:outputLabel value="Revenue Installment Period" />
+                        <apex:selectList value="{!SelectedREVInstallmentPeriod}" size="1">
+                            <apex:selectOptions value="{!REVInstallmentPeriodOptions}"/>
+                        </apex:selectList>
+                    </apex:pageblockSectionItem>
+
+                </apex:pageBlockSection>
+            </apex:outputPanel>
+           
+            
+            <apex:pageblocksection Title="Add to Price Book(s)" columns="1"  >
+              
+                <apex:outputPanel rendered="{!AND(Product2.Id==null,ProdPricebookDetails.size>1)}">
+                 <center><div id="StandardPricebookAlertNew">The Standard Price Book must have a List Price before you can add prices to other Price Books</div></center>
+                </apex:outputPanel>
+                <apex:outputPanel rendered="{!AND(Product2.Id!=null)}">
+                 <center><div id="StandardPricebookAlertUpdate" class='hidden'>The Standard Price Book must have a List Price before you can update your changes</div></center>
+                </apex:outputPanel>
+                <apex:pageBlockTable value="{!ProdPricebookDetails}" var="pb" id="PBETable" styleClass="PBETable">
+
+                    <apex:column value="{!pb.Pricebook.Name}" headerValue="Price Book" />
+                    <apex:column value="{!pb.Pricebook.IsActive}" headerValue="Active" style="width:40px" />
+                    <apex:column value="{!pb.Pricebook.Description}" headerValue="Description" />
+                    <apex:column value="{!pb.Pricebook.IsStandard}" headerValue="Is Standard Price Book" headerClass="CenteredHeader" style="text-align:center;" />
+                    <apex:column headerValue="Use Standard Price" headerClass="CenteredHeader" style="text-align:center;" >
+                        <apex:inputField value="{!pb.PBE.UseStandardPrice}" rendered="{!NOT(pb.Pricebook.IsStandard)}" styleClass="{!if(NOT(pb.Pricebook.IsStandard),'NonStdPBEUseSP','')}" required="false" />
+                    </apex:column>
+                    <apex:column headerValue="List Price"  >
+                        <apex:inputField value="{!pb.PBE.UnitPrice}" required="{!OR(pb.Pricebook.IsStandard,pb.IsCurrent)}" styleClass="{!if(NOT(pb.Pricebook.IsStandard),'NonStdPBEListPrice','StdPBEListPrice')}" />
+                    </apex:column>
+                    <apex:column headerValue="Active" headerClass="CenteredHeader" style="text-align:center; width:40px" >
+                        <apex:inputField value="{!pb.PBE.IsActive}" required="false" styleClass="{!if(NOT(pb.Pricebook.IsStandard),'NonStdPBEIsActive','')}" />
+                    </apex:column>
+                    
+                    <apex:repeat value="{!customFields}" var="CustomField" >
+                        <apex:column headerValue="{!CustomField.Label}" >
+                            <apex:inputField value="{!pb.PBE[CustomField.Name]}" /> 
+                        </apex:column>
+                    </apex:repeat>
+
+                </apex:pageBlockTable> 
+                 
+            </apex:pageblocksection>
+
+        </apex:pageBlock>
+        
+    </apex:form>
+    
+    <script>
+    
+        var $LSA = jQuery.noConflict();
+        
+        // On Page Load 
+        $LSA( document ).ready(function() {
+          // If there is no standard List Price then make the Non Standard PBE Rows disabled until there is one
+          if($LSA(".StdPBEListPrice").val()==null || $LSA(".StdPBEListPrice").val()==''){
+              $LSA(".NonStdPBEUseSP").prop('disabled', true);
+              $LSA(".NonStdPBEListPrice").prop('disabled', true);
+              $LSA(".NonStdPBEIsActive").prop('disabled', true);
+          }
+          // Check for any 'Use Standard Price' Selections and disble the List Price
+          $LSA(".NonStdPBEUseSP").each(function() {
+            if($LSA(this).prop('checked'))
+              $LSA(this).closest("tr").find('.NonStdPBEListPrice').prop('disabled',true);
+          });
+        });
+    
+        // on change of the Std Pricebook List Price we want to check if there is a value or not and 
+        // either enable or disable the NonStdPBE fields
+        $LSA(".StdPBEListPrice").on("input", function() {
+            if($LSA(".StdPBEListPrice").val()==null || $LSA(".StdPBEListPrice").val()==''){
+              console.log('Std Price is NULL'); 
+              $LSA(".NonStdPBEUseSP").prop('disabled', true);
+              $LSA(".NonStdPBEListPrice").prop('disabled', true);
+              $LSA(".NonStdPBEIsActive").prop('disabled', true);
+              $LSA("#StandardPricebookAlertNew").show();
+              $LSA("#StandardPricebookAlertUpdate").show();
+              if('{!Product2.Id}' != null && '{!Product2.Id}' != '')
+                $LSA(".SaveButton").css('visibility','hidden');
+            } 
+            else {
+                console.log('Std Price Entered');
+                $LSA(".NonStdPBEUseSP").prop('disabled', false);
+                $LSA(".NonStdPBEListPrice").prop('disabled', false);
+                $LSA(".NonStdPBEIsActive").prop('disabled', false);
+                $LSA("#StandardPricebookAlertNew").hide();
+                $LSA("#StandardPricebookAlertUpdate").hide();
+                if('{!Product2.Id}' != null && '{!Product2.Id}' != '')
+                    $LSA(".SaveButton").css('visibility','visible');
+            }
+            
+            $LSA(".NonStdPBEUseSP").each(function() {
+                if($LSA(this).prop('checked')) {
+                  $LSA(this).closest("tr").find('.NonStdPBEListPrice').val($LSA(".StdPBEListPrice").val());
+                  $LSA(this).closest("tr").find('.NonStdPBEListPrice').prop('disabled',true);
+                }
+              });
+        });
+    
+        // if 'Use Standard Price' is selected we want to copy the value to the List Price and disable the list Price field for that row
+        // if 'Use Standard Price' is UNselected we want to clear the List Price field and enable it.
+        $LSA(".NonStdPBEUseSP").on("click", function() {
+            if($LSA(this).prop('checked')){
+                $LSA(this).closest("tr").find('.NonStdPBEListPrice').val($LSA(".StdPBEListPrice").val()).prop('disabled',true);
+            } else {
+                $LSA(this).closest("tr").find('.NonStdPBEListPrice').val('').prop('disabled',false);
+            }
+        });
+    
+        function inputLimiter(e,allow) {
+            var AllowableCharacters = '';
+
+            if (allow == 'Letters'){AllowableCharacters=' ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';}
+            if (allow == 'Numbers'){AllowableCharacters='1234567890';}
+            if (allow == 'NameCharacters'){AllowableCharacters=' ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-.\'';}
+            if (allow == 'NameCharactersAndNumbers'){AllowableCharacters='1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-\'';}
+            if (allow == 'Currency'){AllowableCharacters='1234567890.';}
+
+            var k = document.all?parseInt(e.keyCode): parseInt(e.which);
+            if (k!=13 && k!=8 && k!=0){
+                if ((e.ctrlKey==false) && (e.altKey==false)) {
+                return (AllowableCharacters.indexOf(String.fromCharCode(k))!=-1);
+                } else {
+                return true;
+                }
+            } else {
+                return true;
+            }
+        } 
+    
+    </script>
+
+</apex:page>

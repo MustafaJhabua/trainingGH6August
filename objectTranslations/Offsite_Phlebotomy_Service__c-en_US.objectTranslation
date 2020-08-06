@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Offsite Phlebotomy Service</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Offsite Phlebotomy Services</value>
+    </caseValues>
+    <fields>
+        <label><!-- AE Email --></label>
+        <name>AE_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- AE Informed --></label>
+        <name>AE_Informed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+        <relationshipLabel><!-- Offsite Phlebotomy Services by this Account --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account Owner Email --></label>
+        <name>Account_Owner_Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- Derived from ordering account, not OPS account --></help>
+        <label><!-- Account Region --></label>
+        <name>Account_Region__c</name>
+    </fields>
+    <fields>
+        <help><!-- Derived from ordering account, not OPS account --></help>
+        <label><!-- Account Territory --></label>
+        <name>Account_Territory__c</name>
+    </fields>
+    <fields>
+        <help><!-- Derived from ordering account, not OPS account --></help>
+        <label><!-- Account Zip Code --></label>
+        <name>Account_Zip_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Appointment Time --></label>
+        <name>Appointment_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Draw Scheduled --></label>
+        <name>Draw_Scheduled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- OPS Account --></label>
+        <lookupFilter>
+            <errorMessage><!-- Must be OPS account. --></errorMessage>
+        </lookupFilter>
+        <name>OPS_Account__c</name>
+        <relationshipLabel><!-- OPS Account --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- OPS Attachment --></label>
+        <name>OPS_Attachment__c</name>
+        <relationshipLabel><!-- Offsite Phlebotomy Services --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- OPS Request Received --></label>
+        <name>OPS_Request_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- OPS Status --></label>
+        <name>OPS_Status__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Hold</masterLabel>
+            <translation><!-- On Hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Patient Name --></label>
+        <name>Patient_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phleb Assigned --></label>
+        <name>Phleb_Assigned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phleb Assignment --></label>
+        <name>Phleb_Assignment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phleb Name --></label>
+        <name>Phleb_Name__c</name>
+        <relationshipLabel><!-- Offsite Phlebotomy Services (Phleb Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Requesting MD --></label>
+        <name>Requesting_MD__c</name>
+        <relationshipLabel><!-- Offsite Phlebotomy Services (Requesting MD) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+    </fields>
+    <fields>
+        <label><!-- TRF Emailed --></label>
+        <name>TRF_Emailed__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

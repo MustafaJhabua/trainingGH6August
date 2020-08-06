@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutoResponseRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <autoResponseRule>
+        <fullName>Web Contact Auto Response</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Inquiry_Type__c</field>
+                <operation>equals</operation>
+                <value>Patient,Family Member or Friend</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>US</value>
+            </criteriaItems>
+            <senderEmail>clientservices@guardanthealth.com</senderEmail>
+            <senderName>Guardant Health Client Services</senderName>
+            <template>Client_Services_Email_Templates/Patient_Web_Auto_Response</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Inquiry_Type__c</field>
+                <operation>equals</operation>
+                <value>Patient,Family Member or Friend</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>BR</value>
+            </criteriaItems>
+            <senderEmail>clientservices@guardanthealth.com</senderEmail>
+            <senderName>Guardant Health Client Services</senderName>
+            <template>Sales_Email_Templates/Patient_Web_Auto_Response_Brazil</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Inquiry_Type__c</field>
+                <operation>equals</operation>
+                <value>Patient,Family Member or Friend</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>PT</value>
+            </criteriaItems>
+            <senderEmail>clientservices@guardanthealth.com</senderEmail>
+            <senderName>Guardant Health Client Services</senderName>
+            <template>Sales_Email_Templates/Patient_Web_Auto_Response_Portugal</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Inquiry_Type__c</field>
+                <operation>equals</operation>
+                <value>Patient,Family Member or Friend</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>BZ,CR,SV,GT,HN,MX,NI,PA,ES,AR,BO,CL,CO,EC,GF,PY,PE,UY,VE</value>
+            </criteriaItems>
+            <senderEmail>clientservices@guardanthealth.com</senderEmail>
+            <senderName>Guardant Health Client Services</senderName>
+            <template>Sales_Email_Templates/Patient_Web_Auto_Response_LatAm</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Inquiry_Type__c</field>
+                <operation>equals</operation>
+                <value>Patient,Family Member or Friend</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>notEqual</operation>
+                <value>US,BR,PT,BZ,CR,SV,GT,HN,MX,NI,PA,ES,AR,BO,CL,CO,EC,GF,PY,PE,UY,VE</value>
+            </criteriaItems>
+            <senderEmail>clientservices@guardanthealth.com</senderEmail>
+            <senderName>Guardant Health Client Services</senderName>
+            <template>Client_Services_Email_Templates/Patient_Web_Auto_Response_ROW</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Inquiry_Type__c</field>
+                <operation>equals</operation>
+                <value>New Medical Professional</value>
+            </criteriaItems>
+            <senderEmail>clientservices@guardanthealth.com</senderEmail>
+            <senderName>Guardant Health</senderName>
+            <template>Client_Services_Email_Templates/New_Medical_Professional_Web_Auto_Response</template>
+        </ruleEntry>
+    </autoResponseRule>
+</AutoResponseRules>

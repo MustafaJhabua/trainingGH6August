@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <decisions>
+        <name>Why_was_account_sent_to_RD</name>
+        <label>Why was account sent to RD?</label>
+        <locationX>1142</locationX>
+        <locationY>80</locationY>
+        <defaultConnector>
+            <targetReference>Update_ISR_Target_record</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>The_office_submitted_a_sample</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Contact_Record.ISR_Send_to_RD__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>The office has submitted a sample</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_ISR_Target_record_0</targetReference>
+            </connector>
+            <label>The office submitted a sample</label>
+        </rules>
+    </decisions>
+    <dynamicChoiceSets>
+        <description>From Contact object</description>
+        <name>Sample_or_Visit_Choice</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>ISR_Send_to_RD__c</picklistField>
+        <picklistObject>Contact</picklistObject>
+    </dynamicChoiceSets>
+    <formulas>
+        <description>Adds three days to today&apos;s date</description>
+        <name>Today_Plus_3</name>
+        <dataType>Date</dataType>
+        <expression>{!$Flow.CurrentDate}+3</expression>
+    </formulas>
+    <interviewLabel>ISR Send to RD for Review {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>ISR Send to RD for Review</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordCreates>
+        <description>Creates a task for the ISR to follow up with the RD to confirm that the contact is ready to be turned over</description>
+        <name>Follow_Up_with_RD</name>
+        <label>Create Task to Follow Up with RD</label>
+        <locationX>830</locationX>
+        <locationY>83</locationY>
+        <connector>
+            <targetReference>Why_was_account_sent_to_RD</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>Today_Plus_3</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Description</field>
+            <value>
+                <elementReference>Follow_Up_Task_Comments</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>High</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RecordTypeId</field>
+            <value>
+                <stringValue>0120y000000GXLMAA4</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Not Started</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Follow Up with RD: Can Account be Turned Over?</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhoId</field>
+            <value>
+                <elementReference>Get_Contact_Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <name>Get_Contact_Record</name>
+        <label>Get Contact Record</label>
+        <locationX>390</locationX>
+        <locationY>89</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Send_to_RD_for_Review</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Contact</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Updates contact ISR fields</description>
+        <name>Update_Contact</name>
+        <label>Update Contact</label>
+        <locationX>675</locationX>
+        <locationY>108</locationY>
+        <connector>
+            <targetReference>Follow_Up_with_RD</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Contact_Record.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>ISR_Send_to_RD__c</field>
+            <value>
+                <elementReference>Visit_or_Sample</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ISR_Stage__c</field>
+            <value>
+                <stringValue>Turn over to RD</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Contact</object>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Updates ISR Target record related to the contact</description>
+        <name>Update_ISR_Target_record</name>
+        <label>Update ISR Target record-inservice requested</label>
+        <locationX>1027</locationX>
+        <locationY>237</locationY>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Contact_Record.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Inservice_Requested__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>ISR_Target__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Updates ISR Target record related to the contact</description>
+        <name>Update_ISR_Target_record_0</name>
+        <label>Update ISR Target record-Sample Submitted</label>
+        <locationX>1247</locationX>
+        <locationY>228</locationY>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Contact_Record.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Sample_Received_from_Office__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>ISR_Target__c</object>
+    </recordUpdates>
+    <screens>
+        <name>Send_to_RD_for_Review</name>
+        <label>Send to RD for Review</label>
+        <locationX>534</locationX>
+        <locationY>84</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Update_Contact</targetReference>
+        </connector>
+        <fields>
+            <name>Info_Message</name>
+            <fieldText>&lt;p&gt;&lt;b style=&quot;font-size: 16px;&quot;&gt;Send to RD for Review&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;If you believe this account is ready to be turned over to your RD, select one of the options below to explain why. This will send an email asking the RD to review this account, and will&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt; move the stage to &apos;Turn over to RD&apos;.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Please note that c&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;licking &apos;Finished&apos; only creates a follow-up task for you to complete. Y&lt;/span&gt;ou will still have to confirm that the RD agrees with you that the account is ready to be turned over.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Visit_or_Sample</name>
+            <choiceReferences>Sample_or_Visit_Choice</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Select one (required):</fieldText>
+            <fieldType>MultiSelectCheckboxes</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Get_Contact_Record</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <description>Text field with info to remind ISR why RD is reviewing this account</description>
+        <name>Follow_Up_Task_Comments</name>
+        <text>&lt;p&gt;On {!$Flow.CurrentDate}, you sent this account to your RD to review. The reason you selected was: {!Visit_or_Sample}.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Please follow up with your RD about whether this account should be turned over to the account executive.&lt;/p&gt;</text>
+    </textTemplates>
+    <variables>
+        <description>Current User</description>
+        <name>CurrentUser</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <elementReference>Get_Contact_Record.OwnerId</elementReference>
+        </value>
+    </variables>
+    <variables>
+        <description>Contact&apos;s ID</description>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

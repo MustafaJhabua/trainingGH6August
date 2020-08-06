@@ -1,0 +1,26 @@
+Dear Dr. {!Contact.LastName},
+
+Further to our discussion and/or email exchange about your patient’s Guardant360 report, you expressed interest in exploring patient enrollment into Symphogen’s clinical trial (NCT02648724) based on the MET alteration detected.
+
+This molecular alteration is notable because it is relatively rare. Of the trials we discussed, Symphogen is evaluating the safety and efficacy of Sym015 in patients with tumors harboring MET mutations in the clinical trial:
+
+Sym015 (Anti-MET) in Patients with Advanced Solid Tumor Malignancies: NCT02648724.
+
+Symphogen’s trial (Sym015-01) involves a drug called Sym015 that targets MET alterations (including amplifications and exon 14 skipping alterations) and is open to patients with non-small cell lung cancer or other MET-altered advanced solid tumors. Early preclinical evidence supporting the use of Sym015 in patients with MET-amplified tumors can be found in Poulsen et al., 2017 (PMID: 28679766) and Grandal et al., 2017 (PMID: 28802255). More information on Symphogen’s clinical trial can be found here: https://clinicaltrials.gov/show/NCT02648724.
+
+The closest SYM015 study site is {!Match_Record__c.Closest_Trial_Site__c} in {!Match_Record__c.Closest_Trial_Site_City__c}, {!Match_Record__c.Closest_Trial_Site_State__c}; additional study sites are also available around the US. 
+
+A travel service is available for eligible patients and caregivers to reduce out-of-pocket expenses and to ensure travel to the study site is simple and comfortable.
+
+Please contact Guardant Health by emailing trials@guardanthealth.com or calling 1-314-795-7737 to receive more information related to this study, to discuss the patient enrollment procedure, or to be connected to the Principal Investigator at the nearest trial site. Please also contact Symphogen directly if needed by reaching out to Helle Rudbaek (heru@symphogen.com; +45 40 83 61 77). Your patient may also qualify for alternative treatments or clinical trials in addition to the Sym015-01 trial.
+
+If this trial would be of relevance for your patient, we would encourage you to contact Guardant Health directly by email so you can be connected with the Principal Investigator at the nearest trial site.
+
+Sincerely, 
+{!User.Name}, {!User.Degree__c} 
+Clinical Trial Advisor 
+Guardant Health 
+
+Guardant Health Match Key: {!Match_Record__c.Match_Key__c} 
+
+Guardant Health partners with the clinical trial sponsor to conduct patient referral activities.

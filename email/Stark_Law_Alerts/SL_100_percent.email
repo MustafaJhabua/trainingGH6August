@@ -1,0 +1,9 @@
+The following customer has reached the 100% threshold of spending allowed under the Stark Law:
+
+{!Contact.Name}
+{!Account.Name}
+{!Contact.MailingAddress}
+
+Amount Spent: {!Contact.00N34000005SrXe}
+Percentage of Allowed Amount: {!Contact.Stark_Expense_Percentage__c}
+Threshold Exceeded Date: {!Contact.Exceeded_SL_Limit_Threshold_Date__c}

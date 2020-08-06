@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Batch Number --></label>
+        <name>MedProBT__Batch_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected not parsed --></label>
+        <name>MedProBT__Expected_not_parsed__c</name>
+    </fields>
+    <fields>
+        <label><!-- File Result --></label>
+        <name>MedProBT__File_Result__c</name>
+        <relationshipLabel><!-- MedPro Batch Results --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Number Expected --></label>
+        <name>MedProBT__Number_Expected__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number Parsed --></label>
+        <name>MedProBT__Number_Parsed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number Updated --></label>
+        <name>MedProBT__Number_Updated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parsed not processed --></label>
+        <name>MedProBT__Parsed_not_processed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Row Result Count --></label>
+        <name>MedProBT__Row_Result_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- UMR Count --></label>
+        <name>MedProBT__UMR_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unmatched Match Types --></label>
+        <name>MedProBT__Unmatched_Match_Types__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unmatched Record Types --></label>
+        <name>MedProBT__Unmatched_Record_Types__c</name>
+    </fields>
+    <webLinks>
+        <label><!-- Re_process_Batch --></label>
+        <name>MedProBT__Re_process_Batch</name>
+    </webLinks>
+</CustomObjectTranslation>

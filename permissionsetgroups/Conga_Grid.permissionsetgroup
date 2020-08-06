@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>For users of Conga Action Grid (mostly Biopharma Business Development)</description>
+    <label>Conga Grid</label>
+    <permissionSets>ActionGrid_Visualforce_Pages</permissionSets>
+    <permissionSets>CRMC_PP__ActionGrid_Users</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

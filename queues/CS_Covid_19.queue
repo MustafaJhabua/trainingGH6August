@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>CS Covid-19</name>
+    <queueMembers>
+        <users>
+            <user>aalvarez@guardanthealth.com</user>
+            <user>caguilar@guardanthealth.com</user>
+            <user>jgeary@guardanthealth.com</user>
+            <user>jupjohn@guardanthealth.com</user>
+            <user>khallam@guardanthealth.com</user>
+            <user>kgracia@guardanthealth.com</user>
+            <user>ngarcia@guardanthealth.com</user>
+            <user>sstomberg@guardanthealth.com</user>
+            <user>vhernandez@guardanthealth.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

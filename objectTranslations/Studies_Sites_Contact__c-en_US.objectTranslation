@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Trial Site Contact</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Trial Site Contacts</value>
+    </caseValues>
+    <fields>
+        <label><!-- Contact First Name --></label>
+        <name>Contact_First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Full Name --></label>
+        <name>Contact_Full_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Last Name --></label>
+        <name>Contact_Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Number --></label>
+        <name>Contact_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Name --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Trial Site Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Copied from the Trial Site Contact&apos;s contact record, but can be edited. --></help>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- Copied from the Trial Site Contact&apos;s contact record, but can be edited. --></help>
+        <label><!-- Fax --></label>
+        <name>Fax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hidden Email --></label>
+        <name>Hidden_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hidden Fax --></label>
+        <name>Hidden_Fax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hidden Phone --></label>
+        <name>Hidden_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inactive? --></label>
+        <name>Inactive__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of Samples (not match records) submitted by this contact --></help>
+        <label><!-- Number of Samples-Contact --></label>
+        <name>Number_of_Samples_Contact__c</name>
+    </fields>
+    <fields>
+        <help><!-- This opts the contact into receiving PTC Emails from Yuzu. --></help>
+        <label><!-- PTC Connection Opt-In --></label>
+        <name>PTC_Connection_Opt_In__c</name>
+    </fields>
+    <fields>
+        <help><!-- Copied from the Trial Site Contact&apos;s contact record, but can be edited. --></help>
+        <label><!-- Phone --></label>
+        <name>Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Site Contact --></label>
+        <name>Primary_Site_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Site Contact Role --></label>
+        <name>Site_Contact_Type__c</name>
+        <picklistValues>
+            <masterLabel>Principal Investigator</masterLabel>
+            <translation><!-- Principal Investigator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Site Coordinator</masterLabel>
+            <translation><!-- Site Coordinator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sub-Investigator</masterLabel>
+            <translation><!-- Sub-Investigator --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Study Name --></help>
+        <label><!-- Trial Name --></label>
+        <name>Study_List__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trial Site --></label>
+        <name>Study_Sites__c</name>
+        <relationshipLabel><!-- Trial Site Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Trial Code --></label>
+        <name>Trial_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- hidden field used for reports. Removes the HTML formatting from &apos;Trial Name&apos;. Note the second word of this field label is NOT capitalized. --></help>
+        <label><!-- Trial name --></label>
+        <name>Trial_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- update --></label>
+        <name>update__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Ali_Roberts</fullName>
+        <categories>No longer at Guardant</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Ali Roberts</shortDescription>
+        <value>0053400000BBKOJAA5</value>
+    </labels>
+    <labels>
+        <fullName>Amber_Carter</fullName>
+        <categories>Account MSL</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Amber Carter</shortDescription>
+        <value>0050y00000EQ5HS</value>
+    </labels>
+    <labels>
+        <fullName>Angela_Thompson</fullName>
+        <categories>Account MSL</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Angela Thompson</shortDescription>
+        <value>0050y00000EVnxJ</value>
+    </labels>
+    <labels>
+        <fullName>Ashley_Wells</fullName>
+        <categories>Account MSL</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Ashley Wells</shortDescription>
+        <value>0053400000AZero</value>
+    </labels>
+    <labels>
+        <fullName>Becky_Nagy</fullName>
+        <categories>Account MSL</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Becky Nagy</shortDescription>
+        <value>00580000005tky4AAA</value>
+    </labels>
+    <labels>
+        <fullName>Brianna_Volz</fullName>
+        <categories>Account MSL</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Brianna Volz</shortDescription>
+        <value>0050y00000EEYhX</value>
+    </labels>
+    <labels>
+        <fullName>Carin_Espenschied</fullName>
+        <categories>Account MSL</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Carin Espenschied</shortDescription>
+        <value>0053400000AySjdAAF</value>
+    </labels>
+    <labels>
+        <fullName>Caroline_Weipert</fullName>
+        <categories>Account MSL</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Caroline Weipert</shortDescription>
+        <value>0050y00000EEY6gAAH</value>
+    </labels>
+    <labels>
+        <fullName>Christian_Klosowski</fullName>
+        <categories>Account MSL</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Christian Klosowski</shortDescription>
+        <value>0053400000C8HcGAAV</value>
+    </labels>
+    <labels>
+        <fullName>Chuck_Hensel</fullName>
+        <categories>Account MSL</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Chuck Hensel</shortDescription>
+        <value>0050y00000EQ4pT</value>
+    </labels>
+    <labels>
+        <fullName>ClientService</fullName>
+        <categories>This is used to check the client service role. Based on this preventing of merging of contact will happen</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Client Service Role</shortDescription>
+        <value>Manager_Client_Services</value>
+    </labels>
+    <labels>
+        <fullName>ClinicalSamples</fullName>
+        <categories>Clinical samples are separated by semicolon. It will be used in trigger to bypassing the population of project id</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ClinicalSamples</shortDescription>
+        <value>GHI_01</value>
+    </labels>
+    <labels>
+        <fullName>Erin_Borchardt</fullName>
+        <categories>Account MSL</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Erin Borchardt</shortDescription>
+        <value>0050y00000EiyGT</value>
+    </labels>
+    <labels>
+        <fullName>GH_Not_Applicable_Contact_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>GH Not Applicable Contact ID</shortDescription>
+        <value>003340000254f4CAAQ</value>
+    </labels>
+    <labels>
+        <fullName>Jennifer_Saam</fullName>
+        <categories>Account MSL</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Jennifer Saam</shortDescription>
+        <value>0050y00000EVmB2</value>
+    </labels>
+    <labels>
+        <fullName>Julia_Jones</fullName>
+        <categories>Account MSL</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Julia Jones</shortDescription>
+        <value>0050y00000EQ4Mg</value>
+    </labels>
+    <labels>
+        <fullName>Kaylee_Faulkner</fullName>
+        <categories>No longer at Guardant</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Kaylee Faulkner</shortDescription>
+        <value>0050y00000EEWuyAAH</value>
+    </labels>
+    <labels>
+        <fullName>Kelli_Swan</fullName>
+        <categories>No longer at Guardant</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Kelli Swan</shortDescription>
+        <value>0050y00000EBWQn</value>
+    </labels>
+    <labels>
+        <fullName>Kelsey_Johnson</fullName>
+        <categories>Account MSL</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Kelsey Johnson</shortDescription>
+        <value>0053400000C8HgmAAF</value>
+    </labels>
+    <labels>
+        <fullName>Kim_Hamann</fullName>
+        <categories>Account MSL</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Kim Hamann</shortDescription>
+        <value>0050y00000EqrIc</value>
+    </labels>
+    <labels>
+        <fullName>Kristin_Edwards</fullName>
+        <categories>Account MSL</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Kristin Edwards</shortDescription>
+        <value>0050y00000Eqv3r</value>
+    </labels>
+    <labels>
+        <fullName>Kristin_Price</fullName>
+        <categories>Account MSL</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Kristin Price</shortDescription>
+        <value>0053400000Bahk6AAB</value>
+    </labels>
+    <labels>
+        <fullName>Krysten_Shipley</fullName>
+        <categories>Account MSL</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Krysten Shipley</shortDescription>
+        <value>0053400000C8HgrAAF</value>
+    </labels>
+    <labels>
+        <fullName>Lesli_Kiedrowski</fullName>
+        <categories>Account MSL</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Lesli Kiedrowski</shortDescription>
+        <value>00534000009qMaaAAE</value>
+    </labels>
+    <labels>
+        <fullName>Leylah_Drusbosky</fullName>
+        <categories>Account MSL</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Leylah Drusbosky</shortDescription>
+        <value>0050y00000EVjhZ</value>
+    </labels>
+    <labels>
+        <fullName>LineBreak</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LineBreak</shortDescription>
+        <value>-
+-</value>
+    </labels>
+    <labels>
+        <fullName>MarketableContactBatchSize</fullName>
+        <categories>APEX</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Marketable Contact Batch Size</shortDescription>
+        <value>20</value>
+    </labels>
+    <labels>
+        <fullName>MasterAccountDeletionError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Master Account Deletion Error</shortDescription>
+        <value>This is a Master Account. Master Accounts Cannot Be Deleted. Please contact a Salesforce Administrator if you have any questions.</value>
+    </labels>
+    <labels>
+        <fullName>Medaffairs</fullName>
+        <categories>Account MSL</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Medaffairs</shortDescription>
+        <value>0053400000A8UR8AAN</value>
+    </labels>
+    <labels>
+        <fullName>Megan_McKenna</fullName>
+        <categories>Account MSL</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Megan McKenna</shortDescription>
+        <value>0050y00000EEZl6</value>
+    </labels>
+    <labels>
+        <fullName>MergeContactErrorMessage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MergeContactErrorMessage</shortDescription>
+        <value>Only Client Services Managers are able to merge a Qualified account&apos;s related contact</value>
+    </labels>
+    <labels>
+        <fullName>MergerErrorMessage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MergerErrorMessage</shortDescription>
+        <value>Only Client Services Managers can merge Qualified (or formerly Qualified) Accounts</value>
+    </labels>
+    <labels>
+        <fullName>Nassim_Taherian</fullName>
+        <categories>Account MSL</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Nassim Taherian</shortDescription>
+        <value>0050y00000EQ4im</value>
+    </labels>
+    <labels>
+        <fullName>Pauline_Fontaine</fullName>
+        <categories>Account MSL</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Pauline Fontaine</shortDescription>
+        <value>0050y00000Ej6px</value>
+    </labels>
+    <labels>
+        <fullName>Robin_Chambers</fullName>
+        <categories>No longer at Guardant</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Robin Chambers</shortDescription>
+        <value>0050y00000EEY3hAAH</value>
+    </labels>
+    <labels>
+        <fullName>SampleUpdateBatchSize</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sample Update Batch Size</shortDescription>
+        <value>50</value>
+    </labels>
+    <labels>
+        <fullName>Sara_Wienke</fullName>
+        <categories>Account MSL</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sara Wienke</shortDescription>
+        <value>0053400000C8ICsAAN</value>
+    </labels>
+    <labels>
+        <fullName>Sheila_Solomon</fullName>
+        <categories>Account MSL</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sheila Solomon</shortDescription>
+        <value>0050y00000Eqv3q</value>
+    </labels>
+    <labels>
+        <fullName>Thereasa_Rich</fullName>
+        <categories>Account MSL</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Thereasa Rich</shortDescription>
+        <value>0053400000AXt2IAAT</value>
+    </labels>
+    <labels>
+        <fullName>URL_For_US_Test_Kit</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>URL For US Test Kit</shortDescription>
+        <value>https://www.guardanthealthamea.com/request-a-kit/</value>
+    </labels>
+    <labels>
+        <fullName>Victoria_Raymond</fullName>
+        <categories>Account MSL</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Victoria Raymond</shortDescription>
+        <value>0053400000AW4tsAAD</value>
+    </labels>
+    <labels>
+        <fullName>Yuzu_Endpoint</fullName>
+        <categories>APEX Yuzu</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Yuzu Endpoint</shortDescription>
+        <value>https://studypages.com/siteconnect_api/guardant/v0.1/new_call_request/</value>
+    </labels>
+    <labels>
+        <fullName>Yuzu_Token</fullName>
+        <categories>APEX Yuzu</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Yuzu Token</shortDescription>
+        <value>zqG7ItlgBB2ZRMDhIpTYLYnEe42tijVc</value>
+    </labels>
+    <labels>
+        <fullName>businesshour</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>businesshour</shortDescription>
+        <value>01m800000009Zkx</value>
+    </labels>
+    <labels>
+        <fullName>conversionTrackerURL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>conversionTrackerURL</shortDescription>
+        <value>http://guardant360.force.com/RequestAKit</value>
+    </labels>
+    <labels>
+        <fullName>portal_url</fullName>
+        <categories>APEX</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>portal url</shortDescription>
+        <value>https://portal.guardanthealth.com/</value>
+    </labels>
+</CustomLabels>

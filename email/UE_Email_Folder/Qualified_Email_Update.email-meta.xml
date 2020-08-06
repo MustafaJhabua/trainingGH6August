@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sent when the email field on a Qualified Contact is modified by an AE or CTA &amp; the contact has a portal account.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Qualified Email Update</name>
+    <style>none</style>
+    <subject>Qualified Email Updated: ﻿{!Contact.Name}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

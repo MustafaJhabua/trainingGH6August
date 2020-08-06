@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Alerts accessioning when a NY sample is clinical/doesn&apos;t have G360_NY_2_10</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>GH_Logo_Small</letterhead>
+    <name>Notify Accessioning when New York sample has been submitted</name>
+    <style>freeForm</style>
+    <subject>{!Guardant_360_Sample__c.Name} || New York Sample alert</subject>
+    <textOnly>Hello,
+
+The Request Type and Project ID are incorrect for sample {!Guardant_360_Sample__c.Name}, which has been flagged as a New York sample.
+
+Date Received: {!Guardant_360_Sample__c.Date_Received__c}
+Account Name: {!Guardant_360_Sample__c.Account__c}
+
+Sample Request Type: {!Guardant_360_Sample__c.Request_Type__c}
+--this must be &apos;Pharma&apos;
+
+Sample Project ID: {!Guardant_360_Sample__c.LIMS_Project_ID__c}
+--this must be  &apos;G360_NY_2_10&apos;
+
+Please click on this link for further details.
+
+Thank you,
+Andrew Blair
+Sales Operations</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

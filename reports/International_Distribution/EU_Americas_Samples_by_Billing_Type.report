@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>RowCount</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel># of Samples</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_97400396</developerName>
+        <masterLabel>Billing Type</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Guardant_360_Sample__c$Billing_Type__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Distributors : ROW</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Self-Pay Patient</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Self-Pay Sponsored</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Institutional Billing</sourceValue>
+            </sourceValues>
+            <value>Commercial</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Do Not Bill - Cancelled</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Do Not Bill - Pharma</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Do Not Bill - Proficiency</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Do Not Bill - Promotional</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Do Not Bill - Quality Testing</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Do Not Bill - LUNAR</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Do Not Bill - Medical Affairs</sourceValue>
+            </sourceValues>
+            <value>DNB</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Clinical Trial: ROW</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Do Not Bill - Clinical Utility</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Do Not Bill - ROW</sourceValue>
+            </sourceValues>
+            <value>Clinical Trial</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Guardant_360_Sample__c$Account__c</field>
+    </columns>
+    <columns>
+        <field>Guardant_360_Sample__c$Contact__c</field>
+    </columns>
+    <columns>
+        <field>Guardant_360_Sample__c$Billing_Type__c</field>
+    </columns>
+    <columns>
+        <field>Guardant_360_Sample__c$Name</field>
+    </columns>
+    <description>Does not include US</description>
+    <filter>
+        <criteriaItems>
+            <column>Guardant_360_Sample__c$Account__c.Account_Type__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Clinical Account  International,Clinical Trial Account International,Distributor International,Reseller International</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Guardant_360_Sample__c$Account__c.BillingCountry</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>US,HK,JP,KR,SG,TH,TW,CN,IN,AU,IL,LB</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Month</dateGranularity>
+        <field>Guardant_360_Sample__c$Date_Received__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_97400396</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Guardant_360_Sample__c$Account__c.BillingCountry</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>EU/Americas Samples by Billing Type</name>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>Guardant_360_Samples_w_related_Accounts_Contacts__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Guardant_360_Sample__c$Date_Received__c</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

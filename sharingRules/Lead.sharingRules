@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>View_All_Leads</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Replaces profile-level View All permissions. Excludes Covid-19 leads.</description>
+        <label>View All Leads</label>
+        <sharedTo>
+            <group>Lead_View_All</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>COVID-19 Lead</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>Client_Services_Leads</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Client Services Leads</label>
+        <sharedTo>
+            <roleAndSubordinates>Manager_Client_Services</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Founder_CEO</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

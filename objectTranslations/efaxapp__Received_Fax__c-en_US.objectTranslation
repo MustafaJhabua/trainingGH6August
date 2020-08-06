@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account --></label>
+        <name>efaxapp__Account__c</name>
+        <relationshipLabel><!-- Received Faxes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Caller Id --></label>
+        <name>efaxapp__Caller_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>efaxapp__Contact__c</name>
+        <relationshipLabel><!-- Received Faxes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Cost Per Page --></label>
+        <name>efaxapp__Cost_Per_Page__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fax Number --></label>
+        <name>efaxapp__Fax_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fax URL --></label>
+        <name>efaxapp__Fax_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- MCFID --></label>
+        <name>efaxapp__MCFID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>efaxapp__Opportunity__c</name>
+        <relationshipLabel><!-- Received Faxes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Preview Fax --></label>
+        <name>efaxapp__Preview_Fax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preview Image URL --></label>
+        <name>efaxapp__Preview_Image_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preview Image --></label>
+        <name>efaxapp__Preview_Image__c</name>
+    </fields>
+    <fields>
+        <label><!-- Received Date --></label>
+        <name>efaxapp__Received_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sent Fax --></label>
+        <name>efaxapp__Sent_Fax__c</name>
+        <relationshipLabel><!-- Received Faxes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sent To --></label>
+        <name>efaxapp__Sent_To__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>efaxapp__Status__c</name>
+        <picklistValues>
+            <masterLabel>Accepted</masterLabel>
+            <translation><!-- Accepted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Declined</masterLabel>
+            <translation><!-- Declined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Received</masterLabel>
+            <translation><!-- Received --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resent</masterLabel>
+            <translation><!-- Resent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total Cost --></label>
+        <name>efaxapp__Total_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Pages --></label>
+        <name>efaxapp__Total_Pages__c</name>
+    </fields>
+    <fields>
+        <label><!-- View Fax --></label>
+        <name>efaxapp__View_Fax__c</name>
+    </fields>
+</CustomObjectTranslation>

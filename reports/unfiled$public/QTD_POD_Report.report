@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CHILD_NAME</field>
+    </columns>
+    <columns>
+        <field>POD__c.POD_Delivery_Date__c</field>
+    </columns>
+    <columns>
+        <field>Match_Record__c.Enrollment_Status__c</field>
+    </columns>
+    <columns>
+        <field>Match_Record__c.Referral_Letter_Sent__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Match_Record__c.Sample_ID__c</field>
+    </columns>
+    <description>account of all PODS sent to refer pt&apos;s for trials</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Match_Record__c.Date_Referred__c</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <name>QTD POD Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$Match_Record__c$POD__c@POD__c.Trial_Name__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>POD__c.POD_Delivery_Date__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Match_Record__c.Date_Referred__c</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>7/15/20 changed sender to Adriana MK 1/18/19 renamed NF 1/17/19 changed sender to Katrina 7/31/18 Removed Match Key 7/30/18 Added supported for multiple Qualifying Target Genes and shortened Portal URL which are now supported by Portal 7.1 -AF. 1/8/17 Active IOE Email. MS 10/13/17 Deprecated since A/B test in Sep showed patient initials had no effect on response rates. Subject line with patient initials. To be sent starting 8/21 to ordering physicians who have a new match.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>General_Outreach_TrialAlert_021</name>
+    <style>none</style>
+    <subject>Your patient {!Match_Record__c.Patient_Initials__c}’s genomic alteration indicates a potential targeted clinical trial match</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

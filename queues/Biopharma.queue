@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Biopharma Biz Dev</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>Biz_Dev</publicGroup>
+        </publicGroups>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>LIMS_Project_ID__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>SOW__c</sobjectType>
+    </queueSobject>
+</Queue>

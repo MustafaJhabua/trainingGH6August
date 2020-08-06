@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Important Updates about Guardant360</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Important Updates about Guardant360</name>
+    <style>none</style>
+    <subject>Important Updates about Guardant360</subject>
+    <textOnly>Dear Dr. {!Contact.LastName},  
+In case you haven’t heard, the gold standard in comprehensive liquid biopsy is about to get even better.  
+
+My colleagues at Guardant Health are always improving the performance of Guardant360 so you can provide the best possible care for your patients.  We’re excited to announce that all Guardant360 samples received as of Nov. 8, 2016 will be processed on a new 73-gene panel.  
+
+What’s on the new panel? You can read more about it here, but we’ve added coverage for more therapy-relevant alterations. This increased coverage will give you more opportunities to direct patient care with BRAF/MEK inhibitors, NTRK3 inhibitors, PARP inhibitors, tyrosine kinase inhibitors, MET inhibitors, and more. 
+
+We’ve also introduced an iPhone app so you can view your reports on the go.  All these changes are designed with your patients in mind. I’d be happy to discuss them with you or anyone else in your practice. Do you have some time to talk this week?  
+
+Thank you, 
+
+{!User.FirstName} {!User.LastName} 
+{!User.Title}
+ Guardant Health</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

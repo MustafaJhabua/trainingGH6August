@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_15889802</developerName>
+        <masterLabel>Messaging</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Contact.ActivityRelations*Activity$Primary_Messaging__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>1st Line Undergenotyped</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>1st Line QNS</sourceValue>
+            </sourceValues>
+            <value>Initial</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Introduction to G360</sourceValue>
+            </sourceValues>
+            <value>Intro</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Progressing patient discussion</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QNS at Progression</sourceValue>
+            </sourceValues>
+            <value>Progression</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Tissue Paradigm (IO/Targeted/Chemo)</sourceValue>
+            </sourceValues>
+            <value>Tissue</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Competitive (vs Hotspot)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Competitive vs NGS or CGP</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Billing concerns</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Med Affairs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Patient Results Review</sourceValue>
+            </sourceValues>
+            <value>All Others</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_40036602</developerName>
+        <masterLabel>Quintile</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>Contact$Physician_Quintile__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>2</to>
+            </sourceValues>
+            <value>Quintiles 0-2</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>2</from>
+                <to>3</to>
+            </sourceValues>
+            <value>Quintile 3</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>3</from>
+                <to>4</to>
+            </sourceValues>
+            <value>Quintile 4</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>4</from>
+            </sourceValues>
+            <value>Quintile 5</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_68589063</developerName>
+        <masterLabel>Region</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Contact$Account.Regional_Director__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Alicia Madison</sourceValue>
+            </sourceValues>
+            <value>Northeast</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Charles Truan</sourceValue>
+            </sourceValues>
+            <value>Central</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Danielle Usilton</sourceValue>
+            </sourceValues>
+            <value>Southeast</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>James Azzaro</sourceValue>
+            </sourceValues>
+            <value>West</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Justin Elders</sourceValue>
+            </sourceValues>
+            <value>Midwest</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Steven Collora</sourceValue>
+            </sourceValues>
+            <value>Open Territories</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_10137429</developerName>
+        <masterLabel>Subject</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Contact.ActivityRelations*Activity$Task_Subject__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>E-mail</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Email/Phone Call</sourceValue>
+            </sourceValues>
+            <value>Account Service</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Lab 1:1</sourceValue>
+            </sourceValues>
+            <value>Lab 1:1</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Staff 1:1</sourceValue>
+            </sourceValues>
+            <value>Staff 1:1</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Physician 1:1</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Conference/Meeting</sourceValue>
+            </sourceValues>
+            <value>Physician 1:1</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>VerticalColumnGrouped</chartType>
+        <enableHoverLabels>true</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>Contact.ActivityRelations$CreatedDate</groupingColumn>
+        <legendPosition>Bottom</legendPosition>
+        <location>CHART_TOP</location>
+        <secondaryGroupingColumn>BucketField_68589063</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Large</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Contact$Full_Name__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Account</field>
+    </columns>
+    <columns>
+        <field>Contact.ActivityRelations$Subject</field>
+    </columns>
+    <columns>
+        <field>Contact.ActivityRelations*Activity$Messaging__c</field>
+    </columns>
+    <columns>
+        <field>Contact.ActivityRelations*Activity$Topics_Discussed__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Physician_Quintile__c</field>
+    </columns>
+    <description>Version 2--with Subject and Messaging buckets</description>
+    <filter>
+        <criteriaItems>
+            <column>Contact.ActivityRelations$Owner.Profile</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>GHI Sales Standard User</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.ActivityRelations$Account.Account_Type__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Clinical Account US</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact$Account.Regional_Director__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Daniel Simon,Stanley Welle</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Month</dateGranularity>
+        <field>Contact.ActivityRelations$CreatedDate</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_15889802</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_68589063</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_10137429</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Selling Calls With Related Contacts</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Activities_with_Related_Contacts__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Contact.ActivityRelations$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

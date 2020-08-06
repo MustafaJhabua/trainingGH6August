@@ -1,0 +1,19 @@
+<apex:page cache="True" contentType="text/x-vcard#{!user.Name}.vcf" standardcontroller="user" extensions="SmartvCard.NotesUser" >BEGIN:VCARD
+VERSION:3.0
+N:<c:vcard Value="{!user.LastName}"/>;
+<c:vcard Value="{!user.FirstName}"/>
+FN:<c:vcard Value="{!user.FirstName} "/> <c:vcard value="{!user.LastName}"/> 
+ORG:<c:vcard Value="{!user.companyName}"/>
+TITLE:<c:vcard Value="{!user.Title}"/>
+TEL;TYPE=WORK;VOICE:<c:vcard Value="{!user.Phone}"/>
+TEL;TYPE=Home;VOICE:<c:vcard Value="{!user.mobilePhone}"/>
+ADR;TYPE=WORK:;;<c:vcard Value="{!user.Street}"/>;<c:vcard Value="{!user.City}"/>;<c:vcard Value="{!user.State}"/>;<c:vcard Value="{!user.PostalCode}"/>;<c:vcard Value="{!user.Country}"/>
+LABEL;TYPE=WORK:<c:vcard Value="{!user.Street} "/>;<c:vcard Value="{!user.City} "/>;<c:vcard Value="{!user.State} "/>;<c:vcard Value="{!user.PostalCode} "/>;<c:vcard Value="{!user.Country}"/>
+ADR;TYPE=HOME:;;
+LABEL;TYPE=HOME:
+EMAIL;PREF;INTERNET:<c:vcard Value="{!user.Email}"/>
+NOTE: 
+<c:vcard Value="{!Note}"/>
+REV:20080424T195243Z
+END:VCARD
+</apex:page>

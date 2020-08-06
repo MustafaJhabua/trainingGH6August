@@ -1,0 +1,7 @@
+<apex:page controller="SmartvCard.VCFcontact" action="{!errorMessages}">
+    <apex:form id="theForm">
+        <center> <h1 style="font-size: 15pt; width: 10px;"> Error in Contacts</h1></center>
+        <hr/>
+            <apex:Pagemessages />
+    </apex:form>   
+</apex:page>

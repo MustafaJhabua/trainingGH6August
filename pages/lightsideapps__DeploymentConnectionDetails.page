@@ -1,0 +1,48 @@
+<apex:page standardcontroller="lightsideapps__Deployment_Connection__c" extensions="lightsideapps.DeploymentConnectionExtension" showheader="false">
+    <apex:sectionHeader Title="{!if(lightsideapps__Deployment_Connection__c.id==null,'Enter','Edit')} your Environment Details" Subtitle="Deployment Connection"/>
+    <apex:pageMessages id="pageMessages" />
+    
+    <script>
+    if ('{!JSENCODE($CurrentPage.parameters.close)}' == 'true')
+    {
+        window.opener.RefreshTable();
+        //window.opener.location.reload(true);
+        window.close();
+        
+    } 
+    </script> 
+    
+    <apex:form >
+        <apex:pageBlock title="" mode="edit" >
+            <apex:pageblockButtons location="Top" > 
+                <apex:commandbutton action="{!SaveAndValidate}" value="Save & Validate" />
+                <apex:commandbutton onclick="window.close();" value="Cancel" />
+            </apex:pageblockButtons>  
+            
+            <apex:pageblockSection title="Connection Information" columns="1" id="fieldvalues">
+                <apex:inputfield value="{!lightsideapps__Deployment_Connection__c.Name}" label="Name" required="true" ></apex:inputfield>
+                <apex:inputfield value="{!lightsideapps__Deployment_Connection__c.lightsideapps__User_Name__c}" required="true" ></apex:inputfield>
+                <apex:inputfield value="{!lightsideapps__Deployment_Connection__c.lightsideapps__Password__c}"  required="true" ></apex:inputfield>
+                <apex:inputfield value="{!lightsideapps__Deployment_Connection__c.lightsideapps__Security_Token__c}"  ></apex:inputfield>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="{!$ObjectType.lightsideapps__Deployment_Connection__c.fields.lightsideapps__Environment__c.label}" /> 
+                    <apex:actionRegion > 
+                        <apex:inputfield value="{!lightsideapps__Deployment_Connection__c.lightsideapps__Environment__c}" required="true"  >
+                            <apex:actionSupport event="onchange" action="{!changeEnvironment}" reRender="HostNameLabel,HostNameInput" />
+                        </apex:inputfield>
+                    </apex:actionRegion>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem helpText="Host Name as fully qualified URL eg. exampleInstance.my.salesforce.com" >
+                    <apex:outputPanel id="HostNameLabel" >
+                        <apex:outputLabel value="{!$ObjectType.lightsideapps__Deployment_Connection__c.fields.lightsideapps__Hostname__c.label}" rendered="{!lightsideapps__Deployment_Connection__c.lightsideapps__Environment__c = 'Other (Specify)'}" /> 
+                    </apex:outputPanel>
+                    <apex:outputPanel id="HostNameInput" >
+                        <apex:inputfield value="{!lightsideapps__Deployment_Connection__c.lightsideapps__Hostname__c}" required="true" rendered="{!lightsideapps__Deployment_Connection__c.lightsideapps__Environment__c = 'Other (Specify)'}" />
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                
+                <br />
+            </apex:pageblockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

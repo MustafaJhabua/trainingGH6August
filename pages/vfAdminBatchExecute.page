@@ -1,0 +1,8 @@
+<apex:page id="vfAdminBatchExecute" controller="AdminBatchExecuteController" showHeader="true">
+    <apex:pageBlock >
+        <apex:form >
+            <apex:commandButton value="Run Territory Batch Update" action="{!runTerritoryBatch}"/><br/>
+            <apex:commandButton value="Run Match Batch" action="{!runMatchBatch}"/>
+        </apex:form>
+    </apex:pageBlock>
+</apex:page>

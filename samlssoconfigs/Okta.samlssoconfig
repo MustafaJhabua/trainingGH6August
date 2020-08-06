@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SamlSsoConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <identityLocation>SubjectNameId</identityLocation>
+    <identityMapping>Username</identityMapping>
+    <issuer>exk4zybbopfpMRng10x7</issuer>
+    <loginUrl>https://guardanthealth.okta.com/app/salesforce/exk4zybbopfpMRng10x7/sso/saml</loginUrl>
+    <logoutUrl>https://guardanthealth.okta.com</logoutUrl>
+    <name>Okta</name>
+    <oauthTokenEndpoint>https://guardanthealth--mockprod.my.salesforce.com/services/oauth2/token?so=00D2g0000000ZI1</oauthTokenEndpoint>
+    <redirectBinding>false</redirectBinding>
+    <requestSignatureMethod>1</requestSignatureMethod>
+    <requestSigningCertId>0P10y00000000e0</requestSigningCertId>
+    <salesforceLoginUrl>https://guardanthealth--mockprod.my.salesforce.com?so=00D2g0000000ZI1</salesforceLoginUrl>
+    <samlEntityId>https://guardanthealth.my.salesforce.com</samlEntityId>
+    <samlVersion>SAML2_0</samlVersion>
+    <useConfigRequestMethod>true</useConfigRequestMethod>
+    <userProvisioning>false</userProvisioning>
+    <validationCert>MIIDrDCCApSgAwIBAgIGAVOKE/rMMA0GCSqGSIb3DQEBBQUAMIGWMQswCQYDVQQGEwJVUzETMBEGA1UECAwKQ2FsaWZvcm5pYTEWMBQGA1UEBwwNU2FuIEZyYW5jaXNjbzENMAsGA1UECgwET2t0YTEUMBIGA1UECwwLU1NPUHJvdmlkZXIxFzAVBgNVBAMMDmd1YXJkYW50aGVhbHRoMRwwGgYJKoZIhvcNAQkBFg1pbmZvQG9rdGEuY29tMB4XDTE2MDMxODE0MTMzOFoXDTI2MDMxODE0MTQzOFowgZYxCzAJBgNVBAYTAlVTMRMwEQYDVQQIDApDYWxpZm9ybmlhMRYwFAYDVQQHDA1TYW4gRnJhbmNpc2NvMQ0wCwYDVQQKDARPa3RhMRQwEgYDVQQLDAtTU09Qcm92aWRlcjEXMBUGA1UEAwwOZ3VhcmRhbnRoZWFsdGgxHDAaBgkqhkiG9w0BCQEWDWluZm9Ab2t0YS5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCNE38b7jNxzvT2md7GUx/XET3JiOXOBrubcjDx8dDkZzV94oCM66MC+V+joEWs/LILDkbPErQrnjXZbv2APDPHlc/Z7hDUDBrHkffCQOvImCEWD/JktSUMOky402kAPw7hEtopkSudRIusKJUbT6CmsufEArZXxoxCj+47dm/2sSRqSRddlkO4yFUJnpPXfoSQwONgqGiV+ta8dgdoY4Klii0DIqRvtnqbDonLX8WcA3XLiz3J8h46ecR4goyDs9BUaathdFqrA71+60ClfZ1BWi31qRAUYCcSEnGIZGr9ibRm61TbJBCpY2M9BQWTbfpY4Nrah5pOLU2dRdESBDPPAgMBAAEwDQYJKoZIhvcNAQEFBQADggEBACS6WvSURlgS8nX3KvjJwedu7mC8nYvgek2uxY9nQ9ItAIZks2tVA5twu13cmL1Lo7cdg+h7enQlfeWBNchCQ1PzwSQVFS8BAnnFKJT1c0Gh3mRJUkq8nMnlqKmh09Hln+cXeN3GgXrpgytmrs7hWvIf+tDJuSy83wFGppUEey9T7hJ4GVUZ76MQ5uXpwVj8fhS5FbfH8kZPRXZ7fOvcXwReXc9MMrnG6bnFFKWirxAXVgBqDwc4II1T1yaGNGweyU3Mkicsquf3P315I/9Sofzw0wgQCgrxkybABasKOlGdjE67UZ/5872pnKZ18EBgh2U1m965zhKB20Ep+5QiScg=</validationCert>
+</SamlSsoConfig>

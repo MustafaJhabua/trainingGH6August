@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Date for the notification to stop showing up. --></help>
+        <label><!-- End Date --></label>
+        <name>MedProSC__End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Message --></label>
+        <name>MedProSC__Message__c</name>
+    </fields>
+    <fields>
+        <help><!-- Changes the notification icon/style for the associated message. --></help>
+        <label><!-- Notification Type --></label>
+        <name>MedProSC__Notification_Type__c</name>
+        <picklistValues>
+            <masterLabel>important</masterLabel>
+            <translation><!-- important --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>notify</masterLabel>
+            <translation><!-- notify --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>urgent</masterLabel>
+            <translation><!-- urgent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Date for the notification to begin showing up. --></help>
+        <label><!-- Start Date --></label>
+        <name>MedProSC__Start_Date__c</name>
+    </fields>
+</CustomObjectTranslation>

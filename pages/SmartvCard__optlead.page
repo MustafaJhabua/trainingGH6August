@@ -1,0 +1,18 @@
+<apex:page standardController="lead"  extensions="SmartvCard.SelectVersionforLead">
+<apex:form >
+ <apex:pageBlock title="Select vCard Format">
+ <apex:pageBlockSection >
+<table width="260">
+<tr>
+<td align="left">
+<apex:selectRadio value="{!vCardName}">
+            <apex:selectOptions value="{!items}"/>
+            </apex:selectRadio><p/> </td></tr>        
+<table width="260"><tr><td><apex:commandButton action="{!redirecttovcard}" value="Generate vCard" />
+</td>
+</tr></table>
+</table>
+</apex:pageBlockSection>  
+</apex:pageblock>
+ </apex:form>
+</apex:page>

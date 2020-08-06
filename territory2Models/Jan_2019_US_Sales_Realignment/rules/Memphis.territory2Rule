@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Territory2Rule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <booleanFilter>1 AND 4 AND(2 OR 3 or 5)</booleanFilter>
+    <name>Memphis</name>
+    <objectType>Account</objectType>
+    <ruleItems>
+        <field>Account.Account_Type__c</field>
+        <operation>equals</operation>
+        <value>Clinical Account US</value>
+    </ruleItems>
+    <ruleItems>
+        <field>Account.BillingPostalCode</field>
+        <operation>startsWith</operation>
+        <value>375,380,381,383,386,388,389,390,391,397,716,717,718,719,720,721,722,723,724,725,726,728</value>
+    </ruleItems>
+    <ruleItems>
+        <field>Account.BillingPostalCode</field>
+        <operation>equals</operation>
+        <value>38230,38232,38233,38237,38238,38240,38253,38254,38255,38257,38259,38260,38261,38271,38281,39339,39341,39346,39354,39358,39361</value>
+    </ruleItems>
+    <ruleItems>
+        <field>Account.BillingPostalCode</field>
+        <operation>notEqual</operation>
+        <value>72820,72821,38310,38311,38313,38317,38318,38320,38321,38324,38326,38327,38328,38329,38332,38333,38334,38339,38340,38341,38342,38344,38345,38347,38348,38351,38352,38357,38358,38359,38361,38363,38365,38368,38370,38371,38372,38374,38376,38379,38380,38387,38388,38390</value>
+    </ruleItems>
+    <ruleItems>
+        <field>Account.BillingPostalCode</field>
+        <operation>equals</operation>
+        <value>72740,72742,72752,72776,72926,72927,72938,72940,72943,72944,72945,72950,72958</value>
+    </ruleItems>
+</Territory2Rule>

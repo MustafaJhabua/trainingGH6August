@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Territory2Rule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <booleanFilter>1 AND ((2 and 6 and 7) OR 3 OR 4 OR 5)</booleanFilter>
+    <name>Chicago S</name>
+    <objectType>Account</objectType>
+    <ruleItems>
+        <field>Account.Account_Type__c</field>
+        <operation>equals</operation>
+        <value>Clinical Account US</value>
+    </ruleItems>
+    <ruleItems>
+        <field>Account.BillingPostalCode</field>
+        <operation>startsWith</operation>
+        <value>603,604,606,608,609,617,623,624,625,626,627,628,629</value>
+    </ruleItems>
+    <ruleItems>
+        <field>Account.BillingPostalCode</field>
+        <operation>startsWith</operation>
+        <value>615,618,619</value>
+    </ruleItems>
+    <ruleItems>
+        <field>Account.BillingPostalCode</field>
+        <operation>equals</operation>
+        <value>60104,60130,60141,60153,60154,60155,60501,60513,60514,60516,60521,60525,60526,60527,60534,60544,60546,60558,60559,60561,60586</value>
+    </ruleItems>
+    <ruleItems>
+        <field>Account.BillingPostalCode</field>
+        <operation>equals</operation>
+        <value>61311,61313,61319,61321,61333,61358,61360,61364,61377,62274,62272,62280,62250,62238,62237</value>
+    </ruleItems>
+    <ruleItems>
+        <field>Account.BillingPostalCode</field>
+        <operation>notEqual</operation>
+        <value>60613,60625,60626,60630,60631,60634,60639,60640,60641,60645,60646,60656,60659,60660,60666,60688,62311,62313,62316,62321,62326,62329,62330,62334,62336,62341,62354,62358,62367,62373,62374,62379,62380</value>
+    </ruleItems>
+    <ruleItems>
+        <field>Account.BillingPostalCode</field>
+        <operation>notEqual</operation>
+        <value>62301,62343,62348,62351,62360,62376</value>
+    </ruleItems>
+</Territory2Rule>

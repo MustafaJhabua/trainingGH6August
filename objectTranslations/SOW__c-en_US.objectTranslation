@@ -1,0 +1,1537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>SOW</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>SOWs</value>
+    </caseValues>
+    <fields>
+        <label><!-- AM New Study Specifications Complete? --></label>
+        <name>AM_New_Study_Specifications__c</name>
+    </fields>
+    <fields>
+        <label><!-- AM Owner --></label>
+        <name>AM_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- AM Owner&apos;s Email --></label>
+        <name>AM_Owner_s_Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sponsor Account&apos;s Account Code --></help>
+        <label><!-- Account Code --></label>
+        <name>Account_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Analysis Fees --></label>
+        <name>Additional_Analysis_Fees__c</name>
+    </fields>
+    <fields>
+        <label><!-- AmendmentID --></label>
+        <name>AmendmentID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amendment No --></label>
+        <name>Amendment_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Apr 2020 --></label>
+        <name>Apr_2020__c</name>
+    </fields>
+    <fields>
+        <label><!-- Regulatory Classification --></label>
+        <name>Assay_Type__c</name>
+        <picklistValues>
+            <masterLabel>IUO-IDE Exempt</masterLabel>
+            <translation><!-- IUO-IDE Exempt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IUO-NSR</masterLabel>
+            <translation><!-- IUO-NSR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IUO-SR</masterLabel>
+            <translation><!-- IUO-SR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RUO</masterLabel>
+            <translation><!-- RUO --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Audit Requirement --></label>
+        <name>Audit_Requirement__c</name>
+    </fields>
+    <fields>
+        <label><!-- BD Owner --></label>
+        <name>BD_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- BI Owner --></label>
+        <name>BI_Owner__c</name>
+    </fields>
+    <fields>
+        <help><!-- Probability, in percentage --></help>
+        <label><!-- Base Case-Current Q --></label>
+        <name>Base_Case_Current_Q__c</name>
+    </fields>
+    <fields>
+        <help><!-- Probability in Percentage --></help>
+        <label><!-- Base Case-Future Qs --></label>
+        <name>Base_Case_Future_Qs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Box Data Transfer Folder --></label>
+        <name>Box_Data_Transfer_Folder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Box Folder --></label>
+        <name>Box_Folder_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Budget Approval --></label>
+        <name>Budget_Approval__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Derived from the Sponsor Account --></help>
+        <label><!-- CD Owner --></label>
+        <name>CD_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- CDx Opportunity --></label>
+        <name>CDx_Opportunity__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Client SOW Contact 1 --></label>
+        <lookupFilter>
+            <errorMessage><!-- Please select a contact from the Sponsor Account. --></errorMessage>
+            <informationalMessage><!-- Contacts from the Sponsor Account --></informationalMessage>
+        </lookupFilter>
+        <name>Client_SOW_Contact_1__c</name>
+        <relationshipLabel><!-- SOWs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Client SOW Contact 2 --></label>
+        <lookupFilter>
+            <errorMessage><!-- Please select a contact from the Sponsor Account. --></errorMessage>
+            <informationalMessage><!-- Contacts from the Sponsor Account --></informationalMessage>
+        </lookupFilter>
+        <name>Client_SOW_Contact_2__c</name>
+        <relationshipLabel><!-- SOWs (Client SOW Contact 2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Client SOW Contact 3 --></label>
+        <lookupFilter>
+            <errorMessage><!-- Please select a contact from the Sponsor Account. --></errorMessage>
+            <informationalMessage><!-- Contacts from the Sponsor Account. --></informationalMessage>
+        </lookupFilter>
+        <name>Client_SOW_Contact_3__c</name>
+        <relationshipLabel><!-- SOWs (Client SOW Contact 3) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Client SOW Contact 4 --></label>
+        <lookupFilter>
+            <errorMessage><!-- Please select a contact from the Sponsor Account. --></errorMessage>
+            <informationalMessage><!-- Contacts from the Sponsor Account. --></informationalMessage>
+        </lookupFilter>
+        <name>Client_SOW_Contact_4__c</name>
+        <relationshipLabel><!-- SOWs (Client SOW Contact 4) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Competition Involved --></label>
+        <name>Competition_Involved__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total Number of Samples (Including Amendments) - Total Number of Samples Received --></help>
+        <label><!-- Contracted Samples Remaining --></label>
+        <name>Contracted_Samples_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contracted Samples from Amendments --></label>
+        <name>Contracted_Samples_from_Amendments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Count Amendments --></label>
+        <name>Count_Amendments__c</name>
+    </fields>
+    <fields>
+        <label><!-- DL-LIMS-Support notified --></label>
+        <name>DL_LIMS_Support_notified__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Transfer Specifications --></label>
+        <name>Data_Transfer_Specifications__c</name>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation><!-- Custom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guardant</masterLabel>
+            <translation><!-- Guardant --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Delivery Report Type --></label>
+        <name>Delivery_Report_Type__c</name>
+        <picklistValues>
+            <masterLabel>Courier</masterLabel>
+            <translation><!-- Courier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fax</masterLabel>
+            <translation><!-- Fax --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fax &amp; Portal</masterLabel>
+            <translation><!-- Fax &amp; Portal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portal</masterLabel>
+            <translation><!-- Portal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- When checked, changes to the SOW&apos;s Account Code, Product Name, or SOW # will not trigger changes to all associated batches --></help>
+        <label><!-- Don&apos;t Update Batch Names --></label>
+        <name>Don_t_Update_Batch_Names__c</name>
+    </fields>
+    <fields>
+        <label><!-- Drug --></label>
+        <name>Drug__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Executed SOW? --></label>
+        <name>Executed_SOW__c</name>
+    </fields>
+    <fields>
+        <help><!-- How often are we expecting to receive batches? --></help>
+        <label><!-- Expected Cadence of Batches --></label>
+        <name>Expected_Cadence_of_Batches__c</name>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation><!-- Quarterly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single Batch</masterLabel>
+            <translation><!-- Single Batch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekly</masterLabel>
+            <translation><!-- Weekly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Expected SOW Execution Date --></label>
+        <name>Expected_SOW_Execution_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected # of Batches --></label>
+        <name>Expected_of_Batches__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feb 2020 --></label>
+        <name>Feb_2020__c</name>
+    </fields>
+    <fields>
+        <help><!-- **EDIT THE FIELD ABOVE** You cannot email to DL-LIMS-Support without information in all of these fields, as well as Sponsor Account and LIMS Project ID --></help>
+        <label><!-- REQUIRED: Product Name --></label>
+        <name>Fields_Needed__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Patient In --></label>
+        <name>First_Sample_In__c</name>
+    </fields>
+    <fields>
+        <help><!-- Expected first sample date --></help>
+        <label><!-- Expected Date of First Sample --></label>
+        <name>GH_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Unless a specific version is selected, samples will be processed under the current Gene Panel version at the time of accessioning --></help>
+        <label><!-- Gene Panel Version --></label>
+        <name>Gene_Panel_Version__c</name>
+        <picklistValues>
+            <masterLabel>Default</masterLabel>
+            <translation><!-- Default --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G360 2.10</masterLabel>
+            <translation><!-- G360 2.10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G360 2.10.1</masterLabel>
+            <translation><!-- G360 2.10.1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G360 2.11</masterLabel>
+            <translation><!-- G360 2.11 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LUNAR 1.0</masterLabel>
+            <translation><!-- LUNAR 1.0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LUNAR 1.2</masterLabel>
+            <translation><!-- LUNAR 1.2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LUNAR 1.3</masterLabel>
+            <translation><!-- LUNAR 1.3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LUNAR 2.0</masterLabel>
+            <translation><!-- LUNAR 2.0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OMNI 1.0</masterLabel>
+            <translation><!-- OMNI 1.0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OMNI 2.0</masterLabel>
+            <translation><!-- OMNI 2.0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Genes of Interest --></label>
+        <name>Genes_of_Interest__c</name>
+    </fields>
+    <fields>
+        <label><!-- IDE/Pre Sub --></label>
+        <name>IDE_Pre_Sub__c</name>
+    </fields>
+    <fields>
+        <label><!-- IUO Protocol Version --></label>
+        <name>IUO_Protocol_Version__c</name>
+    </fields>
+    <fields>
+        <label><!-- IUO Reporting Required --></label>
+        <name>IUO_Reporting_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Indications --></label>
+        <name>Indications__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completed Intake Form? --></label>
+        <name>Intake_Form__c</name>
+    </fields>
+    <fields>
+        <label><!-- Jan 2020 --></label>
+        <name>Jan_2020__c</name>
+    </fields>
+    <fields>
+        <label><!-- Jun 2020 --></label>
+        <name>Jun_2020__c</name>
+    </fields>
+    <fields>
+        <label><!-- LDT Reporting Required --></label>
+        <name>LDT_Reporting_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project ID # --></label>
+        <name>LIMS_Project_ID__c</name>
+        <relationshipLabel><!-- SOWs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- LIMS Project ID --></label>
+        <name>LIMS_Project_ID_display__c</name>
+    </fields>
+    <fields>
+        <help><!-- To create a new LIMS Project ID, these fields must be filled out: Program, Program Type, Product Name, Needs Treatment {N-of-1} --></help>
+        <label><!-- zzLIMS Project ID: --></label>
+        <name>LIMS_Project_ID_text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lab Type --></label>
+        <name>Lab_Type__c</name>
+        <picklistValues>
+            <masterLabel>CLIA</masterLabel>
+            <translation><!-- CLIA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ResOps</masterLabel>
+            <translation><!-- ResOps --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Last Patient In --></label>
+        <name>Last_Sample_In__c</name>
+    </fields>
+    <fields>
+        <label><!-- Line of Therapy --></label>
+        <name>Line_of_Therapy__c</name>
+        <picklistValues>
+            <masterLabel>1st line</masterLabel>
+            <translation><!-- 1st line --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2nd line</masterLabel>
+            <translation><!-- 2nd line --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2nd line+</masterLabel>
+            <translation><!-- 2nd line+ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adjuvent</masterLabel>
+            <translation><!-- Adjuvent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neo-adjuvent</masterLabel>
+            <translation><!-- Neo-adjuvent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recurrent</masterLabel>
+            <translation><!-- Recurrent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refractory</masterLabel>
+            <translation><!-- Refractory --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- MA Owner --></label>
+        <name>MA_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mar 2020 --></label>
+        <name>Mar_2020__c</name>
+    </fields>
+    <fields>
+        <label><!-- May 2020 --></label>
+        <name>May_2020__c</name>
+    </fields>
+    <fields>
+        <help><!-- Includes Month of Start Date --></help>
+        <label><!-- Current Quarter Month 1 --></label>
+        <name>Month_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Quarter Month 2 --></label>
+        <name>Month_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Quarter Month 3 --></label>
+        <name>Month_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Anticipated Volume --></label>
+        <name>Monthly_Anticipated_Volume__c</name>
+    </fields>
+    <fields>
+        <label><!-- NCT Trial Link --></label>
+        <name>NCT_Trial_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Needs Treatment {N-of-1} --></label>
+        <name>Need_Treatment__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Needs IUO Report --></label>
+        <name>Needs_IUO_Report__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Amendment --></label>
+        <name>Next_Amendment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Batch Text --></label>
+        <name>Next_Batch_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Batch --></label>
+        <name>Next_Batch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Details --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- This sends an email to DL-LIMS-Support with information regarding new project code --></help>
+        <label><!-- Send Email to DL-LIMS-Support --></label>
+        <name>Notify_DL_LIMS_Support__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Patients --></label>
+        <name>Number_of_Patients__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of Samples for this Project ID (NOTE: Not all samples will be applied to this SOW) --></help>
+        <label><!-- Number of Samples Received-Project ID --></label>
+        <name>Number_of_Samples_Processed_to_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Rollup field filled by DLRS --></help>
+        <label><!-- Total # of Samples Received-SOW --></label>
+        <name>Number_of_Samples_Received_SOW__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Fees --></label>
+        <name>Other_Fees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent SOW ID --></label>
+        <name>Parent_SOW_ID__c</name>
+        <relationshipLabel><!-- Amendments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Parent Sponsor Account --></label>
+        <name>Parent_Sponsor_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- SOW Subtype --></label>
+        <name>Pharma_Type__c</name>
+        <picklistValues>
+            <masterLabel>CDx Development</masterLabel>
+            <translation><!-- CDx Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLIA ctDNA Velocity</masterLabel>
+            <translation><!-- CLIA ctDNA Velocity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLIA on progression/resistance</masterLabel>
+            <translation><!-- CLIA on progression/resistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clinical trial assay</masterLabel>
+            <translation><!-- Clinical trial assay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial consortium</masterLabel>
+            <translation><!-- Commercial consortium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial pilot</masterLabel>
+            <translation><!-- Commercial pilot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom Type</masterLabel>
+            <translation><!-- Custom Type --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enrollment - Clinical Trial Assay</masterLabel>
+            <translation><!-- Enrollment - Clinical Trial Assay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enrollment - Local Test</masterLabel>
+            <translation><!-- Enrollment - Local Test --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Feasibility Study</masterLabel>
+            <translation><!-- Feasibility Study --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investigator sponsored trial</masterLabel>
+            <translation><!-- Investigator sponsored trial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MRD – CLIA</masterLabel>
+            <translation><!-- MRD – CLIA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MRD – Research</masterLabel>
+            <translation><!-- MRD – Research --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MSI Development</masterLabel>
+            <translation><!-- MSI Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minimal residual disease</masterLabel>
+            <translation><!-- Minimal residual disease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platform evaluation</masterLabel>
+            <translation><!-- Platform evaluation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospective enrolling</masterLabel>
+            <translation><!-- Prospective enrolling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospective pilot/tech evaluation</masterLabel>
+            <translation><!-- Prospective pilot/tech evaluation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospective stratification</masterLabel>
+            <translation><!-- Prospective stratification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Publication development</masterLabel>
+            <translation><!-- Publication development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referrals</masterLabel>
+            <translation><!-- Referrals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research - LUNAR</masterLabel>
+            <translation><!-- Research - LUNAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research - Res Ops</masterLabel>
+            <translation><!-- Research - Res Ops --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retrospective ctDNA Velocity</masterLabel>
+            <translation><!-- Retrospective ctDNA Velocity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retrospective exploratory biomarker discovery</masterLabel>
+            <translation><!-- Retrospective exploratory biomarker discovery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retrospective exploratory predictive biomarker</masterLabel>
+            <translation><!-- Retrospective exploratory predictive biomarker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retrospective exploratory resistance monitoring</masterLabel>
+            <translation><!-- Retrospective exploratory resistance monitoring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retrospective tissue concordance</masterLabel>
+            <translation><!-- Retrospective tissue concordance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stratification - CLIA</masterLabel>
+            <translation><!-- Stratification - CLIA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TMB Development</masterLabel>
+            <translation><!-- TMB Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tissue Delay Rescue</masterLabel>
+            <translation><!-- Tissue Delay Rescue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tissue QNS Rescue</masterLabel>
+            <translation><!-- Tissue QNS Rescue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trial Consortium</masterLabel>
+            <translation><!-- Trial Consortium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Planned TAT --></label>
+        <name>Planned_TAT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Price Per Sample --></label>
+        <name>Price_Per_Sample__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pricing --></label>
+        <name>Pricing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Name --></label>
+        <name>Product_Name__c</name>
+        <picklistValues>
+            <masterLabel>G360</masterLabel>
+            <translation><!-- G360 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G360CDx</masterLabel>
+            <translation><!-- G360CDx --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LUNAR1</masterLabel>
+            <translation><!-- LUNAR1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LUNAR1_3</masterLabel>
+            <translation><!-- LUNAR1_3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LUNAR1_CRC</masterLabel>
+            <translation><!-- LUNAR1_CRC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LUNAR1_LUNG</masterLabel>
+            <translation><!-- LUNAR1_LUNG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LUNAR1_Other</masterLabel>
+            <translation><!-- LUNAR1_Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LUNAR2</masterLabel>
+            <translation><!-- LUNAR2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OMNI</masterLabel>
+            <translation><!-- OMNI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OMNICDx</masterLabel>
+            <translation><!-- OMNICDx --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This field is deprecated in favor of the field &apos;Product Name&apos; --></help>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+        <picklistValues>
+            <masterLabel>G360</masterLabel>
+            <translation><!-- G360 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lunar</masterLabel>
+            <translation><!-- Lunar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Omni</masterLabel>
+            <translation><!-- Omni --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Program Status --></label>
+        <name>Program_Status__c</name>
+        <picklistValues>
+            <masterLabel>Canceled</masterLabel>
+            <translation><!-- Canceled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executed</masterLabel>
+            <translation><!-- Executed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Initiated</masterLabel>
+            <translation><!-- Initiated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost</masterLabel>
+            <translation><!-- Lost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOW Drafting</masterLabel>
+            <translation><!-- SOW Drafting --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Program Name --></label>
+        <name>Program_name__c</name>
+    </fields>
+    <fields>
+        <label><!-- SOW Description --></label>
+        <name>Project_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Status --></label>
+        <name>Project_Status__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not yet started</masterLabel>
+            <translation><!-- Not yet started --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ongoing</masterLabel>
+            <translation><!-- Ongoing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Program Type --></label>
+        <name>Project_Type__c</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pharma (Prospective)</masterLabel>
+            <translation><!-- Pharma (Prospective) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research (Retrospective)</masterLabel>
+            <translation><!-- Research (Retrospective) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Program --></label>
+        <name>Project__c</name>
+        <relationshipLabel><!-- SOWs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Protocol Name --></label>
+        <name>Protocol_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Protocol Received? --></label>
+        <name>Protocol_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase Order Number --></label>
+        <name>Purchase_Order_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase Order Received? --></label>
+        <name>Purchase_Order_Received__c</name>
+    </fields>
+    <fields>
+        <help><!-- **EDIT THE FIELD ABOVE** You cannot email to DL-LIMS-Support without information in all of these fields, as well as Sponsor Account and LIMS Project ID --></help>
+        <label><!-- REQUIRED: N of 1 Treatment --></label>
+        <name>REQUIRED_N_of_1_Treatment__c</name>
+    </fields>
+    <fields>
+        <help><!-- **EDIT THE FIELD ABOVE** You cannot email to DL-LIMS-Support without information in all of these fields, as well as Sponsor Account and LIMS Project ID --></help>
+        <label><!-- REQUIRED: Program Type --></label>
+        <name>REQUIRED_type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Report Type --></label>
+        <name>Report_Type__c</name>
+        <picklistValues>
+            <masterLabel>CLIA</masterLabel>
+            <translation><!-- CLIA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IUO</masterLabel>
+            <translation><!-- IUO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RUO</masterLabel>
+            <translation><!-- RUO --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Report Delivery Type --></label>
+        <name>Results_Type__c</name>
+        <picklistValues>
+            <masterLabel>CLIA</masterLabel>
+            <translation><!-- CLIA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IUO</masterLabel>
+            <translation><!-- IUO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RUO</masterLabel>
+            <translation><!-- RUO --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Retrospective/Prospective? --></label>
+        <name>Retrospective_Prospective__c</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospective</masterLabel>
+            <translation><!-- Prospective --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retrospective</masterLabel>
+            <translation><!-- Retrospective --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Calculations are only based on this SOW and not any amendments --></help>
+        <label><!-- SOW Budget --></label>
+        <name>SOW_Budget__c</name>
+    </fields>
+    <fields>
+        <label><!-- SOW Counter --></label>
+        <name>SOW_Counter__c</name>
+    </fields>
+    <fields>
+        <label><!-- SOW Execution Date --></label>
+        <name>SOW_Execution_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- SOW Execution Date --></label>
+        <name>SOW_Execution_Dt__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hidden field used to generate SOW Name field in a correct format that doesn&apos;t choke LIMS --></help>
+        <label><!-- SOW Label --></label>
+        <name>SOW_Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- SOW Name --></label>
+        <name>SOW_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- SOW Next Steps --></label>
+        <name>SOW_Next_Steps__c</name>
+    </fields>
+    <fields>
+        <label><!-- SOW # --></label>
+        <name>SOW_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- SOW Recent Progress --></label>
+        <name>SOW_Recent_Progress__c</name>
+    </fields>
+    <fields>
+        <label><!-- SOW Status --></label>
+        <name>SOW_Status__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fully Executed</masterLabel>
+            <translation><!-- Fully Executed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In-Contracting</masterLabel>
+            <translation><!-- In-Contracting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost/Canceled</masterLabel>
+            <translation><!-- Lost/Canceled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunity</masterLabel>
+            <translation><!-- Opportunity --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Use this field if &apos;Other&apos; was selected for SOW Type --></help>
+        <label><!-- SOW Type: If Other, Please specify --></label>
+        <name>SOW_Type_Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- SOW Type --></label>
+        <name>SOW_Type__c</name>
+        <picklistValues>
+            <masterLabel>Consortia</masterLabel>
+            <translation><!-- Consortia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient Referrals</masterLabel>
+            <translation><!-- Patient Referrals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sample Processing</masterLabel>
+            <translation><!-- Sample Processing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SOW Update --></label>
+        <name>SOW_Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Collection Timepoints --></label>
+        <name>Sample_Collection_Timepoints__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Type --></label>
+        <name>Sample_Type__c</name>
+        <picklistValues>
+            <masterLabel>Blood</masterLabel>
+            <translation><!-- Blood --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plasma</masterLabel>
+            <translation><!-- Plasma --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sample Volume 2019-Q1 --></label>
+        <name>Sample_Volume_2019_Q1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Volume 2019-Q2 --></label>
+        <name>Sample_Volume_2019_Q2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Volume 2019-Q3 --></label>
+        <name>Sample_Volume_2019_Q3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Volume 2019-Q4 --></label>
+        <name>Sample_Volume_2019_Q4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Volume 2020-Q1 --></label>
+        <name>Sample_Volume_2020_Q1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Volume 2020-Q2 --></label>
+        <name>Sample_Volume_2020_Q2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Volume 2020-Q3 --></label>
+        <name>Sample_Volume_2020_Q3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Volume 2020-Q4 --></label>
+        <name>Sample_Volume_2020_Q4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Volume 2021-Q1 --></label>
+        <name>Sample_Volume_2021_Q1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Volume 2021-Q2 --></label>
+        <name>Sample_Volume_2021_Q2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Volume 2021-Q3 --></label>
+        <name>Sample_Volume_2021_Q3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Volume 2021-Q4 --></label>
+        <name>Sample_Volume_2021_Q4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Volume 2022-Q1 --></label>
+        <name>Sample_Volume_2022_Q1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Volume 2022-Q2 --></label>
+        <name>Sample_Volume_2022_Q2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Volume 2022-Q3 --></label>
+        <name>Sample_Volume_2022_Q3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Volume 2022-Q4 --></label>
+        <name>Sample_Volume_2022_Q4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary Product Name --></label>
+        <name>Secondary_Product_Name__c</name>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation><!-- Custom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data</masterLabel>
+            <translation><!-- Data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G360</masterLabel>
+            <translation><!-- G360 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LUNAR</masterLabel>
+            <translation><!-- LUNAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Omni</masterLabel>
+            <translation><!-- Omni --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Send RUO Report to Box --></label>
+        <name>Send_RUO_Report_to_Box__c</name>
+    </fields>
+    <fields>
+        <label><!-- Set-up Fees --></label>
+        <name>Set_up_Fees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sponsor Account --></label>
+        <lookupFilter>
+            <errorMessage><!-- Must be a Biopharma Account --></errorMessage>
+        </lookupFilter>
+        <name>Sponsor_Account__c</name>
+        <relationshipLabel><!-- Biopharma SOWs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sponsor Acct GHI # --></label>
+        <name>Sponsor_Acct_GHI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage --></label>
+        <name>Stage__c</name>
+        <picklistValues>
+            <masterLabel>Lost Account-Closed</masterLabel>
+            <translation><!-- Lost Account-Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Hold</masterLabel>
+            <translation><!-- On Hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T1 (10%)</masterLabel>
+            <translation><!-- T1 (10%) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T2 (50%)</masterLabel>
+            <translation><!-- T2 (50%) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T3 (75%)</masterLabel>
+            <translation><!-- T3 (75%) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T4 (90%)</masterLabel>
+            <translation><!-- T4 (90%) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T5-Closed Won</masterLabel>
+            <translation><!-- T5-Closed Won --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Storage --></label>
+        <name>Storage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Derived from Study ID field on associated Program --></help>
+        <label><!-- Program --></label>
+        <name>Study_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Study Name --></label>
+        <name>Study_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub-Stage 1 --></label>
+        <name>Sub_Stage_1__c</name>
+        <picklistValues>
+            <masterLabel>10a.) MCA</masterLabel>
+            <translation><!-- 10a.) MCA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10b.) SoW (Full program)</masterLabel>
+            <translation><!-- 10b.) SoW (Full program) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1a.) First Contact with client</masterLabel>
+            <translation><!-- 1a.) First Contact with client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1b.) Due diligence</masterLabel>
+            <translation><!-- 1b.) Due diligence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2.) Cross-functional client meeting</masterLabel>
+            <translation><!-- 2.) Cross-functional client meeting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3.) Deal Team meetings to discuss proposal strategy</masterLabel>
+            <translation><!-- 3.) Deal Team meetings to discuss proposal strategy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4.) Proposal generation - version 1</masterLabel>
+            <translation><!-- 4.) Proposal generation - version 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5.) Client contact - discussion of proposal v1</masterLabel>
+            <translation><!-- 5.) Client contact - discussion of proposal v1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6.) Revise proposal - generate v2</masterLabel>
+            <translation><!-- 6.) Revise proposal - generate v2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7a.) Capabilities Meeting</masterLabel>
+            <translation><!-- 7a.) Capabilities Meeting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7b.) Client audit/qualification GH</masterLabel>
+            <translation><!-- 7b.) Client audit/qualification GH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8a.) MSA/LSA/Research Agreement</masterLabel>
+            <translation><!-- 8a.) MSA/LSA/Research Agreement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8b.) SoW (MS1)</masterLabel>
+            <translation><!-- 8b.) SoW (MS1) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9.) Kick-off meeting (Internal)</masterLabel>
+            <translation><!-- 9.) Kick-off meeting (Internal) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sub-Stage 2 --></label>
+        <name>Sub_Stage_2__c</name>
+        <picklistValues>
+            <masterLabel>CDA</masterLabel>
+            <translation><!-- CDA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Capabilities</masterLabel>
+            <translation><!-- Capabilities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Due Diligence</masterLabel>
+            <translation><!-- Client Due Diligence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract signature</masterLabel>
+            <translation><!-- Contract signature --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>First contact/cultivation</masterLabel>
+            <translation><!-- First contact/cultivation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Negotiation</masterLabel>
+            <translation><!-- Negotiation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PO</masterLabel>
+            <translation><!-- PO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Kick-off</masterLabel>
+            <translation><!-- Project Kick-off --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Proposal Delivery</masterLabel>
+            <translation><!-- Proposal Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Proposal Generation</masterLabel>
+            <translation><!-- Proposal Generation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Proposal defense/revision (with comment field)</masterLabel>
+            <translation><!-- Proposal defense/revision (with comment field) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SoW/Contract generation</masterLabel>
+            <translation><!-- SoW/Contract generation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SoW/Contract review</masterLabel>
+            <translation><!-- SoW/Contract review --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Success Criteria --></label>
+        <name>Success_Criteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Therapy Type --></label>
+        <name>Therapy_Type__c</name>
+        <picklistValues>
+            <masterLabel>Adj Targeted</masterLabel>
+            <translation><!-- Adj Targeted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chemo</masterLabel>
+            <translation><!-- Chemo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Combo</masterLabel>
+            <translation><!-- Combo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hormonal</masterLabel>
+            <translation><!-- Hormonal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IO</masterLabel>
+            <translation><!-- IO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parp</masterLabel>
+            <translation><!-- Parp --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Targeted</masterLabel>
+            <translation><!-- Targeted --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total Projected Number of Samples --></label>
+        <name>Total_Anticipated_Volume__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hidden field used for reporting --></help>
+        <label><!-- Total Number of Samples Forecast --></label>
+        <name>Total_Number_of_Samples_Forecast__c</name>
+    </fields>
+    <fields>
+        <help><!-- Includes all Contracted Samples from this SOW and all amendments to this --></help>
+        <label><!-- Total Number of Samples Incl Amendments --></label>
+        <name>Total_Number_of_Samples_Incl_Amendments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trial Name --></label>
+        <name>Trial_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trial Phase --></label>
+        <name>Trial_Phase__c</name>
+    </fields>
+    <fields>
+        <help><!-- Probability in Percentage --></help>
+        <label><!-- Upside-Current Q --></label>
+        <name>Upside_Current_Q__c</name>
+    </fields>
+    <fields>
+        <help><!-- Probability in Percentage --></help>
+        <label><!-- Upside-Future Q&apos;s --></label>
+        <name>Upside_Future_Q_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- Upside Volume 2020-Q1 --></label>
+        <name>Upside_Volume_2020_Q1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Upside Volume 2020-Q2 --></label>
+        <name>Upside_Volume_2020_Q2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Upside Volume 2020-Q3 --></label>
+        <name>Upside_Volume_2020_Q3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Upside Volume 2020-Q4 --></label>
+        <name>Upside_Volume_2020_Q4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Upside Volume 2021-Q1 --></label>
+        <name>Upside_Volume_2021_Q1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Upside Volume 2021-Q2 --></label>
+        <name>Upside_Volume_2021_Q2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Upside Volume 2021-Q3 --></label>
+        <name>Upside_Volume_2021_Q3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Upside Volume 2021-Q4 --></label>
+        <name>Upside_Volume_2021_Q4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Upside Volume 2022-Q1 --></label>
+        <name>Upside_Volume_2022_Q1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Upside Volume 2022-Q2 --></label>
+        <name>Upside_Volume_2022_Q2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Upside Volume 2022-Q3 --></label>
+        <name>Upside_Volume_2022_Q3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Upside Volume 2022-Q4 --></label>
+        <name>Upside_Volume_2022_Q4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Oct 2019 --></label>
+        <name>X10_19__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nov 2019 --></label>
+        <name>X11_19__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dec 2019 --></label>
+        <name>X12_19__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2018 Q1 Received --></label>
+        <name>X2018_Q1_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2018 Q2 Received --></label>
+        <name>X2018_Q2_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2018 Q3 Received --></label>
+        <name>X2018_Q3_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2018 Q4 Received --></label>
+        <name>X2018_Q4_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2019 Q1 Received --></label>
+        <name>X2019_Q1_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2019 Q2 Received --></label>
+        <name>X2019_Q2_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2019 Q3 Received --></label>
+        <name>X2019_Q3_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2019 Q4 Received --></label>
+        <name>X2019_Q4_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2020 Q1 Received --></label>
+        <name>X2020_Q1_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2020 Q2 Received --></label>
+        <name>X2020_Q2_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mar 2019 --></label>
+        <name>X3_19__c</name>
+    </fields>
+    <fields>
+        <label><!-- Apr 2019 --></label>
+        <name>X4_19__c</name>
+    </fields>
+    <fields>
+        <label><!-- May 2019 --></label>
+        <name>X5_19__c</name>
+    </fields>
+    <fields>
+        <label><!-- Jun 2019 --></label>
+        <name>X6_19__c</name>
+    </fields>
+    <fields>
+        <label><!-- Jul 2019 --></label>
+        <name>X7_19__c</name>
+    </fields>
+    <fields>
+        <label><!-- Aug 2019 --></label>
+        <name>X8_19__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sep 2019 --></label>
+        <name>X9_19__c</name>
+    </fields>
+    <recordTypes>
+        <description><!-- Use for SOW Amendments --></description>
+        <label><!-- Amendment --></label>
+        <name>Amendment</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Only for ClinDev SOWs --></description>
+        <label><!-- ClinDev/Trial Project --></label>
+        <name>ClinDev_Trial_Project</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Use for Master SOWs --></description>
+        <label><!-- SOW Master --></label>
+        <name>SOW_Master</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Box-folder location can not be empty if the RUO report is sent to Box. --></errorMessage>
+        <name>Box_Folder_Location_Rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot Send Email if any of the following fields are empty:
+Sponsor Account,
+Product Name,
+Program Type,
+LIMS Project ID,
+Needs Treatment {N-of-1} --></errorMessage>
+        <name>Must_have_all_fields_completed</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Create_Amendment --></label>
+        <name>Create_Amendment</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Create_KOM_PPT --></label>
+        <name>Create_KOM_PPT</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Create_New_Batch --></label>
+        <name>Create_New_Batch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Create_New_LIMS_Project_ID --></label>
+        <name>Create_New_LIMS_Project_ID</name>
+    </webLinks>
+</CustomObjectTranslation>

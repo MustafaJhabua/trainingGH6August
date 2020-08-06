@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Alert Email --></label>
+        <name>efaxapp__Alert_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Fax Number --></label>
+        <name>efaxapp__Default_Fax_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable Auto Send Faxes --></label>
+        <name>efaxapp__Enable_Auto_Send_Faxes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salesforce User Password + Token --></label>
+        <name>efaxapp__Salesforce_User_Password_Token__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salesforce Username --></label>
+        <name>efaxapp__Salesforce_Username__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>MedProBT__Batch_Result__c$Name</field>
+    </columns>
+    <columns>
+        <field>MedProBT__Batch_Result__c$MedProBT__File_Result__c</field>
+    </columns>
+    <columns>
+        <field>MedProBT__Batch_Result__c$MedProBT__Number_Parsed__c</field>
+    </columns>
+    <columns>
+        <field>MedProBT__Batch_Result__c$MedProBT__Parsed_not_processed__c</field>
+    </columns>
+    <columns>
+        <field>MedProBT__Batch_Result__c$MedProBT__Expected_not_parsed__c</field>
+    </columns>
+    <description>Which MedPro batches did not process 100% successfully?</description>
+    <filter>
+        <booleanFilter>1 OR 2 OR 3</booleanFilter>
+        <criteriaItems>
+            <column>MedProBT__Batch_Result__c$MedProBT__Parsed_not_processed__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>MedProBT__Batch_Result__c$MedProBT__Expected_not_parsed__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>MedProBT__Batch_Result__c$MedProBT__Number_Parsed__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>MedPro Exception Batch Results</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>MedProBT__MedPro_Batch_Results__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>MedProBT__Batch_Result__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_LAST30</interval>
+    </timeFrameFilter>
+</Report>

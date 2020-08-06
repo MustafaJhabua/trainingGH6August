@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sent when the secondary email field on a Contact is modified</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Secondary Email Update</name>
+    <style>none</style>
+    <subject>Secondary Email Updated: ﻿{!Contact.Name}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

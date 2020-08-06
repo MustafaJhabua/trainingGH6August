@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <name>Update_the_Variable_Checkbox</name>
+        <label>Update the Variable Checkbox</label>
+        <locationX>527</locationX>
+        <locationY>348</locationY>
+        <assignmentItems>
+            <assignToReference>varTest.Courtesy_Call_Task_Skip__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Create_New_Courtesy_Call_Task</targetReference>
+        </connector>
+    </assignments>
+    <constants>
+        <description>User: Med Affairs Tasks</description>
+        <name>AssignedToID</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>0053400000A8UR8</stringValue>
+        </value>
+    </constants>
+    <decisions>
+        <name>Fits_the_Criteria</name>
+        <label>Fits the Criteria</label>
+        <locationX>622</locationX>
+        <locationY>228</locationY>
+        <defaultConnector>
+            <targetReference>Update_Sample_Records</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SelectedSamples.Cancer_Class__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Lung</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>SelectedSamples.On_Label__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yes</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>SelectedSamples.NCCN_Sample__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_the_Variable_Checkbox</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <description>Autolaunched flow to replace Process Builder</description>
+    <interviewLabel>Courtesy call task skip flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Courtesy call task skip flow</label>
+    <loops>
+        <name>Loop_Through_All_Samples</name>
+        <label>Loop Through All Samples</label>
+        <locationX>484</locationX>
+        <locationY>59</locationY>
+        <assignNextValueToReference>SelectedSamples</assignNextValueToReference>
+        <collectionReference>varOnLabelSamples</collectionReference>
+        <iterationOrder>Desc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Fits_the_Criteria</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Update_Sample_Records</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Create_New_Courtesy_Call_Task</name>
+        <label>Create New Courtesy Call Task</label>
+        <locationX>395</locationX>
+        <locationY>246</locationY>
+        <assignRecordIdToReference>TaskRecordID</assignRecordIdToReference>
+        <connector>
+            <targetReference>Loop_Through_All_Samples</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Description</field>
+            <value>
+                <stringValue>&quot;This sample has been flagged for a courtesy call because it is a lung cancer sample that has an associated on-label therapy. View the PDF report in the portal here: https://portal.guardanthealth.com/download_report/admin_download?request_id=&quot; &amp; [Guardant_360_Sample__c].Name</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <stringValue>0053400000A28eN</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Normal</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RecordTypeId</field>
+            <value>
+                <stringValue>012340000007mnk</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Not Started</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Med Affairs Courtesy Call</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>varTest.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhoId</field>
+            <value>
+                <elementReference>varTest.Contact__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+    </recordCreates>
+    <recordLookups>
+        <name>FindOnLabelSamples</name>
+        <label>FindOnLabelSamples</label>
+        <locationX>161</locationX>
+        <locationY>69</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_Through_All_Samples</targetReference>
+        </connector>
+        <filters>
+            <field>Account_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Clinical Account US</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Account_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Clinical Trial Account</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Cancer_Class__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Lung</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Courtesy_Call_Task_Skip__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Final_Report_Date__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <dateValue>2017-11-10</dateValue>
+            </value>
+        </filters>
+        <filters>
+            <field>NCCN_Sample__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>On_Label__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Yes</stringValue>
+            </value>
+        </filters>
+        <object>Guardant_360_Sample__c</object>
+        <outputReference>varOnLabelSamples</outputReference>
+        <queriedFields>Name</queriedFields>
+        <queriedFields>Final_Report_Date__c</queriedFields>
+        <queriedFields>Courtesy_Call_Task_Skip__c</queriedFields>
+        <queriedFields>Cancer_Class__c</queriedFields>
+        <queriedFields>On_Label__c</queriedFields>
+        <queriedFields>NCCN_Sample__c</queriedFields>
+        <queriedFields>Account_Type__c</queriedFields>
+        <queriedFields>Id</queriedFields>
+        <sortField>Id</sortField>
+        <sortOrder>Asc</sortOrder>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Sample_Records</name>
+        <label>Update Sample Records</label>
+        <locationX>900</locationX>
+        <locationY>53</locationY>
+        <inputReference>Var2sObjColl</inputReference>
+    </recordUpdates>
+    <startElementReference>FindOnLabelSamples</startElementReference>
+    <status>Draft</status>
+    <textTemplates>
+        <description>Create New Courtesy Call task</description>
+        <name>CreateNewCourtesyCall</name>
+        <text>{!Create_New_Courtesy_Call_Task}
+
+Name: {!SelectedSamples.Name}
+
+Account type: {!SelectedSamples.Account_Type__c}
+
+Task Skip Checkbox: {!SelectedSamples.Courtesy_Call_Task_Skip__c}
+
+Contact: {!SelectedSamples.Contact__c}
+
+ID: {!SelectedSamples.Id}
+
+Task Record ID: {!TaskRecordID}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>FitsTheCriteria</name>
+        <text>Fits the Criteria: {!Yes}
+
+ID: {!SelectedSamples.Id}
+ 
+Name: {!SelectedSamples.Name}
+
+Final Report Date: {!SelectedSamples.Final_Report_Date__c} 
+
+Test ID: {!varTest.Id}
+
+Test Name: {!varTest.Name}
+
+ {!FindOnLabelSamples}</text>
+    </textTemplates>
+    <textTemplates>
+        <description>first variable</description>
+        <name>OnLabelSamples</name>
+        <text>Fault Message: {!$Flow.FaultMessage}
+
+Selected Samples ID: {!SelectedSamples.Id}
+
+Name: {!SelectedSamples.Name}</text>
+    </textTemplates>
+    <variables>
+        <description>All on-label non-NCCN samples</description>
+        <name>SelectedSamples</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Guardant_360_Sample__c</objectType>
+    </variables>
+    <variables>
+        <name>TaskRecordID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>012340000007mnk</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Second collection object variable</description>
+        <name>Var2sObjColl</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Guardant_360_Sample__c</objectType>
+    </variables>
+    <variables>
+        <description>On-label lung samples</description>
+        <name>varOnLabelSamples</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Guardant_360_Sample__c</objectType>
+    </variables>
+    <variables>
+        <description>Test SObject Variable</description>
+        <name>varTest</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Guardant_360_Sample__c</objectType>
+    </variables>
+</Flow>

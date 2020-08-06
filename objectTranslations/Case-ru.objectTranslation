@@ -1,0 +1,2822 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- CRMC Action Grid Defaults --></label>
+        <name>CRMC_PP__CRMC_Action_Grid_Defaults</name>
+    </fieldSets>
+    <fields>
+        <label><!-- AE Informed --></label>
+        <name>AE_Informed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accession # Created on --></label>
+        <name>Accession_Created_on__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accession Number --></label>
+        <name>Accession_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account AE Email --></label>
+        <name>Account_AE_Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- Reporting Country of the account --></help>
+        <label><!-- Account Country --></label>
+        <name>Account_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Owner --></label>
+        <name>Account_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Region --></label>
+        <name>Account_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Sales Rep Email --></label>
+        <name>Account_Sales_Rep_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Territory --></label>
+        <name>Account_Territory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Acct AE Email Address --></label>
+        <name>Acct_AE_Email_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Action --></label>
+        <name>Action__c</name>
+        <picklistValues>
+            <masterLabel>AMEND</masterLabel>
+            <translation><!-- AMEND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CANCEL</masterLabel>
+            <translation><!-- CANCEL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CORRECTED</masterLabel>
+            <translation><!-- CORRECTED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TAT ALERT</masterLabel>
+            <translation><!-- TAT ALERT --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Activity Type --></label>
+        <name>Activity_Type__c</name>
+        <picklistValues>
+            <masterLabel>Demographic Change</masterLabel>
+            <translation><!-- Demographic Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kit Supplies</masterLabel>
+            <translation><!-- Kit Supplies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing Material</masterLabel>
+            <translation><!-- Marketing Material --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Provider Portal</masterLabel>
+            <translation><!-- Provider Portal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qualify Account</masterLabel>
+            <translation><!-- Qualify Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qualify MD</masterLabel>
+            <translation><!-- Qualify MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qualify Secondary Recipient</masterLabel>
+            <translation><!-- Qualify Secondary Recipient --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refax Patient Report</masterLabel>
+            <translation><!-- Refax Patient Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standing Order</masterLabel>
+            <translation><!-- Standing Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Verify Information</masterLabel>
+            <translation><!-- Verify Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Welcome Pack</masterLabel>
+            <translation><!-- Welcome Pack --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Actual Carrier --></label>
+        <name>Actual_Carrier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Shipping Method --></label>
+        <name>Actual_Shipping_Method__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attestation Received --></label>
+        <name>Attestation_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Problem Issue --></label>
+        <name>Billing_Problem_Issue__c</name>
+        <picklistValues>
+            <masterLabel>ICD10</masterLabel>
+            <translation><!-- ICD10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance</masterLabel>
+            <translation><!-- Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient Demo</masterLabel>
+            <translation><!-- Patient Demo --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Billing Type --></label>
+        <name>Billing_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Biohazard bags --></label>
+        <name>Biohazard_bags__c</name>
+    </fields>
+    <fields>
+        <label><!-- Blank Int&apos;l TRFs --></label>
+        <name>Blank_Int_l_TRFs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brochure emailed --></label>
+        <name>Brochure_emailed__c</name>
+    </fields>
+    <fields>
+        <label><!-- CAPA Initiated? --></label>
+        <name>CAPA_Initiated__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CAPA # --></label>
+        <name>CAPA_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- CE Blank TRFs (EU) --></label>
+        <name>CE_Blank_TRFs_EU__c</name>
+    </fields>
+    <fields>
+        <help><!-- 378819E - CE Guardant 360 Clinical Specimen Collection &amp; Shipping Kit --></help>
+        <label><!-- CE Kits-Clinical (EU) --></label>
+        <name>CE_Kits_Clinical_EU__c</name>
+    </fields>
+    <fields>
+        <label><!-- CE Preprint TRFs (EU) --></label>
+        <name>CE_Preprint_TRFs_EU__c</name>
+    </fields>
+    <fields>
+        <label><!-- CLIA Complaint? --></label>
+        <name>CLIA_Complaint__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CLIA Texas LDT Kit --></label>
+        <name>CLIA_Texas_LDT_Kit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call From --></label>
+        <name>Call_From__c</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient</masterLabel>
+            <translation><!-- Patient --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Physician</masterLabel>
+            <translation><!-- Physician --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Call To --></label>
+        <name>Call_To__c</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient</masterLabel>
+            <translation><!-- Patient --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Physician</masterLabel>
+            <translation><!-- Physician --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Cancel Requested --></label>
+        <name>Cancel_Requested__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancelled --></label>
+        <name>Cancelled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancer Type --></label>
+        <name>Cancer_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Age --></label>
+        <name>Case_Age__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hidden field used to count cases. Default = 1 --></help>
+        <label><!-- Case Count --></label>
+        <name>Case_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case status --></label>
+        <name>Case_status__c</name>
+        <picklistValues>
+            <masterLabel>In progress</masterLabel>
+            <translation><!-- In progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resolved</masterLabel>
+            <translation><!-- Resolved --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Client Services Email Alert --></label>
+        <name>Client_Services_Email_Alert__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Upset --></label>
+        <name>Client_Upset__c</name>
+    </fields>
+    <fields>
+        <help><!-- 548069 - Preprinted 
+Guardant Health Preprinted-Site Specific Clinical Trial Test Requisition Form (TST-TRF-003) --></help>
+        <label><!-- Clinical Trial Basic Preprinted TRF --></label>
+        <name>Clinical_Trial_Basic_PrePrinted_TRF__c</name>
+    </fields>
+    <fields>
+        <help><!-- 550762E --></help>
+        <label><!-- Clinical Trial Basic Preprinted TRF - EU --></label>
+        <name>Clinical_Trial_Basic_Preprinted_TRF_EU__c</name>
+    </fields>
+    <fields>
+        <help><!-- 550007 - Preprinted
+Guardant360 Preprinted Site Specific Clinical Trial Test Requisition Form (TST-TRF-012) --></help>
+        <label><!-- Clinical Trial IUO PrePrinted TRF --></label>
+        <name>Clinical_Trial_IUO_PrePrinted_TRF__c</name>
+    </fields>
+    <fields>
+        <help><!-- 550007E-Preprinted  Guardant360 Preprinted-Site Specific Clinical Trial Test Requisition Form - CZ (TST-TRF-012 V1) --></help>
+        <label><!-- Clinical Trial IUO PrePrinted TRF - EU --></label>
+        <name>Clinical_Trial_Site_Specific_TRF_CZ__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Co-pay --></label>
+        <name>Co_pay__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collection Information #2 --></label>
+        <name>Collection_Information_2__c</name>
+        <picklistValues>
+            <masterLabel>Client doesn&apos;t know</masterLabel>
+            <translation><!-- Client doesn&apos;t know --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>During infusion</masterLabel>
+            <translation><!-- During infusion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Infusion after draw</masterLabel>
+            <translation><!-- Infusion after draw --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Infusion prior to draw</masterLabel>
+            <translation><!-- Infusion prior to draw --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A or No infusion</masterLabel>
+            <translation><!-- N/A or No infusion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>See notes</masterLabel>
+            <translation><!-- See notes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Collection Information --></label>
+        <name>Collection_Information__c</name>
+        <picklistValues>
+            <masterLabel>Catheter</masterLabel>
+            <translation><!-- Catheter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Port</masterLabel>
+            <translation><!-- Port --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vein</masterLabel>
+            <translation><!-- Vein --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Complaint? --></label>
+        <name>Complaint__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contact Patient? --></label>
+        <name>Contact_Patient__c</name>
+    </fields>
+    <fields>
+        <label><!-- Count --></label>
+        <name>Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Billing Price --></label>
+        <name>Current_Billing_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>Date_1st_Attempt_Made__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>Date_2nd_Attempt_Made__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>Date_3rd_Attempt_Made__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date the last attempt was made (fourth or more) --></help>
+        <label><!-- Date --></label>
+        <name>Date_Last_Attempt_Made__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Sample Received --></label>
+        <name>Date_Sample_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Shipped --></label>
+        <name>Date_Shipped__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Service (blood collection) --></label>
+        <name>Date_of_Service_blood_collection__c</name>
+    </fields>
+    <fields>
+        <label><!-- Demographic Type --></label>
+        <name>Demographic_Type__c</name>
+        <picklistValues>
+            <masterLabel>Account</masterLabel>
+            <translation><!-- Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Both</masterLabel>
+            <translation><!-- Both --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Physician</masterLabel>
+            <translation><!-- Physician --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Demographics --></label>
+        <name>Demographics__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation><!-- All --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fax</masterLabel>
+            <translation><!-- Fax --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NPI</masterLabel>
+            <translation><!-- NPI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Name</masterLabel>
+            <translation><!-- Name --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation><!-- Phone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reporting address</masterLabel>
+            <translation><!-- Reporting address --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Secondary Fax</masterLabel>
+            <translation><!-- Secondary Fax --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Secondary phone</masterLabel>
+            <translation><!-- Secondary phone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shipping address</masterLabel>
+            <translation><!-- Shipping address --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Device UDI # --></label>
+        <name>Device_UDI__c</name>
+    </fields>
+    <fields>
+        <help><!-- 547284-CS-GUA – Guardant Health Diagnosis Information Form (TST-TRF-001) --></help>
+        <label><!-- Diagnosis Information Form (TST-TRF-001) --></label>
+        <name>Diagnosis_Information_Form_TST_TRF_001__c</name>
+    </fields>
+    <fields>
+        <label><!-- Diagnosis - Other --></label>
+        <name>Diagnosis_Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- Due Date --></label>
+        <name>Due_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, the OOP Max calculation will IGNORE any values in the Remaining Deductible, %Copay, and Insurance OOP Max fields. --></help>
+        <label><!-- Eligibility Response Not Available --></label>
+        <name>Eligibility_Response_Not_Available__c</name>
+    </fields>
+    <fields>
+        <help><!-- Checking this box will send an email with the tracking number to the &apos;Ship To&apos; Contact. --></help>
+        <label><!-- Email Tracking # to &apos;Ship To&apos; Contact --></label>
+        <name>Email_Tracking_to_Shipping_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the field &apos;PFA Gross&apos; is not blank, this is PFA Gross divided by FPL. Otherwise, it&apos;s WF Gross divided by FPL. --></help>
+        <label><!-- % FPL --></label>
+        <name>FPL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Federal Poverty Level Calculation.  Different calculations based on whether pt lives in Alaska, Hawaii, or the Lower 48 --></help>
+        <label><!-- FPL --></label>
+        <name>FPL_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- FedEx Tracking Link --></label>
+        <name>FedEx_Tracking_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- FedEx lbl (GENERIC /int&apos;l) - CLIENT PAY --></label>
+        <name>FedEx_lbl_GENERIC_int_l_CLIENT_PAY__c</name>
+    </fields>
+    <fields>
+        <label><!-- FedEx lbl (Site spec/int&apos;l) - CLIENT PAY --></label>
+        <name>FedEx_lbl_Site_spec_int_l_CLIENT_PAY__c</name>
+    </fields>
+    <fields>
+        <help><!-- 548024E - Guardant Health Generic FedEx International Airbill - Client Account --></help>
+        <label><!-- Fed Ex EU lbl (GENERIC) - CLIENT PAY --></label>
+        <name>Fed_Ex_EU_lbl_GENERIC_CLIENT_PAY__c</name>
+    </fields>
+    <fields>
+        <help><!-- 548027E - Guardant Health Generic FedEx International Airbill - GH Account --></help>
+        <label><!-- Fed Ex EU lbl (GENERIC) - GH PAY --></label>
+        <name>Fed_Ex_EU_lbl_GENERIC_GH_PAY__c</name>
+    </fields>
+    <fields>
+        <help><!-- 548025E - Guardant Health Site Specific FedEx International Airbill - Client Account --></help>
+        <label><!-- Fed Ex EU lbl (Site spec) - CLIENT PAY --></label>
+        <name>Fed_Ex_EU_lbl_Site_spec_CLIENT_PAY__c</name>
+    </fields>
+    <fields>
+        <help><!-- 548026E - Guardant Health Site Specific FedEx International Airbill - GH Account --></help>
+        <label><!-- Fed Ex EU lbl (Site spec) - GH PAY --></label>
+        <name>Fed_Ex_EU_lbl_Site_spec_GH_PAY__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fed Ex bags --></label>
+        <name>Fed_Ex_bags__c</name>
+    </fields>
+    <fields>
+        <help><!-- 546854 - Guardant Health FedEx Domestic Mon-Fri Priority Overnight Return Service Label (Return Address Only) --></help>
+        <label><!-- Fed Ex label (GH return only/domestic) --></label>
+        <name>Fed_Ex_label_GH_return_only_domestic__c</name>
+    </fields>
+    <fields>
+        <help><!-- 546982 - Guardant Health FedEx International Preprinted Airbill (Return Address Only) --></help>
+        <label><!-- Fed Ex lbl (GENERIC /int&apos;l) - GH PAY --></label>
+        <name>Fed_Ex_label_GH_return_only_int_l__c</name>
+    </fields>
+    <fields>
+        <help><!-- 546855 - Guardant Health FedEx Domestic Mon-Fri Priority Overnight Return Service Label (Site Specific) --></help>
+        <label><!-- Fed Ex label (Site specific/domestic) --></label>
+        <name>Fed_Ex_label_Site_specific_domestic__c</name>
+    </fields>
+    <fields>
+        <help><!-- 546983 - Guardant Health FedEx International Preprinted Airbill (Site Specific) --></help>
+        <label><!-- Fed Ex lbl (Site spec/int&apos;l) - GH PAY --></label>
+        <name>Fed_Ex_label_Site_specific_int_l__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Attempt --></label>
+        <name>First_Attempt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fourth+ Attempt --></label>
+        <name>FourthPlus_Attempt__c</name>
+    </fields>
+    <fields>
+        <help><!-- 379516E - International G360 Brazil IVD Kit --></help>
+        <label><!-- Int&apos;l G360 Brazil IVD Kit --></label>
+        <name>G360_Blood_Collection_Kit_Brazil__c</name>
+    </fields>
+    <fields>
+        <help><!-- 553876-Preprinted Guardant360 Clinical Trial Test Requisition Form (REC-PRT-000011 R1) --></help>
+        <label><!-- G360 Clinical Trial TRF Preprinted-TOPAZ --></label>
+        <name>G360_Clinical_Trial_Test_Requisition_For__c</name>
+    </fields>
+    <fields>
+        <label><!-- GH MP Extra Supplies Kit (10) --></label>
+        <name>GH_MP_Extra_Supplies_Kit_10__c</name>
+    </fields>
+    <fields>
+        <label><!-- GH MP Individual Draw Kit --></label>
+        <name>GH_MP_Individual_Draw_Kit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Generic TRFs --></label>
+        <name>Generic_TRFs__c</name>
+    </fields>
+    <fields>
+        <help><!-- 551934-PrePrinted Guardant360 Test Requisition - Global Access Program Preprinted-Site Specific Form (FRM-PRT-000030 R1) --></help>
+        <label><!-- Global Access Pgm PrePrinted TRF --></label>
+        <name>Global_Access_Pgm_PrePrinted_TRF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group # --></label>
+        <name>Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Guardant 360 Sample Rec&apos;d Date --></label>
+        <name>Guardant_360_Sample_Rec_d_Date__c</name>
+        <relationshipLabel><!-- Cases (sample rec&apos;d date) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Accession # --></label>
+        <name>Guardant_360_Sample__c</name>
+        <relationshipLabel><!-- Cases (Guardant 360 Sample) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Household Size. Used for FPL calculations. --></help>
+        <label><!-- HHS --></label>
+        <name>HHS__c</name>
+    </fields>
+    <fields>
+        <label><!-- HHS (household) --></label>
+        <name>HHS_household__c</name>
+    </fields>
+    <fields>
+        <label><!-- ICD10 Issues --></label>
+        <name>ICD10_Issues__c</name>
+        <picklistValues>
+            <masterLabel>ICD10 code is for Secondary Dx</masterLabel>
+            <translation><!-- ICD10 code is for Secondary Dx --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incomplete code</masterLabel>
+            <translation><!-- Incomplete code --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing Clinical Dx/ Cancer type</masterLabel>
+            <translation><!-- Missing Clinical Dx/ Cancer type --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unrelated ICD10</masterLabel>
+            <translation><!-- Unrelated ICD10 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ICD 1 --></label>
+        <name>ICD_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- ICD 2 --></label>
+        <name>ICD_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- ICD 3 --></label>
+        <name>ICD_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- ICD 4 --></label>
+        <name>ICD_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- ICD 5 --></label>
+        <name>ICD_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- ICD 6 --></label>
+        <name>ICD_6__c</name>
+    </fields>
+    <fields>
+        <help><!-- 379575-GOZILA JP --></help>
+        <label><!-- IUO KIT GOZILA JAPAN --></label>
+        <name>IUO_KIT_GOZILA_JAPAN__c</name>
+    </fields>
+    <fields>
+        <help><!-- 379575-SCRUM JP --></help>
+        <label><!-- IUO KIT SCRUM JAPAN --></label>
+        <name>IUO_KIT_SCRUM_JAPAN__c</name>
+    </fields>
+    <fields>
+        <help><!-- 379575-VISION JP --></help>
+        <label><!-- IUO KIT VISION JAPAN --></label>
+        <name>IUO_KIT_VISION_JAPAN__c</name>
+    </fields>
+    <fields>
+        <help><!-- 379574 - G360 IUO Kit, Domestic --></help>
+        <label><!-- IUO Kit, Domestic --></label>
+        <name>IUO_Kit_Domestic__c</name>
+    </fields>
+    <fields>
+        <help><!-- 380803 - Guardant360 Blood Collection Kit, IUO International Australia Amgen Clinical Trial --></help>
+        <label><!-- IUO Kit Int&apos;l-AMGEN Australia --></label>
+        <name>IUO_Kit_Int_l_AMGEN_Australia__c</name>
+    </fields>
+    <fields>
+        <help><!-- 380802 - Guardant360 Blood Collection Kit, IUO International Japan Amgen Clinical Trial --></help>
+        <label><!-- IUO Kit Int&apos;l-AMGEN Japan --></label>
+        <name>IUO_Kit_Int_l_AMGEN_Japan__c</name>
+    </fields>
+    <fields>
+        <help><!-- 379575 - G360 IUO Kit, International --></help>
+        <label><!-- IUO Kit, International --></label>
+        <name>IUO_Kit_International__c</name>
+    </fields>
+    <fields>
+        <label><!-- IVD Complaint? --></label>
+        <name>IVD_Complaint__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- In-Network --></label>
+        <name>In_Network__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial Outreach --></label>
+        <name>Initial_Outreach__c</name>
+        <picklistValues>
+            <masterLabel>Greater Than 48 Hours</masterLabel>
+            <translation><!-- Greater Than 48 Hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Less Than 48 Hours</masterLabel>
+            <translation><!-- Less Than 48 Hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Initiated --></label>
+        <name>Initiated__c</name>
+        <picklistValues>
+            <masterLabel>AMEND-External</masterLabel>
+            <translation><!-- AMEND-External --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AMEND-Internal</masterLabel>
+            <translation><!-- AMEND-Internal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CANCEL-External</masterLabel>
+            <translation><!-- CANCEL-External --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CANCEL-Internal</masterLabel>
+            <translation><!-- CANCEL-Internal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CORRECTED-External</masterLabel>
+            <translation><!-- CORRECTED-External --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CORRECTED-Internal</masterLabel>
+            <translation><!-- CORRECTED-Internal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TAT ALERT-External</masterLabel>
+            <translation><!-- TAT ALERT-External --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TAT ALERT-Internal</masterLabel>
+            <translation><!-- TAT ALERT-Internal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Insur Max OOP --></label>
+        <name>Insur_Max_OOP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Issue detail --></label>
+        <name>Insurance_Issue__c</name>
+        <picklistValues>
+            <masterLabel>3rd party payor</masterLabel>
+            <translation><!-- 3rd party payor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ICD10 code is for Secondary Dx</masterLabel>
+            <translation><!-- ICD10 code is for Secondary Dx --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID #s</masterLabel>
+            <translation><!-- ID #s --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incomplete code</masterLabel>
+            <translation><!-- Incomplete code --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing Clinical Dx/ Cancer type</masterLabel>
+            <translation><!-- Missing Clinical Dx/ Cancer type --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing ICD10</masterLabel>
+            <translation><!-- Missing ICD10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing Phone Number needed for OOP over $100.00</masterLabel>
+            <translation><!-- Missing Phone Number needed for OOP over $100.00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing US Address</masterLabel>
+            <translation><!-- Missing US Address --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Secondary Insurance</masterLabel>
+            <translation><!-- Secondary Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tertiary Insurance</masterLabel>
+            <translation><!-- Tertiary Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unrelated ICD10</masterLabel>
+            <translation><!-- Unrelated ICD10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Verify DOB</masterLabel>
+            <translation><!-- Verify DOB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Verify Pt&apos;s name</masterLabel>
+            <translation><!-- Verify Pt&apos;s name --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>denied</masterLabel>
+            <translation><!-- denied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>expired</masterLabel>
+            <translation><!-- expired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>missing</masterLabel>
+            <translation><!-- missing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>payor not found</masterLabel>
+            <translation><!-- payor not found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>unable to verify</masterLabel>
+            <translation><!-- unable to verify --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>wrong payor</masterLabel>
+            <translation><!-- wrong payor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>wrong policy holder</masterLabel>
+            <translation><!-- wrong policy holder --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This field is a hard cap on OOP Max. Entering &apos;0&apos; is NOT the same as leaving it blank. Entering &apos;0&apos; means the patient owes nothing; leaving this field blank assumes we don&apos;t have this information. --></help>
+        <label><!-- Insurance OOP Max --></label>
+        <name>Insurance_OOP_Remaining__c</name>
+    </fields>
+    <fields>
+        <help><!-- 380936 - Guardant360 Blood Collection Kit, IUO International Australia DRUZY Clinical Trial --></help>
+        <label><!-- Int&apos;l G360 Australia IVD Kit-DRUZY Trial --></label>
+        <name>Int_l_G360_Australia_IVD_Kit_DRUZY_Trial__c</name>
+    </fields>
+    <fields>
+        <help><!-- 380854E - Guardant360 Blood Collection Kit, CE IVD International, S. Korea Janssen Clinical Trial --></help>
+        <label><!-- Int&apos;l G360 S Korea IVD Kit-Janssen Trial --></label>
+        <name>Int_l_G360_CE_IVD_Kit_SKorea_Janssen__c</name>
+    </fields>
+    <fields>
+        <help><!-- 378819E-DRUZY - Guardant360 Blood Collection Kit, CE IVD International, S. Korea Druzy Clinical Trial --></help>
+        <label><!-- Int&apos;l G360 SKorea CE IVD Kit-DRUZY Trial --></label>
+        <name>Int_l_G360_S_Korea_IVD_Kit_DRUZY_Trial__c</name>
+    </fields>
+    <fields>
+        <help><!-- 379516E --></help>
+        <label><!-- International G360 Brazil IVD Kit --></label>
+        <name>International_G360_Brazil_IVD_Kit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Issue Type Description --></label>
+        <name>Issue_Type_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Issue Type --></label>
+        <name>Issue_Type__c</name>
+        <picklistValues>
+            <masterLabel>Accessibility</masterLabel>
+            <translation><!-- Accessibility --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billing Policy</masterLabel>
+            <translation><!-- Billing Policy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call TAT</masterLabel>
+            <translation><!-- Call TAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call not returned</masterLabel>
+            <translation><!-- Call not returned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clinical Consultant issue</masterLabel>
+            <translation><!-- Clinical Consultant issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collateral Content</masterLabel>
+            <translation><!-- Collateral Content --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compromised</masterLabel>
+            <translation><!-- Compromised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Damaged</masterLabel>
+            <translation><!-- Damaged --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delayed Receipt</masterLabel>
+            <translation><!-- Delayed Receipt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delayed Response</masterLabel>
+            <translation><!-- Delayed Response --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draw help</masterLabel>
+            <translation><!-- Draw help --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Drug inquiries</masterLabel>
+            <translation><!-- Drug inquiries --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ERD</masterLabel>
+            <translation><!-- ERD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee Attitude</masterLabel>
+            <translation><!-- Employee Attitude --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee Unresponsive</masterLabel>
+            <translation><!-- Employee Unresponsive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee rude</masterLabel>
+            <translation><!-- Employee rude --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee uninformed</masterLabel>
+            <translation><!-- Employee uninformed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enter Other Issue</masterLabel>
+            <translation><!-- Enter Other Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expired Tube</masterLabel>
+            <translation><!-- Expired Tube --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fasting required?</masterLabel>
+            <translation><!-- Fasting required? --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial assistance</masterLabel>
+            <translation><!-- Financial assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General info</masterLabel>
+            <translation><!-- General info --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Help understanding</masterLabel>
+            <translation><!-- Help understanding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Help with</masterLabel>
+            <translation><!-- Help with --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Help with condition</masterLabel>
+            <translation><!-- Help with condition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Help with options</masterLabel>
+            <translation><!-- Help with options --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Illegible</masterLabel>
+            <translation><!-- Illegible --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance</masterLabel>
+            <translation><!-- Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interface/Functionality</masterLabel>
+            <translation><!-- Interface/Functionality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>International</masterLabel>
+            <translation><!-- International --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interpretation</masterLabel>
+            <translation><!-- Interpretation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoice</masterLabel>
+            <translation><!-- Invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Layout</masterLabel>
+            <translation><!-- Layout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical/technical</masterLabel>
+            <translation><!-- Medical/technical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mis-delivered/wrong client</masterLabel>
+            <translation><!-- Mis-delivered/wrong client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing</masterLabel>
+            <translation><!-- Missing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing AWB</masterLabel>
+            <translation><!-- Missing AWB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing Instructions</masterLabel>
+            <translation><!-- Missing Instructions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing Tube</masterLabel>
+            <translation><!-- Missing Tube --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing Tube(s)</masterLabel>
+            <translation><!-- Missing Tube(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing collection instructions</masterLabel>
+            <translation><!-- Missing collection instructions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing fedex slip</masterLabel>
+            <translation><!-- Missing fedex slip --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Response</masterLabel>
+            <translation><!-- No Response --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not deliverable</masterLabel>
+            <translation><!-- Not deliverable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not delivered</masterLabel>
+            <translation><!-- Not delivered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not received</masterLabel>
+            <translation><!-- Not received --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not understandable</masterLabel>
+            <translation><!-- Not understandable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OPS</masterLabel>
+            <translation><!-- OPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order Error (client)</masterLabel>
+            <translation><!-- Order Error (client) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Password Issues</masterLabel>
+            <translation><!-- Password Issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient Auth</masterLabel>
+            <translation><!-- Patient Auth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient Data Missing</masterLabel>
+            <translation><!-- Patient Data Missing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient OOP</masterLabel>
+            <translation><!-- Patient OOP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portal</masterLabel>
+            <translation><!-- Portal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preprint info bad/wrong</masterLabel>
+            <translation><!-- Preprint info bad/wrong --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Printing Quality</masterLabel>
+            <translation><!-- Printing Quality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Received late</masterLabel>
+            <translation><!-- Received late --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rep issue</masterLabel>
+            <translation><!-- Rep issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request for</masterLabel>
+            <translation><!-- Request for --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Required Fields</masterLabel>
+            <translation><!-- Required Fields --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resolution</masterLabel>
+            <translation><!-- Resolution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Results questionable</masterLabel>
+            <translation><!-- Results questionable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self-Pay</masterLabel>
+            <translation><!-- Self-Pay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stage I/II</masterLabel>
+            <translation><!-- Stage I/II --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TAT</masterLabel>
+            <translation><!-- TAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRM</masterLabel>
+            <translation><!-- TRM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tube problem</masterLabel>
+            <translation><!-- Tube problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tubes</masterLabel>
+            <translation><!-- Tubes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Volume Required</masterLabel>
+            <translation><!-- Volume Required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Website help</masterLabel>
+            <translation><!-- Website help --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrong Client Info</masterLabel>
+            <translation><!-- Wrong Client Info --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrong Item</masterLabel>
+            <translation><!-- Wrong Item --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrong Order Info</masterLabel>
+            <translation><!-- Wrong Order Info --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrong Patient Info</masterLabel>
+            <translation><!-- Wrong Patient Info --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrong Qty</masterLabel>
+            <translation><!-- Wrong Qty --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrong patient</masterLabel>
+            <translation><!-- Wrong patient --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Xifin</masterLabel>
+            <translation><!-- Xifin --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Issue --></label>
+        <name>Issue__c</name>
+        <picklistValues>
+            <masterLabel>Billing</masterLabel>
+            <translation><!-- Billing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COVID-19</masterLabel>
+            <translation><!-- COVID-19 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Relations/Courtesy</masterLabel>
+            <translation><!-- Client Relations/Courtesy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Communication</masterLabel>
+            <translation><!-- Communication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Company/Website</masterLabel>
+            <translation><!-- Company/Website --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ERD</masterLabel>
+            <translation><!-- ERD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fax</masterLabel>
+            <translation><!-- Fax --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health Guidance</masterLabel>
+            <translation><!-- Health Guidance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Information Request</masterLabel>
+            <translation><!-- Information Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kit</masterLabel>
+            <translation><!-- Kit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lab Report</masterLabel>
+            <translation><!-- Lab Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lab Report/TRFs</masterLabel>
+            <translation><!-- Lab Report/TRFs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing Material</masterLabel>
+            <translation><!-- Marketing Material --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing Materials</masterLabel>
+            <translation><!-- Marketing Materials --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Materials</masterLabel>
+            <translation><!-- Materials --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing NY Waiver</masterLabel>
+            <translation><!-- Missing NY Waiver --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient</masterLabel>
+            <translation><!-- Patient --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient Report</masterLabel>
+            <translation><!-- Patient Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient Report Data</masterLabel>
+            <translation><!-- Patient Report Data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portal</masterLabel>
+            <translation><!-- Portal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portal Data</masterLabel>
+            <translation><!-- Portal Data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Positive Feedback</masterLabel>
+            <translation><!-- Positive Feedback --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sample</masterLabel>
+            <translation><!-- Sample --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Specimen Collection</masterLabel>
+            <translation><!-- Specimen Collection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stage I/II</masterLabel>
+            <translation><!-- Stage I/II --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Supplies</masterLabel>
+            <translation><!-- Supplies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRF</masterLabel>
+            <translation><!-- TRF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRF/TUBE</masterLabel>
+            <translation><!-- TRF/TUBE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TUBE</masterLabel>
+            <translation><!-- TUBE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technical</masterLabel>
+            <translation><!-- Technical --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Kit-Clinical (SWOG) domestic --></label>
+        <name>Kit_Clinical_SWOG_domestic__c</name>
+    </fields>
+    <fields>
+        <label><!-- Kit Supplies AE Email Sent --></label>
+        <name>Kit_Supplies_AE_Email_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Kit with TRF (domestic) --></label>
+        <name>Kit_with_TRF__c</name>
+    </fields>
+    <fields>
+        <help><!-- 378556 - Guardant Health 360 Specimen Collection &amp; Shipping Kit (Domestic/Commercial) --></help>
+        <label><!-- CLIA Calif LDT Kit --></label>
+        <name>Kits_Clinical_domestic__c</name>
+    </fields>
+    <fields>
+        <help><!-- 378819 - Guardant Health 360 Specimen Collection &amp; Shipping Kit (International/Commercial) --></help>
+        <label><!-- Kits-Clinical (int&apos;l-NOT EU) --></label>
+        <name>Kits_Clinical_int_l__c</name>
+    </fields>
+    <fields>
+        <help><!-- 378381 - Guardant Health Specimen Collection &amp; Shipping Kit (Domestic/Research) --></help>
+        <label><!-- Kits-Research (domestic) --></label>
+        <name>Kits_Research_domestic__c</name>
+    </fields>
+    <fields>
+        <help><!-- 378818 - Guardant Health Specimen Collection &amp; Shipping Kit (International/Research) --></help>
+        <label><!-- Kits-Research (int&apos;l) --></label>
+        <name>Kits_Research_int_l__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hidden field used for reporting --></help>
+        <label><!-- Kits last 7 days --></label>
+        <name>Kits_last_7_days__c</name>
+    </fields>
+    <fields>
+        <label><!-- LCD Code obtained --></label>
+        <name>LCD_Code_obtained__c</name>
+    </fields>
+    <fields>
+        <help><!-- 379858 --></help>
+        <label><!-- LDT Kit no TRF --></label>
+        <name>LDT_Kit_no_TRF__c</name>
+    </fields>
+    <fields>
+        <help><!-- 380761 LUNAR1 Blood Collection Kit, IUO Domestic --></help>
+        <label><!-- LUNAR1 Blood Collection Kit IUO Domestic --></label>
+        <name>LUNAR1_Blood_Collection_Kit_IUO_Domesti__c</name>
+    </fields>
+    <fields>
+        <help><!-- 380762 LUNAR1 Blood Collection Kit, IUO International --></help>
+        <label><!-- LUNAR1 Blood Collection Kit IUO Intl --></label>
+        <name>LUNAR1_Blood_Collection_Kit_IUO_Intl__c</name>
+    </fields>
+    <fields>
+        <help><!-- 553224-PrePrinted --></help>
+        <label><!-- LUNAR Clinical Trial TRF (COBRA) --></label>
+        <name>LUNAR_Clinical_Trial_TRF__c</name>
+    </fields>
+    <fields>
+        <help><!-- 553285-Preprinted LUNAR IUO Preprinted TRF --></help>
+        <label><!-- LUNAR IUO Preprinted TRF --></label>
+        <name>LUNAR_IUO_Preprinted_TRF__c</name>
+    </fields>
+    <fields>
+        <help><!-- 550478 - Preprinted
+LUNAR TRF: TST-TRF-005 R2 --></help>
+        <label><!-- LUNAR Preprinted TRF --></label>
+        <name>LUNAR_Preprinted_TRF__c</name>
+    </fields>
+    <fields>
+        <help><!-- 379836 (Obsolete in Nov 2019, 380760 is replacement) --></help>
+        <label><!-- LUNAR RUO Kit, International - 379836 --></label>
+        <name>LUNAR_RUO_Kit_Int_l__c</name>
+    </fields>
+    <fields>
+        <help><!-- 380760, Lunar RUO Kit - International (replaced 379836) --></help>
+        <label><!-- LUNAR RUO Kit, International --></label>
+        <name>LUNAR_RUO_Kit_Intl_380760__c</name>
+    </fields>
+    <fields>
+        <label><!-- LV Problem Case ID --></label>
+        <name>LV_Problem_Case_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Length of Time (Days) --></label>
+        <name>Length_of_Time_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lot # --></label>
+        <name>Lot__c</name>
+    </fields>
+    <fields>
+        <help><!-- 380759 - Lunar RUO Kit, Domestic --></help>
+        <label><!-- LUNAR RUO Kit, Domestic --></label>
+        <name>Lunar_Clinical_Kit_Domestic__c</name>
+    </fields>
+    <fields>
+        <label><!-- MDR # --></label>
+        <name>MDR_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- MDR? --></label>
+        <name>MDR__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- 549834-PrePrinted - Guardant 360 Preprinted-Site Specific Trial Test Requisition Form VISION MS200095-0022 (TST-TRF-011) --></help>
+        <label><!-- Merck/VIS PrePrinted TRF --></label>
+        <name>Merck_VIS_PrePrinted_TRF__c</name>
+    </fields>
+    <fields>
+        <help><!-- 380926 - Mobile Phlebotomy Individual Draw Kit with mask --></help>
+        <label><!-- MP Indiv Draw Kit with Mask --></label>
+        <name>Mobile_Phlebotomy_Individual_Draw_Kit_wi__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month Created --></label>
+        <name>Month_Created__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used for reports and dashboards. --></help>
+        <label><!-- Month-Year --></label>
+        <name>Month_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Income --></label>
+        <name>Monthly_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Attempt --></label>
+        <name>Next_Attempt__c</name>
+    </fields>
+    <fields>
+        <help><!-- When would you like the next reminder to follow up on this case? --></help>
+        <label><!-- Next Follow-Up Date --></label>
+        <name>Next_Follow_Up_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- No CAPA - Reason --></label>
+        <name>No_CAPA_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- No Code obtained --></label>
+        <name>No_Code_obtained__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-LCD Code obtained --></label>
+        <name>Non_LCD_Code_obtained__c</name>
+    </fields>
+    <fields>
+        <label><!-- Not Cancelled --></label>
+        <name>Not_Cancelled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Old OOP Max --></label>
+        <name>OOP_Max__c</name>
+    </fields>
+    <fields>
+        <help><!-- Must check &apos;OOP Override?&apos; checkbox before filling out this box --></help>
+        <label><!-- OOP Override Amount --></label>
+        <name>OOP_Override_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- This overrides the OOP Max field --></help>
+        <label><!-- OOP Override? --></label>
+        <name>OOP_Override__c</name>
+    </fields>
+    <fields>
+        <label><!-- Occurrence Location --></label>
+        <name>Occurrence_Location__c</name>
+    </fields>
+    <fields>
+        <help><!-- Old=AE was hired before June 2017. Used for CS reports/Dashboards. --></help>
+        <label><!-- Old or New AE? --></label>
+        <name>Old_or_New_AE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Number --></label>
+        <name>Order_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original PO # --></label>
+        <name>Original_PO__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Issue --></label>
+        <name>Other_Issue__c</name>
+    </fields>
+    <fields>
+        <label><!-- OOP Maximum --></label>
+        <name>Out_of_Pocket_Max__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outreach Needed? --></label>
+        <name>Outreach_Needed__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Owner Profile --></label>
+        <name>Owner_Profile__c</name>
+    </fields>
+    <fields>
+        <help><!-- Clinical Account for purposes of this PA --></help>
+        <label><!-- Account --></label>
+        <name>PA_Account__c</name>
+        <relationshipLabel><!-- PA Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Accession # Associated with PA --></label>
+        <name>PA_Associated_with_G360_Test__c</name>
+        <relationshipLabel><!-- Prior Authorizations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Patient ID for purposes of Prior Authorizations Cases --></help>
+        <label><!-- Patient --></label>
+        <name>PA_Cases__c</name>
+        <relationshipLabel><!-- Prior Authorizations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- PA Contact --></label>
+        <name>PA_Contact__c</name>
+        <relationshipLabel><!-- Prior Authorizations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Is there a particular person at the practice who handles these PA cases? (Their contact role must be one of Administrative Assistant, Billing Specialist, Office Manager, or Office Staff) --></help>
+        <label><!-- PA Contact at Practice --></label>
+        <name>PA_Contact_at_Practice__c</name>
+        <relationshipLabel><!-- Prior Auth Contacts at Practice --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- PFA Gross --></label>
+        <name>PFA_Gross__c</name>
+    </fields>
+    <fields>
+        <label><!-- PFA Needed --></label>
+        <name>PFA_Needed__c</name>
+    </fields>
+    <fields>
+        <label><!-- PFA Received --></label>
+        <name>PFA_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- PFA Sent --></label>
+        <name>PFA_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient --></label>
+        <name>PatientCase__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Read-only field that carries over from the PID record. --></help>
+        <label><!-- Patient Benefits Authorization --></label>
+        <name>Patient_Benefits_Authorization__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed</masterLabel>
+            <translation><!-- Signed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsigned</masterLabel>
+            <translation><!-- Unsigned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Patient Demo --></label>
+        <name>Patient_Demo__c</name>
+        <picklistValues>
+            <masterLabel>Missing Phone Number needed for OOP over $100.00</masterLabel>
+            <translation><!-- Missing Phone Number needed for OOP over $100.00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing US Address</masterLabel>
+            <translation><!-- Missing US Address --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Verify DOB</masterLabel>
+            <translation><!-- Verify DOB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Verify Pt&apos;s name</masterLabel>
+            <translation><!-- Verify Pt&apos;s name --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Patient ID --></label>
+        <name>Patient_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formula field derived from same field on the Patient record --></help>
+        <label><!-- Patient Opted In? --></label>
+        <name>Patient_Opted_In2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient Responsibility --></label>
+        <name>Patient_Responsibility__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient Upset --></label>
+        <name>Patient_Upset__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient contacted --></label>
+        <name>Patient_contacted__c</name>
+        <picklistValues>
+            <masterLabel>1st</masterLabel>
+            <translation><!-- 1st --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2nd</masterLabel>
+            <translation><!-- 2nd --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3rd</masterLabel>
+            <translation><!-- 3rd --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Payor Price --></label>
+        <name>Payor_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payor --></label>
+        <name>Payor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Physician --></label>
+        <name>Physician__c</name>
+    </fields>
+    <fields>
+        <label><!-- Policy # --></label>
+        <name>Policy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preprint Int&apos;l TRFs --></label>
+        <name>Preprint_Int_l_TRFs__c</name>
+    </fields>
+    <fields>
+        <help><!-- 546856 - Guardant Health 360 Preprinted TRF (Site Specific) - TST-TRF-001 v1 --></help>
+        <label><!-- Preprint TRFs --></label>
+        <name>Preprint_TRFs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prior Auth Type --></label>
+        <name>Prior_Auth_Type__c</name>
+        <picklistValues>
+            <masterLabel>Client driven</masterLabel>
+            <translation><!-- Client driven --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Faxed Gap Request</masterLabel>
+            <translation><!-- Faxed Gap Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gap Exception</masterLabel>
+            <translation><!-- Gap Exception --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internally driven</masterLabel>
+            <translation><!-- Internally driven --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retro</masterLabel>
+            <translation><!-- Retro --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Prior Authorization # used by payor --></help>
+        <label><!-- Prior Authorization # --></label>
+        <name>Prior_Authorization__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pt. DOB --></label>
+        <name>Pt_DOB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pt. First Name --></label>
+        <name>Pt_First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pt. Last Name --></label>
+        <name>Pt_Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pt. Name --></label>
+        <name>Pt_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pt State --></label>
+        <name>Pt_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient Status (Medicare Only) --></label>
+        <name>Pt_Status_Medicare_Only__c</name>
+    </fields>
+    <fields>
+        <label><!-- Push To TheraPak Date --></label>
+        <name>Push_To_TheraPak_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Push To TheraPak --></label>
+        <name>Push_To_TheraPak__c</name>
+    </fields>
+    <fields>
+        <help><!-- Relevant Clinical History. Checked = Follow-up is needed --></help>
+        <label><!-- RCH Follow-Up Needed? --></label>
+        <name>RCH_Follow_Up_Needed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Checking this box will notify the AE of delays due to second tube draw. --></help>
+        <label><!-- RETEST-Notify AE --></label>
+        <name>RETEST_Notify_AE__c</name>
+    </fields>
+    <fields>
+        <help><!-- 550454 - Preprinted
+RUO TRF: FRM-PRT-000020 R1 --></help>
+        <label><!-- RUO Preprinted TRF --></label>
+        <name>RUO_Preprinted_TRF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recall? --></label>
+        <name>Recall__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Record Type ID --></label>
+        <name>Record_Type_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Refax Patient Report Reason --></label>
+        <name>Refax_Patient_Report_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Addt&apos;l copy requested</masterLabel>
+            <translation><!-- Addt&apos;l copy requested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fax machine issues</masterLabel>
+            <translation><!-- Fax machine issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Original not received</masterLabel>
+            <translation><!-- Original not received --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poor quality</masterLabel>
+            <translation><!-- Poor quality --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Relevant Clinical History NSCLC --></label>
+        <name>Relevant_Clinical_History_NSCLC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remaining deductible --></label>
+        <name>Remaining_decductible__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reportable? --></label>
+        <name>Reportable__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reported By --></label>
+        <name>Reported_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request No --></label>
+        <name>Request_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Type --></label>
+        <name>Request_Type__c</name>
+        <picklistValues>
+            <masterLabel>Add Account ID</masterLabel>
+            <translation><!-- Add Account ID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Add/Edit Users</masterLabel>
+            <translation><!-- Add/Edit Users --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Account Setup</masterLabel>
+            <translation><!-- New Account Setup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reset Password</masterLabel>
+            <translation><!-- Reset Password --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technical Issue</masterLabel>
+            <translation><!-- Technical Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Training</masterLabel>
+            <translation><!-- User Training --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Residual income --></label>
+        <name>Residual_income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resolution --></label>
+        <name>Resolution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resolved Indicator --></label>
+        <name>Resolved_indicator__c</name>
+        <picklistValues>
+            <masterLabel>Stage I/II – please cancel</masterLabel>
+            <translation><!-- Stage I/II – please cancel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stage III/IV</masterLabel>
+            <translation><!-- Stage III/IV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Result --></label>
+        <name>Result__c</name>
+        <picklistValues>
+            <masterLabel>Amended</masterLabel>
+            <translation><!-- Amended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canceled</masterLabel>
+            <translation><!-- Canceled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Error</masterLabel>
+            <translation><!-- Client Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GH Error</masterLabel>
+            <translation><!-- GH Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processed</masterLabel>
+            <translation><!-- Processed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Undetermined</masterLabel>
+            <translation><!-- Undetermined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor Error</masterLabel>
+            <translation><!-- Vendor Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Xifin Error</masterLabel>
+            <translation><!-- Xifin Error --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Checking this box forces the Due Date to be today.  The order must still be pushed before the order cutoff time. --></help>
+        <label><!-- Rush Order --></label>
+        <name>Rush_Order__c</name>
+    </fields>
+    <fields>
+        <help><!-- Item 551226-PrePrinted --></help>
+        <label><!-- SYM Preprinted TRF --></label>
+        <name>SYM_Preprinted_TRF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Aging --></label>
+        <name>Sample_Aging__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Final Report Date --></label>
+        <name>Sample_Final_Report_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Received Date --></label>
+        <name>Sample_Received_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Request Type --></label>
+        <name>Sample_Request_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Search Data 1 --></label>
+        <name>Search_Data_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Second Attempt --></label>
+        <name>Second_Attempt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Seconds Since Push Request --></label>
+        <name>Seconds_Since_Push_Request__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send Email Notification --></label>
+        <name>Send_Email_Notification__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Address 1 --></label>
+        <name>Ship_To_Address_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Address 2 --></label>
+        <name>Ship_To_Address_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To City --></label>
+        <name>Ship_To_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Company --></label>
+        <name>Ship_To_Company__c</name>
+    </fields>
+    <fields>
+        <help><!-- Email Address for the &apos;Ship To&apos; Contact --></help>
+        <label><!-- Ship To Contact Email --></label>
+        <name>Ship_To_Contact_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Contact --></label>
+        <name>Ship_To_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Country --></label>
+        <name>Ship_To_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Phone --></label>
+        <name>Ship_To_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Postal Code --></label>
+        <name>Ship_To_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To State/Province --></label>
+        <name>Ship_To_State_Province__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Method --></label>
+        <name>Shipping_Method__c</name>
+        <picklistValues>
+            <masterLabel>FedEx 2 Day</masterLabel>
+            <translation><!-- FedEx 2 Day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FedEx Express Saver</masterLabel>
+            <translation><!-- FedEx Express Saver --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FedEx Ground</masterLabel>
+            <translation><!-- FedEx Ground --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FedEx Int&apos;l Priority</masterLabel>
+            <translation><!-- FedEx Int&apos;l Priority --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FedEx Priority Overnight</masterLabel>
+            <translation><!-- FedEx Priority Overnight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FedEx Standard Overnight</masterLabel>
+            <translation><!-- FedEx Standard Overnight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Courier ONLY USE FOR BRAZIL</masterLabel>
+            <translation><!-- No Courier ONLY USE FOR BRAZIL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>World Courier</masterLabel>
+            <translation><!-- World Courier --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Special Instructions --></label>
+        <name>Special_Instructions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Spoke to --></label>
+        <name>Spoke_To__c</name>
+        <picklistValues>
+            <masterLabel>Insurance Co</masterLabel>
+            <translation><!-- Insurance Co --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD/office</masterLabel>
+            <translation><!-- MD/office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient/family</masterLabel>
+            <translation><!-- Patient/family --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+        <picklistValues>
+            <masterLabel>AK</masterLabel>
+            <translation><!-- AK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AL</masterLabel>
+            <translation><!-- AL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AR</masterLabel>
+            <translation><!-- AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AZ</masterLabel>
+            <translation><!-- AZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA</masterLabel>
+            <translation><!-- CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CO</masterLabel>
+            <translation><!-- CO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CT</masterLabel>
+            <translation><!-- CT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DE</masterLabel>
+            <translation><!-- DE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FL</masterLabel>
+            <translation><!-- FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GA</masterLabel>
+            <translation><!-- GA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HI</masterLabel>
+            <translation><!-- HI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IA</masterLabel>
+            <translation><!-- IA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID</masterLabel>
+            <translation><!-- ID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL</masterLabel>
+            <translation><!-- IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN</masterLabel>
+            <translation><!-- IN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KS</masterLabel>
+            <translation><!-- KS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KY</masterLabel>
+            <translation><!-- KY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA</masterLabel>
+            <translation><!-- LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MA</masterLabel>
+            <translation><!-- MA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD</masterLabel>
+            <translation><!-- MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ME</masterLabel>
+            <translation><!-- ME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MI</masterLabel>
+            <translation><!-- MI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MN</masterLabel>
+            <translation><!-- MN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MO</masterLabel>
+            <translation><!-- MO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS</masterLabel>
+            <translation><!-- MS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MT</masterLabel>
+            <translation><!-- MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NC</masterLabel>
+            <translation><!-- NC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ND</masterLabel>
+            <translation><!-- ND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NE</masterLabel>
+            <translation><!-- NE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NH</masterLabel>
+            <translation><!-- NH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NJ</masterLabel>
+            <translation><!-- NJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NM</masterLabel>
+            <translation><!-- NM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NV</masterLabel>
+            <translation><!-- NV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY</masterLabel>
+            <translation><!-- NY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OH</masterLabel>
+            <translation><!-- OH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OK</masterLabel>
+            <translation><!-- OK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR</masterLabel>
+            <translation><!-- OR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PA</masterLabel>
+            <translation><!-- PA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RI</masterLabel>
+            <translation><!-- RI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SC</masterLabel>
+            <translation><!-- SC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SD</masterLabel>
+            <translation><!-- SD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TN</masterLabel>
+            <translation><!-- TN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TX</masterLabel>
+            <translation><!-- TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UT</masterLabel>
+            <translation><!-- UT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VA</masterLabel>
+            <translation><!-- VA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VT</masterLabel>
+            <translation><!-- VT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WA</masterLabel>
+            <translation><!-- WA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WI</masterLabel>
+            <translation><!-- WI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WV</masterLabel>
+            <translation><!-- WV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WY</masterLabel>
+            <translation><!-- WY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Supplies TheraPak Pending Count --></label>
+        <name>Supplies_TheraPak_Pending_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- TRF Type --></label>
+        <name>TRF_Type__c</name>
+        <picklistValues>
+            <masterLabel>* LCD - unapproved ICD</masterLabel>
+            <translation><!-- * LCD - unapproved ICD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>* Notify - Hospital Bill</masterLabel>
+            <translation><!-- * Notify - Hospital Bill --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>* Patient Status missing/verify</masterLabel>
+            <translation><!-- * Patient Status missing/verify --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>* Relevant Clinical History missing</masterLabel>
+            <translation><!-- * Relevant Clinical History missing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2nd Recipient demo -  missing</masterLabel>
+            <translation><!-- 2nd Recipient demo -  missing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2nd Recipient demo -  verify</masterLabel>
+            <translation><!-- 2nd Recipient demo -  verify --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2nd Recipient not in LIMS</masterLabel>
+            <translation><!-- 2nd Recipient not in LIMS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Barcode - missing</masterLabel>
+            <translation><!-- Barcode - missing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billing - missing</masterLabel>
+            <translation><!-- Billing - missing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billing - verify</masterLabel>
+            <translation><!-- Billing - verify --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancer Type - missing/verify</masterLabel>
+            <translation><!-- Cancer Type - missing/verify --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collection Date - missing</masterLabel>
+            <translation><!-- Collection Date - missing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collection date -  verify</masterLabel>
+            <translation><!-- Collection date -  verify --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ICD10 Code(s) - missing</masterLabel>
+            <translation><!-- ICD10 Code(s) - missing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ICD10 Code(s) - verify</masterLabel>
+            <translation><!-- ICD10 Code(s) - verify --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD Name - missing</masterLabel>
+            <translation><!-- MD Name - missing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD Signature missing</masterLabel>
+            <translation><!-- MD Signature missing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD demo - missing</masterLabel>
+            <translation><!-- MD demo - missing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD demo - verify</masterLabel>
+            <translation><!-- MD demo - verify --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD not in LIMS</masterLabel>
+            <translation><!-- MD not in LIMS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing TRF</masterLabel>
+            <translation><!-- Missing TRF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PHARMA: OTHER, see notes</masterLabel>
+            <translation><!-- PHARMA: OTHER, see notes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient demo -  verify</masterLabel>
+            <translation><!-- Patient demo -  verify --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient demo - missing</masterLabel>
+            <translation><!-- Patient demo - missing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stage I/II circled – verify</masterLabel>
+            <translation><!-- Stage I/II circled – verify --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stage III/IV - missing/verify</masterLabel>
+            <translation><!-- Stage III/IV - missing/verify --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRF back page missing</masterLabel>
+            <translation><!-- TRF back page missing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test Ordered missing</masterLabel>
+            <translation><!-- Test Ordered missing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TUBE Type --></label>
+        <name>TUBE_Type__c</name>
+        <picklistValues>
+            <masterLabel>Barcode - missing</masterLabel>
+            <translation><!-- Barcode - missing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Broken (1 tube)</masterLabel>
+            <translation><!-- Broken (1 tube) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Broken (all tubes)</masterLabel>
+            <translation><!-- Broken (all tubes) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expired tubes</masterLabel>
+            <translation><!-- Expired tubes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mislabeled/unlabeled tube(s)</masterLabel>
+            <translation><!-- Mislabeled/unlabeled tube(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing Tube(s)</masterLabel>
+            <translation><!-- Missing Tube(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QNS</masterLabel>
+            <translation><!-- QNS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single Identifier</masterLabel>
+            <translation><!-- Single Identifier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrong tube type</masterLabel>
+            <translation><!-- Wrong tube type --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Technical Reason --></label>
+        <name>Technical_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Alternative Treatment</masterLabel>
+            <translation><!-- Alternative Treatment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Broken/Leaked</masterLabel>
+            <translation><!-- Broken/Leaked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Case Resolution Delayed</masterLabel>
+            <translation><!-- Case Resolution Delayed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compromised</masterLabel>
+            <translation><!-- Compromised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Couldn&apos;t Qualify</masterLabel>
+            <translation><!-- Couldn&apos;t Qualify --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deceased</masterLabel>
+            <translation><!-- Deceased --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dr. Hold</masterLabel>
+            <translation><!-- Dr. Hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expired Tube</masterLabel>
+            <translation><!-- Expired Tube --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial</masterLabel>
+            <translation><!-- Financial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Identifier</masterLabel>
+            <translation><!-- Identifier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LONG TAIL</masterLabel>
+            <translation><!-- LONG TAIL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lab issue</masterLabel>
+            <translation><!-- Lab issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing Identifier</masterLabel>
+            <translation><!-- Missing Identifier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing Information</masterLabel>
+            <translation><!-- Missing Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing Signature</masterLabel>
+            <translation><!-- Missing Signature --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient Demo</masterLabel>
+            <translation><!-- Patient Demo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Physician Demo</masterLabel>
+            <translation><!-- Physician Demo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QNS</masterLabel>
+            <translation><!-- QNS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qualification Delayed</masterLabel>
+            <translation><!-- Qualification Delayed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Results related</masterLabel>
+            <translation><!-- Results related --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stage I/II</masterLabel>
+            <translation><!-- Stage I/II --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UVP</masterLabel>
+            <translation><!-- UVP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unspecified</masterLabel>
+            <translation><!-- Unspecified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrong Tube</masterLabel>
+            <translation><!-- Wrong Tube --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Technical Type --></label>
+        <name>Technical_Type__c</name>
+        <picklistValues>
+            <masterLabel>AMEND</masterLabel>
+            <translation><!-- AMEND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CORRECTED</masterLabel>
+            <translation><!-- CORRECTED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Request</masterLabel>
+            <translation><!-- Client Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Specimen</masterLabel>
+            <translation><!-- Specimen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TAT ALERT</masterLabel>
+            <translation><!-- TAT ALERT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRF</masterLabel>
+            <translation><!-- TRF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technical</masterLabel>
+            <translation><!-- Technical --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TheraPak Status --></label>
+        <name>TheraPak_Status__c</name>
+        <picklistValues>
+            <masterLabel>Delivered</masterLabel>
+            <translation><!-- Delivered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Queue</masterLabel>
+            <translation><!-- In Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Shipping</masterLabel>
+            <translation><!-- In Shipping --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Never Sent</masterLabel>
+            <translation><!-- Never Sent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Third Attempt --></label>
+        <name>Third_Attempt__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sum of CLIA Calif LDT Kits + CE Kits-Clinical (EU) + Kits-Clinical (Int&apos;l-Not EU). Used for CS reporting/dashboards. --></help>
+        <label><!-- Total Kits --></label>
+        <name>Total_Kits__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tracking Number --></label>
+        <name>Tracking_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trf Version --></label>
+        <name>Trf_Version__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tubeless Kits – Int’l --></label>
+        <name>Tubeless_Kits_Int_l__c</name>
+    </fields>
+    <fields>
+        <help><!-- 378808 - Guardant Health Spare Supplies Kit --></help>
+        <label><!-- Tubes-5 pack/Bio bags --></label>
+        <name>Tubes_5_pack_Bio_bags__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unreported Sample Alert Date --></label>
+        <name>Unreported_Sample_Alert_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- WF Gross --></label>
+        <name>WF_Gross__c</name>
+    </fields>
+    <fields>
+        <label><!-- 18Digit record Type ID --></label>
+        <name>X18Digit_record_Type_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- 1.5 Qt. Sharps Container --></label>
+        <name>X1_5_Qt_Sharps_Container__c</name>
+    </fields>
+    <fields>
+        <label><!-- 1st Attempt --></label>
+        <name>X1st_Attempt__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2nd Attempt --></label>
+        <name>X2nd_Attempt__c</name>
+    </fields>
+    <fields>
+        <label><!-- 3rd Attempt --></label>
+        <name>X3rd_Attempt__c</name>
+    </fields>
+    <fields>
+        <label><!-- 4th Attempt --></label>
+        <name>X4th_Attempt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auto Pop-up Case --></label>
+        <name>talkdesk__Auto_Pop_up_Case__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pop Up Destination --></label>
+        <name>talkdesk__Pop_Up_Destination__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- update --></label>
+        <name>update__c</name>
+    </fields>
+    <recordTypes>
+        <description><!-- Use for Account Maintenance Cases --></description>
+        <label><!-- Account Maintenance Case --></label>
+        <name>Account_Maintenance_Case</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Use when discussing insurance benefits with Guardant patients. --></description>
+        <label><!-- x-Benefits Case --></label>
+        <name>Benefits_Case</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Use for Billing Problem Cases --></description>
+        <label><!-- x-Billing Problem Case --></label>
+        <name>Billing_Problem_Case</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Client Concern/Complaint --></label>
+        <name>Client_Concern_Complaint</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Use for Client Concerns Cases --></description>
+        <label><!-- Client Concerns --></label>
+        <name>Client_Concerns</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Use for Client Inquiries Cases --></description>
+        <label><!-- Client Inquiries --></label>
+        <name>Client_Inquiries</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Use for Client Outbound Cases --></description>
+        <label><!-- Client Outbound --></label>
+        <name>Client_Outbound</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Use when discussing financial agreement between patient and GH. --></description>
+        <label><!-- x-Financial Case --></label>
+        <name>Financial_Case</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Use for Prior Authorizations --></description>
+        <label><!-- Prior Authorization --></label>
+        <name>Prior_Authorization</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Use for Problem Cases --></description>
+        <label><!-- Problem Case --></label>
+        <name>Problem_Case</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Use for Supplies Cases --></description>
+        <label><!-- Supplies Case --></label>
+        <name>Supplies_Case</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Use for Technical Cases --></description>
+        <label><!-- Technical Case --></label>
+        <name>Technical_Case</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Medicare Outbound Cases --></description>
+        <label><!-- x-Medicare Outbound --></label>
+        <name>x_Medicare_Outbound</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Status Cannot Be Resolved if Patient Opted In is TRUE, %FPL is greater than 600, AND HHS field is not populated --></errorMessage>
+        <name>Cant_Resolve_Financial_Case_1</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Status Cannot Be Resolved if Patient Opted In is TRUE, %FPL is greater than 600, HHS field is populated, AND all of %Copay, Remaining Deductible, Insurance Max OOP are Blank AND Eligibility Response Not Available = Unchecked --></errorMessage>
+        <name>Cant_Resolve_Financial_Case_2</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Case Ownership cannot change if Supplies case is created by Client Services --></errorMessage>
+        <name>Cant_change_owner_if_created_by_CS</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If UVP or Long Tail are selected for Technical Reason, then Collection Information cannot be blank. --></errorMessage>
+        <name>Collection_Info_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Initial Outreach field is required if the Status = Resolved. --></errorMessage>
+        <name>Initial_Outreach_Resolve_Financial_Case</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Collection Information = Fusion time prior to draw, then Length of Time is required. --></errorMessage>
+        <name>Length_of_Time_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Outreach Needed? field is required if the Status = Resolved. --></errorMessage>
+        <name>Outreach_Needed_if_Prob_Case_is_Resolved</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Case Ownership cannot change if Supplies case is created by Client Services --></errorMessage>
+        <name>Owner_cannot_be_changed_if_created_by_CS</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Issue = TRF, then TRF Type is required. 
+If Issue = TUBE, then Tube Type is required. --></errorMessage>
+        <name>Problem_Case_Issue_Types</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Mandatory to select a Resolved indicator if the Status is resolved. --></errorMessage>
+        <name>TRF_Type_Resolution_on_Problem_Cases</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Checkboxes must be checked in order --></errorMessage>
+        <name>X2nd_Attempt_Checkbox</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Checkboxes must be checked in order --></errorMessage>
+        <name>X3rd_Attempt_Checkbox</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Checkboxes must be checked in order --></errorMessage>
+        <name>X4th_Attempt_Checkbox</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Create_Case --></label>
+        <name>Create_Case</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Delete --></label>
+        <name>Mass_Delete</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Prior_Authorization --></label>
+        <name>New_Prior_Authorization</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Prior_Authorization2 --></label>
+        <name>New_Prior_Authorization2</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_with_DocuSign --></label>
+        <name>dsfs__Send_with_DocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Email_Attachments --></label>
+        <name>lightsideapps__Email_Attachments</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Smart_Dialer --></label>
+        <name>talkdesk__Smart_Dialer</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Smart_SMS --></label>
+        <name>talkdesk__Smart_SMS</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Webmerge --></label>
+        <name>webm__Webmerge</name>
+    </webLinks>
+</CustomObjectTranslation>

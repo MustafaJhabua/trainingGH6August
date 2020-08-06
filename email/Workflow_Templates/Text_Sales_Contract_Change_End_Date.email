@@ -1,0 +1,14 @@
+Please note that the following Sales Contract has a new End Date: 
+
+Name: {!Sales_Contract__c.Name} 
+
+New End Date: {!Sales_Contract__c.End_Date__c}
+
+Old End Date: {!Sales_Contract__c.Previous_End_Date__c}
+
+
+To view the contract within Salesforce, please click on this link: 
+{!Sales_Contract__c.Link} 
+
+Thank you, 
+Sales Operations

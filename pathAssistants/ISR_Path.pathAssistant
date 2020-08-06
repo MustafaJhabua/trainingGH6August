@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Contact</entityName>
+    <fieldName>ISR_Stage__c</fieldName>
+    <masterLabel>ISR Path</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Full_Name__c</fieldNames>
+        <fieldNames>Phone</fieldNames>
+        <info>&lt;p&gt;Try to get past the gatekeeper to speak to the target doctor or a nurse. Your goal is to set up a meeting to gather information about the practice. If you call but don&amp;#39;t get past a gatekeeper, at least be sure to collect as much information as possible; add complete call notes, and add a name to the &amp;#39;Office Contacts&amp;#39; list each time you speak to someone new.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;You&amp;#39;ll advance to the &amp;#39;&lt;b&gt;Info Gathering&lt;/b&gt;&amp;#39; stage when you set up a meeting with the MD or nurse.&lt;/p&gt;</info>
+        <picklistValueName>Stage 1</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Full_Name__c</fieldNames>
+        <fieldNames>Date_of_Last_ISR_Call__c</fieldNames>
+        <info>&lt;p&gt;Before you call, be sure to review all of the previous calls to this practice.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Now that you&amp;#39;ve gotten past the gatekeepers, you want to gather detailed information on the practice. Try to get as many answers as you can to the questions in the lower right part of this page. And again, record who you spoke to, and if there isn&amp;#39;t already an entry for them in the &amp;#39;Office Contacts&amp;#39; section, be sure to add them.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;You&amp;#39;ll advance to the &amp;#39;&lt;b&gt;Closing&lt;/b&gt;&amp;#39; Stage when you get them to accept a shipment of kits, TRFs, and labels from us. If this doesn&amp;#39;t happen right away, continue to make recurring calls to grow the relationship.&lt;/p&gt;</info>
+        <picklistValueName>Stage 2</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Date_of_Last_ISR_Call__c</fieldNames>
+        <fieldNames>Qualified__c</fieldNames>
+        <fieldNames>Date_Qualification_Requested__c</fieldNames>
+        <fieldNames>Account_Qualified__c</fieldNames>
+        <info>&lt;p&gt;You&amp;#39;ve gotten the account to accept a shipment of kits and other supplies. Did they receive it? Do they understand the next steps in the process? Continue to make calls and try to persuade them to submit their first sample.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;This target will move to the &amp;#39;&lt;b&gt;Nurturing&lt;/b&gt;&amp;#39; stage once we receive their first sample.&lt;/p&gt;</info>
+        <picklistValueName>Stage 3</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Date_of_Last_ISR_Call__c</fieldNames>
+        <fieldNames>Last_Sample__c</fieldNames>
+        <fieldNames>Last_Sample_Date__c</fieldNames>
+        <info>&lt;p&gt;&lt;b&gt;The office has submitted a sample!&lt;/b&gt; If it&amp;#39;s their first, call to make sure they&amp;#39;ve received the email that we send when we get the first sample from a new office. Were they able to log into the portal? If they requested the report by fax, did they receive it? Do they have any questions about the report? If they do, create a task to have the Genomic Specialist reach out to them. &lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Your goal now is to persuade the office to submit their next sample. Do they have enough supplies? &lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;To move to the &amp;#39;Turn over to RD&amp;#39; stage, you&amp;#39;ll have to select the &amp;#39;&lt;b&gt;Send to RD for Review&lt;/b&gt;&amp;#39; button manually. Otherwise, continue to nurture the relationship. Keep up with the recurring calls. Continue to gather information on the practice, and be sure to record everything about each call.&lt;/p&gt;</info>
+        <picklistValueName>Stage 4</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Date_of_Last_ISR_Call__c</fieldNames>
+        <fieldNames>Last_Sample_Date__c</fieldNames>
+        <picklistValueName>Turn over to RD</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Contact_Type</recordTypeName>
+</PathAssistant>

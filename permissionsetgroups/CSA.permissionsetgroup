@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Client Services Associates (not management)</description>
+    <label>CSA</label>
+    <permissionSets>Client_Services</permissionSets>
+    <permissionSets>LIMS_Data_Upload</permissionSets>
+    <permissionSets>MedPro_Search_Tool_User</permissionSets>
+    <permissionSets>talkdesk__TalkDesk_Agent</permissionSets>
+    <status>Failed</status>
+</PermissionSetGroup>

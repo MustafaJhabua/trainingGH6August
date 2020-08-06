@@ -1,0 +1,29 @@
+<apex:page standardController="Match_Record__c" extensions="MatchExtension">
+    <apex:includeScript value="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"/>
+
+    <!--Display the list of Match Records related by Sample-->
+    <apex:pageBlock >
+        <apex:pageBlockTable style="width:100%" value="{!matchList}" var="mr">
+            
+            <apex:column style="width:250px" headerValue="Match Record Name"> 
+                <apex:outputlink value="https://na29.salesforce.com/{!mr.Id}" target="_top"> {!mr.Name} </apex:outputlink>
+            </apex:column> 
+            <apex:column style="width:250px" value="{!mr.Final_Report_Date__c}"/>
+            <apex:column style="width:250px" value="{!mr.Patient_Report__c}"/>
+            <apex:column style="width:250px" value="{!mr.Enrollment_Status__c}"/>
+            <apex:column style="width:250px" value="{!mr.Enrollment_Sub_Status__c}"/>
+            <apex:column style="width:250px" value="{!mr.Follow_Up_Reminder__c}"/> 
+            <apex:column style="width:250px" value="{!mr.Date_of_Last_Contact__c}"/>
+            <apex:column style="width:250px" value="{!mr.Owner.Name}"/>
+            <apex:column style="width:250px" headerValue="Trial"> 
+                <apex:outputlink value="https://na29.salesforce.com/{!mr.Trial_Name__c}" target="_top"> {!mr.Trial_Name__r.Name} </apex:outputlink> 
+            </apex:column> 
+            <apex:column style="width:250px" headerValue="Sample"> 
+                <apex:outputlink value="https://na29.salesforce.com/{!mr.Sample_ID__c}" target="_top"> {!mr.Sample_ID__r.Name} </apex:outputlink> 
+            </apex:column> 
+            <apex:outputText rendered="false" value="{!Match_Record__c.Patient_ID__c}" />
+            <apex:outputText rendered="FALSE" value="{!Match_Record__c.Owner}" />            
+            
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+</apex:page>

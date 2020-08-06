@@ -1,0 +1,8 @@
+Hello,
+
+Please note that a Sales Enterprise Contact is now terminted for {!Account.Name}. 
+
+Click here for more info: https://na29.salesforce.com/{!Account.Id}
+
+Thank you, 
+Sales Operations

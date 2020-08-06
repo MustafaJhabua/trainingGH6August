@@ -1,0 +1,11 @@
+Client Services has marked a new case for {!Case.Account} as High-Priority:
+
+Case Number: {!Case.CaseNumber}
+Priority: {!Case.Priority}
+Contact: {!Case.Contact}
+Case Subject: {!Case.Subject} 
+Case Type: {!Case.RecordType} 
+Case Status: {!Case.Status} 
+Case Notes: {!Case.Description} 
+
+Link to Case: {!Case.Link}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sales can send this to customers about the great science Guardant Health presented and contributed to at ASCO 2016</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>GH_Logo_Small</letterhead>
+    <name>ASCO 2016 Follow-Up</name>
+    <style>freeForm</style>
+    <subject>Guardant Health at ASCO 2016</subject>
+    <textOnly>Dear Dr. {!Contact.LastName},
+
+As promised I am following up with our posters, presentation and press as well as specific next steps from our meeting.
+
+Please follow this Box link to access the posters we can share (some being held back for publication purposes) along with the presentation Phil Mack of UC Davis gave on the results from our first 15,000 patients.
+
+We were thrilled this data was selected for one of the late breaking abstracts and you can access the press release here, as well subsequent stories in the New York Times, Washington Post, Economist, Fortune, Business Insider and Time, among others.
+
+Our partners at Samsung Medical Center presented data from the first prospective clinical utility trial of 200 patients using results from Guardant360 testing and achieved 88% response rate in lung and 60% response rate in gastric. Press release here and Fierce Medical Devices story here.
+
+Furthermore, lots of people have been asking about our early detection project, LUNAR. Here is a link to the press release and Guardant landing page.
+
+Best,
+{!Contact.OwnerFullName}
+
+
+This e-mail, including any attachments may contain material protected and governed by the Health Insurance and Portability and Accountability Act (HIPAA). This e-mail and any files transmitted with it are confidential and are intended solely for the use of the individual or entity to which they are addressed. The authorized recipient of this information is prohibited from disclosing this information to any other party unless authorized. If you are not the intended recipient of this e-mail please note that you have received this e-mail in error and any use, dissemination, forwarding, printing or copying of this e-mail is strictly prohibited. If you have received this e-mail in error, please immediately contact the sender of this message.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>
