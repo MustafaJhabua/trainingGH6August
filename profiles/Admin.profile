@@ -26862,6 +26862,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Test_Obj__c.Favourite_Colors__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>TrackChanges__c.ObjectName__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -34251,6 +34256,17 @@
         <layout>Territory2Type-Territory Type Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Test_Obj__c-Test Obj Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Test_Obj__c-Test Obj Layout</layout>
+        <recordType>Test_Obj__c.A</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Test_Obj__c-Test Obj Layout</layout>
+        <recordType>Test_Obj__c.B</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>TrackChanges__c-TrackChanges Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -35493,6 +35509,15 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
         <object>Supplies_Order_Line__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Test_Obj__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -39465,6 +39490,16 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Task.X1st_Time_Tester_MA_Task</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>Test_Obj__c.A</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Test_Obj__c.B</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
