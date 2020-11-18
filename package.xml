@@ -17,6 +17,10 @@
         <name>ListView</name>
     </types>
     <types>
+        <members>Admin</members>
+        <name>Profile</name>
+    </types>
+    <types>
         <members>Test_Obj__c.A</members>
         <members>Test_Obj__c.B</members>
         <name>RecordType</name>
