@@ -4453,6 +4453,14 @@ NCI_Satellite__c=TRUE),&quot; ** This is an NCI Center **&quot;,&quot;&quot;)</f
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Test__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Test</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>TheraPak_Account_Name__c</fullName>
         <externalId>false</externalId>
         <label>TheraPak Account Name</label>
