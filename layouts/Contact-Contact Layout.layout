@@ -133,10 +133,6 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Latest_Speaker_Event_Date__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>COS_Key_Account__c</field>
             </layoutItems>
             <layoutItems>
@@ -555,7 +551,7 @@
                 </reportChartComponent>
             </layoutItems>
         </layoutColumns>
-        <layoutColumns/>
+        <layoutColumns />
         <style>TwoColumnsLeftToRight</style>
     </layoutSections>
     <layoutSections>
