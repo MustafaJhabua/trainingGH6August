@@ -10897,6 +10897,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Account.Test__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Account.TheraPak_Account_Name__c</field>
         <readable>true</readable>
     </fieldPermissions>
