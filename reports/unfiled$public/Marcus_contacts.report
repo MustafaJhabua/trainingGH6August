@@ -940,9 +940,6 @@
         <field>Contact.Latest_Expense_Report_State__c</field>
     </columns>
     <columns>
-        <field>Contact.Latest_Speaker_Event_Date__c</field>
-    </columns>
-    <columns>
         <field>Contact.MedProBT__Level__c</field>
     </columns>
     <columns>
