@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"
+      xmlns:n1="http://www.w3.org/2001/XMLSchema-instance">
     <actionOverrides>
         <actionName>AddCampaign</actionName>
         <type>Default</type>
@@ -3022,14 +3023,6 @@ Integration_Questions_Completed__c/Integration_Questions_Total__c,
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Latest_Speaker_Event_Date__c</fullName>
-        <externalId>false</externalId>
-        <label>Latest Speaker Event Date</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <type>Date</type>
-    </fields>
-    <fields>
         <fullName>LeadSource</fullName>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
@@ -5428,6 +5421,16 @@ IMAGE(&quot;/img/msg_icons/confirm32.png&quot;, &quot;Green&quot;))))</formula>
         <label>Tertiary Opt-In</label>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Test_Mockdev1_field__c</fullName>
+        <externalId>false</externalId>
+        <label>Test Mockdev1 field</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Title</fullName>
@@ -9648,8 +9651,8 @@ IMAGE(&quot;/img/msg_icons/confirm32.png&quot;, &quot;Green&quot;))))</formula>
         <lookupPhoneDialogsAdditionalFields>ION_SAM_Phone__c</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>Secondary_FAX__c</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>ACCOUNT.PHONE1</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields xsi:nil="true"/>
-        <lookupPhoneDialogsAdditionalFields xsi:nil="true"/>
+        <lookupPhoneDialogsAdditionalFields n1:nil="true" />
+        <lookupPhoneDialogsAdditionalFields n1:nil="true" />
         <searchFilterFields>CONTACT.FIRST_NAME</searchFilterFields>
         <searchFilterFields>CONTACT.LAST_NAME</searchFilterFields>
         <searchFilterFields>ACCOUNT.NAME</searchFilterFields>

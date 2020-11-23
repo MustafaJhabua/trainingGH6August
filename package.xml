@@ -1,29 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>Test_Obj__c.Favourite_Colors__c</members>
+        <members>Contact.Test_Mockdev1_field__c</members>
         <name>CustomField</name>
-    </types>
-    <types>
-        <members>Test_Obj__c</members>
-        <name>CustomObject</name>
-    </types>
-    <types>
-        <members>Test_Obj__c-Test Obj Layout</members>
-        <name>Layout</name>
-    </types>
-    <types>
-        <members>Test_Obj__c.All</members>
-        <name>ListView</name>
     </types>
     <types>
         <members>Admin</members>
         <name>Profile</name>
-    </types>
-    <types>
-        <members>Test_Obj__c.A</members>
-        <members>Test_Obj__c.B</members>
-        <name>RecordType</name>
     </types>
     <version>50.0</version>
 </Package>

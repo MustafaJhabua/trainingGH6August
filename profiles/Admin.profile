@@ -14537,11 +14537,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contact.Latest_Speaker_Event_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Contact.LeadSource</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -15443,6 +15438,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Contact.Tertiary_Opt_In__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.Test_Mockdev1_field__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
